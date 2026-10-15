@@ -1,0 +1,1162 @@
+<title>Ads ML Field Diagrams</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Schibsted+Grotesk:wght@600;800&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: study manual. Sticky diagram index on wide screens; one reading column; diagrams sit on a drafting-paper panel and may scroll sideways on their own. */
+:root {
+  --bg: #F2F4F6;
+  --surface: #FFFFFF;
+  --ink: #17212B;
+  --muted: #56626F;
+  --rule: #D5DBE1;
+  --accent: #1F6F8B;      /* steel teal: links, numbers */
+  --say-bg: #FFF4DC;      /* interview-line callout */
+  --say-ink: #5A3E00;
+  --say-rule: #E2B54A;
+  --paper: #FBFCFD;       /* diagram panel */
+  --grid: #E7ECF0;
+  --code-bg: #EAEEF2;
+  --font-display: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --step--1: 0.875rem; --step-0: 1.0625rem; --step-1: 1.3rem; --step-2: 1.7rem; --step-3: 2.4rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11171D; --surface: #18212A; --ink: #E4EAF0; --muted: #9AA7B4; --rule: #2C3946;
+    --accent: #6CC3DE; --say-bg: #2E2614; --say-ink: #F3D99A; --say-rule: #B48A2C;
+    --paper: #F4F6F8; --grid: #E3E8ED; --code-bg: #1F2A35; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11171D; --surface: #18212A; --ink: #E4EAF0; --muted: #9AA7B4; --rule: #2C3946;
+  --accent: #6CC3DE; --say-bg: #2E2614; --say-ink: #F3D99A; --say-rule: #B48A2C;
+  --paper: #F4F6F8; --grid: #E3E8ED; --code-bg: #1F2A35; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--font-body); font-size: var(--step-0); line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+.shell { display: grid; grid-template-columns: 1fr; gap: 32px; max-width: 1240px; margin: 0 auto; padding-block: 28px 64px; }
+@media (min-width: 1000px) { .shell { grid-template-columns: 250px minmax(0, 1fr); } }
+
+/* Index */
+nav.index { display: none; }
+@media (min-width: 1000px) {
+  nav.index { display: block; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 20px); align-self: start;
+    max-height: calc(100vh - 40px); overflow-y: auto; font-size: var(--step--1); padding-right: 8px; }
+}
+nav.index ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+nav.index li a { display: block; padding: 3px 8px; border-radius: 4px; color: var(--muted); text-decoration: none; line-height: 1.35; }
+nav.index li a:hover { color: var(--ink); background: var(--surface); }
+nav.index li.np { margin-top: 14px; }
+nav.index li.np a { color: var(--ink); font-family: var(--font-display); font-weight: 800; text-transform: uppercase; letter-spacing: .06em; font-size: .75rem; }
+.index-label { font-family: var(--font-mono); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px 8px; }
+
+main { min-width: 0; }
+.read { max-width: 760px; }
+header.top { display: grid; gap: 10px; margin-bottom: 28px; }
+.eyebrow { font-family: var(--font-mono); font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin: 0; }
+h1 { font-family: var(--font-display); font-weight: 800; font-size: clamp(2rem, 5vw, var(--step-3)); line-height: 1.08; margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
+.lede { color: var(--muted); max-width: 62ch; margin: 0; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 18px; font-family: var(--font-mono); font-size: .8rem; color: var(--muted); padding: 10px 12px; border: 1px solid var(--rule); border-radius: 6px; background: var(--surface); }
+.legend b { color: var(--ink); font-weight: 600; }
+
+h2.part { font-family: var(--font-display); font-weight: 800; font-size: var(--step-2); margin: 56px 0 8px; padding-top: 18px; border-top: 3px solid var(--ink); text-wrap: balance; scroll-margin-top: 16px; }
+section.dg { margin-top: 40px; scroll-margin-top: 16px; }
+section.dg h3 { display: flex; gap: 12px; align-items: baseline; font-family: var(--font-display); font-weight: 600; font-size: var(--step-1); line-height: 1.25; margin: 0 0 10px; text-wrap: balance; }
+.num { font-family: var(--font-mono); font-weight: 600; font-size: .9rem; color: var(--accent); border: 1.5px solid var(--accent); border-radius: 4px; padding: 0 6px; flex: none; font-variant-numeric: tabular-nums; }
+h4 { font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; margin: 22px 0 6px; }
+p, ul, ol { max-width: 68ch; }
+ul, ol { padding-left: 1.25em; display: grid; gap: 6px; }
+p.howto { font-family: var(--font-mono); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 18px 0 4px; }
+
+figure.diagram {
+  margin: 14px 0; max-width: 100%; overflow-x: auto; border: 1px solid var(--rule); border-radius: 8px; padding: 18px;
+  background-color: var(--paper);
+  background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+figure.diagram pre.mermaid { margin: 0; background: transparent; min-width: 0; }
+
+aside.say { margin: 18px 0 4px; padding: 12px 16px; background: var(--say-bg); color: var(--say-ink); border-left: 4px solid var(--say-rule); border-radius: 0 6px 6px 0; max-width: 72ch; }
+aside.say p { margin: 4px 0 0; }
+.say-label { font-family: var(--font-mono); font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; }
+blockquote { margin: 16px 0; padding: 8px 14px; border-left: 3px solid var(--rule); color: var(--muted); max-width: 68ch; }
+
+.tbl { overflow-x: auto; max-width: 100%; margin: 14px 0; border: 1px solid var(--rule); border-radius: 6px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-family: var(--font-display); font-weight: 600; background: var(--code-bg); }
+tr:last-child td { border-bottom: 0; }
+td:first-child { font-variant-numeric: tabular-nums; }
+code { font-family: var(--font-mono); font-size: .86em; background: var(--code-bg); padding: 1px 5px; border-radius: 3px; }
+pre.code { background: var(--code-bg); padding: 14px; border-radius: 6px; overflow-x: auto; font-size: .82rem; line-height: 1.45; max-width: 100%; }
+pre.code code { background: none; padding: 0; }
+.xref { font-family: var(--font-mono); font-size: .86em; color: var(--muted); }
+footer { margin-top: 64px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: var(--step--1); }
+</style>
+
+<div class="shell">
+  <nav class="index" aria-label="Diagram index">
+    <p class="index-label">Diagrams</p>
+    <ol>
+<li class="np"><a href="#part-a-the-business">Part A · The Business</a></li>
+<li><a href="#diagram-1-money-flow-and-the-closed-loop">1. Money flow and the closed loop</a></li>
+<li><a href="#diagram-2-the-three-sided-tension">2. The three-sided tension</a></li>
+<li><a href="#diagram-3-ad-product-landscape-and-billing-models">3. Ad product landscape and billing models</a></li>
+<li><a href="#diagram-4-the-full-funnel-with-metrics-at-each-stage">4. The full funnel, with metrics at each stage</a></li>
+<li><a href="#diagram-5-advertiser-campaign-lifecycle">5. Advertiser campaign lifecycle</a></li>
+<li class="np"><a href="#part-b-ads-serving-ml">Part B · Ads Serving ML</a></li>
+<li><a href="#diagram-6-a-search-ad-request-end-to-end">6. A search ad request, end to end</a></li>
+<li><a href="#diagram-7-multi-stage-funnel-with-candidate-counts-and-laten">7. Multi-stage funnel with candidate counts and latency budgets</a></li>
+<li><a href="#diagram-8-ranking-model-architecture">8. Ranking model architecture</a></li>
+<li><a href="#diagram-9-auction-and-pricing">9. Auction and pricing</a></li>
+<li><a href="#diagram-10-autobidding-and-pacing-control-loop">10. Autobidding and pacing control loop</a></li>
+<li><a href="#diagram-11-training-data-flow">11. Training data flow</a></li>
+<li><a href="#diagram-12-measurement-attribution-and-incrementality">12. Measurement: attribution and incrementality</a></li>
+<li class="np"><a href="#part-c-creative-intelligence-the-role">Part C · Creative Intelligence</a></li>
+<li><a href="#diagram-13-where-creative-sits-in-the-ads-system">13. Where creative sits in the ads system</a></li>
+<li><a href="#diagram-14-generative-creative-pipeline-data-flow">14. Generative creative pipeline (data flow)</a></li>
+<li><a href="#diagram-15-automated-evaluation-the-model-as-judge-system">15. Automated evaluation: the model-as-judge system</a></li>
+<li><a href="#diagram-16-creative-understanding-the-signal-platform">16. Creative understanding: the signal platform</a></li>
+<li><a href="#diagram-17-video-ad-generation-and-adaptation">17. Video ad generation and adaptation</a></li>
+<li><a href="#diagram-18-creative-optimization-loop">18. Creative optimization loop</a></li>
+<li><a href="#diagram-19-shared-platform-layering">19. Shared platform layering</a></li>
+<li><a href="#diagram-20-sequenced-roadmap">20. Sequenced roadmap</a></li>
+<li class="np"><a href="#practice-draw-these-4-from-memory-2-minutes-each">Practice: draw these 4 from memory (2 minutes each)</a></li>
+    </ol>
+  </nav>
+  <main>
+    <header class="top read">
+      <p class="eyebrow">Walmart Ads · Distinguished DS, Creative Intelligence · Mon Oct 19</p>
+      <h1>How retail media works, from shopper query to generated creative</h1>
+      <p class="lede">Twenty diagrams in three parts: the ads business, the serving ML behind every sponsored result, and the creative-intelligence systems this role would own. Each one has a box-by-box walkthrough and a line you can say in the interview.</p>
+      <div class="legend" aria-label="Arrow legend">
+        <span><b>──▶</b> request or data path</span>
+        <span><b>┄┄▶</b> async, delayed or feedback</span>
+        <span><b>━━▶</b> money or the main path</span>
+      </div>
+    </header>
+    <div class="read">
+<p><strong>Goal:</strong> a picture for each important idea you need on Monday. Each one has a walkthrough of every box and arrow, plus a line you can say out loud. Read Parts A and B to stay fluent in ads. Spend most of your time on Part C, because that is the job.</p>
+<p><strong>How to use this chapter</strong></p>
+<ul><li>Diagrams are Mermaid. They render on GitHub and in most Markdown previewers (VS Code with a Mermaid extension, Obsidian, Typora). If they don't render, ASCII fallbacks for the three most important ones are in the <strong>ASCII fallbacks</strong> section near the end.</li><li>Legend used throughout: <strong>solid arrow</strong> <code>--&gt;</code> = synchronous request or data path. <strong>Dotted arrow</strong> <code>-.-&gt;</code> = asynchronous, delayed, or feedback path. <strong>Thick arrow</strong> <code>==&gt;</code> = money, or the main path through the diagram.</li><li><strong>Hedge:</strong> these diagrams show a <em>typical retail media stack</em>. Walmart's internal architecture is not public. Public facts used here: Walmart Connect is Walmart's retail media network. Its products include Sponsored Products (Sponsored Search), Sponsored Brands, Sponsored Videos, on-site and off-site display through Walmart DSP (built with The Trade Desk), CTV through Vizio (acquired for about $2.3B), in-store screens, ads in the Sparky assistant, the Marty advertiser agent, and the Automated Creative Generator (reported about 80% faster creative production in beta). In 2025 it added Search incrementality reporting and received MRC accreditation for Sponsored Search click and impression metrics. In the interview, say "in a typical RMN stack..." or "I'd expect something like...". Don't say "Walmart does X."</li><li>Consistent with <span class="xref">02_ads_ml_fundamentals.md</span> (auctions, autobidding, measurement) and <span class="xref">03_recsys_ranking_at_scale.md</span> (funnel, ranking model, serving).</li></ul>
+<div class="tbl"><table><thead><tr><th>#</th><th>Diagram</th><th>Part</th><th>Priority</th></tr></thead><tbody><tr><td>1</td><td>Money flow and closed loop</td><td>A Business</td><td>Draw from memory</td></tr><tr><td>2</td><td>Three-sided tension</td><td>A Business</td><td>High</td></tr><tr><td>3</td><td>Ad product landscape and billing</td><td>A Business</td><td>Medium</td></tr><tr><td>4</td><td>Full funnel with metrics</td><td>A Business</td><td>Medium</td></tr><tr><td>5</td><td>Campaign lifecycle (state machine)</td><td>A Business</td><td>Medium</td></tr><tr><td>6</td><td>Search ad request, end to end (sequence)</td><td>B Serving ML</td><td>High</td></tr><tr><td>7</td><td>Multi-stage funnel, counts and latency</td><td>B Serving ML</td><td>Draw from memory</td></tr><tr><td>8</td><td>Ranking model architecture</td><td>B Serving ML</td><td>High</td></tr><tr><td>9</td><td>Auction and pricing</td><td>B Serving ML</td><td>High</td></tr><tr><td>10</td><td>Autobidding and pacing loop</td><td>B Serving ML</td><td>Medium</td></tr><tr><td>11</td><td>Training data flow</td><td>B Serving ML</td><td>High</td></tr><tr><td>12</td><td>Measurement and incrementality</td><td>B Serving ML</td><td>High</td></tr><tr><td>13</td><td>Where creative sits in the ads system</td><td>C Creative</td><td>Very high</td></tr><tr><td>14</td><td>Generative creative pipeline</td><td>C Creative</td><td>Draw from memory</td></tr><tr><td>15</td><td>Model-as-judge evaluation system</td><td>C Creative</td><td>Draw from memory</td></tr><tr><td>16</td><td>Creative understanding signal platform</td><td>C Creative</td><td>Very high</td></tr><tr><td>17</td><td>Video ad generation and adaptation</td><td>C Creative</td><td>High</td></tr><tr><td>18</td><td>Creative optimization loop</td><td>C Creative</td><td>Very high</td></tr><tr><td>19</td><td>Shared platform layering</td><td>C Creative</td><td>Very high</td></tr><tr><td>20</td><td>Sequenced roadmap</td><td>C Creative</td><td>High</td></tr></tbody></table></div>
+<h2 class="part" id="part-a-the-business">Part A — The Business</h2>
+<section class="dg" id="diagram-1-money-flow-and-the-closed-loop">
+<h3><span class="num">1</span><span>Money flow and the closed loop</span></h3>
+<p>Who pays whom, for what, and why retail media's reporting is different.</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+    subgraph ADV["Advertisers"]
+        A1["1P suppliers and national brands"]
+        A2["Marketplace 3P sellers"]
+        A3["Agencies and holding companies"]
+    end
+
+    subgraph BUD["Where the money comes from"]
+        B1["Trade and shopper marketing budget"]
+        B2["Brand and media budget"]
+    end
+
+    subgraph WC["Walmart Connect"]
+        W1["Self-serve Ad Center and API"]
+        W2["Managed service team"]
+        W3["Walmart DSP built with The Trade Desk"]
+        W4["Ad server, auction, billing"]
+    end
+
+    subgraph INV["Ad inventory surfaces"]
+        I1["On-site search, browse, item pages, homepage"]
+        I2["Off-site web and app via DSP"]
+        I3["CTV via Vizio"]
+        I4["In-store screens"]
+        I5["Sparky assistant"]
+    end
+
+    S1["Shoppers"]
+    P1["Purchases online and in-store"]
+    D1["Closed-loop data: exposures joined to transactions"]
+    R1["Reporting: ROAS, iROAS, new-to-brand"]
+    X1["Third-party publishers"]
+
+    B1 ==&gt; A1
+    B2 ==&gt; A1
+    B2 ==&gt; A3
+    A1 ==&gt;|"CPC for Sponsored Products"| W1
+    A2 ==&gt;|"CPC, self-serve"| W1
+    A3 ==&gt;|"CPM for display, video, CTV"| W3
+    A1 --&gt;|"managed campaigns"| W2
+    W1 --&gt; W4
+    W2 --&gt; W4
+    W3 --&gt; W4
+    W4 --&gt; I1
+    W4 --&gt; I2
+    W4 --&gt; I3
+    W4 --&gt; I4
+    W4 --&gt; I5
+    W3 ==&gt;|"media cost for off-site impressions"| X1
+    X1 --&gt; I2
+    I1 --&gt; S1
+    I2 --&gt; S1
+    I3 --&gt; S1
+    I4 --&gt; S1
+    I5 --&gt; S1
+    S1 ==&gt;|"pays for goods"| P1
+    P1 -.-&gt;|"order and basket logs"| D1
+    W4 -.-&gt;|"impression and click logs"| D1
+    D1 -.-&gt; R1
+    R1 -.-&gt;|"budget reallocation, bid changes"| ADV</pre></figure>
+<p class="howto">How to read it</p>
+<ul><li><strong>Advertisers (left).</strong> There are three kinds. <em>1P suppliers</em> sell to Walmart wholesale (P&amp;G, PepsiCo) and are the biggest spenders. <em>3P marketplace sellers</em> list on walmart.com and are mostly self-serve, long-tail, and price-sensitive. <em>Agencies</em> buy on behalf of brands, mostly display and CTV.</li><li><strong>Budget sources (top left).</strong> Retail media is often funded from <em>trade and shopper marketing</em> budgets: money a brand already spends to win at the retailer. More and more it also draws from <em>brand and media</em> budgets that used to go to TV and social. That is why off-site display and CTV matter: they compete for the brand budget.</li><li><strong>Thick arrows into Walmart Connect</strong> are money. Sponsored Products is <strong>CPC</strong>: the advertiser pays only when a shopper clicks. Display, video, and CTV are mostly <strong>CPM</strong>: the advertiser pays per thousand impressions.</li><li><strong>Inside Walmart Connect</strong> there are three buying paths (self-serve, managed service, DSP). All of them land in the ad server, auction, and billing layer. That layer decides which ad shows on which surface.</li><li><strong>Inventory surfaces</strong> are every place an ad can appear: on-site pages, the open web through the DSP, CTV screens (Vizio), physical store screens, and the conversational assistant (Sparky).</li><li><strong>Off-site impressions cost money.</strong> For off-site, Walmart pays third-party publishers for the impression and earns a margin and data fee on top. On-site inventory is owned, so it is close to pure margin. This is why on-site search ads are the profit engine.</li><li><strong>Shoppers pay for goods</strong>, which is a separate revenue stream. Ads must not damage it. GMV is the guardrail.</li><li><strong>The closed loop (dotted arrows).</strong> Ad logs and purchase logs are joined. Walmart <em>observes</em> purchases, online and often in-store, through account, app, or payment linkage. It does not have to model them. That join powers reporting: ROAS, incremental ROAS, new-to-brand.</li><li><strong>The loop back to advertisers.</strong> Better measurement leads to more trust, which leads to budget moving from other channels into Walmart Connect. Measurement quality is a growth lever, not only a reporting feature.</li></ul>
+<aside class="say"><span class="say-label">Say it in the interview</span><p>"The money comes in as CPC on search and CPM on display and CTV, often from trade budgets first and then brand budgets. What makes retail media worth a premium is the closed loop: we see the exposure and the basket, so we can prove incremental sales. Better creative and better measurement both pull more budget onto the platform."</p></aside>
+</section>
+<section class="dg" id="diagram-2-the-three-sided-tension">
+<h3><span class="num">2</span><span>The three-sided tension</span></h3>
+<p>Every design decision trades off three parties. Know the metrics each side cares about.</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+    subgraph SH["Shopper"]
+        S1["Relevant results, fast page"]
+        S2["Metrics: search CVR, GMV per search, reformulation rate, bounce, NPS"]
+    end
+
+    subgraph AD["Advertiser"]
+        A1["Sales, growth, share of shelf"]
+        A2["Metrics: ROAS, iROAS, new-to-brand, CPC, share of voice"]
+    end
+
+    subgraph WM["Walmart"]
+        M1["Ad revenue plus retail GMV plus retention"]
+        M2["Metrics: ad revenue, RPM, take rate, GMV, long-term shopper value"]
+    end
+
+    L1["Levers: ad load, relevance floor, reserve price, slot positions, creative quality bar, frequency caps"]
+    O1["Ranking objective: eCPM plus alpha times relevance plus beta times shopper utility"]
+    C1["Creative quality: helps all three at once"]
+
+    S1 --- S2
+    A1 --- A2
+    M1 --- M2
+    SH &lt;--&gt;|"too many or irrelevant ads hurt trust"| WM
+    AD &lt;--&gt;|"pays for reach, demands proof"| WM
+    SH &lt;--&gt;|"intent and attention"| AD
+    L1 --&gt; O1
+    O1 --&gt; SH
+    O1 --&gt; AD
+    O1 --&gt; WM
+    C1 -.-&gt;|"higher CTR at same relevance"| AD
+    C1 -.-&gt;|"more helpful ads, less clutter"| SH
+    C1 -.-&gt;|"higher eCPM without more ad load"| WM</pre></figure>
+<p class="howto">How to read it</p>
+<ul><li><strong>Shopper box.</strong> The shopper wants relevant results and a fast page. You measure the damage of bad ads through <em>organic</em> signals: search conversion rate, GMV per search, query reformulation (the shopper rewrites the query because results were bad), bounce.</li><li><strong>Advertiser box.</strong> Advertisers want sales and share of shelf. Sophisticated ones demand <strong>iROAS</strong> (incremental), not just attributed ROAS. Share of voice is how often their ads show for their category queries.</li><li><strong>Walmart box.</strong> Walmart wants ad revenue <em>and</em> retail GMV <em>and</em> long-term shopper value. Ad revenue that cuts GMV per search is a bad trade, because organic conversion is the asset being monetized.</li><li><strong>Double-headed edges</strong> are the tensions. Shopper vs. Walmart: ad load. Advertiser vs. Walmart: price and proof. Shopper vs. advertiser: attention. Advertisers want it, and shoppers give it only when the ad is relevant.</li><li><strong>Levers box.</strong> These are the knobs: ad load (how many slots), relevance floor (minimum relevance to show), reserve price, which slot positions are ads, frequency caps, and the creative quality bar.</li><li><strong>Ranking objective.</strong> The knobs come together in one blended score: eCPM plus weighted relevance plus weighted shopper utility. The alpha and beta weights are set by long-term experiments, not by a single A/B test on revenue.</li><li><strong>Creative quality (dotted arrows) is the rare lever that helps all three.</strong> A better creative raises CTR at the same relevance. The advertiser gets more clicks, the shopper sees a more helpful ad, and Walmart earns higher eCPM without adding ad slots. This is the business case for the role.</li></ul>
+<aside class="say"><span class="say-label">Say it in the interview</span><p>"Most ads levers move value between shopper, advertiser, and Walmart. Creative quality is one of the few that grows the pie for all three. A better creative gets more engagement at the same ad load and the same relevance, so I'd pitch creative intelligence as a GMV-safe revenue lever."</p></aside>
+</section>
+<section class="dg" id="diagram-3-ad-product-landscape-and-billing-models">
+<h3><span class="num">3</span><span>Ad product landscape and billing models</span></h3>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+    WC["Walmart Connect"]
+
+    subgraph ON["On-site: owned inventory"]
+        O1["Sponsored Products: search, browse, item page, CPC"]
+        O2["Sponsored Brands: banner with logo and products, CPC"]
+        O3["Sponsored Videos: video in search, CPC"]
+        O4["On-site display: homepage, category, item page, CPM"]
+    end
+
+    subgraph OFF["Off-site: bought or partner inventory"]
+        F1["Walmart DSP display and video, CPM"]
+        F2["CTV via Vizio, CPM"]
+        F3["Social and partner extensions, CPM"]
+    end
+
+    subgraph STORE["In-store"]
+        T1["Store screens and media, CPM or flight-based"]
+    end
+
+    subgraph CONV["Conversational"]
+        V1["Sponsored placements in Sparky, format evolving"]
+    end
+
+    subgraph TOOLS["Advertiser tools"]
+        L1["Ad Center self-serve"]
+        L2["Marty advertiser agent"]
+        L3["Automated Creative Generator"]
+        L4["Measurement: attribution, Search incrementality, MRC-accredited metrics"]
+    end
+
+    WC --&gt; ON
+    WC --&gt; OFF
+    WC --&gt; STORE
+    WC --&gt; CONV
+    WC --&gt; TOOLS
+    L3 -.-&gt;|"creatives for"| O2
+    L3 -.-&gt;|"creatives for"| O3
+    L3 -.-&gt;|"creatives for"| F1
+    L3 -.-&gt;|"creatives for"| F2
+    L2 -.-&gt;|"sets up and optimizes"| ON
+    L4 -.-&gt;|"proves value of"| OFF</pre></figure>
+<p class="howto">How to read it</p>
+<ul><li><strong>On-site (owned).</strong> These are the highest-margin, highest-intent placements. <em>Sponsored Products</em> is a product tile that looks like an organic result. Its creative is mostly the catalog image and title, so creative quality here means <strong>catalog image quality</strong>. <em>Sponsored Brands</em> is a banner with logo, headline, and several products. It is the first product where generated creative clearly matters. <em>Sponsored Videos</em> are video units in search. On-site display is CPM banners.</li><li><strong>Billing.</strong> Sponsored Products, Brands, and Videos are typically CPC on Walmart Connect. Display and video elsewhere are CPM. Verify exact current pricing models before you quote them.</li><li><strong>Off-site.</strong> Walmart DSP buys open-web inventory through The Trade Desk's technology, using Walmart's first-party audiences. These are first-price auctions, so bid shading matters. CTV through Vizio adds owned TV inventory plus TV viewing data. Social and partner extensions push Walmart audiences onto other platforms.</li><li><strong>In-store.</strong> Screens and other media across thousands of stores. Measurement relies on store-level or geo experiments because there is no click.</li><li><strong>Conversational.</strong> Ads inside the Sparky assistant are an emerging format. The creative is closer to a sponsored <em>answer</em> or product card than to a banner. Watch for this in the interview: it is a frontier creative problem.</li><li><strong>Tools.</strong> Ad Center is the self-serve UI and API. Marty is the agent that helps advertisers build and optimize campaigns. The Automated Creative Generator produces creative. Measurement covers attribution, Search incrementality reporting (2025), and MRC accreditation for Sponsored Search clicks and impressions (2025).</li><li><strong>Dotted arrows from the Creative Generator</strong> show that one creative system feeds many products. That is the argument for a <em>shared</em> creative platform instead of one per product.</li></ul>
+<aside class="say"><span class="say-label">Say it in the interview</span><p>"Creative matters differently by product. In Sponsored Products the creative is basically the catalog image, so image quality is the lever. In Sponsored Brands, video, DSP, and CTV the creative is a designed asset, so generation and adaptation are the levers. One creative platform should serve all of them, with adapters per placement."</p></aside>
+</section>
+<section class="dg" id="diagram-4-the-full-funnel-with-metrics-at-each-stage">
+<h3><span class="num">4</span><span>The full funnel, with metrics at each stage</span></h3>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+    subgraph AW["Awareness"]
+        W1["CTV via Vizio, off-site video, display"]
+        W2["Metrics: reach, frequency, video completion rate, brand lift, CPM"]
+    end
+
+    subgraph CO["Consideration"]
+        C1["Sponsored Brands, Sponsored Videos, on-site display"]
+        C2["Metrics: CTR, brand page visits, add-to-cart rate, new-to-brand views"]
+    end
+
+    subgraph CV["Conversion"]
+        V1["Sponsored Products in search and item pages"]
+        V2["Metrics: CTR, CVR, CPC, ROAS, iROAS"]
+    end
+
+    subgraph LO["Loyalty"]
+        L1["Retargeting, reorder prompts, Walmart+ placements"]
+        L2["Metrics: repeat rate, subscription, lifetime value, new-to-brand retention"]
+    end
+
+    K1["Shared purchase ledger: every stage measured against the same transactions"]
+    G1["Creative role by stage: emotional story, brand plus product, product clarity, reminder"]
+
+    W1 --- W2
+    C1 --- C2
+    V1 --- V2
+    L1 --- L2
+    AW ==&gt; CO
+    CO ==&gt; CV
+    CV ==&gt; LO
+    LO -.-&gt;|"lookalike audiences"| AW
+    AW -.-&gt; K1
+    CO -.-&gt; K1
+    CV -.-&gt; K1
+    LO -.-&gt; K1
+    G1 -.-&gt; AW
+    G1 -.-&gt; CV</pre></figure>
+<p class="howto">How to read it</p>
+<ul><li><strong>Left to right is the shopper's journey.</strong> Thick arrows show the shopper moving from first exposure to repeat purchase.</li><li><strong>Awareness.</strong> CTV and video reach shoppers before they have intent. You buy reach and frequency at CPM and measure brand lift. With closed-loop data you can also measure purchase lift, which is Walmart's differentiator against TV.</li><li><strong>Consideration.</strong> Sponsored Brands and Videos show a brand story next to products in search. Metrics are CTR, add-to-cart, and new-to-brand engagement.</li><li><strong>Conversion.</strong> Sponsored Products catches high-intent queries. This is CPC, ROAS-driven, and the highest volume.</li><li><strong>Loyalty.</strong> Retargeting and reorder prompts. Metrics are repeat purchase and lifetime value.</li><li><strong>Dotted arrow from loyalty back to awareness.</strong> Loyal buyers seed lookalike audiences for the next awareness campaign.</li><li><strong>Shared purchase ledger.</strong> Every stage is measured against the same transactions. That lets Walmart do full-funnel attribution. Most media companies can only measure one stage.</li><li><strong>Creative role changes by stage.</strong> Awareness creative is emotional and lifestyle. Conversion creative needs product clarity: a clean image, price, key attribute. A good creative model conditions on funnel stage and placement.</li></ul>
+<aside class="say"><span class="say-label">Say it in the interview</span><p>"The same product needs different creative at each funnel stage: lifestyle and story for CTV, brand plus product grid for Sponsored Brands, and maximum product clarity for Sponsored Products. So 'placement and objective' should be first-class inputs to the generator, not an afterthought."</p></aside>
+</section>
+<section class="dg" id="diagram-5-advertiser-campaign-lifecycle">
+<h3><span class="num">5</span><span>Advertiser campaign lifecycle</span></h3>
+<figure class="diagram"><pre class="mermaid">stateDiagram-v2
+    [*] --&gt; Draft
+    state "Creative build" as CreativeBuild
+    state "Policy and quality review" as InReview
+    state "Needs changes" as Rejected
+    state "Scheduled" as Scheduled
+    state "Live" as Live
+    state "Optimizing" as Optimizing
+    state "Paused" as Paused
+    state "Ended" as Ended
+    state "Reporting" as Reporting
+
+    Draft --&gt; CreativeBuild : objective, budget, targeting, SKUs set
+    CreativeBuild --&gt; InReview : creatives submitted
+    InReview --&gt; Rejected : policy or quality fail
+    Rejected --&gt; CreativeBuild : edit or regenerate
+    InReview --&gt; Scheduled : approved, start date in future
+    InReview --&gt; Live : approved, start now
+    Scheduled --&gt; Live : flight start
+    Live --&gt; Optimizing : enough data for autobidding and creative tests
+    Optimizing --&gt; Live : new creative variants added
+    Live --&gt; Paused : advertiser pause or budget exhausted or out of stock
+    Optimizing --&gt; Paused : advertiser pause or budget exhausted or out of stock
+    Paused --&gt; Live : resume or budget refresh or back in stock
+    Live --&gt; Ended : flight end
+    Optimizing --&gt; Ended : flight end
+    Paused --&gt; Ended : flight end
+    Ended --&gt; Reporting : final attribution window closes
+    Reporting --&gt; Draft : clone and relaunch with learnings
+    Reporting --&gt; [*]</pre></figure>
+<p class="howto">How to read it</p>
+<ul><li><strong>Draft.</strong> The advertiser (or Marty, for them) sets objective, budget, targeting or keywords, and which SKUs to promote.</li><li><strong>Creative build.</strong> For Sponsored Products the "creative" is mostly the catalog listing. For Sponsored Brands, video, and display, assets are uploaded or generated (Automated Creative Generator).</li><li><strong>Review.</strong> Policy (prohibited content, claims, trademark) plus quality (specs, legibility). Today this is often human-heavy. <strong>Automated evaluation (Diagram 15) shrinks this state's latency.</strong> Faster review means campaigns go live sooner, so revenue starts sooner.</li><li><strong>Needs changes.</strong> A rejection loops back to creative build. With generative tools the loop can be "regenerate with the critique", not "go back to your agency for a week".</li><li><strong>Live and Optimizing.</strong> These are separate because optimization needs data. Autobidding needs conversions, and creative tests need impressions. Adding new variants sends the campaign back to a learning phase.</li><li><strong>Paused.</strong> Retail-specific reasons include <em>out of stock</em> (never advertise what you can't sell) and budget exhaustion, as well as a manual pause.</li><li><strong>Reporting comes after Ended.</strong> Final numbers wait for the attribution window (for example 14 days post-click) to close.</li><li><strong>Reporting back to Draft.</strong> Clone and relaunch with what was learned. This is where creative insights ("lifestyle images beat white-background images in your category") create value.</li></ul>
+<aside class="say"><span class="say-label">Say it in the interview</span><p>"The two places creative intelligence changes this lifecycle are review and optimization. Automated, calibrated evaluation cuts time-to-live. Creative insights at reporting time make the next campaign better. Both are measurable: review latency and the next campaign's ROAS."</p></aside>
+</section>
+<h2 class="part" id="part-b-ads-serving-ml">Part B — Ads Serving ML</h2>
+<section class="dg" id="diagram-6-a-search-ad-request-end-to-end">
+<h3><span class="num">6</span><span>A search ad request, end to end</span></h3>
+<figure class="diagram"><pre class="mermaid">sequenceDiagram
+    autonumber
+    actor Shopper
+    participant FE as Search front end
+    participant ORG as Organic search
+    participant AS as Ad server
+    participant QU as Query understanding
+    participant RET as Ad retrieval
+    participant FS as Feature store
+    participant RNK as Ranker
+    participant AUC as Auction and pricing
+    participant BUD as Budget service
+    participant BL as Page blender
+    participant LOG as Event log
+
+    Shopper-&gt;&gt;FE: query paper towels, store, session
+    par Organic and ads in parallel
+        FE-&gt;&gt;ORG: organic search request
+        ORG--&gt;&gt;FE: organic results ranked
+    and
+        FE-&gt;&gt;AS: ad request with query, user, context, slots
+        AS-&gt;&gt;QU: normalize, classify category, embed query
+        QU--&gt;&gt;AS: intent, category, query embedding
+        AS-&gt;&gt;RET: lexical plus semantic plus behavioral retrieval
+        RET-&gt;&gt;BUD: filter campaigns with budget left
+        BUD--&gt;&gt;RET: eligible campaign ids
+        RET--&gt;&gt;AS: about 1K to 5K candidates
+        AS-&gt;&gt;FS: batch fetch user, ad, creative features
+        FS--&gt;&gt;AS: feature vectors
+        AS-&gt;&gt;RNK: score candidates
+        RNK--&gt;&gt;AS: pCTR, pCVR, relevance per candidate
+        AS-&gt;&gt;AUC: run auction with bids, scores, reserves
+        AUC--&gt;&gt;AS: winners, slots, prices
+    end
+    AS--&gt;&gt;FE: winning ads plus creative asset URLs
+    FE-&gt;&gt;BL: merge ads into organic slots
+    BL--&gt;&gt;FE: final page layout
+    FE--&gt;&gt;Shopper: rendered results page
+    Shopper-&gt;&gt;LOG: impression beacon when ad is in view
+    Shopper-&gt;&gt;LOG: click beacon
+    LOG--&gt;&gt;BUD: spend update on click
+    Note over AS,LOG: Serve-time features and auction outcome logged for training
+    Note over Shopper,LOG: Orders joined later by impression id for conversion labels</pre></figure>
+<p class="howto">How to read it</p>
+<ul><li><strong>Steps 1 to 3.</strong> The shopper's query hits the search front end, which calls organic search and the ad server <strong>in parallel</strong> (the <code>par</code> block). Ads must fit inside organic's latency, so ads typically gets about 30 to 50 ms.</li><li><strong>Query understanding.</strong> Spell correction, category classification, intent, and a query embedding (cached for head queries).</li><li><strong>Retrieval.</strong> Pulls candidates from three sources: lexical (advertiser keywords, title match), semantic (two-tower ANN), and behavioral (co-view and co-buy). Then it filters by the <strong>budget service</strong> (campaigns with money left), stock at the shopper's store, and targeting rules.</li><li><strong>Feature fetch.</strong> One batched read for user, ad, and <em>creative</em> features. This is often the real latency bottleneck, not the model.</li><li><strong>Ranker.</strong> Scores each candidate with a multi-task model: pCTR, pCVR, relevance (Diagram 8).</li><li><strong>Auction.</strong> Combines bids and scores into eCPM, applies reserve and relevance floor, assigns slots, computes prices (Diagram 9).</li><li><strong>Ad server returns winners plus creative asset URLs.</strong> The creative itself is served from a CDN. The ad server only chooses <em>which</em> creative.</li><li><strong>Page blender.</strong> Merges ads into organic results at allowed positions. This is where ad load is enforced.</li><li><strong>Beacons.</strong> An impression is counted when the ad is <em>viewable</em>, not just served. That is part of what MRC accreditation audits. A click is a separate event, and the click updates spend in the budget service.</li><li><strong>Notes at the bottom.</strong> Features are logged <em>at serve time</em> so training uses exactly what serving saw (no skew). Orders arrive hours or days later and are joined by impression ID to create conversion labels.</li></ul>
+<aside class="say"><span class="say-label">Say it in the interview</span><p>"Ads runs in parallel with organic and gets maybe 30 to 50 milliseconds. Retrieval, feature fetch, multi-task ranking, auction, then blend. The ad server picks which creative to show but the pixels come from a CDN, so creative selection is a ranking problem and creative generation is offline. That separation is what lets us use expensive generative models without touching serving latency."</p></aside>
+</section>
+<section class="dg" id="diagram-7-multi-stage-funnel-with-candidate-counts-and-laten">
+<h3><span class="num">7</span><span>Multi-stage funnel with candidate counts and latency budgets</span></h3>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+    R0["Ad request: query, user, store, page, slots"]
+    C0["Ad corpus: millions of active ad-item and creative pairs"]
+    S1["Stage 1 Retrieval: lexical, two-tower ANN, behavioral"]
+    F1["Eligibility filters: budget, stock at store, targeting, policy"]
+    S2["Stage 2 Pre-ranking: light two-tower or small MLP"]
+    S3["Stage 3 Ranking: heavy multi-task model"]
+    S4["Stage 4 Auction and re-rank: eCPM, floors, diversity, pricing"]
+    S5["Rendered ads: a handful of slots"]
+    L0["Total ads budget: about 30 to 50 ms inside a 100 ms page"]
+
+    R0 ==&gt; S1
+    C0 --&gt; S1
+    S1 ==&gt;|"about 1K to 5K candidates, 10 ms"| F1
+    F1 ==&gt;|"about 1K to 3K eligible"| S2
+    S2 ==&gt;|"about 200 to 500, 5 ms"| S3
+    S3 ==&gt;|"about 20 to 50 scored, 10 to 15 ms"| S4
+    S4 ==&gt;|"about 2 to 8 winners, 2 to 5 ms"| S5
+    L0 -.-&gt; S3
+    S3 -.-&gt;|"rank distillation: pre-ranker learns from ranker"| S2
+    S5 -.-&gt;|"recall at K of final winners measured per stage"| S1</pre></figure>
+<p class="howto">How to read it</p>
+<ul><li><strong>Ad corpus.</strong> Millions of eligible (item, campaign, creative) combinations. You cannot score them all with a heavy model at 100K+ QPS.</li><li><strong>Retrieval (~10 ms).</strong> Cheap, recall-oriented. Three retrievers union their results down to about 1K to 5K.</li><li><strong>Eligibility filters.</strong> Hard rules: budget left, <em>in stock at the shopper's store</em>, targeting, policy. Retail-specific: an ad for an out-of-stock item is wasted money and a bad experience.</li><li><strong>Pre-ranking (~5 ms).</strong> A small model trims to a few hundred. It is trained to imitate the ranker (the dotted <em>rank distillation</em> arrow) so it doesn't throw away what the ranker would love.</li><li><strong>Ranking (~10 to 15 ms).</strong> The heavy multi-task model on a few hundred candidates. Creative features enter here.</li><li><strong>Auction and re-rank (~2 to 5 ms).</strong> Economic logic plus page-level constraints: diversity, no two ads for the same item, ad load.</li><li><strong>Rendered slots.</strong> A handful of ads appear.</li><li><strong>Dotted arrow from output back to retrieval.</strong> Measure, for the final winners, whether each earlier stage would have kept them (recall at K). That shows which stage is losing good ads.</li><li><strong>Budget note.</strong> The latency numbers are illustrative. Say "order of magnitude" in the interview.</li></ul>
+<aside class="say"><span class="say-label">Say it in the interview</span><p>"It's a funnel of models with decreasing recall and increasing precision: millions to thousands to hundreds to tens to a handful, inside about 40 milliseconds. Generated creatives multiply the candidate count, because each item now has several creatives. So I'd do creative selection as a late, cheap stage after item ranking, not as more retrieval candidates."</p></aside>
+</section>
+<section class="dg" id="diagram-8-ranking-model-architecture">
+<h3><span class="num">8</span><span>Ranking model architecture</span></h3>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+    subgraph IN["Inputs"]
+        I1["Sparse IDs: user, item, brand, category, campaign, query tokens"]
+        I2["User behavior sequence: last N views, carts, purchases"]
+        I3["Dense features: price, rating, historical CTR, stock, time"]
+        I4["Content embeddings: title text, product image, creative image"]
+        I5["Context: page type, slot, device, store"]
+        I6["Position and slot features: training only"]
+    end
+
+    E1["Sharded embedding tables"]
+    T1["Target attention over sequence keyed on candidate"]
+    N1["Normalize and bucketize"]
+    P1["Precomputed multimodal embeddings, CLIP or SigLIP style"]
+    X1["Feature interaction: DCN-v2 cross layers plus MLP"]
+    M1["Shared experts: MMoE or PLE"]
+
+    subgraph HEADS["Task heads with per-task gates"]
+        H1["pCTR"]
+        H2["pCVR, ESMM-style on all impressions"]
+        H3["pAdd-to-cart"]
+        H4["Relevance grade"]
+    end
+
+    B1["Shallow position-bias tower"]
+    K1["Calibration layer per segment"]
+    U1["Outputs to auction: calibrated pCTR, pCVR, relevance"]
+
+    I1 --&gt; E1
+    I2 --&gt; T1
+    I3 --&gt; N1
+    I4 --&gt; P1
+    I5 --&gt; E1
+    E1 --&gt; X1
+    T1 --&gt; X1
+    N1 --&gt; X1
+    P1 --&gt; X1
+    X1 --&gt; M1
+    M1 --&gt; H1
+    M1 --&gt; H2
+    M1 --&gt; H3
+    M1 --&gt; H4
+    I6 --&gt; B1
+    B1 -.-&gt;|"added to pCTR logit in training, dropped at serving"| H1
+    H1 --&gt; K1
+    H2 --&gt; K1
+    H4 --&gt; U1
+    K1 --&gt; U1</pre></figure>
+<p class="howto">How to read it</p>
+<ul><li><strong>Sparse IDs</strong> go through large sharded embedding tables. These can reach hundreds of GB, which is why memory is often the serving bottleneck.</li><li><strong>Behavior sequence</strong> goes through <em>target attention</em>: the candidate item is the query, so "which past events matter for <em>this</em> candidate" (DIN, DIEN, or transformer style).</li><li><strong>Dense features</strong> are normalized or bucketized. Historical CTR features are powerful but give cold-start items nothing, which is why content features matter.</li><li><strong>Content embeddings, including the creative image.</strong> This is the creative intelligence hook. Precomputed multimodal embeddings of product image, title, and <em>creative</em> let the ranker generalize to new creatives with zero history. Structured creative attributes (Diagram 16) also enter as features.</li><li><strong>Feature interaction.</strong> DCN-v2 cross layers learn explicit feature crosses, plus an MLP.</li><li><strong>Shared experts plus gates (MMoE or PLE).</strong> The tasks share representations. The gates let them diverge where they conflict.</li><li><strong>Heads.</strong> pCTR, pCVR (ESMM-style, trained over all impressions to avoid sample selection bias), add-to-cart, relevance.</li><li><strong>Position-bias tower.</strong> Learns "slot 1 gets clicked more regardless of quality". It is used only in training so the main model learns position-free quality, and dropped at serving.</li><li><strong>Calibration layer.</strong> The auction multiplies probabilities by bids, so probabilities must be <em>calibrated</em>, not just well-ranked. Calibration is done per segment (category, placement, new vs. old ads).</li></ul>
+<aside class="say"><span class="say-label">Say it in the interview</span><p>"Creative enters the ranker as content embeddings plus structured attributes. That gives a new generated creative a sensible pCTR before it has any impressions, which is the cold-start problem generative creative creates. It also means the creative performance model and the ranker can share an image encoder."</p></aside>
+</section>
+<section class="dg" id="diagram-9-auction-and-pricing">
+<h3><span class="num">9</span><span>Auction and pricing</span></h3>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+    C1["Scored candidates: bid, calibrated pCTR, relevance"]
+    F1{"Relevance at or above floor?"}
+    D1["Drop: protects shopper"]
+    E1["Compute eCPM = bid x pCTR x 1000, optionally plus quality term"]
+    F2{"eCPM at or above reserve?"}
+    D2["Drop: protects price level"]
+    S1["Sort by eCPM, apply diversity and dedupe"]
+    A1["Allocate up to ad-load cap slots"]
+    P1["GSP price per click: next eCPM divided by own pCTR, plus 1 cent"]
+    P2["Clamp: at least reserve, at most own bid"]
+    O1["Charge only on click: CPC"]
+    O2["Off-site DSP: first-price with bid shading"]
+    L1["Log auction: all participants, prices, reserves"]
+
+    C1 --&gt; F1
+    F1 --&gt;|"no"| D1
+    F1 --&gt;|"yes"| E1
+    E1 --&gt; F2
+    F2 --&gt;|"no"| D2
+    F2 --&gt;|"yes"| S1
+    S1 --&gt; A1
+    A1 --&gt; P1
+    P1 --&gt; P2
+    P2 ==&gt; O1
+    A1 -.-&gt; L1
+    O2 -.-&gt;|"different auction type"| E1</pre></figure>
+<p class="howto">How to read it</p>
+<ul><li><strong>Candidates</strong> come in with a bid (from the advertiser or autobidder), calibrated pCTR, and relevance.</li><li><strong>Relevance floor first.</strong> No amount of money buys an irrelevant ad into the page. This is the shopper's protection, and it is a hard filter.</li><li><strong>eCPM</strong> = bid x pCTR x 1000. It turns a CPC bid into expected revenue per thousand impressions, so ads with different bids and CTRs can be compared. Some systems add a quality or relevance term (Diagram 2's alpha).</li><li><strong>Reserve price.</strong> A minimum eCPM. It protects price levels in thin auctions. It can be learned per query or category.</li><li><strong>Sort, dedupe, diversify, allocate.</strong> Up to the ad-load cap.</li><li><strong>GSP pricing.</strong> The winner in slot <em>i</em> pays the minimum bid needed to keep the slot: <code>price_i = eCPM_(i+1) / (pCTR_i x 1000) + 0.01</code>, clamped between reserve and own bid.</li><li><strong>Worked example.</strong> A: bid $1.00, pCTR 0.05, eCPM 50. B: bid $2.00, pCTR 0.02, eCPM 40. C: bid $0.80, pCTR 0.03, eCPM 24. A wins slot 1 <em>despite the lower bid</em> and pays 2.00 x 0.02 / 0.05 + 0.01 = <strong>$0.81</strong>. B pays 0.80 x 0.03 / 0.02 + 0.01 = <strong>$1.21</strong>.</li><li><strong>Creative tie-in.</strong> A better creative raises pCTR. In GSP that means the advertiser <em>wins higher slots and pays less per click</em>. That is the advertiser-facing pitch for creative quality.</li><li><strong>Off-site (dotted).</strong> DSP open-web auctions are mostly first-price, so the bidder shades bids down to the expected clearing price.</li><li><strong>Log every participant</strong>, not just winners. Counterfactual analysis and reserve-price learning need the losers.</li></ul>
+<aside class="say"><span class="say-label">Say it in the interview</span><p>"In a quality-weighted second-price auction, a better creative raises pCTR, so the advertiser wins a better slot and pays less per click. That's the cleanest advertiser-facing ROI story for creative intelligence: better creative is cheaper media."</p></aside>
+</section>
+<section class="dg" id="diagram-10-autobidding-and-pacing-control-loop">
+<h3><span class="num">10</span><span>Autobidding and pacing control loop</span></h3>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+    G1["Advertiser goal: max sales, budget B, optional target ROAS"]
+    V1["Value model: value = pCVR x expected order value"]
+    B1["Bid = value divided by lambda"]
+    A1["Auction"]
+    O1["Outcomes: wins, clicks, spend, conversions"]
+    S1["Spend tracker vs. target spend curve"]
+    C1["Controller: lambda next = lambda + eta x spend error, floored at 0"]
+    T1["Target curve shaped by expected traffic, not linear in time"]
+    R1["Probabilistic throttling: alternative pacing lever"]
+
+    G1 --&gt; B1
+    V1 --&gt; B1
+    B1 ==&gt; A1
+    A1 ==&gt; O1
+    O1 --&gt; S1
+    T1 --&gt; S1
+    S1 --&gt; C1
+    C1 -.-&gt;|"updated lambda every few minutes"| B1
+    O1 -.-&gt;|"delayed conversion labels"| V1
+    C1 -.-&gt; R1
+    R1 -.-&gt; A1</pre></figure>
+<p class="howto">How to read it</p>
+<ul><li><strong>Goal.</strong> The advertiser sets an objective and constraints, not per-keyword bids.</li><li><strong>Value model.</strong> Expected value of a click or impression: pCVR times order value. Calibration errors here become direct overspending or underspending.</li><li><strong>Bid = value / lambda.</strong> From the Lagrangian dual of "maximize value subject to budget". Lambda is the shadow price of budget. High lambda means budget is scarce, so bid lower.</li><li><strong>Auction and outcomes.</strong> Thick arrows: bids go into auctions and produce wins, clicks, spend, conversions.</li><li><strong>Spend tracker vs. target curve.</strong> The target is shaped by expected traffic (more spend at evening peaks), not a straight line through the day.</li><li><strong>Controller.</strong> Online dual gradient step or PID. Overspending raises lambda (bids fall). Underspending lowers it (bids rise).</li><li><strong>Dotted feedback.</strong> Lambda updates every few minutes. Conversions arrive late and retrain the value model.</li><li><strong>Throttling.</strong> An alternative lever: join each auction with probability p. It is simpler but less efficient than bid scaling.</li><li><strong>Creative interaction.</strong> When a creative test changes CTR, the controller sees a spend change and adjusts lambda. Creative experiments and autobidding interact, so budget-split designs are needed to measure creative lift cleanly.</li></ul>
+<aside class="say"><span class="say-label">Say it in the interview</span><p>"Autobidding is value prediction plus a one-dimensional controller on lambda. For creative work the key point is that creative experiments run <em>inside</em> this loop. If a variant raises CTR the pacer reacts, so I'd measure creative lift with budget-split or advertiser-level randomization, not naive impression splits."</p></aside>
+</section>
+<section class="dg" id="diagram-11-training-data-flow">
+<h3><span class="num">11</span><span>Training data flow</span></h3>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+    subgraph SERVE["Serving"]
+        S1["Ad server"]
+        S2["Serve-time feature logging"]
+    end
+
+    subgraph STREAM["Streaming"]
+        K1["Kafka: impressions, auctions"]
+        K2["Kafka: clicks"]
+        K3["Kafka: orders and store transactions"]
+        J1["Stream join by impression id, attribution window"]
+        J2["Delayed-label handling: wait window or delayed-feedback model"]
+    end
+
+    subgraph FEAT["Feature platform"]
+        F1["Offline feature store: point-in-time correct"]
+        F2["Online feature store: low-latency KV"]
+        F3["Batch feature pipelines on data lake"]
+    end
+
+    subgraph TRAIN["Training and release"]
+        T1["Training datasets"]
+        T2["Daily full retrain plus hourly incremental"]
+        T3["Offline validation: AUC, log loss, calibration by segment"]
+        T4["Model registry with lineage"]
+        T5["Shadow and canary"]
+        T6["Online A/B with guardrails"]
+    end
+
+    S1 --&gt; S2
+    S2 --&gt; K1
+    S1 --&gt; K1
+    K1 --&gt; J1
+    K2 --&gt; J1
+    K3 --&gt; J1
+    J1 --&gt; J2
+    J2 --&gt; T1
+    F3 --&gt; F1
+    F3 --&gt; F2
+    F1 --&gt; T1
+    T1 --&gt; T2
+    T2 --&gt; T3
+    T3 --&gt; T4
+    T4 --&gt; T5
+    T5 --&gt; T6
+    T6 ==&gt;|"promote"| S1
+    F2 --&gt; S1
+    S1 -.-&gt;|"new model changes what gets shown, which changes the next training data"| K1</pre></figure>
+<p class="howto">How to read it</p>
+<ul><li><strong>Serve-time feature logging.</strong> Log exactly the features the model saw. Recomputing them later creates training-serving skew, a classic silent bug.</li><li><strong>Three Kafka streams.</strong> Impressions with auctions, clicks, and orders (online plus store transactions where they can be linked).</li><li><strong>Stream join by impression ID within the attribution window.</strong> Clicks join in seconds. Orders can take up to the full attribution window, for example 14 days.</li><li><strong>Delayed labels.</strong> Either wait (stale but clean) or train now and correct for not-yet-arrived conversions (delayed-feedback models, Chapelle 2014). Retail has long conversion delays, so this matters.</li><li><strong>Feature platform.</strong> Batch pipelines fill both the <em>offline</em> store (point-in-time joins for training) and the <em>online</em> store (low-latency lookup at serving). Same definitions in both prevents skew.</li><li><strong>Training cadence.</strong> Daily full retrain plus frequent incremental updates, because ads are non-stationary (new items, promos, holidays).</li><li><strong>Validation.</strong> AUC and log loss, plus <strong>calibration by segment</strong>. A model can improve AUC and break calibration, and the auction would overcharge.</li><li><strong>Registry, shadow, canary, A/B.</strong> Lineage (data snapshot, code, config), then shadow scoring, then a small-traffic canary, then a full experiment with guardrails (GMV per search, latency, organic CTR).</li><li><strong>Dotted feedback loop.</strong> The model decides what gets shown, which decides what data exists. Without exploration traffic the model only learns about what it already likes. This matters double for generated creatives, which start with no data.</li><li><strong>Creative tie-in.</strong> The same pipeline carries <code>creative_id</code> and creative features, so the creative performance model (Diagram 18) trains on the same joined logs.</li></ul>
+<aside class="say"><span class="say-label">Say it in the interview</span><p>"Logs, a stream join with delayed labels, point-in-time features, train, validate calibration, registry, canary. The thing I'd add for creative is making creative ID and creative attributes first-class columns in these logs from day one. Otherwise you can't learn which creative attributes work, and you can't close the loop to the generator."</p></aside>
+</section>
+<section class="dg" id="diagram-12-measurement-attribution-and-incrementality">
+<h3><span class="num">12</span><span>Measurement: attribution and incrementality</span></h3>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+    subgraph EXP["Exposure data"]
+        E1["On-site impressions and clicks"]
+        E2["DSP off-site impressions"]
+        E3["CTV exposures via Vizio"]
+        E4["In-store screen plays by store and time"]
+    end
+
+    subgraph PUR["Purchase data"]
+        P1["Online orders"]
+        P2["In-store transactions linked to accounts"]
+    end
+
+    ID1["Identity resolution: account, device, household, privacy-safe matching"]
+
+    subgraph ATT["Attribution"]
+        A1["Rules: last-touch, windows, view-through vs click-through"]
+        A2["Multi-touch models"]
+    end
+
+    subgraph INC["Incrementality"]
+        N1["Randomized holdout: user-level test and control"]
+        N2["Ghost ads: log would-have-won in control"]
+        N3["Geo or store experiments for in-store and CTV"]
+        N4["Causal models when no experiment exists"]
+    end
+
+    R1["Reporting: ROAS, iROAS, new-to-brand, halo, Search incrementality"]
+    Q1["Accreditation and audits: MRC for Sponsored Search clicks and impressions"]
+    B1["Advertiser decisions: budgets, bids, creative choices"]
+
+    E1 --&gt; ID1
+    E2 --&gt; ID1
+    E3 --&gt; ID1
+    E4 --&gt; N3
+    P1 --&gt; ID1
+    P2 --&gt; ID1
+    ID1 --&gt; A1
+    ID1 --&gt; A2
+    ID1 --&gt; N1
+    N2 --&gt; N1
+    A1 --&gt; R1
+    A2 --&gt; R1
+    N1 --&gt; R1
+    N3 --&gt; R1
+    N4 --&gt; R1
+    Q1 -.-&gt;|"trust in the numbers"| R1
+    R1 ==&gt; B1
+    B1 -.-&gt;|"budget flows to what proves incremental"| EXP</pre></figure>
+<p class="howto">How to read it</p>
+<ul><li><strong>Exposure data</strong> comes from four very different sources. On-site is user-level and precise. DSP and CTV need cross-device matching. In-store screens only know store and time.</li><li><strong>Purchase data.</strong> Online orders are exact. In-store transactions can be linked when the shopper uses the app, account, or a linked payment method. Coverage is not 100%, so hedge.</li><li><strong>Identity resolution</strong> joins exposures to purchases at account or household level, with privacy controls (aggregation thresholds, clean-room-style access for advertisers). Specifics are not public.</li><li><strong>Attribution</strong> credits sales to ads by rules (last-touch in a 14-day window, view-through vs. click-through) or models. Attribution answers "which ads were near the sale", not "which ads <em>caused</em> the sale".</li><li><strong>Incrementality</strong> answers causation. Randomized holdouts withhold ads from a control group. <strong>Ghost ads</strong> log, in control, which ad <em>would</em> have won, so you compare like with like. Geo or store experiments cover in-store and CTV. Causal models fill gaps.</li><li><strong>Note in-store screens go straight to geo or store experiments.</strong> There is no user-level exposure.</li><li><strong>Reporting.</strong> ROAS, iROAS, new-to-brand, halo (lift on other products from the same brand). Walmart launched Search incrementality reporting in 2025.</li><li><strong>MRC accreditation (dotted)</strong> is third-party auditing of how clicks and impressions are counted. It makes the numbers trusted currency for big advertisers.</li><li><strong>Loop back to exposure.</strong> Advertisers move budget to whatever <em>proves</em> incremental. Measurement drives revenue.</li><li><strong>Creative tie-in.</strong> Creative A/B tests should report <em>incremental</em> lift, not CTR alone. A clickbait creative can raise CTR and lower iROAS.</li></ul>
+<aside class="say"><span class="say-label">Say it in the interview</span><p>"Attribution tells you which ads were near the sale. Incrementality, through holdouts, ghost ads, and geo tests, tells you which ads caused it. For creative, I'd make sure our success metric is incremental conversion per dollar, because optimizing generated creative on CTR alone will find clickbait."</p></aside>
+</section>
+<h2 class="part" id="part-c-creative-intelligence-the-role">Part C — Creative Intelligence (the role)</h2>
+<section class="dg" id="diagram-13-where-creative-sits-in-the-ads-system">
+<h3><span class="num">13</span><span>Where creative sits in the ads system</span></h3>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+    subgraph SRC["Sources"]
+        S1["Catalog: product images, titles, attributes"]
+        S2["Advertiser uploads and brand kit"]
+        S3["Generated creatives"]
+    end
+
+    CR["Creative asset store with lineage and attributes"]
+
+    subgraph USE["Consumers inside the ads system"]
+        U1["Ad review and policy"]
+        U2["Ranking: creative features and creative selection"]
+        U3["Placement rendering: templates, sizes, formats"]
+        U4["Targeting and contextual matching"]
+        U5["Measurement and creative insights"]
+    end
+
+    SH["Shopper sees and responds"]
+    PL["Performance logs: impressions, clicks, conversions by creative id"]
+    GEN["Generation and optimization"]
+
+    S1 --&gt; CR
+    S2 --&gt; CR
+    S3 --&gt; CR
+    CR --&gt; U1
+    U1 --&gt;|"approved only"| U2
+    CR --&gt; U3
+    CR --&gt; U4
+    U2 ==&gt; SH
+    U3 ==&gt; SH
+    U4 --&gt; U2
+    SH ==&gt; PL
+    PL --&gt; U5
+    PL -.-&gt;|"what works, by attribute and placement"| GEN
+    U5 -.-&gt;|"insights to advertisers"| S2
+    GEN -.-&gt; S3</pre></figure>
+<p class="howto">How to read it</p>
+<ul><li><strong>Three sources of creative.</strong> The catalog (for Sponsored Products the creative <em>is</em> the catalog listing), advertiser uploads with a brand kit, and generated creatives.</li><li><strong>Creative asset store.</strong> This is the single hub. Every asset carries lineage (who or what made it, which model version) and extracted attributes (Diagram 16).</li><li><strong>Ad review and policy</strong> consumes assets first. Only approved assets reach ranking.</li><li><strong>Ranking</strong> uses creative features (embeddings, attributes) to predict CTR and chooses <em>which creative</em> to show for an ad in this context.</li><li><strong>Placement rendering</strong> needs the right size and format: search tile, banner, CTV 16:9, vertical video.</li><li><strong>Targeting and contextual matching</strong> use creative attributes, for example matching a "back to school" creative to back-to-school queries.</li><li><strong>Measurement and insights</strong> report creative performance by attribute back to advertisers.</li><li><strong>Thick arrows</strong> are the shopper path: ranked, rendered creative reaches the shopper, and their response becomes performance logs keyed by creative ID.</li><li><strong>Dotted feedback</strong> is the learning loop. Performance by attribute and placement feeds generation (make more of what works). Insights go back to advertisers (upload more of what works).</li><li><strong>Key point.</strong> Creative is not a side feature. It touches review, ranking, rendering, targeting, and measurement. That's why the job description says creative <em>attributes</em> should be consumed by targeting, recs, and measurement.</li></ul>
+<aside class="say"><span class="say-label">Say it in the interview</span><p>"I think of the creative asset store as a hub with five consumers: review, ranking, rendering, targeting, and measurement. Performance flows back into generation. The org leverage is making creative a structured, versioned, queryable object that every one of those teams can use, not a JPEG URL."</p></aside>
+</section>
+<section class="dg" id="diagram-14-generative-creative-pipeline-data-flow">
+<h3><span class="num">14</span><span>Generative creative pipeline (data flow)</span></h3>
+<p>The centerpiece. Be able to draw a simplified version (see practice section).</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+    subgraph INPUTS["Advertiser inputs"]
+        I1["Product SKU or item id"]
+        I2["Brand kit: logos, fonts, colors, tone, do and dont rules"]
+        I3["Campaign goal and funnel stage"]
+        I4["Target placements and sizes"]
+        I5["Optional brief or reference images"]
+    end
+
+    C1["Catalog fetch: hero images, title, attributes, approved claims"]
+
+    subgraph VIS["Visual generation"]
+        V1["Product segmentation and matting: product pixels locked"]
+        V2["Scene and background generation: diffusion with inpainting, depth or edge control, style adapter"]
+        V3["Harmonization and relighting: shadows, color match, reflections"]
+    end
+
+    subgraph TXT["Copy generation"]
+        T1["Copy LLM grounded on catalog attributes and brand voice"]
+        T2["Claim checker: every claim traced to an attribute, banned-claim list"]
+    end
+
+    L1["Layout and composition engine: templates plus constraint solver, vector text rendering"]
+    A1["Per-placement adaptation: saliency crop, outpaint, re-layout per aspect ratio"]
+    E1["Automated evaluation gates"]
+    R1{"Router by calibrated score"}
+    H1["Human review queue"]
+    X1["Regenerate with critique"]
+    AP["Advertiser approval in Ad Center or via Marty"]
+    S1["Asset store: lineage, model versions, seeds, provenance metadata"]
+    D1["CDN"]
+    SV["Ad serving and creative selection"]
+    PF["Performance logs by creative id"]
+    LL["Learning loop: creative performance model and preference data"]
+
+    I1 --&gt; C1
+    C1 --&gt; V1
+    C1 --&gt; T1
+    I2 --&gt; V2
+    I2 --&gt; T1
+    I3 --&gt; V2
+    I3 --&gt; T1
+    I5 --&gt; V2
+    V1 --&gt; V2
+    V2 --&gt; V3
+    T1 --&gt; T2
+    V3 --&gt; L1
+    T2 --&gt; L1
+    I2 --&gt; L1
+    I4 --&gt; A1
+    L1 --&gt; A1
+    A1 ==&gt; E1
+    E1 ==&gt; R1
+    R1 --&gt;|"high confidence pass"| AP
+    R1 --&gt;|"uncertain"| H1
+    R1 --&gt;|"fail"| X1
+    X1 -.-&gt; V2
+    H1 --&gt; AP
+    AP ==&gt; S1
+    S1 --&gt; D1
+    D1 ==&gt; SV
+    SV --&gt; PF
+    PF -.-&gt; LL
+    LL -.-&gt;|"conditioning and fine-tuning"| V2
+    LL -.-&gt;|"copy preferences"| T1
+    H1 -.-&gt;|"labels"| E1</pre></figure>
+<p class="howto">How to read it</p>
+<ul><li><strong>Inputs.</strong> The SKU anchors everything to a real product. The brand kit sets visual and verbal identity, including hard rules ("never put the logo on a dark background"). Goal and funnel stage set the style (lifestyle vs. product clarity). Placements set the output sizes. A brief or reference is optional.</li><li><strong>Catalog fetch.</strong> Pulls the hero images, title, attributes, and <em>approved claims</em>. The catalog is the source of truth for both pixels and words. That is how you prevent hallucinated products and claims.</li><li><strong>Segmentation and matting: product pixels locked.</strong> The most important design choice. <strong>Never regenerate the product.</strong> Cut it out precisely (SAM-style segmentation plus alpha matting for edges, hair, glass) and composite it. A generated product that looks slightly different is a false advertisement and a brand-trust failure.</li><li><strong>Scene generation.</strong> Diffusion <em>inpaints around</em> the locked product mask. Control signals (depth, edges) keep perspective plausible. A style adapter applies brand look. Funnel stage picks lifestyle vs. clean studio.</li><li><strong>Harmonization and relighting.</strong> Composites look fake without matched lighting, contact shadows, and color temperature. This step is what makes a composite look photographed.</li><li><strong>Copy LLM, grounded.</strong> Headlines and CTAs are generated from catalog attributes and brand voice only. The <strong>claim checker</strong> traces every claim ("24 rolls", "plant-based") back to an attribute and blocks banned or regulated claims (health, "best", price claims that can go stale).</li><li><strong>Layout and composition engine.</strong> Templates plus a constraint solver: logo safe zone, text legibility, product prominence, brand colors. <strong>Text is rendered as vector type, not by the diffusion model.</strong> That removes misspellings and gives pixel-exact brand fonts.</li><li><strong>Per-placement adaptation.</strong> One master creative becomes many: 1:1 tile, 300x250, 728x90, 16:9 CTV with TV-safe area, 9:16 vertical. Saliency-aware crop where it fits, outpaint where you need more canvas, full re-layout where the aspect ratio change is extreme (a 728x90 leaderboard is not a crop of a square).</li><li><strong>Evaluation gates and router (Diagram 15).</strong> Each candidate gets a calibrated score. High-confidence passes go to the advertiser. Uncertain ones go to humans. Failures regenerate <em>with the critique</em> as feedback (dotted arrow back to scene generation).</li><li><strong>Human review labels (dotted arrow into evaluation).</strong> Every human decision is training and calibration data for the judge.</li><li><strong>Advertiser approval.</strong> The advertiser stays in control. In Ad Center, or conversationally through Marty.</li><li><strong>Asset store with lineage.</strong> Model versions, prompts, seeds, and provenance metadata (C2PA-style content credentials) for audit, reproducibility, and AI-disclosure needs.</li><li><strong>CDN, serving, performance logs.</strong> Serving picks among approved variants. Performance is logged by creative ID.</li><li><strong>Learning loop (dotted).</strong> The creative performance model and preference data feed back as conditioning ("lifestyle scenes work for this category") and fine-tuning for both the visual and copy generators (Diagram 18).</li></ul>
+<aside class="say"><span class="say-label">Say it in the interview</span><p>"The two design principles I'd defend are: the product's pixels are sacred, so we segment and composite instead of regenerating, and the words are grounded, so every claim traces to a catalog attribute and text is rendered as vector type. Everything after that is about scaling: per-placement adaptation, calibrated automated evaluation so humans only see the uncertain cases, and logging by creative ID so performance can teach the generator."</p></aside>
+</section>
+<section class="dg" id="diagram-15-automated-evaluation-the-model-as-judge-system">
+<h3><span class="num">15</span><span>Automated evaluation: the model-as-judge system</span></h3>
+<p>The second centerpiece. This is where your rigor shows.</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+    IN["Candidate creative plus metadata: SKU, brand kit, placement, intended copy"]
+
+    subgraph L0["Layer 0: deterministic checks, milliseconds, cheap"]
+        D1["Format spec: size, file weight, safe zones, aspect"]
+        D2["Text contrast: WCAG ratio, minimum font size"]
+        D3["OCR diff: rendered text equals approved copy"]
+        D4["Product fidelity: masked perceptual diff and embedding match to catalog image"]
+        D5["Logo integrity: placement, clear space, not distorted"]
+    end
+
+    subgraph L1["Layer 1: specialist detectors, tens of ms"]
+        S1["Artifact and distortion detector: warped geometry, extra limbs, melted text"]
+        S2["NSFW and policy classifiers"]
+        S3["Logo, trademark, and IP detector: competitor marks, celebrities"]
+        S4["Copy claim NLI against catalog attributes"]
+    end
+
+    subgraph L2["Layer 2: VLM judge with rubric, seconds, costly"]
+        J1["Rubric scores: brand fit, product prominence, composition, copy-image coherence, placement fit"]
+        J2["Pairwise mode with position swap for ranking variants"]
+        J3["Structured rationale for regeneration and for reviewers"]
+    end
+
+    CAL["Calibration layer: isotonic or Platt per category and placement, maps to P of human approve"]
+    RT{"Decision router with cost-asymmetric thresholds"}
+    OK["Auto-approve"]
+    HR["Human review queue: uncertain and active-learning picks"]
+    RJ["Reject and regenerate with critique"]
+    AUD["Random audit sample of auto-approved"]
+    LB["Label store: reviewer and advertiser decisions"]
+    GS["Golden sets and judge-human agreement benchmarks"]
+    DM["Drift monitors: approval rate, score shift, kappa by segment"]
+
+    IN ==&gt; L0
+    L0 --&gt;|"any hard fail"| RJ
+    L0 ==&gt;|"pass"| L1
+    L1 --&gt;|"policy hard fail"| RJ
+    L1 ==&gt;|"pass"| L2
+    L2 ==&gt; CAL
+    CAL ==&gt; RT
+    RT --&gt;|"P high and no flags"| OK
+    RT --&gt;|"P in middle band"| HR
+    RT --&gt;|"P low"| RJ
+    OK -.-&gt; AUD
+    AUD -.-&gt; HR
+    HR --&gt; LB
+    LB -.-&gt;|"recalibrate weekly"| CAL
+    LB -.-&gt;|"fine-tune judge"| L2
+    LB -.-&gt; GS
+    GS -.-&gt; DM
+    CAL -.-&gt; DM
+    DM -.-&gt;|"tighten thresholds on drift"| RT</pre></figure>
+<p class="howto">How to read it</p>
+<ul><li><strong>Cascade by cost.</strong> Cheap checks run first and kill obvious failures, so the expensive VLM judge only sees plausible candidates. Same funnel logic as ad serving (Diagram 7), applied to quality.</li><li><strong>Layer 0: deterministic.</strong> No model judgment needed. Spec compliance. WCAG contrast (for example 4.5:1 for body text). <strong>OCR diff</strong>: read the rendered creative and confirm the text matches the approved copy exactly. <strong>Product fidelity</strong>: compare the product region to the catalog image (perceptual diff plus embedding similarity). Since the product was composited, any drift means a pipeline bug. Logo integrity.</li><li><strong>Layer 1: specialist detectors.</strong> Narrow models that beat a general VLM on their one job. Artifacts and distortion (generated-image failure modes). NSFW and policy. Trademark, competitor logos, likeness. <strong>Claim NLI</strong>: does each sentence in the copy follow from the catalog attributes?</li><li><strong>Layer 2: VLM judge with a rubric.</strong> Scores what rules can't: brand fit, product prominence, composition, copy-image coherence, fit for the placement. <strong>Pairwise mode with position swap</strong> compares variants and controls for the judge's known position bias. <strong>Structured rationale</strong> gives the regenerator something to act on, and gives reviewers a head start.</li><li><strong>Calibration layer.</strong> The key Distinguished-level idea. Raw judge scores are not probabilities. Fit isotonic or Platt mappings from judge outputs to <em>P(human approves)</em>, per category and placement, on held-out human labels. Now a threshold means something: "auto-approve when P is above 0.97" has a measurable false-approval rate.</li><li><strong>Cost-asymmetric router.</strong> Approving a bad creative (brand damage, policy violation) costs far more than sending a good one to review. So the auto-approve threshold is high, the reject threshold is low, and the middle band goes to humans. Thresholds can differ by risk tier: a regulated category like alcohol or OTC health gets stricter rules or always-human review.</li><li><strong>Active learning.</strong> The human queue gets uncertain items <em>plus</em> the most informative ones for improving the judge. Reviewer time is spent where it teaches the most.</li><li><strong>Random audit of auto-approved (dotted).</strong> Without this you can't estimate the false-approval rate of the automated path. That makes it the most important monitoring sample.</li><li><strong>Label store feeds three things.</strong> Weekly recalibration, judge fine-tuning, and growing golden sets.</li><li><strong>Drift monitors.</strong> Approval rate, score distributions, and judge-human agreement (Cohen's kappa) by segment. A new generator version or a new category can shift the score distribution. On drift, tighten thresholds automatically, which sends more to humans, until the judge is recalibrated.</li><li><strong>Also connect to outcomes.</strong> Over time, check that judge scores predict <em>online</em> performance and advertiser acceptance, not just reviewer approval. That validates the rubric itself.</li></ul>
+<aside class="say"><span class="say-label">Say it in the interview</span><p>"I treat the judge as a measurement instrument that has to be calibrated against people. A cheap-to-expensive cascade, a VLM rubric judge, a calibration layer that turns scores into P(human approves) per segment, and a cost-asymmetric router. Then a random audit of auto-approvals so we always know our false-approval rate, and drift monitors that send more to humans when the judge goes out of calibration."</p></aside>
+</section>
+<section class="dg" id="diagram-16-creative-understanding-the-signal-platform">
+<h3><span class="num">16</span><span>Creative understanding: the signal platform</span></h3>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+    subgraph AS["Assets"]
+        A1["Images: catalog, uploaded, generated"]
+        A2["Video: sponsored video, CTV spots"]
+        A3["Copy: headlines, CTAs, descriptions"]
+    end
+
+    subgraph EX["Extractors, versioned"]
+        X1["OCR and text layout"]
+        X2["Object, logo, and person detection"]
+        X3["Embeddings: CLIP or SigLIP image and text"]
+        X4["VLM structured tagging to a fixed schema"]
+        X5["Image quality and aesthetic scores"]
+        X6["Video: shots, ASR, brand-in-first-seconds, pacing"]
+    end
+
+    SR["Schema registry: attribute definitions, versions, owners"]
+
+    subgraph ST["Signal store"]
+        T1["Offline tables: point-in-time, backfills"]
+        T2["Online KV: low-latency lookup by creative id"]
+        T3["Vector index for similarity search"]
+    end
+
+    Q1["Quality SLAs: coverage, freshness, accuracy on golden sets"]
+
+    subgraph CON["Consumers"]
+        C1["Targeting and contextual matching"]
+        C2["Ranking features and cold-start priors"]
+        C3["Recommendations and creative selection"]
+        C4["Measurement and advertiser insights"]
+        C5["Generation conditioning"]
+        C6["Policy and review"]
+    end
+
+    A1 --&gt; X1
+    A1 --&gt; X2
+    A1 --&gt; X3
+    A1 --&gt; X4
+    A1 --&gt; X5
+    A2 --&gt; X6
+    A2 --&gt; X3
+    A3 --&gt; X3
+    A3 --&gt; X4
+    SR -.-&gt;|"defines outputs"| X4
+    X1 --&gt; T1
+    X2 --&gt; T1
+    X3 --&gt; T3
+    X4 --&gt; T1
+    X5 --&gt; T1
+    X6 --&gt; T1
+    T1 --&gt; T2
+    Q1 -.-&gt; T1
+    T2 --&gt; C1
+    T2 --&gt; C2
+    T3 --&gt; C3
+    T1 --&gt; C4
+    T1 --&gt; C5
+    T2 --&gt; C6
+    C4 -.-&gt;|"new attribute requests"| SR</pre></figure>
+<p class="howto">How to read it</p>
+<ul><li><strong>Assets.</strong> Every creative regardless of origin: catalog, uploaded, generated, video, copy.</li><li><strong>Extractors.</strong> Each is a versioned model. OCR and text layout (text density, price present). Detection (product count, people present, logo position). Embeddings for similarity and as dense ranking features. <strong>VLM structured tagging to a fixed schema</strong>, for example <code>setting: studio | lifestyle-indoor | lifestyle-outdoor</code>, <code>message: price | benefit | promo | seasonal</code>, <code>people: none | hands | person</code>, <code>dominant_colors</code>, <code>text_density</code>. Quality and aesthetic scores. Video-specific signals: shot count, ASR transcript, whether the brand appears in the first seconds, pacing.</li><li><strong>Schema registry.</strong> The governance piece. Each attribute has a definition, allowed values, a version, and an owner. Without this, attributes drift silently and consumers break. Changing the tagger prompt is a <em>schema version bump</em>, with backfill.</li><li><strong>Signal store, three shapes.</strong> Offline tables with point-in-time correctness for training and analysis. Online KV for serving-time features. A vector index for "find similar creatives".</li><li><strong>Quality SLAs.</strong> Coverage (percentage of live creatives tagged), freshness (minutes from upload to tagged), and accuracy on golden sets. Consumers depend on these like any data contract.</li><li><strong>Consumers.</strong> Targeting (match creative themes to queries or audiences). Ranking (attributes and embeddings as features, which gives a cold-start pCTR prior for new creatives). Creative selection (pick the best variant for context). Measurement and insights ("lifestyle imagery lifts CTR in home goods" for advertisers). Generation conditioning (generate the attributes that work). Policy and review.</li><li><strong>Dotted loop from insights to registry.</strong> Analysts and advertisers ask for new attributes. They go through the registry, not ad hoc.</li><li><strong>Why this is platform work.</strong> One extraction investment, six consumers. This is the "structured creative attributes consumed by targeting, recs, and measurement" line in the job description.</li></ul>
+<aside class="say"><span class="say-label">Say it in the interview</span><p>"I'd build creative understanding as a data product with a schema registry, versioned extractors, an offline, online, and vector store, and coverage and freshness SLAs. The VLM tagger is just one versioned extractor. The value is that ranking, targeting, recs, measurement, and generation all read the same attributes, so 'lifestyle image' means the same thing everywhere."</p></aside>
+</section>
+<section class="dg" id="diagram-17-video-ad-generation-and-adaptation">
+<h3><span class="num">17</span><span>Video ad generation and adaptation</span></h3>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+    subgraph VIN["Inputs"]
+        I1["SKU and catalog images and attributes"]
+        I2["Existing brand footage, optional"]
+        I3["Brand kit, audio rules, legal supers"]
+        I4["Targets: 6s, 15s, 30s, placements"]
+    end
+
+    S1["Script LLM: hook, benefit, proof, call to action, grounded on catalog"]
+    S2["Storyboard: shot list with timing, shot type, on-screen text"]
+
+    subgraph SHOT["Per-shot asset creation"]
+        P1["Retrieve existing footage by embedding"]
+        P2["Image-to-video from locked product image"]
+        P3["Motion graphics templates: product spin, price card, end card"]
+    end
+
+    AU["Audio: licensed music library, TTS with licensed voices, loudness normalization"]
+    ED["Edit assembly: timeline, transitions, supers, logo end card"]
+    CP["Captions from script, verified by ASR"]
+
+    subgraph ADP["Per-format adaptation"]
+        F1["16:9 CTV with TV-safe areas"]
+        F2["9:16 vertical with reframing"]
+        F3["1:1 and search video unit"]
+        F4["6s cutdown: hook plus product plus brand"]
+    end
+
+    EV["Video evaluation: product fidelity on sampled frames, temporal consistency, brand in first seconds, caption accuracy, audio loudness spec"]
+    RV["Review and approval"]
+    TR["Transcode ladder and CDN, ad insertion for CTV"]
+    PERF["Performance: completion rate, CTR, purchase lift"]
+
+    I1 --&gt; S1
+    I3 --&gt; S1
+    I4 --&gt; S1
+    S1 --&gt; S2
+    S2 --&gt; P1
+    S2 --&gt; P2
+    S2 --&gt; P3
+    I2 --&gt; P1
+    I1 --&gt; P2
+    P1 --&gt; ED
+    P2 --&gt; ED
+    P3 --&gt; ED
+    AU --&gt; ED
+    S1 --&gt; CP
+    CP --&gt; ED
+    ED --&gt; F1
+    ED --&gt; F2
+    ED --&gt; F3
+    ED --&gt; F4
+    F1 ==&gt; EV
+    F2 ==&gt; EV
+    F3 ==&gt; EV
+    F4 ==&gt; EV
+    EV ==&gt; RV
+    RV ==&gt; TR
+    TR --&gt; PERF
+    PERF -.-&gt;|"which hooks and shot types work"| S1
+    EV -.-&gt;|"failed shots regenerate"| S2</pre></figure>
+<p class="howto">How to read it</p>
+<ul><li><strong>Inputs.</strong> Same SKU and brand anchors as images, plus audio rules (sonic logo, voice), legal supers ("see store for details"), and target durations and placements.</li><li><strong>Script LLM.</strong> A short ad has a known structure: hook, benefit, proof, call to action. It is grounded on catalog attributes like the copy in Diagram 14.</li><li><strong>Storyboard.</strong> Turns the script into a shot list with timing and shot types. This is the intermediate representation that makes video <em>controllable and editable</em>. Advertisers edit the storyboard, not pixels.</li><li><strong>Per-shot creation, three paths in order of preference.</strong> (1) Retrieve real brand footage if it exists, which is safest. (2) Image-to-video from the <em>locked</em> product image (subtle camera moves, not reinventing the product). (3) Motion-graphics templates (product spin, price card, end card), which are deterministic and on-brand.</li><li><strong>Audio.</strong> Licensed music and voices only (IP safety). Normalize loudness to the platform spec. TV has strict loudness standards. Check the exact spec for each placement.</li><li><strong>Edit assembly.</strong> A timeline with transitions, supers, and logo end card. Assembled programmatically.</li><li><strong>Captions.</strong> Generated from the script, then verified with ASR so they match the actual audio.</li><li><strong>Per-format adaptation.</strong> CTV 16:9 with TV-safe areas. Vertical 9:16 needs <em>reframing</em>: track the subject, re-place text. Square and the search video unit. A <strong>6-second cutdown</strong> is a re-edit, not a trim: hook, product, brand.</li><li><strong>Video evaluation.</strong> Product fidelity on sampled frames (video models can drift the product over time). Temporal consistency (flicker, morphing). Brand in the first seconds (completion drops fast). Caption accuracy. Audio spec.</li><li><strong>Transcode, CDN, ad insertion.</strong> A bitrate ladder per device. CTV typically uses server-side ad insertion.</li><li><strong>Feedback.</strong> Completion and purchase lift by hook type and shot type feed the script model. Failed shots regenerate at the storyboard level, not the whole video.</li></ul>
+<aside class="say"><span class="say-label">Say it in the interview</span><p>"For video I'd generate a storyboard as an editable intermediate, then fill each shot by preference: real footage first, image-to-video from the locked product image second, motion templates third. Adaptation to CTV, vertical, and 6-second cutdowns is a re-edit, not a crop. Evaluation has to sample frames for product drift, because video models drift over time."</p></aside>
+</section>
+<section class="dg" id="diagram-18-creative-optimization-loop">
+<h3><span class="num">18</span><span>Creative optimization loop</span></h3>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+    G1["Generate N variants per ad"]
+    E1["Eval gates: only safe, on-brand variants pass"]
+    B1["Serve with Thompson sampling per ad and placement"]
+    P1["Hierarchical priors from creative attributes: cold start"]
+    O1["Outcomes: impressions, clicks, conversions by variant"]
+    D1["Debias: position, placement, audience mix"]
+    M1["Creative performance model: predicts lift from creative features plus context"]
+    R1["Reward model: performance plus judge quality plus policy constraints"]
+    PR["Preference pairs: winner vs loser variants, same product and context"]
+    FT["Generator update: DPO or reward-weighted fine-tune, or prompt policy update"]
+
+    subgraph GUARD["Guards against reward hacking"]
+        K1["KL penalty to reference generator"]
+        K2["Hard eval gates never bypassed"]
+        K3["Held-out human eval each release"]
+        K4["Diversity floor across variants"]
+        K5["Optimize incremental conversion, not CTR alone"]
+    end
+
+    G1 ==&gt; E1
+    E1 ==&gt; B1
+    P1 -.-&gt; B1
+    B1 ==&gt; O1
+    O1 --&gt; D1
+    D1 --&gt; M1
+    M1 --&gt; R1
+    M1 -.-&gt;|"feature for ranking and selection"| B1
+    D1 --&gt; PR
+    R1 --&gt; FT
+    PR --&gt; FT
+    GUARD -.-&gt; FT
+    FT ==&gt;|"next generation round"| G1</pre></figure>
+<p class="howto">How to read it</p>
+<ul><li><strong>Generate N variants.</strong> For example 4 to 8 per ad, deliberately diverse in attributes (scene type, copy angle) so the loop learns something.</li><li><strong>Eval gates.</strong> Only variants that pass Diagram 15 can be explored. Exploration never relaxes safety.</li><li><strong>Thompson sampling per ad and placement.</strong> It balances showing the current best variant with learning about others. Each variant has a posterior over CTR or conversion rate. Sample, show the argmax.</li><li><strong>Hierarchical priors (cold start).</strong> Most ads have little traffic. Priors from the creative performance model, pooled across advertisers by attribute, let low-traffic ads benefit from what was learned elsewhere.</li><li><strong>Debias.</strong> Raw CTR differences are confounded by position, placement, and audience. Correct for these before learning, or the loop learns "variant B got slot 1 more".</li><li><strong>Creative performance model.</strong> Predicts lift from creative features plus context. It also feeds ranking and selection (dotted arrow).</li><li><strong>Reward model.</strong> Combines predicted performance, judge quality, and policy constraints into one scalar. This is what you optimize.</li><li><strong>Preference pairs.</strong> Winner vs. loser variants for the <em>same</em> product and context make clean pairwise data. That suits DPO-style training.</li><li><strong>Generator update.</strong> DPO or reward-weighted fine-tuning of the diffusion or LLM generator, or a cheaper first step: update the <em>prompt or conditioning policy</em> (which scene types to request) without touching weights.</li><li><strong>Guards against reward hacking.</strong> This is where you show seniority. KL to a reference model stops collapse onto weird high-reward outputs. Hard gates are never bypassed. Held-out human eval on every release. A diversity floor prevents mode collapse (every ad looking the same). <strong>Optimize incremental conversion, not CTR</strong>, because CTR-optimized creative drifts toward clickbait and misleading cues.</li><li><strong>Loop.</strong> The next generation round starts from the updated generator.</li></ul>
+<aside class="say"><span class="say-label">Say it in the interview</span><p>"Generate diverse variants, gate them, explore with Thompson sampling using attribute-level priors for cold start, debias, then turn winner-loser pairs into preference data for the generator. The first version of 'learning' should just update the prompt and conditioning policy. Fine-tune weights only once guards are in place: KL, hard gates, human holdouts, a diversity floor, and an incremental-conversion reward instead of CTR."</p></aside>
+</section>
+<section class="dg" id="diagram-19-shared-platform-layering">
+<h3><span class="num">19</span><span>Shared platform layering</span></h3>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+    subgraph APPS["Product applications"]
+        P1["Automated Creative Generator"]
+        P2["Marty advertiser agent"]
+        P3["Sponsored Brands builder"]
+        P4["DSP and CTV creative tools"]
+        P5["Catalog image enhancement"]
+        P6["Sparky ad formats"]
+    end
+
+    subgraph SVC["Shared creative services"]
+        S1["Generation gateway: model routing, quotas, caching, prompt templates"]
+        S2["Evaluation harness: offline benchmarks plus online judge service"]
+        S3["Creative signal store and schema registry"]
+        S4["Policy and brand-safety service"]
+        S5["Asset store with lineage and provenance"]
+        S6["Experimentation and bandit service"]
+        S7["Human review tooling and label store"]
+    end
+
+    subgraph INFRA["Infrastructure"]
+        F1["GPU pool: batch and online inference, training"]
+        F2["Model registry and deployment"]
+        F3["Feature store"]
+        F4["Data lake and streaming logs"]
+        F5["Observability: cost, latency, quality dashboards"]
+    end
+
+    P1 --&gt; S1
+    P1 --&gt; S2
+    P2 --&gt; S1
+    P2 --&gt; S6
+    P3 --&gt; S1
+    P3 --&gt; S4
+    P4 --&gt; S1
+    P4 --&gt; S5
+    P5 --&gt; S2
+    P6 --&gt; S4
+    S1 --&gt; F1
+    S1 --&gt; F2
+    S2 --&gt; F1
+    S2 --&gt; S7
+    S3 --&gt; F3
+    S3 --&gt; F4
+    S5 --&gt; F4
+    S6 --&gt; F4
+    S4 --&gt; F2
+    F5 -.-&gt; S1
+    F5 -.-&gt; S2</pre></figure>
+<p class="howto">How to read it</p>
+<ul><li><strong>Top: product applications.</strong> Customer-facing tools, each owned by a product team. The Automated Creative Generator, Marty (which calls generation and experimentation as tools), the Sponsored Brands builder, DSP and CTV creative tools, catalog image enhancement (improves Sponsored Products creative for free), and new Sparky formats.</li><li><strong>Middle: shared creative services.</strong> This is the platform the role should own or shape.</li><li><strong>Generation gateway.</strong> One entry point to all generative models. Routes requests to the right model and version, enforces quotas, caches, and owns prompt templates. Swapping a model is a config change, not six code changes.</li><li><strong>Evaluation harness.</strong> Offline benchmarks (golden sets, regression suites for every model release) <em>and</em> the online judge service from Diagram 15. Same rubric in both, so offline wins predict online.</li><li><strong>Signal store and schema registry</strong> (Diagram 16).</li><li><strong>Policy and brand-safety service.</strong> One policy implementation, versioned. Every product calls it.</li><li><strong>Asset store</strong> with lineage and provenance.</li><li><strong>Experimentation and bandit service</strong> for creative tests and Thompson sampling.</li><li><strong>Human review tooling and label store.</strong> Labels are a shared asset across products.</li><li><strong>Bottom: infrastructure.</strong> GPU pool (shared between batch generation, online judging, and training), model registry, feature store, data lake, observability. Track <em>cost per approved creative</em>, not just cost per generation.</li><li><strong>Arrows show dependencies.</strong> Apps call services, and services run on infra. No app should call a model directly. If it does, you lose eval, policy, lineage, and cost control.</li><li><strong>Why this matters in the interview.</strong> A Distinguished scientist is judged on leverage. Building the middle layer means every new product launch gets eval, policy, and measurement for free.</li></ul>
+<aside class="say"><span class="say-label">Say it in the interview</span><p>"My test for platform health is whether a new creative product can launch without writing its own eval, policy check, or asset lineage. If every app goes through the generation gateway and the eval harness, we get one quality bar, one cost dashboard, and one place to swap models."</p></aside>
+</section>
+<section class="dg" id="diagram-20-sequenced-roadmap">
+<h3><span class="num">20</span><span>Sequenced roadmap</span></h3>
+<p>Hedge in the interview: "Before committing to this I'd spend the first weeks learning what exists. This is the shape, not the plan."</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+    subgraph Q1["First 90 days: learn and measure"]
+        A1["Audit current creative pipeline, review flow, and costs"]
+        A2["Golden sets and human labeling protocol with agreement targets"]
+        A3["Judge v0 plus calibration on existing review decisions"]
+        A4["Offline vs online correlation study for creative metrics"]
+    end
+
+    subgraph Q2["Quarter 2: shared eval and signals"]
+        B1["Eval harness as shared service with regression gates"]
+        B2["Auto-approve for low-risk tier with audit sampling"]
+        B3["Creative signal schema v1 with two consumers: ranking and insights"]
+    end
+
+    subgraph Q3["Quarter 3: scale generation"]
+        C1["Per-placement adaptation automated across sizes"]
+        C2["Multi-variant serving with Thompson sampling"]
+        C3["Video v1: storyboard plus templates plus image-to-video"]
+    end
+
+    subgraph Q4["Quarter 4: close the loop"]
+        D1["Creative performance model in production"]
+        D2["Prompt and conditioning policy learned from outcomes"]
+        D3["Creative insights reported to advertisers"]
+    end
+
+    subgraph Y2["Year 2: frontier"]
+        E1["Preference-tuned generators with reward-hacking guards"]
+        E2["Conversational ad formats for Sparky"]
+        E3["Incrementality-optimized creative at scale"]
+    end
+
+    A1 --&gt; B1
+    A2 --&gt; A3
+    A3 --&gt; B2
+    A4 --&gt; B3
+    B1 --&gt; C1
+    B2 --&gt; C2
+    B3 --&gt; D1
+    C2 --&gt; D1
+    C1 --&gt; C3
+    D1 --&gt; D2
+    D2 --&gt; E1
+    D3 --&gt; E3
+    C3 --&gt; E2
+    B1 ==&gt;|"everything later depends on trusted eval"| E1</pre></figure>
+<p class="howto">How to read it</p>
+<ul><li><strong>First 90 days: learn and measure.</strong> Audit what exists before building. Golden sets and a labeling protocol with inter-rater agreement targets come first, because you can't calibrate a judge against noisy labels. Judge v0 calibrated on <em>existing</em> review decisions, which is free labeled data. Check whether offline creative metrics predict online results.</li><li><strong>Quarter 2: shared eval and signals.</strong> Make the eval harness a service with regression gates on every model release. Turn on auto-approve only for the lowest-risk tier, with audit sampling. That gives a visible win (review latency down) at controlled risk. Signal schema v1 with exactly two consumers to prove the contract.</li><li><strong>Quarter 3: scale generation.</strong> Automate per-placement adaptation (big production-cost savings). Multi-variant serving with bandits starts producing outcome data. Video v1 with a controllable storyboard approach.</li><li><strong>Quarter 4: close the loop.</strong> The creative performance model goes into production as a ranking feature and selection prior. Learn the prompt and conditioning policy from outcomes (cheap, reversible). Start creative insights for advertisers.</li><li><strong>Year 2: frontier.</strong> Preference-tuned generators, conversational ad formats, and optimization for incremental conversion at scale.</li><li><strong>Arrows are dependencies, not just order.</strong> Auto-approve depends on a calibrated judge. The performance model depends on both signals and bandit data. The thick arrow says the whole roadmap rests on trusted evaluation.</li><li><strong>Each quarter ships something measurable.</strong> Time-to-approve, cost per approved creative, creative-attributed CTR lift, then iROAS lift.</li></ul>
+<aside class="say"><span class="say-label">Say it in the interview</span><p>"I'd sequence it eval first, because every later step, from auto-approval to bandits to preference tuning, is only as good as our ability to measure quality and calibrate it to humans. Each quarter ships a measurable win: review latency, then production cost, then CTR lift, then incremental ROAS."</p></aside>
+</section>
+<h2 class="part" id="practice-draw-these-4-from-memory-2-minutes-each">Practice: draw these 4 from memory (2 minutes each)</h2>
+<p>Practice on paper or a whiteboard, out loud, with a timer. The minimal box lists below are what <em>must</em> appear. Everything else is detail you add if asked. Narrate in the numbered order.</p>
+<h4 id="1-money-flow-and-closed-loop-diagram-1">1. Money flow and closed loop (Diagram 1)</h4>
+<p><strong>Minimal boxes (8):</strong> Advertisers (1P, 3P, agencies) → Walmart Connect (self-serve, DSP) → Ad server and auction → Surfaces (on-site, off-site, CTV, store) → Shopper → Purchase → <strong>Closed-loop join</strong> → Reporting → back to Advertisers. <strong>Narration order:</strong> (1) who pays, CPC vs. CPM, (2) surfaces, (3) shopper buys, (4) the join is the moat, (5) better measurement pulls budget in. <strong>Likely follow-up:</strong> "Why is on-site more profitable than off-site?" Owned inventory with no media cost, and the highest intent.</p>
+<h4 id="2-serving-funnel-diagram-7-with-diagram-9-s-auction-at-the-e">2. Serving funnel (Diagram 7, with Diagram 9's auction at the end)</h4>
+<p><strong>Minimal boxes (6):</strong> Request → Retrieval (~thousands, 10 ms) → Filters (budget, stock) → Pre-rank (~hundreds, 5 ms) → Rank multi-task (~tens, 10 to 15 ms) → Auction (eCPM, floor, reserve, GSP) → a handful of slots. Total 30 to 50 ms. <strong>Narration order:</strong> (1) why multi-stage (cost), (2) counts and latencies, (3) where creative features enter (ranking) and where creative selection happens (late, cheap), (4) better creative means higher pCTR, a better slot, and a lower CPC. <strong>Likely follow-up:</strong> "How do generated variants change this?" They multiply candidates. Choose the item first, then the creative, using a creative performance model with attribute priors.</p>
+<h4 id="3-generative-creative-pipeline-diagram-14">3. Generative creative pipeline (Diagram 14)</h4>
+<p><strong>Minimal boxes (10):</strong> Inputs (SKU, brand kit, goal, placements) → Catalog fetch → <strong>Segment product, pixels locked</strong> → Scene gen (inpaint around mask) → Relight → <strong>Grounded copy LLM plus claim check</strong> → <strong>Layout engine, vector text</strong> → Per-placement adaptation → Eval and router → Approval → Asset store → Serving → <em>dotted</em> Performance back to generation. <strong>Narration order:</strong> (1) catalog as source of truth, (2) the two principles: product pixels sacred, words grounded, (3) adaptation is re-layout, not just crop, (4) eval router saves human time, (5) logging by creative ID closes the loop. <strong>Likely follow-up:</strong> "Why not just use one big text-to-image model?" Product fidelity, misspelled text, brand fonts, and claims can't be guaranteed. Composition plus control gives guarantees where they matter and generation where it's safe.</p>
+<h4 id="4-model-as-judge-evaluation-cascade-diagram-15">4. Model-as-judge evaluation cascade (Diagram 15)</h4>
+<p><strong>Minimal boxes (8):</strong> Candidate → L0 deterministic (OCR diff, product fidelity, contrast) → L1 specialists (policy, artifacts, IP) → L2 VLM rubric judge → <strong>Calibration to P(human approve)</strong> → <strong>Cost-asymmetric router</strong> (auto / human / regenerate) → Label store → <em>dotted</em> recalibrate plus audit sample plus drift monitors. <strong>Narration order:</strong> (1) cascade by cost, (2) why calibration: thresholds must mean a known false-approval rate, (3) asymmetric costs set thresholds per risk tier, (4) the audit sample of auto-approved is non-negotiable, (5) drift sends more to humans automatically. <strong>Likely follow-up:</strong> "How do you know the judge is good?" Judge-human agreement (kappa) vs. human-human agreement on golden sets, calibration curves per segment, the false-approval rate from the audit sample, and whether judge scores predict online performance and advertiser acceptance.</p>
+<p><strong>Bonus if time allows:</strong> Diagram 13 (creative as a hub with five consumers) is the best 30-second "why this role matters" sketch. Draw the asset store in the middle with review, ranking, rendering, targeting, and measurement around it, plus one dotted arrow back to generation.</p>
+    </div>
+    <footer class="read">Typical retail-media architecture, assembled from public information. Walmart's internal systems are not public, so in the interview frame these as "a typical RMN stack…". Source: chapter 19 of the prep pack in the repo.</footer>
+  </main>
+</div>

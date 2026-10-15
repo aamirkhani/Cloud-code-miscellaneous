@@ -17,6 +17,7 @@
 
 **⭐ Q1. How would you define "creative intelligence," and what would your first 90 days look like?**
 Creative intelligence is the loop *generate → evaluate → understand → deploy → learn from outcomes* applied to ad creative. It treats creative as structured, measurable data rather than an opaque file. Days 0–30: listen and audit. That means the Automated Creative Generator pipeline, how creative is evaluated and approved today, which signals reach ranking and measurement, and where advertisers reject or edit outputs. Days 30–60: stand up a versioned evaluation harness with a human-labeled gold set and a first calibrated judge, because nothing else can be improved safely without it. Days 60–90: publish a sequenced 12–18-month roadmap with leadership, with one measurable win already shipped (for example, an automated distortion/fidelity gate that cuts manual review load).
+
 *Your angle:* "On SpaceWarp and the video-quality metric work, the first thing I built was the measurement. I couldn't beat Google's solution until I could measure the difference frame by frame."
 
 **⭐ Q2. What's your 3-year technical vision for generative ad creative at Walmart?**
@@ -36,6 +37,7 @@ Sponsored Products is mostly catalog-driven (the PDP title and image), so the le
 
 **Q7. What makes retail media creative different from Meta or Google creative?**
 Four things. **SKU fidelity:** the ad shows a specific purchasable product, so hallucinating a feature or changing a color is a misrepresentation, not a style choice. **Catalog grounding:** there is a rich structured source of truth (attributes, images, reviews) to generate from and verify against. **Closed-loop measurement:** Walmart can observe purchases, online and reportedly in-store, so creative can be optimized for sales rather than clicks. **Retailer brand plus supplier brand:** creative has to respect both Walmart's guidelines and the CPG brand's, and suppliers are long-term partners, so trust matters more than squeezing out CTR.
+
 *Your angle:* Bixby Store Assistant. "I built AR product search in physical retail. The product had to be exactly the SKU on the shelf, which is the same fidelity constraint."
 
 **Q8. How do you serve small self-serve advertisers vs large brands differently?**
@@ -62,20 +64,25 @@ Creative becomes an API that an agent calls: "generate 6 variants for this SKU f
 
 **⭐ Q14. Design a system that generates lifestyle background scenes for a product packshot while keeping the product exactly as it is.**
 Pipeline: (1) segment the product with a strong matting model (SAM-class segmentation plus alpha matting for edges), (2) choose scene and placement from category and attributes (with an LLM planner or templates), (3) generate the background by **inpainting around a fixed product mask**, conditioned with depth or edge ControlNet for plausible support surfaces and scale, (4) **composite the original product pixels back** so the product is never re-synthesized, then harmonize lighting, color, and contact shadows, (5) gate with automated checks: product-region fidelity (SSIM/LPIPS against the source, OCR match on label text, embedding similarity), distortion detection, policy, and aesthetic score. The key design choice is that the generator only owns the pixels outside the product, which turns "don't hallucinate the product" from a model property into a pipeline guarantee.
+
 *Your angle:* "I've trained inpainting models from scratch: gated and partial convolutions, contextual attention. Mask-boundary artifacts are exactly where these systems fail, and I know how to detect and fix them."
 
 **Q15. How do you guarantee product fidelity? What does "fidelity" even mean?**
 Define it at three levels. **Pixel**: the product region is copied, not generated, so the check is that the compositing didn't alter it (near-zero LPIPS in the mask). **Semantic**: color, count, variant, and label text match the catalog, checked with OCR versus the catalog title and brand, a color histogram in the mask versus the catalog color attribute, and object counting. **Contextual**: scale and context aren't misleading (a mini fridge shouldn't look full-size; a single item shouldn't look like a multipack). The contextual level is the hardest. I'd use catalog dimensions to bound relative scale and use VQA-style probes ("How many units are shown?") as one judge component.
+
+*Your angle:* "With face synthesis, identity was a measured number, never a vibe. I'd define product fidelity the same way: a few explicit, thresholded checks."
 
 **Q16. Inpainting/outpainting vs subject-driven generation (DreamBooth, IP-Adapter): when do you use which?**
 Inpainting or outpainting around a fixed product is the default for ads because it preserves the product exactly and needs no per-SKU training. Subject-driven methods (DreamBooth, textual inversion, IP-Adapter, reference-attention) re-render the product, which allows new angles and natural integration (a jacket on a model) but always risks subtle drift in logos, text, and proportions. I'd use subject-driven generation only where a re-render is required (apparel on a person, 3/4 views), with stricter fidelity gating and advertiser approval. DreamBooth-style per-SKU fine-tuning doesn't scale to millions of SKUs. Reference-conditioned adapters do.
 
 **Q17. How do you make the scene's lighting and shadows consistent with the product?**
 Mismatched lighting is the main tell of a composited product. Estimate the product's existing lighting (dominant direction and color temperature) and either condition the background generation on it or relight the product to match the scene. Then add contact shadows and reflections from a depth estimate of the support surface. Relighting models (IC-Light-style diffusion relighting) work but must be confined to shading changes, not albedo or text changes, which is checked with the same fidelity gate. A harmonization metric (a discriminator trained on real vs composited images) is a useful judge component.
+
 *Your angle:* "I did spherical-harmonics lighting estimation for AR. Low-order SH, about 9 coefficients, is enough to estimate the dominant light and make inserted objects match the scene. Retail compositing is the same problem in reverse."
 
 **⭐ Q18. How do you automatically detect distortion and artifacts in generated images?**
 Use a layered detector, because no single model catches everything. (1) **Specialist classifiers** trained on labeled artifacts (warped geometry, melted text, extra fingers or limbs, duplicated objects, seams at the mask boundary, oversaturation), using hard negatives mined from our own generator. (2) **Localized patch scoring**: a PatchGAN-style discriminator gives a per-patch realism map, which localizes defects and can drive targeted re-inpainting. (3) **Structural checks**: OCR legibility on any text, hand and pose keypoint plausibility, symmetry checks on logos. (4) **A VLM judge** for holistic and semantic issues ("does anything look physically impossible?"), calibrated against human labels. Each detector's operating point is set on a held-out human-labeled set, and new failure modes found in audits feed back into specialist training.
+
 *Your angle:* "I've trained PatchGAN and SN-PatchGAN discriminators. A discriminator is a learned artifact detector, and its patch map tells you *where* the image is wrong, not just *that* it is."
 
 **Q19. How do you handle text in images (prices, offers, product names)?**
@@ -83,14 +90,17 @@ Don't have diffusion generate ad text. Even modern models that render text well 
 
 **Q20. How do you make outputs on-brand for a specific advertiser?**
 Ingest a machine-readable **brand kit**: logo files with clear-space and minimum-size rules, palettes, fonts, tone, and do/don't examples. Use it in three places: as hard constraints in layout and rendering (fonts, colors, logo rules), as **style conditioning** for generation (reference-image adapters, palette-constrained color grading), and as a **brand-consistency judge** (embedding distance to approved brand assets plus a rubric VLM check). Per-brand LoRAs are reserved for large brands with enough approved assets and a clear lift, because they add training, serving, and governance cost.
+
 *Your angle:* "My exemplar-based colorization work is directly relevant: transferring a reference palette onto new content while preserving structure is a brand-palette problem."
 
 **Q21. Explain classifier-free guidance and how you'd tune it for ad creative.**
 CFG trains one model with the condition randomly dropped (about 10–20% of the time) and at sampling combines the predictions as ε̂ = ε_uncond + w·(ε_cond − ε_uncond). Higher w increases prompt adherence at the cost of diversity, and at high scales it oversaturates and over-contrasts the image. For ads you want moderate guidance (often around 4–8 for SDXL-class models, depending on the model) plus fixes for high-w artifacts: CFG-rescale, guidance only over a middle interval of timesteps, and negative prompts for known failure modes. I'd tune w by measuring the judge-calibrated quality versus diversity frontier rather than eyeballing.
+
 *Your angle:* "I implemented CFG and DDPM from scratch, so I can explain the oversaturation mechanism, not just the knob."
 
 **Q22. Diffusion is slow. How do you make generation cheap enough for advertiser scale?**
 Step distillation is the biggest lever: consistency models or latent consistency models, adversarial diffusion distillation (SDXL-Turbo-style), or progressive distillation take 25–50 steps down to 1–4. Then come systems optimizations: fp16/fp8 or int8 quantization, TensorRT-compiled UNet/DiT, large-batch offline generation, caching text and image encodings, and generating at lower resolution and then super-resolving only the winners. Distilled models lose some diversity and fine detail, so I'd use them for candidate generation and use a full-step model only for final high-value assets. That tiering fits naturally with a judge that filters candidates.
+
 *Your angle:* "I trained consistency models and did distillation and quantization for on-device deployment. Getting a model to fit a fixed millisecond budget is something I've done many times."
 
 **Q23. How do you generate a diverse set of variants without producing junk?**
@@ -98,13 +108,17 @@ Over-generate with diversity at the source: different scene plans, seeds, and co
 
 **Q24. Would you fine-tune the image model on ad performance or preference data? How?**
 Yes, carefully. Supervised fine-tuning on high-quality approved creative is the safe first step. Preference optimization is the next: Diffusion-DPO on human or advertiser pairwise preferences avoids an explicit reward model. Reward fine-tuning (DDPO, ReFL, DRaFT) against a learned reward is more powerful but heavily exposed to reward hacking. Defenses are KL regularization to the base model, an ensemble of rewards, early stopping on a *held-out* human eval, and never using the deployment judge as the training reward. I wouldn't fine-tune directly on CTR: it's noisy, confounded by placement and targeting, and rewards clickbait. Use it through a debiased reward model at most.
+
 *Your angle:* "My RL-as-diffusion research is exactly this framing: denoising as a sequential decision process. My temporal-metric paper is the cautionary result: the metric got gamed when I used it as a loss."
 
 **Q25. How do you evaluate an image generation model offline?**
 FID is a weak signal for this use case: it measures distribution match to a reference set, is biased by sample size, and says nothing about product fidelity or policy. I'd use a task-specific scorecard on a fixed, stratified prompt and product set: product fidelity (pixel and semantic), artifact rate (calibrated detectors), prompt and brief adherence (VQA-style checks, not just CLIPScore, which is easy to game), aesthetic and preference scores (PickScore, ImageReward, HPSv2-style models, recalibrated to our raters), policy pass rate, and diversity. The decision metric is **pairwise human or calibrated-judge win rate** against the incumbent model, with a Bradley–Terry fit and confidence intervals, sliced by category.
 
+*Your angle:* "In my temporal-metric work, I validated the metric against human ratings before trusting it. I'd hold every offline image metric to the same standard."
+
 **Q26. Do GANs still matter, or is everything diffusion now?**
 Diffusion dominates open-ended generation, but GANs still matter in production. Adversarial losses power the fastest one-step distilled generators (ADD). GANs are excellent for narrow, fast tasks: super-resolution, harmonization, inpainting refinement. Discriminators make good learned artifact detectors. StyleGAN-family models are also well understood for controllable latent editing. I'd pick per task by latency and controllability, not by fashion.
+
 *Your angle:* WGAN-GP, SN-PatchGAN, StyleGAN2 trained from scratch. Mention that you know their failure modes (mode collapse, discriminator overfitting) and the fixes for each.
 
 **Q27. Many advertisers upload low-quality product images. What do you do?**
@@ -112,7 +126,8 @@ Run an input quality gate first: resolution, blur (variance of the Laplacian), c
 
 **Q28. How does identity-preserving face synthesis relate to this job?**
 It is the same problem with a different identity. Face synthesis must preserve identity while changing pose, expression, or background, and creative generation must preserve product identity while changing the scene. The techniques transfer: identity embeddings used as a loss and as an eval (ArcFace for faces, a fine-tuned product-retrieval embedding for SKUs), adaptive feature blending of identity and attributes (AAD-style), and separating "what must not change" from "what may change" in the architecture.
-*Your angle:* "In AAD/ArcFace work, the eval was identity cosine similarity with a calibrated threshold. For products I'd train a SKU-level retrieval embedding and use it exactly the same way, as both a gate and a regression metric."
+
+*Your angle:* "In AAD/ArcFace-style work, the standard eval is identity cosine similarity against a threshold. For products I'd train a SKU-level retrieval embedding and use it exactly the same way, as both a gate and a regression metric."
 
 **Q29. Won't generated creative make every advertiser's ads look the same?**
 It's a real risk: shared models and shared judges both pull toward the mode. Measure it with cross-advertiser embedding similarity within a category and the distribution of scene and attribute choices over time. Counter it with brand-conditioned generation, explicit diversity in selection, judges that don't over-reward one aesthetic, and performance monitoring for "AI look" fatigue: if CTR on generated creative decays faster than on advertiser creative, homogenization is a candidate cause.
@@ -159,6 +174,7 @@ Indirect prompt injection through supplier-provided data: a product description 
 
 **Q42. How do you make copy generation cheap at Walmart scale?**
 Precompute offline in batch for the catalog (most copy doesn't need real-time generation), cache by (SKU, placement, template version), and only regenerate on catalog changes. Distill to a small model for standard slots, use prompt caching for shared instruction prefixes, and use the frontier model only for escalations. Run cheap deterministic validators before expensive judges. Rough sizing: millions of SKUs × a few placements × a few variants is tens of millions of generations, which is affordable with a small model and painful with a frontier API.
+
 *Your angle:* "I've done knowledge distillation from large teachers into edge-deployable students with quantization to TFLite/ONNX. The playbook is the same: teacher defines quality, student hits the budget, the eval harness proves parity."
 
 ---
@@ -170,10 +186,13 @@ Treat it as **structured assembly with generative components**, not end-to-end t
 
 **Q44. How do you evaluate temporal quality in generated video?**
 Measure consistency rather than per-frame quality alone. **Flow-warping error**: warp frame t into t+1 with optical flow and measure the residual outside occlusions, which captures flicker. **Feature consistency**: DINO or CLIP embedding similarity of the subject and background across frames, which catches identity drift and morphing. **Motion smoothness** (deviation from interpolated motion). Then per-frame artifact detectors on sampled frames. Benchmarks like VBench decompose quality along these dimensions. FVD exists but has the same limits as FID. All of these must be calibrated to human ratings, because a static video scores perfectly on consistency, so temporal metrics need a motion-quantity term.
+
 *Your angle:* "I published a reference-free temporal-quality metric for generated video. I can talk about exactly where such metrics fail, including how a generator learned to game mine when I used it as a training loss."
 
 **Q45. Image-to-video foundation models vs template-based motion: which?**
 For product ads today, mostly template and controlled motion plus selective generative video. I2V models produce compelling motion but still have product drift, text morphing, and physics errors, and they cost far more per second. Templates with 2.5D parallax, depth-based camera moves, and compositing are cheap, deterministic, and faithful. I'd put I2V on backgrounds and ambience shots with the product composited on top, and revisit the line every couple of quarters as models improve, using the eval harness to decide when the generative path beats the template path.
+
+*Your angle:* "SpaceWarp is the same trade-off: synthesize frames cheaply from motion and depth where it's safe, and keep real content where artifacts would show."
 
 **Q46. How do you keep the product faithful across all frames?**
 Composite rather than generate: track the product layer with known transforms, so it's correct by construction. Where the product passes through a generative step, run **per-frame fidelity checks** against the reference (embedding similarity, OCR on label, color consistency) and flag the worst frame, not the average, because one bad frame is a defect. Keyframe anchoring (fixing the product appearance at keyframes and constraining the frames in between) reduces drift when generation is required.
@@ -186,6 +205,7 @@ Use licensed music libraries with metadata for mood and tempo matching, and TTS 
 
 **Q49. How does your motion-vector SpaceWarp work transfer to ad video?**
 SpaceWarp synthesizes intermediate frames from motion vectors and depth under a strict latency budget, and the hard part is detecting and hiding the artifacts: disocclusions, ghosting at object edges, flicker. All of that transfers: cheap frame interpolation to produce smooth motion from few generated frames, motion-vector and flow analysis for temporal artifact detection, and the engineering discipline of a perceptual quality bar that holds on real content.
+
 *Your angle:* "It beat Google's approach and shipped as the default on Galaxy XR. That came from obsessing over measurable artifact metrics, which is the core of this role."
 
 **Q50. Video is expensive. How do you control cost?**
@@ -200,6 +220,8 @@ Under WCAG 2.2: captions for prerecorded audio (SC 1.2.2, Level A), audio descri
 **Q53. What are the characteristic failure modes of generative video, and how do you catch them?**
 Morphing (objects change shape or identity over time), physics violations (liquids, gravity, hands passing through objects), text that degrades frame to frame, product duplication or disappearance, temporal flicker, and unnatural motion speed. Catch them with temporal-consistency metrics, per-frame object tracking (an object count that changes over time is a strong signal), OCR stability across frames, and a VLM judge asked targeted questions on frame sequences. Mine failures into a labeled set so specialist detectors improve.
 
+*Your angle:* "Disocclusion and ghosting artifacts in SpaceWarp taught me that temporal defects are usually local and brief. You have to score the worst window, not the average."
+
 ---
 
 ## E. Composition, adaptation, cropping, and layout (11)
@@ -209,6 +231,8 @@ Represent the master as a **layered, structured document** (background, product 
 
 **Q55. How do you do content-aware cropping well, and what goes wrong?**
 Combine generic saliency with **task-specific constraints**: the product bounding box and logo must be fully inside the crop with margin, faces shouldn't be cut at the eyes, and the subject sits on compositional guides. Optimize the crop window over these terms, and when no valid crop exists, outpaint instead. Pure saliency cropping has documented failures: Twitter's saliency cropper was found to have demographic bias in whom it centered and was retired in favor of showing full images. So audit crops on images of people across demographics and favor rule-based product constraints over learned "attention."
+
+*Your angle:* "In AR product search I cared about the product region specifically, not generic saliency. That carries over directly to product-aware crops."
 
 **Q56. How would you generate layouts?**
 Options from most to least controllable: template families with parametric constraints, constraint solvers (linear or cassowary-style) over element boxes, learned layout generators (transformer or diffusion layout models conditioned on the canvas and the elements, or LLMs emitting layout JSON). In production I'd use learned models to *propose* layouts and a deterministic solver and validator to *enforce* constraints, then render deterministically. Evaluate with layout metrics (overlap, alignment, whitespace balance, text over busy regions) plus judge and human preference.
@@ -234,6 +258,8 @@ Regions where content may be covered or cut: TV overscan (the traditional title-
 **Q63. Background removal fails on hair, glass, and transparent packaging. What do you do?**
 Use alpha matting rather than binary segmentation (trimap-free matting models produce soft alphas), and treat transparency explicitly: transparent bottles need the new background visible *through* them, which requires an estimated alpha plus refraction-free compositing or regenerating that region. Check edge quality with halo detection (color fringing at the alpha boundary) and route low-confidence mattes to a fallback: keep the original background or crop tighter.
 
+*Your angle:* "My inpainting work lives at mask boundaries. Halos and seams at the alpha edge are the first place I'd look for defects."
+
 **Q64. CTV needs high resolution. What are the risks of super-resolution?**
 Generative super-resolution hallucinates detail. On product label text it can invent characters, which is a fidelity violation. Mitigations: disable or heavily constrain SR in text and logo regions found by OCR and detection, prefer the highest-resolution source asset from the catalog, use non-generative upscaling for the product region, and run a fidelity check (OCR match, embedding similarity) after upscaling.
 
@@ -246,17 +272,24 @@ Generative super-resolution hallucinates detail. On product label text it can in
 **⭐ Q65. Design an automated evaluation system for generated ad creative.**
 Use a **cascade with three jobs: gate, score, monitor.** (1) Deterministic validators: format, size, safe zones, contrast, OCR text matches approved copy. They're cheap and exact. (2) Specialist models: product fidelity (embedding plus OCR versus catalog), artifact and distortion detectors, policy classifiers (nudity, violence, regulated products, trademarks), each with calibrated thresholds. (3) A VLM/LLM judge with a **decomposed rubric** for semantic and holistic criteria (brief adherence, on-brand, misleading context, quality), returning structured scores and evidence. (4) Aggregation into pass / human-review / block with cost-sensitive thresholds. (5) Human audit sampling and a labeled gold set that is the ground truth for calibrating everything above. (6) Monitoring: score distributions, judge–human agreement on fresh samples, and canary sets for drift. Everything is versioned (judge model, prompt, rubric, thresholds), and every verdict is logged with lineage so any decision can be replayed.
 
+*Your angle:* "I'd build the gold set and the deterministic checks first. That's what I did for SpaceWarp: no claim of 'better' until it could be measured."
+
 **⭐ Q66. How do you calibrate an LLM or VLM judge against human preference?**
 First, collect a **stratified human-labeled set** (by category, advertiser size, format, generator version) with measured inter-rater agreement, which sets the ceiling. Second, get a continuous score out of the judge: the probability-weighted expected score over rating tokens, or the log-odds of "pass," instead of the sampled integer, since sampled ratings are coarse and compressed toward the middle. Third, fit a calibration map from judge score to P(human says acceptable): Platt scaling or isotonic regression, **per slice where the data supports it**. Check reliability diagrams and ECE on held-out data. For pairwise judgments, fit Bradley–Terry and check that judge win probabilities match human win rates. Finally, report agreement relative to human–human agreement (Cohen's κ or Krippendorff's α): a judge that agrees with raters as well as raters agree with each other is at the ceiling, and pushing further is overfitting to particular raters.
 
+*Your angle:* "In identity-preserving synthesis, ArcFace similarity only meant something once it was mapped to 'same person or not' on labeled pairs. A judge score needs the same treatment before it gates anything."
+
 **⭐ Q67. How do you detect drift in a judge?**
 Separate the three kinds of drift, because they need different fixes. **Judge drift** (the judge's behavior changes: an API model update, a prompt edit) is detected by re-scoring a **frozen canary set** on a schedule and alerting on score shifts or verdict flips. This works because inputs are fixed, so any change is the judge. **Input drift** (the generator, categories, or seasons change) shows up in embedding and attribute distributions of incoming creative (PSI or KS on features, a domain classifier distinguishing old from new). **Concept drift** (human standards or policy change) is detected by continuous fresh human labeling on a small random sample, tracking judge–human agreement over time with control limits. Pin judge model versions explicitly, because silent upgrades of hosted models are a major real-world source of judge drift.
+
+*Your angle:* "Be honest that you haven't run a production LLM judge. Then show you know the frozen-canary pattern, and connect it to how you regression-tested SpaceWarp quality (describe your real process)."
 
 **⭐ Q68. What are the known failure modes of LLM-as-judge?**
 **Position bias** (favoring the first or second option in pairwise comparison): mitigate by scoring both orders and averaging or discarding inconsistent pairs. **Verbosity and length bias**: control for length or penalize it. **Self-preference** for outputs from the same model family. **Leniency and score compression** (everything gets 7–8 out of 10). **Prompt sensitivity**: small rubric wording changes shift scores. **Sycophancy and anchoring** to claims in the content ("this ad is fully compliant"). **Weak perception in VLMs** for fine detail (small text, counts, fingers). **Overconfidence** on out-of-distribution inputs. Each one gets a dedicated test in the judge's own regression suite, so we measure the bias instead of hoping it's absent.
 
 **⭐ Q69. Your generator will be optimized against your judge. How do you prevent Goodhart's law?**
 Assume the generator *will* find the judge's blind spots: optimization pressure amplifies any gap between proxy and target. Reward-model overoptimization has been characterized empirically: proxy reward keeps rising while true reward peaks and then declines as the policy moves away from the base. Defenses: (1) **separate judges**: the one used for training or selection is not the one used for final evaluation, and the final one is periodically refreshed; (2) **ensembles** of diverse judges, since it's harder to fool them all; (3) **constrain optimization**: KL to the base model, best-of-N with modest N rather than unconstrained RL, early stopping on human-validated eval; (4) **audit the top of the distribution**: humans review the highest-scoring outputs, where gaming concentrates, not just random samples; (5) **adversarial refresh**: mine examples where the judge and humans disagree into judge retraining. The tell is judge scores rising while human-audit pass rates or online performance stay flat.
+
 *Your angle:* "I learned this first-hand. I built a reference-free temporal-quality metric for generated video that correlated well with human judgment, then used it as a training loss, and the model learned to satisfy the metric without getting better. I published that negative result. It's why I'd never let a deployment judge double as a training reward."
 
 **Q70. Pointwise, pairwise, or reference-based judging: when do you use each?**
@@ -276,6 +309,8 @@ Decomposed, with a holistic score as one component. Decomposed binary checks ("I
 
 **Q75. Specialist classifiers or one general VLM judge?**
 Both, arranged as a cascade. Specialists (fine-tuned CNN/ViT classifiers, detectors, OCR) are cheap, fast, well calibrated, and strong on narrow perceptual tasks where VLMs are weak, like small text, counts, and subtle distortions. General VLM judges cover open-ended semantic criteria and new failure modes without new training data. Run specialists on everything, call the VLM only where needed (borderline cases, semantic criteria), and use VLM judgments plus human labels to train the next generation of specialists. This is also the main lever on judge cost.
+
+*Your angle:* "Discriminators and small distilled models are cheap, sharp specialists. I've built both, and I'd let them carry most of the volume."
 
 **Q76. The judge itself can be wrong. How do you make it reliable?**
 Quantify uncertainty and route on it. Signals: self-consistency (sample the judge several times or across prompt paraphrases and measure disagreement), disagreement between diverse judges, calibrated confidence, and out-of-distribution scores for the input. High-uncertainty items go to humans, and the judge is allowed to **abstain**. Measure reliability as test-retest consistency (the same input should get the same verdict). Run temperature 0 or fixed-seed scoring for gating, and track flip rates on the canary set.
@@ -297,6 +332,7 @@ A cascade (cheap validators → specialists → VLM only when needed), short str
 
 **Q82. Can you use the judge as a training signal? How do you do that safely?**
 Yes, through selection and preference data rather than direct gradient pressure where possible. Best-of-N selection and building DPO preference pairs from judge rankings are milder forms of optimization than RL against the judge. If doing reward optimization: KL penalty to a reference model, an ensemble or uncertainty-penalized reward, early stopping based on a *held-out* judge plus human evaluation, and frequent human audits of top-scoring outputs. Keep the deployment judge out of the training loop entirely, so it remains an unbiased measuring instrument.
+
 *Your angle:* Your RL-as-diffusion research plus the gamed-metric paper. Here you're the rare candidate with first-hand evidence on both sides.
 
 **⭐ Q83. How do you validate that the judge actually predicts business outcomes?**
@@ -326,6 +362,7 @@ Because the flagged rate mixes true positives and false positives, and both depe
 
 **⭐ Q90. Design a structured representation of creative content that targeting, recommendations, and measurement can all use.**
 A **creative schema** per asset with four layers. (1) **Identity and lineage**: asset ID, advertiser, SKUs depicted, format and placement, generator and judge versions, source assets, and human edits. (2) **Content attributes** from a versioned taxonomy: scene type, setting, people present (count only, no sensitive inferences), dominant colors, text present and its claims, CTA type, offer and price shown, brand-element presence, style tags, and for video, shot structure and time to first product appearance. Each attribute carries a confidence. (3) **Quality and compliance signals**: calibrated judge scores per criterion, fidelity score, policy verdicts, accessibility checks. (4) **Embeddings**: a general multimodal embedding plus a task-tuned one. Downstream uses: ranking and recommendations consume the quality signals and embeddings as features (with cold-start priors), targeting uses attributes for context matching, and measurement uses attributes as analysis dimensions for creative-level lift. Store it in the feature platform with point-in-time correctness so training data doesn't leak.
+
 *Your angle:* "My multimodal fusion work (IMU plus audio plus video in a single model that beat per-sensor pipelines) is the same argument: one shared representation beats N team-specific ones and makes every consumer better."
 
 **Q91. How do you extract creative attributes? VLM structured output or specialized models?**
@@ -333,6 +370,7 @@ Both. A VLM with a fixed schema and constrained JSON output gives broad coverage
 
 **Q92. Which creative embeddings would you use, and how would you improve them?**
 Start with strong general encoders (CLIP or SigLIP for image–text alignment, DINOv2 for visual structure and near-duplicates). Then fine-tune contrastively on in-domain pairs: creative ↔ product catalog image, creative ↔ query, creatives that co-performed in tests. For performance-aware embeddings, add a multi-task head predicting engagement from randomized tests. Evaluate on retrieval (find the SKU from the creative), duplicate detection, and as features in a CTR model, not just on generic benchmarks.
+
 *Your angle:* "I've trained ViT, DINO, MoCo, and CLIP-style models. Contrastive training choices like temperature, hard negatives, and batch size are where in-domain embedding quality comes from."
 
 **Q93. Advertisers ask which creative attributes drive performance. How do you answer rigorously?**
@@ -349,6 +387,7 @@ Track performance decay per creative and audience against exposure: CTR as a fun
 
 **Q97. How do you verify a creative actually depicts the advertised SKU?**
 Image–SKU verification with a retrieval embedding: embed the product region of the creative and check that the nearest catalog neighbor is the advertised SKU (or its variant family) above a calibrated similarity threshold. Add OCR of visible brand and product name text matched against catalog fields. Mismatches (wrong variant, competitor product, outdated packaging) get flagged. This is also a policy issue, since advertising a product with another product's image is misleading.
+
 *Your angle:* "In Bixby Store Assistant, recognizing exactly which product was on the shelf was core. Fine-grained product recognition under real-world conditions is directly reusable."
 
 **Q98. How do content signals help with cold start for new creative?**
@@ -404,6 +443,8 @@ Run a randomized experiment, with the auction in mind. Within eligible ad groups
 **Q112. How would you use bandits for creative testing, and what are the pitfalls?**
 Thompson sampling or UCB across creative variants reduces regret versus a fixed A/B split, and contextual bandits can select per placement or audience. Pitfalls: **non-stationarity** (fatigue, seasonality) needs discounting or sliding windows; **delayed rewards** (conversions arrive later than clicks) bias toward click-optimized variants unless you model delay; **bandits optimize regret, not inference**, so the adaptive allocation biases naive effect estimates and you need propensity-aware estimators (IPW) if you want valid lift claims; **too many variants** spread traffic thin, so use structured or factorized priors. Log propensities for every decision so the data stays usable for off-policy evaluation.
 
+*Your angle:* "My RL background helps here: bandits are the one-step case. The hard parts in practice are non-stationarity and delayed reward, the same issues as in sequential decision problems."
+
 **Q113. What confounds observational creative-performance data?**
 Placement and position (top-of-search vs later slots), targeting and audience, bid and budget (which change exposure mix), seasonality and promotions, advertiser quality (good advertisers make good creative *and* have good products), and selection by ranking itself (high-pCTR creatives get better slots). Any "creative feature → CTR" analysis on logs inherits these. Control with randomization where possible, position debiasing models, within-campaign comparisons, and observational methods only as hypothesis generation.
 
@@ -428,6 +469,142 @@ Yes: more polished ads can blur the line between ads and organic results, mislea
 **Q120. How do you evaluate a new creative-selection policy offline?**
 Off-policy evaluation from logged data: inverse propensity scoring (IPS) reweights logged rewards by π_new(a|x)/π_log(a|x), self-normalized IPS reduces variance, and doubly robust estimators combine a reward model with IPS correction. It requires logged propensities and overlap (the new policy only chooses actions the logging policy sometimes chose). That's a design requirement for the serving system from day one: log the probability of every creative choice. Validate OPE estimates against a few online A/B tests before trusting them.
 
+*Your angle:* "Off-policy evaluation is standard RL machinery (importance sampling, doubly robust). I know where the variance comes from, so I'd insist on propensity logging from day one."
+
 **Q121. How do you explain creative performance to advertisers?**
 Give a small number of actionable, honest insights: "Variants with lifestyle scenes had 12% higher CTR than packshot-only in your category over the last 30 days (randomized, ±4%)," with confidence intervals and the comparison basis stated. Separate causal results (from randomized tests) from correlational observations, and say which is which. Pair insights with an action: "Generate 3 more lifestyle variants." Over-claiming erodes trust faster than under-claiming, and advertisers with analytics teams will check.
+
 *Your angle:* "Presenting to EVPs taught me to lead with the decision and the confidence level, not the method."
+
+---
+
+## J. Production, infrastructure, cost, and scale (9)
+
+**⭐ Q122. How would you architect shared infrastructure so creative capabilities compound?**
+Five shared layers with stable interfaces. (1) **Asset and lineage store**: every input, intermediate, and output asset with its creative schema and full provenance. (2) **Generation service**: a pipeline engine where formats are configurations of shared components (segmentation, background generation, layout, copy, render, video assembly), with model routing behind a common API. (3) **Evaluation service**: validators, specialists, and judges callable by any team, with versioned rubrics and thresholds, plus the offline harness and gold sets. (4) **Signals layer**: attribute extraction, embeddings, and quality scores published to the feature store for ranking, targeting, and measurement. (5) **Experimentation and feedback**: experiment assignment with propensity logging, outcome joins, and pipelines that turn advertiser edits and test results into training data. A new format (say, Sparky cards) then needs only a placement spec, a layout family, and a rubric. Everything else is reused, and every improvement to a shared component benefits all formats.
+
+*Your angle:* "This is the multimodal-fusion argument again: shared components beat per-format silos, and I've won that argument with data before."
+
+**Q123. Estimate the cost per generated image asset.**
+Back of the envelope: a distilled SDXL-class model at 1024² takes on the order of 0.5–1 s on a modern datacenter GPU, and a full ~30-step model takes several seconds. At a few dollars per GPU-hour, that's roughly **$0.001–0.005 per raw image**. Add segmentation, harmonization, and upscaling (similar order), then judging: specialists are cheap, but a VLM judge call can cost as much as or more than the generation. With an over-generate-and-filter ratio of, say, 4–8 candidates per approved asset, cost per *approved* asset is perhaps a few cents. That's cheap compared to human creative production, but at tens of millions of assets the judge cascade and acceptance rate dominate the budget. I'd validate all of this against Walmart's actual hardware and pricing.
+
+**Q124. Batch or real-time generation?**
+Mostly batch. Catalog-driven creative can be precomputed and refreshed on catalog, brand-kit, or seasonal changes, which allows large-batch GPU efficiency and full judging. Interactive generation (advertiser self-serve preview, agent-driven requests) needs low-latency interactive serving: seconds, not milliseconds, with distilled models and a reduced cascade, followed by the full judge before serving. Serve-time assembly (DCO) uses pre-validated components only. No generative model runs in the ad-serving hot path.
+
+**Q125. How do you ensure reproducibility and provenance for every asset?**
+Record the full recipe per asset: model IDs and versions, prompts and templates, seeds, sampler and steps, guidance scale, control inputs, source asset hashes, judge versions and verdicts, thresholds, and the human approver. Store it in the lineage store and embed a reference in the C2PA manifest. That enables exact regeneration for debugging, targeted recall when a model version is found faulty, and answers to advertiser or regulator questions. Note that GPU nondeterminism can make bit-exact regeneration hard. Pin deterministic kernels where it matters, or store the outputs.
+
+**Q126. How do you serve diffusion models efficiently on GPUs?**
+Step distillation first (1–4 steps). Then compile with TensorRT or torch.compile, use fp16/bf16 everywhere and fp8 or int8 where quality holds (validated on the eval harness, especially fidelity and text regions), use attention optimizations like FlashAttention, cache text encoders' outputs for templated prompts, and batch requests by resolution. Use dynamic batching for interactive traffic and large static batches offline. Profile the full pipeline, because VAE decode, segmentation, and upscaling often become the bottleneck after the UNet is optimized.
+
+*Your angle:* "I've shipped quantized models (TFLite, ONNX) under hard latency budgets on mobile and XR. Quantization-aware evaluation, checking that quality holds on the cases that matter, is the same discipline at datacenter scale."
+
+**Q127. What do you monitor in production?**
+System metrics: throughput, latency, GPU utilization, failure and retry rates, cost per approved asset. Quality metrics: gate pass rates by stage, judge score distributions, canary-set verdict stability, human-audit pass rates, advertiser acceptance and edit rates. Safety metrics: estimated violation prevalence, incident count, time to remediate. Business metrics: adoption, lift from ongoing tests. Every metric is sliced by generator version, category, and format. Alerts fire on distribution shifts, not just thresholds, because a quietly drifting judge looks healthy on fixed thresholds.
+
+**Q128. How do you handle seasonal peaks like the holidays?**
+Precompute holiday creative well ahead (seasonal backgrounds, templates, and assets per SKU), reserve GPU capacity, and freeze model and judge versions during peak (a change freeze, as most retail engineering orgs do). Have graceful degradation: if generation capacity is saturated, fall back to templates and approved existing assets rather than lowering judge thresholds. Never trade safety gates for throughput during peak, when exposure is highest.
+
+**Q129. How would you run attribute extraction over hundreds of millions of catalog items?**
+A distributed pipeline (Spark or Beam) that reads assets from object storage, with GPU inference stages batched by model, writing to versioned tables. Make it idempotent (keyed by asset hash plus model version, so re-runs skip completed work), incremental (only new and changed assets), and backfillable (re-run a new model version over history on a schedule). Use per-stage quality sampling to catch silent failures. Budget compute by running cheap models on everything and expensive models on high-traffic items first.
+
+**Q130. What gates take a generative capability from prototype to production?**
+(1) Offline eval on the gold set beats the incumbent or meets the bar, with per-slice results. (2) The safety and policy suite passes, including red-team and adversarial sets. (3) Judges and thresholds for the new output type are calibrated. (4) A shadow or limited-beta run with human audit confirms offline results hold on live inputs. (5) A randomized online test shows performance at least neutral and guardrails intact. (6) Operational readiness: monitoring, kill switch, lineage, on-call, cost within budget. (7) A staged ramp with rollback criteria written in advance. Writing these gates down once, as a shared checklist, is part of the infrastructure.
+
+---
+
+## K. Behavioral and leadership at Distinguished scope (10)
+
+> Use STAR, but spend most of your time on the **decision and its trade-offs** (Distinguished interviewers want judgment, not activity). Keep each story to about 2 minutes. Fill in the bracketed specifics from memory, and don't invent numbers.
+
+**⭐ Q131. Tell me about a time you set technical direction across multiple teams.**
+Name the situation (fragmented approaches, no shared metric), the direction you set and *why* (the evidence and the trade-off you accepted), how you got teams to adopt it without direct authority (prototype, data, shared metric), and the outcome at the organization level. Close with what you'd do differently. Distinguished scope means the outcome outlived your involvement.
+
+*Your angle:* The **multimodal fusion** story. You argued for one IMU + audio + video model over per-sensor pipelines, proved it with data, and it beat the pipelines. Frame it as "replacing N siloed systems with one shared representation," which is literally the shared-infrastructure mandate of this role. Alternative: SpaceWarp, if the multi-team aspect is stronger there.
+
+**⭐ Q132. Tell me about a time a metric you built failed or was gamed.**
+Strong candidates have a real example. Describe building the metric, the evidence it was valid (correlation with human judgment), the decision to use it as an optimization target, what happened (the model improved the metric without improving the real quality), how you detected it (human inspection, divergence between metric and perception), and what you did (published the negative result, changed practice). End with the principle you now apply: evaluation metrics and optimization targets must be separate, and optimized outputs need fresh human validation.
+
+*Your angle:* Your **reference-free temporal-quality metric** paper and its negative result as a training loss. This is the single most relevant story for this role. Practice it until it's crisp, and connect it explicitly to model-as-judge and Goodhart (Q69).
+
+**Q133. Tell me about a time you disagreed with leadership.**
+Show that you disagreed with data, privately first, and offered an alternative rather than just an objection. You committed once the decision was made (or changed the decision with evidence), and the relationship stayed intact. Avoid stories where you were simply right and they were wrong; show you understood their constraints.
+
+*Your angle:* Pick a real roadmap or technical-approach disagreement at Samsung, for example arguing for a different technical approach to frame synthesis or for investing in measurement before shipping. Use whichever one has a clean "I brought data, we aligned" arc.
+
+**Q134. Tell me about beating a competitor or an incumbent solution.**
+Define the bar (what the incumbent did and how it was measured), your technical insight, how you proved superiority objectively (the metric and the test set, ideally one the other side agreed to), and the business outcome. Credit the team.
+
+*Your angle:* **Motion-vector SpaceWarp beat Google's solution and shipped as the default on Galaxy XR.** Emphasize the evaluation methodology: how "better" was measured frame by frame and agreed on by stakeholders. That's the bridge to this job.
+
+**Q135. How do you influence teams that don't report to you?**
+Give a concrete mechanism, not a philosophy: a shared metric or harness that makes your approach easy to adopt, prototypes that de-risk the decision, written design docs reviewed early with the people affected, and giving credit generously. Describe a specific instance and what it took.
+
+*Your angle:* Patents and publications came from cross-team collaborations. Or describe how the SpaceWarp or fusion work was adopted by product teams you didn't manage. Mention 4× EVP awards as evidence that the influence was recognized org-wide.
+
+**Q136. Tell me about learning a new domain quickly.**
+Show your method: read the canonical papers and internal docs, find the domain's core metrics and failure modes, talk to practitioners, build a small prototype to test your understanding, and then contribute something the domain experts hadn't tried. Acknowledge what you didn't know.
+
+*Your angle:* Your career moves (JVM/JIT → real-time systems → 3D graphics → ML → generative models) show repeated domain transfers. **Bixby Store Assistant** is the retail-specific example. And be candid: "Ads is my next domain; here's how I'm approaching it" (this guide is the evidence).
+
+**Q137. Tell me about killing a project or saying no to something exciting.**
+Show the criteria you used (evidence it wouldn't hit the bar, opportunity cost), how you communicated it (respecting the team's work, redirecting people to higher-value work), and what was salvaged (components, learnings, a paper). Distinguished scope includes stopping things.
+
+*Your angle:* The **negative-result paper** works here too: you stopped pursuing metric-as-loss and turned it into a publishable finding. Or a research direction you deprioritized to ship SpaceWarp.
+
+**Q138. How have you grown other technical leaders?**
+Name specific people and specific mechanisms: delegating ownership of a hard problem with support, co-authoring papers or patents with junior engineers, design-review coaching, and sponsorship for promotion. Give an outcome for at least one person.
+
+*Your angle:* Co-inventors and co-authors on your 5 patents and 7 publications. Pick one person whose growth you can describe concretely.
+
+**Q139. Tell me about explaining something complex to senior non-technical executives.**
+Show the structure: decision first, then the recommendation, then two or three supporting facts with one visual, risks and mitigations, and the ask. Mention what you cut. Describe the outcome (a decision made, funding, a launch).
+
+*Your angle:* The **4× Samsung EVP awards** mean you've done this repeatedly. Pick the presentation that led to a ship or funding decision (likely SpaceWarp as default on Galaxy XR) and describe how you translated frame-timing details into a user-experience and competitive-position story.
+
+**Q140. Tell me about shipping under a deadline without compromising quality or safety.**
+Show what you refused to compromise (a quality bar, a safety check) and what you traded instead (scope, features, a staged launch), how you made the quality bar measurable so it could be defended under pressure, and the result.
+
+*Your angle:* On-device deployment under hard frame budgets (quantization, distillation to TFLite or ONNX) for XR, where shipping a model that broke frame timing wasn't an option. Connect it to holiday-peak discipline for creative systems: never lower safety gates for throughput.
+
+---
+
+## L. Curveball questions (10)
+
+**⭐ Q141. Why not just use a frontier model API for everything?**
+For some things we should: prototyping, low-volume complex tasks, and as a teacher for distillation. For everything at advertiser scale, there are five problems. (1) **Cost and latency**: tens of millions of generations and judgments per cycle. (2) **Control**: product fidelity needs pipeline-level guarantees (compositing, masks, constrained decoding) and fine-tuning on our data, which APIs limit. (3) **Version drift**: a silent upstream model change shifts judge calibration, which is unacceptable for a calibrated gate. (4) **Data governance**: supplier and shopper data. (5) **Differentiation**: everyone has the same API, so the moat is our evaluation, calibration, catalog grounding, and closed-loop outcome data. So I'd design for portability: own the eval layer and the interfaces, and route each task to the cheapest model that passes our eval.
+
+*Your angle:* "I've done the teacher-to-student path many times. Frontier as teacher, distilled in-house student as workhorse is a natural fit."
+
+**⭐ Q142. What if the judge and advertisers disagree?**
+First diagnose which kind of disagreement it is. **Policy**: the policy verdict stands, but the explanation must be clear and the judge must be correct, so audit the disputed cases, because systematic disputes often reveal over-blocking. **Brand or taste**: the advertiser is the authority on their brand. Treat their decisions as labels, learn per-advertiser or per-brand preferences, and recalibrate that slice. **Performance**: neither opinion settles it, so run the test and let shopper outcomes decide. Track the disagreement rate by slice as a health metric: rising disagreement means the judge is drifting from its users. Remember that advertiser accept/reject data is biased (they only see what passed the judge), so occasionally show advertisers below-threshold candidates to measure what the judge is filtering out.
+
+**⭐ Q143. How would you know the creative generator is making things worse?**
+By not trusting the generator's own metrics. (1) A **long-running holdout** of advertisers or traffic without generated creative, compared on sales, ROAS, and shopper metrics. That's the ground truth for the program. (2) **Human-audit pass rates** on random and top-scoring samples, independent of the judge, trending over time. (3) Divergence between judge scores (rising) and human or online outcomes (flat or falling), which is the Goodhart signature. (4) **Downstream guardrails**: return rates and complaints for products advertised with generated creative, post-click bounce, policy incidents. (5) **Advertiser behavior**: falling acceptance, more edits, more manual uploads, churn. (6) **Homogenization**: rising cross-advertiser similarity, faster fatigue. If any of these move the wrong way, roll back to the last good generator version, which requires the lineage and versioning to exist from day one.
+
+*Your angle:* "This is exactly how my temporal metric fooled me: the metric improved and the output didn't. I now always keep an independent measurement that the optimized system never sees."
+
+**⭐ Q144. You haven't worked in ads. Why should we hire you as a Distinguished Data Scientist here?**
+Be direct: "The hard part of this role isn't auction mechanics, which I can learn and partly already have. It's building generative systems that are product-faithful and evaluating them reliably when models judge model output. I've trained the relevant model families from scratch (inpainting, diffusion, GANs, identity-preserving synthesis, contrastive vision models), built a reference-free quality metric and published how it was gamed, and shipped a perceptual-quality-critical system that beat Google's. The ads-specific parts (experimentation with auction interference, closed-loop measurement, bandits) I'll learn with the team's experts, and I've already gone deep on them." Then give one concrete ads insight to show it (for example, auction interference in creative tests, Q111/Q115).
+
+*Your angle:* 7 publications, 5 patents, 4× EVP awards, shipped default on Galaxy XR. Lead with the evaluation story rather than the credential list.
+
+**Q145. Won't generated creative just make all ads look the same and kill performance over time?**
+It will if we let a single generator plus a single judge optimize toward one mode, which is why diversity is a first-class objective: diverse candidate generation, diversity-aware selection, brand conditioning, and monitoring cross-advertiser similarity and fatigue rates. The counter-argument is that most long-tail advertisers currently have *one* mediocre image, so even fairly uniform generated variants add testing options. The risk is real mainly at the high end, where brands want distinctiveness, and that's where brand-conditioned generation matters.
+
+**Q146. If you could build only one thing in year 1, what would it be?**
+The **calibrated evaluation layer**: a gold set, a judge cascade calibrated to human reviewers, policy gates with recall guarantees, and drift monitoring. It's the prerequisite for scaling every generator safely, it reduces manual review cost immediately, it creates the creative-quality signals that ranking and measurement want, and it makes model and vendor choices empirical. A better generator without it can't be safely shipped at scale. A good eval layer makes every generator improvement provable.
+
+*Your angle:* "Every win I've had started with the measurement, and SpaceWarp is the clearest example. Year 1 here should be the same."
+
+**Q147. How do you evaluate the evaluator, and who evaluates that?**
+The regress ends at two anchors outside the model stack: **human judgment** (measured with inter-rater reliability, which also bounds what's achievable) and **real-world outcomes** (randomized tests on shoppers and advertisers). Judges are validated against humans, and humans and judges are both validated against outcomes for the criteria where outcomes are the point. Policy criteria anchor to expert reviewers instead. Above that, it's process: locked test sets, independent audits, and red teams.
+
+**Q148. An advertiser loves that the AI makes their product look better than it really is. Is that a problem?**
+Yes. Making a product look *appealing* (lighting, setting, composition) is fine and is what product photography has always done. Making it look *different* (better color, larger size, more contents, features it doesn't have) is misrepresentation: it's a consumer-protection issue, it drives returns and bad reviews, and it damages shopper trust in Walmart, not just the brand. That's why fidelity is a hard constraint, verified against the catalog. Return rates and review sentiment on products advertised with generated creative are a useful guardrail for it.
+
+**Q149. Leadership wants generated creative to go live fully automatically, without advertiser approval, to hit an adoption target. What do you do?**
+Don't just say no. Propose a path that gets most of the adoption with bounded risk. Define tiers by risk: low-risk transformations (resizes, background variants within the brand kit, approved copy) can go auto-approve-with-notification as an opt-in or opt-out default, while high-risk generation (new claims, people, video) keeps explicit approval. Back each tier with measured precision from human audits, and set rollback criteria in advance. Quantify the trade-off for leadership: expected incident rate times cost versus adoption gained. Then let the data from the first tier earn the next one.
+
+**Q150. What's the most overhyped thing in generative AI for ads right now?**
+Pick a defensible view and nuance it: "End-to-end 'prompt to finished campaign' generation. The visible demos are impressive, but the value in production is in the unglamorous parts: product fidelity, policy gates, calibrated evaluation, format adaptation, and measuring incremental lift. Teams that over-index on the generator and under-invest in evaluation hit a ceiling at the first trust incident." Then flip it: "What's underhyped is creative as structured data: understanding *existing* creative and feeding those signals into ranking and measurement may deliver more value sooner than generating new creative."
