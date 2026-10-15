@@ -671,10 +671,15 @@ def ahash(gray, n=8):
     return (small > small.mean()).ravel()
 
 
-def dhash(gray, n=8):
-    """Difference hash: resize to n x (n+1), bit = right neighbor > left. Encodes gradients."""
+def dhash(gray, n=8, min_diff=1.0):
+    """
+    Difference hash: resize to n x (n+1), bit = (right - left) > min_diff. Encodes
+    gradients. The textbook version uses min_diff=0, but then flat regions (packshot
+    backgrounds) produce bits that are coin flips under noise or compression; a small
+    dead-band makes those bits a stable 0.
+    """
     small = _area_resize(gray, n, n + 1)
-    return (small[:, 1:] > small[:, :-1]).ravel()
+    return ((small[:, 1:] - small[:, :-1]) > min_diff).ravel()
 
 
 def hamming(a, b):
@@ -1225,9 +1230,10 @@ def _tests():
     assert s_shift < s_blur < s_mild and s_shift < 0.6 and s_rec < 0.9 and s_blur < 0.9
     for hf in (ahash, dhash):
         assert hamming(hf(g), hf(mild)) <= 2
-        assert hamming(hf(g), hf(shifted)) > hamming(hf(g), hf(mild))
+        assert hamming(hf(g), hf(blur)) <= 2  # hashes are blur-robust; SSIM is what catches blur
         assert hamming(hf(g), hf(shifted)) >= 8
-    assert hamming(dhash(g), dhash(recol_g)) >= 4
+    assert hamming(dhash(g), dhash(recol_g)) >= 4  # recolor changes the gradient structure
+    assert hamming(ahash(g), ahash(recol_g)) <= 2  # blind spot: aHash on gray misses hue swaps
     passed += 1
 
     # ---- 11. Palette adherence --------------------------------------------
