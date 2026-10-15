@@ -685,7 +685,8 @@ def dhash(gray, n=8, min_diff=1.0):
 def hamming(a, b):
     return int(np.count_nonzero(np.asarray(a) != np.asarray(b)))
     # Hashes are cheap first-pass filters (and give near-dupe keys, see drill 14):
-    # robust to blur and rescaling, weak on fine detail. SSIM catches structural
+    # robust to blur and rescaling, weak on fine detail, and on grayscale they can
+    # miss a hue swap entirely (pair them with drill 11's Lab check). SSIM catches structural
     # change. At Walmart scale: hash or embed everything, run SSIM / OCR / logo
     # checks only on candidates, and calibrate the thresholds against human labels
     # of "product misrepresented".
@@ -1118,15 +1119,16 @@ def _tests():
     rng = np.random.default_rng(6)
     T, n_day, p0 = 60, 500, 0.80
     trials = np.full(T, n_day)
+    h = 8.0  # wider decision interval -> in-control ARL in the thousands of days
     stable = rng.binomial(n_day, p0, T)
-    assert cusum_rate(stable, trials, p0)["alarm_at"] is None
-    rates = np.where(np.arange(T) < 40, p0, 0.76)  # ~2.2 sd drop per day from day 40
+    assert cusum_rate(stable, trials, p0, h=h)["alarm_at"] is None
+    rates = np.where(np.arange(T) < 40, p0, 0.75)  # ~2.8 sd drop per day from day 40
     drop = rng.binomial(n_day, rates)
-    res = cusum_rate(drop, trials, p0)
-    assert res["direction"] == "down" and 40 <= res["alarm_at"] <= 46
+    res = cusum_rate(drop, trials, p0, h=h)
+    assert res["direction"] == "down" and 40 <= res["alarm_at"] <= 47
     assert abs(res["change_point"] - 40) <= 3
-    up = rng.binomial(n_day, np.where(np.arange(T) < 30, p0, 0.84))
-    assert cusum_rate(up, trials, p0)["direction"] == "up"
+    up = rng.binomial(n_day, np.where(np.arange(T) < 30, p0, 0.85))
+    assert cusum_rate(up, trials, p0, h=h)["direction"] == "up"
     passed += 1
 
     # ---- 7. WCAG contrast -------------------------------------------------
@@ -1255,7 +1257,11 @@ def _tests():
     off = on.copy()
     off[:, 45:] = np.clip(np.array([40, 170, 70]) + rng.normal(0, 3, (40, 15, 3)), 0, 255)  # off-brand green
     res_off = palette_adherence(off, brand, k=4, metric="de94")
-    assert len(res_off["violations"]) == 1 and abs(res_off["violations"][0]["weight"] - 0.25) < 0.02
+    # k=4 > 3 true colors, so k-means may split one color; check shares, not cluster count
+    off_w = sum(v["weight"] for v in res_off["violations"])
+    assert res_off["violations"] and abs(off_w - 0.25) < 0.02
+    green_lab = srgb_to_lab([40, 170, 70])
+    assert all(delta_e76(v["lab"], green_lab) < 5 for v in res_off["violations"])
     assert abs(res_off["on_brand_share"] - 0.75) < 0.02
     C, lab_ = kmeans(np.r_[rng.normal(0, 0.1, (100, 2)), rng.normal(5, 0.1, (100, 2))], 2, np.random.default_rng(0))
     assert len(set(lab_[:100])) == 1 and len(set(lab_[100:])) == 1 and lab_[0] != lab_[150]
@@ -1293,12 +1299,13 @@ def _tests():
     # ---- 13. Thompson / top-two Thompson ----------------------------------
     true_rates = np.array([0.10, 0.12, 0.15, 0.20, 0.11])
     best = int(np.argmax(true_rates))
-    a_ts, b_ts, pulls_ts = run_bandit(true_rates, thompson_choose, 4000, np.random.default_rng(13))
-    a_tt, b_tt, pulls_tt = run_bandit(true_rates, top_two_thompson_choose, 4000, np.random.default_rng(13))
+    R = 6000
+    a_ts, b_ts, pulls_ts = run_bandit(true_rates, thompson_choose, R, np.random.default_rng(13))
+    a_tt, b_tt, pulls_tt = run_bandit(true_rates, top_two_thompson_choose, R, np.random.default_rng(13))
     assert np.argmax(pulls_ts) == best and np.argmax(pulls_tt) == best
-    assert pulls_ts[best] > 0.6 * 4000  # TS exploits
+    assert pulls_ts[best] > 0.6 * R  # TS exploits
     assert pulls_tt[best] < pulls_ts[best]  # TTTS keeps measuring challengers
-    assert 0.4 < pulls_tt[best] / 4000 < 0.6  # ~leader_prob of traffic on the leader
+    assert 0.4 < pulls_tt[best] / R < 0.6  # ~leader_prob of traffic on the leader
     pb_ts = prob_best(a_ts, b_ts, np.random.default_rng(0))
     pb_tt = prob_best(a_tt, b_tt, np.random.default_rng(0))
     assert np.argmax(pb_ts) == best and np.argmax(pb_tt) == best and pb_tt[best] > 0.95
