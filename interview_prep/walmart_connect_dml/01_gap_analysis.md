@@ -1,5 +1,7 @@
 # 01 — Gap Analysis: Your Résumé vs. Distinguished ML Engineer, Walmart Connect
 
+> ⚠️ **Superseded.** This was written before the actual posting was known. The real role is **Distinguished Data Scientist, Creative Intelligence (R-2630449)**. See `10_ROLE_creative_intelligence_START_HERE.md` §2 for the role-specific gap analysis. Keep this file for the general ads-domain gaps (still relevant, but secondary).
+
 ## TL;DR
 
 You're **over-qualified on deep-learning craft** and **under-evidenced on three things this role is hired for**:
