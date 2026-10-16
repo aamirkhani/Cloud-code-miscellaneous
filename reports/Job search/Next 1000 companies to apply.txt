@@ -1,0 +1,2038 @@
+TARGET COMPANIES FOR AAMER KHANI - next 1000 companies to apply to
+Generated 2026-10-16 from a full digest of Gmail (incl. forwarded Hotmail), Jul 1 - Oct 16, 2026.
+
+EXCLUDED: every company with an application, confirmation, rejection, interview or recruiter
+thread in that mail (~930 companies, ~2,100 distinct company+role applications), plus Samsung entities.
+Hotmail forwarding is flaky, so a few companies you applied to from Hotmail may still appear -
+the Chrome plugin should also check its own history before applying.
+
+ORDER: interleaved by sector, weighted 2x toward the lanes where your past applications converted
+best (CV / 3D / XR / perception / robotics ~9.6% vs ~4% for generic ML). Within a sector,
+startups and growth companies come before large companies.
+
+RULES (from the audit): max 2 roles per company per 90 days; Staff / Principal / Lead / Architect roles
+in ML for 3D, XR, vision, perception, robotics, generative media or on-device AI only; no front-end,
+.NET, full-stack, SRE, data-engineering or hardware/electrical roles; salary field = "flexible".
+
+CAVEATS: compiled by research agents; most entries are from model knowledge with partial web
+verification (a shared search limit was hit). A few companies may have been acquired, shut down,
+or have no matching opening right now - skip those. Careers URLs are given only where known.
+
+Format: rank. Company | sector | location | size
+         Fit: the team/product that matches your background | careers URL
+
+====================================================================================================
+BATCH 1 (#1-250): apply first - highest-fit lanes (XR/3D, autonomy, robotics, applied CV)
+====================================================================================================
+   1. Mentra  |  XR / 3D graphics / games  |  San Francisco, CA  |  startup
+      Fit: MentraOS open smart-glasses OS: camera/display pipelines, on-device vision
+   2. Zendar  |  Autonomy / drones / defense perception  |  Berkeley, CA  |  startup
+      Fit: High-res semantic radar perception; sensor fusion and ML on radar point clouds
+   3. Dexmate  |  Robotics & embodied AI  |  Santa Clara, CA  |  startup
+      Fit: Vega wheeled humanoid perception plus XR teleop 'Robot Copilot' interface
+   4. Subtle Medical  |  Applied computer vision (medical, geo, industrial)  |  Menlo Park, CA  |  startup
+      Fit: Deep learning MRI/PET image enhancement & denoising; generative imaging fits  |  https://subtlemedical.com/careers/
+   5. Bezi  |  XR / 3D graphics / games  |  San Francisco, CA  |  startup
+      Fit: AI-assisted 3D/XR prototyping tool (Sidekick); real-time rendering, gen 3D
+   6. Expedera  |  Autonomy / drones / defense perception  |  Santa Clara, CA  |  startup
+      Fit: Origin NPU IP for automotive/edge; NN deployment, quantization and perf modeling
+   7. Foundation Future Industries  |  Robotics & embodied AI  |  San Francisco, CA  |  startup
+      Fit: Phantom humanoid camera-first vision stack and edge inference
+   8. Bunkerhill Health  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  startup
+      Fit: Clinical imaging AI deployment platform; CV/ML lead
+   9. Genmo  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: Mochi open video generation models research
+  10. Based Hardware (Omi)  |  Chips, cameras, devices & wearables  |  San Francisco, CA  |  startup
+      Fit: Omi AI wearable; on-device audio/vision ML and companion app
+  11. Backflip AI  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  startup
+      Fit: 3D scan/mesh-to-parametric CAD generative models  |  https://www.backflip.ai
+  12. Picsart  |  Big tech & enterprise ML/vision teams  |  Remote-US  |  growth
+      Fit: Generative image editing, inpainting and on-device effects  |  https://picsart.com/careers
+  13. Hillbot  |  Venture-backed AI startups (2022-2026)  |  San Jose CA  |  startup
+      Fit: Generative sim for robot training; 3D/graphics + sim fit
+  14. Stanford Virtual Human Interaction Lab  |  National labs, research institutes, defense & space  |  Stanford CA  |  startup
+      Fit: XR/VR research engineering, rendering and tracking  |  https://vhil.stanford.edu
+  15. Mmhmm  |  Mid/large tech with ML, vision or media teams  |  Remote US  |  startup
+      Fit: Video presence app; real-time segmentation and compositing
+  16. Element Science  |  Northern California engineering employers  |  San Francisco  |  startup
+      Fit: Wearable defibrillator; embedded algorithms  |  https://www.elementscience.com/careers
+  17. Bolt Graphics  |  XR / 3D graphics / games  |  Sunnyvale, CA  |  startup
+      Fit: Zeus path-tracing GPU: Vulkan/graphics drivers, rendering + ML workloads
+  18. Cyngn  |  Autonomy / drones / defense perception  |  Menlo Park, CA  |  startup
+      Fit: DriveMod autonomy kit for industrial vehicles; perception and sensor fusion
+  19. Weave Robotics  |  Robotics & embodied AI  |  San Francisco, CA  |  startup
+      Fit: Isaac home robot perception and teleop-assist UX
+  20. Exo Imaging  |  Applied computer vision (medical, geo, industrial)  |  Santa Clara, CA  |  startup
+      Fit: Handheld pMUT ultrasound with on-device AI guidance; edge ML fit  |  https://www.exo.inc/careers
+  21. Vizcom  |  XR / 3D graphics / games  |  San Francisco, CA  |  startup
+      Fit: Diffusion sketch-to-render and 3D for industrial design
+  22. Cartken  |  Autonomy / drones / defense perception  |  Oakland, CA  |  startup
+      Fit: Camera-based autonomy for delivery/industrial robots; visual navigation, edge CV
+  23. Tacta Systems  |  Robotics & embodied AI  |  Palo Alto, CA  |  startup
+      Fit: Dexterous intelligence: tactile + vision sensor fusion ML
+  24. Theator  |  Applied computer vision (medical, geo, industrial)  |  Remote-US  |  startup
+      Fit: Surgical video intelligence with VLMs; video understanding lead  |  https://theator.io/careers/
+  25. Playground  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: Image foundation models and AI graphic design editor
+  26. Daylight Computer  |  Chips, cameras, devices & wearables  |  San Francisco, CA  |  startup
+      Fit: LivePaper tablet; Android platform, display pipeline, on-device AI
+  27. Motif  |  Simulation, digital twins & science AI  |  Remote-US  |  startup
+      Fit: Ex-Autodesk founders; cloud BIM collaboration with real-time 3D streaming and AI  |  https://motif.io/careers
+  28. LinkedIn  |  Big tech & enterprise ML/vision teams  |  Sunnyvale, CA  |  large
+      Fit: Image/video understanding and generative media for feed and ads  |  https://careers.linkedin.com
+  29. Perceptron AI  |  Venture-backed AI startups (2022-2026)  |  Seattle WA (remote US)  |  startup
+      Fit: Multimodal perception models for physical world; CV fit
+  30. Stanford Computational Imaging Lab  |  National labs, research institutes, defense & space  |  Stanford CA  |  startup
+      Fit: Neural rendering, holographic displays, computational imaging research engineering
+  31. Captions  |  Mid/large tech with ML, vision or media teams  |  New York / remote  |  startup
+      Fit: Generative video editing; lip-sync/eye-contact models  |  https://www.captions.ai/careers
+  32. Nanonets  |  Northern California engineering employers  |  San Francisco  |  startup
+      Fit: OCR and document vision models
+  33. Convai  |  XR / 3D graphics / games  |  San Jose, CA  |  startup
+      Fit: Conversational embodied AI NPCs for Unreal/Unity and XR
+  34. Vayu Robotics  |  Autonomy / drones / defense perception  |  Palo Alto, CA  |  startup
+      Fit: Lidar-free delivery robots with foundation-model driving; sim-to-real, generative sim
+  35. Proception  |  Robotics & embodied AI  |  Palo Alto, CA  |  startup
+      Fit: ProHand tactile hands and ProGlove capture; hand tracking and sensor fusion
+  36. Virgo Surgical Video Solutions  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  startup
+      Fit: Endoscopy video capture + foundation models for GI video AI
+  37. Scenario  |  XR / 3D graphics / games  |  San Francisco, CA  |  startup
+      Fit: Generative 2D/3D game assets; custom diffusion model training
+  38. Cobalt Robotics  |  Autonomy / drones / defense perception  |  San Mateo, CA  |  startup
+      Fit: Indoor security robots; SLAM, perception and remote-ops video tooling
+  39. Avatar Robotics  |  Robotics & embodied AI  |  San Francisco, CA  |  startup
+      Fit: Teleop stack for wheeled humanoids; low-latency video/XR reprojection
+  40. Levita Magnetics  |  Applied computer vision (medical, geo, industrial)  |  San Mateo, CA  |  startup
+      Fit: MARS magnetic surgical robot; laparoscopic camera control & vision
+  41. Civitai  |  Generative AI & AI infrastructure  |  Remote-US  |  startup
+      Fit: Generative image/video model hub and on-site diffusion generation
+  42. Openwater  |  Chips, cameras, devices & wearables  |  San Francisco, CA  |  startup
+      Fit: Wearable optical/ultrasound imaging; signal processing and ML
+  43. Squint  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  startup
+      Fit: AR procedures for factories; on-device CV and spatial tracking  |  https://www.squint.ai/careers
+  44. PayPal  |  Big tech & enterprise ML/vision teams  |  San Jose, CA  |  large
+      Fit: Document and ID vision, on-device ML for fraud and identity  |  https://careers.pypl.com
+  45. Moondream  |  Venture-backed AI startups (2022-2026)  |  Seattle WA (remote US)  |  startup
+      Fit: Tiny VLMs for edge; on-device ML + quantization fit
+  46. Stanford Center for Image Systems Engineering (SCIEN)  |  National labs, research institutes, defense & space  |  Stanford CA  |  startup
+      Fit: Imaging systems, AR/VR displays, computational photography research  |  https://scien.stanford.edu
+  47. Opus Clip  |  Mid/large tech with ML, vision or media teams  |  Palo Alto CA  |  startup
+      Fit: AI video clipping and reframing
+  48. ScaleFlux  |  Northern California engineering employers  |  Milpitas  |  startup
+      Fit: Computational storage; firmware and hardware accel  |  https://scaleflux.com/careers/
+  49. ShapesXR  |  XR / 3D graphics / games  |  San Mateo, CA  |  startup
+      Fit: Collaborative XR design/prototyping on Quest and Vision Pro
+  50. Polymath Robotics  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  startup
+      Fit: Autonomy API for off-highway vehicles; localization, sensor fusion, safety
+  51. Vision Lab  |  Robotics & embodied AI  |  San Francisco, CA  |  startup
+      Fit: Factory video data for robot FMs; video ML and data-quality metrics
+  52. OrthoFX  |  Applied computer vision (medical, geo, industrial)  |  Fremont, CA  |  startup
+      Fit: Ex-Invisalign team; aligner 3D treatment planning & tooth segmentation
+  53. Duality AI  |  XR / 3D graphics / games  |  San Mateo, CA  |  startup
+      Fit: Falcon Unreal-based digital-twin sim; sensor sim, synthetic data for vision
+  54. Teleo  |  Autonomy / drones / defense perception  |  Palo Alto, CA  |  startup
+      Fit: Supervised autonomy for heavy equipment; teleop video, perception, low-latency streaming
+  55. Human Archive  |  Robotics & embodied AI  |  San Francisco, CA  |  startup
+      Fit: Human demonstration capture for robot learning; multi-sensor rigs
+  56. Pearl  |  Applied computer vision (medical, geo, industrial)  |  Remote-US  |  startup
+      Fit: Dental X-ray AI (Second Opinion); CV lead role, Align experience valued  |  https://www.hellopearl.com/careers
+  57. Reve  |  Generative AI & AI infrastructure  |  Palo Alto, CA  |  startup
+      Fit: Reve image generation models and editing
+  58. Cognichip  |  Chips, cameras, devices & wearables  |  San Francisco, CA  |  startup
+      Fit: Physics-informed foundation model for chip design
+  59. Duality Robotics  |  Simulation, digital twins & science AI  |  Remote-US  |  startup
+      Fit: Falcon digital-twin simulator, synthetic data and sensor sim  |  https://www.duality.ai/careers
+  60. Block  |  Big tech & enterprise ML/vision teams  |  Oakland, CA  |  large
+      Fit: Cash App ID verification vision, Square on-device ML hardware  |  https://block.xyz/careers
+  61. Rerun  |  Venture-backed AI startups (2022-2026)  |  Remote (Stockholm/US)  |  startup
+      Fit: Open-source 3D/vision data viewer; graphics + CV fit
+  62. Albedo  |  National labs, research institutes, defense & space  |  Denver CO / remote  |  startup
+      Fit: Very high-res satellite imagery, image processing  |  https://albedo.com/careers
+  63. Pixelcut  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA  |  startup
+      Fit: AI photo editor; segmentation and diffusion
+  64. Sigray  |  Northern California engineering employers  |  Concord  |  startup
+      Fit: Concord CA; X-ray microscopy, tomography reconstruction  |  https://sigray.com/careers/
+  65. Glass Imaging  |  XR / 3D graphics / games  |  Los Altos, CA  |  startup
+      Fit: GlassAI neural lens/sensor restoration for phones, drones, wearables
+  66. SafeAI  |  Autonomy / drones / defense perception  |  Milpitas, CA  |  startup
+      Fit: Retrofit autonomy for mining trucks; perception, sensor fusion in harsh environments
+  67. Flexion  |  Robotics & embodied AI  |  Zurich / SF Bay Area (new US HQ)  |  startup
+      Fit: Sim-to-real RL for humanoids; GPU simulation and RL research
+  68. Deepcell  |  Applied computer vision (medical, geo, industrial)  |  Menlo Park, CA  |  startup
+      Fit: AI morphology cell imaging (REM-I); CV foundation models
+  69. Brelyon  |  XR / 3D graphics / games  |  Redwood City, CA  |  startup
+      Fit: Computational virtual-depth displays; rendering and content pipelines
+  70. Civ Robotics  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  startup
+      Fit: Autonomous survey/layout rovers for solar and civil; RTK localization, mapping
+  71. Trener Robotics  |  Robotics & embodied AI  |  San Jose, CA  |  startup
+      Fit: Robot-agnostic skills platform; perception for machine tending
+  72. Enable Medicine  |  Applied computer vision (medical, geo, industrial)  |  Menlo Park, CA  |  startup
+      Fit: Spatial biology multiplex imaging atlas; vision foundation models
+  73. Liquid AI  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: Efficient on-device foundation models (LFM, LFM-VL vision)  |  https://www.liquid.ai/careers
+  74. Silimate  |  Chips, cameras, devices & wearables  |  Mountain View, CA  |  startup
+      Fit: AI copilot for chip design; ML engineer roles
+  75. WindBorne Systems  |  Simulation, digital twins & science AI  |  Palo Alto, CA  |  startup
+      Fit: Weather balloon constellation and AI global forecast models  |  https://windbornesystems.com/careers
+  76. Oracle  |  Big tech & enterprise ML/vision teams  |  Redwood City, CA  |  large
+      Fit: OCI Vision and Document Understanding AI services  |  https://careers.oracle.com
+  77. Common Sense Machines  |  Venture-backed AI startups (2022-2026)  |  Cambridge MA (remote US)  |  startup
+      Fit: Image-to-3D world models; neural fields fit
+  78. Zephr  |  National labs, research institutes, defense & space  |  Mountain View CA  |  startup
+      Fit: Collaborative GNSS positioning for phones
+  79. Roomvo  |  Mid/large tech with ML, vision or media teams  |  Remote  |  startup
+      Fit: AR room visualizer for flooring and decor
+  80. Ekso Bionics  |  Northern California engineering employers  |  San Rafael  |  startup
+      Fit: Robotic exoskeletons; controls and sensor fusion
+  81. Light Field Lab  |  XR / 3D graphics / games  |  San Jose, CA  |  startup
+      Fit: SolidLight holographic displays; light-field rendering and content pipeline
+  82. Bonsai Robotics  |  Autonomy / drones / defense perception  |  San Jose, CA  |  startup
+      Fit: Vision-based autonomy for orchard vehicles in GPS-denied canopies; visual SLAM
+  83. Jacobi Robotics  |  Robotics & embodied AI  |  Emeryville, CA  |  startup
+      Fit: GPU motion planning and digital-twin studio for palletizing
+  84. Noetik  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  startup
+      Fit: Multimodal spatial imaging + generative models for cancer biology
+  85. Avegant  |  XR / 3D graphics / games  |  San Mateo, CA  |  startup
+      Fit: AR glasses light engines; display/optics software and calibration
+  86. Agtonomy  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  startup
+      Fit: TeleFarmer autonomy for tractors; perception, fleet ops, teleop
+  87. PickNik Robotics  |  Robotics & embodied AI  |  Remote-US (Boulder HQ)  |  startup
+      Fit: MoveIt Pro manipulation; perception and ML integration
+  88. Valar Labs  |  Applied computer vision (medical, geo, industrial)  |  Palo Alto, CA  |  startup
+      Fit: Pathology slide AI for treatment prediction; CV lead
+  89. Nexa AI  |  Generative AI & AI infrastructure  |  Cupertino, CA  |  startup
+      Fit: On-device multimodal inference SDK for NPUs/GPUs
+  90. Sagence AI  |  Chips, cameras, devices & wearables  |  Santa Clara, CA  |  startup
+      Fit: Analog in-memory inference chips; compiler and model mapping
+  91. Excarta  |  Simulation, digital twins & science AI  |  San Mateo, CA  |  startup
+      Fit: ML weather forecasting models for energy and agtech  |  https://www.excarta.io
+  92. IBM Research  |  Big tech & enterprise ML/vision teams  |  San Jose, CA  |  large
+      Fit: Almaden lab: vision-language and edge AI research  |  https://www.ibm.com/careers
+  93. Kaedim  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA / London  |  startup
+      Fit: AI 3D asset creation; graphics + gen fit
+  94. UCSF Center for Intelligent Imaging  |  National labs, research institutes, defense & space  |  San Francisco CA  |  growth
+      Fit: ML for medical imaging, 3D reconstruction, GPU pipelines
+  95. Coco Robotics  |  Mid/large tech with ML, vision or media teams  |  Los Angeles / remote  |  startup
+      Fit: Sidewalk delivery robots; perception
+  96. Vista AI  |  Northern California engineering employers  |  Palo Alto  |  startup
+      Fit: Autonomous MRI scanning with ML  |  https://www.vista.ai/careers
+  97. Campfire  |  XR / 3D graphics / games  |  San Mateo, CA  |  startup
+      Fit: XR review of 3D CAD on Quest/Vision Pro; rendering of large CAD models
+  98. Verdant Robotics  |  Autonomy / drones / defense perception  |  Hayward, CA  |  startup
+      Fit: Real-time plant perception and precision spraying; edge CV at high frame rate
+  99. InOrbit  |  Robotics & embodied AI  |  Mountain View, CA  |  startup
+      Fit: RobOps fleet platform; 3D visualization and analytics
+ 100. Zippin  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  startup
+      Fit: Checkout-free stores via ceiling cameras + shelf sensors; multi-cam tracking  |  https://www.getzippin.com/careers
+ 101. Polycam  |  XR / 3D graphics / games  |  Remote-US  |  startup
+      Fit: 3D capture: photogrammetry, Gaussian splatting, LiDAR reconstruction  |  https://job-boards.greenhouse.io/polycamcareers
+ 102. Stout Industrial Technology  |  Autonomy / drones / defense perception  |  Salinas, CA  |  startup
+      Fit: Smart cultivator vision; real-time crop detection on edge hardware
+ 103. Raise Robotics  |  Robotics & embodied AI  |  San Francisco, CA  |  startup
+      Fit: Dual-arm mobile manipulator for facade install; 3D perception
+ 104. Focal Systems  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  startup
+      Fit: Shelf camera AI for retail out-of-stock detection; edge CV
+ 105. Ollama  |  Generative AI & AI infrastructure  |  Palo Alto, CA  |  startup
+      Fit: Local model inference engine incl. vision models, GPU backends
+ 106. Persimmons  |  Chips, cameras, devices & wearables  |  San Jose, CA  |  startup
+      Fit: Full-stack edge AI inference chip; compiler/algorithms team
+ 107. Kettle  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  startup
+      Fit: Wildfire reinsurance with ML risk models  |  https://www.kettle.co/careers
+ 108. HP Inc.  |  Big tech & enterprise ML/vision teams  |  Palo Alto, CA  |  large
+      Fit: HP Labs imaging, 3D printing vision, AI PC on-device ML  |  https://jobs.hp.com
+ 109. Imbue  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Agent research; RL + ML fit
+ 110. UC Davis DataLab  |  National labs, research institutes, defense & space  |  Davis CA  |  growth
+      Fit: Research software and data science engineering for campus research
+ 111. Kiwibot  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA  |  startup
+      Fit: Delivery robots; CV perception
+ 112. Aviz Networks  |  Northern California engineering employers  |  San Jose  |  startup
+      Fit: AI networking fabric software
+ 113. Spline  |  XR / 3D graphics / games  |  San Francisco, CA  |  startup
+      Fit: Browser 3D design tool: WebGL/WebGPU rendering, AI 3D generation
+ 114. Advanced Farm  |  Autonomy / drones / defense perception  |  Davis, CA  |  startup
+      Fit: Robotic strawberry/apple harvesters; 3D vision, depth and edge ML
+ 115. Doxel  |  Robotics & embodied AI  |  Redwood City, CA  |  startup
+      Fit: Automated progress tracking vs BIM; 3D reconstruction
+ 116. Mashgin  |  Applied computer vision (medical, geo, industrial)  |  Palo Alto, CA  |  startup
+      Fit: 3D vision self-checkout kiosks; multi-view item recognition  |  https://www.mashgin.com/careers
+ 117. Zoo (KittyCAD)  |  XR / 3D graphics / games  |  Remote-US  |  startup
+      Fit: GPU-native CAD kernel/renderer and Text-to-CAD ML models
+ 118. Bifrost AI  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  startup
+      Fit: Synthetic 3D data for defense/space/maritime perception; procedural worlds, rendering
+ 119. Cosmic Robotics  |  Robotics & embodied AI  |  San Francisco, CA  |  startup
+      Fit: Heavy-lift solar-farm robots; perception and manipulation
+ 120. Deep North  |  Applied computer vision (medical, geo, industrial)  |  Foster City, CA  |  startup
+      Fit: Video analytics for retail/venues; multi-camera tracking
+ 121. Unsloth  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: Fine-tuning and quantization kernels for LLM/VLM models
+ 122. Femtosense  |  Chips, cameras, devices & wearables  |  San Bruno, CA  |  startup
+      Fit: Sparse processing unit for hearables; sparse/quantized on-device ML
+ 123. Mitra Chem  |  Simulation, digital twins & science AI  |  Mountain View, CA  |  startup
+      Fit: ML-driven battery cathode materials discovery  |  https://www.mitrachem.com/careers
+ 124. Hewlett Packard Enterprise  |  Big tech & enterprise ML/vision teams  |  San Jose, CA  |  large
+      Fit: Hewlett Packard Labs AI and accelerated computing research  |  https://careers.hpe.com
+ 125. Lumana  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: AI video analytics; CV + edge fit
+ 126. UC Santa Cruz Genomics Institute  |  National labs, research institutes, defense & space  |  Santa Cruz CA  |  growth
+      Fit: Research software engineering, large-scale ML pipelines
+ 127. Betterview  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA (Nearmap)  |  startup
+      Fit: Aerial imagery CV for insurers
+ 128. Graid Technology  |  Northern California engineering employers  |  Santa Clara  |  startup
+      Fit: GPU-accelerated RAID storage
+ 129. Adam  |  XR / 3D graphics / games  |  San Francisco, CA  |  startup
+      Fit: Text-to-3D and AI copilot for CAD
+ 130. Synthesis AI  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  startup
+      Fit: Synthetic humans and scenes for CV training; generative imaging, 3D rendering
+ 131. Stout AgTech  |  Robotics & embodied AI  |  Salinas, CA  |  startup
+      Fit: Smart Cultivator plant/weed vision on edge hardware
+ 132. Coram AI  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  startup
+      Fit: AI video security with natural-language search over camera video
+ 133. Mojo Vision  |  XR / 3D graphics / games  |  Cupertino, CA  |  startup
+      Fit: MicroLED display platform for AR glasses
+ 134. Genesis AI  |  Autonomy / drones / defense perception  |  Palo Alto, CA  |  startup
+      Fit: Generative physics simulation engine for robotics data; GPU sim and rendering
+ 135. Hyphen  |  Robotics & embodied AI  |  San Jose, CA  |  startup
+      Fit: Automated makeline vision, QA and order accuracy
+ 136. Cloudastructure  |  Applied computer vision (medical, geo, industrial)  |  Palo Alto, CA  |  startup
+      Fit: Cloud video surveillance with AI analytics & remote guarding
+ 137. DeepInfra  |  Generative AI & AI infrastructure  |  Palo Alto, CA  |  startup
+      Fit: Low-cost inference serving for image and language models
+ 138. MatX  |  Chips, cameras, devices & wearables  |  Mountain View, CA  |  startup
+      Fit: LLM accelerator chips; ML systems and kernel/compiler work
+ 139. Chemix  |  Simulation, digital twins & science AI  |  Sunnyvale, CA  |  startup
+      Fit: AI-designed EV battery materials  |  https://chemix.ai/careers
+ 140. Volkswagen Group of America Innovation Center  |  Big tech & enterprise ML/vision teams  |  Belmont, CA  |  large
+      Fit: Innovation Center California: XR, HMI and vision ML research  |  https://www.vwgoa.com/careers
+ 141. Arcturus  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Volumetric capture/streaming; 3D + XR fit
+ 142. Chan Zuckerberg Biohub San Francisco  |  National labs, research institutes, defense & space  |  San Francisco CA  |  growth
+      Fit: Imaging AI, 3D microscopy reconstruction, ML platform  |  https://www.czbiohub.org/careers
+ 143. Kaia Health  |  Mid/large tech with ML, vision or media teams  |  Remote US  |  startup
+      Fit: Camera-based motion coaching CV
+ 144. Komprise  |  Northern California engineering employers  |  Campbell  |  startup
+      Fit: Unstructured data management for AI
+ 145. Lemon Slice  |  XR / 3D graphics / games  |  San Francisco, CA  |  startup
+      Fit: Real-time diffusion video avatars streaming at 20fps; model optimization
+ 146. Deepen AI  |  Autonomy / drones / defense perception  |  Santa Clara, CA  |  startup
+      Fit: Multi-sensor calibration and 3D annotation for AV/robotics; point-cloud tooling
+ 147. Hello Robot  |  Robotics & embodied AI  |  Martinez, CA  |  startup
+      Fit: Stretch mobile manipulator; perception and VR teleop interfaces
+ 148. Deep Sentinel  |  Applied computer vision (medical, geo, industrial)  |  Pleasanton, CA  |  startup
+      Fit: AI security cameras with live guard escalation; next door to Dublin
+ 149. Intangible  |  XR / 3D graphics / games  |  San Francisco, CA  |  startup
+      Fit: Browser real-time 3D plus generative AI for film/game previsualization
+ 150. Foxglove  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  startup
+      Fit: Robotics/AV visualization and data platform; 3D WebGL rendering, MCAP  |  https://foxglove.dev/careers
+ 151. Medra  |  Robotics & embodied AI  |  San Francisco, CA  |  startup
+      Fit: Physical AI scientists; vision for lab-instrument manipulation
+ 152. Truepic  |  Applied computer vision (medical, geo, industrial)  |  Remote-US  |  startup
+      Fit: C2PA image authenticity & capture; camera pipeline + generative detection  |  https://www.truepic.com/careers
+ 153. Hyperbolic  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: GPU cloud and inference for open image/video models
+ 154. Ventana Micro Systems  |  Chips, cameras, devices & wearables  |  Cupertino, CA  |  startup
+      Fit: High-performance RISC-V chiplets for AI/datacenter; ML software
+ 155. Aionics  |  Simulation, digital twins & science AI  |  Palo Alto, CA  |  startup
+      Fit: ML plus quantum simulation for battery electrolyte design  |  https://aionics.io
+ 156. Bosch Research and Technology Center  |  Big tech & enterprise ML/vision teams  |  Sunnyvale, CA  |  large
+      Fit: Computer vision, 3D scene understanding, edge AI research  |  https://www.bosch.us/careers
+ 157. Brilliant Labs  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA / Singapore  |  startup
+      Fit: Open-source AI glasses; edge vision + XR fit
+ 158. Gladstone Institutes  |  National labs, research institutes, defense & space  |  San Francisco CA  |  growth
+      Fit: Imaging ML, microscopy computer vision research engineering  |  https://gladstone.org/careers
+ 159. Sensity AI  |  Mid/large tech with ML, vision or media teams  |  Remote  |  startup
+      Fit: Deepfake video detection
+ 160. Pacific Fusion  |  Northern California engineering employers  |  Fremont  |  startup
+      Fit: Pulsed-power fusion; simulation and ML  |  https://www.pacificfusion.com/careers
+ 161. Spatial (spatial.io)  |  XR / 3D graphics / games  |  San Francisco, CA  |  startup
+      Fit: Browser/mobile 3D UGC game platform; Unity WebGL rendering
+ 162. Formant  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  startup
+      Fit: Robot fleet data and teleop platform; real-time video, 3D visualization
+ 163. Trilobio  |  Robotics & embodied AI  |  San Francisco, CA  |  startup
+      Fit: Trilobot whole-lab automation; robot perception
+ 164. Reality Defender  |  Applied computer vision (medical, geo, industrial)  |  Remote-US  |  startup
+      Fit: Face/video deepfake detection; your face-synthesis GAN/diffusion work fits  |  https://www.realitydefender.com/careers
+ 165. Cupix  |  XR / 3D graphics / games  |  San Jose, CA  |  startup
+      Fit: 3D digital twins from 360 video: SLAM, reconstruction
+ 166. Point One Navigation  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  startup
+      Fit: Polaris RTK network and Atlas INS; GNSS/IMU/vision sensor fusion
+ 167. Tetsuwan Scientific  |  Robotics & embodied AI  |  San Francisco, CA  |  startup
+      Fit: AI scientist with robotic execution; vision for wet-lab tasks
+ 168. GetReal Security  |  Applied computer vision (medical, geo, industrial)  |  Remote-US  |  startup
+      Fit: Digital forensics for manipulated media (Hany Farid); generative imaging fit
+ 169. SF Compute  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: GPU compute marketplace for model training
+ 170. Akeana  |  Chips, cameras, devices & wearables  |  Santa Clara, CA  |  startup
+      Fit: RISC-V cores with vector/matrix for AI; software enablement
+ 171. Camus Energy  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  startup
+      Fit: Grid orchestration and forecasting for utilities  |  https://www.camus.energy/careers
+ 172. Ericsson  |  Big tech & enterprise ML/vision teams  |  Santa Clara, CA  |  large
+      Fit: Ericsson Research XR over 5G and edge ML offload  |  https://www.ericsson.com/en/careers
+ 173. Induced AI  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Agents operating UIs; screen-vision agents fit
+ 174. SETI Institute  |  National labs, research institutes, defense & space  |  Mountain View CA  |  growth
+      Fit: Signal processing, ML for astronomy, planetary imaging  |  https://www.seti.org/careers
+ 175. Adaptive Security  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA  |  startup
+      Fit: Deepfake simulation and detection training
+ 176. PDF Solutions  |  Northern California engineering employers  |  Santa Clara  |  growth
+      Fit: ML on fab data, Exensio analytics platform  |  https://www.pdf.com/careers/
+ 177. DeepMotion  |  XR / 3D graphics / games  |  San Mateo, CA  |  startup
+      Fit: AI markerless motion capture and physics-based character animation
+ 178. Hivemapper (Bee Maps)  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  startup
+      Fit: Crowdsourced dashcam mapping; on-device CV map feature detection, 3D reconstruction
+ 179. Multiply Labs  |  Robotics & embodied AI  |  San Francisco, CA  |  startup
+      Fit: Robotic cell-therapy manufacturing; vision QA
+ 180. Paravision  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  startup
+      Fit: Face recognition & liveness models; edge deployment
+ 181. Sync Labs (sync.)  |  XR / 3D graphics / games  |  San Francisco, CA  |  startup
+      Fit: Lip-sync and visual dubbing video models
+ 182. Matternet  |  Autonomy / drones / defense perception  |  Mountain View, CA  |  startup
+      Fit: Autonomous delivery drones; flight autonomy, perception and detect-and-avoid
+ 183. Glacier  |  Robotics & embodied AI  |  San Francisco, CA  |  startup
+      Fit: AI vision for recycling-sorting robots
+ 184. Alcatraz AI  |  Applied computer vision (medical, geo, industrial)  |  Cupertino, CA  |  startup
+      Fit: Face authentication access control with 3D sensing at the edge
+ 185. Daily  |  Generative AI & AI infrastructure  |  Remote-US  |  startup
+      Fit: Real-time video infra and Pipecat multimodal agents
+ 186. Framework Computer  |  Chips, cameras, devices & wearables  |  San Francisco, CA  |  startup
+      Fit: Modular laptops; firmware, Linux/graphics and AI PC enablement
+ 187. WattTime  |  Simulation, digital twins & science AI  |  Remote-US  |  startup
+      Fit: Emissions data and earth-observation power plant monitoring (Climate TRACE)  |  https://watttime.org/careers
+ 188. Comcast  |  Big tech & enterprise ML/vision teams  |  Sunnyvale, CA  |  large
+      Fit: Applied AI video understanding and media ML  |  https://jobs.comcast.com
+ 189. Simular AI  |  Venture-backed AI startups (2022-2026)  |  Palo Alto CA  |  startup
+      Fit: Agent S desktop agents; vision + RL fit
+ 190. Bay Area Environmental Research Institute (BAERI)  |  National labs, research institutes, defense & space  |  Moffett Field CA  |  growth
+      Fit: NASA Ames contractor; Earth science imaging, ML  |  https://baeri.org
+ 191. Moonvalley  |  Mid/large tech with ML, vision or media teams  |  Los Angeles / remote  |  startup
+      Fit: Licensed generative video (Marey)
+ 192. Enovix  |  Northern California engineering employers  |  Fremont  |  growth
+      Fit: Silicon battery maker; manufacturing vision and automation  |  https://www.enovix.com/careers/
+ 193. Rosebud AI  |  XR / 3D graphics / games  |  San Francisco, CA  |  startup
+      Fit: AI-generated 3D web games
+ 194. Theseus  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  startup
+      Fit: Visual positioning for GPS-denied drones; camera+IMU+satellite-imagery matching  |  https://www.ycombinator.com/companies/theseus
+ 195. EverestLabs  |  Robotics & embodied AI  |  Fremont, CA  |  startup
+      Fit: RecycleOS vision and robotic sorting
+ 196. Butlr  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  startup
+      Fit: Thermal body-heat sensing for spatial analytics; low-power edge ML
+ 197. Luminary Cloud  |  XR / 3D graphics / games  |  San Mateo, CA  |  startup
+      Fit: GPU-native simulation, 3D visualization, physics AI models
+ 198. Pyka  |  Autonomy / drones / defense perception  |  Alameda, CA  |  startup
+      Fit: Autonomous electric cargo/crop-spray aircraft; perception, obstacle detection
+ 199. Capstan Medical  |  Robotics & embodied AI  |  Santa Cruz, CA  |  startup
+      Fit: Robotic mitral valve replacement; image guidance
+ 200. DeGirum  |  Applied computer vision (medical, geo, industrial)  |  Santa Clara, CA  |  startup
+      Fit: Edge AI accelerator + PySDK for vision; quantization fit
+ 201. Kapwing  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: AI video editing: smart cut, generative B-roll, dubbing
+ 202. Friend  |  Chips, cameras, devices & wearables  |  San Francisco, CA  |  startup
+      Fit: AI companion pendant; on-device audio and LLM companion
+ 203. Unlearn  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  startup
+      Fit: Patient digital twins with generative models for trials  |  https://www.unlearn.ai/careers
+ 204. Johnson & Johnson MedTech  |  Big tech & enterprise ML/vision teams  |  Santa Clara, CA  |  large
+      Fit: Surgical robotics vision, 3D reconstruction and AR guidance  |  https://www.careers.jnj.com
+ 205. Browserbase  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Infra for screen-using agents; agent tooling fit
+ 206. Universities Space Research Association (USRA)  |  National labs, research institutes, defense & space  |  Mountain View CA  |  growth
+      Fit: NASA Ames quantum/AI lab, research engineering  |  https://www.usra.edu/careers
+ 207. Flawless AI  |  Mid/large tech with ML, vision or media teams  |  Los Angeles / remote  |  startup
+      Fit: Neural visual dubbing; face synthesis
+ 208. Amprius Technologies  |  Northern California engineering employers  |  Fremont  |  growth
+      Fit: Silicon anode batteries for drones/aviation  |  https://amprius.com/careers/
+ 209. Astrocade  |  XR / 3D graphics / games  |  San Francisco, CA  |  startup
+      Fit: AI game creation platform
+ 210. ASKA  |  Autonomy / drones / defense perception  |  Mountain View, CA  |  startup
+      Fit: Drive-and-fly eVTOL vehicle; flight controls software and autonomy features
+ 211. Mendaera  |  Robotics & embodied AI  |  San Mateo, CA  |  startup
+      Fit: Handheld robotics for needle procedures; ultrasound vision
+ 212. Tempo  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  startup
+      Fit: 3D depth-camera home gym with rep tracking & form feedback
+ 213. Moonlake AI  |  XR / 3D graphics / games  |  San Francisco, CA  |  startup
+      Fit: Generative interactive worlds and games
+ 214. Alef Aeronautics  |  Autonomy / drones / defense perception  |  San Mateo, CA  |  startup
+      Fit: Flying car Model A; flight control software, sensing and autonomy
+ 215. Neptune Medical  |  Robotics & embodied AI  |  Burlingame, CA  |  startup
+      Fit: Robotic GI endoscopy; imaging and navigation
+ 216. NEX Team (HomeCourt)  |  Applied computer vision (medical, geo, industrial)  |  San Jose, CA  |  startup
+      Fit: Mobile CV for basketball & fitness; on-device pose estimation
+ 217. Rive  |  Generative AI & AI infrastructure  |  Remote-US  |  startup
+      Fit: Real-time interactive vector graphics runtime and GPU renderer
+ 218. Aizip  |  Chips, cameras, devices & wearables  |  Cupertino, CA  |  startup
+      Fit: Tiny ML models for vision/audio on MCUs and wearables
+ 219. Tahoe Therapeutics  |  Simulation, digital twins & science AI  |  South San Francisco, CA  |  startup
+      Fit: Single-cell perturbation atlas and virtual cell models  |  https://www.tahoebio.ai/careers
+ 220. Target  |  Big tech & enterprise ML/vision teams  |  Sunnyvale, CA  |  large
+      Fit: Target Tech AI: visual search and product imagery ML  |  https://corporate.target.com/careers
+ 221. Browser Use  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Vision-driven browser agents; agent fit
+ 222. Second Front Systems  |  National labs, research institutes, defense & space  |  remote US  |  growth
+      Fit: Software deployment for DoD  |  https://www.secondfront.com/careers
+ 223. Metaphysic  |  Mid/large tech with ML, vision or media teams  |  Remote  |  startup
+      Fit: Photoreal face synthesis for film
+ 224. Form Energy  |  Northern California engineering employers  |  Berkeley  |  growth
+      Fit: Iron-air batteries; Berkeley R&D; controls and data  |  https://formenergy.com/careers/
+ 225. XREAL  |  XR / 3D graphics / games  |  Sunnyvale, CA  |  growth
+      Fit: US R&D for Android XR AR glasses: rendering, reprojection, perception, on-device AI
+ 226. Aalyria  |  Autonomy / drones / defense perception  |  Livermore, CA  |  startup
+      Fit: Google spinout; Spacetime orchestration for aerospace networks, laser comms
+ 227. Remedy Robotics  |  Robotics & embodied AI  |  San Francisco, CA  |  startup
+      Fit: Teleoperated endovascular robots; low-latency remote ops
+ 228. Canvas Construction  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  startup
+      Fit: Drywall finishing robots; 3D scanning & surface perception
+ 229. VITURE  |  XR / 3D graphics / games  |  San Francisco, CA  |  growth
+      Fit: XR glasses software: display pipeline, spatial rendering, on-device AI
+ 230. Orbital Sidekick  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  startup
+      Fit: Hyperspectral satellite constellation; spectral CV and ML analytics
+ 231. Relay Robotics  |  Robotics & embodied AI  |  San Jose, CA  |  startup
+      Fit: Hotel/hospital delivery robots; navigation perception
+ 232. Reducto  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  startup
+      Fit: VLM-based document parsing & layout vision  |  https://reducto.ai/careers
+ 233. Subframe  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: AI-native UI design tool
+ 234. LunarG  |  Chips, cameras, devices & wearables  |  Remote-US  |  startup
+      Fit: Vulkan SDK, validation layers, GPU tooling and drivers
+ 235. Edison Scientific  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  startup
+      Fit: Kosmos AI scientist agents (FutureHouse spinout)  |  https://edisonscientific.com
+ 236. Williams-Sonoma  |  Big tech & enterprise ML/vision teams  |  San Francisco, CA  |  large
+      Fit: 3D/AR room visualization and generative product imagery  |  https://careers.williams-sonomainc.com
+ 237. Skyvern  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: LLM+CV browser workflows; vision agents fit
+ 238. Strider Technologies  |  National labs, research institutes, defense & space  |  remote US  |  growth
+      Fit: Strategic intelligence platform
+ 239. Banuba  |  Mid/large tech with ML, vision or media teams  |  Remote  |  startup
+      Fit: Face AR SDK on-device
+ 240. EnerVenue  |  Northern California engineering employers  |  Fremont  |  growth
+      Fit: Nickel-hydrogen storage; embedded and controls
+ 241. Decart  |  XR / 3D graphics / games  |  San Francisco, CA  |  growth
+      Fit: Real-time world models (Oasis/Lucy): neural rendering, low-latency video gen
+ 242. Aethero  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  startup
+      Fit: Rad-tolerant edge AI computers for satellites; on-orbit vision inference
+ 243. Tangram Vision  |  Robotics & embodied AI  |  Remote-US  |  startup
+      Fit: Sensor calibration and perception SDK; multi-camera fusion
+ 244. Unstructured  |  Applied computer vision (medical, geo, industrial)  |  Remote-US  |  startup
+      Fit: Document layout/vision models for ETL  |  https://unstructured.io/careers
+ 245. Meshy  |  XR / 3D graphics / games  |  Sunnyvale, CA  |  growth
+      Fit: Text/image-to-3D foundation models; generative AI graphics engineering  |  https://job-boards.greenhouse.io/meshy
+ 246. Ceres Imaging  |  Autonomy / drones / defense perception  |  Oakland, CA  |  startup
+      Fit: Aerial and satellite imagery analytics for agriculture; CV/ML on multispectral data
+ 247. Luxonis  |  Robotics & embodied AI  |  Remote-US (Colorado HQ)  |  startup
+      Fit: OAK spatial AI cameras; on-device ML and stereo depth
+ 248. Topaz Labs  |  Applied computer vision (medical, geo, industrial)  |  Remote-US  |  startup
+      Fit: AI image/video upscaling & restoration; inpainting/colorization fit  |  https://www.topazlabs.com/careers
+ 249. Magic Patterns  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: AI prototyping and UI generation
+ 250. Abode Systems  |  Chips, cameras, devices & wearables  |  San Francisco, CA  |  startup
+      Fit: DIY smart home security cameras; on-device detection
+
+====================================================================================================
+BATCH 2 (#251-500)
+====================================================================================================
+ 251. FutureHouse  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  startup
+      Fit: AI agents for biology research  |  https://www.futurehouse.org/careers
+ 252. Sephora  |  Big tech & enterprise ML/vision teams  |  San Francisco, CA  |  large
+      Fit: Virtual try-on AR, face/skin analysis vision  |  https://jobs.sephora.com
+ 253. MultiOn  |  Venture-backed AI startups (2022-2026)  |  Palo Alto CA  |  startup
+      Fit: Autonomous web agents; agent fit
+ 254. Satellogic  |  National labs, research institutes, defense & space  |  remote  |  growth
+      Fit: Earth observation imaging pipelines
+ 255. Notion  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA  |  growth
+      Fit: AI features in docs; multimodal/doc understanding roles  |  https://www.notion.so/careers
+ 256. Mainspring Energy  |  Northern California engineering employers  |  Menlo Park  |  growth
+      Fit: Linear generators; controls and embedded software  |  https://www.mainspringenergy.com/careers
+ 257. DigiLens  |  XR / 3D graphics / games  |  Sunnyvale, CA  |  growth
+      Fit: ARGO AR glasses and waveguides; XR software, perception, display
+ 258. Bedrock Ocean Exploration  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  startup
+      Fit: Electric AUV seafloor surveys; sonar perception, Mosaic 3D mapping platform
+ 259. Open Source Robotics Foundation  |  Robotics & embodied AI  |  Remote-US (Mountain View)  |  startup
+      Fit: ROS/Gazebo simulation and rendering
+ 260. VideaHealth  |  Applied computer vision (medical, geo, industrial)  |  Remote-US  |  startup
+      Fit: Dental radiograph AI; Align/Invisalign 3D background is a strong fit  |  https://www.videa.ai/careers
+ 261. Leia Inc  |  XR / 3D graphics / games  |  Menlo Park, CA  |  growth
+      Fit: Immersity AI: monocular depth, 2D-to-3D, 3D display rendering, eye tracking
+ 262. Navier  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  startup
+      Fit: Electric hydrofoil boats with autonomous docking/navigation; perception, sensor fusion
+ 263. Terabase Energy  |  Robotics & embodied AI  |  Berkeley, CA  |  startup
+      Fit: Robotic solar-field construction (Terafab); digital twin
+ 264. LlamaIndex  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  startup
+      Fit: LlamaParse VLM document parsing & layout vision  |  https://www.llamaindex.ai/careers
+ 265. Beautiful.ai  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: AI presentation design generation
+ 266. Eliyan  |  Chips, cameras, devices & wearables  |  Santa Clara, CA  |  startup
+      Fit: Die-to-die chiplet PHY for AI accelerators; system modeling
+ 267. EvolutionaryScale  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  startup
+      Fit: Protein generative foundation models (ESM3)  |  https://www.evolutionaryscale.ai/careers
+ 268. Visa  |  Big tech & enterprise ML/vision teams  |  Foster City, CA  |  large
+      Fit: Visa Research AI, document and identity vision  |  https://corporate.visa.com/en/jobs
+ 269. Orby AI  |  Venture-backed AI startups (2022-2026)  |  Mountain View CA  |  startup
+      Fit: Large action models over UIs; vision agents fit
+ 270. Astra Space  |  National labs, research institutes, defense & space  |  Alameda CA  |  growth
+      Fit: Launch vehicles and spacecraft engines  |  https://astra.com/careers
+ 271. Airtable  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA  |  growth
+      Fit: AI platform roles; doc/image extraction features  |  https://airtable.com/careers
+ 272. Kodiak Robotics  |  Northern California engineering employers  |  Mountain View  |  growth
+      Fit: Perception, sensor fusion for trucks  |  https://kodiak.ai/careers
+ 273. VRChat  |  XR / 3D graphics / games  |  Remote-US  |  growth
+      Fit: Social VR on Quest/PC: avatar systems, rendering performance, Unity engine  |  https://jobs.lever.co/vrchat
+ 274. Percipient.ai  |  Autonomy / drones / defense perception  |  Santa Clara, CA  |  startup
+      Fit: Mirage CV platform for ISR video/imagery analysis; vision models at the edge
+ 275. Charge Robotics  |  Robotics & embodied AI  |  San Francisco, CA  |  startup
+      Fit: Robotic solar-farm assembly; vision-guided manipulation
+ 276. Coactive AI  |  Applied computer vision (medical, geo, industrial)  |  San Jose, CA  |  startup
+      Fit: Multimodal visual search & video understanding platform  |  https://coactive.ai/careers
+ 277. zSpace  |  XR / 3D graphics / games  |  San Jose, CA  |  growth
+      Fit: Headset-free AR/VR laptops: stereo rendering, head tracking, AI features
+ 278. Pivotal  |  Autonomy / drones / defense perception  |  Palo Alto, CA  |  startup
+      Fit: Ultralight personal eVTOL (Helix); flight control software and autonomy features
+ 279. Reconstruct  |  Robotics & embodied AI  |  San Francisco, CA  |  startup
+      Fit: 4D reality mapping for construction progress
+ 280. Kaliber Labs  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  startup
+      Fit: AI for arthroscopic surgical video recognition & reporting
+ 281. Comfy Org  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: ComfyUI node-based diffusion/video workflows and runtime perf
+ 282. Silvaco  |  Chips, cameras, devices & wearables  |  Santa Clara, CA  |  growth
+      Fit: AI-driven TCAD/EDA (FTCO), ML surrogate modeling of devices
+ 283. Genesis Molecular AI  |  Simulation, digital twins & science AI  |  Burlingame, CA  |  startup
+      Fit: Physics-ML for molecular simulation and drug discovery  |  https://genesistherapeutics.ai/careers
+ 284. Capital One  |  Big tech & enterprise ML/vision teams  |  San Francisco, CA  |  large
+      Fit: AI research incl. document vision and multimodal models  |  https://www.capitalonecareers.com
+ 285. General Agents  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Realtime computer pilot models; screen vision fit
+ 286. Kepler Communications  |  National labs, research institutes, defense & space  |  Toronto / remote  |  growth
+      Fit: Optical data relay network
+ 287. Scribd  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA / remote US  |  growth
+      Fit: Document understanding and OCR ML (Scribd, Everand, SlideShare)  |  https://www.scribd.com/careers
+ 288. Outset Medical  |  Northern California engineering employers  |  San Jose  |  growth
+      Fit: Tablo dialysis system; embedded software
+ 289. Lightwheel  |  XR / 3D graphics / games  |  Santa Clara, CA  |  growth
+      Fit: SimReady 3D assets and simulation/eval for physical AI
+ 290. Rain  |  Autonomy / drones / defense perception  |  Alameda, CA  |  startup
+      Fit: Autonomous wildfire-suppression aircraft; perception, fire detection and flight autonomy
+ 291. Cogniac  |  Robotics & embodied AI  |  San Jose, CA  |  startup
+      Fit: AI visual inspection for manufacturing and logistics
+ 292. Ultralytics  |  Applied computer vision (medical, geo, industrial)  |  Remote-US  |  startup
+      Fit: YOLO model family & edge export (TFLite/ONNX); quantization fit  |  https://www.ultralytics.com/careers
+ 293. Osso VR  |  XR / 3D graphics / games  |  San Francisco, CA  |  growth
+      Fit: VR surgical training simulations on Quest and Vision Pro
+ 294. Burnbot  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  startup
+      Fit: Robotic prescribed burns; vision, thermal perception and autonomy in rough terrain
+ 295. UnitX  |  Robotics & embodied AI  |  San Jose, CA  |  startup
+      Fit: AI optical inspection with programmable lighting; defect generation
+ 296. Viz.ai  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  growth
+      Fit: Stroke/vascular CT detection algorithms; staff CV/ML engineer roles  |  https://www.viz.ai/careers
+ 297. Invoke  |  Generative AI & AI infrastructure  |  Remote-US  |  startup
+      Fit: Invoke studio for professional diffusion image generation
+ 298. Arteris  |  Chips, cameras, devices & wearables  |  Campbell, CA  |  growth
+      Fit: NoC interconnect for AI/vision SoCs, ML-driven SoC integration tools
+ 299. Atomic AI  |  Simulation, digital twins & science AI  |  South San Francisco, CA  |  startup
+      Fit: RNA structure foundation models  |  https://atomic.ai/careers
+ 300. JPMorgan Chase  |  Big tech & enterprise ML/vision teams  |  Palo Alto, CA  |  large
+      Fit: AI Research: document understanding, multimodal ML  |  https://careers.jpmorgan.com
+ 301. Cua  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: YC; sandboxes + models for computer-use agents
+ 302. Bohemia Interactive Simulations  |  National labs, research institutes, defense & space  |  Orlando FL / remote  |  growth
+      Fit: Military simulation, real-time 3D rendering  |  https://bisimulations.com/careers
+ 303. Coda  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA (Grammarly)  |  growth
+      Fit: AI docs platform; ML for multimodal content
+ 304. Simbe Robotics  |  Northern California engineering employers  |  South San Francisco  |  growth
+      Fit: Tally shelf-scanning robot; CV at scale  |  https://www.simberobotics.com/careers
+ 305. Tripo AI  |  XR / 3D graphics / games  |  San Francisco, CA  |  growth
+      Fit: 3D generative foundation models (image/text-to-3D)
+ 306. Corvus Robotics  |  Autonomy / drones / defense perception  |  Mountain View, CA  |  startup
+      Fit: Autonomous indoor inventory drones; GPS-denied visual navigation and CV
+ 307. RIOS Intelligent Machines  |  Robotics & embodied AI  |  Menlo Park, CA  |  startup
+      Fit: AI-powered robotic workcells; vision-guided manipulation
+ 308. Aidoc  |  Applied computer vision (medical, geo, industrial)  |  Remote-US  |  growth
+      Fit: CARE foundation model for CT triage; imaging AI architect roles  |  https://www.aidoc.com/careers/
+ 309. Crystal Dynamics  |  XR / 3D graphics / games  |  San Mateo, CA  |  growth
+      Fit: AAA rendering and animation technology
+ 310. Skycatch  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  startup
+      Fit: Drone-based 3D site mapping for mining; photogrammetry and reconstruction
+ 311. Roam Robotics  |  Robotics & embodied AI  |  San Francisco, CA  |  startup
+      Fit: AI-powered robotic exoskeletons; on-device sensing and control
+ 312. RefleXion Medical  |  Applied computer vision (medical, geo, industrial)  |  Hayward, CA  |  growth
+      Fit: PET-guided biology-guided radiotherapy; real-time imaging & GPU recon  |  https://reflexion.com/careers/
+ 313. LanceDB  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: Multimodal lakehouse/vector DB for image/video training data
+ 314. Andes Technology USA  |  Chips, cameras, devices & wearables  |  San Jose, CA  |  growth
+      Fit: RISC-V AI/vector cores and ML software stack for edge devices
+ 315. Uncountable  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  startup
+      Fit: R&D data platform with ML for materials/chem labs  |  https://www.uncountable.com/careers
+ 316. Bill  |  Big tech & enterprise ML/vision teams  |  San Jose, CA  |  large
+      Fit: Invoice/document vision extraction and AI agents  |  https://www.bill.com/about-us/careers
+ 317. Kernel  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Browsers-as-a-service for agents; agent tooling fit
+ 318. SoundThinking (ShotSpotter)  |  National labs, research institutes, defense & space  |  Fremont CA  |  growth
+      Fit: Acoustic and vision public-safety analytics
+ 319. ClickUp  |  Mid/large tech with ML, vision or media teams  |  San Diego CA / remote US  |  growth
+      Fit: AI features across docs/whiteboards; remote-friendly  |  https://clickup.com/careers
+ 320. NeuroPace  |  Northern California engineering employers  |  Mountain View  |  growth
+      Fit: Responsive neurostimulation; ML on brain signals  |  https://www.neuropace.com/careers/
+ 321. Unknown Worlds (Krafton)  |  XR / 3D graphics / games  |  San Francisco, CA  |  growth
+      Fit: Subnautica 2 on Unreal: rendering and engine programming
+ 322. CY Vision  |  Autonomy / drones / defense perception  |  San Jose, CA  |  startup
+      Fit: AI-powered 3D AR head-up displays; light-field rendering and eye tracking
+ 323. Westmag  |  Robotics & embodied AI  |  South San Francisco, CA  |  startup
+      Fit: Actuators and motors for drones/robots; embedded control
+ 324. RapidAI  |  Applied computer vision (medical, geo, industrial)  |  San Mateo, CA  |  growth
+      Fit: Neurovascular/stroke imaging AI (RAPID); CV lead for 3D CT/MRI analysis  |  https://www.rapidai.com/careers
+ 325. Pocket Gems  |  XR / 3D graphics / games  |  San Francisco, CA  |  growth
+      Fit: Mobile games; ML for content generation and graphics
+ 326. Eyeris  |  Autonomy / drones / defense perception  |  San Jose, CA  |  startup
+      Fit: In-cabin sensing AI; occupant/driver monitoring with edge vision
+ 327. Hemlock  |  Robotics & embodied AI  |  San Francisco, CA  |  startup
+      Fit: Force-sensing wristbands for robot-learning data capture; sensor fusion
+ 328. Carbon  |  Applied computer vision (medical, geo, industrial)  |  Redwood City, CA  |  growth
+      Fit: 3D printing for dental/aligners; geometry processing & GPU software  |  https://www.carbon3d.com/careers
+ 329. Activeloop  |  Generative AI & AI infrastructure  |  Mountain View, CA  |  startup
+      Fit: Deep Lake multimodal database for vision/video AI
+ 330. Achronix  |  Chips, cameras, devices & wearables  |  Santa Clara, CA  |  growth
+      Fit: Speedster FPGA AI inference, ML acceleration toolchain
+ 331. Movano Health  |  Simulation, digital twins & science AI  |  Pleasanton, CA  |  startup
+      Fit: Evie ring and RF sensing ML  |  https://movano.com/careers
+ 332. Box  |  Big tech & enterprise ML/vision teams  |  Redwood City, CA  |  large
+      Fit: Box AI document/image understanding and extraction  |  https://careers.box.com
+ 333. HUD  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: YC; RL environments for computer-use agents fit
+ 334. NoTraffic  |  National labs, research institutes, defense & space  |  Palo Alto CA  |  growth
+      Fit: AI traffic signal sensing, edge vision
+ 335. Ironclad  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA  |  growth
+      Fit: Contract AI; document vision/extraction  |  https://ironcladapp.com/careers
+ 336. BillionToOne  |  Northern California engineering employers  |  Menlo Park  |  growth
+      Fit: Molecular diagnostics; ML on sequencing data  |  https://billiontoone.com/careers/
+ 337. Linden Lab  |  XR / 3D graphics / games  |  San Francisco, CA  |  growth
+      Fit: Second Life viewer rendering (PBR), mobile client
+ 338. Rendered.ai  |  Autonomy / drones / defense perception  |  Remote-US  |  startup
+      Fit: Physics-based synthetic data for EO/SAR and defense CV; rendering pipelines
+ 339. Dreamscale Labs  |  Robotics & embodied AI  |  San Francisco, CA  |  startup
+      Fit: Cloud inference for robot brains; latency-hiding and edge/cloud split
+ 340. Artera  |  Applied computer vision (medical, geo, industrial)  |  Los Altos, CA  |  growth
+      Fit: Multimodal AI on digital pathology images for prostate cancer  |  https://artera.ai/careers
+ 341. Mapbox  |  XR / 3D graphics / games  |  Remote-US  |  growth
+      Fit: GL 3D map rendering engine, on-device navigation
+ 342. Latent AI  |  Autonomy / drones / defense perception  |  Menlo Park, CA / Remote-US  |  startup
+      Fit: SRI spinout; edge AI compression and quantization for DoD perception at the tactical edge
+ 343. Rodeo Robotics  |  Robotics & embodied AI  |  San Francisco Bay Area, CA  |  startup
+      Fit: Robotic technician for vehicle fleet maintenance; 3D perception
+ 344. Proscia  |  Applied computer vision (medical, geo, industrial)  |  Remote-US  |  growth
+      Fit: Concentriq pathology platform; whole-slide image ML  |  https://proscia.com/careers/
+ 345. LandingAI  |  Generative AI & AI infrastructure  |  Palo Alto, CA  |  startup
+      Fit: LandingLens visual AI and agentic document vision
+ 346. QuickLogic  |  Chips, cameras, devices & wearables  |  San Jose, CA  |  growth
+      Fit: eFPGA and SensiML-style edge AI sensing tools
+ 347. Emotiv  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  startup
+      Fit: EEG headsets and brain-signal ML  |  https://www.emotiv.com/careers
+ 348. Coupang  |  Big tech & enterprise ML/vision teams  |  Mountain View, CA  |  large
+      Fit: Product image understanding, visual search, ML platform  |  https://www.coupang.jobs
+ 349. Sieve  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Video processing models (dubbing, lipsync); video fit
+ 350. Defense Innovation Unit (DIU)  |  National labs, research institutes, defense & space  |  Mountain View CA  |  growth
+      Fit: Technical program roles, AI/autonomy  |  https://www.diu.mil
+ 351. Clari  |  Mid/large tech with ML, vision or media teams  |  Sunnyvale CA  |  growth
+      Fit: Revenue AI incl. call video/audio understanding
+ 352. Ample  |  Northern California engineering employers  |  San Francisco  |  growth
+      Fit: Robotic battery swapping; automation and vision  |  https://ample.com/careers/
+ 353. OpenSpace  |  XR / 3D graphics / games  |  San Francisco, CA  |  growth
+      Fit: 360 capture to digital twins: SLAM, 3D reconstruction, vision ML
+ 354. Vibrant Planet  |  Autonomy / drones / defense perception  |  Remote-US  |  startup
+      Fit: Land-management platform; lidar and satellite imagery ML for wildfire resilience
+ 355. Shepherd Robotics  |  Robotics & embodied AI  |  San Francisco, CA  |  startup
+      Fit: FM-powered robots for data-center/electronics work; sim+real data
+ 356. AiFi  |  Applied computer vision (medical, geo, industrial)  |  Burlingame, CA  |  growth
+      Fit: Autonomous checkout in 300+ stores; multi-camera 3D person tracking  |  https://www.aifi.com/careers
+ 357. Mursion  |  XR / 3D graphics / games  |  San Francisco, CA  |  growth
+      Fit: VR/AI avatar simulation training
+ 358. Pachama  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  startup
+      Fit: Forest carbon verification from satellite and lidar; remote-sensing ML
+ 359. Libra Robotics  |  Robotics & embodied AI  |  San Francisco, CA  |  startup
+      Fit: Construction-site robots; 3D perception and mapping
+ 360. Rhombus  |  Applied computer vision (medical, geo, industrial)  |  Sacramento, CA  |  growth
+      Fit: Cloud security cameras with on-device AI; edge vision lead  |  https://www.rhombus.com/careers/
+ 361. DatologyAI  |  Generative AI & AI infrastructure  |  Redwood City, CA  |  startup
+      Fit: Data curation for image-text and multimodal pretraining
+ 362. ArcSoft  |  Chips, cameras, devices & wearables  |  Fremont, CA  |  growth
+      Fit: Mobile computational photography, multi-camera fusion, AR face/body vision
+ 363. Uplift Labs  |  Simulation, digital twins & science AI  |  Palo Alto, CA  |  startup
+      Fit: Smartphone markerless 3D motion capture for athletes  |  https://uplift.ai
+ 364. Rakuten  |  Big tech & enterprise ML/vision teams  |  San Mateo, CA  |  large
+      Fit: Rakuten Institute of Technology vision and multimodal AI  |  https://rakuten.careers
+ 365. EdgeCortix  |  Venture-backed AI startups (2022-2026)  |  San Mateo CA / Tokyo  |  startup
+      Fit: Edge vision accelerators; quantization fit
+ 366. California Academy of Sciences  |  National labs, research institutes, defense & space  |  San Francisco CA  |  growth
+      Fit: Research software, imaging, 3D visualization
+ 367. Otter.ai  |  Mid/large tech with ML, vision or media teams  |  Mountain View CA  |  growth
+      Fit: Meeting AI; multimodal video meeting understanding  |  https://otter.ai/careers
+ 368. Lunar Energy  |  Northern California engineering employers  |  Mountain View  |  growth
+      Fit: Home batteries; embedded and ML energy software  |  https://www.lunarenergy.com/careers
+ 369. Sandbox VR  |  XR / 3D graphics / games  |  San Francisco, CA  |  growth
+      Fit: Full-body mocap location-based VR; rendering and tracking
+ 370. Felt  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  startup
+      Fit: Collaborative web GIS; WebGL map rendering and large geospatial data
+ 371. Tensr  |  Robotics & embodied AI  |  Emeryville, CA  |  startup
+      Fit: Robotics factory startup; vision-guided automation
+ 372. Spot AI  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  growth
+      Fit: AI camera system / video agents; video understanding  |  https://www.spot.ai/careers
+ 373. Pixelworks  |  XR / 3D graphics / games  |  San Jose, CA  |  growth
+      Fit: Display/visual processing: frame interpolation, motion (TrueCut)
+ 374. Wherobots  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  startup
+      Fit: Spatial data platform (Apache Sedona); raster/vector processing at scale
+ 375. The Bot Company  |  Robotics & embodied AI  |  San Francisco, CA  |  growth
+      Fit: Perception and 3D scene understanding for wheeled home robot; on-device vision ML
+ 376. Twelve Labs  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  growth
+      Fit: Video foundation models (Marengo/Pegasus); multimodal video ML  |  https://www.twelvelabs.io/careers
+ 377. Cleanlab  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: Data quality tooling for image and multimodal datasets
+ 378. FuriosaAI  |  Chips, cameras, devices & wearables  |  Santa Clara, CA  |  growth
+      Fit: RNGD inference chip; compiler and model optimization
+ 379. SwingVision  |  Simulation, digital twins & science AI  |  San Mateo, CA  |  startup
+      Fit: On-device tennis CV: ball/player tracking on iPhone  |  https://swing.vision/careers
+ 380. Opendoor  |  Big tech & enterprise ML/vision teams  |  San Francisco, CA  |  large
+      Fit: Home photo/video inspection vision and pricing ML  |  https://www.opendoor.com/careers
+ 381. Recogni  |  Venture-backed AI startups (2022-2026)  |  San Jose CA  |  startup
+      Fit: Perception/inference accelerators; edge ML fit
+ 382. NASA Jet Propulsion Laboratory  |  National labs, research institutes, defense & space  |  Pasadena CA (remote-limited)  |  large
+      Fit: Robotics/vision autonomy, 3D terrain reconstruction, onboard ML for rovers  |  https://www.jpl.nasa.gov/careers
+ 383. Dialpad  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA  |  growth
+      Fit: AI-native comms; real-time media ML  |  https://www.dialpad.com/careers
+ 384. Hammerspace  |  Northern California engineering employers  |  San Mateo  |  growth
+      Fit: Data orchestration for AI workloads  |  https://hammerspace.com/careers/
+ 385. Fyusion (Cox Automotive)  |  XR / 3D graphics / games  |  San Francisco, CA  |  growth
+      Fit: AI 3D vehicle imaging and capture
+ 386. Robust AI  |  Autonomy / drones / defense perception  |  San Jose, CA  |  startup
+      Fit: Carter collaborative warehouse robots; perception, navigation and HRI
+ 387. Generalist AI  |  Robotics & embodied AI  |  San Mateo, CA  |  growth
+      Fit: GEN-series embodied foundation models; video/generative pretraining and eval metrics
+ 388. Persona  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  growth
+      Fit: Selfie liveness & document verification CV; anti-spoofing  |  https://withpersona.com/careers
+ 389. Houzz  |  XR / 3D graphics / games  |  Palo Alto, CA  |  growth
+      Fit: 3D/AR View in My Room home visualization
+ 390. Electric Sheep Robotics  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  startup
+      Fit: Autonomous mowing fleet; world-model-based perception and navigation
+ 391. Rhoda AI  |  Robotics & embodied AI  |  Palo Alto, CA  |  growth
+      Fit: Robot FMs pretrained on internet video; video generation/world-model research
+ 392. Incode  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  growth
+      Fit: Face biometrics & liveness on-device; deepfake injection defense  |  https://incode.com/careers/
+ 393. Eventual  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: Daft distributed engine for image/video data processing
+ 394. Ayar Labs  |  Chips, cameras, devices & wearables  |  San Jose, CA  |  growth
+      Fit: Optical I/O chiplets for AI systems; ML workload modeling
+ 395. Distyl AI  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  startup
+      Fit: Forward-deployed applied AI for enterprises  |  https://distyl.ai/careers
+ 396. SAP  |  Big tech & enterprise ML/vision teams  |  Palo Alto, CA  |  large
+      Fit: SAP Labs document AI and Business AI multimodal  |  https://jobs.sap.com
+ 397. Elementary  |  Venture-backed AI startups (2022-2026)  |  Remote US  |  startup
+      Fit: AI inspection for factories; CV + edge fit
+ 398. Stanford Research Computing  |  National labs, research institutes, defense & space  |  Stanford CA  |  large
+      Fit: Research software engineering, GPU computing, ML infrastructure
+ 399. Owl Labs  |  Mid/large tech with ML, vision or media teams  |  Boston MA / remote  |  growth
+      Fit: 360 meeting cameras; on-device CV speaker tracking  |  https://owllabs.com/careers
+ 400. MinIO  |  Northern California engineering employers  |  Redwood City  |  growth
+      Fit: Object storage for AI data lakes  |  https://min.io/careers
+ 401. Magic Leap  |  XR / 3D graphics / games  |  Sunnyvale, CA  |  large
+      Fit: AR waveguides/optics with Google; display calibration and AR perception software
+ 402. FarmWise  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  startup
+      Fit: Vulcan vision-guided weeding; real-time plant detection on edge GPUs
+ 403. Project Prometheus  |  Robotics & embodied AI  |  San Francisco, CA  |  growth
+      Fit: Physical AI for engineering/manufacturing; 3D vision and generative modeling leads
+ 404. Socure  |  Applied computer vision (medical, geo, industrial)  |  Remote-US  |  growth
+      Fit: Document & selfie verification CV; deepfake detection  |  https://www.socure.com/careers
+ 405. Microsoft  |  XR / 3D graphics / games  |  Mountain View, CA  |  large
+      Fit: Xbox/Activision graphics tech, MSR 3D vision and neural rendering  |  https://careers.microsoft.com
+ 406. Excelfore  |  Autonomy / drones / defense perception  |  Fremont, CA  |  startup
+      Fit: eSync OTA and vehicle data platform for software-defined vehicles
+ 407. RobCo  |  Robotics & embodied AI  |  San Francisco, CA  |  growth
+      Fit: Modular robot cells with AI programming; vision-based task learning
+ 408. Tools for Humanity  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  growth
+      Fit: World Orb iris biometrics; on-device CV, custom optics & secure edge ML  |  https://www.toolsforhumanity.com/careers
+ 409. Kolena  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: Model testing/evaluation for CV and multimodal models
+ 410. Eko Health  |  Chips, cameras, devices & wearables  |  Emeryville, CA  |  growth
+      Fit: AI digital stethoscopes; on-device signal ML
+ 411. Fractional AI  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  startup
+      Fit: Builds applied GenAI systems for clients  |  https://www.fractional.ai/careers
+ 412. Carl Zeiss Meditec  |  Big tech & enterprise ML/vision teams  |  Dublin, CA  |  large
+      Fit: Ophthalmic imaging (OCT), image analysis AI  |  https://www.zeiss.com/careers
+ 413. Drishti  |  Venture-backed AI startups (2022-2026)  |  Palo Alto CA  |  startup
+      Fit: Action recognition on lines; video CV fit
+ 414. Berkeley AI Research (BAIR)  |  National labs, research institutes, defense & space  |  Berkeley CA  |  large
+      Fit: Research engineering in vision, robotics, generative models  |  https://bair.berkeley.edu
+ 415. Neat  |  Mid/large tech with ML, vision or media teams  |  Remote US  |  growth
+      Fit: Video conferencing devices; on-device CV framing
+ 416. Pulmonx  |  Northern California engineering employers  |  Redwood City  |  growth
+      Fit: Lung devices with quantitative CT imaging software  |  https://www.pulmonx.com/careers/
+ 417. Adobe  |  XR / 3D graphics / games  |  San Jose, CA  |  large
+      Fit: Substance 3D, Firefly 3D/video gen, Adobe Research graphics and vision  |  https://careers.adobe.com
+ 418. Waabi  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  growth
+      Fit: Waabi World neural simulator and world-model research; generative sensor sim, 3D reconstruction  |  https://jobs.lever.co/waabi
+ 419. Dexterity  |  Robotics & embodied AI  |  Redwood City, CA  |  growth
+      Fit: Mech dual-arm truck loading; 3D perception and physical AI
+ 420. SafelyYou  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  growth
+      Fit: Fall detection video AI in senior living; edge CV  |  https://www.safely-you.com/careers
+ 421. Autodesk  |  XR / 3D graphics / games  |  San Francisco, CA  |  large
+      Fit: Autodesk Research, Flow Studio (Wonder Dynamics), generative 3D for Maya/Fusion  |  https://www.autodesk.com/careers
+ 422. Tensor  |  Autonomy / drones / defense perception  |  San Jose, CA  |  growth
+      Fit: Personal L4 Robocar; perception, sensor fusion and on-vehicle ML on NVIDIA Thor
+ 423. Osaro  |  Robotics & embodied AI  |  San Francisco, CA  |  growth
+      Fit: Vision ML for piece-picking, bagging and depalletizing
+ 424. Lumafield  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  growth
+      Fit: Industrial CT scanning + 3D visualization; GPU recon & 3D ML  |  https://www.lumafield.com/careers
+ 425. Useful Sensors  |  Generative AI & AI infrastructure  |  Mountain View, CA  |  startup
+      Fit: Moonshine on-device speech and low-power sensing models
+ 426. Leopard Imaging  |  Chips, cameras, devices & wearables  |  Fremont, CA  |  growth
+      Fit: Embedded camera modules/ISP for robotics and automotive; Jetson vision
+ 427. Tribe AI  |  Simulation, digital twins & science AI  |  Remote-US  |  startup
+      Fit: Network of senior ML experts for client AI projects  |  https://www.tribe.ai/careers
+ 428. Sledgehammer Games  |  Big tech & enterprise ML/vision teams  |  Foster City, CA  |  large
+      Fit: Call of Duty rendering and graphics technology  |  https://careers.activision.com
+ 429. Retrocausal  |  Venture-backed AI startups (2022-2026)  |  Seattle WA (remote US)  |  startup
+      Fit: Vision for manual assembly; CV fit
+ 430. Stanford Artificial Intelligence Laboratory (SAIL)  |  National labs, research institutes, defense & space  |  Stanford CA  |  large
+      Fit: Staff research engineers in vision, 3D, robotics, generative models  |  https://ai.stanford.edu
+ 431. Kaltura  |  Mid/large tech with ML, vision or media teams  |  Remote US  |  growth
+      Fit: Video platform; AI avatars and video ML
+ 432. Ooma  |  Northern California engineering employers  |  Sunnyvale  |  growth
+      Fit: Smart home security and AI voice features  |  https://www.ooma.com/careers/
+ 433. Netflix  |  XR / 3D graphics / games  |  Los Gatos, CA  |  large
+      Fit: Netflix Games (Ready Player Me avatars), Eyeline Studios virtual production ML  |  https://jobs.netflix.com
+ 434. Nauto  |  Autonomy / drones / defense perception  |  Sunnyvale, CA  |  growth
+      Fit: Predictive collision-avoidance dashcam; on-device CV and low-power edge ML
+ 435. Ambi Robotics  |  Robotics & embodied AI  |  Berkeley, CA  |  growth
+      Fit: AmbiVision/AmbiOS; sim-trained grasping and image-based item recognition
+ 436. Collaborative Robotics  |  Applied computer vision (medical, geo, industrial)  |  Santa Clara, CA  |  growth
+      Fit: Mobile manipulators (Proxie); perception & SLAM  |  https://www.co.bot/careers
+ 437. Pixar Animation Studios  |  XR / 3D graphics / games  |  Emeryville, CA  |  large
+      Fit: RenderMan and Pixar research: rendering, ML denoising, simulation  |  https://www.pixar.com/careers
+ 438. Blaize  |  Autonomy / drones / defense perception  |  El Dorado Hills, CA  |  growth
+      Fit: Graph streaming processor for vision at edge (defense, smart city); model optimization
+ 439. Bright Machines  |  Robotics & embodied AI  |  SF Peninsula, CA  |  growth
+      Fit: AI microfactories for data-center assembly; vision-guided robotics
+ 440. Tonal  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  growth
+      Fit: Smart gym with camera form-feedback; on-device vision  |  https://www.tonal.com/careers/
+ 441. Resemble AI  |  Generative AI & AI infrastructure  |  Remote-US  |  startup
+      Fit: Voice cloning/TTS and deepfake audio detection
+ 442. Collabora  |  Chips, cameras, devices & wearables  |  Remote-US  |  growth
+      Fit: Mesa/Vulkan drivers and Monado OpenXR runtime - direct OpenXR/Vulkan fit
+ 443. KUNGFU.AI  |  Simulation, digital twins & science AI  |  Remote-US  |  startup
+      Fit: AI consultancy building CV and ML products  |  https://www.kungfu.ai/careers
+ 444. Upstart  |  Big tech & enterprise ML/vision teams  |  San Mateo, CA  |  large
+      Fit: Document verification ML in lending pipeline  |  https://www.upstart.com/careers
+ 445. Flux  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: AI-assisted PCB design; hardware AI fit
+ 446. Stanford Institute for Human-Centered AI (HAI)  |  National labs, research institutes, defense & space  |  Stanford CA  |  large
+      Fit: Research engineering on ML systems and generative AI  |  https://hai.stanford.edu
+ 447. VEED  |  Mid/large tech with ML, vision or media teams  |  Remote  |  growth
+      Fit: Online video editor with generative AI
+ 448. Aehr Test Systems  |  Northern California engineering employers  |  Fremont  |  growth
+      Fit: Fremont HQ; wafer-level burn-in test systems, embedded software  |  https://www.aehr.com/careers/
+ 449. Industrial Light & Magic (Lucasfilm)  |  XR / 3D graphics / games  |  San Francisco, CA  |  large
+      Fit: StageCraft real-time virtual production, ML-driven VFX, ILM Immersive
+ 450. Apex.AI  |  Autonomy / drones / defense perception  |  Palo Alto, CA  |  growth
+      Fit: Safety-certified ROS 2-based automotive OS and middleware for SDVs
+ 451. Viam  |  Robotics & embodied AI  |  Remote-US (New York HQ)  |  growth
+      Fit: Edge ML and vision services in robot software platform
+ 452. Instabase  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  growth
+      Fit: Document AI with vision-language models  |  https://www.instabase.com/careers
+ 453. Arm  |  XR / 3D graphics / games  |  San Jose, CA  |  large
+      Fit: Mali/Immortalis GPU: neural graphics, ML super-sampling, Vulkan  |  https://careers.arm.com
+ 454. Serve Robotics  |  Autonomy / drones / defense perception  |  Redwood City, CA  |  growth
+      Fit: Level-4 sidewalk delivery robots; perception, mapping, on-board NVIDIA edge ML
+ 455. Havoc AI (Teleo)  |  Robotics & embodied AI  |  Palo Alto, CA  |  growth
+      Fit: Teleo remote ops for construction machines; low-latency video teleop
+ 456. Hyperscience  |  Applied computer vision (medical, geo, industrial)  |  Remote-US  |  growth
+      Fit: Document vision/handwriting ML platform  |  https://www.hyperscience.ai/careers/
+ 457. Rime  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: Expressive TTS models
+ 458. Igalia  |  Chips, cameras, devices & wearables  |  Remote-US  |  growth
+      Fit: Mesa Vulkan/OpenGL drivers, WebGPU, browser graphics
+ 459. HeartBeam  |  Simulation, digital twins & science AI  |  Santa Clara, CA  |  startup
+      Fit: Credit-card 3D vector ECG device with deep learning  |  https://www.heartbeam.com
+ 460. UiPath  |  Big tech & enterprise ML/vision teams  |  Remote-US  |  large
+      Fit: Document Understanding and computer-vision UI automation  |  https://careers.uipath.com
+ 461. Quilter  |  Venture-backed AI startups (2022-2026)  |  Los Angeles CA (remote)  |  startup
+      Fit: RL-driven circuit board layout; RL fit
+ 462. UC Berkeley Research IT  |  National labs, research institutes, defense & space  |  Berkeley CA  |  large
+      Fit: Research software engineering and GPU computing
+ 463. Lightricks  |  Mid/large tech with ML, vision or media teams  |  Remote US / Israel  |  growth
+      Fit: Facetune/Videoleap; on-device generative imaging, LTX video  |  https://www.lightricks.com/careers
+ 464. Kateeva  |  Northern California engineering employers  |  Newark  |  growth
+      Fit: Inkjet OLED manufacturing equipment; machine vision
+ 465. Tencent America  |  XR / 3D graphics / games  |  Palo Alto, CA  |  large
+      Fit: Tencent AI/ARC lab 3D generation (Hunyuan3D), games graphics research
+ 466. Starship Technologies  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  growth
+      Fit: Autonomous delivery robots; vision-based localization and perception
+ 467. Periodic Labs  |  Robotics & embodied AI  |  Menlo Park, CA  |  growth
+      Fit: Autonomous materials labs combining robotics and ML
+ 468. ABBYY  |  Applied computer vision (medical, geo, industrial)  |  Milpitas, CA  |  growth
+      Fit: Document AI/OCR & vision-language extraction  |  https://www.abbyy.com/company/careers/
+ 469. OmniVision  |  XR / 3D graphics / games  |  Santa Clara, CA  |  large
+      Fit: Image sensors and ISP for AR/VR headsets, eye/hand tracking
+ 470. Knightscope  |  Autonomy / drones / defense perception  |  Mountain View, CA  |  growth
+      Fit: Autonomous security robots; navigation, CV analytics and edge inference
+ 471. Cellares  |  Robotics & embodied AI  |  South San Francisco, CA  |  growth
+      Fit: Cell Shuttle automated factory; robotics vision
+ 472. Sama  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  growth
+      Fit: Image/video/3D lidar annotation & model validation  |  https://www.sama.com/careers
+ 473. Krisp  |  Generative AI & AI infrastructure  |  Berkeley, CA  |  startup
+      Fit: On-device noise cancellation and voice AI models
+ 474. Analogix Semiconductor  |  Chips, cameras, devices & wearables  |  San Jose, CA  |  growth
+      Fit: Display interface/bridge ICs for XR headsets and mobile
+ 475. Rescale  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  growth
+      Fit: Cloud HPC for CAE, AI physics surrogates and simulation data platform  |  https://rescale.com/careers
+ 476. Automation Anywhere  |  Big tech & enterprise ML/vision teams  |  San Jose, CA  |  large
+      Fit: Document AI and screen-understanding vision models  |  https://www.automationanywhere.com/company/careers
+ 477. ChipStack  |  Venture-backed AI startups (2022-2026)  |  Santa Clara CA  |  startup
+      Fit: Agents for chip design; hardware AI fit
+ 478. Berkeley Space Sciences Laboratory  |  National labs, research institutes, defense & space  |  Berkeley CA  |  large
+      Fit: Flight software, instrument imaging, satellite mission ops  |  https://www.ssl.berkeley.edu
+ 479. Prisma Labs (Lensa)  |  Mid/large tech with ML, vision or media teams  |  Sunnyvale CA  |  growth
+      Fit: Lensa AI photo app; on-device generative imaging
+ 480. Velo3D  |  Northern California engineering employers  |  Fremont  |  growth
+      Fit: Metal 3D printing; in-situ sensing and process ML  |  https://velo3d.com/careers/
+ 481. Trimble  |  XR / 3D graphics / games  |  Sunnyvale, CA  |  large
+      Fit: SketchUp, Trimble Connect XR, 3D scanning and reconstruction
+ 482. Third Wave Automation  |  Autonomy / drones / defense perception  |  Union City, CA  |  growth
+      Fit: Shared-autonomy forklifts; perception, localization and teleop video
+ 483. Landing AI  |  Robotics & embodied AI  |  Palo Alto, CA  |  growth
+      Fit: Visual AI for manufacturing inspection; agentic vision
+ 484. SuperAnnotate  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  growth
+      Fit: Vision/multimodal annotation & evaluation tooling  |  https://www.superannotate.com/careers
+ 485. Zillow  |  XR / 3D graphics / games  |  Remote-US  |  large
+      Fit: Zillow 3D Home and immersive tours: 3D reconstruction, neural rendering  |  https://www.zillow.com/careers/
+ 486. Built Robotics  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  growth
+      Fit: Exosystem autonomous excavators/pile drivers; GPS+vision perception
+ 487. Procept BioRobotics  |  Robotics & embodied AI  |  San Jose, CA  |  growth
+      Fit: Image-guided surgical robotics; real-time ultrasound vision
+ 488. Science Corporation  |  Applied computer vision (medical, geo, industrial)  |  Alameda, CA  |  growth
+      Fit: PRIMA retinal prosthesis; vision restoration & image processing  |  https://science.xyz/careers
+ 489. AudioShake  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: AI stem separation for music/film audio
+ 490. Eargo  |  Chips, cameras, devices & wearables  |  San Jose, CA  |  growth
+      Fit: In-ear hearing aids; on-device audio ML and sound processing
+ 491. Arena (Atlas)  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  growth
+      Fit: Atlas physics-grounded AI for hardware test/debug; foundation models for signals  |  https://job-boards.eu.greenhouse.io/arenaai
+ 492. NTT Research  |  Big tech & enterprise ML/vision teams  |  Sunnyvale, CA  |  large
+      Fit: Physics & Informatics lab, neural/optical computing research  |  https://ntt-research.com/careers
+ 493. Normal Computing  |  Venture-backed AI startups (2022-2026)  |  New York NY (remote)  |  startup
+      Fit: AI for chip verification; ML fit
+ 494. UCSF Department of Radiology and Biomedical Imaging  |  National labs, research institutes, defense & space  |  San Francisco CA  |  large
+      Fit: Staff research engineers for imaging AI and 3D visualization
+ 495. PhotoRoom  |  Mid/large tech with ML, vision or media teams  |  Remote / Paris  |  growth
+      Fit: Background removal and generative product photos; on-device  |  https://www.photoroom.com/company/careers
+ 496. Iridex  |  Northern California engineering employers  |  Mountain View  |  growth
+      Fit: Ophthalmic laser systems; embedded software  |  https://www.iridex.com/careers
+ 497. Epic Games  |  XR / 3D graphics / games  |  Remote-US  |  large
+      Fit: Unreal Engine rendering, MetaHuman, RealityScan capture  |  https://www.epicgames.com/site/en-US/careers
+ 498. Dusty Robotics  |  Autonomy / drones / defense perception  |  Mountain View, CA  |  growth
+      Fit: Layout robots with mm-accurate localization; BIM-to-field 3D, computer vision
+ 499. Noah Medical  |  Robotics & embodied AI  |  San Carlos, CA  |  growth
+      Fit: Galaxy bronchoscopy robot; 3D navigation and imaging
+ 500. The RealReal  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  growth
+      Fit: Image-based luxury authentication & listing CV  |  https://www.therealreal.com/careers
+
+====================================================================================================
+BATCH 3 (#501-750)
+====================================================================================================
+ 501. Supercell  |  XR / 3D graphics / games  |  San Francisco, CA  |  large
+      Fit: SF office; game technology and ML/AI tooling
+ 502. Voxel51  |  Autonomy / drones / defense perception  |  Remote-US  |  growth
+      Fit: FiftyOne visual data platform used by AV teams; 3D/point-cloud and embedding tooling  |  https://voxel51.com/careers
+ 503. Zap Surgical  |  Robotics & embodied AI  |  San Carlos, CA  |  growth
+      Fit: Robotic radiosurgery; imaging and 3D treatment planning
+ 504. ThredUp  |  Applied computer vision (medical, geo, industrial)  |  Oakland, CA  |  growth
+      Fit: Garment photo CV & generative imagery for resale listings  |  https://www.thredup.com/careers
+ 505. Omneky  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: Generative ad creative (image/video) platform
+ 506. MIPS (GlobalFoundries)  |  Chips, cameras, devices & wearables  |  San Jose, CA  |  growth
+      Fit: RISC-V cores for physical/edge AI; ML software enablement
+ 507. SandboxAQ  |  Simulation, digital twins & science AI  |  Palo Alto, CA  |  growth
+      Fit: Large Quantitative Models, physics simulation and materials/drug discovery AI  |  https://www.sandboxaq.com/careers
+ 508. NASA Ames Research Center  |  Big tech & enterprise ML/vision teams  |  Mountain View, CA  |  large
+      Fit: Autonomy, robot vision and visualization research  |  https://www.nasa.gov/careers
+ 509. Infinity AI  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Video foundation model for characters; face synthesis fit
+ 510. UC Santa Cruz Baskin Engineering  |  National labs, research institutes, defense & space  |  Santa Cruz CA  |  large
+      Fit: Research staff in computational media, vision, robotics
+ 511. Smugmug  |  Mid/large tech with ML, vision or media teams  |  Mountain View CA  |  growth
+      Fit: Photo hosting (SmugMug, Flickr); image ML  |  https://www.smugmug.com/about/careers
+ 512. Imperative Care  |  Northern California engineering employers  |  Campbell  |  growth
+      Fit: Stroke devices and robotics (Zus); imaging  |  https://www.imperativecare.com/careers
+ 513. Take-Two Interactive (2K / Zynga)  |  XR / 3D graphics / games  |  Novato, CA  |  large
+      Fit: 2K Visual Concepts/Hangar 13 graphics and animation ML; Zynga SF
+ 514. Labelbox  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  growth
+      Fit: Training-data platform for vision/AV; video, 3D and multimodal labeling  |  https://labelbox.com/company/careers/
+ 515. Opentrons  |  Robotics & embodied AI  |  Remote-US (New York HQ)  |  growth
+      Fit: Open lab robots; vision and AI protocol tools
+ 516. Butterfly Network  |  Applied computer vision (medical, geo, industrial)  |  Remote-US  |  growth
+      Fit: Handheld ultrasound-on-chip with on-device AI image guidance  |  https://www.butterflynetwork.com/careers
+ 517. Ubisoft  |  XR / 3D graphics / games  |  San Francisco, CA  |  large
+      Fit: Ubisoft San Francisco studio; La Forge ML/graphics research
+ 518. Swift Navigation  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  growth
+      Fit: Skylark precise positioning for ADAS/AV; GNSS+IMU sensor fusion  |  https://www.swiftnav.com/careers
+ 519. Tensor Auto  |  Robotics & embodied AI  |  San Jose, CA  |  growth
+      Fit: Personal L4 robocar perception and on-device AI
+ 520. EagleView  |  Applied computer vision (medical, geo, industrial)  |  Remote-US  |  growth
+      Fit: Aerial imagery & 3D roof/property models for insurance  |  https://www.eagleview.com/careers/
+ 521. Flair.ai  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: AI product photography and branded image generation
+ 522. Imagination Technologies  |  Chips, cameras, devices & wearables  |  Santa Clara, CA  |  large
+      Fit: PowerVR/IMG GPU Vulkan drivers, GPU compute for edge AI and XR rendering
+ 523. nTop  |  Simulation, digital twins & science AI  |  Remote-US  |  growth
+      Fit: Implicit-modeling CAD engine, GPU geometry kernels, ML for generative design  |  https://www.ntop.com/careers
+ 524. Varian  |  Big tech & enterprise ML/vision teams  |  Palo Alto, CA  |  large
+      Fit: Radiotherapy imaging, image-guided ML and 3D reconstruction  |  https://www.varian.com/about-varian/careers
+ 525. Marqo  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA / Melbourne  |  startup
+      Fit: Multimodal embeddings for search; vision fit
+ 526. KBR Wyle (NASA Ames contracts)  |  National labs, research institutes, defense & space  |  Moffett Field CA  |  large
+      Fit: Autonomy, aviation simulation, software engineering at NASA Ames  |  https://www.kbr.com/en/careers
+ 527. Grindr  |  Mid/large tech with ML, vision or media teams  |  West Hollywood / remote  |  growth
+      Fit: AI wingman; photo moderation vision
+ 528. Evidation  |  Northern California engineering employers  |  San Mateo  |  growth
+      Fit: Wearable sensor data and health ML  |  https://evidation.com/careers
+ 529. Scopely  |  XR / 3D graphics / games  |  San Francisco, CA  |  large
+      Fit: Niantic games team (Pokemon GO) in SF: AR, rendering, location tech
+ 530. Xona Space Systems  |  Autonomy / drones / defense perception  |  Burlingame, CA  |  growth
+      Fit: Pulsar LEO navigation constellation; PNT algorithms, receiver sensor fusion
+ 531. Intrinsic (Alphabet)  |  Robotics & embodied AI  |  Mountain View, CA  |  large
+      Fit: Flowstate perception/AI for manipulation; 3D pose estimation  |  https://www.intrinsic.ai/careers
+ 532. Indica Labs  |  Applied computer vision (medical, geo, industrial)  |  Remote-US  |  growth
+      Fit: HALO image analysis & AI for whole-slide pathology  |  https://indicalab.com/careers/
+ 533. GoPro  |  XR / 3D graphics / games  |  San Mateo, CA  |  large
+      Fit: 360/MAX camera image processing, stabilization, computational imaging
+ 534. NextNav  |  Autonomy / drones / defense perception  |  Sunnyvale, CA  |  growth
+      Fit: 3D geolocation and terrestrial PNT backup to GPS; positioning algorithms
+ 535. Zebra Technologies (Fetch Robotics)  |  Robotics & embodied AI  |  San Jose, CA  |  large
+      Fit: Machine vision and AMR perception
+ 536. Tempus AI  |  Applied computer vision (medical, geo, industrial)  |  Redwood City, CA  |  large
+      Fit: Tempus Pixel (ex-Arterys) radiology & pathology imaging AI  |  https://www.tempus.com/careers/
+ 537. ApertureData  |  Generative AI & AI infrastructure  |  Remote-US  |  startup
+      Fit: ApertureDB multimodal database for images/video
+ 538. Broadcom  |  Chips, cameras, devices & wearables  |  San Jose, CA  |  large
+      Fit: Set-top/video SoC graphics and vision pipelines; custom AI XPU software
+ 539. ALICE Technologies  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  growth
+      Fit: Generative construction scheduling simulation engine  |  https://www.alicetechnologies.com/careers
+ 540. Harman International  |  Big tech & enterprise ML/vision teams  |  Mountain View, CA  |  large
+      Fit: In-cabin vision, AR HUD and automotive graphics  |  https://jobs.harman.com
+ 541. Pixeltable  |  Venture-backed AI startups (2022-2026)  |  Seattle WA (remote)  |  startup
+      Fit: Declarative video/image pipelines; fit
+ 542. MITRE Corporation  |  National labs, research institutes, defense & space  |  McLean VA / remote  |  large
+      Fit: AI, computer vision, autonomy for federal sponsors  |  https://careers.mitre.org
+ 543. Patreon  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA  |  growth
+      Fit: Creator platform; video and media ML  |  https://www.patreon.com/careers
+ 544. Unchained Labs  |  Northern California engineering employers  |  Pleasanton  |  growth
+      Fit: Pleasanton HQ; biologics instruments, imaging analysis  |  https://www.unchainedlabs.com/careers/
+ 545. SRI International  |  XR / 3D graphics / games  |  Menlo Park, CA  |  large
+      Fit: Center for Vision Technologies: AR, 3D perception, navigation
+ 546. Elroy Air  |  Autonomy / drones / defense perception  |  South San Francisco, CA  |  growth
+      Fit: Chaparral autonomous cargo VTOL; perception, autonomy and flight software  |  https://elroyair.com/careers
+ 547. Siemens Technology  |  Robotics & embodied AI  |  Berkeley, CA  |  large
+      Fit: Robotics/AI research for automation; robot learning
+ 548. Siemens Healthineers (Varian)  |  Applied computer vision (medical, geo, industrial)  |  Palo Alto, CA  |  large
+      Fit: Varian image-guided radiotherapy + ultrasound imaging AI teams in Bay Area
+ 549. Futurewei Technologies  |  XR / 3D graphics / games  |  Santa Clara, CA  |  large
+      Fit: Graphics, XR and media research labs
+ 550. Capella Space  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  growth
+      Fit: SAR satellite imaging; image formation, GPU processing and ML analytics  |  https://www.capellaspace.com/careers
+ 551. Bosch Research North America  |  Robotics & embodied AI  |  Sunnyvale, CA  |  large
+      Fit: Perception and 3D vision research
+ 552. Accuray  |  Applied computer vision (medical, geo, industrial)  |  Sunnyvale, CA  |  large
+      Fit: CyberKnife/Radixact image guidance, motion tracking & deformable registration  |  https://www.accuray.com/careers/
+ 553. Visionular  |  Generative AI & AI infrastructure  |  Los Altos, CA  |  startup
+      Fit: AI-optimized AV1/HEVC encoding and video enhancement
+ 554. Dell Technologies  |  Chips, cameras, devices & wearables  |  Santa Clara, CA  |  large
+      Fit: AI PC/edge AI software, NPU enablement and on-device model optimization
+ 555. Higharc  |  Simulation, digital twins & science AI  |  Remote-US  |  growth
+      Fit: Generative BIM for homebuilders, browser 3D visualization  |  https://higharc.com/careers
+ 556. PG&E  |  Big tech & enterprise ML/vision teams  |  Oakland, CA  |  large
+      Fit: Wildfire camera and drone inspection computer vision  |  https://www.pge.com/careers
+ 557. Picogrid  |  Venture-backed AI startups (2022-2026)  |  Burlingame CA  |  startup
+      Fit: Unified sensor platform; sensor fusion fit
+ 558. Pacific Northwest National Laboratory  |  National labs, research institutes, defense & space  |  Richland WA (remote options)  |  large
+      Fit: Computer vision, edge ML, national security AI  |  https://www.pnnl.gov/careers
+ 559. Hopper  |  Mid/large tech with ML, vision or media teams  |  Remote US  |  growth
+      Fit: Remote-first travel app; ML  |  https://hopper.com/careers
+ 560. Inductive Automation  |  Northern California engineering employers  |  Folsom  |  growth
+      Fit: Folsom HQ; Ignition SCADA/IIoT platform  |  https://inductiveautomation.com/about/careers
+ 561. Walmart Global Tech  |  XR / 3D graphics / games  |  Sunnyvale, CA  |  large
+      Fit: AR/3D commerce and virtual try-on  |  https://careers.walmart.com
+ 562. Astranis  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  growth
+      Fit: MicroGEO satellites; embedded flight software, digital payload processing  |  https://www.astranis.com/careers
+ 563. Johnson & Johnson MedTech Robotics  |  Robotics & embodied AI  |  Santa Clara, CA  |  large
+      Fit: Monarch/Ottava robotics; 3D visualization and CV
+ 564. Abbott (Vascular)  |  Applied computer vision (medical, geo, industrial)  |  Santa Clara, CA  |  large
+      Fit: Ultreon OCT intravascular imaging AI software; image processing & 3D  |  https://www.abbott.com/careers.html
+ 565. Shopify  |  XR / 3D graphics / games  |  Remote-US  |  large
+      Fit: 3D/AR commerce and ML platform  |  https://www.shopify.com/careers
+ 566. Loft Orbital  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  growth
+      Fit: Space infrastructure; edge compute on orbit, onboard imaging apps and ML  |  https://www.loftorbital.com/careers
+ 567. KLA  |  Robotics & embodied AI  |  Milpitas, CA  |  large
+      Fit: Optical inspection ML; computational imaging
+ 568. Penumbra  |  Applied computer vision (medical, geo, industrial)  |  Alameda, CA  |  large
+      Fit: REAL immersive VR rehab + Lightning computer-assisted thrombectomy; XR fit  |  https://www.penumbrainc.com/careers/
+ 569. Replika  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: AI companion with 3D avatars and AR experiences
+ 570. LG Electronics  |  Chips, cameras, devices & wearables  |  Santa Clara, CA  |  large
+      Fit: LG Silicon Valley Lab: webOS TV AI picture/vision, XR and on-device ML
+ 571. Aurora Solar  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  growth
+      Fit: LiDAR/aerial 3D roof modeling and solar simulation AI  |  https://aurorasolar.com/careers
+ 572. Shutterfly  |  Big tech & enterprise ML/vision teams  |  San Jose, CA  |  large
+      Fit: Photo curation, enhancement and generative imaging ML  |  https://www.shutterflyinc.com/careers
+ 573. Gracia AI  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: 4D Gaussian splatting for XR; splats + XR fit
+ 574. Raytheon (RTX)  |  National labs, research institutes, defense & space  |  Bay Area / nationwide  |  large
+      Fit: Sensor processing, computer vision, EO/IR ML  |  https://careers.rtx.com
+ 575. Tractable  |  Mid/large tech with ML, vision or media teams  |  Remote US / London  |  growth
+      Fit: Photo-based vehicle and property damage assessment CV  |  https://tractable.ai/careers
+ 576. Sardine  |  Northern California engineering employers  |  San Francisco  |  growth
+      Fit: Device intelligence and behavior ML for fraud  |  https://www.sardine.ai/careers
+ 577. Synaptics  |  XR / 3D graphics / games  |  San Jose, CA  |  large
+      Fit: Astra edge-AI vision processors, display drivers
+ 578. Spire Global  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  growth
+      Fit: Satellite RF/weather data; ML analytics and onboard processing
+ 579. Agilent Technologies  |  Robotics & embodied AI  |  Santa Clara, CA  |  large
+      Fit: Lab automation workcells; imaging analytics
+ 580. Verily  |  Applied computer vision (medical, geo, industrial)  |  South San Francisco, CA  |  large
+      Fit: Retinal imaging AI & health sensing; CV/ML staff roles  |  https://verily.com/careers
+ 581. Ambarella  |  XR / 3D graphics / games  |  Santa Clara, CA  |  large
+      Fit: CV SoCs for cameras/robotics; on-device vision and generative AI
+ 582. Astra  |  Autonomy / drones / defense perception  |  Alameda, CA  |  growth
+      Fit: Launch and spacecraft engines; GNC, flight software and vision for ops
+ 583. Molecular Devices  |  Robotics & embodied AI  |  San Jose, CA  |  large
+      Fit: Automated cell imaging workcells; image ML
+ 584. ZEISS (Meditec & Microscopy)  |  Applied computer vision (medical, geo, industrial)  |  Dublin, CA  |  large
+      Fit: Ophthalmic OCT/surgical visualization + Xradia 3D X-ray microscopy, HQ in Dublin  |  https://www.zeiss.com/corporate/en/careers.html
+ 585. Builder.io  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: Visual Copilot design-to-code generation
+ 586. Microchip Technology  |  Chips, cameras, devices & wearables  |  San Jose, CA  |  large
+      Fit: PolarFire FPGA VectorBlox vision AI, smart embedded vision pipelines
+ 587. Sight Machine  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  growth
+      Fit: Manufacturing data foundation and digital twin analytics  |  https://sightmachine.com/careers
+ 588. Chevron  |  Big tech & enterprise ML/vision teams  |  San Ramon, CA  |  large
+      Fit: Technology Center CV for facility inspection, drone/robot imaging  |  https://careers.chevron.com
+ 589. Cartwheel  |  Venture-backed AI startups (2022-2026)  |  Los Angeles CA (remote)  |  startup
+      Fit: Text-to-motion animation; 3D gen fit
+ 590. BAE Systems  |  National labs, research institutes, defense & space  |  San Jose CA  |  large
+      Fit: Imaging, autonomy, electronic systems  |  https://jobs.baesystems.com
+ 591. Hippo  |  Mid/large tech with ML, vision or media teams  |  Palo Alto CA  |  growth
+      Fit: Home insurance; imagery and sensor ML  |  https://www.hippo.com/careers
+ 592. Movella  |  Northern California engineering employers  |  San Jose  |  growth
+      Fit: Xsens motion sensors; sensor fusion and motion capture  |  https://www.movella.com/careers
+ 593. Pano AI  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  growth
+      Fit: Wildfire detection from cameras and satellites; CV models and 3D geolocation
+ 594. Autodesk Research  |  Robotics & embodied AI  |  San Francisco, CA  |  large
+      Fit: Robotics/fabrication research; 3D geometry and generative design
+ 595. Johnson & Johnson Vision  |  Applied computer vision (medical, geo, industrial)  |  Milpitas, CA  |  large
+      Fit: Cataract/refractive diagnostic imaging & surgical guidance software  |  https://www.careers.jnj.com/
+ 596. Sofar Ocean  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  growth
+      Fit: Spotter ocean sensor network and route optimization; ML on marine data
+ 597. Omron Robotics and Safety Technologies  |  Robotics & embodied AI  |  Pleasanton, CA  |  large
+      Fit: Mobile robots and machine vision for factories
+ 598. 10x Genomics  |  Applied computer vision (medical, geo, industrial)  |  Pleasanton, CA  |  large
+      Fit: Xenium/Visium spatial imaging; image analysis & segmentation ML, near Dublin  |  https://www.10xgenomics.com/careers
+ 599. Outerbounds  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: Metaflow ML platform for training/inference pipelines
+ 600. Siemens EDA  |  Chips, cameras, devices & wearables  |  Fremont, CA  |  large
+      Fit: ML-driven verification and Catapult HLS for AI/vision accelerators
+ 601. Kalypso  |  Simulation, digital twins & science AI  |  Remote-US  |  growth
+      Fit: Digital twin, PLM and industrial AI consulting (Rockwell)  |  https://kalypso.com/careers
+ 602. ServiceNow  |  Big tech & enterprise ML/vision teams  |  Santa Clara, CA  |  large
+      Fit: Document Intelligence and multimodal vision for workflows  |  https://careers.servicenow.com
+ 603. Uthana  |  Venture-backed AI startups (2022-2026)  |  Remote US  |  startup
+      Fit: Generative motion for 3D characters; fit
+ 604. Booz Allen Hamilton  |  National labs, research institutes, defense & space  |  San Diego / remote  |  large
+      Fit: AI engineering, computer vision for defense  |  https://careers.boozallen.com
+ 605. Cape Analytics  |  Mid/large tech with ML, vision or media teams  |  Mountain View CA (Moody's)  |  growth
+      Fit: Geospatial imagery CV for property
+ 606. Standard BioTools  |  Northern California engineering employers  |  South San Francisco  |  growth
+      Fit: Imaging mass cytometry instruments and analysis software
+ 607. Liquid Robotics  |  Autonomy / drones / defense perception  |  Sunnyvale, CA  |  growth
+      Fit: Boeing Wave Glider unmanned surface vehicles; autonomy and maritime sensing
+ 608. Chan Zuckerberg Initiative  |  Applied computer vision (medical, geo, industrial)  |  Redwood City, CA  |  large
+      Fit: CZ Imaging Institute & virtual cell models; imaging ML engineering  |  https://chanzuckerberg.com/careers/
+ 609. Rhombus Power  |  Autonomy / drones / defense perception  |  Mountain View, CA  |  growth
+      Fit: Guardian AI-driven multi-domain sensing and situational awareness for DoD
+ 610. Instacart (Caper)  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  large
+      Fit: Caper smart carts with on-device item recognition; edge ML fit  |  https://instacart.careers/
+ 611. Sensory  |  Generative AI & AI infrastructure  |  Santa Clara, CA  |  startup
+      Fit: Embedded vision and voice AI for low-power devices
+ 612. Micron Technology  |  Chips, cameras, devices & wearables  |  San Jose, CA  |  large
+      Fit: AI memory solutions; on-device LLM/vision workload characterization
+ 613. Quizlet  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  growth
+      Fit: Camera scan-to-study and AI learning features  |  https://quizlet.com/careers
+ 614. McAfee  |  Big tech & enterprise ML/vision teams  |  San Jose, CA  |  large
+      Fit: On-device deepfake detection for video and images  |  https://careers.mcafee.com
+ 615. Imagry  |  Venture-backed AI startups (2022-2026)  |  San Jose CA / Haifa  |  startup
+      Fit: Vision-based mapless autonomy; CV fit
+ 616. Maxar Intelligence  |  National labs, research institutes, defense & space  |  Westminster CO / remote  |  large
+      Fit: 3D geospatial reconstruction, imagery ML  |  https://www.maxar.com/careers
+ 617. Nearmap  |  Mid/large tech with ML, vision or media teams  |  Remote US  |  growth
+      Fit: Aerial imagery and 3D AI
+ 618. Arrcus  |  Northern California engineering employers  |  San Jose  |  growth
+      Fit: Network OS for AI infrastructure
+ 619. Clarifai  |  Autonomy / drones / defense perception  |  Remote-US  |  growth
+      Fit: Vision AI platform with DoD contracts; edge CV deployment and model compression
+ 620. Arlo Technologies  |  Applied computer vision (medical, geo, industrial)  |  Milpitas, CA  |  large
+      Fit: Smart cameras with on-device person/package detection  |  https://www.arlo.com/en-us/about/careers.html
+ 621. Kitware  |  Autonomy / drones / defense perception  |  Remote-US  |  growth
+      Fit: Open-source CV/3D (VTK) for DARPA; 3D reconstruction, video analytics
+ 622. Applied Materials  |  Applied computer vision (medical, geo, industrial)  |  Santa Clara, CA  |  large
+      Fit: E-beam inspection & process control imaging AI  |  https://www.appliedmaterials.com/us/en/careers.html
+ 623. Spellbrush  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: Anime image generation models (niji journey)
+ 624. Ampere Computing  |  Chips, cameras, devices & wearables  |  Santa Clara, CA  |  large
+      Fit: AI inference optimization on Arm server CPUs, model quantization
+ 625. Khan Academy  |  Simulation, digital twins & science AI  |  Remote-US  |  growth
+      Fit: Khanmigo AI tutor; multimodal learning features  |  https://www.khanacademy.org/careers
+ 626. Zynga  |  Big tech & enterprise ML/vision teams  |  San Francisco, CA  |  large
+      Fit: Mobile game rendering and graphics engineering (Take-Two)  |  https://www.zynga.com/careers
+ 627. Avataar  |  Venture-backed AI startups (2022-2026)  |  Bay Area / Bangalore  |  startup
+      Fit: AI 3D product visualization; NeRF fit
+ 628. US Naval Postgraduate School  |  National labs, research institutes, defense & space  |  Monterey CA  |  large
+      Fit: Research faculty/staff in autonomy, vision  |  https://nps.edu
+ 629. Cambridge Mobile Telematics  |  Mid/large tech with ML, vision or media teams  |  Remote US / Boston  |  growth
+      Fit: On-device sensor fusion and dashcam ML  |  https://www.cmtelematics.com/careers
+ 630. Auradine  |  Northern California engineering employers  |  Santa Clara  |  growth
+      Fit: AI and blockchain silicon; systems software
+ 631. Cepton  |  Autonomy / drones / defense perception  |  San Jose, CA  |  growth
+      Fit: Koito-owned automotive lidar; perception software and point-cloud ML for ADAS
+ 632. Lam Research  |  Applied computer vision (medical, geo, industrial)  |  Fremont, CA  |  large
+      Fit: Equipment intelligence & metrology ML; image-based process control  |  https://careers.lamresearch.com/
+ 633. SiFive  |  Autonomy / drones / defense perception  |  Santa Clara, CA  |  growth
+      Fit: Automotive RISC-V cores with vector/AI extensions for ADAS compute
+ 634. Hinge Health  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  large
+      Fit: TrueMotion CV pose tracking for physical therapy  |  https://www.hingehealth.com/careers
+ 635. Fable Simulation  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: Showrunner AI-generated animated shows
+ 636. Corsair Gaming  |  Chips, cameras, devices & wearables  |  Fremont, CA  |  large
+      Fit: Elgato cameras/streaming video ML, PC peripheral software
+ 637. Gridware  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  growth
+      Fit: Pole-mounted Gridscope sensors; edge sensing ML for grid events  |  https://gridware.io/careers
+ 638. Adeia  |  Big tech & enterprise ML/vision teams  |  San Jose, CA  |  large
+      Fit: Media and imaging R&D: XR, video coding and display tech  |  https://adeia.com/careers
+ 639. Recraft  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Image + vector gen models; diffusion fit
+ 640. Whoop  |  Mid/large tech with ML, vision or media teams  |  Boston / remote  |  growth
+      Fit: Wearable sensing ML; on-device  |  https://www.whoop.com/careers
+ 641. Ambience Healthcare  |  Northern California engineering employers  |  San Francisco  |  growth
+      Fit: Clinical AI platform
+ 642. Efinix  |  Autonomy / drones / defense perception  |  Cupertino, CA  |  growth
+      Fit: Low-power FPGAs for edge vision and drones; camera pipelines and ML acceleration
+ 643. Bosch  |  Applied computer vision (medical, geo, industrial)  |  Sunnyvale, CA  |  large
+      Fit: Bosch Research/Center for AI; video analytics & perception  |  https://www.bosch.us/careers/
+ 644. Stereolabs  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  growth
+      Fit: ZED stereo cameras and SDK for robots/drones; depth, SLAM and spatial AI
+ 645. Stryker (Endoscopy)  |  Applied computer vision (medical, geo, industrial)  |  San Jose, CA  |  large
+      Fit: Endoscopic camera platforms, fluorescence imaging & surgical video AI  |  https://careers.stryker.com/
+ 646. Delphi  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: AI digital clones with voice and video
+ 647. VeriSilicon  |  Chips, cameras, devices & wearables  |  Santa Clara, CA  |  large
+      Fit: Vivante GPU/NPU/ISP IP; graphics drivers and NN compiler
+ 648. KoBold Metals  |  Simulation, digital twins & science AI  |  Berkeley, CA  |  growth
+      Fit: AI and physics inversion for mineral exploration  |  https://www.koboldmetals.com/careers
+ 649. Magic Hour  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: YC; video gen/face swap; face synthesis fit
+ 650. Noom  |  Mid/large tech with ML, vision or media teams  |  New York / remote  |  growth
+      Fit: Food image recognition and health ML
+ 651. Hippocratic AI  |  Northern California engineering employers  |  Palo Alto  |  growth
+      Fit: Healthcare generative AI agents
+ 652. RealSense  |  Autonomy / drones / defense perception  |  Bay Area, CA  |  growth
+      Fit: Intel RealSense spinout; depth cameras for robots/drones, depth ML and SLAM
+ 653. BD Biosciences  |  Applied computer vision (medical, geo, industrial)  |  San Jose, CA  |  large
+      Fit: Image-enabled cell sorting (CellView); real-time image processing on FPGA/GPU  |  https://jobs.bd.com/
+ 654. Momentus  |  Autonomy / drones / defense perception  |  San Jose, CA  |  growth
+      Fit: Vigoride orbital service vehicles; GNC, flight software and onboard imaging
+ 655. Philips (IGT Devices)  |  Applied computer vision (medical, geo, industrial)  |  Rancho Cordova, CA  |  large
+      Fit: IVUS intravascular imaging & image-guided therapy software  |  https://www.careers.philips.com/
+ 656. Zyphra  |  Generative AI & AI infrastructure  |  Palo Alto, CA  |  startup
+      Fit: Efficient on-device multimodal models (Zamba), model compression
+ 657. Astera Labs  |  Chips, cameras, devices & wearables  |  San Jose, CA  |  large
+      Fit: AI rack connectivity silicon; COSMOS telemetry and ML fleet analytics
+ 658. Citrine Informatics  |  Simulation, digital twins & science AI  |  Redwood City, CA  |  growth
+      Fit: Materials informatics AI platform  |  https://citrine.io/careers
+ 659. Fable Studio (Showrunner)  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Generative animation; graphics + gen fit
+ 660. Calm  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA  |  growth
+      Fit: Generative media and personalization  |  https://www.calm.com/careers
+ 661. Lyten  |  Northern California engineering employers  |  San Jose  |  growth
+      Fit: Lithium-sulfur batteries; manufacturing data and ML  |  https://lyten.com/careers/
+ 662. Skylo  |  Autonomy / drones / defense perception  |  Mountain View, CA  |  growth
+      Fit: Satellite-to-device connectivity for phones and vehicles; on-device modem software
+ 663. Genentech  |  Applied computer vision (medical, geo, industrial)  |  South San Francisco, CA  |  large
+      Fit: gRED computational pathology & imaging AI  |  https://careers.gene.com/
+ 664. iMerit  |  Autonomy / drones / defense perception  |  San Jose, CA  |  growth
+      Fit: AV/ADAS 3D point-cloud and sensor-fusion annotation; data tooling and QA
+ 665. eBay  |  Applied computer vision (medical, geo, industrial)  |  San Jose, CA  |  large
+      Fit: Visual search & image-based authenticity/listing AI  |  https://jobs.ebayinc.com/
+ 666. Zededa  |  Generative AI & AI infrastructure  |  San Jose, CA  |  startup
+      Fit: Edge orchestration for deploying vision AI models on devices
+ 667. Rambus  |  Chips, cameras, devices & wearables  |  San Jose, CA  |  large
+      Fit: Memory interface IP for AI accelerators; architecture modeling
+ 668. Span  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  growth
+      Fit: Smart panels with load-sensing ML and energy forecasting  |  https://www.span.io/careers
+ 669. Cactus  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: YC; mobile inference engine; Android + edge fit
+ 670. Headspace  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA / remote  |  growth
+      Fit: AI companion; media ML  |  https://www.headspace.com/careers
+ 671. Antora Energy  |  Northern California engineering employers  |  Sunnyvale  |  growth
+      Fit: Thermal batteries; controls and embedded software  |  https://antoraenergy.com/careers
+ 672. BigBear.ai  |  Autonomy / drones / defense perception  |  Remote-US  |  growth
+      Fit: Defense CV and biometrics (ConductorOS edge AI); vision analytics for national security
+ 673. Omron Robotics  |  Applied computer vision (medical, geo, industrial)  |  Pleasanton, CA  |  large
+      Fit: Machine vision & mobile robots (ex-Adept), near Dublin
+ 674. Hive  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  growth
+      Fit: Vision models incl. DoD deepfake detection; CV model training and deployment
+ 675. Intuit  |  Applied computer vision (medical, geo, industrial)  |  Mountain View, CA  |  large
+      Fit: Document understanding for receipts/tax forms with VLMs  |  https://www.intuit.com/careers/
+ 676. Eraser  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: AI diagram generation for technical design
+ 677. DENSO  |  Chips, cameras, devices & wearables  |  San Jose, CA  |  large
+      Fit: Silicon Valley innovation: ADAS vision, sensor fusion, in-vehicle AI
+ 678. Regrow Ag  |  Simulation, digital twins & science AI  |  Remote-US  |  growth
+      Fit: Satellite crop monitoring and soil carbon modeling  |  https://www.regrow.ag/careers
+ 679. Highlight AI  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: AI that sees your screen; vision agents fit
+ 680. Sword Health  |  Mid/large tech with ML, vision or media teams  |  Remote US  |  growth
+      Fit: Digital PT with motion sensing and CV
+ 681. Rondo Energy  |  Northern California engineering employers  |  Alameda  |  growth
+      Fit: Heat batteries; controls and data software  |  https://rondo.com/careers
+ 682. In-Q-Tel  |  Autonomy / drones / defense perception  |  Menlo Park, CA  |  growth
+      Fit: Strategic investor for US intel/defense; technical staff evaluating vision/autonomy tech
+ 683. Infineon Technologies  |  Applied computer vision (medical, geo, industrial)  |  Milpitas, CA  |  large
+      Fit: REAL3 ToF 3D image sensors & radar sensing; low-power sensing  |  https://www.infineon.com/careers
+ 684. Raft  |  Autonomy / drones / defense perception  |  Remote-US  |  growth
+      Fit: Remote-first defense software; edge data and AI platforms for tactical sensors
+ 685. DocuSign  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  large
+      Fit: ID verification & document AI extraction  |  https://careers.docusign.com/
+ 686. Livepeer  |  Generative AI & AI infrastructure  |  Remote-US  |  startup
+      Fit: Decentralized GPU network for real-time AI video pipelines
+ 687. iRhythm Technologies  |  Chips, cameras, devices & wearables  |  San Francisco, CA  |  large
+      Fit: Zio wearable ECG patch; deep-learning signal analysis
+ 688. Cytek Biosciences  |  Simulation, digital twins & science AI  |  Fremont, CA  |  growth
+      Fit: Spectral flow and imaging cytometry ML  |  https://cytekbio.com/pages/careers
+ 689. Screenpipe  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: OCR/vision over screen history; on-device fit
+ 690. Zwift  |  Mid/large tech with ML, vision or media teams  |  Long Beach CA / remote  |  growth
+      Fit: Real-time 3D game engine for fitness  |  https://www.zwift.com/careers
+ 691. Advantest America  |  Northern California engineering employers  |  San Jose  |  large
+      Fit: ATE software, ML for test analytics  |  https://www.advantest.com/careers
+ 692. Auterion  |  Autonomy / drones / defense perception  |  Remote-US  |  growth
+      Fit: Skynode drone OS; visual navigation, targeting and edge AI for UAS
+ 693. Plaid  |  Applied computer vision (medical, geo, industrial)  |  San Francisco, CA  |  large
+      Fit: Identity Verification selfie liveness & document CV  |  https://plaid.com/careers/
+ 694. Slingshot Aerospace  |  Autonomy / drones / defense perception  |  Remote-US  |  growth
+      Fit: Space situational awareness; 3D orbital visualization and sensor fusion
+ 695. Hitachi America R&D  |  Applied computer vision (medical, geo, industrial)  |  Santa Clara, CA  |  large
+      Fit: Industrial AI & video analytics research lab
+ 696. Chroma  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: Open-source embedding DB for multimodal retrieval
+ 697. FormFactor  |  Chips, cameras, devices & wearables  |  Livermore, CA  |  large
+      Fit: Wafer probe and optical inspection; vision/ML for test - close to Dublin
+ 698. Ultima Genomics  |  Simulation, digital twins & science AI  |  Fremont, CA  |  growth
+      Fit: High-throughput optical sequencing, image analysis on GPUs  |  https://www.ultimagenomics.com/careers
+ 699. Cluely  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Real-time screen + audio AI; vision fit
+ 700. Jam City  |  Mid/large tech with ML, vision or media teams  |  Los Angeles / remote  |  growth
+      Fit: Mobile games
+ 701. Ultra Clean Holdings  |  Northern California engineering employers  |  Hayward  |  large
+      Fit: Subsystems for chip tools; automation and controls software  |  https://uct.com/careers/
+ 702. AiDash  |  Autonomy / drones / defense perception  |  San Jose, CA  |  growth
+      Fit: Satellite imagery AI for utility vegetation management; geospatial CV
+ 703. Onto Innovation  |  Applied computer vision (medical, geo, industrial)  |  Milpitas, CA  |  large
+      Fit: Optical metrology & wafer inspection imaging  |  https://ontoinnovation.com/careers
+ 704. Zesty.ai  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  growth
+      Fit: Property risk from aerial/satellite imagery; CV models and 3D roof geometry
+ 705. STMicroelectronics  |  Applied computer vision (medical, geo, industrial)  |  Santa Clara, CA  |  large
+      Fit: ToF sensors & STM32N6 edge vision NPU  |  https://www.st.com/content/st_com/en/about/careers.html
+ 706. Tolan (Portola)  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  startup
+      Fit: Animated 3D AI companion app with real-time character rendering
+ 707. Nokia Bell Labs  |  Chips, cameras, devices & wearables  |  Sunnyvale, CA  |  large
+      Fit: Immersive video/audio, XR media and device research
+ 708. Nautilus Biotechnology  |  Simulation, digital twins & science AI  |  San Carlos, CA  |  growth
+      Fit: Single-molecule protein imaging and ML decoding  |  https://www.nautilus.bio/careers
+ 709. Momentic  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Vision-based UI testing agents; fit
+ 710. Machine Zone  |  Mid/large tech with ML, vision or media teams  |  Palo Alto CA  |  growth
+      Fit: Mobile games and real-time engine (AppLovin)
+ 711. Ichor Systems  |  Northern California engineering employers  |  Fremont  |  large
+      Fit: Fluid delivery subsystems; embedded controls  |  https://www.ichorsystems.com/careers/
+ 712. Ridecell  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  growth
+      Fit: Fleet automation platform for mobility and AV fleet operations
+ 713. Inceptio Technology  |  Autonomy / drones / defense perception  |  Fremont, CA  |  growth
+      Fit: L3/L4 autonomous trucking; US R&D for perception and planning
+ 714. Sanas  |  Generative AI & AI infrastructure  |  Palo Alto, CA  |  startup
+      Fit: Real-time speech conversion models with low-latency inference
+ 715. Amlogic  |  Chips, cameras, devices & wearables  |  Santa Clara, CA  |  large
+      Fit: Smart TV/camera SoCs with NPU; ISP and on-device vision
+ 716. Calico Life Sciences  |  Simulation, digital twins & science AI  |  South San Francisco, CA  |  growth
+      Fit: ML on imaging and longevity biology  |  https://www.calicolabs.com/careers
+ 717. Simplex  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: YC; web agents; screen vision fit
+ 718. Double Fine  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA (Xbox)  |  growth
+      Fit: Game studio; graphics engineering
+ 719. Axcelis Technologies  |  Northern California engineering employers  |  San Jose  |  large
+      Fit: Ion implant tools; controls and vision software
+ 720. Achronix Semiconductor  |  Autonomy / drones / defense perception  |  Santa Clara, CA  |  growth
+      Fit: FPGAs/eFPGA IP for defense and automotive sensor processing and edge AI
+ 721. Rivian  |  Autonomy / drones / defense perception  |  Palo Alto, CA  |  large
+      Fit: Autonomy & ADAS platform team in Palo Alto; perception, camera ML, in-house compute  |  https://rivian.com/careers
+ 722. Lambda  |  Generative AI & AI infrastructure  |  San Jose, CA  |  growth
+      Fit: GPU cloud for training/inference of vision and video models  |  https://lambda.ai/careers
+ 723. Socionext America  |  Chips, cameras, devices & wearables  |  Milpitas, CA  |  large
+      Fit: Milbeaut image processors, custom SoCs for vision/ADAS
+ 724. CZ Biohub San Francisco  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  growth
+      Fit: Microscopy, light-sheet imaging and computational ML  |  https://www.czbiohub.org/careers
+ 725. Autotab  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Browser/computer-use agents; fit
+ 726. Liftoff  |  Mid/large tech with ML, vision or media teams  |  Redwood City CA  |  growth
+      Fit: Mobile ad ML and creative  |  https://liftoff.io/company/careers
+ 727. Nova Measuring Instruments  |  Northern California engineering employers  |  Fremont  |  large
+      Fit: Optical metrology with ML modeling  |  https://www.novami.com/careers/
+ 728. Rivian and Volkswagen Group Technologies  |  Autonomy / drones / defense perception  |  Palo Alto, CA  |  large
+      Fit: Zonal software platform JV; ADAS, infotainment graphics and on-vehicle AI
+ 729. Ford Motor Company  |  Autonomy / drones / defense perception  |  Palo Alto, CA  |  large
+      Fit: Ford Research & Advanced Engineering Palo Alto; ADAS/BlueCruise perception and in-vehicle ML  |  https://corporate.ford.com/careers.html
+ 730. Crusoe  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  growth
+      Fit: AI cloud and managed inference for generative models
+ 731. TSMC North America  |  Chips, cameras, devices & wearables  |  San Jose, CA  |  large
+      Fit: AI-assisted design tech (DTCO) and design ecosystem software
+ 732. Emerald Cloud Lab  |  Simulation, digital twins & science AI  |  South San Francisco, CA  |  growth
+      Fit: Remote-controlled automated lab, instrument data and vision  |  https://www.emeraldcloudlab.com/careers
+ 733. Asteroid  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: YC; browser agents; fit
+ 734. Vidmob  |  Mid/large tech with ML, vision or media teams  |  Remote US  |  growth
+      Fit: Creative analytics CV on ad video
+ 735. Natus Medical  |  Northern California engineering employers  |  Pleasanton  |  large
+      Fit: Neuro diagnostics devices, signal processing and embedded software
+ 736. Mercedes-Benz Research & Development North America  |  Autonomy / drones / defense perception  |  Sunnyvale, CA  |  large
+      Fit: Sunnyvale autonomous driving and MBUX AR/3D UX teams; perception and real-time graphics  |  https://group.mercedes-benz.com/careers/
+ 737. BMW Group Technology Office USA  |  Autonomy / drones / defense perception  |  Mountain View, CA  |  large
+      Fit: Silicon Valley tech office; ADAS perception, AR HUD and in-car spatial computing  |  https://www.bmwgroup.jobs/us/en.html
+ 738. Cloudinary  |  Generative AI & AI infrastructure  |  Santa Clara, CA  |  growth
+      Fit: Generative AI image/video transformation APIs and media pipelines
+ 739. Fujitsu Research of America  |  Chips, cameras, devices & wearables  |  Santa Clara, CA  |  large
+      Fit: AI research incl. vision/human sensing and edge AI
+ 740. Tredence  |  Simulation, digital twins & science AI  |  San Jose, CA  |  growth
+      Fit: AI/ML consulting incl. CV for retail/manufacturing  |  https://www.tredence.com/careers
+ 741. Steel  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA (remote)  |  startup
+      Fit: Open-source browser infra; agent fit
+ 742. MasterClass  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA  |  growth
+      Fit: Video and generative AI
+ 743. Veeva Systems  |  Northern California engineering employers  |  Pleasanton  |  large
+      Fit: Pleasanton HQ; AI features across cloud platform  |  https://careers.veeva.com
+ 744. Volkswagen Group of America Innovation & Engineering Center California  |  Autonomy / drones / defense perception  |  Belmont, CA  |  large
+      Fit: Belmont research lab; ADAS perception, AR displays and HMI 3D graphics
+ 745. Nissan Advanced Technology Center Silicon Valley  |  Autonomy / drones / defense perception  |  Santa Clara, CA  |  large
+      Fit: ProPILOT autonomy research, perception and HMI/AR interfaces
+ 746. Agora  |  Generative AI & AI infrastructure  |  Santa Clara, CA  |  growth
+      Fit: Real-time video SDK, conversational AI avatars and video enhancement
+ 747. 66degrees  |  Simulation, digital twins & science AI  |  Remote-US  |  growth
+      Fit: Google Cloud AI partner; ML architect roles  |  https://66degrees.com/careers
+ 748. Hyperbrowser  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Headless browsers for agents; fit
+ 749. Speak  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA  |  growth
+      Fit: AI language tutor; speech and avatar ML
+ 750. Cooper Companies  |  Northern California engineering employers  |  San Ramon  |  large
+      Fit: San Ramon HQ; CooperVision vision-care devices
+
+====================================================================================================
+BATCH 4 (#751-1000)
+====================================================================================================
+ 751. Hyundai CRADLE  |  Autonomy / drones / defense perception  |  Mountain View, CA  |  large
+      Fit: Hyundai Motor Group open innovation; mobility AI, autonomy and in-vehicle XR pilots
+ 752. Bosch Research and Technology Center North America  |  Autonomy / drones / defense perception  |  Sunnyvale, CA  |  large
+      Fit: Bosch Center for AI Sunnyvale; ADAS perception, neural rendering for sensor sim, edge ML  |  https://www.bosch.us/careers/
+ 753. Miro  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  growth
+      Fit: AI-native visual canvas, diagram and prototype generation
+ 754. Invisible Technologies  |  Simulation, digital twins & science AI  |  Remote-US  |  growth
+      Fit: AI training data and enterprise applied AI  |  https://invisibletech.ai/careers
+ 755. Anchor Browser  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA / Tel Aviv  |  startup
+      Fit: Agentic browser infra; fit
+ 756. Course Hero (Learneo)  |  Mid/large tech with ML, vision or media teams  |  Redwood City CA  |  growth
+      Fit: Learneo (Quillbot, Course Hero); doc AI
+ 757. Blackhawk Network  |  Northern California engineering employers  |  Pleasanton  |  large
+      Fit: Pleasanton HQ fintech; ML for fraud and risk  |  https://blackhawknetwork.com/careers
+ 758. DENSO International America  |  Autonomy / drones / defense perception  |  San Jose, CA  |  large
+      Fit: Silicon Valley Innovation Center; ADAS perception and edge AI for vehicles
+ 759. Woven by Toyota  |  Autonomy / drones / defense perception  |  Palo Alto, CA  |  large
+      Fit: Arene OS and automated driving; perception, mapping and sim for Toyota vehicles  |  https://woven.toyota/en/careers/
+ 760. Vercel  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  growth
+      Fit: v0 generative UI design and rendering  |  https://vercel.com/careers
+ 761. Provectus  |  Simulation, digital twins & science AI  |  Remote-US  |  growth
+      Fit: ML/CV solution architecture on AWS  |  https://provectus.com/careers
+ 762. Open Interpreter  |  Venture-backed AI startups (2022-2026)  |  Seattle WA (remote)  |  startup
+      Fit: Open-source computer control; fit
+ 763. EVgo  |  Mid/large tech with ML, vision or media teams  |  Los Angeles / remote  |  growth
+      Fit: EV charging ML
+ 764. QuantumScape  |  Northern California engineering employers  |  San Jose  |  large
+      Fit: Solid-state batteries; ML for manufacturing and imaging QC  |  https://www.quantumscape.com/careers/
+ 765. Uber  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  large
+      Fit: Uber AV Labs and autonomous mobility partnerships; AV data collection, sim and evaluation  |  https://www.uber.com/us/en/careers/
+ 766. Motive Technologies  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  large
+      Fit: AI dashcam driver-safety models; on-device CV, quantized edge inference  |  https://gomotive.com/company/careers/
+ 767. Blackmagic Design  |  Generative AI & AI infrastructure  |  Fremont, CA  |  growth
+      Fit: DaVinci Resolve Neural Engine: AI relighting, masking, upscaling
+ 768. PTC  |  Simulation, digital twins & science AI  |  Remote-US  |  large
+      Fit: Onshape AI and Vuforia AR: real-time 3D, on-device tracking for industrial AR  |  https://www.ptc.com/en/about/careers
+ 769. Reworkd  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: AI web extraction agents; fit
+ 770. Smart Eye  |  Mid/large tech with ML, vision or media teams  |  Remote US  |  growth
+      Fit: Driver monitoring CV on edge
+ 771. Bloom Energy  |  Northern California engineering employers  |  San Jose  |  large
+      Fit: Fuel cells; controls, data science, embedded  |  https://www.bloomenergy.com/careers/
+ 772. Ouster  |  Autonomy / drones / defense perception  |  San Francisco, CA  |  large
+      Fit: Digital lidar perception SDK; point-cloud ML, sensor fusion and 3D visualization  |  https://ouster.com/careers
+ 773. Renesas Electronics America  |  Autonomy / drones / defense perception  |  Milpitas, CA  |  large
+      Fit: R-Car ADAS SoCs; vision pipelines, GPU/NPU drivers and perception reference stacks
+ 774. fal  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  growth
+      Fit: Generative media inference platform, diffusion kernel optimization  |  https://fal.ai/careers
+ 775. Dassault Systemes  |  Simulation, digital twins & science AI  |  Remote-US  |  large
+      Fit: 3DEXPERIENCE virtual twins, SIMULIA physics-ML, generative design  |  https://www.3ds.com/careers
+ 776. Bardeen  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Agentic browser workflows; fit
+ 777. Seeing Machines  |  Mid/large tech with ML, vision or media teams  |  Remote US  |  growth
+      Fit: Driver monitoring CV, embedded
+ 778. Pure Storage  |  Northern California engineering employers  |  Santa Clara  |  large
+      Fit: AI infrastructure storage; ML ops  |  https://www.purestorage.com/company/careers.html
+ 779. Xperi  |  Autonomy / drones / defense perception  |  San Jose, CA  |  large
+      Fit: DTS AutoSense in-cabin driver/occupant monitoring; on-device CV and face analysis
+ 780. Texas Instruments  |  Autonomy / drones / defense perception  |  Santa Clara, CA  |  large
+      Fit: TDA4/Jacinto ADAS processors and mmWave radar; vision accelerators, edge AI SDK  |  https://careers.ti.com/
+ 781. Fireworks AI  |  Generative AI & AI infrastructure  |  Redwood City, CA  |  growth
+      Fit: Inference optimization, quantization, multimodal model serving  |  https://fireworks.ai/careers
+ 782. Procore Technologies  |  Simulation, digital twins & science AI  |  Remote-US  |  large
+      Fit: Procore AI, reality capture and BIM viewing for construction  |  https://careers.procore.com
+ 783. Akridata  |  Venture-backed AI startups (2022-2026)  |  Los Altos CA  |  startup
+      Fit: Data-centric CV tooling; CV fit
+ 784. Wyze  |  Mid/large tech with ML, vision or media teams  |  Seattle / remote  |  growth
+      Fit: Smart cameras with on-device AI  |  https://wyze.com/careers
+ 785. Seagate Technology  |  Northern California engineering employers  |  Fremont  |  large
+      Fit: Fremont R&D; ML for manufacturing and recording heads  |  https://www.seagate.com/careers/
+ 786. Keysight Technologies  |  Autonomy / drones / defense perception  |  Santa Rosa, CA  |  large
+      Fit: Radar scene emulator and ADAS/AV test; sensor simulation and 3D scene modeling  |  https://jobs.keysight.com/
+ 787. Wind River  |  Autonomy / drones / defense perception  |  Alameda, CA  |  large
+      Fit: Edge OS for autonomous systems, defense and auto; embedded C/C++, safety-critical  |  https://www.windriver.com/company/careers
+ 788. Baseten  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  growth
+      Fit: Inference runtime perf engineering for image/video/audio models  |  https://www.baseten.co/careers/
+ 789. Enphase Energy  |  Simulation, digital twins & science AI  |  Fremont, CA  |  large
+      Fit: Energy system ML, edge firmware and forecasting  |  https://enphase.com/careers
+ 790. Overview.ai  |  Venture-backed AI startups (2022-2026)  |  San Jose CA  |  startup
+      Fit: Edge AI inspection cameras; on-device CV fit
+ 791. Eagle Eye Networks  |  Mid/large tech with ML, vision or media teams  |  Austin / remote  |  growth
+      Fit: Cloud video surveillance AI
+ 792. Sandisk  |  Northern California engineering employers  |  Milpitas  |  large
+      Fit: Flash memory; ML for yield and firmware  |  https://www.sandisk.com/company/careers
+ 793. PACCAR Innovation Center  |  Autonomy / drones / defense perception  |  Sunnyvale, CA  |  large
+      Fit: Silicon Valley innovation center for Kenworth/Peterbilt ADAS and autonomy
+ 794. Topcon Positioning Systems  |  Autonomy / drones / defense perception  |  Livermore, CA  |  large
+      Fit: GNSS, machine control and 3D scanning HQ in Livermore near Dublin; sensor fusion
+ 795. Modal  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  growth
+      Fit: Serverless GPU platform heavily used for generative media  |  https://modal.com/careers
+ 796. Illumina  |  Simulation, digital twins & science AI  |  Foster City, CA  |  large
+      Fit: Sequencing image processing and AI on instrument  |  https://www.illumina.com/company/careers.html
+ 797. Physna  |  Venture-backed AI startups (2022-2026)  |  Columbus OH (remote)  |  startup
+      Fit: 3D shape ML; geometry fit
+ 798. Density  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA  |  growth
+      Fit: Depth-sensor occupancy ML
+ 799. Medtronic  |  Northern California engineering employers  |  Santa Rosa  |  large
+      Fit: Santa Rosa site; embedded and algorithms  |  https://jobs.medtronic.com
+ 800. Flock Safety  |  Autonomy / drones / defense perception  |  Remote-US  |  large
+      Fit: Aerodome drone-as-first-responder and camera CV; edge vision ML
+ 801. AeroVironment  |  Autonomy / drones / defense perception  |  Petaluma, CA  |  large
+      Fit: Petaluma UAS site (JUMP 20); autonomy, EO/IR perception and edge AI for drones
+ 802. Modular  |  Generative AI & AI infrastructure  |  Remote-US  |  growth
+      Fit: MAX/Mojo inference engine and portable GPU kernels  |  https://www.modular.com/careers
+ 803. PacBio  |  Simulation, digital twins & science AI  |  Menlo Park, CA  |  large
+      Fit: Optical sequencing signal processing and ML basecalling  |  https://www.pacb.com/company/careers
+ 804. JITX  |  Venture-backed AI startups (2022-2026)  |  Berkeley CA  |  startup
+      Fit: Code-driven PCB design; hardware AI fit
+ 805. Pindrop  |  Mid/large tech with ML, vision or media teams  |  Atlanta / remote US  |  growth
+      Fit: Deepfake detection for voice/video  |  https://www.pindrop.com/careers
+ 806. Boston Scientific  |  Northern California engineering employers  |  Fremont  |  large
+      Fit: Fremont site; device software  |  https://jobs.bostonscientific.com
+ 807. Kratos Defense & Security Solutions  |  Autonomy / drones / defense perception  |  Sacramento, CA  |  large
+      Fit: Unmanned systems; Sacramento manufacturing for Elroy Chaparral; autonomy software
+ 808. Joby Aviation  |  Autonomy / drones / defense perception  |  San Carlos, CA  |  large
+      Fit: Joby autonomy (ex-Xwing) San Carlos/Santa Cruz; perception, sim and flight software  |  https://www.jobyaviation.com/careers
+ 809. RunPod  |  Generative AI & AI infrastructure  |  Remote-US  |  growth
+      Fit: Serverless GPU for generative image/video workloads
+ 810. Schrodinger  |  Simulation, digital twins & science AI  |  Remote-US  |  large
+      Fit: Physics-based molecular simulation plus ML  |  https://www.schrodinger.com/careers
+ 811. AllSpice  |  Venture-backed AI startups (2022-2026)  |  Remote US  |  startup
+      Fit: Git for hardware + AI review; fit
+ 812. Veriff  |  Mid/large tech with ML, vision or media teams  |  Remote US  |  growth
+      Fit: Identity verification CV, deepfake detection  |  https://www.veriff.com/careers
+ 813. Cepheid  |  Northern California engineering employers  |  Sunnyvale  |  large
+      Fit: Molecular diagnostics instruments; embedded software  |  https://careers.danaher.com
+ 814. Archer Aviation  |  Autonomy / drones / defense perception  |  San Jose, CA  |  large
+      Fit: Midnight eVTOL and defense hybrid VTOL; flight autonomy, perception, cockpit HMI  |  https://www.archer.com/careers
+ 815. Wisk Aero  |  Autonomy / drones / defense perception  |  Mountain View, CA  |  large
+      Fit: Self-flying air taxi; autonomy, perception, detect-and-avoid and simulation  |  https://wisk.aero/careers/
+ 816. Voltage Park  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  growth
+      Fit: GPU cloud for training multimodal and video models
+ 817. Lawrence Berkeley National Laboratory  |  Simulation, digital twins & science AI  |  Berkeley, CA  |  large
+      Fit: NERSC AI for science, imaging and climate ML  |  https://jobs.lbl.gov
+ 818. Xwing  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Detect-and-avoid perception; sensor fusion fit
+ 819. Abnormal Security  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA  |  growth
+      Fit: Multimodal email security incl. image ML  |  https://abnormalsecurity.com/careers
+ 820. Pacific Biosciences  |  Northern California engineering employers  |  Menlo Park  |  large
+      Fit: Sequencing instruments; imaging and signal ML  |  https://www.pacb.com/company/careers/
+ 821. Acubed by Airbus  |  Autonomy / drones / defense perception  |  Bay Area, CA  |  large
+      Fit: Airbus Silicon Valley center; autonomous flight, vision-based landing, ML perception
+ 822. SpaceX  |  Autonomy / drones / defense perception  |  Sunnyvale, CA  |  large
+      Fit: Starlink/Starshield Sunnyvale; satellite software, phased-array and imaging payloads  |  https://www.spacex.com/careers/
+ 823. LiveKit  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  growth
+      Fit: Real-time video/audio infra for multimodal agents and avatars  |  https://livekit.io/careers
+ 824. SLAC National Accelerator Laboratory  |  Simulation, digital twins & science AI  |  Menlo Park, CA  |  large
+      Fit: ML for imaging detectors, cryo-EM and edge ML at instruments  |  https://careers.slac.stanford.edu
+ 825. Volt AI  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Video AI for security; CV fit
+ 826. Foundry (The Foundry)  |  Mid/large tech with ML, vision or media teams  |  Remote US  |  growth
+      Fit: Nuke compositing; ML for VFX
+ 827. NXP Semiconductors  |  Northern California engineering employers  |  San Jose  |  large
+      Fit: San Jose; edge AI, radar, automotive  |  https://www.nxp.com/careers
+ 828. Lanteris Space Systems  |  Autonomy / drones / defense perception  |  Palo Alto, CA  |  large
+      Fit: Ex-Maxar Space Systems (Intuitive Machines); spacecraft GNC, payloads, autonomy
+ 829. Palantir Technologies  |  Autonomy / drones / defense perception  |  Palo Alto, CA  |  large
+      Fit: Defense AI platforms (Maven, TITAN); CV/geospatial and edge AI on autonomous systems  |  https://www.palantir.com/careers/
+ 830. Mux  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  growth
+      Fit: Video infrastructure, AI video processing and encoding  |  https://www.mux.com/jobs
+ 831. Abbott Diabetes Care  |  Simulation, digital twins & science AI  |  Alameda, CA  |  large
+      Fit: FreeStyle Libre CGM sensing algorithms and apps  |  https://www.jobs.abbott
+ 832. Minerva Humanoids  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: 2026 pre-seed (General Catalyst); semi-autonomous humanoids; perception fit
+ 833. Maxon  |  Mid/large tech with ML, vision or media teams  |  Remote US  |  growth
+      Fit: Cinema 4D, Redshift renderer  |  https://www.maxon.net/en/careers
+ 834. Sanmina  |  Northern California engineering employers  |  San Jose  |  large
+      Fit: San Jose HQ; manufacturing test and automation  |  https://www.sanmina.com/careers/
+ 835. Lawrence Livermore National Laboratory  |  Autonomy / drones / defense perception  |  Livermore, CA  |  large
+      Fit: Near Dublin; ML, computer vision, graphics/visualization and autonomy (clearance)  |  https://www.llnl.gov/join-our-team
+ 836. Sandia National Laboratories  |  Autonomy / drones / defense perception  |  Livermore, CA  |  large
+      Fit: Livermore site; autonomy, remote sensing and ML for national security (clearance)  |  https://www.sandia.gov/careers/
+ 837. Gamma  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  growth
+      Fit: AI-generated presentations, sites and visual design
+ 838. InvenSense (TDK)  |  Simulation, digital twins & science AI  |  San Jose, CA  |  large
+      Fit: IMU sensor fusion and edge ML for wearables/XR  |  https://invensense.tdk.com/careers
+ 839. Godela  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: YC; AI physics sim replacing CAE; GPU + simulation fit
+ 840. SideFX  |  Mid/large tech with ML, vision or media teams  |  Remote  |  growth
+      Fit: Houdini; graphics and simulation
+ 841. Five9  |  Northern California engineering employers  |  San Ramon  |  large
+      Fit: San Ramon HQ; speech and AI engineering  |  https://www.five9.com/about/careers
+ 842. Lattice Semiconductor  |  Autonomy / drones / defense perception  |  San Jose, CA  |  large
+      Fit: Low-power FPGAs for automotive, drone and defense edge vision; sensAI stack
+ 843. Cadence Design Systems  |  Autonomy / drones / defense perception  |  San Jose, CA  |  large
+      Fit: Tensilica Vision/AI DSPs for automotive and drones; CV kernel and NN optimization  |  https://careers.cadence.com/
+ 844. VSCO  |  Generative AI & AI infrastructure  |  Oakland, CA  |  growth
+      Fit: AI photo editing, presets and on-device imaging pipelines
+ 845. McKinsey QuantumBlack  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  large
+      Fit: Principal ML architects for CV/generative AI engagements  |  https://www.mckinsey.com/careers
+ 846. CarbonSix  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA / Seoul  |  startup
+      Fit: 2026 $40M Series A; robot imitation learning for factories
+ 847. MyHeritage  |  Mid/large tech with ML, vision or media teams  |  Remote  |  growth
+      Fit: Photo colorization/enhancement, Deep Nostalgia
+ 848. GE Vernova  |  Northern California engineering employers  |  San Ramon  |  large
+      Fit: San Ramon software hub; ML for grid and asset inspection  |  https://careers.gevernova.com
+ 849. Infineon Technologies Americas  |  Autonomy / drones / defense perception  |  San Jose, CA  |  large
+      Fit: Automotive radar, AURIX MCUs and sensor fusion for ADAS; edge ML
+ 850. Analog Devices  |  Autonomy / drones / defense perception  |  San Jose, CA  |  large
+      Fit: GMSL camera links, radar and inertial sensing for ADAS; sensor fusion software
+ 851. Deepgram  |  Generative AI & AI infrastructure  |  Remote-US  |  growth
+      Fit: Speech-to-text/TTS models and low-latency voice inference
+ 852. BCG X  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  large
+      Fit: Principal AI engineer/architect building GenAI and CV products  |  https://www.bcg.com/x/careers
+ 853. Reactor  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: 2026 $59M round; ex-Apple team; real-time video gen + GPU fit
+ 854. Perfect Corp  |  Mid/large tech with ML, vision or media teams  |  Remote US  |  growth
+      Fit: AR beauty try-on; face tracking and generative
+ 855. UC Davis Health  |  Northern California engineering employers  |  Sacramento  |  large
+      Fit: Sacramento; AI in medical imaging research  |  https://health.ucdavis.edu/hr/
+ 856. onsemi  |  Autonomy / drones / defense perception  |  San Jose, CA  |  large
+      Fit: Automotive image sensors (ex-Aptina San Jose); ISP, HDR and depth sensing
+ 857. Altera  |  Autonomy / drones / defense perception  |  San Jose, CA  |  large
+      Fit: FPGAs for automotive, defense and edge vision; AI inference and video pipelines
+ 858. Alif Semiconductor  |  Generative AI & AI infrastructure  |  Pleasanton, CA  |  growth
+      Fit: Ensemble MCUs with NPUs; edge vision/voice ML software  |  https://alifsemi.com/careers
+ 859. Bain & Company (AI, Insights & Solutions)  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  large
+      Fit: Advanced analytics/ML architect roles for client products  |  https://www.bain.com/careers
+ 860. Clueso  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA / Bengaluru  |  startup
+      Fit: 2026 Series A; agents drive real software + capture screen video
+ 861. Zenni Optical  |  Mid/large tech with ML, vision or media teams  |  Novato CA  |  growth
+      Fit: Virtual try-on face AR
+ 862. VSP Vision Care  |  Northern California engineering employers  |  Rancho Cordova  |  large
+      Fit: Rancho Cordova HQ; eyewear tech and optical imaging  |  https://www.vsp.com/careers
+ 863. TDK InvenSense  |  Autonomy / drones / defense perception  |  San Jose, CA  |  large
+      Fit: IMUs and sensor-fusion software for drones, robotics and automotive positioning
+ 864. Lumentum  |  Autonomy / drones / defense perception  |  San Jose, CA  |  large
+      Fit: VCSEL/laser sources for lidar and 3D sensing; depth-sensing system design
+ 865. Jasper  |  Generative AI & AI infrastructure  |  Remote-US  |  growth
+      Fit: Brand image generation (Clipdrop tech) and marketing AI
+ 866. Accenture  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  large
+      Fit: Industry X digital twin and Song XR/generative AI practices  |  https://www.accenture.com/us-en/careers
+ 867. Hundred  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: YC 2026; sub-mm defect detection CV for consumer electronics
+ 868. Veo  |  Mid/large tech with ML, vision or media teams  |  Remote  |  growth
+      Fit: AI sports cameras; on-device CV
+ 869. Aerojet Rocketdyne  |  Northern California engineering employers  |  Rancho Cordova  |  large
+      Fit: Rancho Cordova; propulsion embedded and controls  |  https://www.l3harris.com/careers
+ 870. Hesai Technology  |  Autonomy / drones / defense perception  |  Palo Alto, CA  |  large
+      Fit: Automotive and robotics lidar; US team on perception software and OEM integration
+ 871. Leidos  |  Autonomy / drones / defense perception  |  Remote-US  |  large
+      Fit: Sea Hunter USV autonomy and defense CV programs; perception and autonomy software
+ 872. Oura  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  growth
+      Fit: Low-power sensing ML on ring and phone  |  https://ouraring.com/careers
+ 873. PwC  |  Simulation, digital twins & science AI  |  San Jose, CA  |  large
+      Fit: AI engineering and emerging tech (XR/digital twin) practice  |  https://www.pwc.com/us/en/careers.html
+ 874. OpenVector  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: YC 2026; custom vision models from plain-English tasks; CV fit
+ 875. Pixellot  |  Mid/large tech with ML, vision or media teams  |  Remote US  |  growth
+      Fit: Automated sports production CV
+ 876. Coherent  |  Northern California engineering employers  |  Santa Clara  |  large
+      Fit: Lasers and optics; machine vision and embedded controls  |  https://www.coherent.com/company/careers
+ 877. L3Harris Technologies  |  Autonomy / drones / defense perception  |  Rancho Cordova, CA  |  large
+      Fit: Space imaging payloads and ISR sensors; Sacramento-area site; clearance roles
+ 878. Esri  |  Autonomy / drones / defense perception  |  Remote-US  |  large
+      Fit: ArcGIS 3D and Maps SDKs; real-time 3D GIS rendering, reality mapping, GeoAI  |  https://www.esri.com/en-us/about/careers/overview
+ 879. SoundHound AI  |  Generative AI & AI infrastructure  |  Santa Clara, CA  |  growth
+      Fit: Edge voice AI and multimodal assistants
+ 880. IBM Consulting  |  Simulation, digital twins & science AI  |  San Jose, CA  |  large
+      Fit: watsonx client engineering, AI architects  |  https://www.ibm.com/careers
+ 881. Optifye.ai  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: YC W25; vision AI on factory floors; CV fit
+ 882. Freepik  |  Mid/large tech with ML, vision or media teams  |  Remote  |  growth
+      Fit: Generative image/video platform
+ 883. Power Integrations  |  Northern California engineering employers  |  San Jose  |  large
+      Fit: Power conversion ICs; embedded firmware  |  https://www.power.com/company/careers
+ 884. Volvo Cars  |  Autonomy / drones / defense perception  |  Mountain View, CA  |  large
+      Fit: Silicon Valley tech hub; ADAS/AD software, perception and Snapdragon cockpit graphics
+ 885. Toyota Motor North America InfoTech Labs  |  Autonomy / drones / defense perception  |  Mountain View, CA  |  large
+      Fit: Connected-vehicle and in-car AI research; edge ML and HMI
+ 886. Speechify  |  Generative AI & AI infrastructure  |  Remote-US  |  growth
+      Fit: Text-to-speech voice models and on-device reading AI
+ 887. Slalom  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  large
+      Fit: Principal ML engineering for client CV/GenAI builds  |  https://www.slalom.com/careers
+ 888. Efference  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: YC F25; robots + CV learn from demos; perception fit
+ 889. Chaos  |  Mid/large tech with ML, vision or media teams  |  Remote US  |  growth
+      Fit: V-Ray/Corona renderers; neural rendering
+ 890. Alpha and Omega Semiconductor  |  Northern California engineering employers  |  Sunnyvale  |  large
+      Fit: Power semiconductors; embedded and test automation
+ 891. Continental Automotive  |  Autonomy / drones / defense perception  |  San Jose, CA  |  large
+      Fit: Silicon Valley site; ADAS sensors, HPC and AI for automated driving
+ 892. NEC Laboratories America  |  Autonomy / drones / defense perception  |  San Jose, CA  |  large
+      Fit: Media Analytics lab: AV perception, 3D scene understanding, generative sim data
+ 893. Zilliz  |  Generative AI & AI infrastructure  |  Redwood City, CA  |  growth
+      Fit: Milvus vector DB for image/video similarity search
+ 894. Thoughtworks  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  large
+      Fit: AI/ML principal consultants and engineering  |  https://www.thoughtworks.com/careers
+ 895. Bucket Robotics  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: YC S24; deployable CV for manufacturing; CV fit
+ 896. Grammarly  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA  |  large
+      Fit: On-device/edge ML expertise for writing assistant across clients  |  https://www.grammarly.com/jobs
+ 897. Twist Bioscience  |  Northern California engineering employers  |  South San Francisco  |  large
+      Fit: DNA synthesis platform; automation and ML  |  https://www.twistbioscience.com/company/careers
+ 898. LG Electronics Silicon Valley Lab  |  Autonomy / drones / defense perception  |  Santa Clara, CA  |  large
+      Fit: Vehicle components and AI research; in-vehicle displays, vision and on-device ML
+ 899. Siemens Digital Industries Software  |  Autonomy / drones / defense perception  |  Fremont, CA / Remote-US  |  large
+      Fit: Simcenter Prescan ADAS sensor simulation and physics-based camera/radar/lidar models
+ 900. Surge AI  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  growth
+      Fit: Human data for image/video/multimodal model training
+ 901. Globant  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  large
+      Fit: AI studios incl. metaverse/XR and GenAI  |  https://www.globant.com/careers
+ 902. Antioch  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Sim with simulated sensors on World Labs/Nvidia models; graphics fit
+ 903. Asana  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA  |  large
+      Fit: AI Studio and ML platform staff roles  |  https://asana.com/jobs
+ 904. Solidigm  |  Northern California engineering employers  |  Rancho Cordova  |  large
+      Fit: Rancho Cordova HQ; SSD firmware and ML  |  https://www.solidigm.com/careers.html
+ 905. MathWorks  |  Autonomy / drones / defense perception  |  Remote-US  |  large
+      Fit: RoadRunner 3D scene authoring and Automated Driving Toolbox for AV simulation  |  https://www.mathworks.com/company/jobs.html
+ 906. Poshmark  |  Generative AI & AI infrastructure  |  Redwood City, CA  |  growth
+      Fit: Image-based listing and visual search for resale
+ 907. Grid Dynamics  |  Simulation, digital twins & science AI  |  San Ramon, CA  |  large
+      Fit: AI/ML architect roles, near Dublin; CV and GenAI engineering  |  https://www.griddynamics.com/careers
+ 908. One Robot  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: YC W26; world models from wrist-camera video; video gen fit
+ 909. HubSpot  |  Mid/large tech with ML, vision or media teams  |  Remote US / SF office  |  large
+      Fit: AI content and creative generation features  |  https://www.hubspot.com/careers
+ 910. Kioxia America  |  Northern California engineering employers  |  San Jose  |  large
+      Fit: San Jose; flash memory and AI storage R&D  |  https://americas.kioxia.com/en-us/business/careers.html
+ 911. Bitmovin  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  growth
+      Fit: Video encoding/player with AI-driven per-title optimization
+ 912. Quantiphi  |  Simulation, digital twins & science AI  |  Remote-US  |  large
+      Fit: Applied AI CV and GenAI solution architecture  |  https://quantiphi.com/careers
+ 913. Nucleus4D  |  Venture-backed AI startups (2022-2026)  |  Remote US  |  startup
+      Fit: 2026 pre-seed; splat-based virtual tours; Gaussian splatting fit
+ 914. Zendesk  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA  |  large
+      Fit: AI agents; vision/doc understanding in support  |  https://www.zendesk.com/jobs
+ 915. Silicon Motion  |  Northern California engineering employers  |  Milpitas  |  large
+      Fit: SSD controllers; firmware and AI-enabled storage
+ 916. Pinecone  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  growth
+      Fit: Vector DB powering image/multimodal similarity search
+ 917. Persistent Systems  |  Simulation, digital twins & science AI  |  Santa Clara, CA  |  large
+      Fit: AI engineering and GenAI solution architects  |  https://www.persistent.com/careers
+ 918. Ghost  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: 2026 $11M seed (a16z); hardware for computer-use agents; edge fit
+ 919. Gong  |  Mid/large tech with ML, vision or media teams  |  San Francisco CA / remote US  |  large
+      Fit: Conversation intelligence over video/audio calls  |  https://www.gong.io/careers
+ 920. Arista Networks  |  Northern California engineering employers  |  Santa Clara  |  large
+      Fit: AI networking and ML-driven telemetry  |  https://www.arista.com/en/careers
+ 921. Mercari US  |  Generative AI & AI infrastructure  |  Palo Alto, CA  |  growth
+      Fit: AI listing from photos and image search
+ 922. SoftServe  |  Simulation, digital twins & science AI  |  Remote-US  |  large
+      Fit: XR/digital twin and GenAI engineering for clients  |  https://career.softserveinc.com
+ 923. Zalos  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: YC; 2026 seed; computer agents operating finance UIs
+ 924. RingCentral  |  Mid/large tech with ML, vision or media teams  |  Belmont CA  |  large
+      Fit: Video meetings: background segmentation, enhancement on-device  |  https://careers.ringcentral.com
+ 925. Extreme Networks  |  Northern California engineering employers  |  San Jose  |  large
+      Fit: AI-driven network management  |  https://www.extremenetworks.com/careers
+ 926. Replit  |  Generative AI & AI infrastructure  |  Foster City, CA  |  growth
+      Fit: AI agent building apps with generative UI/design mode  |  https://replit.com/careers
+ 927. Wipro  |  Simulation, digital twins & science AI  |  Mountain View, CA  |  large
+      Fit: Wipro AI360 and Lab45 innovation lab roles  |  https://careers.wipro.com
+ 928. Augmodo  |  Venture-backed AI startups (2022-2026)  |  Remote US  |  startup
+      Fit: $21M raise; glasses-based shelf vision; XR + CV fit
+ 929. 8x8  |  Mid/large tech with ML, vision or media teams  |  Campbell CA  |  large
+      Fit: Video conferencing; real-time video/AI features  |  https://www.8x8.com/company/careers
+ 930. Western Digital  |  Northern California engineering employers  |  San Jose  |  large
+      Fit: HDD technology; ML for recording and manufacturing  |  https://www.westerndigital.com/company/careers
+ 931. xAI  |  Generative AI & AI infrastructure  |  Palo Alto, CA  |  large
+      Fit: Grok Imagine image/video generation models and multimodal training  |  https://x.ai/careers
+ 932. Infosys  |  Simulation, digital twins & science AI  |  Remote-US  |  large
+      Fit: Infosys Topaz AI and Center for Emerging Tech (XR)  |  https://www.infosys.com/careers
+ 933. Troveo  |  Venture-backed AI startups (2022-2026)  |  Remote US  |  startup
+      Fit: Video datasets for video/world models; video gen fit
+ 934. Vonage  |  Mid/large tech with ML, vision or media teams  |  Remote US  |  large
+      Fit: Video API: background blur, real-time media ML
+ 935. Nutanix  |  Northern California engineering employers  |  San Jose  |  large
+      Fit: Enterprise AI platform (GPT-in-a-Box)  |  https://www.nutanix.com/company/careers
+ 936. Canva  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  large
+      Fit: Magic Studio generative design, Leonardo.ai image models, Affinity  |  https://www.canva.com/careers/
+ 937. Cognizant  |  Simulation, digital twins & science AI  |  Remote-US  |  large
+      Fit: Cognizant AI Lab (San Francisco) and AI architects  |  https://careers.cognizant.com
+ 938. Revise Robotics  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: YC W25; vision robotics for electronics; CV fit
+ 939. Vimeo  |  Mid/large tech with ML, vision or media teams  |  New York / remote US  |  large
+      Fit: Video hosting with AI editing, enhancement, translation  |  https://vimeo.com/jobs
+ 940. Netgear  |  Northern California engineering employers  |  San Jose  |  large
+      Fit: Consumer networking; embedded and AI security features  |  https://www.netgear.com/about/careers/
+ 941. Zoom  |  Generative AI & AI infrastructure  |  San Jose, CA  |  large
+      Fit: AI Companion custom avatars, real-time video ML, background/relighting  |  https://careers.zoom.us
+ 942. Thermo Fisher Scientific  |  Simulation, digital twins & science AI  |  South San Francisco, CA  |  large
+      Fit: Cryo-EM/electron microscopy image processing and AI reconstruction  |  https://jobs.thermofisher.com
+ 943. Automax.ai  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: YC F25; mobile LiDAR + CV for 3D capture; 3D fit
+ 944. Bending Spoons  |  Mid/large tech with ML, vision or media teams  |  Remote / Milan  |  large
+      Fit: Owns Evernote, Remini, Splice, Vimeo; generative imaging  |  https://bendingspoons.com/careers
+ 945. Cohesity  |  Northern California engineering employers  |  San Jose  |  large
+      Fit: AI-powered data security and search  |  https://www.cohesity.com/company/careers/
+ 946. Bosch Research  |  Generative AI & AI infrastructure  |  Sunnyvale, CA  |  large
+      Fit: Bosch Center for AI: perception, generative scene synthesis, edge ML
+ 947. Ginkgo Bioworks  |  Simulation, digital twins & science AI  |  Emeryville, CA  |  large
+      Fit: Automated lab and AI models for biology  |  https://www.ginkgobioworks.com/careers
+ 948. Gauss Labs  |  Venture-backed AI startups (2022-2026)  |  Palo Alto CA  |  startup
+      Fit: Industrial AI for fab process/metrology; mfg AI + CV fit
+ 949. Match Group  |  Mid/large tech with ML, vision or media teams  |  Remote US / Palo Alto (Tinder)  |  large
+      Fit: Tinder/Hinge: photo verification, face ML, trust & safety vision  |  https://www.mtch.com/careers
+ 950. Hitachi Vantara  |  Northern California engineering employers  |  Santa Clara  |  large
+      Fit: Santa Clara; AI infrastructure and industrial AI  |  https://www.hitachivantara.com/en-us/company/careers
+ 951. Cloudflare  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  large
+      Fit: Replicate + Workers AI: hosted image/video model inference at the edge  |  https://www.cloudflare.com/careers/
+ 952. EY  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  large
+      Fit: EY.ai and emerging tech principal architect roles  |  https://careers.ey.com
+ 953. Vimaan  |  Venture-backed AI startups (2022-2026)  |  Sunnyvale CA  |  startup
+      Fit: Vision-based warehouse inventory; CV fit
+ 954. Bumble  |  Mid/large tech with ML, vision or media teams  |  Austin TX / remote  |  large
+      Fit: Private Detector image models; photo verification  |  https://bumble.com/en/the-buzz/careers
+ 955. Calix  |  Northern California engineering employers  |  San Jose  |  large
+      Fit: Broadband platform with agentic AI  |  https://www.calix.com/company/careers.html
+ 956. Red Hat  |  Generative AI & AI infrastructure  |  Remote-US  |  large
+      Fit: Red Hat AI (ex-Neural Magic): vLLM, quantization and sparsity tooling
+ 957. KPMG  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  large
+      Fit: AI and digital twin advisory/engineering  |  https://www.kpmguscareers.com
+ 958. Aerodome  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Autonomous drones + live video; edge CV fit
+ 959. Automattic  |  Mid/large tech with ML, vision or media teams  |  Remote US  |  large
+      Fit: Remote-first (WordPress, Tumblr, Day One); media AI  |  https://automattic.com/work-with-us
+ 960. Grail  |  Northern California engineering employers  |  Menlo Park  |  large
+      Fit: Multi-cancer detection; ML on methylation data  |  https://grail.com/careers/
+ 961. Harmonic Inc.  |  Generative AI & AI infrastructure  |  San Jose, CA  |  large
+      Fit: AI-driven video compression, encoding and streaming
+ 962. Publicis Sapient  |  Simulation, digital twins & science AI  |  San Francisco, CA  |  large
+      Fit: AI engineering and immersive/XR experiences for clients  |  https://careers.publicissapient.com
+ 963. Cesium  |  Venture-backed AI startups (2022-2026)  |  Philadelphia PA (remote)  |  startup
+      Fit: 3D Tiles + splats streaming; graphics fit
+ 964. Expedia Group  |  Mid/large tech with ML, vision or media teams  |  Seattle / San Jose / remote US  |  large
+      Fit: Visual search, image quality and ranking ML  |  https://careers.expediagroup.com
+ 965. Shockwave Medical  |  Northern California engineering employers  |  Santa Clara  |  large
+      Fit: Intravascular lithotripsy devices; embedded
+ 966. Salesforce  |  Generative AI & AI infrastructure  |  Palo Alto, CA  |  large
+      Fit: Salesforce AI Research multimodal models (BLIP lineage), agents  |  https://careers.salesforce.com
+ 967. Sportsbox AI  |  Venture-backed AI startups (2022-2026)  |  Bellevue WA (remote)  |  startup
+      Fit: Single-camera 3D pose; CV + mobile fit
+ 968. Booking Holdings (Priceline/Kayak)  |  Mid/large tech with ML, vision or media teams  |  Remote US  |  large
+      Fit: Image ranking and multimodal ML in travel
+ 969. Jabil  |  Northern California engineering employers  |  San Jose  |  large
+      Fit: San Jose site; automation and vision engineering  |  https://careers.jabil.com
+ 970. Atlassian  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  large
+      Fit: Loom AI video recording/editing features
+ 971. Rapid Robotics  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Rapid-deploy robots for factories; vision fit
+ 972. Redfin  |  Mid/large tech with ML, vision or media teams  |  Seattle / remote US  |  large
+      Fit: 3D walkthroughs, AI virtual staging (Redesign), image ML  |  https://www.redfin.com/careers
+ 973. Kaiser Permanente  |  Northern California engineering employers  |  Oakland  |  large
+      Fit: Oakland HQ; clinical AI and imaging ML  |  https://www.kaiserpermanentejobs.org
+ 974. Dropbox  |  Generative AI & AI infrastructure  |  San Francisco, CA  |  large
+      Fit: Dash multimodal search over images/video, Replay video review  |  https://jobs.dropbox.com
+ 975. Iyo  |  Venture-backed AI startups (2022-2026)  |  Redwood City CA  |  startup
+      Fit: On-device AI wearable; edge ML fit
+ 976. Compass  |  Mid/large tech with ML, vision or media teams  |  Remote US / SF  |  large
+      Fit: Real estate tech; listing image AI
+ 977. Sutter Health  |  Northern California engineering employers  |  Sacramento  |  large
+      Fit: Sacramento HQ; data science and clinical AI  |  https://jobs.sutterhealth.org
+ 978. Mercedes-Benz R&D North America  |  Generative AI & AI infrastructure  |  Sunnyvale, CA  |  large
+      Fit: MBUX generative AI, AR navigation, in-car graphics
+ 979. Daydream  |  Venture-backed AI startups (2022-2026)  |  San Francisco CA  |  startup
+      Fit: Multimodal shopping agent; vision-language fit
+ 980. Realtor.com (Move Inc)  |  Mid/large tech with ML, vision or media teams  |  Santa Clara CA  |  large
+      Fit: Listing photo ML and virtual tours
+ 981. Bayer Crop Science  |  Northern California engineering employers  |  West Sacramento  |  large
+      Fit: West Sacramento; plant phenotyping CV and ML  |  https://career.bayer.com
+ 982. Etsy  |  Generative AI & AI infrastructure  |  Remote-US  |  large
+      Fit: Visual search and genAI listing imagery  |  https://careers.etsy.com
+ 983. Mujin  |  Venture-backed AI startups (2022-2026)  |  San Jose CA (US HQ)  |  growth
+      Fit: Vision-guided robot picking; 3D vision fit
+ 984. Wayfair  |  Mid/large tech with ML, vision or media teams  |  Boston / remote US  |  large
+      Fit: 3D/AR product visualization, Decorify generative rooms  |  https://www.wayfair.com/careers
+ 985. Veeco Instruments  |  Northern California engineering employers  |  San Jose  |  large
+      Fit: San Jose site; laser annealing and lithography tools software  |  https://www.veeco.com/careers/
+ 986. Yelp  |  Generative AI & AI infrastructure  |  Remote-US  |  large
+      Fit: Photo understanding models and visual content classification  |  https://www.yelp.careers
+ 987. Monarch Tractor  |  Venture-backed AI startups (2022-2026)  |  Livermore CA  |  growth
+      Fit: Vision autonomy for farms; near Dublin; edge CV fit
+ 988. CCC Intelligent Solutions  |  Mid/large tech with ML, vision or media teams  |  Chicago / remote US  |  large
+      Fit: AI photo estimating for auto damage  |  https://www.cccis.com/careers
+ 989. Lumileds  |  Northern California engineering employers  |  San Jose  |  large
+      Fit: San Jose; LED and automotive lighting R&D  |  https://www.lumileds.com/careers/
+ 990. Field AI  |  Venture-backed AI startups (2022-2026)  |  Los Angeles / Bay Area  |  growth
+      Fit: Risk-aware autonomy models; perception fit
+ 991. Lemonade  |  Mid/large tech with ML, vision or media teams  |  New York / remote  |  large
+      Fit: AI-native insurance; claims photo/video ML  |  https://makers.lemonade.com
+ 992. Electronics For Imaging  |  Northern California engineering employers  |  Fremont  |  large
+      Fit: Fremont HQ; color imaging and print vision software
+ 993. Ultraleap  |  Venture-backed AI startups (2022-2026)  |  Bristol UK / Mountain View  |  growth
+      Fit: Hand tracking CV; XR + vision fit
+ 994. Lytx  |  Mid/large tech with ML, vision or media teams  |  San Diego CA / remote  |  large
+      Fit: Video telematics; on-device driver monitoring CV  |  https://www.lytx.com/careers
+ 995. Penguin Solutions  |  Northern California engineering employers  |  Milpitas  |  large
+      Fit: AI/HPC cluster infrastructure and software  |  https://www.penguinsolutions.com/careers
+ 996. Applitools  |  Venture-backed AI startups (2022-2026)  |  San Mateo CA  |  growth
+      Fit: Visual AI for UI diff; CV fit
+ 997. Carvana  |  Mid/large tech with ML, vision or media teams  |  Remote US / Tempe  |  large
+      Fit: 360 vehicle imaging and CV
+ 998. Exponent  |  Northern California engineering employers  |  Menlo Park  |  large
+      Fit: Menlo Park HQ; failure analysis, CV and data science  |  https://www.exponent.com/careers
+ 999. CADDi  |  Venture-backed AI startups (2022-2026)  |  Tokyo / San Francisco CA  |  growth
+      Fit: CV on engineering drawings; CV fit
+1000. Peloton  |  Mid/large tech with ML, vision or media teams  |  New York / remote US  |  large
+      Fit: Movement tracking CV on Guide camera  |  https://www.onepeloton.com/careers
