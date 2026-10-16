@@ -1,25 +1,32 @@
 company	role	status	first_seen	last_seen	inbox	ats	events
 		recruiter	2026-07-14	2026-07-14	hotmail	LinkedIn	recruiter:1
+(Dice recruiter client)	Forward Deployed Engineer	recruiter	2026-10-13	2026-10-13	gmail	direct/other	recruiter:1
+(Dice recruiter client)	Software Engineer II / III - Radar Software (C++)	recruiter	2026-10-15	2026-10-15	gmail	direct/other	recruiter:1
 (idibu - unknown company)		pending	2026-07-23	2026-07-23	hotmail	direct/other	confirm:1
 "(unknown - ""We're excited to hear from you!"")"	Senior MLOps Engineer - Edge	pending	2026-09-02	2026-09-11	hotmail	Greenhouse	confirm:2
 (unknown - greenhouse)	AI/ML Engineer	pending	2026-09-16	2026-09-25	hotmail	Greenhouse	confirm:11
 (unnamed - The Recruiting Team)	AI/ML Engineer	pending	2026-09-04	2026-09-15	hotmail	Greenhouse	confirm:14
+(via Top1Talent)	Senior Software Developer	recruiter	2026-10-14	2026-10-14	hotmail	direct/other	recruiter:1
 10a Labs		pending	2026-08-30	2026-09-14	hotmail	Greenhouse	confirm:6
 1X	AI Researcher	rejected	2026-07-25	2026-08-27	hotmail	Ashby	confirm:1 reject:1
 3Cloud		pending	2026-09-15	2026-09-19	hotmail	Greenhouse	confirm:2
+3Shape	Software Architect within Rendering	rejected	2026-10-15	2026-10-16	hotmail	direct/other	confirm:1 reject:1
 42dot	3D Application Engineer (Automotive 3D visualization)	pending	2026-09-23	2026-09-23	hotmail	Ashby	confirm:1
-5V Tech		pending	2026-07-14	2026-09-29	gmail+hotmail	LinkedIn	confirm:2
+5V Tech		pending	2026-07-14	2026-10-14	gmail+hotmail	LinkedIn+direct/other	confirm:2 recruiter:2
 5V Tech	Principal Engineer	pending	2026-10-02	2026-10-02	gmail	LinkedIn	confirm:1
 9th Way Insignia	AI Engineer	pending	2026-09-05	2026-09-21	hotmail	direct/other	confirm:4
 A1 (Bjak)		positive	2026-07-27	2026-07-30	hotmail	Ashby+direct/other	interview:2
 A1 (Bjak)	Technical Lead, Machine Learning	positive	2026-07-23	2026-07-27	hotmail	direct/other	interview:2
 Abacus Insights	Senior AI Engineer	pending	2026-09-04	2026-09-15	hotmail	Greenhouse	confirm:5
 Abaka AI		pending	2026-09-10	2026-09-16	hotmail	Greenhouse	confirm:2
+Abridge		pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:1
 Acceler8 Talent		pending	2026-07-14	2026-09-30	gmail+hotmail	LinkedIn	confirm:5 viewed:2
 Accellor	AI Principal Engineer	pending	2026-08-17	2026-08-17	hotmail	Workable	confirm:3
+Accellor	Gen AI Engineers	pending	2026-10-16	2026-10-16	hotmail	Workable	confirm:2
 Actively AI		pending	2026-07-19	2026-09-18	hotmail	Greenhouse	confirm:2
 Adapter		pending	2026-09-15	2026-09-15	hotmail	Greenhouse	confirm:1
-Addepar		pending	2026-09-10	2026-09-30	gmail+hotmail	Greenhouse+LinkedIn	confirm:5
+Addepar		pending	2026-09-10	2026-10-16	gmail+hotmail	Greenhouse+LinkedIn	confirm:7
+Aditi Consulting (client)	Software Engineer III	recruiter	2026-10-14	2026-10-14	hotmail	direct/other	recruiter:1
 AE Studio		pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:7
 Aechelon Technology	Senior Staff Engineer: 3D Reconstruction	pending	2026-09-05	2026-09-21	hotmail	Greenhouse	confirm:3
 Aegis Ventures	Principal Software Engineer	pending	2026-10-05	2026-10-05	hotmail	Greenhouse	confirm:1
@@ -37,7 +44,7 @@ Afresh		rejected	2026-09-17	2026-09-17	hotmail	Greenhouse	reject:1
 Afresh	Staff Applied Scientist (Distribution Center)	pending	2026-09-11	2026-09-11	hotmail	Greenhouse	confirm:1
 Age of Learning	Senior Software Engineer	rejected	2026-10-07	2026-10-07	hotmail	Greenhouse	reject:1
 Age of Learning, Inc.		pending	2026-10-05	2026-10-05	hotmail	Greenhouse	confirm:1
-Agility Robotics		pending	2026-09-04	2026-09-19	hotmail	direct/other	confirm:11
+Agility Robotics		pending	2026-09-04	2026-10-15	hotmail	direct/other	confirm:12
 AI Squared		pending	2026-08-30	2026-09-06	hotmail	Greenhouse	confirm:7
 Ai2	Senior Research Engineer	rejected	2026-09-11	2026-09-14	hotmail	Greenhouse	reject:1 confirm:1
 Ai2	Senior Research Scientist, Open Ecosystem	pending	2026-09-15	2026-09-15	hotmail	Greenhouse	confirm:2
@@ -75,10 +82,12 @@ Altos Labs	Director / Senior Director, Machine Learning for Biology	pending	2026
 Altos Labs	Scientist / Senior Scientist, Multimodal AI	rejected	2026-08-30	2026-09-10	hotmail	Greenhouse	confirm:2 reject:1
 Altos Labs	Scientist /Senior Scientist, Multimodal & Relational Machine Learning Foundation Models	pending	2026-09-04	2026-09-04	hotmail	Greenhouse	confirm:1
 Altruist	Senior Back End Engineer, Hazel AI	pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:1
-Amaru Robotics		pending	2026-09-29	2026-09-29	gmail	LinkedIn	confirm:1
+Amaru Robotics		pending	2026-09-29	2026-10-14	gmail	LinkedIn	confirm:1 viewed:1
 Amazon		positive	2026-09-18	2026-09-24	hotmail	direct/other	interview:3
 Amazon Robotics	Senior Software Engineer	positive	2026-09-08	2026-09-16	hotmail	direct/other	interview:4 recruiter:3
+Ambient.ai	AI Infrastructure Engineer - LVM Inference & Evaluation	pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:1
 Ambient.ai	Senior AI Infrastructure Engineer - LVM Inference & Evaluation	pending	2026-08-26	2026-08-26	hotmail	Ashby	confirm:1
+Ambient.ai	Senior Applied Research Scientist	pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:1
 Ambiq	Director of AI Enablement	rejected	2026-09-29	2026-09-29	hotmail	Greenhouse	reject:1
 Ambiq	Embedded Software Architect – Edge AI MCU	rejected	2026-09-28	2026-09-28	hotmail	Greenhouse	reject:1
 Ambiq	Principal Edge AI Firmware Engineer	rejected	2026-10-10	2026-10-10	hotmail	Greenhouse	reject:1
@@ -86,10 +95,13 @@ Ambiq Micro, Inc.		pending	2026-09-27	2026-09-27	hotmail	Greenhouse	confirm:3
 AMD		pending	2026-07-14	2026-08-17	gmail+hotmail	LinkedIn	confirm:2 viewed:2
 AMD	2025-73114 - Sr. Staff Engineer, AI Models and Applications	rejected	2026-07-23	2026-07-23	hotmail	direct/other	reject:1
 AMD	2026-77285 - Principal ML Engineer - Large Scale Training Performance Optimization	rejected	2026-07-24	2026-07-24	hotmail	direct/other	reject:1
+AMD	GPU Distributed System Researcher	rejected	2026-10-14	2026-10-14	hotmail	direct/other	reject:1
 AMD	HPC Systems Engineer - AI Workloads; Staff Research Engineer	rejected	2026-09-28	2026-09-28	hotmail	direct/other	reject:1
+AMD	Senior AI/ML Solutions Engineer	recruiter	2026-10-15	2026-10-15	hotmail	direct/other	recruiter:1
 Ameelio		pending	2026-10-05	2026-10-05	hotmail	Greenhouse	confirm:1
 AMP Robotics		pending	2026-08-30	2026-08-30	hotmail	Greenhouse	confirm:2
 AMP: AI-Powered Sortation for Waste & Recycling		pending	2026-09-03	2026-09-05	hotmail	Greenhouse	confirm:6
+Amplemarket		positive	2026-10-16	2026-10-16	hotmail	direct/other	assessment:1
 Amplitude		rejected	2026-10-09	2026-10-09	hotmail	direct/other	reject:1
 Amplitude	Senior Software Engineer	pending	2026-10-02	2026-10-02	hotmail	Ashby	confirm:3
 Amplitude	Software Engineer II	pending	2026-10-02	2026-10-02	hotmail	Ashby	confirm:1
@@ -104,7 +116,7 @@ Anaplan	Principal Engineer, AI	pending	2026-09-17	2026-09-17	hotmail	Greenhouse	
 Anaplan	Senior ML Engineer	pending	2026-09-05	2026-09-15	hotmail	Greenhouse	confirm:2
 Andromeda Robotics	Founding Engineer, Robot Behavior and Decision-Making	rejected	2026-08-28	2026-08-30	hotmail	Workable+direct/other	confirm:1 reject:1
 Anduril		positive	2026-09-08	2026-09-09	hotmail	direct/other	interview:2
-Anduril Industries		rejected	2026-09-03	2026-10-06	hotmail	Greenhouse	reject:23
+Anduril Industries		rejected	2026-09-03	2026-10-15	hotmail	Greenhouse	reject:29
 ANELLO Photonics		pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:1
 Anthropic		rejected	2026-08-29	2026-08-31	hotmail	Greenhouse	confirm:1 reject:6
 Anthropic	[DH] Engineering Manager, AI Observability	pending	2026-09-29	2026-09-29	hotmail	Greenhouse	confirm:1
@@ -126,8 +138,8 @@ Anthropic	Performance Engineer, Inference Engine	pending	2026-09-29	2026-09-29	h
 Anthropic	Performance Engineer, Inference Systems	pending	2026-09-29	2026-09-29	hotmail	Greenhouse	confirm:1
 Anthropic	Pre-training Data Infrastructure Engineer	pending	2026-09-29	2026-09-29	hotmail	Greenhouse	confirm:1
 Anthropic	Research Engineer / Performance Engineer, RL Distributed Systems	pending	2026-10-05	2026-10-05	hotmail	Greenhouse	confirm:1
-Anthropic	Research Engineer / Research Scientist, RL Frontiers	pending	2026-10-05	2026-10-05	hotmail	Greenhouse	confirm:1
-Anthropic	Research Engineer / Research Scientist, Tokens	rejected	2026-07-27	2026-08-05	hotmail	Greenhouse	confirm:1 reject:1
+Anthropic	Research Engineer / Research Scientist, RL Frontiers	pending	2026-10-05	2026-10-13	hotmail	Greenhouse	confirm:2
+Anthropic	Research Engineer / Research Scientist, Tokens	rejected	2026-07-27	2026-10-13	hotmail	Greenhouse	confirm:2 reject:1
 Anthropic	Research Engineer / Scientist, Alignment	rejected	2026-08-31	2026-08-31	hotmail	Greenhouse	reject:1
 Anthropic	Research Engineer, Chip Design RL (Reinforcement Learning)	pending	2026-10-05	2026-10-05	hotmail	Greenhouse	confirm:1
 Anthropic	Research Engineer, Code RL (Reinforcement Learning)	pending	2026-07-23	2026-10-05	hotmail	Greenhouse	confirm:2
@@ -144,13 +156,13 @@ Anthropic	Research Engineer, Pretraining Scaling	pending	2026-07-23	2026-09-24	h
 Anthropic	Research Engineer, Production Model Post-Training	rejected	2026-08-31	2026-08-31	hotmail	Greenhouse	reject:1
 Anthropic	Research Engineer, RL Engineering	rejected	2026-08-31	2026-08-31	hotmail	Greenhouse	reject:1
 Anthropic	Research Engineer, Visual Knowledge Work	rejected	2026-07-22	2026-09-22	hotmail	Greenhouse	confirm:3 reject:1
-Anthropic	Research Engineer/Research Scientist, Pre-training	rejected	2026-08-31	2026-08-31	hotmail	Greenhouse	reject:1
+Anthropic	Research Engineer/Research Scientist, Pre-training	rejected	2026-08-31	2026-10-13	hotmail	Greenhouse	reject:1 confirm:1
 Anthropic	Software Engineer, ML Networking	pending	2026-09-24	2026-09-24	hotmail	Greenhouse	confirm:1
 Anthropic	Staff Software Engineer, GTM AI Engineering	pending	2026-09-22	2026-09-22	hotmail	Greenhouse	confirm:1
 Anthropic	Staff+ Software Engineer, Enterprise Knowledge Work	rejected	2026-08-10	2026-08-10	hotmail	Greenhouse	reject:1
 Anthropic	Staff+ Software Engineer, Vertical AI Products (Multiple Roles)	pending	2026-07-22	2026-07-22	hotmail	Greenhouse	confirm:1
 Anthropic (via HireArt)	Software Engineer - Technical Advisor	positive	2026-09-11	2026-09-12	hotmail	direct/other	assessment:1 confirm:1
-Anyscale		pending	2026-09-05	2026-09-05	gmail	Ashby	confirm:2
+Anyscale		pending	2026-09-05	2026-10-15	gmail+hotmail	Ashby	confirm:3
 apiphani		pending	2026-09-27	2026-09-27	hotmail	Greenhouse	confirm:1
 Apollo.io		pending	2026-09-03	2026-10-05	hotmail	Greenhouse	confirm:2
 Apollo.io	Senior Data Scientist - Product	rejected	2026-09-17	2026-09-17	hotmail	Greenhouse	reject:1
@@ -268,6 +280,8 @@ Apple	Vision Health Scientist/Engineer 200658188	pending	2026-07-13	2026-07-13	g
 Apple	Vision Health Scientist/Engineer 200658190	pending	2026-07-13	2026-07-13	gmail	direct/other	confirm:1
 Applied Intuition		pending	2026-07-18	2026-09-16	hotmail	Ashby	confirm:5
 Applied Intuition	Research Scientist (Research)	rejected	2026-07-25	2026-07-25	hotmail	Ashby	reject:1
+Applied Intuition	Senior Machine Learning Engineer - 3D Reconstruction	pending	2026-10-12	2026-10-13	hotmail	Ashby	confirm:4
+Approach Venture Recruiting (client)	Perception Targeting Engineer	rejected	2026-10-15	2026-10-15	hotmail	direct/other	reject:1
 Apptronik	Principal Robotics Machine Learning Engineer	pending	2026-10-06	2026-10-06	hotmail	Greenhouse	confirm:2
 Apptronik	Senior Perception Learning Engineer	rejected	2026-07-26	2026-09-18	hotmail	Greenhouse	confirm:11 reject:1
 Apptronik	Senior Perception Learning Engineer - SLAM	rejected	2026-07-26	2026-09-22	hotmail	Greenhouse	confirm:1 reject:1
@@ -290,6 +304,8 @@ Armaments Research Company		pending	2026-10-05	2026-10-05	hotmail	Greenhouse	con
 Array Labs	Staff Software Engineer - Computer Vision	rejected	2026-07-15	2026-07-15	hotmail	Lever	reject:1
 Artech	Product Support Lead (remote, 12+ mo)	recruiter	2026-09-15	2026-09-21	gmail	direct/other	recruiter:3
 Artech	Product Support Lead (remote, 6+ mo)	recruiter	2026-09-09	2026-09-09	gmail	direct/other	recruiter:1
+Artech (client)	Mainframe IBM MQ Engineer	recruiter	2026-10-13	2026-10-13	gmail	direct/other	recruiter:1
+Artech (client)	Wind River Cloud Platform Support Engineer	recruiter	2026-10-13	2026-10-13	gmail	direct/other	recruiter:1
 Artech (Dice)	Product Support Engineer (remote, 12+ mo)	recruiter	2026-09-10	2026-09-15	gmail	direct/other	recruiter:2
 Artech (Dice)	Product Support Lead (remote, 12+ mo)	recruiter	2026-09-09	2026-09-09	gmail	direct/other	recruiter:1
 Artech (DOD client)	Software Engineer (Huntsville AL)	recruiter	2026-09-09	2026-09-09	gmail	direct/other	recruiter:1
@@ -338,6 +354,7 @@ Backblaze, Inc.	Lead Software Engineer	pending	2026-10-02	2026-10-02	hotmail	Gre
 Banyan Software		pending	2026-10-02	2026-10-02	hotmail	Greenhouse	confirm:1
 Baselayer		pending	2026-09-15	2026-09-15	hotmail	Greenhouse	confirm:1
 Baton	Software Engineer, MLOps - Machine Learning	pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:2
+Baya Systems		pending	2026-10-16	2026-10-16	hotmail	Greenhouse	confirm:1
 BayOne Solutions	Senior Software Engineer - Unity & HMI Simulation (Palo Alto / Ann Arbor)	recruiter	2026-09-21	2026-09-21	hotmail	direct/other	recruiter:1
 Beacon Biosignals		pending	2026-09-19	2026-09-19	hotmail	Greenhouse	confirm:2
 Beacon Hill Staffing		recruiter	2026-09-09	2026-09-09	hotmail	direct/other	recruiter:1
@@ -354,7 +371,10 @@ Big Wave Digital		pending	2026-09-30	2026-10-04	gmail	LinkedIn	confirm:2 viewed:
 Big Wave Digital	Founding Engineer - AI + Creative - San Fran	pending	2026-10-03	2026-10-03	gmail	LinkedIn	confirm:1
 Bjak	Technical Lead, Machine Learning	rejected	2026-08-04	2026-08-04	hotmail	Ashby	reject:1
 Black Forest Labs		pending	2026-08-26	2026-08-26	hotmail	Greenhouse	confirm:1
+Black Forest Labs	Member of Technical Staff - Pretraining	rejected	2026-10-13	2026-10-14	hotmail	Ashby	confirm:1 reject:1
+Black Forest Labs	Member of Technical Staff - Research Engineer	pending	2026-10-12	2026-10-15	hotmail	Ashby	confirm:2
 Black Sesame Technologies Inc		pending	2026-07-14	2026-09-30	gmail+hotmail	LinkedIn	confirm:2
+BlackEdge Capital		pending	2026-10-16	2026-10-16	hotmail	Greenhouse	confirm:1
 BlackSky	Staff Software Engineer	rejected	2026-08-13	2026-08-17	hotmail	Greenhouse	reject:2
 Bloomerang	Sr. Software Engineer (Tech Lead) - .NET/C#	rejected	2026-10-09	2026-10-09	hotmail	Greenhouse	reject:1
 Bloomerang	Sr. Software Engineer (Tech Lead) - Typescript/React	rejected	2026-10-08	2026-10-08	hotmail	Greenhouse	reject:1
@@ -374,8 +394,8 @@ BNSF (BRK Tech)		positive	2026-08-31	2026-08-31	gmail	direct/other	interview:1
 Bobyard	Senior Computer Vision Research Engineer	pending	2026-08-15	2026-08-15	hotmail	Ashby	confirm:2
 Bolo AI		pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:2
 Bolt.new		pending	2026-09-10	2026-09-19	hotmail	Greenhouse	confirm:4
-Bot Auto		rejected	2026-09-05	2026-09-17	hotmail	Greenhouse	confirm:4 reject:4
-Bot Auto (via Expedition Brands)	Staff or Principal Algorithm Engineer, DL, CV Focus	recruiter	2026-10-09	2026-10-09	gmail	direct/other	recruiter:1
+Bot Auto		rejected	2026-09-05	2026-10-15	hotmail	Greenhouse	confirm:5 reject:4
+Bot Auto (via Expedition Brands)	Staff or Principal Algorithm Engineer, DL, CV Focus	recruiter	2026-10-09	2026-10-13	gmail	direct/other	recruiter:2
 Boulevard	Staff Machine Learning Engineer	pending	2026-09-04	2026-09-04	hotmail	Greenhouse	confirm:1
 Brahma Consulting Group		pending	2026-09-30	2026-10-07	gmail	LinkedIn	viewed:2 confirm:1
 Branch		pending	2026-10-05	2026-10-05	hotmail	Greenhouse	confirm:1
@@ -392,6 +412,7 @@ ByteDance	Machine Learning Engineer - AI Compiler Optimization	pending	2026-09-1
 ByteDance	Machine Learning Engineer - Data Recommendation (Capcut)	pending	2026-09-16	2026-09-16	hotmail	direct/other	confirm:1
 ByteDance	Machine Learning Engineer - Inference	pending	2026-09-16	2026-09-16	hotmail	direct/other	confirm:1
 ByteDance	Machine Learning Platform Engineer, Applied Machine Learning Team	pending	2026-09-16	2026-09-16	hotmail	direct/other	confirm:1
+ByteDance	Research Scientist (Seed Model - Vision)	pending	2026-10-15	2026-10-15	hotmail	direct/other	confirm:1
 ByteDance	Research Scientist, Applied GAI-Vision	pending	2026-07-24	2026-07-24	hotmail	direct/other	confirm:1
 ByteDance	Research Scientist, ML Recommendation Systems, Applied Machine Learning Team	pending	2026-07-24	2026-09-16	hotmail	direct/other	confirm:2
 ByteDance	Senior Machine Learning Engineer - Data Recommendation (Capcut)	pending	2026-09-16	2026-09-16	hotmail	direct/other	confirm:1
@@ -399,7 +420,9 @@ ByteDance	Senior Machine Learning Engineer - Orchestration	pending	2026-09-16	20
 ByteDance	Senior Machine Learning Engineer, Developer AI	pending	2026-09-22	2026-09-22	hotmail	direct/other	confirm:1
 ByteDance	Senior Research Scientist - Machine Learning System	pending	2026-09-16	2026-09-16	hotmail	direct/other	confirm:1
 ByteDance	Software Engineer, Unity Engine and XR	rejected	2026-08-24	2026-08-24	hotmail	direct/other	reject:1
-C3 AI		positive	2026-09-19	2026-09-22	hotmail	Greenhouse+direct/other	interview:1 confirm:14
+ByteDance	Sr. Research Engineer/Scientist(all levels), Efficient Models	pending	2026-10-15	2026-10-15	hotmail	direct/other	confirm:1
+ByteDance	Tech Lead Research Scientist, Physical AI Infra	pending	2026-10-15	2026-10-15	hotmail	direct/other	confirm:1
+C3 AI		positive	2026-09-19	2026-10-16	hotmail	Greenhouse+direct/other	interview:1 confirm:15
 C3 AI	Lead Software Engineer - Generative AI	positive	2026-09-22	2026-10-05	hotmail	Greenhouse+direct/other	interview:1 reject:1
 C3 AI	Lead Software Engineer, Full-Stack - Applications	rejected	2026-09-19	2026-09-19	hotmail	Greenhouse	reject:1
 C3 AI	Senior Software Engineer - Generative AI	rejected	2026-10-01	2026-10-01	hotmail	Greenhouse	reject:1
@@ -409,7 +432,8 @@ Campminder		pending	2026-09-05	2026-09-05	hotmail	Greenhouse	confirm:1
 Campminder	Senior AI Engineer	rejected	2026-10-07	2026-10-07	hotmail	Greenhouse	reject:1
 Canals	Machine Learning Engineer	pending	2026-07-27	2026-07-27	hotmail	Ashby	confirm:1
 Canopy Connect		pending	2026-10-05	2026-10-05	hotmail	Greenhouse	confirm:1
-Carbon Robotics		rejected	2026-08-13	2026-08-16	hotmail	Greenhouse+direct/other	confirm:1 reject:1
+Carbon Robotics		rejected	2026-08-13	2026-10-15	hotmail	Greenhouse+direct/other	confirm:2 reject:1
+Care Access		pending	2026-10-16	2026-10-16	hotmail	Greenhouse	confirm:1
 Cargomatic		pending	2026-09-27	2026-09-27	hotmail	Greenhouse	confirm:1
 Cariad, Inc.		pending	2026-09-11	2026-09-20	hotmail	Greenhouse	confirm:7
 CARIAD, Inc.	Staff Engineer, Autonomous Driving Data Platform & Curation	rejected	2026-09-16	2026-09-22	hotmail	Greenhouse	reject:3
@@ -441,7 +465,10 @@ Center for AI Safety (CAIS)		pending	2026-09-15	2026-09-15	hotmail	Greenhouse	co
 Cerebras	Applied Machine Learning Research Scientist	pending	2026-08-28	2026-09-11	hotmail	Ashby	confirm:2
 Cerebras	ML Systems Performance Engineer	pending	2026-09-11	2026-09-11	hotmail	Ashby	confirm:1
 Cerebras Systems	AI Engineer, Model Quality and Performance	pending	2026-07-26	2026-07-26	hotmail	Ashby	confirm:1
+Cerebras Systems	Applied Machine Learning Research Scientist	pending	2026-10-12	2026-10-12	hotmail	Ashby	confirm:1
 Cerebras Systems	Principal ML Investigator	pending	2026-07-26	2026-07-26	hotmail	Ashby	confirm:1
+Cerebras Systems	Sr. Staff Software Engineer, Inference Platform	pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:1
+Cerebras Systems	Staff Software Engineer, Inference Cloud	pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:1
 Ceribell, Inc	Senior Manager, Applied AI Engineering - Remote	pending	2026-09-25	2026-09-25	hotmail	direct/other	confirm:1
 CGS		pending	2026-09-29	2026-09-29	gmail	LinkedIn	confirm:1
 CHAI	Machine Learning Engineer	pending	2026-09-23	2026-09-23	gmail	direct/other	confirm:1
@@ -467,6 +494,7 @@ Cleerly		pending	2026-08-13	2026-09-11	hotmail	Greenhouse	confirm:3
 Cleerly	Sr. ML Scientist	rejected	2026-09-14	2026-09-14	hotmail	Greenhouse	reject:1
 Cleerly	Sr. Software Engineer - ML Systems (truncated)	rejected	2026-09-14	2026-09-14	hotmail	Greenhouse	reject:1
 Clover Health	Senior Data Scientist	pending	2026-09-06	2026-09-06	hotmail	Greenhouse	confirm:1
+Cobot	AI Research Engineer	pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:2
 Cobot	Staff Embedded Software Engineer, Robotics	pending	2026-08-21	2026-08-21	hotmail	Ashby	confirm:2
 Code for America		pending	2026-09-15	2026-09-15	hotmail	Greenhouse	confirm:1
 Code for America	Staff Solutions Engineer	rejected	2026-09-16	2026-09-16	hotmail	Greenhouse	reject:1
@@ -476,6 +504,7 @@ CodeGeniusRecruit		pending	2026-07-14	2026-07-14	hotmail	LinkedIn	confirm:1
 CodePath		pending	2026-09-15	2026-09-15	hotmail	Greenhouse	confirm:1
 CodePath	Staff Software Engineer	rejected	2026-09-17	2026-09-17	hotmail	Gem	reject:1
 Cognitiv		rejected	2026-09-23	2026-10-06	hotmail	Greenhouse	reject:2
+Cognitiv	ML Data Infrastructure Engineer	pending	2026-10-16	2026-10-16	hotmail	Greenhouse	confirm:1
 Cognitiv	Senior Machine Learning Engineer, Features (Adtech)	pending	2026-09-11	2026-10-05	hotmail	Greenhouse	confirm:3
 Cohere	Audio Inference Engineer, Model Efficiency	pending	2026-07-27	2026-07-27	hotmail	Ashby	confirm:1
 Cohere	Forward Deployed Engineer, Agentic Platform (West Coast)	pending	2026-07-27	2026-07-27	hotmail	Ashby	confirm:1
@@ -489,6 +518,7 @@ Coinbase	Senior Software Engineer, Backend - Platform (Core AI Automation)	rejec
 Coinbase	Staff Machine Learning Engineer(Platform - Identity)	rejected	2026-09-08	2026-09-08	hotmail	Gem	reject:1
 CoLab Software		pending	2026-09-15	2026-09-15	hotmail	Greenhouse	confirm:1
 CoLab Software	Senior 3D & AI Systems Software Developer	rejected	2026-09-15	2026-09-15	hotmail	direct/other	reject:1
+Collabera		recruiter	2026-10-13	2026-10-13	hotmail	direct/other	recruiter:1
 Commure	Senior Software Engineer, Air AI	rejected	2026-09-23	2026-09-24	hotmail	Ashby	reject:1 confirm:1
 Compound Eye	Senior Engineer, Computer Vision (Remote - US)	rejected	2026-09-11	2026-09-14	hotmail	Ashby	reject:1 confirm:1
 Confidential		pending	2026-09-30	2026-09-30	gmail	LinkedIn	viewed:1 confirm:1
@@ -515,10 +545,15 @@ CyberCoders		rejected	2026-07-14	2026-10-08	hotmail	LinkedIn+direct/other	confir
 Cyberspace Inc (client Deloitte/Humana)	Senior AI/ML Engineer (remote, W2)	recruiter	2026-09-28	2026-09-28	hotmail	direct/other	recruiter:1
 d-Matrix	L5/L6 Principal System Software Engineer, AI Inference Execution	rejected	2026-07-29	2026-07-29	hotmail	direct/other	reject:1
 d-Matrix	Principal AI/ML System Software Engineer	pending	2026-07-26	2026-07-26	hotmail	Ashby	confirm:2
-d-Matrix	Principal Architect Performance Analysis and Modeling	rejected	2026-07-26	2026-07-29	hotmail	Ashby	confirm:1 reject:1
+d-Matrix	Principal Architect Performance Analysis and Modeling	rejected	2026-07-26	2026-10-15	hotmail	Ashby	confirm:2 reject:1
 d-Matrix	Principal LLM Inference Engineer	pending	2026-07-26	2026-07-26	hotmail	Ashby	confirm:1
-d-Matrix	Senior Staff LLM Inference Engineer	rejected	2026-08-01	2026-08-01	hotmail	Ashby	reject:1
-d-Matrix	Sr. Staff, ML Researcher - LLM Algorithmic Optimization	pending	2026-07-26	2026-07-26	hotmail	Ashby	confirm:1
+d-Matrix	Principal Software Engineer, Kernels	pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:2
+d-Matrix	Principal Software Engineer, Performance Analysis and Modeling	pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:1
+d-Matrix	Principal Software Engineer, SDK & Lowering Stack	pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:1
+d-Matrix	Principal System Software Engineer, AI Inference Execution	pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:1
+d-Matrix	Senior Staff LLM Inference Engineer	rejected	2026-08-01	2026-10-15	hotmail	Ashby	reject:1 confirm:1
+d-Matrix	Sr. Staff, ML Researcher - LLM Algorithmic Optimization	pending	2026-07-26	2026-10-15	hotmail	Ashby	confirm:3
+d-Matrix	Staff Software Engineer, SIMD Kernels	pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:1
 Databricks	AI Engineer – Forward Deployed Engineering (AI FDE)	pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:1
 Databricks	Principal AI Research Scientist, Research Director - AI Scaling	pending	2026-09-24	2026-10-05	hotmail	Greenhouse	confirm:3
 Databricks	Staff Machine Learning Engineer	pending	2026-08-25	2026-10-07	hotmail	Greenhouse	confirm:9
@@ -540,6 +575,7 @@ Defense Unicorns	Senior Platform Engineer	pending	2026-09-25	2026-09-25	hotmail	
 Defense Unicorns	Senior Software Engineer - Autonomous and Unmanned Systems (FedD178)	pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:1
 Defense Unicorns	Senior Solutions Architect (FedS063)	pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:1
 Definitive Healthcare, US		pending	2026-09-19	2026-09-19	hotmail	Greenhouse	confirm:2
+Delart		pending	2026-10-12	2026-10-12	hotmail	Greenhouse	confirm:1
 Delmar Nord		pending	2026-09-30	2026-09-30	gmail	LinkedIn	viewed:1 confirm:1
 DensityAI		pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:2
 Descript	Lead Data Scientist, Product	rejected	2026-09-18	2026-09-18	hotmail	Gem	reject:1
@@ -566,6 +602,7 @@ Dice recruiter Sachin Kumar Sharma	SDE - Senior Software Engineer	recruiter	2026
 DiDi Autonomous Driving	Senior/Sr. Staff AI Infrastructure Engineer, Inference & Optimization	rejected	2026-09-23	2026-09-23	hotmail	Greenhouse	reject:1
 DiDi Labs		pending	2026-09-15	2026-09-15	hotmail	Greenhouse	confirm:1
 Diligent Robotics		pending	2026-09-27	2026-09-27	hotmail	Greenhouse	confirm:1
+DISCO	Principal Machine Learning Scientist	pending	2026-10-12	2026-10-12	hotmail	Greenhouse	confirm:1
 Discord	Data Scientist - Client Platform	pending	2026-09-29	2026-09-29	hotmail	Greenhouse	confirm:2
 Discord	Engineering Manager, Machine Learning (Safety)	rejected	2026-09-14	2026-09-29	hotmail	Greenhouse	confirm:3 reject:1
 Discord	Engineering Manager, Notifications	pending	2026-09-29	2026-09-29	hotmail	Greenhouse	confirm:1
@@ -592,26 +629,29 @@ Discord	Staff Data Scientist, Causal Inference & Experimentation	pending	2026-09
 Discord	Staff Software Engineer, Data Platform	pending	2026-09-14	2026-09-29	hotmail	Greenhouse	confirm:2
 Discord	Staff Software Engineer, Enterprise Platform	pending	2026-09-29	2026-09-29	hotmail	Greenhouse	confirm:1
 Discord	Staff Software Engineer, Experimentation Platform	pending	2026-09-14	2026-09-29	hotmail	Greenhouse	confirm:2
-Discord	Staff Software Engineer, Machine Learning (Consumer Revenue)	pending	2026-09-25	2026-09-29	hotmail	Greenhouse	confirm:3
+Discord	Staff Software Engineer, Machine Learning (Consumer Revenue)	pending	2026-09-25	2026-10-15	hotmail	Greenhouse	confirm:5
 Discord	Staff Software Engineer, Safety Experience	pending	2026-09-29	2026-09-29	hotmail	Greenhouse	confirm:1
 Discord	Staff Software Engineer, Safety Processing	pending	2026-09-29	2026-09-29	hotmail	Greenhouse	confirm:1
 Distance Technologies		rejected	2026-08-26	2026-08-26	hotmail	direct/other	reject:1
+Distance Technologies	Senior Computer Vision Engineer, Face Tracking	pending	2026-10-12	2026-10-12	hotmail	Ashby	confirm:1
 Distance Technologies	Senior Software Engineer, XR Runtime	pending	2026-08-15	2026-08-15	hotmail	Ashby	confirm:1
 Divergent	Full Stack Software Engineer	pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:4
 Divergent	Staff C++ Software Engineer	pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:3
-Divergent	Staff Software Architect, Robotics & AI	pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:6
+Divergent	Staff Software Architect, Robotics & AI	pending	2026-09-25	2026-10-15	hotmail	Greenhouse	confirm:7
 Dolby	Principal Computer Vision Researcher - Advanced Technology Group	pending	2026-08-06	2026-08-06	hotmail	SuccessFactors	confirm:1
 Dolby	Senior Staff AI Architect	pending	2026-09-12	2026-09-12	hotmail	SuccessFactors	confirm:1
 Dolby	Senior Staff AI Multimodal Researcher	pending	2026-08-17	2026-08-17	hotmail	SuccessFactors	confirm:1
+Doma Technology		rejected	2026-10-13	2026-10-13	hotmail	Greenhouse	reject:1
 Doma Technology	Staff Machine Learning Engineer	rejected	2026-09-06	2026-09-17	hotmail	Greenhouse	reject:1 confirm:2
 DoorDash	Member of Technical Staff, Lead Researcher	rejected	2026-10-02	2026-10-02	hotmail	Greenhouse	reject:1
 Doximity		pending	2026-09-05	2026-09-17	hotmail	direct/other	confirm:5
 Dream Robotics Inc		pending	2026-07-15	2026-07-15	hotmail	LinkedIn	confirm:1
+Dream Technologies	Lead AI / ML Staff Engineer	positive	2026-10-13	2026-10-15	hotmail	Ashby+direct/other	interview:1 reject:1
 DroneDeploy		pending	2026-07-15	2026-07-15	hotmail	LinkedIn	confirm:1
 Dutchie	Staff Engineer	pending	2026-10-05	2026-10-05	hotmail	Greenhouse	confirm:1
 Dwelly		pending	2026-09-27	2026-09-27	hotmail	Greenhouse	confirm:1
 Dwelly	Applied AI Engineer	rejected	2026-10-06	2026-10-06	hotmail	Greenhouse	reject:1
-Dyna Robotics		pending	2026-08-21	2026-08-21	hotmail	Ashby	confirm:7
+Dyna Robotics		pending	2026-08-21	2026-10-13	hotmail	Ashby	confirm:9
 Dyna Robotics	Research Engineer/ Scientist	rejected	2026-08-22	2026-08-22	hotmail	Ashby	reject:1
 Dyno Therapeutics		pending	2026-09-05	2026-09-20	hotmail	Greenhouse	confirm:4
 Eames Consulting		pending	2026-07-15	2026-07-15	hotmail	LinkedIn	confirm:1
@@ -621,6 +661,9 @@ Echo Neurotechnologies		pending	2026-09-02	2026-09-05	hotmail	Greenhouse	confirm
 eClinical Solutions		pending	2026-09-04	2026-10-05	hotmail	Greenhouse	confirm:6
 eClinical Solutions	Principal AI Engineer - Automation & AI	rejected	2026-09-10	2026-10-06	hotmail	direct/other	reject:2
 eClinical Solutions	Principal Software Architect	rejected	2026-09-17	2026-09-17	hotmail	direct/other	reject:1
+Efficient Computer	Senior Compiler Engineer	pending	2026-10-16	2026-10-16	hotmail	Greenhouse	confirm:1
+Efficient Computer	Senior Staff Software Engineer, Linux Kernel	pending	2026-10-16	2026-10-16	hotmail	Greenhouse	confirm:2
+Efficient Computer	Senior Staff Software Engineer, Linux Runtime & Drivers	pending	2026-10-16	2026-10-16	hotmail	Greenhouse	confirm:3
 Eikon Therapeutics	Staff Software Engineer, Machine Learning and Computational Chemistry	rejected	2026-09-25	2026-09-27	hotmail	Greenhouse	reject:1 confirm:1
 eJam	AI Creative Engineer (AI Video Ads)	pending	2026-08-26	2026-08-26	hotmail	Workable	confirm:1
 Electronic Arts	Advanced Game Software Engineer (Req ID 215841)	pending	2026-09-24	2026-09-24	hotmail	direct/other	confirm:1
@@ -639,7 +682,7 @@ Electronic Arts	Machine Learning Engineer - EA SPORTS FC (Req ID 215640)	rejecte
 Electronic Arts	Machine Learning Engineer - EA SPORTS FC (Req ID 215861)	pending	2026-09-24	2026-09-24	hotmail	direct/other	confirm:1
 Electronic Arts	Principal Product Manager, AI Platform	rejected	2026-08-21	2026-08-21	hotmail	direct/other	reject:1
 Electronic Arts	Principal Technical Director - Neural Rendering (Req ID 216086)	pending	2026-09-19	2026-09-19	hotmail	direct/other	confirm:1
-Electronic Arts	Rendering Software Engineer	recruiter	2026-10-09	2026-10-09	hotmail	direct/other	recruiter:1
+Electronic Arts	Rendering Software Engineer	rejected	2026-10-09	2026-10-15	hotmail	direct/other	reject:1 recruiter:1
 Electronic Arts	Rendering Software Engineer - EA SPORTS UFC (Req 215823)	positive	2026-10-07	2026-10-07	hotmail	direct/other	interview:2
 Electronic Arts	Rendering Software Engineer - EA SPORTS UFC (Req ID 215823)	pending	2026-09-24	2026-09-24	hotmail	direct/other	confirm:1
 Electronic Arts	Senior C++ Generalist Software Engineer - Advanced Technology Group (Req ID 214160)	pending	2026-09-24	2026-09-24	hotmail	direct/other	confirm:1
@@ -649,6 +692,7 @@ Electronic Arts	Senior Software Engineer - C++ Generalist/Network (Apex Legends)
 Electronic Arts	Senior Software Engineer - Frostbite	rejected	2026-08-24	2026-08-24	hotmail	direct/other	reject:1
 Electronic Arts	Senior Software Engineer - Gameplay & Experience (Req ID 216275)	pending	2026-09-24	2026-09-24	hotmail	direct/other	confirm:1
 Electronic Arts	Senior Software Engineer- Generalist (Apex Legends) (Req ID 216015)	pending	2026-09-24	2026-09-24	hotmail	direct/other	confirm:1
+Electronic Arts	Software Developer - Agentic Workflows	rejected	2026-10-14	2026-10-14	hotmail	direct/other	reject:2
 Electronic Arts	Software Engineer II - Agentic Workflows (Req ID 216277)	pending	2026-09-24	2026-09-24	hotmail	direct/other	confirm:1
 Electronic Arts	Software Engineer II - Identity	rejected	2026-08-24	2026-08-24	hotmail	direct/other	reject:1
 Electronic Arts	Sr Data Scientist (REQ 215733)	rejected	2026-09-09	2026-09-09	hotmail	direct/other	reject:1
@@ -670,17 +714,25 @@ EnergyHub		pending	2026-09-04	2026-09-04	hotmail	Greenhouse	confirm:1
 Enigma		pending	2026-08-30	2026-09-30	gmail+hotmail	LinkedIn+direct/other	confirm:7
 Enigma	Senior/Staff Machine Learning Engineer, Match Team	pending	2026-09-02	2026-09-15	hotmail	direct/other	confirm:26
 Epia Neuro	Staff/Principal Machine Learning Engineer	pending	2026-08-17	2026-09-11	hotmail	Ashby	confirm:2
-Etched		pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:1
+Etched		pending	2026-09-25	2026-10-15	hotmail	Greenhouse	confirm:2
 Etched	Applied AI Engineer, Kernel Performance	rejected	2026-08-01	2026-08-01	hotmail	Ashby	reject:1
-Etched	Inference Software Engineer	rejected	2026-07-29	2026-07-29	hotmail	Ashby	reject:1
+Etched	Head of Supercomputing	pending	2026-10-12	2026-10-12	hotmail	Ashby	confirm:1
+Etched	Inference Software Engineer	rejected	2026-07-29	2026-10-14	hotmail	Ashby	reject:2
+Etched	MTS, Core Engineering	pending	2026-10-12	2026-10-12	hotmail	Ashby	confirm:1
+Etched	Supercomputing Engineer	pending	2026-10-12	2026-10-12	hotmail	Ashby	confirm:1
+eTeam (client)	Senior XR/VR UX Designer	recruiter	2026-10-14	2026-10-14	hotmail	direct/other	recruiter:1
+Eudia		pending	2026-10-16	2026-10-16	hotmail	Greenhouse	confirm:1
 Eve Legal	Legal AI Architect, Intake Specialist	pending	2026-09-23	2026-09-23	hotmail	Greenhouse	confirm:2
 Eve Legal	Machine Learning Engineer	pending	2026-09-23	2026-09-23	hotmail	Greenhouse	confirm:2
+EvenUp	Staff Machine Learning Engineer	pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:1
+EverCar (via Top1Talent)		recruiter	2026-10-14	2026-10-14	hotmail	direct/other	recruiter:1
 Everlaw	Enterprise AI Transformation Lead	rejected	2026-10-08	2026-10-08	hotmail	Gem	reject:1
 Everlaw	Staff AI Engineer	rejected	2026-09-18	2026-09-18	hotmail	Gem	reject:2
 Evolution Cloud Services (EVOCS)		pending	2026-08-30	2026-09-03	hotmail	Greenhouse	confirm:4
 EvolutionIQ	Senior AI / ML Engineer (LLMs)	pending	2026-09-04	2026-10-06	hotmail	Greenhouse	confirm:7
 EvolutionIQ	Senior Machine Learning (ML) Engineer (AI Insurtech)	pending	2026-09-21	2026-09-21	hotmail	Greenhouse	confirm:1
-Evolve	Staff Data Scientist	pending	2026-09-05	2026-09-15	hotmail	Greenhouse	confirm:3
+Evolv Technologies	Principal Embedded Software Engineer	pending	2026-10-15	2026-10-15	hotmail	Workable	confirm:2
+Evolve	Staff Data Scientist	rejected	2026-09-05	2026-10-13	hotmail	Greenhouse	confirm:3 reject:1
 Expedition Brands (Bot Auto)	Algorithm Engineer	recruiter	2026-10-08	2026-10-08	gmail	direct/other	recruiter:1
 Expedition Brands (Bot Auto)	Algorithm Engineer (San Mateo, CA or Houston, TX)	recruiter	2026-10-05	2026-10-05	gmail	direct/other	recruiter:1
 Expedition Brands, LLC		pending	2026-09-30	2026-10-05	gmail	LinkedIn	viewed:1 confirm:1 recruiter:2
@@ -707,13 +759,13 @@ Fictiv	Senior Software Engineer, AI Team (Oakland, CA)	pending	2026-09-25	2026-0
 FieldAI		rejected	2026-08-24	2026-08-24	hotmail	direct/other	reject:1
 FieldAI	Senior Robot Perception Engineer	pending	2026-09-21	2026-09-21	hotmail	direct/other	confirm:1
 Fieldwire	AI/ML Engineer	rejected	2026-10-09	2026-10-09	hotmail	Greenhouse	reject:1
-Figma		rejected	2026-09-17	2026-09-18	hotmail	Gem+direct/other	reject:3
+Figma		rejected	2026-09-17	2026-10-15	hotmail	Gem+direct/other	reject:3 confirm:1
 Figma	AI Applied Scientist	pending	2026-08-25	2026-09-10	hotmail	direct/other	confirm:9
 Figma	Software Engineer - AI Platforms	pending	2026-09-05	2026-09-05	hotmail	direct/other	confirm:1
 Figma	Software Engineer - AI Product	pending	2026-09-04	2026-09-05	hotmail	direct/other	confirm:2
 Figma	Software Engineer - Graphics & Media	pending	2026-09-02	2026-09-02	hotmail	direct/other	confirm:1
 Figma	Software Engineer - Machine Learning	pending	2026-08-29	2026-09-10	hotmail	direct/other	confirm:6
-Figure		positive	2026-07-24	2026-10-05	hotmail	Greenhouse+direct/other	confirm:121 interview:2
+Figure		positive	2026-07-24	2026-10-15	hotmail	Greenhouse+direct/other	confirm:123 interview:2
 Figure	Helix AI Engineer, Android	rejected	2026-09-27	2026-09-27	hotmail	direct/other	reject:1
 Figure	Helix AI Engineer, Data Infrastructure	rejected	2026-09-27	2026-09-27	hotmail	direct/other	reject:1
 Figure	Helix AI Engineer, XR	positive	2026-07-27	2026-07-27	hotmail	direct/other	interview:1
@@ -729,7 +781,7 @@ Fivetran + dbt Labs	Principal Software Engineer	rejected	2026-10-02	2026-10-09	h
 Fivetran + dbt Labs	Principal Software Engineer, AI Tooling & Adoption	pending	2026-09-25	2026-10-02	hotmail	Greenhouse	confirm:2
 Fivetran + dbt Labs	Senior R&D Software Engineer, Fivetran AI	pending	2026-09-25	2026-10-02	hotmail	Greenhouse	confirm:2
 Fivetran + dbt Labs	Senior Staff Site Reliability Engineer	rejected	2026-10-02	2026-10-09	hotmail	Greenhouse	confirm:1 reject:1
-Fivetran + dbt Labs	Senior Staff Software Engineer	pending	2026-10-02	2026-10-02	hotmail	Greenhouse	confirm:2
+Fivetran + dbt Labs	Senior Staff Software Engineer	rejected	2026-10-02	2026-10-12	hotmail	Greenhouse	confirm:2 reject:1
 Fivetran + dbt Labs	Sr. Principal AI Systems Architect	rejected	2026-09-25	2026-10-05	hotmail	Greenhouse	confirm:2 reject:2
 Fivetran + dbt Labs	Staff R&D Software Engineer, Fivetran AI	rejected	2026-09-25	2026-10-09	hotmail	Greenhouse	confirm:2 reject:1
 Flagship Pioneering		pending	2026-08-30	2026-08-30	hotmail	Greenhouse	confirm:3
@@ -749,6 +801,7 @@ Formic	Senior Manager, Accounting & Controls	pending	2026-09-25	2026-09-25	hotma
 Formic	Staff Accountant	pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:1
 Fortastra Corporation		pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:1
 Fractal		pending	2026-07-14	2026-07-14	hotmail	LinkedIn	confirm:1
+Freeform	Edge Compute and Data Center Architect	rejected	2026-10-13	2026-10-13	hotmail	Greenhouse	reject:1
 Freeform	Electrical Engineer (Hardware Design)	rejected	2026-10-05	2026-10-05	hotmail	Greenhouse	reject:1
 Freeform	Head of Electrical (Hardware Design)	rejected	2026-10-05	2026-10-05	hotmail	Greenhouse	reject:1
 Freeform	Lead/Staff Electrical Engineer (Hardware Design)	rejected	2026-10-05	2026-10-05	hotmail	Greenhouse	reject:1
@@ -799,7 +852,7 @@ GoFundMe	Manager, Machine Learning Engineering	pending	2026-08-30	2026-09-16	hot
 GoFundMe	Staff Machine Learning Engineer (Pricing)	pending	2026-08-29	2026-09-05	hotmail	Greenhouse	confirm:9
 GoGuardian	Staff Software Engineer - School Safety Platform	pending	2026-09-15	2026-09-15	hotmail	Greenhouse	confirm:1
 Goliath Partners		pending	2026-09-29	2026-09-29	gmail	LinkedIn	confirm:1
-Google		positive	2026-07-22	2026-10-11	gmail	direct/other	confirm:9 assessment:4
+Google		positive	2026-07-22	2026-10-13	gmail	direct/other	confirm:9 assessment:5
 Google	Software Engineering roles	positive	2026-10-08	2026-10-08	gmail	direct/other	interview:1
 Gradial		rejected	2026-09-21	2026-09-21	hotmail	Greenhouse	reject:1
 Gradial	Principal Software Engineer	pending	2026-09-14	2026-09-14	hotmail	Greenhouse	confirm:1
@@ -814,8 +867,10 @@ Green Key Resources		pending	2026-07-14	2026-07-14	hotmail	LinkedIn	confirm:2
 Gremlin		pending	2026-09-03	2026-09-05	hotmail	direct/other	confirm:4
 Greylock Partners		pending	2026-07-15	2026-07-15	hotmail	LinkedIn	confirm:1
 Gridmatic		pending	2026-08-30	2026-08-30	hotmail	Greenhouse	confirm:3
+Groq		pending	2026-10-12	2026-10-12	hotmail	Gem	confirm:8
 GRVTY		rejected	2026-09-06	2026-09-06	hotmail	Greenhouse	reject:1
 GTT (Global Technical Talent)	Compliance Consultant (Oakland, W2)	recruiter	2026-08-31	2026-08-31	hotmail	direct/other	recruiter:1
+Hadrian		pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:2
 Hailo	Hailo has amazing openings!	pending	2026-07-27	2026-07-27	hotmail	direct/other	confirm:1
 Halian | Managed Services, Recruitment Agency & Contract Staffing		pending	2026-07-15	2026-07-15	hotmail	LinkedIn	confirm:1
 Halluminate	Member of Technical Staff - Platform Engineering	rejected	2026-09-16	2026-09-16	hotmail	direct/other	reject:1
@@ -834,6 +889,7 @@ Harnham (recruiting agency)	Staff Machine Learning Scientist (JP/PMLDS)	pending	
 Harnham (recruiting agency)	Staff/Principal Machine Learning Engineer (MD071526)	pending	2026-07-20	2026-07-20	hotmail	direct/other	confirm:1
 Harvey		pending	2026-08-26	2026-08-26	hotmail	Ashby	confirm:1
 Harvey	Research Engineer, Post-Training	rejected	2026-09-02	2026-09-02	hotmail	Ashby	reject:1
+Harvey	Staff Software Engineer, AI Platform	pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:1
 Harvey Nash		pending	2026-09-30	2026-09-30	gmail	LinkedIn	confirm:1
 Hayden AI	Staff Software Engineer, Pilots	rejected	2026-08-17	2026-08-20	hotmail	Ashby	confirm:1 reject:1
 HCLTech		pending	2026-07-14	2026-07-14	hotmail	LinkedIn	confirm:1
@@ -841,16 +897,18 @@ HEADBORNE.AI		pending	2026-09-11	2026-09-14	hotmail	Greenhouse	confirm:2
 Headway	Senior Engineering Manager (Ranking & Relevance)	rejected	2026-10-04	2026-10-07	hotmail	Ashby	confirm:1 reject:1
 Headway	Staff Software Engineer - Experimentation	rejected	2026-10-04	2026-10-07	hotmail	Ashby	confirm:1 reject:1
 Heart Aerospace		pending	2026-10-05	2026-10-05	hotmail	Greenhouse	confirm:1
-Heartflow		pending	2026-08-13	2026-09-11	hotmail	Greenhouse	confirm:4
-Hedra		pending	2026-08-26	2026-08-28	hotmail	Ashby	confirm:6
-Helix	AI/ML Scientist	pending	2026-10-03	2026-10-03	hotmail	Gem	confirm:2
-Helm.ai		rejected	2026-07-27	2026-07-29	hotmail	Ashby	confirm:4 reject:1
+Heartflow		pending	2026-08-13	2026-10-12	hotmail	Greenhouse	confirm:5
+Hedra		pending	2026-08-26	2026-10-15	hotmail	Ashby	confirm:13
+Helix	AI/ML Scientist	rejected	2026-10-03	2026-10-15	hotmail	Gem	confirm:2 reject:1
+Helm.ai		rejected	2026-07-27	2026-10-15	hotmail	Ashby	confirm:6 reject:1
+Heven AeroTech		pending	2026-10-13	2026-10-13	hotmail	Greenhouse	confirm:1
 Hex	AI Engineering Lead	pending	2026-09-25	2026-10-02	hotmail	Greenhouse	confirm:2
 Hex	AI Research Engineer	pending	2026-09-25	2026-10-02	hotmail	Greenhouse	confirm:2
 Hex	Engineering Director, Agent Context	pending	2026-10-02	2026-10-02	hotmail	Greenhouse	confirm:1
 Hex	Software Engineer, AI Agent	pending	2026-09-25	2026-10-02	hotmail	Greenhouse	confirm:2
-HeyGen		pending	2026-07-26	2026-09-05	hotmail	Greenhouse	confirm:10
+HeyGen		pending	2026-07-26	2026-10-15	hotmail	Greenhouse	confirm:12
 HiddenLayer		pending	2026-09-05	2026-09-05	hotmail	Greenhouse	confirm:1
+Higgsfield	Machine Learning Engineer, Ads	pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:1
 Highbrow Technology	Embedded Display Software Engineer AR/XR (FT)	recruiter	2026-08-25	2026-08-25	hotmail	direct/other	recruiter:2
 Hightouch		pending	2026-08-30	2026-09-05	hotmail	Greenhouse	confirm:8
 Holiday Robotics		pending	2026-07-14	2026-07-14	hotmail	LinkedIn	confirm:1 viewed:1
@@ -861,6 +919,7 @@ Hover	Senior or Staff Computer Vision Engineer	pending	2026-08-25	2026-09-03	hot
 Hover	Senior Software Engineer, 3D & Measurements	rejected	2026-08-25	2026-09-03	hotmail	Greenhouse+direct/other	confirm:2 reject:1
 HP IQ (Formerly Humane)	Lead AI Software Engineer	rejected	2026-09-15	2026-09-22	hotmail	Greenhouse	confirm:3 reject:2
 HP IQ (Formerly Humane)	Senior AI Software Engineer	rejected	2026-09-15	2026-10-06	hotmail	Greenhouse	confirm:3 reject:2
+HP IQ (Humane)	Lead AI Software Engineer	rejected	2026-10-12	2026-10-15	hotmail	Greenhouse	confirm:1 reject:1
 Hudl	Senior MLOps Engineer - Edge	rejected	2026-09-04	2026-09-12	hotmail	direct/other	reject:2
 Hugging Face	Senior Open-Source Python Engineer, ML Developer Tools - US Remote	rejected	2026-09-21	2026-09-28	hotmail	Workable	reject:1 confirm:2
 Human Interest	Senior Software Engineer	pending	2026-09-15	2026-09-15	hotmail	Greenhouse	confirm:1
@@ -906,6 +965,7 @@ insitro	Senior Machine Learning Scientist, Imaging	pending	2026-08-26	2026-08-26
 insitro	Staff Software Engineer, Imaging	pending	2026-08-26	2026-08-26	hotmail	Ashby	confirm:1
 Inspire11		pending	2026-10-02	2026-10-02	hotmail	Greenhouse	confirm:1
 Inspire11	AI/ML Principal	rejected	2026-10-09	2026-10-09	hotmail	Greenhouse	reject:1
+Instrumental, Inc.		pending	2026-10-15	2026-10-15	hotmail	Gem	confirm:1
 Instrumental, Inc.	General Application	pending	2026-09-14	2026-09-14	hotmail	Gem	confirm:1
 Instrumental, Inc.	Manufacturing Intelligence Engineer	rejected	2026-08-13	2026-08-20	hotmail	Gem	confirm:1 reject:1
 Intel	JR0285206 AI Frameworks Engineer	positive	2026-09-21	2026-09-21	hotmail	direct/other	interview:1
@@ -954,9 +1014,10 @@ Keyfactor, Inc.		pending	2026-10-05	2026-10-05	hotmail	Greenhouse	confirm:1
 Kikoff		pending	2026-09-09	2026-09-20	hotmail	Greenhouse	confirm:5
 Kikoff	Senior Machine Learning Engineer	pending	2026-09-20	2026-09-20	hotmail	Greenhouse	confirm:1
 Knit Health		pending	2026-10-02	2026-10-02	hotmail	Greenhouse	confirm:1
-Kodiak		rejected	2026-08-07	2026-10-06	hotmail	Greenhouse	confirm:45 reject:1
+Kodiak		rejected	2026-08-07	2026-10-12	hotmail	Greenhouse	confirm:46 reject:1
 KonstructIQ		pending	2026-09-29	2026-10-06	gmail	LinkedIn	confirm:1 viewed:1
 Kovari		positive	2026-07-14	2026-07-15	hotmail	direct/other	interview:4
+Krea	ML Researcher - Image / Video Diffusion	pending	2026-10-13	2026-10-15	hotmail	Ashby	confirm:3
 Laiba Technology	Software Engineer (Santa Clara onsite, contract)	recruiter	2026-09-24	2026-09-24	hotmail	direct/other	recruiter:1
 Later	Senior AI Automation Engineer	pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:1
 Latitude AI		pending	2026-09-02	2026-09-14	hotmail	Greenhouse	confirm:4
@@ -966,7 +1027,7 @@ Launch Potato	Lead Applied Scientist, Marketing	pending	2026-09-02	2026-09-20	ho
 LaunchDarkly		pending	2026-10-02	2026-10-02	hotmail	Greenhouse	confirm:1
 LaunchDarkly	Senior Developer Advocate, AI	rejected	2026-10-03	2026-10-03	hotmail	Greenhouse	reject:1
 LearningMate		pending	2026-07-14	2026-07-14	hotmail	LinkedIn	confirm:1
-Legion Intelligence		rejected	2026-08-30	2026-10-07	hotmail	Greenhouse	confirm:24 reject:13
+Legion Intelligence		rejected	2026-08-30	2026-10-14	hotmail	Greenhouse	confirm:24 reject:27
 Legion Intelligence	Staff Applied Machine Learning Engineer	positive	2026-09-10	2026-09-10	hotmail	Greenhouse	interview:1
 Lemurian Labs		pending	2026-10-05	2026-10-05	hotmail	Greenhouse	confirm:1
 LeoLabs, Inc.		pending	2026-09-04	2026-09-04	hotmail	Greenhouse	confirm:1
@@ -975,7 +1036,9 @@ Lexset		pending	2026-07-14	2026-07-14	hotmail	LinkedIn	confirm:1
 Life360	Senior Software (truncated)	rejected	2026-09-12	2026-09-12	hotmail	Greenhouse	reject:1
 Lightmatter		pending	2026-07-14	2026-07-14	hotmail	LinkedIn	confirm:1
 Lightning AI		pending	2026-08-30	2026-10-06	hotmail	Greenhouse	confirm:16
-Lila Sciences		pending	2026-07-18	2026-10-05	hotmail	Greenhouse	confirm:16
+Lila Sciences		pending	2026-07-18	2026-10-13	hotmail	Greenhouse	confirm:17
+Lila Sciences	ML Engineer, LS AI	rejected	2026-10-13	2026-10-13	hotmail	Greenhouse	reject:1
+Lila Sciences	ML Scientist, Foundation Models for Life Sciences	rejected	2026-10-13	2026-10-13	hotmail	Greenhouse	reject:1
 Lila Sciences	Principal, Machine Learning Engineer	rejected	2026-07-31	2026-07-31	hotmail	Greenhouse	reject:1
 Lila Sciences	Senior / Staff Machine Learning Engineer, Applied AI	rejected	2026-09-24	2026-09-24	hotmail	Greenhouse	reject:1
 Lila Sciences	Senior Machine Learning Engineer, Physical Sciences	rejected	2026-10-08	2026-10-08	hotmail	Greenhouse	reject:1
@@ -1017,16 +1080,17 @@ Luma	Simulation Researcher/Engineer	pending	2026-09-25	2026-09-25	hotmail	Ashby	
 Luma AI	Applied Research Scientist / Engineer	pending	2026-07-25	2026-07-26	hotmail	Gem	confirm:2
 Luma AI	Qualitative Evaluation Engineer	pending	2026-07-26	2026-07-26	hotmail	Gem	confirm:1
 Luma AI	Research Engineer - Evaluations	pending	2026-07-26	2026-07-26	hotmail	Gem	confirm:2
-Luma AI	Research Scientist - World Model	pending	2026-07-26	2026-08-26	hotmail	Ashby+Gem	confirm:8
+Luma AI	Research Scientist - World Model	pending	2026-07-26	2026-10-15	hotmail	Ashby+Gem	confirm:12
 Luma AI	Research Scientist / Engineer - Controllability, Personalization & Productization	pending	2026-07-26	2026-07-26	hotmail	Gem	confirm:4
+Luma AI	Research Scientist / Engineer - Foundation Model: Agent	pending	2026-10-12	2026-10-15	hotmail	Ashby	confirm:2
 Luma AI	Research Scientist / Engineer - Foundation Model: Core Research	pending	2026-07-26	2026-08-26	hotmail	Ashby+Gem	confirm:5
 Luma AI	Research Scientist / Engineer - Multimodal Agent	pending	2026-07-26	2026-07-26	hotmail	Gem	confirm:1
-Luma AI	Research Scientist / Engineer - Performance Optimization	pending	2026-07-26	2026-07-26	hotmail	Gem	confirm:2
-Luma AI	Research Scientist / Engineer - Reinforcement Learning Infrastructure	pending	2026-07-26	2026-07-26	hotmail	Gem	confirm:1
-Luma AI	Research Scientist / Engineer - Training Infrastructure	pending	2026-07-26	2026-07-26	hotmail	Gem	confirm:2
+Luma AI	Research Scientist / Engineer - Performance Optimization	pending	2026-07-26	2026-10-15	hotmail	Ashby+Gem	confirm:4
+Luma AI	Research Scientist / Engineer - Reinforcement Learning Infrastructure	pending	2026-07-26	2026-10-15	hotmail	Ashby+Gem	confirm:3
+Luma AI	Research Scientist / Engineer - Training Infrastructure	pending	2026-07-26	2026-10-15	hotmail	Ashby+Gem	confirm:4
 Luma AI	Robotics Engineer	pending	2026-07-26	2026-07-26	hotmail	Gem	confirm:1
-Luma AI	Simulation Researcher/Engineer	pending	2026-07-26	2026-08-26	hotmail	Ashby+Gem	confirm:3
-Luma AI	Software Engineer, Inference	pending	2026-07-26	2026-07-26	hotmail	Gem	confirm:1
+Luma AI	Simulation Researcher/Engineer	pending	2026-07-26	2026-10-15	hotmail	Ashby+Gem	confirm:6
+Luma AI	Software Engineer, Inference	pending	2026-07-26	2026-10-12	hotmail	Ashby+Gem	confirm:2
 Luma AI	Software Engineer, ML Platform	pending	2026-07-26	2026-07-26	hotmail	Gem	confirm:2
 Luma AI	Staff AI Infrastructure Engineer	pending	2026-07-26	2026-07-26	hotmail	Gem	confirm:1
 Luma AI	Tech Lead Manager, Inference	pending	2026-07-26	2026-07-26	hotmail	Gem	confirm:1
@@ -1037,10 +1101,12 @@ LVIS	Research Scientist	positive	2026-07-15	2026-07-15	hotmail	Workable	confirm:
 Lyft	Machine Learning Engineer, Fulfillment	pending	2026-09-15	2026-09-20	hotmail	Greenhouse	confirm:2
 Lyft	Staff Applied Scientist	pending	2026-10-05	2026-10-05	hotmail	Greenhouse	confirm:1
 Lynx Analytics		pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:2
+Mach Industries		pending	2026-10-15	2026-10-15	hotmail	Greenhouse	confirm:2
 Mach9	ML Engineer	rejected	2026-07-22	2026-07-22	hotmail	Ashby	reject:1
 Machina Labs	Machine Learning Engineer	positive	2026-07-28	2026-07-28	hotmail	direct/other	interview:3
 Machinify		pending	2026-09-11	2026-09-19	hotmail	Greenhouse	confirm:3
 Mackin Talent	Senior Lab Engineer - Security Forensic Lab	recruiter	2026-09-05	2026-09-05	gmail	direct/other	recruiter:1
+Magic		pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:1
 Manifest		pending	2026-10-05	2026-10-05	hotmail	Greenhouse	confirm:2
 Manifold Bio	AI/ML Research Engineer	pending	2026-08-30	2026-09-02	hotmail	Greenhouse	confirm:6
 MariaDB	Senior Software Engineer - Cloud Platform Engineering	rejected	2026-10-02	2026-10-02	hotmail	Greenhouse	reject:1
@@ -1060,6 +1126,7 @@ MBN Solutions		pending	2026-07-15	2026-07-15	hotmail	LinkedIn	confirm:1
 MCG SF (client Intuitive Surgical)	Software Engineer (Apps) 2 Unity 3D ISIJP00012247	recruiter	2026-08-18	2026-08-18	hotmail	direct/other	recruiter:3
 MCG SF (client Intuitive Surgical)	Software Engineer (Apps) 3 ISIJP00012246	recruiter	2026-08-07	2026-08-12	hotmail	direct/other	recruiter:10
 MCG SF (client Intuitive Surgical)	Sr Unity Software Engineer ISIJP00012246	recruiter	2026-08-07	2026-08-07	hotmail	direct/other	recruiter:1
+Mecka	Research Scientist – Neural 3D Objects	pending	2026-10-13	2026-10-13	hotmail	Ashby	confirm:1
 Medallion		pending	2026-09-15	2026-09-15	hotmail	Greenhouse	confirm:1
 Medeloop		pending	2026-08-30	2026-09-04	hotmail	Greenhouse	confirm:3
 MediaTek		positive	2026-08-03	2026-08-03	hotmail	direct/other	interview:1
@@ -1071,7 +1138,7 @@ Merlin Labs		positive	2026-08-11	2026-08-11	hotmail	direct/other	interview:1
 Meta		pending	2026-07-14	2026-07-15	hotmail	direct/other	confirm:3
 Metis, Inc.		pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:7
 Metropolis	Director, Applied AI	pending	2026-09-02	2026-09-02	hotmail	Greenhouse	confirm:2
-Metropolis	Senior Machine Learning Engineer, Computer Vision	rejected	2026-08-30	2026-10-06	hotmail	Gem+Greenhouse	confirm:9 reject:2
+Metropolis	Senior Machine Learning Engineer, Computer Vision	rejected	2026-08-30	2026-10-15	hotmail	Gem+Greenhouse	confirm:9 reject:3
 Metropolis	Senior Manager, Machine Learning Engineering	rejected	2026-09-02	2026-09-17	hotmail	Gem+Greenhouse	confirm:1 reject:1
 Metropolis	Senior Staff Software Engineer, Recognition Platform	positive	2026-09-02	2026-09-09	hotmail	Greenhouse+direct/other	interview:1 confirm:1
 micro1		positive	2026-09-03	2026-09-18	hotmail	direct/other	assessment:2 recruiter:1
@@ -1079,15 +1146,15 @@ micro1	AI/ML Engineer, Internal Platforms	positive	2026-08-31	2026-09-17	hotmail
 micro1	ML Engineer	positive	2026-09-16	2026-09-20	hotmail	direct/other	reject:1 assessment:1
 micro1	VP of Robotics Research	rejected	2026-09-24	2026-09-24	hotmail	direct/other	reject:1
 Midi Health	Staff Software Engineer, AI Engineer	rejected	2026-07-22	2026-09-23	hotmail	Gem	reject:3
-Midjourney	Principal Machine Learning Engineer (Reconstruction / Quantitative Imaging)	pending	2026-08-24	2026-08-26	hotmail	Ashby	confirm:2
+Midjourney	Principal Machine Learning Engineer (Reconstruction / Quantitative Imaging)	pending	2026-08-24	2026-10-15	hotmail	Ashby	confirm:3
 Midjourney	Principal Software Engineer	pending	2026-08-26	2026-08-26	hotmail	Ashby	confirm:1
 Mill		rejected	2026-09-16	2026-09-22	hotmail	Greenhouse	reject:2
 Mill	Software Engineer, AI/Computer Vision	pending	2026-09-14	2026-09-16	hotmail	Greenhouse	confirm:3
 Mind Robotics	Research + Modeling	rejected	2026-08-20	2026-09-14	hotmail	Ashby	confirm:1 reject:1
 Mindlance	AI Agents Developer	recruiter	2026-09-28	2026-09-28	hotmail	direct/other	recruiter:1
 Mindlance (recruiting agency)	Agentic AI Engineer	recruiter	2026-09-11	2026-09-11	hotmail	direct/other	recruiter:1
-Mirage		pending	2026-07-26	2026-07-26	hotmail	Ashby	confirm:2
-Miris	Applied Researcher - All Levels	pending	2026-09-04	2026-09-05	hotmail	Greenhouse	confirm:2
+Mirage		pending	2026-07-26	2026-10-15	hotmail	Ashby	confirm:4
+Miris	Applied Researcher - All Levels	pending	2026-09-04	2026-10-13	hotmail	Greenhouse	confirm:3
 Mistral	AI Scientist	pending	2026-08-05	2026-08-05	hotmail	Ashby	confirm:1
 Mistral	Applied AI, Forward Deployed Machine Learning Engineer	pending	2026-08-05	2026-08-05	hotmail	Ashby	confirm:1
 Mistral	Research Engineer, Machine Learning	pending	2026-08-05	2026-08-05	hotmail	Ashby	confirm:2
@@ -1111,6 +1178,7 @@ MongoDB	Senior Research Scientist	rejected	2026-09-10	2026-09-10	gmail	direct/ot
 MongoDB	Staff Research Scientist	rejected	2026-09-10	2026-09-10	gmail	direct/other	reject:1
 Motional	Engineer/Senior Engineer - Perception Capabilities	pending	2026-09-23	2026-09-23	hotmail	direct/other	confirm:1
 Motional	Principal Engineer	pending	2026-08-28	2026-08-28	hotmail	direct/other	confirm:1
+Motional	Principal Machine Learning Engineer, Data Mining	pending	2026-10-15	2026-10-15	hotmail	direct/other	confirm:1
 Motional	Staff Engineer	rejected	2026-10-09	2026-10-09	hotmail	direct/other	reject:1
 Mozilla		pending	2026-08-30	2026-08-30	hotmail	Greenhouse	confirm:1
 MrBeast		rejected	2026-07-21	2026-07-24	hotmail	Greenhouse	confirm:2 reject:1
@@ -1134,12 +1202,13 @@ Nebius	Senior Machine Learning Engineer, LLM Inference Optimization	rejected	202
 Neros Technologies		pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:1
 Neros Technologies	Perception Lead	positive	2026-09-28	2026-09-28	hotmail	direct/other	interview:2
 Nesco Resource / Hoffmann-La Roche		recruiter	2026-08-28	2026-08-28	hotmail	direct/other	recruiter:1
+Net2Source (client)	Data Collector	recruiter	2026-10-12	2026-10-12	hotmail	direct/other	recruiter:1
 NetApp	Director of Engineering - AI Solutions (Req 136256)	pending	2026-10-10	2026-10-10	hotmail	SuccessFactors	confirm:1
 NetApp	Distinguished Engineer - AI (Req 134003)	pending	2026-10-07	2026-10-07	hotmail	SuccessFactors	confirm:1
 NetApp	Principal Software Engineer, Data Processing Optimization (Req 136542)	pending	2026-10-10	2026-10-10	hotmail	SuccessFactors	confirm:1
 NetApp	Principal Software Engineer, Data Processing OSS (Req 136539)	pending	2026-10-07	2026-10-07	hotmail	SuccessFactors	confirm:1
 NetDocuments	Senior Manager, Software Engineering - AI	pending	2026-09-15	2026-09-15	hotmail	Greenhouse	confirm:1
-Neuralink		pending	2026-07-15	2026-08-30	hotmail	Greenhouse+LinkedIn	confirm:8
+Neuralink		pending	2026-07-15	2026-10-13	hotmail	Greenhouse+LinkedIn	confirm:18
 NewsBreak		pending	2026-08-30	2026-09-21	hotmail	Greenhouse	confirm:19
 Next Phase Recruitment		pending	2026-07-15	2026-07-15	hotmail	LinkedIn	confirm:1
 Nextdoor		rejected	2026-08-28	2026-09-01	hotmail	Greenhouse	confirm:1 reject:1
@@ -1149,9 +1218,11 @@ Nexwave / Value Labs / Mitchell International	Senior Computer Vision Engineer wi
 ngrok		pending	2026-09-21	2026-09-21	hotmail	Greenhouse	confirm:2
 Niantic Spatial		positive	2026-07-27	2026-08-31	hotmail	Ashby+direct/other	interview:3
 Niantic Spatial	Principal Architect, Product Engineering	pending	2026-08-28	2026-08-28	hotmail	Ashby	confirm:1
-Niantic Spatial	Senior Computer Vision Engineer (Localization)	positive	2026-07-23	2026-09-01	hotmail	Ashby+direct/other	confirm:6 interview:6 reject:1
+Niantic Spatial	Senior Computer Vision Engineer (Localization)	positive	2026-07-23	2026-10-12	hotmail	Ashby+direct/other	confirm:7 interview:6 reject:1
 Niantic Spatial	Senior Computer Vision Engineer (Reconstruction)	pending	2026-07-23	2026-07-23	hotmail	Ashby	confirm:1
-Niantic Spatial	Technical Lead, Computer Vision	rejected	2026-08-13	2026-09-18	gmail+hotmail	Ashby+direct/other	confirm:5 reject:1 recruiter:2
+Niantic Spatial	Senior Computer Vision Engineer, Embodied AI	pending	2026-10-12	2026-10-12	hotmail	Ashby	confirm:2
+Niantic Spatial	Staff Engineer - Robot Learning, Embodied AI	pending	2026-10-12	2026-10-12	hotmail	Ashby	confirm:1
+Niantic Spatial	Technical Lead, Computer Vision	rejected	2026-08-13	2026-10-12	gmail+hotmail	Ashby+direct/other	confirm:7 reject:1 recruiter:2
 NICE	AI Lead Software Engineer	pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:1
 NICE	Staff Machine Learning Engineer	pending	2026-10-05	2026-10-05	hotmail	Greenhouse	confirm:3
 Nimble Gravity	AI Architect	rejected	2026-09-17	2026-10-11	hotmail	Greenhouse	confirm:1 reject:1
@@ -1164,6 +1235,7 @@ Northrop Grumman	Principal AI Software Engineer (AHT)	pending	2026-08-31	2026-08
 Northrop Grumman	Principal AI Software Engineer (AHT) R10245473	recruiter	2026-09-09	2026-09-09	hotmail	direct/other	recruiter:3
 NR Consulting	AI Process Design Engineer (San Francisco)	recruiter	2026-09-29	2026-09-29	hotmail	direct/other	recruiter:1
 NTT DATA	Data Protection Developer (Mahwah NJ, remote, temp)	recruiter	2026-10-06	2026-10-06	hotmail	direct/other	recruiter:1
+Nuance Labs		pending	2026-10-13	2026-10-13	hotmail	Greenhouse	confirm:1
 Nudge		pending	2026-09-23	2026-09-23	hotmail	Ashby	confirm:1
 Nudge	Machine Learning Engineer	rejected	2026-09-24	2026-09-24	hotmail	Ashby	reject:1
 Nuro		pending	2026-07-14	2026-09-05	hotmail	Greenhouse	confirm:18
@@ -1231,6 +1303,7 @@ Octave Health Group	Sr. Data Engineer	rejected	2026-10-02	2026-10-02	hotmail	Gem
 Oddball		pending	2026-09-03	2026-09-05	hotmail	Greenhouse	confirm:5
 Odyssey	AI Resident	pending	2026-07-28	2026-07-28	hotmail	Ashby	confirm:1
 Odyssey	Member of Product Staff, Technical Product Manager	pending	2026-07-28	2026-07-28	hotmail	Ashby	confirm:1
+Odyssey	Member of Technical Staff, Applied Research	pending	2026-10-13	2026-10-13	hotmail	Ashby	confirm:1
 Odyssey	Member of Technical Staff, Core Model Engineering	pending	2026-07-28	2026-07-28	hotmail	Ashby	confirm:1
 Odyssey	Member of Technical Staff, Diffusion World Models & Robotics	pending	2026-07-28	2026-07-28	hotmail	Ashby	confirm:1
 Odyssey	Member of Technical Staff, Infrastructure Engineer	pending	2026-07-28	2026-07-28	hotmail	Ashby	confirm:2
@@ -1243,25 +1316,27 @@ Odyssey	VP, Engineering	pending	2026-07-28	2026-07-28	hotmail	Ashby	confirm:1
 Odyssey	VP, Research	rejected	2026-07-28	2026-07-29	hotmail	Ashby	confirm:1 reject:1
 Oho Group		pending	2026-07-14	2026-07-14	hotmail	LinkedIn	confirm:1
 Oklo		pending	2026-09-06	2026-09-06	hotmail	Greenhouse	confirm:1
-OKX		pending	2026-08-30	2026-08-30	hotmail	Greenhouse	confirm:1
+OKX		pending	2026-08-30	2026-10-12	hotmail	Greenhouse	confirm:2
 OKX	Principal AI Engineer, AI Agent Development	pending	2026-09-05	2026-09-16	hotmail	Greenhouse	confirm:5
 OKX	Principal AI Engineer, Chatbot Development	pending	2026-09-10	2026-09-14	hotmail	Greenhouse	confirm:2
 OKX	Staff Machine Learning Engineer	rejected	2026-09-10	2026-09-18	hotmail	Greenhouse	confirm:1 reject:1
 Omada Health		pending	2026-08-29	2026-09-15	hotmail	Greenhouse	confirm:6
 Omada Health	Principal Applied Machine Learning Scientist	rejected	2026-09-18	2026-09-18	hotmail	Greenhouse	reject:1
 Omada Health	Senior Applied AI Engineer	rejected	2026-09-09	2026-09-09	hotmail	Greenhouse	reject:1
-OnBoard		rejected	2026-09-14	2026-10-02	hotmail	Greenhouse	confirm:5 reject:3
+OnBoard		rejected	2026-09-14	2026-10-13	hotmail	Greenhouse	confirm:5 reject:4
 OnBoard (Passageways)	Principal Software Engineer - AI	rejected	2026-09-14	2026-09-14	hotmail	Gem	reject:1
 OneSix		pending	2026-09-15	2026-09-15	hotmail	Greenhouse	confirm:1
 Opaque Systems		pending	2026-10-02	2026-10-02	hotmail	Greenhouse	confirm:1
 OpenAI		pending	2026-09-05	2026-09-05	gmail	direct/other	confirm:4
 OpenAI	ML Engineer, Multimodal Perception and Authentication	recruiter	2026-09-10	2026-09-10	gmail	direct/other	recruiter:1
+OpenEvidence	Member of Technical Staff	pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:1
 OpenTeams		pending	2026-08-30	2026-09-06	hotmail	Greenhouse	confirm:8
 OpenTeams	Machine Learning Engineer	rejected	2026-09-30	2026-10-01	hotmail	Greenhouse+direct/other	reject:2
 OPPO US Research Center		pending	2026-07-24	2026-07-24	hotmail	Workable	confirm:1
 OPPO US Research Center	AI Engineer	pending	2026-07-24	2026-08-26	hotmail	Workable	confirm:2
 OPPO US Research Center	Backend Engineer, Generative AI Services	pending	2026-08-26	2026-08-26	hotmail	Workable	confirm:2
 OPPO US Research Center	Test Engineer-AI/LLM	pending	2026-08-26	2026-08-26	hotmail	Workable	confirm:2
+OpusClip		pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:2
 Orbifold AI		pending	2026-09-29	2026-10-01	gmail	LinkedIn	confirm:1 viewed:1
 Orbifold AI	Research Engineer, Physical AI (Robotics, World Models)	pending	2026-10-02	2026-10-02	gmail	LinkedIn	confirm:1
 Orbis		pending	2026-10-04	2026-10-04	hotmail	Greenhouse	confirm:2
@@ -1297,14 +1372,14 @@ ParetoHealth	Senior Software Engineer	rejected	2026-10-02	2026-10-02	hotmail	dir
 Path Robotics		pending	2026-09-02	2026-09-04	hotmail	Greenhouse	confirm:5
 Path Robotics	Machine Learning Engineer, Robot Learning	rejected	2026-09-11	2026-09-11	hotmail	direct/other	reject:1
 Path Robotics	Senior Machine Learning Engineer (Reinforcement Learning/World Model)	rejected	2026-09-08	2026-09-08	hotmail	direct/other	reject:1
-Path Robotics	Senior Machine Learning Engineer (Tech Lead), Robot Learning, Loco- Manipulation	pending	2026-08-30	2026-09-21	hotmail	Greenhouse	confirm:4
+Path Robotics	Senior Machine Learning Engineer (Tech Lead), Robot Learning, Loco- Manipulation	rejected	2026-08-30	2026-10-14	hotmail	Greenhouse+direct/other	confirm:5 reject:1
 PathAI	Machine Learning Engineer II (Applied Research & Model Development)	pending	2026-09-19	2026-09-19	hotmail	Greenhouse	confirm:1
 PathAI	Machine Learning Engineer II/III (Applied Research & Model Development)	pending	2026-08-13	2026-08-13	hotmail	Greenhouse	confirm:5
 PathAI	Machine Learning Engineer III (Applied Research & Model Development)	pending	2026-09-19	2026-09-19	hotmail	Greenhouse	confirm:1
 Pathstream		pending	2026-09-15	2026-09-15	hotmail	Greenhouse	confirm:1
 Pathstream	Engineering Manager	rejected	2026-09-17	2026-09-17	hotmail	Greenhouse	reject:1
 Pathward, N.A.		pending	2026-09-03	2026-09-22	hotmail	Greenhouse	confirm:6
-Pave	Senior Software Engineer, Agent	pending	2026-10-02	2026-10-02	hotmail	Greenhouse	confirm:1
+Pave	Senior Software Engineer, Agent	rejected	2026-10-02	2026-10-14	hotmail	Gem+Greenhouse	confirm:1 reject:1
 Pedestal Health		rejected	2026-09-11	2026-09-23	hotmail	Greenhouse	confirm:5 reject:1
 People In AI		pending	2026-09-30	2026-09-30	gmail	LinkedIn	confirm:1
 PER International		pending	2026-09-29	2026-09-30	gmail	LinkedIn	viewed:1 confirm:1
@@ -1317,15 +1392,15 @@ PGTEK	Senior GenAI / ML Engineer - Secret clearance	pending	2026-09-06	2026-09-0
 Phaidra	Senior AI Research Scientist (Model-based RL)	pending	2026-09-15	2026-10-07	hotmail	Greenhouse	confirm:2
 Phantom AI	Senior/Staff Computer Vision Engineer - Deep Learning Focus	pending	2026-08-05	2026-08-30	hotmail	Greenhouse	confirm:10
 Phantom AI	Senior/Staff System Software Engineer — ADAS Vision Platform	pending	2026-08-17	2026-08-17	hotmail	Greenhouse	confirm:1
-Physical Intelligence		pending	2026-07-25	2026-08-26	gmail+hotmail	Ashby	confirm:4
+Physical Intelligence		pending	2026-07-25	2026-10-15	gmail+hotmail	Ashby	confirm:6
 PhysicsX		positive	2026-08-30	2026-10-07	hotmail	Greenhouse+direct/other	confirm:6 interview:1
 Picture (via CoffeeSpace)	Founding Engineer	rejected	2026-10-02	2026-10-02	hotmail	direct/other	reject:1
 Pika	Growth	pending	2026-08-26	2026-08-26	hotmail	Ashby	confirm:1
-Pika	ML Engineer, Inference & Optimization	pending	2026-08-26	2026-09-15	hotmail	Ashby	confirm:2
+Pika	ML Engineer, Inference & Optimization	pending	2026-08-26	2026-10-15	hotmail	Ashby	confirm:3
 Pika	Product Manager	pending	2026-08-26	2026-08-26	hotmail	Ashby	confirm:1
 Pika	Research Scientist, Data	pending	2026-08-26	2026-09-15	hotmail	Ashby	confirm:2
 Pika	Research Scientist, Foundation Model (Video Generation)	pending	2026-08-26	2026-08-26	hotmail	Ashby	confirm:1
-Pika	Research Scientist, Post-Training — Video Generation	pending	2026-09-15	2026-09-15	hotmail	Ashby	confirm:1
+Pika	Research Scientist, Post-Training — Video Generation	pending	2026-09-15	2026-10-15	hotmail	Ashby	confirm:5
 Pika	Software Engineer, AI Infra	pending	2026-08-26	2026-08-26	hotmail	Ashby	confirm:3
 Ping Identity		rejected	2026-09-29	2026-09-29	hotmail	Greenhouse	reject:1
 Pinterest		pending	2026-08-26	2026-08-26	hotmail	Greenhouse	confirm:7
@@ -1341,15 +1416,18 @@ Planet	Senior Engineering Manager - AI Geospatial Assistant Team	pending	2026-08
 Planet	Senior Machine Learning Engineer	pending	2026-08-30	2026-09-05	hotmail	Greenhouse	confirm:7
 Plasmidsaurus (via CoffeeSpace)	Lead Platform Engineer	rejected	2026-10-02	2026-10-02	hotmail	direct/other	reject:1
 PlayOn	Senior Software Engineer, Ticketing	rejected	2026-10-12	2026-10-12	hotmail	direct/other	reject:1
+PlayOn	Staff Cloud Engineer	rejected	2026-10-13	2026-10-13	hotmail	direct/other	reject:1
 PlayOn! Sports		pending	2026-10-05	2026-10-05	hotmail	Greenhouse	confirm:2
 PlayStation Global		pending	2026-08-20	2026-08-20	hotmail	direct/other	confirm:4
 PlayStation Global	AI Engineer	pending	2026-09-20	2026-09-23	hotmail	direct/other	confirm:2
 PlayStation Global	Data Scientist II - Decision Science	pending	2026-09-20	2026-09-20	hotmail	direct/other	confirm:1
 PlayStation Global	Director, Data Science - Product Management	pending	2026-09-20	2026-09-20	hotmail	direct/other	confirm:1
 PlayStation Global	Senior Data Scientist	pending	2026-09-20	2026-09-20	hotmail	direct/other	confirm:1
+PlayStation Global	Senior Software Engineer – Applied AI & Streaming	pending	2026-10-15	2026-10-15	hotmail	direct/other	confirm:1
 PlayStation Global	Sr Software Development Engineer in Test, ML	pending	2026-09-20	2026-09-20	hotmail	direct/other	confirm:1
 PlayStation Global	Sr. Software Development Engineer in Test, AI/ML	pending	2026-09-20	2026-09-20	hotmail	direct/other	confirm:1
 PlayStation Global	Staff Data Scientist - Experimentation & Measurement	pending	2026-09-20	2026-09-20	hotmail	direct/other	confirm:4
+PlayStation Global	Staff Machine Learning Engineer	pending	2026-10-12	2026-10-12	hotmail	direct/other	confirm:1
 PlusAI		positive	2026-08-31	2026-08-31	hotmail	direct/other	interview:1
 PlusAI	Sr. Machine Learning Engineer, Motion Perception	positive	2026-09-11	2026-09-11	hotmail	direct/other	interview:1
 PlusAI	Sr. MLE Perception	positive	2026-09-29	2026-09-29	hotmail	direct/other	interview:1
@@ -1365,7 +1443,7 @@ Pony.ai	Software Engineer - Evaluation	pending	2026-08-28	2026-08-28	hotmail	Wor
 pony.ai	Software Engineer Intern - Generalist	pending	2026-07-14	2026-07-14	hotmail	Workable	confirm:4
 Pony.ai	Software Engineer, Behavior	pending	2026-08-28	2026-08-28	hotmail	Workable	confirm:2
 Pony.ai	Software Engineer, Decision Making & Path Planning	pending	2026-08-28	2026-08-28	hotmail	Workable	confirm:2
-pony.ai	Staff/Senior Staff Software Engineer - Perception	pending	2026-07-14	2026-08-28	hotmail	Workable	confirm:5
+pony.ai	Staff/Senior Staff Software Engineer - Perception	pending	2026-07-14	2026-10-15	hotmail	Workable	confirm:7
 Postman	Applied AI Scientist, Small Language Model and AI Training	pending	2026-09-06	2026-09-16	hotmail	Greenhouse	confirm:4
 Postman	Head of AI Platform Engineering	pending	2026-09-15	2026-09-16	hotmail	Greenhouse	confirm:2
 Postman	Member of Technical Staff, AI Agent Development Lead	pending	2026-09-06	2026-09-06	hotmail	Greenhouse	confirm:1
@@ -1397,8 +1475,10 @@ Pyramid Consulting	Sr. Software Engineer (Camera/Sensor/Simulation) / Simulation
 Pyramid Consulting	Systems Software Engineer (San Jose CA onsite)	recruiter	2026-10-01	2026-10-01	gmail	direct/other	recruiter:1
 Pyramid Consulting (client Meta)	ML/AI Engineer RTR	recruiter	2026-07-27	2026-07-29	hotmail	direct/other	recruiter:5
 Pyramid Consulting (client Meta)	Software Engineer III (Job ID 73142-1, Sunnyvale hybrid)	recruiter	2026-09-25	2026-09-25	hotmail	direct/other	recruiter:1
+Pyramid Consulting (client)	ML Software Engineer (Audio ML, CV ML, or audio DSP)	recruiter	2026-10-14	2026-10-14	gmail	direct/other	recruiter:1
 Pyramid Consulting, Inc		pending	2026-07-14	2026-07-14	hotmail	LinkedIn	confirm:1
 Quadrant Technologies	Display Stack Software Engineer (Redmond WA)	recruiter	2026-09-30	2026-09-30	hotmail	direct/other	recruiter:1
+Quadric	Staff Deep Learning Compiler Engineer	pending	2026-10-12	2026-10-16	hotmail	Ashby	confirm:4
 Qualcomm		positive	2026-07-16	2026-08-04	gmail	direct/other	recruiter:3 interview:1
 Qualcomm	Camera System Engineer - 3090970	pending	2026-07-15	2026-07-15	gmail	Workday	confirm:1
 Qualcomm	Camera Systems Engineer - 3079753	pending	2026-07-15	2026-07-15	gmail	Workday	confirm:1
@@ -1443,6 +1523,7 @@ Quora	Senior Machine Learning Engineer, Ads	pending	2026-09-30	2026-09-30	hotmai
 Quora	Senior Machine Learning Engineer, Ads - Quora (Remote)	rejected	2026-10-05	2026-10-05	hotmail	Ashby	reject:1
 Quotient Therapeutics, Inc.	Senior Machine Learning Scientist	rejected	2026-09-14	2026-09-14	hotmail	Greenhouse	reject:1
 Rackner		pending	2026-08-30	2026-10-06	hotmail	direct/other	confirm:7
+Rad AI		pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:1
 Radicle Health		pending	2026-10-05	2026-10-05	hotmail	Greenhouse	confirm:1
 RadixArk		pending	2026-09-20	2026-09-20	hotmail	Greenhouse	confirm:1
 Rama (via CoffeeSpace)	Founding Engineer	rejected	2026-10-06	2026-10-06	hotmail	direct/other	reject:1
@@ -1480,7 +1561,8 @@ Reflex Robotics	Electrical Engineer (Hiring at all Levels)	pending	2026-07-28	20
 Reflex Robotics	Principal AI Research Engineer - RL	pending	2026-07-28	2026-07-28	hotmail	Ashby	confirm:1
 Reflex Robotics	Principal AI Research Engineer - World Models	pending	2026-07-28	2026-07-28	hotmail	Ashby	confirm:1
 Reflexivity		pending	2026-09-11	2026-09-11	hotmail	direct/other	confirm:1
-Relativity Space		pending	2026-09-02	2026-09-02	hotmail	Greenhouse	confirm:2
+Reka	Member of Technical Staff (ML)	pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:1
+Relativity Space		pending	2026-09-02	2026-10-15	hotmail	Greenhouse	confirm:3
 Reliable Robotics	Radar Algorithm Engineer	rejected	2026-07-28	2026-07-31	hotmail	Ashby	confirm:4 reject:1
 Ridgeline	Principal Engineer, AI Platform	rejected	2026-09-18	2026-09-22	hotmail	Greenhouse	reject:1 confirm:1
 Ridgeline	Senior Manager, AI Leverage Engineering	rejected	2026-09-15	2026-09-18	hotmail	Greenhouse	confirm:1 reject:1
@@ -1503,6 +1585,7 @@ Roblox	Principal Machine Learning Infrastructure Engineer, Ads & Discovery	pendi
 Roboflow	Machine Learning Research Engineer	pending	2026-09-11	2026-09-11	hotmail	Ashby	confirm:1
 RoboForce		pending	2026-08-21	2026-08-21	hotmail	Greenhouse	confirm:1
 Robots & Pencils	Staff AI Engineer	rejected	2026-09-05	2026-10-01	hotmail	Greenhouse	confirm:3 reject:1
+Rocket Lab	Principal Machine Learning Engineer (EO/IR Image Analysis)	pending	2026-10-15	2026-10-15	hotmail	direct/other	confirm:1
 Rocket Lab Corporation	Machine Learning Engineer II	rejected	2026-09-03	2026-09-03	hotmail	direct/other	reject:1 confirm:1
 Rocket Lab Corporation	Senior Systems Engineer II/Principal (EO/IR Image Analysis)	rejected	2026-09-14	2026-09-16	hotmail	direct/other	confirm:1 reject:1
 Rocket Money		pending	2026-08-30	2026-09-21	hotmail	Greenhouse	confirm:3
@@ -1512,12 +1595,13 @@ Roku	Senior Machine Learning Scientist, Creative Generation & Personalization	pe
 Rosebud Hotel Organization		pending	2026-10-05	2026-10-05	hotmail	Greenhouse	confirm:1
 Rubrik		pending	2026-09-15	2026-09-15	hotmail	Greenhouse	confirm:1
 Rula	Sr. Staff AI Engineer - Applied AI (Remote)	rejected	2026-09-18	2026-09-22	hotmail	Ashby	reject:1 confirm:1
-Runway		rejected	2026-07-26	2026-08-07	hotmail	Ashby	confirm:12 reject:1
+Runway		rejected	2026-07-26	2026-10-13	hotmail	Ashby	confirm:17 reject:1
 RxSense	Principal Software Engineer, AI-Native	pending	2026-09-27	2026-09-27	hotmail	Greenhouse	confirm:1
 RZR Global Inc.	Machine Learning Engineer	pending	2026-09-20	2026-09-21	hotmail	Greenhouse	confirm:3
 RZR Global Inc.	Machine Learning Engineer - L3	pending	2026-09-03	2026-09-03	hotmail	Greenhouse	confirm:1
 SageSure	Data Scientist	pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:1
 SageSure	Director Data Science	pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:1
+Saicon Group (client)	GPU Software Engineer	recruiter	2026-10-16	2026-10-16	hotmail	direct/other	recruiter:1
 Saildrone	Principal Software Engineer, Perception	pending	2026-09-23	2026-09-23	hotmail	Greenhouse	confirm:1
 Saildrone	Senior Engineering Manager, Perception	rejected	2026-08-25	2026-08-27	hotmail	Greenhouse+direct/other	confirm:1 reject:1
 Saildrone	Senior Manager, Robotics Software Engineering	pending	2026-07-21	2026-07-21	hotmail	Greenhouse	confirm:1
@@ -1528,6 +1612,7 @@ Saildrone	Staff Software Engineer, Perception	positive	2026-07-21	2026-08-25	hot
 Salient AI		rejected	2026-07-23	2026-07-23	hotmail	Ashby	reject:1
 Salient AI	Member of Technical Staff, Applied AI	pending	2026-07-21	2026-07-21	hotmail	Ashby	confirm:1
 Samaya AI		rejected	2026-09-25	2026-10-07	hotmail	Greenhouse	reject:2 confirm:6
+SambaNova		pending	2026-10-12	2026-10-12	hotmail	Greenhouse	confirm:1
 SambaNova Systems		pending	2026-07-26	2026-07-26	hotmail	Greenhouse	confirm:11
 Samsara	AI Architect - GTM Systems	pending	2026-08-26	2026-08-26	hotmail	Greenhouse	confirm:1
 Samsara	Lead Machine Learning Engineer - ML Infrastructure	pending	2026-08-26	2026-09-02	hotmail	Greenhouse	confirm:2
@@ -1539,7 +1624,9 @@ Samsara	Staff Software Engineer, DevEx	pending	2026-09-11	2026-09-11	hotmail	Gre
 Samsara	Tech Lead Applied Scientist	pending	2026-08-26	2026-08-26	hotmail	Greenhouse	confirm:1
 Samsung Research America		rejected	2026-09-08	2026-09-16	hotmail	Greenhouse	reject:1 confirm:1
 Samsung Research America	Head of Vision Intelligence	pending	2026-08-30	2026-08-30	hotmail	Greenhouse	confirm:1
-Samsung Research America	Principal Research Scientist, Robotics	pending	2026-09-14	2026-09-14	hotmail	Greenhouse	confirm:1
+Samsung Research America	Principal Research Scientist, Robotics	pending	2026-09-14	2026-10-13	hotmail	Greenhouse	confirm:6
+Samsung Research America	Senior Staff, Robotics Systems Architect - Robot Intelligence	pending	2026-10-13	2026-10-13	hotmail	Greenhouse	confirm:1
+Samsung Research America	Staff AI Research Engineer	pending	2026-10-13	2026-10-13	hotmail	Greenhouse	confirm:1
 Samsung SDS America	AI Research Scientist, Real-Time Video Understanding & Physical AI	pending	2026-08-31	2026-08-31	hotmail	Workable	confirm:1
 Samsung SDS America	Senior AI Research Scientist, Robotics & Embodied AI	pending	2026-08-21	2026-08-21	hotmail	Workable	confirm:2
 Samsung SDS America	Senior Physical AI Engineer	rejected	2026-08-17	2026-09-03	hotmail	Workable	confirm:3 reject:1
@@ -1563,8 +1650,9 @@ Savant Bio		pending	2026-09-04	2026-09-04	hotmail	Greenhouse	confirm:1
 Saxon Global	AI Platform & Solution Lead / Expert Enterprise AI Engineer (Bay Area hybrid)	recruiter	2026-09-23	2026-09-23	hotmail	direct/other	recruiter:1
 SB Energy		pending	2026-08-06	2026-08-06	hotmail	Greenhouse	confirm:1
 SBT		pending	2026-07-14	2026-07-14	hotmail	LinkedIn	confirm:1 viewed:1
-Scale AI		pending	2026-07-18	2026-10-07	hotmail	Greenhouse	confirm:135
+Scale AI		pending	2026-07-18	2026-10-13	hotmail	Greenhouse	confirm:140
 scalr		pending	2026-09-30	2026-09-30	gmail	LinkedIn	confirm:2
+Schemata	Spatial Computing Research Engineer	pending	2026-10-16	2026-10-16	hotmail	Ashby	confirm:2
 Scout AI		pending	2026-08-30	2026-09-21	hotmail	Greenhouse	confirm:5
 Scout Motors	Lead, AI Engineering	pending	2026-09-25	2026-09-25	hotmail	direct/other	confirm:1
 Scout Motors	Senior Manager, Software Engineering - Order Management Platform	pending	2026-10-02	2026-10-02	hotmail	direct/other	confirm:1
@@ -1586,8 +1674,10 @@ Sentaur (company unclear)	Staff Machine Learning Engineer, AI	pending	2026-09-11
 Serko Ltd	Senior Software Engineer - Agentic AI Applications	pending	2026-09-21	2026-09-21	hotmail	Workable	confirm:2
 Sesame		pending	2026-07-27	2026-07-27	hotmail	Ashby	confirm:2
 Sesame AI	Research Engineer	rejected	2026-08-04	2026-08-04	hotmail	Ashby	reject:1
+Seyond		pending	2026-10-16	2026-10-16	hotmail	Greenhouse	confirm:1
 SGS Consulting	Software Engineer (remote, social media/tech client)	recruiter	2026-09-28	2026-09-28	hotmail	direct/other	recruiter:1
 Sharebite		pending	2026-09-05	2026-09-18	hotmail	Greenhouse	confirm:2
+Shield AI		positive	2026-10-15	2026-10-15	hotmail	direct/other	interview:1
 Shifamed		pending	2026-08-17	2026-08-17	hotmail	direct/other	confirm:1
 Shift Technology	Data Scientist/ Engineer (Hybrid -Boston)	rejected	2026-09-27	2026-09-27	hotmail	direct/other	reject:2
 Sia		pending	2026-10-01	2026-10-01	hotmail	direct/other	confirm:1
@@ -1596,7 +1686,7 @@ Sibitalent (Dice)	Principal Engineer (AI Inference Platform & Silicon Characteri
 Sibitalent (Dice)	Senior Manager (Embedded Linux/Embedded Systems) - Safety & Multimedia	recruiter	2026-09-25	2026-09-25	gmail	direct/other	recruiter:1
 Sift Healthcare		pending	2026-10-05	2026-10-05	hotmail	Greenhouse	confirm:1
 Sigma Computing		pending	2026-08-30	2026-10-05	hotmail	Greenhouse	confirm:5
-Sigma Computing	Staff AI/ML Engineer	rejected	2026-09-21	2026-09-21	hotmail	Greenhouse	reject:1
+Sigma Computing	Staff AI/ML Engineer	rejected	2026-09-21	2026-10-14	hotmail	Greenhouse	reject:2
 Sila		rejected	2026-10-04	2026-10-04	hotmail	direct/other	reject:1
 Sila Nanotechnologies		pending	2026-07-21	2026-07-24	hotmail	direct/other	confirm:2
 Silvus Technologies	Machine Learning Engineer	rejected	2026-09-25	2026-10-01	hotmail	Greenhouse+direct/other	confirm:1 reject:1
@@ -1608,18 +1698,20 @@ SimpliSafe	Staff Machine Learning Engineer, ML Infrastructure	rejected	2026-08-3
 Siri Info Solutions	Admin Assistant (full-time)	recruiter	2026-10-07	2026-10-07	gmail	direct/other	recruiter:2
 Siri Info Solutions	Senior Oracle Analytics Cloud Report & Dashboard Developer	recruiter	2026-10-08	2026-10-08	gmail	direct/other	recruiter:1
 Siri Info Solutions	Technical Lead (Atlanta GA, remote, FT $160K)	recruiter	2026-10-08	2026-10-08	gmail	direct/other	recruiter:1
+Siri InfoSolutions (client)	Automation and Tooling - System Level Test	recruiter	2026-10-13	2026-10-13	gmail	direct/other	recruiter:1
 SK hynix America		pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:14
 SK hynix memory solutions America Inc.	Sr. Staff AI Engineer - On-Prem AI Infrastructure & Agentic Systems	pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:1
-Skild AI		pending	2026-07-15	2026-09-11	hotmail	Greenhouse+LinkedIn	confirm:16
+Skild AI		pending	2026-07-15	2026-10-13	hotmail	Greenhouse+LinkedIn	confirm:18
 Skild AI	Computer Vision AI & ML Engineer	positive	2026-07-30	2026-07-30	hotmail	Greenhouse	interview:1
 Skydio		pending	2026-07-24	2026-07-24	hotmail	direct/other	confirm:3
 Skydio	Autonomy Engineer - ML & DL Infrastructure	pending	2026-08-20	2026-08-20	hotmail	direct/other	confirm:1
+Skydio	Senior Autonomy Engineer - Computer Vision	pending	2026-10-15	2026-10-15	hotmail	direct/other	confirm:1
 Skydio	Senior Autonomy Engineer, Data Curation	pending	2026-08-13	2026-08-13	hotmail	direct/other	confirm:1
 Skydio	Software Engineer - Simulation & Robotics Engineer	pending	2026-08-28	2026-08-28	hotmail	direct/other	confirm:1
 SmarterDx		pending	2026-08-30	2026-09-21	hotmail	Greenhouse	confirm:12
 SmarterDx	Staff Software Engineer, Machine Learning	rejected	2026-09-01	2026-09-01	hotmail	Greenhouse	reject:1
 Smartsheet		pending	2026-09-02	2026-09-17	hotmail	Greenhouse	confirm:5
-Snap Inc.		rejected	2026-08-31	2026-10-05	gmail	Workday	reject:2
+Snap Inc.		rejected	2026-08-31	2026-10-15	gmail	Workday	reject:4
 Snap Inc.	Computational Imaging Engineer	pending	2026-10-06	2026-10-06	gmail	Workday	confirm:1
 Snap Inc.	Data Scientist, Level 3	pending	2026-10-06	2026-10-06	gmail	Workday	confirm:1
 Snap Inc.	Data Scientist, Level 4	pending	2026-10-06	2026-10-06	gmail	Workday	confirm:1
@@ -1670,8 +1762,9 @@ Snorkel AI	Research Scientist	pending	2026-08-26	2026-10-05	hotmail	Greenhouse	c
 Snorkel AI	Research Scientist - Frontier Benchmarks	pending	2026-08-30	2026-08-30	hotmail	Greenhouse	confirm:2
 Snorkel AI	Senior / Staff AI Engineer	rejected	2026-09-15	2026-10-06	hotmail	Greenhouse	confirm:8 reject:3
 Snorkel AI	Senior / Staff Software Engineer - AI / ML	rejected	2026-10-02	2026-10-06	hotmail	Greenhouse	confirm:3 reject:2
-Snorkel AI	Staff Applied AI Engineer - Enterprise AI Solutions	pending	2026-10-07	2026-10-07	hotmail	Greenhouse	confirm:4
+Snorkel AI	Staff Applied AI Engineer - Enterprise AI Solutions	rejected	2026-10-07	2026-10-14	hotmail	Greenhouse	confirm:4 reject:1
 Snorkel AI	Staff Applied AI Engineer - Pre-Sales	rejected	2026-09-04	2026-09-22	hotmail	Greenhouse	confirm:3 reject:1
+Snowflake	Senior/Staff System Research Engineer - LLM Inference Optimization	pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:1
 SoFi	Principal Engineer, Digital Identity	pending	2026-09-15	2026-09-15	hotmail	Greenhouse	confirm:1
 SoFi	Staff Security Detection Engineer, Machine Learning	pending	2026-09-15	2026-09-15	hotmail	Greenhouse	confirm:1
 Sonatus	Senior Staff AI Engineer	pending	2026-09-02	2026-09-02	hotmail	Greenhouse	confirm:4
@@ -1689,7 +1782,7 @@ SPECTRAFORCE		pending	2026-07-14	2026-07-14	hotmail	LinkedIn	confirm:1
 Spotter		pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:1
 SR2 | Socially Responsible Recruitment | Certified B Corporation™		pending	2026-07-14	2026-07-15	hotmail	LinkedIn	viewed:1 confirm:1
 SSI (Safe Superintelligence)		pending	2026-07-26	2026-07-26	hotmail	Ashby	confirm:1
-Stability AI		pending	2026-07-26	2026-10-07	hotmail	Greenhouse	confirm:6
+Stability AI		pending	2026-07-26	2026-10-12	hotmail	Greenhouse	confirm:7
 Stack AV		rejected	2026-07-31	2026-09-25	hotmail	Greenhouse	reject:4 confirm:2
 Stack AV	Full-Stack Software Engineer, Machine Learning Platform	pending	2026-09-20	2026-09-20	hotmail	Greenhouse	confirm:1
 Stack AV	Senior Compute Platform Engineer	pending	2026-07-28	2026-07-28	hotmail	Greenhouse	confirm:1
@@ -1702,6 +1795,7 @@ Stack AV	Staff ML Engineer, Dynamic World Perception	pending	2026-07-28	2026-09-
 Stack AV	Staff Software Engineer, ML Acceleration	pending	2026-07-28	2026-07-28	hotmail	Greenhouse	confirm:1
 Stack AV	Staff Software Engineer, ML Platform	pending	2026-07-28	2026-07-28	hotmail	Greenhouse	confirm:1
 Stack AV	Staff Technical Program Manager	pending	2026-07-28	2026-07-28	hotmail	Greenhouse	confirm:1
+Standard Bots	Staff AI Research Engineer	pending	2026-10-15	2026-10-15	hotmail	Ashby	confirm:1
 Stanley Black & Decker	Principal Engineering AI Solution Architect	positive	2026-09-14	2026-09-14	hotmail	direct/other	interview:3
 Starburst	Applied AI Research Engineer	pending	2026-09-19	2026-09-19	hotmail	Greenhouse	confirm:1
 Stealth (via sudishashorts)	Founding AI Engineer	recruiter	2026-08-11	2026-08-11	hotmail	direct/other	recruiter:1
@@ -1736,6 +1830,9 @@ Superserve Inc.		pending	2026-10-06	2026-10-06	hotmail	Greenhouse	confirm:1
 Sustainable Talent		pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:3
 Swayable		pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:2
 Syncere		pending	2026-07-15	2026-07-15	hotmail	LinkedIn	confirm:1
+Synchrony Corp (client)	AI Developer - Copilot Studio	recruiter	2026-10-14	2026-10-14	gmail	direct/other	recruiter:1
+Synchrony Corp (client)	Kubernetes Engineer	recruiter	2026-10-13	2026-10-13	gmail	direct/other	recruiter:1
+Syndio	Staff Software Engineer, AI Platform (US - Remote or Calgary)	rejected	2026-10-15	2026-10-15	hotmail	direct/other	reject:1
 Synopsys	AI Executive Director	pending	2026-09-29	2026-09-29	hotmail	direct/other	confirm:1
 Synopsys	Application Engineering Architect- Enterprise Software/FA&D	pending	2026-09-29	2026-09-29	hotmail	direct/other	confirm:1
 Synopsys	Application Engineering, Sr Staff Engineer - Runset Development	pending	2026-09-29	2026-09-29	hotmail	direct/other	confirm:1
@@ -1760,7 +1857,7 @@ Synopsys	Sr. Director Applications and Product Engineering	pending	2026-09-29	20
 Synopsys	Staff Software Engineer	pending	2026-09-29	2026-09-29	hotmail	direct/other	confirm:1
 Synopsys	Staff Software Engineer (Req 18106)	positive	2026-10-02	2026-10-02	hotmail	direct/other	interview:1
 Synthesia		positive	2026-07-26	2026-08-13	hotmail	Ashby	confirm:1 interview:1
-Synthesia	Principal Applied Research Engineer	pending	2026-07-26	2026-07-26	hotmail	Ashby	confirm:4
+Synthesia	Principal Applied Research Engineer	pending	2026-07-26	2026-10-15	hotmail	Ashby	confirm:6
 Synthesia	Staff Research Engineer - Multimodal Generative Modelling	rejected	2026-08-13	2026-08-13	hotmail	Ashby	reject:1
 Tactacam	Backend Developer, AWS	pending	2026-10-05	2026-10-05	hotmail	Greenhouse	confirm:1
 talentpluto	Forward Deployed Engineer	pending	2026-08-25	2026-08-25	hotmail	Workable	confirm:1
@@ -1769,6 +1866,7 @@ talentpluto	RL Environment Software Engineer	pending	2026-09-04	2026-09-09	hotma
 Talkspace	Senior AI Engineer	rejected	2026-10-05	2026-10-09	hotmail	Greenhouse	confirm:4 reject:1
 Tanisha Systems	Senior QNX Android Developer (Hillsboro OR onsite)	recruiter	2026-09-02	2026-09-02	hotmail	direct/other	recruiter:1
 Taskrabbit		pending	2026-08-30	2026-09-15	hotmail	Greenhouse	confirm:4
+Tatari		pending	2026-10-16	2026-10-16	hotmail	Greenhouse	confirm:1
 Tavus	AI Researcher (Multimodal Audio/Video Generation)	pending	2026-08-05	2026-08-05	hotmail	Ashby	confirm:1
 Tavus	Conversational Modelling Research Engineer	pending	2026-08-05	2026-08-05	hotmail	Ashby	confirm:1
 Tavus	Data Engineer /ML Ops	pending	2026-08-05	2026-08-05	hotmail	Ashby	confirm:1
@@ -1777,16 +1875,18 @@ Tavus	Senior Software Engineer (CVI)	pending	2026-08-05	2026-08-05	hotmail	Ashby
 Tavus	Software Engineer, Infrastructure	pending	2026-08-05	2026-08-05	hotmail	Ashby	confirm:1
 TaxBit	Agentic AI Engineer	pending	2026-09-02	2026-09-02	hotmail	Greenhouse	confirm:1
 Tebra	Staff Software Engineer, AI Engineering	pending	2026-09-05	2026-10-06	hotmail	Greenhouse	confirm:6
+TechM (via Alliance IT)	Lead FDE Applied AI	recruiter	2026-10-13	2026-10-13	other	direct/other	recruiter:1
 Tekmetric		pending	2026-09-27	2026-09-27	hotmail	Greenhouse	confirm:1
 Telnyx		pending	2026-10-02	2026-10-02	hotmail	Greenhouse	confirm:1
 Temus		pending	2026-09-15	2026-09-15	hotmail	Greenhouse	confirm:1
 Tensordyne (formerly Recogni)		pending	2026-08-26	2026-08-26	hotmail	Greenhouse	confirm:1
 TensorOps		rejected	2026-09-27	2026-09-27	hotmail	Greenhouse	reject:1
-Tenstorrent		pending	2026-07-26	2026-09-11	hotmail	Greenhouse	confirm:6
+Tenstorrent		pending	2026-07-26	2026-10-12	hotmail	Greenhouse	confirm:7
 Tenstorrent	Machine Learning Research Engineer (LLMs & AI Systems)	rejected	2026-09-01	2026-09-01	hotmail	Greenhouse	reject:1
 Tenstorrent	Sr Software Engineer, AI Compiler	rejected	2026-09-04	2026-09-04	hotmail	Greenhouse	reject:1
 Tera AI		pending	2026-07-15	2026-09-29	gmail+hotmail	LinkedIn	confirm:2
-Tesla		positive	2026-09-29	2026-10-11	hotmail	direct/other	interview:6
+Teradyne	Senior AI Engineer - Data & MLOps	rejected	2026-10-16	2026-10-16	hotmail	SuccessFactors	reject:1
+Tesla		positive	2026-09-29	2026-10-13	hotmail	direct/other	interview:7
 Tesla	Failure Analysis Engineering Technician, Cell	rejected	2026-07-15	2026-07-15	hotmail	direct/other	reject:1
 Tesla	Fullstack Software Engineer, Machine Learning Platform, AI Infrastructure	rejected	2026-07-16	2026-07-16	hotmail	direct/other	reject:1
 Tesla	Machine Learning Engineer, Model Quantization, Tesla AI	rejected	2026-07-16	2026-07-16	hotmail	direct/other	reject:1
@@ -1806,7 +1906,7 @@ Tiger Analytics	Lead AI Engineer	pending	2026-08-24	2026-08-24	hotmail	Workable	
 TikTok		pending	2026-07-14	2026-07-15	hotmail	LinkedIn+direct/other	confirm:3
 TikTok USDS Joint Venture		pending	2026-07-14	2026-07-14	hotmail	LinkedIn	confirm:1
 Tiposi	AI/ML Engineer	positive	2026-09-04	2026-10-07	hotmail	direct/other	recruiter:1 interview:1
-Together AI		pending	2026-07-21	2026-10-05	hotmail	Greenhouse	confirm:30
+Together AI		pending	2026-07-21	2026-10-12	hotmail	Greenhouse	confirm:31
 Together AI	Systems Research Engineer, GPU Programming	rejected	2026-07-30	2026-07-30	hotmail	Greenhouse	reject:1
 Tomorrow.io	Machine Learning Scientist	pending	2026-08-30	2026-08-30	hotmail	Greenhouse	confirm:2
 Top1Talent / Cosmon		rejected	2026-10-09	2026-10-09	hotmail	direct/other	reject:1
@@ -1825,7 +1925,7 @@ Tubi	Machine Learning Engineer (Staff & Principal)	pending	2026-08-29	2026-09-16
 Turing	Staff Research Engineer - Frontier AI, RL & Evaluation	recruiter	2026-10-06	2026-10-06	gmail	direct/other	recruiter:1
 Turing (via Gramian Consultancy)	Staff Research Engineer - Frontier AI, RL & Evaluation	recruiter	2026-10-06	2026-10-06	gmail	direct/other	recruiter:1
 Twin Health	Senior AI Engineer	rejected	2026-09-17	2026-09-23	hotmail	Greenhouse	reject:1 confirm:1
-Twin Health	Senior AI Platform Engineer	pending	2026-09-17	2026-09-17	hotmail	Greenhouse	confirm:1
+Twin Health	Senior AI Platform Engineer	rejected	2026-09-17	2026-10-13	hotmail	Greenhouse	confirm:1 reject:1
 Twin Health	Staff AI Engineer	rejected	2026-09-05	2026-10-08	hotmail	Greenhouse	confirm:4 reject:3
 Twitch		pending	2026-09-29	2026-09-29	hotmail	direct/other	confirm:1
 Tykhe Inc		pending	2026-07-15	2026-07-15	hotmail	LinkedIn	confirm:1
@@ -1849,6 +1949,7 @@ Universal Robots (Teradyne Robotics)	Forward Deployed Engineer - AI Partnerships
 Unknown (agency)	Product Support SME - VxWorks/Wind River/RTOS	recruiter	2026-09-09	2026-09-09	gmail	direct/other	recruiter:1
 Unusual		pending	2026-09-29	2026-09-29	gmail	LinkedIn	confirm:1
 US Tech Solutions	Software Engineer V (remote)	recruiter	2026-08-26	2026-08-26	hotmail	direct/other	recruiter:1
+UVeye	Senior Deep Learning Engineer	pending	2026-10-15	2026-10-15	hotmail	direct/other	confirm:1
 V-Soft Consulting Group		pending	2026-09-30	2026-09-30	gmail	LinkedIn	confirm:1
 Vailexa	Power Platform Specialist (Santa Clara CA)	recruiter	2026-09-09	2026-09-09	hotmail	direct/other	recruiter:2
 Valo Health		pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:1
@@ -1856,6 +1957,7 @@ Valo Health	Staff Data Scientist, Machine Learning in Epidemiology and Patient D
 Vannevar		pending	2026-08-30	2026-09-05	hotmail	Greenhouse	confirm:12
 Vannevar	Machine Learning Engineer	pending	2026-09-06	2026-09-15	hotmail	Greenhouse	confirm:2
 VantageScore		rejected	2026-09-11	2026-09-24	hotmail	Greenhouse	confirm:2 reject:2
+Varjo	Computer Vision Engineer, C++	pending	2026-10-12	2026-10-13	hotmail	Workable	confirm:3
 Varjo	Computer Vision Engineer, Eye Tracking	positive	2026-08-06	2026-09-09	hotmail	Workable	confirm:1 interview:2
 Varjo	Open Application	pending	2026-08-06	2026-08-28	hotmail	Workable	confirm:5
 Velsera	Principal AI Engineer	pending	2026-10-02	2026-10-02	hotmail	Workable	confirm:2
@@ -1882,7 +1984,7 @@ Verkada	Senior Embedded Linux Engineer - Connectivity	pending	2026-09-15	2026-09
 Verkada	Senior Software Engineer - Alarms	pending	2026-09-16	2026-09-16	hotmail	Greenhouse	confirm:1
 Verkada	Senior Software Engineer - C++	pending	2026-09-14	2026-09-16	hotmail	Greenhouse	confirm:4
 Verkada	Senior Software Engineer - Camera Platform	pending	2026-09-11	2026-09-16	hotmail	Greenhouse	confirm:4
-Verkada	Senior Software Engineer - Computer Vision	rejected	2026-08-13	2026-09-16	hotmail	Greenhouse	confirm:8 reject:2
+Verkada	Senior Software Engineer - Computer Vision	rejected	2026-08-13	2026-10-15	hotmail	Greenhouse	confirm:9 reject:2
 Verkada	Senior Software Engineer - Native Application	pending	2026-09-16	2026-09-16	hotmail	Greenhouse	confirm:1
 Verkada	Senior Software Engineer – Storage Systems	pending	2026-09-16	2026-09-16	hotmail	Greenhouse	confirm:1
 Verkada	Senior Software Engineer, Business Systems	pending	2026-09-16	2026-09-16	hotmail	Greenhouse	confirm:1
@@ -1928,10 +2030,12 @@ Waymo	Senior/Staff ML Engineer, 3D/4D World Modeling, Simulation	pending	2026-07
 Waymo	Senior/Staff ML Engineer, Simulation Realism	positive	2026-07-15	2026-07-17	gmail+hotmail	direct/other	recruiter:1 interview:3
 Waymo	Staff ML Engineer, Perception Research	rejected	2026-08-15	2026-08-16	gmail	direct/other	confirm:1 reject:1
 Waymo	Staff Technical Lead Manager, Simulation, Machine Learning	pending	2026-07-14	2026-07-14	gmail	direct/other	confirm:3
-Wayve		rejected	2026-07-26	2026-09-05	hotmail	Greenhouse+direct/other	confirm:6 reject:1
+Wayve		rejected	2026-07-26	2026-10-16	hotmail	Ashby+Greenhouse+direct/other	confirm:27 reject:1
+Wayve	Principal Engineer, Compute	rejected	2026-10-15	2026-10-15	hotmail	Ashby	reject:1
 Wayve	Principal Machine Learning Engineer, Geometric Vision	pending	2026-08-24	2026-08-28	hotmail	Ashby+direct/other	confirm:2
 Wayve	Principal Roboticist, Robot Foundation Model	rejected	2026-09-23	2026-09-23	hotmail	Greenhouse+direct/other	reject:1 confirm:1
 Wayve	Principle Engineer, 3D Reconstruction	pending	2026-08-17	2026-08-28	hotmail	Ashby+direct/other	confirm:2
+Wayve	Senior Machine Learning Engineer, Search & Index	rejected	2026-10-13	2026-10-13	hotmail	Ashby	reject:1
 Wayve	Staff Machine Learning Engineer, AV Core	pending	2026-08-17	2026-08-28	hotmail	Ashby+direct/other	confirm:3
 webAI	Staff Machine Learning Engineer	pending	2026-09-11	2026-10-04	hotmail	Ashby	confirm:2
 Weekday AI	Machine Learning Engineer - Model Evaluation & Experimentation	pending	2026-09-27	2026-09-27	hotmail	Workable	confirm:1
@@ -1956,36 +2060,38 @@ Wizard AI	AI Applied Scientist	rejected	2026-09-08	2026-09-08	hotmail	Greenhouse
 Workato	Software Engineer - AI Agent Platforms	rejected	2026-09-15	2026-10-05	hotmail	Greenhouse	confirm:1 reject:1
 Workday	Machine Learning Engineer	pending	2026-09-18	2026-09-18	gmail	Workday	confirm:1
 Workhelix		pending	2026-10-06	2026-10-06	hotmail	Greenhouse	confirm:2
-World Labs		pending	2026-07-25	2026-09-05	hotmail	Greenhouse	confirm:28
+World Labs		pending	2026-07-25	2026-10-12	hotmail	Ashby+Greenhouse	confirm:35
 World Labs	Pipeline Engineer (Graphics/3D)	rejected	2026-08-27	2026-08-27	hotmail	Greenhouse	reject:1
 World Labs	Research Engineer / Scientist (SLAM)	rejected	2026-08-27	2026-08-27	hotmail	Greenhouse	reject:1
 Wrynx	Senior / Staff Machine Learning Engineer - AI Research	positive	2026-07-28	2026-07-28	hotmail	direct/other	interview:3
 Xaira Therapeutics		pending	2026-09-15	2026-10-05	hotmail	Greenhouse	confirm:5
+XDOF	Member of Technical Staff, Vision / Language	pending	2026-10-13	2026-10-13	hotmail	Ashby	confirm:1
 Xometry	Staff Machine Learning Engineer - Generative AI	pending	2026-08-29	2026-10-05	hotmail	Greenhouse	confirm:14
 Xoriant	GNSS Software Engineer (San Jose onsite)	recruiter	2026-09-10	2026-09-10	hotmail	direct/other	recruiter:1
 XPENG		pending	2026-09-19	2026-09-19	hotmail	Greenhouse	confirm:1
-XPENG	2027 Campus Recruiting Robotics Center Full-Time Position	pending	2026-08-17	2026-08-17	hotmail	Greenhouse	confirm:1
+XPENG	2027 Campus Recruiting Robotics Center Full-Time Position	rejected	2026-08-17	2026-10-13	hotmail	Greenhouse+direct/other	confirm:1 reject:1
 XPENG	Senior AI Data Infrastructure/Pipeline Engineer	rejected	2026-08-30	2026-09-30	hotmail	Greenhouse+direct/other	confirm:4 reject:1
 XPENG	Senior Data Infrastructure Engineer	pending	2026-08-30	2026-08-30	hotmail	Greenhouse	confirm:2
 XPENG	Senior Machine Learning Data Curation Engineer	pending	2026-08-30	2026-09-02	hotmail	Greenhouse	confirm:3
-XPENG	Senior Machine Learning Engineer - AI Foundation	rejected	2026-08-28	2026-09-23	hotmail	Greenhouse+direct/other	confirm:6 reject:1
-XPENG	Senior Machine Learning Engineer - Foundation Model	rejected	2026-08-28	2026-10-05	hotmail	Greenhouse+direct/other	confirm:7 reject:1
-XPENG	Senior Machine Learning Engineer - LLM Quantization & Deployment	rejected	2026-08-30	2026-09-20	hotmail	Greenhouse+direct/other	confirm:5 reject:1
-XPENG	Senior Machine Learning Engineer – Predictive World Model	rejected	2026-08-26	2026-10-05	hotmail	Greenhouse+direct/other	confirm:13 reject:1
-XPENG	Senior Reinforcement Learning Engineer - Robotics	pending	2026-08-28	2026-10-05	hotmail	Greenhouse	confirm:3
+XPENG	Senior Machine Learning Engineer - AI Foundation	rejected	2026-08-28	2026-10-16	hotmail	Greenhouse+direct/other	confirm:7 reject:1
+XPENG	Senior Machine Learning Engineer - Foundation Model	rejected	2026-08-28	2026-10-16	hotmail	Greenhouse+direct/other	confirm:8 reject:1
+XPENG	Senior Machine Learning Engineer - LLM Quantization & Deployment	rejected	2026-08-30	2026-10-16	hotmail	Greenhouse+direct/other	confirm:6 reject:1
+XPENG	Senior Machine Learning Engineer – Predictive World Model	rejected	2026-08-26	2026-10-16	hotmail	Greenhouse+direct/other	confirm:15 reject:1
+XPENG	Senior Reinforcement Learning Engineer - Robotics	pending	2026-08-28	2026-10-16	hotmail	Greenhouse	confirm:4
 XPENG	Senior Software Engineer, Agentic Platforms	pending	2026-08-30	2026-09-03	hotmail	Greenhouse	confirm:2
 XPENG	Senior Staff AI Data Infrastructure/Pipeline Engineer	pending	2026-08-30	2026-09-03	hotmail	Greenhouse	confirm:2
 XPENG	Senior Staff AI Engineer	rejected	2026-08-28	2026-09-09	hotmail	Greenhouse+direct/other	confirm:6 reject:1
 XPENG	Senior Staff Digital World System Engineer	rejected	2026-08-17	2026-09-22	hotmail	Greenhouse+direct/other	confirm:4 reject:1
-XPENG	Senior Staff Machine Learning Engineer – Autonomous Driving Foundation Models	rejected	2026-08-17	2026-10-06	hotmail	Greenhouse+direct/other	confirm:17 reject:2
+XPENG	Senior Staff Machine Learning Engineer – Autonomous Driving Foundation Models	rejected	2026-08-17	2026-10-16	hotmail	Greenhouse+direct/other	confirm:20 reject:2
 XPENG	Senior Staff Physical AI Data Algorithm Engineer	rejected	2026-08-28	2026-09-22	hotmail	Greenhouse+direct/other	confirm:4 reject:1
 XPENG	Senior Staff Research Engineer – Reinforcement Learning for AI Agents	rejected	2026-08-28	2026-09-09	hotmail	Greenhouse+direct/other	confirm:4 reject:1
-XPENG	Staff Machine Learning Engineer	pending	2026-08-28	2026-10-05	hotmail	Greenhouse	confirm:16
+XPENG	Staff Machine Learning Engineer	pending	2026-08-28	2026-10-16	hotmail	Greenhouse	confirm:17
 XPENG	Staff Machine Learning Engineer - AI Foundation	rejected	2026-08-28	2026-09-18	hotmail	Greenhouse+direct/other	confirm:4 reject:1
-XPENG	Staff Machine Learning Engineer - Foundation Model	pending	2026-08-28	2026-10-05	hotmail	Greenhouse	confirm:4
-XPENG	Staff Machine Learning Engineer - LLM Quantization & Deployment	rejected	2026-08-30	2026-10-05	hotmail	Greenhouse+direct/other	confirm:5 reject:1
-XPENG	Staff Robotics Engineer / Tech Lead – Whole-Body Control & Robot Learning	rejected	2026-08-28	2026-09-18	hotmail	Greenhouse+direct/other	confirm:2 reject:1
+XPENG	Staff Machine Learning Engineer - Foundation Model	pending	2026-08-28	2026-10-16	hotmail	Greenhouse	confirm:5
+XPENG	Staff Machine Learning Engineer - LLM Quantization & Deployment	rejected	2026-08-30	2026-10-16	hotmail	Greenhouse+direct/other	confirm:6 reject:1
+XPENG	Staff Robotics Engineer / Tech Lead – Whole-Body Control & Robot Learning	rejected	2026-08-28	2026-10-16	hotmail	Greenhouse+direct/other	confirm:3 reject:1
 YipitData	Staff Software Engineer, AI	pending	2026-09-18	2026-09-18	hotmail	Greenhouse	confirm:1
+Yoodli AI Roleplays		pending	2026-10-16	2026-10-16	hotmail	Greenhouse	confirm:1
 You.com		pending	2026-09-04	2026-09-21	hotmail	Greenhouse	confirm:6
 ZenBusiness	Director of Engineering - Platform & Integrations	pending	2026-10-06	2026-10-06	hotmail	Greenhouse	confirm:1
 ZenOtis	AI Software Engineer (Fremont onsite, FT)	recruiter	2026-08-27	2026-08-27	hotmail	direct/other	recruiter:1
@@ -1993,10 +2099,12 @@ Zero RFI	Senior AI Research Engineer	positive	2026-08-24	2026-08-24	hotmail	dire
 Zeta Global	Principal AI/ML Engineer - AdTech	pending	2026-08-17	2026-08-17	hotmail	direct/other	confirm:1
 Zeta Global	Senior Engineering Manager - Platform Engineering	rejected	2026-09-15	2026-09-28	hotmail	direct/other	confirm:1 reject:1
 Zeta Global	Sr AI/ML Engineer	pending	2026-09-15	2026-09-20	hotmail	direct/other	confirm:2
+Zimmer Biomet		pending	2026-10-15	2026-10-15	hotmail	direct/other	confirm:1
 Zip		pending	2026-09-21	2026-09-21	hotmail	Greenhouse	confirm:1
 Zipline	Autonomy Droid Perception SWE - Offboard Systems	positive	2026-07-27	2026-07-30	hotmail	direct/other	interview:3
 ZipRecruiter (employer)	Senior Software Engineer, Machine Learning	pending	2026-09-05	2026-09-05	gmail	direct/other	confirm:2
 Zone 5 Technologies		pending	2026-09-25	2026-09-25	hotmail	Greenhouse	confirm:10
+Zone 5 Technologies	Platform Engineer III	rejected	2026-10-14	2026-10-14	hotmail	Greenhouse	reject:1
 Zoox	Machine Learning Engineer - 3D Sensor Simulation	pending	2026-07-14	2026-07-14	hotmail	Lever	confirm:1
 Zoox	Machine Learning Engineer - Simulation Framework	pending	2026-07-14	2026-07-14	hotmail	Lever	confirm:1
 Zoox	Machine Learning Engineer, Simulation Scenario Generation	pending	2026-07-14	2026-07-14	hotmail	Lever	confirm:1
