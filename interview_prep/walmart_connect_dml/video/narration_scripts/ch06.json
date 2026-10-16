@@ -1,0 +1,196 @@
+{
+  "chapter": 6,
+  "chapter_title": "Model-as-judge: automated evaluation of generated creative",
+  "slides": [
+    {
+      "layout": "title",
+      "title": "Model-as-judge evaluation",
+      "subtitle": "Automated evaluation of generated creative: the most important chapter of the role",
+      "narration": "Chapter six, and the most important one for this role. The job description names it twice: models judging model output, calibrated against human and advertiser preference, with drift detection and reliability at production scale. Expect at least one deep dive here. It is also where your published negative result becomes your strongest story."
+    },
+    {
+      "layout": "quote",
+      "title": "Say it in the interview",
+      "quote": "I'd build a judge stack, not a single judge: cheap deterministic checks, then specialists, then a VLM rubric judge. Every score is calibrated to P(human approves). A risk-based router auto-approves only above target precision. I monitor drift, and I never let the generator optimize against the gatekeeper.",
+      "narration": "I'd build a judge stack, not a single judge. Cheap deterministic checks, then specialists, then a VLM, a vision-language model, scoring against a rubric. Every score is calibrated to the probability a human approves. A risk-based router auto-approves only above target precision. I monitor drift, and I never let the generator optimize against the gatekeeper. Open any evaluation question with this, then let them pick a box to drill into."
+    },
+    {
+      "layout": "bullets",
+      "title": "Why evaluation is the bottleneck",
+      "bullets": [
+        "Generation is cheap; human review is not",
+        "Volume grows combinatorially: brands × SKUs × placements × variants",
+        "Judge precision at the auto-approve threshold sets what you can ship",
+        "Trust asymmetry: one bad claim outweighs a thousand good images",
+        "Evaluation plays three roles: gatekeeper, coach, scoreboard"
+      ],
+      "narration": "Start with why. Generation is cheap. Human review is not. Picture thousands of brands, times millions of SKUs, the individual catalog products, times dozens of placements and variants. Creative volume grows combinatorially, while review capacity grows linearly. So here's the key idea. Your judge's precision at the auto-approve threshold decides how much generated creative you can actually ship. Next, trust is asymmetric. One hallucinated claim or distorted logo shown to a national brand costs more than a thousand good images earn. That asymmetry, not raw accuracy, should set your operating point. Finally, evaluation plays three roles at once: gatekeeper, coach for the generator, and scoreboard. Keep them separate. We return to why at the end."
+    },
+    {
+      "layout": "two_col",
+      "title": "Failure modes: gates versus objectives",
+      "left_label": "Gates: veto, maximize failure recall",
+      "left": [
+        "Product fidelity: morphed, wrong variant, garbled label",
+        "Hallucinated claims, wrong price, invented discount",
+        "Policy and safety, regulated categories",
+        "IP: competitor logos, celebrity likeness",
+        "Severe distortion: melted geometry, extra fingers"
+      ],
+      "right_label": "Objectives: rank, optimize, A/B test",
+      "right": [
+        "Aesthetic appeal, no generic \"AI look\"",
+        "Relevance: scene fits the product",
+        "Brand style and tone preference",
+        "Performance potential: predicted CTR"
+      ],
+      "narration": "Before building any judge, write a failure-mode catalog. Every dimension gets an owner, a detector, a golden set and a target. On the left are the critical dimensions. Product fidelity, like a morphed product or a garbled label. Hallucinated claims and wrong prices. Policy and safety. Intellectual property. And severe distortion. On the right are the softer ones: appeal, scene fit, brand style, and predicted click-through rate, or CTR. Here's the Distinguished-level point. Quality is multi-dimensional, with different loss functions. Gates are vetoes, tuned for recall of failures. Objectives are ranked, optimized and A B tested. Never collapse them into one score for gating. A beautiful image that misrepresents the product must still fail."
+    },
+    {
+      "layout": "diagram",
+      "title": "The judge stack: a cascade by cost",
+      "diagram": 15,
+      "callouts": [
+        "Layer 0 deterministic, ms · Layer 1 specialists, tens of ms",
+        "Layer 2 VLM rubric judge, seconds, only for survivors",
+        "Hard fails short-circuit to reject and regenerate"
+      ],
+      "narration": "Here is the judge stack, Diagram fifteen in your packet. Read it from the top. The candidate creative arrives with its SKU, brand kit, placement and intended copy. Layer zero is deterministic and costs milliseconds. It checks format, safe zones, and text contrast against WCAG, the web accessibility guidelines. An OCR diff, using optical character recognition, confirms the rendered text matches the approved copy exactly. Then product fidelity against the catalog image, and logo integrity. Any hard fail goes straight to reject and regenerate. Layer one is specialist detectors, tens of milliseconds each. They cover artifacts, policy, trademarks, and claim NLI, natural language inference against catalog attributes. Only survivors reach layer two, the VLM judge, which takes seconds. It scores what rules can't, like brand fit, product prominence and copy-image coherence. It runs pairwise comparisons with position swap, and writes a structured rationale. This is the funnel logic of ad serving from chapter four, applied to quality."
+    },
+    {
+      "layout": "diagram",
+      "title": "Calibration, routing and the feedback loops",
+      "diagram": 15,
+      "callouts": [
+        "Calibration: raw scores → P(human approves) per segment",
+        "Random audit of auto-approved = your false-approval rate",
+        "Drift tightens thresholds and sends more to humans"
+      ],
+      "narration": "Now the bottom half of the same picture. Judge scores flow into the calibration layer, the key Distinguished-level idea. Raw scores are not probabilities. So you fit a mapping, isotonic or Platt, from judge outputs to the probability a human approves, per category and placement. Now auto-approve above point nine seven has a measurable false-approval rate. Next comes the router, with cost-asymmetric thresholds. High probability and no flags, auto-approve. The middle band goes to human review, plus active-learning picks that teach the judge the most. Low probability means reject and regenerate with the critique. Now follow the dotted lines. A random audit sample of auto-approved items goes back to humans. Without it, you cannot estimate your false-approval rate, so it's non-negotiable. Every human decision lands in the label store, which drives weekly recalibration, judge fine-tuning and golden sets. Finally, drift monitors watch approval rates, score shifts and kappa by segment. On drift, thresholds tighten automatically, sending more to humans."
+    },
+    {
+      "layout": "two_col",
+      "title": "The VLM judge: rubric design and biases",
+      "left_label": "Design the rubric",
+      "left": [
+        "One concrete question per dimension",
+        "Binary checks over vague 1–5 scales",
+        "Reference-based: catalog image, attributes, brand kit",
+        "Evidence first, then verdict, as constrained JSON",
+        "Score = log-prob of the \"yes\" token"
+      ],
+      "right_label": "Bias → defense",
+      "right": [
+        "Position bias → judge both orders, average",
+        "Self-preference → different model family",
+        "Aesthetic halo → fidelity stays with specialists",
+        "Low-res blindness → native-resolution crops",
+        "Injection via image text → treat OCR as data"
+      ],
+      "narration": "On the left, rubric design. Ask one concrete question per dimension. Not, is this a good ad, but, is the packaging text identical to the reference, quoting any differences. Binary checks calibrate better than one-to-five scales. Always pass references: the catalog image, attributes and brand kit. Ask for evidence first, then the verdict, as constrained JSON. Score with the log-probability of the yes token, which is continuous and calibratable. On the right, biases and defenses. Position bias: judge both orders. Self-preference: use a different model family than the generator. Aesthetic halo: leave fidelity to specialists. Low-resolution blindness: crop text and product at native resolution. Prompt injection through image text: treat OCR output as data."
+    },
+    {
+      "layout": "bullets",
+      "title": "Specialist detectors: where your CV depth shines",
+      "bullets": [
+        "Product fidelity in the mask: DINO/CLIP sim, LPIPS, SSIM, ΔE, OCR diff",
+        "Lock product pixels so the judge's job becomes easy",
+        "Artifact detector: patch heatmap, trained on synthetic corruptions",
+        "Composite boundary and shadow-direction consistency checks",
+        "Claims: NLI vs catalog; price rendered from live data",
+        "Policy: multimodal classifiers + category rules engine"
+      ],
+      "narration": "The most important single detector is product fidelity. Align the generated product to the catalog image, then compare inside the mask. Use DINO or CLIP patch similarity, LPIPS perceptual distance, structural similarity, color delta E, and an OCR diff of the packaging text. Better still, architect so the judge's job is easy. Composite the real product with its pixels locked, and fidelity reduces to checking the boundary. The artifact detector outputs a patch-level heatmap, trained on synthetic corruptions with known masks. That is your synthetic-data rig experience. Shadow-direction checks use your spherical-harmonics lighting work. Claims go through NLI against the catalog, and prices are rendered from live data. Policy uses classifiers plus a rules engine, tuned for recall."
+    },
+    {
+      "layout": "bullets",
+      "title": "Calibration to human and advertiser preference",
+      "bullets": [
+        "Three targets: reviewers, advertisers, shoppers; keep separate heads",
+        "Labels: guidelines, gold questions, stratified sampling with weights",
+        "Report judge–human κ next to human–human κ",
+        "Platt: stable on small data · Isotonic: needs thousands per segment",
+        "Segment-wise curves, shrunk toward the global curve",
+        "Check ECE, Brier, and precision at the auto-approve threshold"
+      ],
+      "narration": "Calibration is the core keyword. First, decide what you calibrate to. Reviewers are the gatekeeping target, advertisers the preference target, and shoppers the performance target. They disagree, so keep separate heads. Second, labels. Use rater guidelines, gold questions, and stratified sampling with recorded weights. Measure agreement with Cohen's kappa, which corrects for chance. A judge can't be expected to beat human-to-human agreement, so report both kappas side by side. Third, the method. Platt scaling is a logistic regression on the raw score, stable with little data. Isotonic regression is monotone and flexible, but needs thousands of labels per segment. Shrink small segments toward the global curve. Then check ECE, the expected calibration error, and precision at the threshold."
+    },
+    {
+      "layout": "formula",
+      "title": "Choosing the operating point",
+      "lines": [
+        "pick τ_seg so that  LCB_95( precision | p ≥ τ ) ≥ target",
+        "target ≈ 99% critical categories, 97% low-risk",
+        "approve iff  P(bad) × C_bad < C_review",
+        "value = coverage × volume × C_review − errors × C_bad"
+      ],
+      "note": "Use a one-sided Wilson lower bound on held-out labels. Costs come from policy, legal and the business.",
+      "narration": "For each segment, choose tau, the auto-approve threshold, so the precision of auto-approved items meets a target. Perhaps ninety-nine percent for critical categories, and ninety-seven for low-risk ones. Use a lower confidence bound, like a one-sided Wilson bound on held-out labels, because in-sample thresholds are optimistic. The third line is the expected-cost rule. Approve only if the probability of bad, times the cost of a bad approval, is below the cost of a review. Since C bad dwarfs C review, the threshold is conservative. Those costs come from policy, legal and the business."
+    },
+    {
+      "layout": "formula",
+      "title": "Bradley–Terry for pairwise preference",
+      "lines": [
+        "P(A ≻ B) = σ(s_A − s_B)",
+        "σ(x) = 1 / (1 + e^(−x))",
+        "s = latent preference score per creative, variant or style",
+        "Elo = streaming update of the same model"
+      ],
+      "note": "Pairwise beats absolute ratings for subjective dimensions. Show both orders to cancel position bias.",
+      "narration": "For subjective dimensions like appeal, pairwise comparisons beat absolute ratings. The Bradley-Terry model says the probability that A beats B equals sigma of s A minus s B. Sigma is the logistic function, and s is a latent preference score for each creative, variant or style. Elo is the streaming version of the same idea. Those scores become training data for reward models and for Diffusion DPO, direct preference optimization. It's drill one in your coding file. Always show each pair in both orders, so position bias cancels."
+    },
+    {
+      "layout": "two_col",
+      "title": "Drift detection and reliability at scale",
+      "left_label": "Detect drift",
+      "left": [
+        "Frozen inputs + current judge → judge drift",
+        "Frozen judge + fresh outputs → generator drift",
+        "PSI on judge scores: > 0.2 investigate",
+        "CUSUM on the audit overturn rate",
+        "Canary every model or prompt change"
+      ],
+      "right_label": "Stay reliable",
+      "right": [
+        "Fail closed: judge down → human or hold",
+        "Abstention is a valid output; router honors it",
+        "Pin and version generator, judge, rubric, calibration",
+        "Audit trail: every score, version, evidence"
+      ],
+      "narration": "Drift detection needs to sound concrete. Disentangle judge drift from generator drift with two controlled tests. Re-score a frozen set of creatives with the current judge. If identical inputs move, the judge drifted. Then score fresh outputs from frozen prompts with a frozen judge. If those move, the generator drifted. On live traffic, compute PSI, the population stability index. Below point one is stable. Above about point two, investigate. Run CUSUM, a cumulative-sum change detector, on the audit overturn rate, and canary every change in shadow. Now reliability. Fail closed: if the judge is down, route to humans, never to auto-approve. Let judges abstain. Pin and version everything. Keep an audit trail for disputes and regulators."
+    },
+    {
+      "layout": "two_col",
+      "title": "Goodhart: gatekeeper, coach and scoreboard",
+      "left_label": "Your negative result",
+      "left": [
+        "Reference-free temporal-quality metric for video",
+        "Flagged frozen, reversed and shuffled clips",
+        "As a training loss, the model gamed it",
+        "Published as a negative result"
+      ],
+      "right_label": "Defenses",
+      "right": [
+        "Reward model ≠ gatekeeper ≠ held-out scoreboard",
+        "KL penalty to the reference model",
+        "Optimize ensemble mean − λ·std",
+        "Prefer best-of-N with small N",
+        "Plot judge vs human score; divergence = alarm"
+      ],
+      "narration": "Goodhart's law says that when a measure becomes a target, it stops being a good measure. Use a judge as a reward, and the generator finds its blind spots. You lived this. Your reference-free temporal-quality metric for generated video correctly flagged frozen, reversed and shuffled clips. Used as a training loss, the model learned to satisfy the metric without real improvement, and you published that negative result. So separate three roles. The coach is the reward model. The gatekeeper is the production judges. The scoreboard is a held-out, human-validated set that nothing trains on. Add a KL, or Kullback-Leibler, penalty toward the reference model. Optimize ensemble mean minus lambda times spread. Divergence between judge and human scores is your alarm."
+    },
+    {
+      "layout": "bullets",
+      "title": "Evaluating the evaluator",
+      "bullets": [
+        "Recall on critical failures ≥ 99% on the golden set",
+        "Auto-approve precision 97–99% by risk tier, lower CI bound",
+        "Coverage: maximize the auto-decided share subject to the above",
+        "Judge–human κ within ~0.05 of human–human κ",
+        "ECE < 0.02–0.03; week-over-week score PSI < 0.1",
+        "Audit overturn rate daily with CUSUM; cost and p95 latency"
+      ],
+      "narration": "Close any deep dive by evaluating the evaluator. These are example targets, not Walmart numbers. Recall of at least ninety-nine percent on critical failures, for safety. Auto-approve precision of ninety-seven to ninety-nine percent by risk tier, as a lower confidence bound, for trust. Coverage maximized subject to both, for cost. Judge-human kappa within about point zero five of human-human kappa, which means the judge is human-level. ECE below about point zero three, and week-over-week score PSI below point one. The audit overturn rate tracked daily with CUSUM alerts. Then the headline: review cost per shipped asset down by half or more, while the audited critical-error rate stays below an agreed target."
+    }
+  ]
+}

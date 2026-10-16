@@ -1,0 +1,132 @@
+{
+  "chapter": 10,
+  "chapter_title": "System design walkthroughs",
+  "slides": [
+    {
+      "layout": "title",
+      "title": "System design walkthroughs",
+      "subtitle": "One framework, six creative designs",
+      "narration": "Chapter ten: system design walkthroughs. This is where the interview often spends the most time. You will learn one framework, then walk six creative designs. We go deepest on the first, generating Sponsored Brands and display creative from a product, because it touches every pillar of the role. The other five take a minute or two each."
+    },
+    {
+      "layout": "bullets",
+      "title": "The seven-step framework and time budget",
+      "bullets": [
+        "Clarify → Metrics → Architecture → Deep dive",
+        "Then Scale and cost → Eval and launch → Risks and roadmap",
+        "45 min: 5 clarify · 5 metrics · 8 architecture · 15 deep dive",
+        "Then 5 scale · 4 eval and launch · 3 roadmap",
+        "Always cover safety by design, the judge stack, the shared platform",
+        "Distinguished signals: tradeoffs, what not to build, real numbers"
+      ],
+      "narration": "Use the same seven steps every time, and say them out loud so the interviewer can follow. Clarify, metrics, architecture, deep dive, scale and cost, evaluation and launch, then risks and roadmap. For a forty-five minute design, budget about five minutes to clarify, five for metrics, eight for architecture, fifteen for the deep dive, five for scale, four for evaluation and launch, and three for the roadmap. Notice the deep dive gets a third of the time. For this role, always cover three more things: safety by design, the judge stack, and what becomes shared platform. And hit the Distinguished signals in every design. State tradeoffs explicitly, name what you would not build yet, do a back-of-envelope number, and end with the roadmap."
+    },
+    {
+      "layout": "two_col",
+      "title": "Design 1: SKU to Sponsored Brands and display creative",
+      "left_label": "Clarify (ask 3–4)",
+      "left": [
+        "National brands or long-tail sellers? Both",
+        "Formats: SB banner, IAB display, 9:16, CTV end card",
+        "Interactive 5–20 s preview, or overnight bulk?",
+        "Human review today? Approval SLA? Category policy?"
+      ],
+      "right_label": "Metrics",
+      "right": [
+        "Adoption: % advertisers using it, time-to-launch",
+        "Quality: critical-failure and overturn rates",
+        "Performance: CTR and CVR in within-ad-group tests",
+        "Efficiency: $ and GPU-s per shipped asset",
+        "Guardrails: no clickbait CTR, latency"
+      ],
+      "narration": "Design one: generate Sponsored Brands and display creative for any advertiser from a product SKU, the stock keeping unit, meaning one catalog item. Start with three or four questions. Is this for national brands with brand kits, or long-tail sellers with only catalog images? The answer is both, and the long tail benefits most. Which formats? Banners, IAB display sizes, vertical social, and connected TV end cards. Interactive or bulk? Interactive needs a preview in roughly five to twenty seconds, while bulk is throughput-optimized overnight. Then metrics, in groups. Adoption. Quality and safety, like critical-failure rate and human-review overturn rate. Performance, meaning CTR and CVR, the conversion rate, measured in randomized tests within an ad group. And efficiency: dollars and GPU-seconds per shipped asset, not per generated asset. Add guardrails, so CTR never comes from clickbait."
+    },
+    {
+      "layout": "diagram",
+      "title": "Design 1 architecture",
+      "diagram": 14,
+      "callouts": [
+        "Product pixels locked: segment, never regenerate",
+        "Text, logo and price rendered as vector type",
+        "Judge stack and router before the advertiser sees it"
+      ],
+      "narration": "Now draw the architecture, Diagram fourteen. Inputs on top: the SKU, the brand kit, the campaign goal, target placements, and an optional brief. The catalog fetch pulls hero images, title, attributes and approved claims. The catalog is the source of truth for pixels and words. A planner LLM, a large language model with structured output, turns the brief into several concepts. Then two branches. Visually, the product is segmented, matted, and locked. Diffusion generates the scene around it, with depth or edge control for perspective and a style adapter for the brand look. Harmonization matches lighting, shadows and color. For copy, an LLM grounded in catalog attributes writes headlines, and a claim checker traces every claim to an attribute. The composition engine places layers, logo and text deterministically, and per-placement adaptation makes every size. Then the judge stack, a router, advertiser approval, an asset store with lineage, and serving. Performance logs by creative ID feed the learning loop."
+    },
+    {
+      "layout": "bullets",
+      "title": "Why generate the background, compose deterministically",
+      "bullets": [
+        "Product pixels are real: fidelity by construction",
+        "Judges only verify the boundary, not the whole product",
+        "Text, logo and live price rendered by code, not diffusion",
+        "Exact brand fonts and exact WCAG contrast checks",
+        "Diffusion does what it is good at: scene, mood, lighting",
+        "Tradeoff: less magical integration, e.g. hands holding product"
+      ],
+      "narration": "If they ask you to go deep, start here. Why generate the background and compose deterministically? First, the product pixels are real, so fidelity holds by construction. The judges only need to verify the boundary. Second, text, logo and price are rendered by code. That means no garbled text, exact brand fonts, prices pulled live from pricing data, and exact contrast checks. WCAG, the web accessibility guidelines, asks for four point five to one contrast for normal text. Third, the generative model does what it is good at: scenes, mood, lighting and context. Be honest about the tradeoff. You lose some magical integration, like a hand holding the product. Handle that with harmonization now, and later with a stricter-judged tier of full-generative scenes."
+    },
+    {
+      "layout": "bullets",
+      "title": "Deep dives you can own",
+      "bullets": [
+        "Harmonization: estimate SH lighting, relight edges, contact shadow",
+        "Brand: reference adapters by default, LoRA only for top-spend brands",
+        "Palette enforced with ΔE color-distance checks",
+        "Copy: catalog-grounded, length-limited, claims checked by NLI",
+        "Variants: K concepts × M renders → judge → diverse top few"
+      ],
+      "narration": "More deep dives you can own. Harmonization is your edge. Estimate the scene's lighting with spherical harmonics, just like your three-sixty lighting estimation work. Relight the matted product with a bounded shading ratio so identity is preserved, add a contact shadow from the light direction, and match color temperature. Without it, composites look pasted. Next, brand conditioning. With thousands of brands, a LoRA per brand, meaning a low-rank adapter, carries real training and swapping cost. Default to reference-based style conditioning plus palette checks, and reserve LoRAs for top-spend brands where evals show a gap. For copy, generate from catalog attributes within placement limits, then verify claims with NLI, natural language inference. For variants, generate several concepts and renders, judge them, keep a diverse top few, let the advertiser pick, and let the bandit decide in serving."
+    },
+    {
+      "layout": "formula",
+      "title": "Back-of-envelope: GPU cost of a full refresh",
+      "lines": [
+        "1M SKUs × 5 placements × 4 variants = 20M assets",
+        "few-step distilled model: ~1–2 GPU-s per 1024² image",
+        "20M × 1–2 s = 20–40M GPU-s ≈ 5,500–11,000 GPU-hours",
+        "30–50 step sampling at ~10–20 s per image: ~10× more"
+      ],
+      "note": "So: generate on demand for active campaigns, cache, adapt renders across placements",
+      "narration": "Now the back-of-envelope, and state your assumptions out loud. One million SKUs, times five placements, times four variants, equals twenty million assets per full refresh. A few-step distilled model takes about one to two GPU-seconds per one-megapixel image. That gives twenty to forty million GPU-seconds, or about five thousand five hundred to eleven thousand GPU-hours per refresh. A standard thirty to fifty step sampler is roughly ten times worse. The conclusion is the point. Never regenerate everything. Generate on demand for active campaigns. Cache by SKU image, concept, template and model version. Adapt existing renders across placements with cheap outpainting or cropping. For interactive use, show a fast low-resolution preview, then render full resolution on selection. Your consistency model experience pays off right here."
+    },
+    {
+      "layout": "bullets",
+      "title": "Design 2: the judge system · Design 3: video tiers",
+      "bullets": [
+        "D2: taxonomy → cascade → labels → calibration → routing",
+        "Then drift, fail-closed, separate reward and scoreboard, harness",
+        "Close: review cost per shipped asset down 50%+, errors held",
+        "D3 tier 1: deterministic motion graphics, 2.5D parallax",
+        "Tier 2: cut-downs and subject-tracked 16:9 → 9:16 reframing",
+        "Tier 3: image-to-video with product as a tracked locked layer"
+      ],
+      "narration": "Design two is the automated evaluation system. You already have it from the judge chapter, chapter six. Structure it as beats: failure-mode taxonomy, the judge cascade, labels, calibration, routing economics, drift, fail-closed reliability, Goodhart separation, and the harness as a shared service. Close with a number: review cost per shipped asset down fifty percent or more, while the audited critical-error rate stays below target. Design three is video, from chapter eight. Recommend tiers. Tier one is deterministic motion graphics from stills, like parallax from monocular depth. It is safe and cheap, so ship it first. Tier two adapts existing video: cut-downs from thirty to fifteen to six seconds, and subject-tracked reframing to vertical. Tier three is generative motion, with the product composited as a locked, tracked layer. Your temporal metric becomes the frozen and reversed clip detector."
+    },
+    {
+      "layout": "bullets",
+      "title": "Designs 4, 5 and 6",
+      "bullets": [
+        "D4 signals: consumers first, versioned schema, distilled extractors",
+        "Measure adoption by downstream lift; never publish raw correlations",
+        "D5 closed loop: Thompson sampling → performance model → DPO",
+        "D6: one master creative → 30 placements",
+        "Outpaint or saliency crop, constraint-solver layout, contrast 4.5:1",
+        "Fastest first win: low hallucination risk, uses approved assets"
+      ],
+      "narration": "Design four is creative understanding signals, from chapter seven. Clarify the consumers first: ranking, targeting, measurement, policy and generation. Then a versioned schema, and VLM extraction, meaning a vision language model, distilled into cheap students. Measure adoption by downstream lift, like better click prediction for new creatives. And warn that raw attribute correlations are confounded. Design five is the closed loop from chapter nine: Thompson sampling, a performance model, preference tuning, and reward-hacking guards. Design six adapts one master creative to thirty placements. Work from layers, or decompose a flat image. Pick a layout family, extend with outpainting or saliency crop, re-place elements with a constraint solver, shorten copy, and enforce contrast. Call it the fastest first win: low hallucination risk, high advertiser value, and it reuses approved assets."
+    },
+    {
+      "layout": "bullets",
+      "title": "Practice prompts and how to rehearse",
+      "bullets": [
+        "Detect and fix distorted text in generated ads",
+        "Alt text for every ad image, WCAG-compliant and accurate",
+        "Auto-approve precision fell from 98.5% to 95%: debug it",
+        "A brand says an ad misrepresented its product: respond and fix",
+        "Brand-kit ingestion; build vs. buy for the image model",
+        "Rehearse aloud: 40-minute timer, draw boxes, end on roadmap"
+      ],
+      "narration": "Finally, practice. Detect and fix distorted text. Generate accurate, WCAG-compliant alt text. Design the human review and labeling program. Personalize creative for Sparky conversational ads. Debug an auto-approve precision drop from ninety-eight point five to ninety-five percent in one week. Handle a brand complaint about a misrepresented product. Turn a PDF style guide into enforceable rules. And decide build versus buy for the image model. Here is how to rehearse. Set a forty-minute timer and speak out loud, not in your head. Name the seven steps as you go. Draw the boxes on paper. Glance at the clock at each step. Always finish with the roadmap. Do designs one and two at least twice."
+    }
+  ]
+}

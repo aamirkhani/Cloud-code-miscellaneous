@@ -1,0 +1,124 @@
+{
+  "chapter": 4,
+  "chapter_title": "How ad serving ML works",
+  "slides": [
+    {
+      "layout": "title",
+      "title": "How ad serving ML works",
+      "subtitle": "From query to auction in about forty milliseconds, and where creative enters",
+      "narration": "This chapter follows one search ad request from the query to the winning ad, then through training and measurement. You already know the modeling. The new parts are economic: calibrated probabilities, auctions, and budgets. At every stage, watch for where creative enters."
+    },
+    {
+      "layout": "diagram",
+      "title": "A search ad request, end to end",
+      "diagram": 6,
+      "callouts": [
+        "Ads runs in parallel with organic: about 30–50 ms",
+        "Feature fetch, not the model, is often the bottleneck",
+        "Ad server picks the creative; a CDN serves the pixels"
+      ],
+      "narration": "The shopper searches for paper towels. The front end calls organic search and the ad server in parallel, so ads gets roughly thirty to fifty milliseconds. Query understanding spell-corrects, classifies the category, and embeds the query. Retrieval pulls candidates three ways: lexical keyword match, semantic two-tower nearest neighbors, and behavioral co-buy. The budget service drops campaigns with no money left, leaving one to five thousand candidates. One batched feature fetch gets user, ad, and creative features. That fetch is often the real bottleneck. The ranker returns predicted CTR, or click-through rate, predicted CVR, or conversion rate, and relevance. The auction picks winners, slots, and prices. A page blender merges ads into organic slots. Impressions count only when viewable, and serve-time features are logged for training. The ad server chooses which creative, but a CDN, a content delivery network, serves the pixels. So expensive generation stays offline and never touches serving latency."
+    },
+    {
+      "layout": "diagram",
+      "title": "The multi-stage funnel",
+      "diagram": 7,
+      "callouts": [
+        "Millions → thousands → hundreds → tens → a handful",
+        "Pre-ranker is distilled from the ranker",
+        "Select the creative late, after ranking the item"
+      ],
+      "narration": "Here is the same request as a funnel of models. At the top sits the ad corpus, millions of item, campaign, and creative combinations. No heavy model can score them all at a hundred thousand queries per second. Retrieval takes about ten milliseconds and returns one to five thousand candidates. Eligibility filters remove anything without budget, out of stock at the shopper's store, mistargeted, or against policy. A light pre-ranker cuts to a few hundred in about five milliseconds. It learns to imitate the ranker: the dotted distillation arrow. The heavy ranker scores those in ten to fifteen milliseconds, and creative features enter here. The auction stage applies floors, diversity, and pricing, leaving two to eight winners. The arrow back measures recall at K per stage, revealing which stage drops good ads. Here is the creative point. Generated variants multiply candidates, so make creative selection a late, cheap stage after item ranking."
+    },
+    {
+      "layout": "diagram",
+      "title": "Inside the ranking model",
+      "diagram": 8,
+      "callouts": [
+        "Creative image embedding gives zero-history ads a pCTR",
+        "Position tower: used in training, dropped at serving",
+        "Calibrate per segment before the auction"
+      ],
+      "narration": "Now inside the ranker, top to bottom. Sparse IDs go into sharded embedding tables that reach hundreds of gigabytes. The behavior sequence uses target attention, where the candidate item is the query, as in DIN, the deep interest network. Dense features like price and historical CTR are normalized. Then the creative hook: precomputed multimodal embeddings of the product image, title, and creative image, CLIP or SigLIP style. Everything meets in DCN-v2, a deep and cross network, plus a multilayer perceptron. Shared experts with per-task gates, MMoE, multi-gate mixture of experts, let tasks share and diverge. Heads predict CTR, CVR, add-to-cart, and relevance. The CVR head is ESMM style, the entire space multi-task model, trained on all impressions to remove sample selection bias. A shallow position tower absorbs slot bias in training only. Last comes per-segment calibration. In the interview, say creative embeddings give a new generated creative a sensible predicted CTR before any impressions."
+    },
+    {
+      "layout": "formula",
+      "title": "Calibration: probabilities, not just rankings",
+      "lines": [
+        "calibration ratio = Σ predicted / Σ actual   (target 1.00 ± 0.02)",
+        "p = p' / (p' + (1 − p') / w)",
+        "p' = output after downsampling   w = negative keep rate",
+        "example: p' = 0.5, w = 0.1  →  p ≈ 0.09"
+      ],
+      "note": "AUC measures ranking only; log loss and ECE also catch miscalibration",
+      "narration": "The auction multiplies predicted CTR by the bid, and pacing treats it as a probability. Great AUC, a pure ranking metric, with twenty percent over-prediction still overcharges. Monitor the calibration ratio, predicted over actual, per segment. Negative downsampling, keeping a fraction w of negatives, inflates the raw output, p prime. Correct it: p equals p prime, divided by p prime plus one minus p prime over w. At ten percent, a raw one half becomes about nine percent. Segment new ads too, since generated creatives miscalibrate first."
+    },
+    {
+      "layout": "diagram",
+      "title": "Auction and pricing",
+      "diagram": 9,
+      "callouts": [
+        "Relevance floor first: money cannot buy irrelevance",
+        "eCPM = bid × pCTR × 1000, then the reserve check",
+        "Better creative: higher slot, lower price per click"
+      ],
+      "narration": "Now the auction. Candidates arrive with a bid, a calibrated predicted CTR, and relevance. The first gate is the relevance floor. No amount of money buys an irrelevant ad onto the page, which protects the shopper. Next, compute eCPM, revenue per thousand impressions: bid times predicted CTR times one thousand. The second gate is the reserve price, a minimum eCPM that protects prices in thin auctions. It can be learned per query or category. Survivors are sorted by eCPM, deduplicated, diversified, and allocated up to the ad load cap. Pricing is GSP, generalized second price. Each winner pays the minimum needed to keep its slot, clamped between reserve and its own bid, and only on a click. Off-site demand-side platform auctions are first price, so bidders shade bids. Every participant is logged, including losers, for counterfactual analysis. The creative tie-in: higher predicted CTR wins a better slot at a lower price."
+    },
+    {
+      "layout": "formula",
+      "title": "GSP worked example",
+      "lines": [
+        "price_i = (bid_(i+1) × pCTR_(i+1)) / pCTR_i",
+        "A: $1.00 × 0.05 = 0.050    B: $2.00 × 0.02 = 0.040",
+        "C: $0.50 × 0.06 = 0.030    rank: A, B, C",
+        "A pays 0.040 / 0.05 = $0.80    B pays 0.030 / 0.02 = $1.50"
+      ],
+      "note": "C pays the reserve or the next score. Some systems add one cent. A wins slot 1 with the lowest bid",
+      "narration": "Memorize this example. Slot i pays the next ad's score, bid times predicted CTR, divided by its own predicted CTR. A bids one dollar at point zero five, scoring point zero five. B bids two dollars at point zero two, scoring point zero four. C bids fifty cents at point zero six, scoring point zero three. A pays point zero four over point zero five, eighty cents. B pays point zero three over point zero two, a dollar fifty. A wins the top slot with the lowest bid. Better creative is cheaper media."
+    },
+    {
+      "layout": "diagram",
+      "title": "Autobidding and pacing",
+      "diagram": 10,
+      "callouts": [
+        "Bid = value / λ, where λ is the shadow price of budget",
+        "Controller updates λ every few minutes",
+        "Creative tests run inside this loop"
+      ],
+      "narration": "Most advertisers set a goal, a budget, and maybe a target ROAS, return on ad spend, not per-keyword bids. A value model estimates each opportunity as predicted CVR times expected order value. Calibration errors in that value model become direct overspending or underspending. The bid is that value divided by lambda. Bids enter auctions, producing wins, clicks, spend, and conversions. A spend tracker compares actual spend against a target curve shaped by expected traffic, not a straight line through the day. The controller then updates lambda. Overspending raises lambda, so bids fall. Underspending lowers it, so bids rise. Lambda refreshes every few minutes, while delayed conversions retrain the value model. Throttling, joining each auction with some probability, is a simpler but cruder lever. Here is the creative interaction. If a new variant raises CTR, spend jumps and the pacer reacts. So measure creative lift with budget-split or advertiser-level randomization, never naive impression splits."
+    },
+    {
+      "layout": "formula",
+      "title": "Why bid = v / λ",
+      "lines": [
+        "maximize Σ x_i · v_i   subject to   Σ x_i · c_i ≤ B",
+        "bid_i = v_i / λ",
+        "λ_(t+1) = max(0, λ_t + η · (spend_t − target_t))"
+      ],
+      "note": "Ship dual gradient or PID first; add RL only if a budget-split test shows headroom",
+      "narration": "The advertiser maximizes total value, the sum of x times v. Here x says whether you win auction i, and v is its value. Total cost, the sum of x times c, must stay within budget B. The Lagrangian dual gives the optimal bid: v divided by lambda, the shadow price of budget. Scarce budget means high lambda and lower bids. Each step, lambda moves by a learning rate, eta, times the spend error, floored at zero. Ship this dual-gradient controller first, then test reinforcement learning against it."
+    },
+    {
+      "layout": "diagram",
+      "title": "Training data flow",
+      "diagram": 11,
+      "callouts": [
+        "Log features at serve time: no training-serving skew",
+        "Validate calibration by segment, not just AUC",
+        "Make creative ID a first-class log column"
+      ],
+      "narration": "Training data starts at serving. The ad server logs exactly the features the model saw, because recomputing them later causes training-serving skew. Three Kafka streams carry impressions with auctions, clicks, and orders, including linked store transactions. A stream join by impression ID builds labels. Clicks join in seconds, but orders can take the full attribution window. So you either wait, or train now with a delayed-feedback model. Batch pipelines fill an offline feature store with point-in-time correct joins, and an online store for fast lookup, from the same definitions. Training is a daily full retrain plus hourly increments. Validation checks AUC, log loss, and calibration by segment. Then a model registry, shadow, canary, and an online experiment with gross merchandise value guardrails. The dotted loop matters. The model decides what is shown, which decides the next data, so generated creatives need exploration traffic. And log creative ID and creative attributes from day one."
+    },
+    {
+      "layout": "diagram",
+      "title": "Measurement: attribution and incrementality",
+      "diagram": 12,
+      "callouts": [
+        "Attribution: near the sale. Incrementality: caused it",
+        "Ghost ads log the would-have-won ad in control",
+        "Judge creative on iROAS, not CTR alone"
+      ],
+      "narration": "Exposure data comes from four sources. They are on-site impressions and clicks, off-site display impressions, connected TV exposures via Vizio, and store screen plays known only by store and time. Purchase data is online orders plus in-store transactions linked to accounts. Identity resolution joins them at account or household level, under privacy controls. Attribution credits sales by rules like last touch in a fourteen-day window. But attribution only says which ads were near the sale. Incrementality says which ads caused it. Randomized holdouts withhold ads from a control group. Ghost ads log, in control, which ad would have won, so you compare like with like. Store screens and connected TV need geo experiments. Reporting shows ROAS, iROAS, meaning incremental ROAS, and halo, with MRC, the Media Rating Council, auditing the counts. Search incrementality reporting was publicly launched in 2025. For creative, optimize incremental conversions per dollar, because optimizing CTR alone finds clickbait."
+    }
+  ]
+}

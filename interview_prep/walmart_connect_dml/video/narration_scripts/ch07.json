@@ -1,0 +1,99 @@
+{
+  "chapter": 7,
+  "chapter_title": "Creative understanding: structured signals as a platform",
+  "slides": [
+    {
+      "layout": "title",
+      "title": "Creative understanding signals",
+      "subtitle": "Structured creative signals as a shared platform",
+      "narration": "Chapter seven turns pixels into signals. The job description asks for structured representations of creative content, attributes, categories and quality signals, that other teams consume for targeting, recommendations and measurement. This is platform work. You have spent a career turning pixels into reliable signals that other systems depend on."
+    },
+    {
+      "layout": "bullets",
+      "title": "From opaque blob to creative genome",
+      "bullets": [
+        "Today: a creative is an ID plus an asset URI",
+        "Ranker learns only after spending impressions; cold start fails",
+        "Genome: one versioned record per creative, a shared vocabulary",
+        "Levels: low-level, semantic, messaging, brand, format, quality",
+        "Plus policy flags, accessibility and dense embeddings",
+        "Closed-core enums, open periphery, hierarchy aligned to catalog"
+      ],
+      "narration": "In a typical ads stack, a creative is an opaque blob: an ID, an asset location, and a few advertiser fields. The ranker learns that one creative gets clicks only after spending impressions, and nobody can say why. A brand-new creative gets nothing. That's the cold-start problem. The fix is a creative genome, a versioned record of interpretable attributes for every asset. Low-level visuals like palette, clutter and text-area ratio. Semantics like scene and season. Messaging like offer, price shown and claims. Then brand, format fit, quality, policy and accessibility, plus dense embeddings. Use a closed core of fixed values that models can rely on, an open periphery for discovery, and a hierarchy aligned to the product taxonomy."
+    },
+    {
+      "layout": "bullets",
+      "title": "The tiered extraction stack",
+      "bullets": [
+        "Tiers 0–1: deterministic + specialists (OCR, detectors, logo, IQA)",
+        "Tier 2: CLIP/SigLIP zero-shot, prompt ensembles, calibrated",
+        "Tier 3: VLM JSON extraction, constrained decoding, allow \"unknown\"",
+        "Distill VLM labels into multi-head students on a shared backbone",
+        "Artifacts: reference-based checks against the catalog SKU image"
+      ],
+      "narration": "Extraction is tiered by cost. Tiers zero and one are deterministic measurements and specialist models: OCR, object and logo detectors, and image-quality models. Tier two is a CLIP or SigLIP embedding with zero-shot heads. Use prompt ensembles and include a none-of-these option. Calibrate each attribute with Platt or isotonic on a few hundred in-domain labels, because raw cosine scores aren't probabilities. Tier three is a VLM that fills a fixed JSON schema through constrained decoding. Always allow unknown, or the format forces a guess. Then distill. The VLM labels a stratified sample, and a multi-head student on a shared backbone serves every asset, so new attributes are cheap. And for artifacts, remember chapter six: reference-based checks against the catalog image beat blind detection."
+    },
+    {
+      "layout": "two_col",
+      "title": "Embeddings versus attributes",
+      "left_label": "Dense embeddings",
+      "left": [
+        "Best raw predictive power",
+        "Similarity search, dedupe, bandit context",
+        "Opaque; not comparable across versions",
+        "Consumers: pCTR ranking, retrieval"
+      ],
+      "right_label": "Interpretable attributes",
+      "right": [
+        "Readable, joinable, auditable",
+        "Drive insights, policy, generation prompts",
+        "Lossy: only what you defined",
+        "Meaning survives model upgrades"
+      ],
+      "narration": "You need both, and here's the line to say. Embeddings are for machines that predict. Attributes are for people and systems that reason or act. Embeddings capture everything, including what nobody named, so they carry the most predictive power and enable similarity search. But they're opaque, and a new embedding version breaks every consumer. Attributes are lossy, yet readable, joinable and controllable. They drive advertiser insights, policy and generation prompts, and their meaning survives model upgrades when the specs are stable. Ranking uses both, and content features are the big cold-start win for brand-new creatives. Fine-tune the creative embedding contrastively on creative-to-product, creative-to-query and engagement pairs, with a popularity correction."
+    },
+    {
+      "layout": "diagram",
+      "title": "The creative signal platform",
+      "diagram": 16,
+      "callouts": [
+        "Schema registry: definition, values, version, owner",
+        "Signal store: offline point-in-time, online KV, vector index",
+        "One extraction investment, six consumers"
+      ],
+      "narration": "Here is the signal platform, Diagram sixteen. Read it left to right. First come assets of every origin: catalog, uploaded and generated images, video, and copy. Next come the extractors, each one a versioned model. There's OCR and layout, detection, CLIP or SigLIP embeddings, VLM tagging to a fixed schema, quality scores, and video signals like shots and speech. Above them sits the schema registry. Every attribute has a definition, allowed values, a version and an owner. Changing a tagger prompt is a version bump, with a backfill. Outputs land in a signal store with three shapes: offline tables with point-in-time correctness, an online key-value store for serving, and a vector index. Quality SLAs, service-level agreements on coverage, freshness and accuracy, make each signal a contract, documented in a signal card. On the right are six consumers: targeting, ranking, recommendations, measurement, generation and policy. One extraction investment feeds all six. That's how it compounds."
+    },
+    {
+      "layout": "two_col",
+      "title": "Which attributes drive CTR? Beware confounding",
+      "left_label": "Naive and confounded",
+      "left": [
+        "Lifestyle 1.8% vs on-white 1.2% CTR",
+        "Brand and budget buy agency creative",
+        "Category and placement shift base CTR",
+        "Ranker already serves predicted winners"
+      ],
+      "right_label": "Better designs",
+      "right": [
+        "Randomized single-attribute generated variants",
+        "Within-ad-group fixed effects",
+        "IPW on bandit exploration logs",
+        "DML with cross-fitting; report overlap"
+      ],
+      "narration": "Expect this trap. A dashboard says lifestyle images get fifty percent higher CTR. That's almost certainly confounded. Big brands buy agency lifestyle creative and also have brand equity. Categories differ in base CTR. Higher bids win better positions, and the ranker already serves creatives it predicts will win. So use better designs, in order of credibility. Best is a randomized test of generated variants that differ in exactly one attribute, which generative AI makes cheap. Next, within-ad-group comparisons with fixed effects. Then inverse propensity weighting on exploration logs, and double machine learning with cross-fitting, always reporting overlap. In the interview, say: raw attribute correlations are mostly a map of who can afford agency creative."
+    },
+    {
+      "layout": "bullets",
+      "title": "Metrics for the signals",
+      "bullets": [
+        "Intrinsic: precision, recall, ECE per attribute on a frozen gold set",
+        "Ceiling: inter-annotator κ; low agreement means a bad definition",
+        "Operational: coverage by spend, freshness p99 vs SLA, cost",
+        "Adoption: consuming teams and production models",
+        "Downstream lift: NE gain for new creatives, online CTR and ROAS",
+        "Drop-one-group ablations show which signals earn their cost"
+      ],
+      "narration": "Hold the platform accountable at three levels. Intrinsic quality first: precision, recall and calibration per attribute, on a frozen human gold set plus monthly production audits. Inter-annotator kappa is your ceiling, and low agreement means the definition is bad, not the model. Operational next: coverage weighted by spend, freshness against the SLA, and cost per thousand creatives. Then adoption, meaning how many teams and production models consume the signals. Finally, downstream lift, the one that matters. Measure the normalized entropy gain in the click model from adding creative features, sliced to creatives under a day old. Then confirm online with CTR and ROAS, return on ad spend. If the signals don't move those, they aren't worth the cost."
+    }
+  ]
+}

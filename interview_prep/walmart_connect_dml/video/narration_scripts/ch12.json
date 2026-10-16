@@ -1,0 +1,126 @@
+{
+  "chapter": 12,
+  "chapter_title": "The top questions and the coding drills",
+  "slides": [
+    {
+      "layout": "title",
+      "title": "The top questions and the coding drills",
+      "subtitle": "Ten starred answers at interview pace, then the drills to rehearse",
+      "narration": "Welcome to chapter twelve, where the packet turns into practice. Your question bank has twenty-five starred questions, the most likely ones. We will model ten of them, weighted toward model-as-judge. Listen for the shape of each answer. Then we cover the coding drills, and the five to rehearse first."
+    },
+    {
+      "layout": "quote",
+      "title": "Define creative intelligence. What are your first 90 days?",
+      "quote": "Creative intelligence is the loop generate, evaluate, understand, deploy, learn, applied to ad creative. Days 0–30: listen and audit. By 60: a versioned eval harness, a human gold set, a calibrated judge. By 90: a sequenced roadmap plus one shipped win, like a distortion gate that cuts review load.",
+      "narration": "Creative intelligence is the loop of generate, evaluate, understand, deploy, and learn, applied to ad creative. For thirty days, I listen and audit. By day sixty, a versioned evaluation harness, a human gold set, and a calibrated judge. By day ninety, a sequenced roadmap plus one shipped win. Use this to open any vision question."
+    },
+    {
+      "layout": "quote",
+      "title": "How do you automatically detect distortion and artifacts?",
+      "quote": "No single detector catches everything, so I layer them: specialist artifact classifiers trained on hard negatives from our own generator, a PatchGAN-style patch map that shows where the image is wrong, structural checks like OCR and keypoints, and a calibrated VLM judge for anything physically impossible.",
+      "narration": "No single detector catches everything, so I layer them. Specialist artifact classifiers trained on hard negatives from our own generator. A PatchGAN-style patch map showing where the image is wrong. Structural checks like text recognition and keypoints. And a calibrated VLM, a vision language model. Then mention the discriminators you have trained."
+    },
+    {
+      "layout": "bullets",
+      "title": "Design an automated evaluation system for generated ad creative",
+      "bullets": [
+        "Cascade with three jobs: gate, score, monitor",
+        "Validators → specialist models → decomposed-rubric VLM judge",
+        "Calibrated scores → pass, review or block; middle band sized to reviewers",
+        "Human gold set, frozen canaries, versioned lineage for every verdict"
+      ],
+      "narration": "This is the center of the job description, so expect it early. Open with the structure: a cascade with three jobs, gate, score, and monitor. First, deterministic validators for format, safe zones, contrast, and whether OCR, optical character recognition, matches the approved copy. They are cheap and exact. Second, specialist models for fidelity, artifacts, and policy. Third, a VLM judge with a decomposed rubric, returning structured scores and evidence. Aggregate calibrated scores into pass, review, or block, using cost-sensitive thresholds, with the middle band sized to reviewer capacity. Close with a human gold set, frozen canaries, and versioned verdicts. Every verdict should be replayable. Say you would build the gold set first."
+    },
+    {
+      "layout": "bullets",
+      "title": "How do you calibrate an LLM or VLM judge against human preference?",
+      "bullets": [
+        "Stratified human labels; inter-rater agreement sets the ceiling",
+        "Continuous score: expected rating or log-odds of pass, not a sampled integer",
+        "Isotonic or Platt map to P(human approves), per slice; check ECE",
+        "Report κ relative to human–human κ; pairwise data → Bradley–Terry"
+      ],
+      "narration": "Four steps, said in order. First, collect a stratified human-labeled set, sliced by category, format, advertiser size, and generator version. Measure how often raters agree with each other, because that is your ceiling. Second, get a continuous score from the judge, such as the probability-weighted expected rating, not the sampled integer, which bunches in the middle. Third, fit a monotone map from score to the chance a human approves, using isotonic regression or Platt scaling, per slice. Check ECE, the expected calibration error. Fourth, report Cohen's kappa next to the human-to-human kappa. A judge at that ceiling is done. Your angle: ArcFace similarity only meant something once mapped to labeled pairs."
+    },
+    {
+      "layout": "quote",
+      "title": "How do you detect drift in a judge?",
+      "quote": "Three drifts, three fixes. Judge drift: re-score a frozen canary set, so any change is the judge. Input drift: PSI or KS on embeddings and attributes. Concept drift: fresh human labels on a small random sample, tracking agreement with control limits. And pin the judge model version.",
+      "narration": "Three drifts, three fixes. Judge drift: re-score a frozen canary set, so any change must be the judge. Input drift: PSI, the population stability index, or a KS test on embeddings. Concept drift: fresh human labels on a small random sample. And pin the judge version. Admit you have not run a production LLM judge."
+    },
+    {
+      "layout": "bullets",
+      "title": "Your generator will be optimized against your judge. How do you stop Goodhart?",
+      "bullets": [
+        "Assume the generator will find the judge's blind spots",
+        "Separate training and final judges; ensembles; KL and modest best-of-N",
+        "Humans audit the top-scoring outputs, where gaming concentrates",
+        "The tell: judge scores rise while human pass rates stay flat"
+      ],
+      "narration": "This is your strongest question, and it doubles as your story about a metric that was gamed. Start with the principle. Optimization pressure amplifies any gap between proxy and target, so assume the generator finds the judge's blind spots. Then the defenses. Keep the training judge separate from the final evaluation judge. Use diverse ensembles. Constrain optimization with a KL penalty, the Kullback Leibler divergence to the base model, or best of N with a modest N. Have humans audit the top-scoring outputs. Then tell your story. Your temporal-quality metric, used as a training loss, was satisfied without real improvement, and you published that negative result. That is why a deployment judge never doubles as a training reward."
+    },
+    {
+      "layout": "quote",
+      "title": "Design a structured representation of creative that everyone can use",
+      "quote": "One creative schema per asset, four layers: identity and lineage, versioned content attributes with confidences, calibrated quality and compliance signals, and embeddings. Ranking uses the signals as features, targeting uses the attributes, measurement uses them as lift dimensions. All point-in-time correct.",
+      "narration": "One creative schema per asset, with four layers. Identity and lineage. Versioned content attributes, each with a confidence. Calibrated quality and compliance signals. And embeddings. Ranking uses the signals as features, targeting uses the attributes, and measurement uses them as lift dimensions. Then add your fusion story about one shared representation."
+    },
+    {
+      "layout": "quote",
+      "title": "How do you build policy compliance in, instead of bolting it on?",
+      "quote": "Layers at every stage. Screen inputs before spending compute. Constrain generation and never free-generate regulated claims. Run policy classifiers with recall-guaranteed thresholds on outputs. Keep human review for borderline cases. After serving, monitor, and keep a kill switch for any asset or generator version.",
+      "narration": "Layers at every stage. Screen inputs before spending compute. Constrain generation, and never free-generate regulated claims. Run policy classifiers with recall-guaranteed thresholds. Keep human review for borderline cases. After serving, monitor, with a kill switch for any asset or generator version. Policy lives as versioned rules, so changes become config."
+    },
+    {
+      "layout": "bullets",
+      "title": "How do you prove generated creative beats advertiser-made creative?",
+      "bullets": [
+        "Randomize impressions or users; same bids, targeting and budget",
+        "Measure CTR, conversion, attributed sales and ROAS with intervals",
+        "Auction interference: higher CTR raises eCPM and wins more auctions",
+        "Add campaign-level randomization and long-run holdouts for novelty"
+      ],
+      "narration": "This is the ads performance question, where you show you have learned the business. The answer is a randomized experiment designed with the auction in mind. Randomize impressions or users between the advertiser's creative and the generated one, holding bids, targeting, and budget fixed. Measure CTR, the click-through rate, plus conversion, attributed sales, and ROAS, the return on ad spend. Now the insight that earns credit. A better creative raises eCPM, the effective revenue per thousand impressions, so it wins more auctions. Inside one budget, the arms also compete for spend. So add a campaign-level design and long-run holdouts. Report results by category and advertiser size, with confidence intervals. Chapter four covers these auction mechanics."
+    },
+    {
+      "layout": "quote",
+      "title": "You haven't worked in ads. Why should we hire you?",
+      "quote": "The hard part of this role isn't auction mechanics, which I can learn and partly already have. It's building product-faithful generative systems and evaluating them reliably when models judge model output. I built a reference-free quality metric, published how it was gamed, and shipped a system that beat Google's.",
+      "narration": "The hard part of this role is not auction mechanics, which I can learn and partly already have. It is building product-faithful generative systems, and evaluating them reliably when models judge model output. I built a reference-free quality metric, published how it was gamed, and shipped a system that beat Google's. Follow with one ads insight."
+    },
+    {
+      "layout": "bullets",
+      "title": "The coding drills: what is in the two files",
+      "bullets": [
+        "Judge statistics: Bradley–Terry, κ, isotonic + auto-approve, position bias",
+        "Monitoring: PSI and KS drift with an alert rule; CUSUM on approval rate",
+        "Composition: WCAG contrast, smart crop, headline slot, layout validator",
+        "Fidelity and brand: SSIM, aHash and dHash, CIELAB ΔE palette check",
+        "Testing and scale: Thompson sampling, near-duplicate dedupe",
+        "Ads ML, file 08: AUC, calibration, GSP auction, budget pacing"
+      ],
+      "narration": "Now the coding drills. The creative drills file has fourteen problems, using only numpy, each with self-tests. First, judge statistics: Bradley Terry from pairwise preferences, Cohen's kappa, isotonic calibration with an auto-approve threshold, and position bias in a pairwise judge. Next, monitoring: PSI and KS drift with an alert rule, plus CUSUM, a cumulative sum detector on daily approval rate. Then composition. WCAG, the web accessibility contrast check. A saliency smart crop using a summed-area table. Headline placement as the largest calm rectangle, and a layout validator. Then fidelity: SSIM, the structural similarity index, perceptual hashes, and delta E in CIELAB color. Last, Thompson sampling and near-duplicate dedupe. The older ads file adds AUC, calibration, the GSP or generalized second price auction, and pacing."
+    },
+    {
+      "layout": "two_col",
+      "title": "How to practice, and the five to do first",
+      "left_label": "The practice loop",
+      "left": [
+        "Read only the docstring, then close the file",
+        "Implement in 10–15 minutes, talking aloud",
+        "Brute force first, then the better algorithm",
+        "State complexity, edge cases, production plan",
+        "Run the self-tests to check yourself"
+      ],
+      "right_label": "Top five for this role",
+      "right": [
+        "Isotonic calibration + auto-approve threshold",
+        "Cohen's κ against the human ceiling",
+        "Bradley–Terry from pairwise wins",
+        "PSI and KS drift with an effect-size gate",
+        "WCAG contrast ratio and text-color pick"
+      ],
+      "narration": "Here is how to practice. Read one drill's docstring, which is the interviewer's prompt, and close the file. Implement it in ten to fifteen minutes while talking out loud. Restate the problem, give the brute force, then the better algorithm, its complexity, and edge cases like ties and empty input. Run the self-tests, and have one sentence on how it runs at scale. Now the five priorities. First, isotonic calibration with the auto-approve threshold, literally the judge gate. Second, Cohen's kappa against the human ceiling. Third, Bradley Terry, for pairwise model selection. Fourth, PSI and KS drift, where a tiny p-value means nothing without an effect size. Fifth, the WCAG contrast ratio, short and very creative-specific."
+    }
+  ]
+}

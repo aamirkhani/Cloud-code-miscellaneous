@@ -1,0 +1,89 @@
+{
+  "chapter": 8,
+  "chapter_title": "Video ads: generation, adaptation and evaluation",
+  "slides": [
+    {
+      "layout": "title",
+      "title": "Video ads: generation, adaptation and evaluation",
+      "subtitle": "Template first, composite the product, gate every clip",
+      "narration": "Chapter eight covers video ads, from generation to adaptation to evaluation. The job description names video as a first-class output. It is also where your background is unusually strong, from SpaceWarp to your temporal-quality metric. The gap is production video systems and the ad domain, and this chapter closes it."
+    },
+    {
+      "layout": "bullets",
+      "title": "Every placement is a constraint set",
+      "bullets": [
+        "Sponsored Videos: muted autoplay, hook in 1–2 s, burned-in captions",
+        "Vertical 9:16: 6–15 s, keep key content out of UI overlay zones",
+        "CTV: sound-on, 15 or 30 s, 1080p+ mezzanine file, title-safe text",
+        "US broadcast loudness ≈ −24 LKFS integrated (CALM Act, ATSC A/85)",
+        "In-store screens: silent, loopable, legible at a distance"
+      ],
+      "narration": "Start with formats, because every placement is really a constraint set. Sponsored Videos in search typically autoplay muted, so the visual track carries the story. That means a hook in the first two seconds and burned-in captions. Vertical placements need nine by sixteen framing that avoids platform overlays. Connected TV, or CTV, is the opposite, because it is sound-on, lean-back, and treated like broadcast. That means fifteen or thirty second spots, title-safe text, and a high-quality master file. US broadcast loudness targets about minus twenty-four LKFS, a perceptual loudness unit, under the CALM Act. A social mix near minus fourteen would be rejected at ingest. So the generator takes the constraint set as input."
+    },
+    {
+      "layout": "bullets",
+      "title": "The tiered approach: safest and cheapest first",
+      "bullets": [
+        "Tier 1: template motion graphics, 2.5D parallax, kinetic type, end card",
+        "Tier 2: adapt existing footage: 30→15→6 s cut-downs, reframing, captions",
+        "Tier 3: image-to-video for the world; product is a locked, tracked layer",
+        "Timeline JSON is the system of record, so adaptation is a re-render",
+        "Per 5 s shot: ≈ $0.83 undistilled · ≈ $0.04 distilled · < $0.005 template"
+      ],
+      "narration": "Don't start with text-to-video, which has no product grounding and the highest cost and risk. Instead, tier the system from safest to riskiest. Tier one is template motion graphics from catalog images, with parallax, kinetic type and a correct end card. That parallax is depth reprojection plus disocclusion inpainting, exactly your SpaceWarp problem. Tier two adapts footage the advertiser already has, cutting thirty seconds to fifteen and six with almost no policy risk. Tier three uses image-to-video for backgrounds and camera motion, with the product composited as a locked, tracked layer. On cost, assume about twenty GPU-minutes for an undistilled five-second shot, roughly eighty cents. Distilled to a few steps, it's about four cents. Templates cost under half a cent, so template-first is the business case."
+    },
+    {
+      "layout": "diagram",
+      "title": "Video ad generation and adaptation",
+      "diagram": 17,
+      "callouts": [
+        "Storyboard is the editable intermediate, not pixels",
+        "Shots: real footage, locked-product I2V, or motion templates",
+        "Failed shots regenerate at storyboard level"
+      ],
+      "narration": "Here is Diagram seventeen, the video pipeline, read from the top. The inputs are the SKU, or stock keeping unit, with catalog images, optional brand footage, the brand kit with legal supers, and target durations. A script language model writes hook, benefit, proof and call to action, grounded on catalog attributes. The storyboard turns that script into a shot list with timing and on-screen text. It is the editable intermediate, so advertisers edit the storyboard, not pixels. Each shot is filled from real footage retrieved by embedding, image-to-video from the locked product image, or a motion template. Audio uses licensed music and voices, normalized for loudness. Captions come from the script and are verified by speech recognition. Edit assembly builds the timeline, which fans out into CTV, vertical, square and six-second versions. After that come video evaluation, review, and the transcode ladder. Dotted arrows send failed shots back to the storyboard, and performance back to the script."
+    },
+    {
+      "layout": "bullets",
+      "title": "Product fidelity across frames, and reframing",
+      "bullets": [
+        "Track the product every frame: identity, OCR, logo, ΔE, shape IoU",
+        "Aggregate with the minimum over frames, plus drift from frame 0",
+        "Verify with a different encoder than the one used to condition",
+        "Reframe target priority: product, then on-screen text, then faces",
+        "Smooth the crop path: Kalman or one-euro; reset at every shot cut"
+      ],
+      "narration": "In a Sponsored Video, the product is the ad, and video models drift it over time. A cereal box can morph, or its label can misspell by frame forty. So track the product through every frame and score identity with DINO features. Also check packaging text with optical character recognition, plus logo, color and silhouette. Aggregate with the minimum over frames, not the mean, because one bad frame is visible. Add a drift term from the first frame, and verify with an independent encoder. Reframing sixteen by nine to nine by sixteen reuses that tracking, prioritizing product, then text, then faces. Smooth the crop path with a Kalman or one-euro filter, and reset it at every shot cut."
+    },
+    {
+      "layout": "bullets",
+      "title": "Evaluating one clip, not a distribution",
+      "bullets": [
+        "Spec checks first: duration, fps, loudness, logo time, legal supers",
+        "Per frame: artifacts, aesthetics, moderation, OCR on every frame",
+        "Temporal: warping error and flicker, but both reward a frozen clip",
+        "Pair with dynamics and order: dynamic degree + temporal predictability",
+        "FVD compares sets of videos, so it cannot gate a single clip"
+      ],
+      "narration": "Video evaluation is a cascade that runs the cheapest checks first. Spec checks are exact: duration, frame rate, loudness, logo time and legal super duration. Per-frame checks cover artifacts, aesthetics and moderation, with OCR on every frame, since one bad frame is a policy failure. Then come temporal checks like warping error against the flow-warped neighbor, and flicker. Here is the trap: a static video scores perfectly on both, and distilled models often freeze. So a smoothness score can rise while the clip quietly dies. Finally, Fréchet Video Distance, or FVD, compares feature statistics across two sets of videos. It is fine for comparing models, but cannot score the single clip a gate must judge."
+    },
+    {
+      "layout": "formula",
+      "title": "Your metric: Temporal-Distance Predictability",
+      "lines": [
+        "d̂ = f(frame_i, frame_j)   frozen ≈ 5M-param regressor trained on real video",
+        "Δ = j − i   (the true frame gap)",
+        "Score = mean over sampled pairs of log p(Δ | f(frame_i, frame_j))",
+        "near-static · reversed · shuffled → true gaps unlikely → low score"
+      ],
+      "note": "Reference-free, per-video, cheap. Used as a training loss, it was gamed: Goodhart's law.",
+      "narration": "This is your published metric, and it fits the gate exactly. A small frozen network, about five million parameters, looks at two frames and predicts how far apart they are in time. Delta is the true gap, j minus i, between the two frame indices. The score is the average log-likelihood of those true gaps under the predictor. Real motion makes gaps predictable, so the score is high. Near-static clips look like zero gap everywhere, while reversed and shuffled clips break the arrow of time. All three score low, with no reference video set needed. But used as a training loss, the generator learned to game it."
+    },
+    {
+      "layout": "quote",
+      "title": "Say it in the interview",
+      "quote": "When I used my temporal metric as a training loss, the generator learned to game it. Any evaluator you optimize against stops being an evaluator. So I keep a held-out evaluator the generator never sees, ensemble diverse metrics, and alarm when they diverge from human ratings.",
+      "narration": "When I used my temporal metric as a training loss, the generator learned to game it. Any evaluator you optimize against stops being an evaluator. So I keep a held-out evaluator the generator never sees, ensemble diverse metrics, and alarm when they diverge from human ratings. Use this whenever reward models or best-of-N selection come up in the interview."
+    }
+  ]
+}

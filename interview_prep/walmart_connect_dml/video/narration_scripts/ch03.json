@@ -1,0 +1,92 @@
+{
+  "chapter": 3,
+  "chapter_title": "The retail media business",
+  "slides": [
+    {
+      "layout": "title",
+      "title": "The retail media business",
+      "subtitle": "Who pays, for what, how they judge us, and why the closed loop is the moat",
+      "narration": "This chapter teaches you the business before the machine learning. You will learn who pays Walmart Connect, how they are billed, and which metrics they judge us by. Then you will see why creative quality is a rare lever that helps everyone."
+    },
+    {
+      "layout": "diagram",
+      "title": "Money flow and the closed loop",
+      "diagram": 1,
+      "callouts": [
+        "CPC on search, CPM on display, video and CTV",
+        "Closed loop: purchases are observed, not modeled",
+        "Better measurement pulls budget onto the platform"
+      ],
+      "narration": "Start on the left with the advertisers. First-party suppliers, national brands like Procter and Gamble, sell to Walmart wholesale and spend the most. Marketplace sellers are long-tail and self-serve. Agencies buy display and CTV, meaning connected TV. Above them, budgets come from trade marketing first, and increasingly from brand budgets that used to fund TV. Thick arrows are money. Sponsored Products bills by CPC, cost per click. Display and CTV bill by CPM, cost per thousand impressions. Every buying path lands in one ad server, auction, and billing layer. It serves on-site pages, the open web through the DSP, a demand-side platform, Vizio screens, store screens, and the Sparky assistant. On-site inventory is owned, so it is nearly pure margin. Now the dotted arrows. Impression logs join purchase logs, online and often in-store. Walmart observes the purchase instead of modeling it. That closed loop is the moat, because proven sales pull budget onto the platform."
+    },
+    {
+      "layout": "formula",
+      "title": "Pricing vocabulary",
+      "lines": [
+        "CTR = clicks / impressions",
+        "CVR = conversions / clicks",
+        "CPC = spend / clicks",
+        "CPM = spend / impressions × 1000",
+        "eCPM = bid × pCTR × 1000"
+      ],
+      "note": "eCPM is the common currency for ranking CPC and CPM ads against each other",
+      "narration": "These five terms are the pricing vocabulary. CTR, click-through rate, is clicks divided by impressions. CVR, conversion rate, is conversions divided by clicks, usually within a fourteen-day window. CPC is spend divided by clicks. CPM is spend divided by impressions, times one thousand. The key one is eCPM, effective cost per thousand impressions. For a click-priced ad, it equals bid times predicted CTR, times one thousand. That puts every ad type on one revenue scale, so the auction can compare them."
+    },
+    {
+      "layout": "formula",
+      "title": "Outcome metrics and the guardrail",
+      "lines": [
+        "ROAS = attributed sales / ad spend",
+        "iROAS = incremental sales / ad spend",
+        "ACoS = spend / attributed sales = 1 / ROAS",
+        "Guardrail: GMV per search must not fall"
+      ],
+      "note": "iROAS is usually much lower than ROAS, and it is the number sophisticated advertisers trust",
+      "narration": "Advertisers judge us on outcomes. ROAS, return on ad spend, is attributed sales divided by spend. A ROAS of four means four dollars of sales per dollar spent. iROAS counts only incremental sales, the ones the ad caused, so it runs much lower than ROAS. ACoS, advertising cost of sales, is one divided by ROAS. Finally, GMV, gross merchandise value, is Walmart's guardrail. No single ads launch may cut GMV per search, because organic conversion is the asset that ads monetize."
+    },
+    {
+      "layout": "diagram",
+      "title": "The three-sided tension",
+      "diagram": 2,
+      "callouts": [
+        "Levers: ad load, relevance floor, reserve, creative bar",
+        "Score: eCPM + α · relevance + β · shopper utility",
+        "Creative quality grows the pie for all three"
+      ],
+      "narration": "This diagram is the central concept of the business. Three parties sit in tension. The shopper wants relevant results and a fast page. You measure shopper damage through organic signals: search conversion, GMV per search, and query reformulation, where shoppers rewrite a failed query. The advertiser wants sales and share of shelf, and sophisticated ones demand iROAS. Walmart wants ad revenue, retail GMV, and long-term shopper value. The double-headed edges are tensions: ad load, price and proof, and attention. Below sit the levers: ad load, relevance floor, reserve price, slot positions, frequency caps, and the creative quality bar. They meet in one blended score, eCPM plus alpha times relevance plus beta times shopper utility. Long-term experiments set those weights. Here is the key idea. Most levers just move value between parties. Creative quality raises CTR at the same relevance and ad load, so it helps all three. In the interview, call it a GMV-safe revenue lever."
+    },
+    {
+      "layout": "diagram",
+      "title": "Ad products and billing",
+      "diagram": 3,
+      "callouts": [
+        "Sponsored Products creative is mostly the catalog image",
+        "Brands, video, DSP and CTV need designed assets",
+        "One creative platform, adapters per placement"
+      ],
+      "narration": "Here is the product landscape, grouped by inventory. First, owned on-site inventory, the highest margin and highest intent. Sponsored Products is a tile that looks like an organic result, so its creative is mostly the catalog image and title. Sponsored Brands is a banner with logo, headline, and several products. That is where generated creative first clearly matters. Sponsored Videos are video units in search. These three are typically CPC, while on-site display is CPM. Next, off-site. The Walmart DSP buys open-web impressions with first-party audiences, in first-price auctions. CTV through Vizio, publicly reported as a two point three billion dollar acquisition, is also CPM. Then come in-store screens, and sponsored placements inside Sparky, an emerging conversational format. Finally the tools: Ad Center, the Marty advertiser agent, the Automated Creative Generator, and measurement. Notice the dotted arrows. One creative generator feeds many products. That is your argument for one shared platform."
+    },
+    {
+      "layout": "diagram",
+      "title": "The full funnel, with metrics",
+      "diagram": 4,
+      "callouts": [
+        "Awareness → consideration → conversion → loyalty",
+        "One purchase ledger measures every stage",
+        "Creative must condition on stage and placement"
+      ],
+      "narration": "Read this one left to right as the shopper's journey. Awareness comes first. CTV, off-site video, and display reach shoppers before they have intent. You buy reach at CPM and measure brand lift, and with closed-loop data, purchase lift too. Consideration means Sponsored Brands, Sponsored Videos, and on-site display, judged by CTR, add-to-cart, and new-to-brand engagement. Conversion is Sponsored Products on high-intent queries, priced by CPC and judged by ROAS. Loyalty covers retargeting and reorder prompts, measured by repeat rate and lifetime value. The dotted arrow back to awareness means loyal buyers seed lookalike audiences. Underneath sits a shared purchase ledger, so every stage is measured against the same transactions. Most media companies cannot do that. The last box matters most for you. Creative changes by stage: emotional story for CTV, brand plus products for Sponsored Brands, and product clarity for Sponsored Products. So placement and objective are first-class generator inputs."
+    },
+    {
+      "layout": "diagram",
+      "title": "The campaign lifecycle",
+      "diagram": 5,
+      "callouts": [
+        "Automated review cuts time-to-live",
+        "Rejection loop becomes regenerate with critique",
+        "Reporting insights improve the next campaign"
+      ],
+      "narration": "Now the campaign lifecycle, drawn as a state machine. A campaign starts in Draft. The advertiser, or Marty on their behalf, sets objective, budget, targeting, and SKUs, meaning the specific products. Next is Creative build. For Sponsored Products that is mostly the catalog listing. For brands, video, and display, assets are uploaded or generated. Then comes policy and quality review, often human-heavy today. A failure goes to Needs changes and loops back. With generative tools, that loop becomes regenerate with the critique, not a week with an agency. Approved campaigns become Scheduled or Live. Optimizing is separate because autobidding needs conversions and creative tests need impressions. Paused has retail reasons, like budget exhaustion or out of stock. Reporting waits for the attribution window to close, then feeds a cloned relaunch. Creative intelligence changes two states. Automated evaluation, chapter six, shrinks review latency. Creative insights at reporting improve the next campaign's ROAS."
+    }
+  ]
+}

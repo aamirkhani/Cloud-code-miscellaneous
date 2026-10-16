@@ -1,0 +1,99 @@
+{
+  "chapter": 11,
+  "chapter_title": "Your story: pitch, vision, 90 days and behavioral answers",
+  "slides": [
+    {
+      "layout": "title",
+      "title": "Your story",
+      "subtitle": "Pitch, technical vision, roadmap, first 90 days and behavioral answers",
+      "narration": "This chapter is about you. Every technical chapter so far feeds into a few stories you will tell out loud. We will build your ninety-second pitch, your answer to what you would build here, your first ninety days, and which story answers which behavioral question."
+    },
+    {
+      "layout": "quote",
+      "title": "Your 90-second pitch, compressed",
+      "quote": "In face synthesis the hard constraint is 'don't change who this is'. In ad creative it's 'don't change what this product is'. And I published a reference-free metric for generated video, then a negative result when a model learned to game it. That shapes how I'd build a model-as-judge system here.",
+      "narration": "In face synthesis the hard constraint is, don't change who this is. In ad creative it's, don't change what this product is. And I published a reference-free metric for generated video, then a negative result when a model learned to game it. That shapes how I'd build a model-as-judge system here. This is the core of your answer to tell me about yourself."
+    },
+    {
+      "layout": "bullets",
+      "title": "How the pitch is built",
+      "bullets": [
+        "Open: Principal Engineer, a decade of generative vision shipped",
+        "Proof: SpaceWarp beat Google and became the default on Galaxy XR",
+        "Match one: faithful generation, identity becomes the product",
+        "Match two: evaluation, the judge you never optimize against",
+        "Close: the closed loop at Walmart, and a platform that compounds"
+      ],
+      "narration": "The full pitch has five beats, and each beat is only one or two sentences. Open with who you are: a Principal Engineer who has built generative vision systems from scratch and shipped them under hard constraints. Give one proof point: your motion-vector SpaceWarp beat Google's and became the default on Galaxy XR. Then two matches to the role. First, faithful generation, using masks, lighting harmonization and identity losses. Second, evaluation, where your negative result shows you know judges get gamed. Close with why Walmart: you can generate, judge, serve and learn from real shopper behavior, across thousands of brands. Practice until it lands at eighty-five to ninety-five seconds and sounds natural, not memorized."
+    },
+    {
+      "layout": "bullets",
+      "title": "What would you build here? Five pillars",
+      "bullets": [
+        "Faithful generation by construction: product pixels locked",
+        "A judge stack, not a judge: cascade, calibrate, route, monitor",
+        "Creative genome: versioned attributes, embeddings, quality signals",
+        "Closed-loop optimization with anti-reward-hacking guardrails",
+        "Shared platform: generation gateway, eval harness, signal store"
+      ],
+      "narration": "Start with the north star. Every advertiser, from a national brand to a small marketplace seller, gets on-brand, compliant, high-performing creative for every placement. Then five pillars, one sentence each. One, faithful generation by construction: real product pixels locked, generated backgrounds, deterministic text and layout. Two, a judge stack, not a judge: cheap checks, then specialist detectors, then a VLM rubric judge, then calibration and risk-based routing. Three, a creative genome: attributes and embeddings for every creative, served to ranking, targeting and measurement. Four, closed-loop optimization, keeping the optimization reward separate from the safety judges. Five, one shared platform every product composes on. Go deep only on the pillar they pick."
+    },
+    {
+      "layout": "bullets",
+      "title": "Sequenced roadmap, and what not to do first",
+      "bullets": [
+        "0–3 mo: eval harness, golden sets, taxonomy; placement-adaptation win",
+        "3–9 mo: judge v1 with routing, genome v1, harmonized image gen",
+        "9–18 mo: video adaptation, closed-loop tuning, advertiser insights",
+        "18–24 mo: serve-time personalization, conversational editing",
+        "Not first: fully generative products, judge as loss, per-brand LoRAs"
+      ],
+      "narration": "Say the roadmap this way. Months zero to three: measure first. Build the eval harness, golden sets and failure catalog, and ship a quick win by adapting existing assets to more placements with fidelity gates. Months three to nine: judge version one in production, genome version one with one real consumer, and image generation with lighting harmonization. Months nine to eighteen: video, closed-loop tuning, and advertiser insights. Then personalization at serving time. Chapter nine covers this in depth. Just as important, name what you would not do first. No fully generative product imagery, because of hallucination risk. Never train the generator against the gating judge. And no per-brand LoRA fine-tunes, meaning small adapter models, until reference adapters fall short."
+    },
+    {
+      "layout": "bullets",
+      "title": "Your first 90 days",
+      "bullets": [
+        "Days 1–30: listen and measure; read rejection and incident logs",
+        "Collect 1–2K human-labeled examples per failure mode",
+        "Days 31–60: publish the eval contract; judge v0 vs humans",
+        "Pick two high-leverage bets with named owners",
+        "Days 61–90: 18-month strategy doc plus one measurable win"
+      ],
+      "narration": "For the first ninety days, show humility and then speed. In days one to thirty, listen and measure. Meet product, engineering, ads ranking, policy, brand safety, measurement, and a few real advertisers. Read the rejection logs to learn what fails today and why. Collect one to two thousand labeled examples per failure mode. In days thirty-one to sixty, publish the eval contract: a quality taxonomy, a golden-set process, and a judge version zero with its agreement against humans reported. In days sixty-one to ninety, deliver an eighteen-month strategy and one measurable win. For example, cut human review volume by forty percent at equal precision. That order, measure before you build, is what Distinguished judgment looks like."
+    },
+    {
+      "layout": "two_col",
+      "title": "Which story answers which question",
+      "left_label": "If they ask",
+      "left": [
+        "Biggest impact",
+        "Built an evaluation system; a failure",
+        "Generative system to production",
+        "Influence without authority",
+        "Explain a tradeoff to executives"
+      ],
+      "right_label": "Tell",
+      "right": [
+        "SpaceWarp beat Google, eval decided it",
+        "Temporal metric and its negative result",
+        "Passthrough Eyes: fidelity under latency",
+        "Golf Mode fused model; OpenXR proposal",
+        "EVP awards and exec demos, in dollars"
+      ],
+      "narration": "Here is your story map. For biggest impact, tell SpaceWarp, and end on the lesson that head-to-head evaluation decided it. For evaluation, or for a failure, tell the temporal metric and its negative result. Stress that you published it. For taking generation to production, tell Passthrough Eyes, with its fidelity constraints and latency budget. For influence without authority, tell Golf Mode or your OpenXR extension proposal. For a tradeoff with executives, use your EVP award demos. Fill in real numbers before Monday. Then avoid the classic traps. Keep XR detail to one sentence. Say I, not we. Never bluff ads specifics. Tie every metric to dollars or shoppers. Never criticize Samsung."
+    },
+    {
+      "layout": "bullets",
+      "title": "Accessibility: easy points, real differentiator",
+      "bullets": [
+        "Text contrast ≥ 4.5:1 normal, ≥ 3:1 large text",
+        "Auto-generate alt text for every ad image, grounded in catalog",
+        "Contrast as a hard gate in the layout engine",
+        "Auto-captions for video ads: also lifts muted autoplay",
+        "No flashing more than three times per second"
+      ],
+      "narration": "Accessibility is a preferred qualification most candidates will skip, so claim it. WCAG two point two, level double A, needs text contrast of at least four point five to one, or three to one for large text. Images need text alternatives, and videos need captions. Content should not flash more than three times per second. Then make it creative AI. Generate alt text for every ad image with a VLM grounded in the catalog. Make contrast a hard gate in the layout engine. Auto-caption every video ad. In the interview, say: accessibility is a judge dimension in my eval stack, and it also improves performance, because captions help muted autoplay."
+    }
+  ]
+}

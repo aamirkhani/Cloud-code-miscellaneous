@@ -1,0 +1,125 @@
+{
+  "chapter": 5,
+  "chapter_title": "Generative creative: images, copy and composition",
+  "slides": [
+    {
+      "layout": "title",
+      "title": "Generative creative: images, copy and composition",
+      "subtitle": "Lock the product, generate the world, compose the facts",
+      "narration": "Welcome to chapter five, the technical core of this job. The role asks for systems that produce on-brand, compliant images, copy and composed ads without manual production. This is where your diffusion, inpainting and relighting work pays off most. By the end, you should be able to draw this pipeline from memory and defend every choice."
+    },
+    {
+      "layout": "diagram",
+      "title": "Where creative sits in the ads system",
+      "diagram": 13,
+      "callouts": [
+        "Asset store is the hub: lineage plus extracted attributes",
+        "Five consumers: review, ranking, rendering, targeting, measurement",
+        "Dotted loop: performance by attribute feeds generation"
+      ],
+      "narration": "First, place creative inside the ads system, using Diagram thirteen. On the left are three sources of creative. The catalog comes first, and for Sponsored Products the creative is simply the catalog listing. Next come advertiser uploads, and then generated creatives, your team's output. All three feed the creative asset store in the middle, which is the hub. Every asset carries lineage, meaning who or what made it, plus extracted attributes. On the right are five consumers of those assets. Ad review sees assets first, and only approved ones reach ranking. Ranking uses creative features to predict click-through rate and to pick which creative to show. Rendering produces each format, targeting matches attributes to context, and measurement reports performance by attribute. Thick arrows carry the shopper's response into logs keyed by creative ID, and dotted arrows loop back into generation. Your line: creative should be a structured, versioned, queryable object, not a JPEG URL."
+    },
+    {
+      "layout": "bullets",
+      "title": "An ad is a stack of layers with different owners",
+      "bullets": [
+        "Product cutout: catalog pixels, locked, never regenerated",
+        "Scene and background: generated, the only truly open canvas",
+        "Headline and sub-copy: LLM output, grounded and verified",
+        "CTA from a small enum; logo is a vector file from the brand kit",
+        "Price, rating, badges: live data, bound late at render or serve",
+        "Legal and disclosure text: rule-driven by category policy"
+      ],
+      "narration": "Here's the key mental model: an ad is not one image, but a stack of layers, each with its own source of truth. The product cutout comes from the catalog, and its pixels are locked. The scene is generated, and it is the only truly open canvas. Headlines come from a large language model, or LLM, but only from verified facts. The call to action, or CTA, comes from a fixed list, and the logo is a vector file. Price, rating and badges are live data, bound at render or serve time, so they never go stale. In the interview, say it plainly: price, logo, rating and legal text are data, and data is never generated."
+    },
+    {
+      "layout": "bullets",
+      "title": "Model refresher: only what changes a decision",
+      "bullets": [
+        "Latent diffusion: a VAE round trip alone can blur packaging text",
+        "DiT + flow matching: native aspect ratios, fewer steps, better text",
+        "High CFG oversaturates and kills diversity; rescale or guide mid-noise",
+        "Few-step distillation: 60 network passes → 4, about 15× less denoising",
+        "LoRA = brand style · IP-Adapter = zero-shot reference · ControlNet = layout"
+      ],
+      "narration": "You know these models deeply, so focus on the decisions they drive. In latent diffusion, the variational autoencoder, or VAE, can blur packaging text on a round trip alone. So product pixels should never pass through the generator. Diffusion transformers, or DiTs, trained with flow matching, handle many aspect ratios natively with fewer steps. Classifier-free guidance, or CFG, samples a sharpened distribution. High guidance therefore oversaturates and kills diversity, so rescale it or guide only at mid-noise. Few-step distillation turns sixty network passes into four, about fifteen times less denoising, your consistency-model territory. On adapters, LoRA learns a brand style, IP-Adapter borrows style from a reference image without training, and ControlNet supplies depth and layout. All three give resemblance, never pixel-exact products, so the product gets composited."
+    },
+    {
+      "layout": "diagram",
+      "title": "Generative creative pipeline, part one: pixels and words",
+      "diagram": 14,
+      "callouts": [
+        "Product pixels are sacred: segment, matte, composite",
+        "Scene inpaints around the locked product mask",
+        "Every claim cites a catalog fact ID, then gets checked"
+      ],
+      "narration": "Now the centerpiece, Diagram fourteen, starting with the advertiser inputs at the top. The SKU, or stock keeping unit, anchors everything to a real product. The brand kit carries logos, fonts, colors and hard rules, while goal and placements set style and sizes. Catalog fetch pulls hero images, attributes and approved claims, the source of truth for pixels and words. On the visual branch, segmentation and matting cut out the product with a soft alpha edge, and those pixels are now locked. Scene generation inpaints around that mask, with depth or edge control for perspective and a style adapter for brand look. Harmonization then matches the light and adds shadows. On the copy branch, the LLM writes structured JSON from a fact sheet, and every claim must cite a fact ID. The claim checker runs entailment against those facts, exact-matches numbers, and blocks words like best or cures. Defend two principles: product pixels are sacred, and words are grounded."
+    },
+    {
+      "layout": "bullets",
+      "title": "Product fidelity: architecture first, measurement second",
+      "bullets": [
+        "Inpaint only outside the mask, then re-paste the original RGBA",
+        "Relight with an SH shading ratio: I′ = I · S_scene(n) / S_src(n)",
+        "Bound it near ±0.5 EV; check ΔE00 drift on brand colors",
+        "Contact and cast shadows from a fitted ground plane",
+        "Gates: pixel lock, OCR diff, DINOv2 similarity, count, scale"
+      ],
+      "narration": "Product fidelity is the make-or-break problem, because a wrong variant or garbled label is a false advertisement. Architecture handles most of it: the generator only paints outside the mask, and you re-paste the original pixels afterwards. The hard part is making the paste look real, and that's your spherical-harmonics strength. Estimate the scene light as nine coefficients per color channel. Then multiply the product by the ratio of scene shading to source shading. That field is smooth, so it cannot damage text or logo edges by construction. Bound it near half a stop, check brand-color drift, and add shadows from a fitted ground plane. Then verify with pixel lock, optical character recognition diffs, DINOv2 similarity, and count and scale checks."
+    },
+    {
+      "layout": "diagram",
+      "title": "Generative creative pipeline, part two: compose, adapt, gate",
+      "diagram": 14,
+      "callouts": [
+        "Text rendered as vector type, never by diffusion",
+        "728×90 is a re-layout, not a crop of a square",
+        "Router: pass to advertiser, uncertain to human, fail regenerates"
+      ],
+      "narration": "Now the lower half of the same diagram, where everything gets composed. The branches meet at the layout and composition engine, which is deterministic. Templates plus a constraint solver place the logo, headline, CTA and late-bound price. Text is rendered as vector type in the brand font. So spelling is exact, prices stay fresh, and localization is just a string swap. In per-placement adaptation, sizes run from eight to one wide to one to four tall, so no image fits all. If the aspect change is small, smart crop, keeping the product fully inside. If the scene is extendable, outpaint, which is your inpainting work with the mask inverted. For a seven twenty-eight by ninety leaderboard, re-layout onto a brand-color plate. Generate scenes once per aspect family, not per placement. Finally, the router sends confident passes to the advertiser, uncertain items to humans, and failures back to regenerate with the critique."
+    },
+    {
+      "layout": "formula",
+      "title": "WCAG contrast, computed exactly",
+      "lines": [
+        "c_lin = c / 12.92 if c ≤ 0.04045, else ((c + 0.055) / 1.055)^2.4",
+        "L = 0.2126·R_lin + 0.7152·G_lin + 0.0722·B_lin",
+        "CR = (L1 + 0.05) / (L2 + 0.05),   L1 = lighter, L2 = darker",
+        "AA: CR ≥ 4.5 normal text · CR ≥ 3.0 large text and UI parts"
+      ],
+      "note": "White on #E53935 red ≈ 4.23:1 fails body text. On photos, test a worst-case percentile under the glyphs.",
+      "narration": "Accessibility is a preferred qualification that most candidates skip. Since the compositor knows every glyph and color, contrast becomes exact math. First, take each sRGB channel as c, the eight-bit value divided by two fifty-five, and linearize it with the curve on line one. Second, relative luminance L weights the linear red, green and blue values, with green weighted most. Third, the contrast ratio CR is the lighter luminance L one plus point zero five, divided by the darker L two plus point zero five. WCAG, the Web Content Accessibility Guidelines, at level AA, needs four point five to one for body text and three to one for large text. White on a typical red scores about four point two, so it fails."
+    },
+    {
+      "layout": "two_col",
+      "title": "Brand at scale, and safety designed in",
+      "left_label": "Brand consistency",
+      "left": [
+        "Long tail: reference adapter + palette conditioning",
+        "Top spenders: per-brand LoRA when A/B shows lift",
+        "Brand colors rendered, checked with ΔE00 in CIELAB",
+        "Style guide compiled into executable rules"
+      ],
+      "right_label": "Safety stack",
+      "right": [
+        "Prevention is soft: tuned model, negative prompts",
+        "Detection decides: NSFW, minors, logos, likeness",
+        "Category policy engine; strictest rule when unsure",
+        "Risk-routed human review; C2PA plus watermark"
+      ],
+      "narration": "Interviewers probe two more areas, starting with brand at scale. You can't maintain a LoRA for each of thousands of brands, so tier it. The long tail gets reference-image conditioning and palette prompts, at near-zero cost per brand. Top spenders get a LoRA only when an A B test shows the lift pays off. Colors that matter are rendered, then checked with Delta E in CIELAB space. The second area is safety, where prevention is soft and detection decides what ships. Classifiers check for explicit content, minors, competitor logos, celebrity likeness and stray scene text. A category policy engine covers regulated goods, defaulting to the strictest rule. Every asset carries a C2PA provenance manifest plus a watermark, since ad pipelines strip metadata."
+    },
+    {
+      "layout": "formula",
+      "title": "Cost per approved scene, assumptions stated",
+      "lines": [
+        "GPU = $3.00/hr ≈ $0.000833 per GPU-second",
+        "Full: 30 steps × 0.05 s + 0.1 decode + 0.4 gates = 2.0 GPU-s per candidate",
+        "× 4 candidates ÷ 0.6 utilization ÷ 0.85 pass ≈ 15.7 GPU-s ≈ $0.013",
+        "Distilled: 4 × 0.025 + 0.1 + 0.4 = 0.6 GPU-s → ≈ 4.7 GPU-s ≈ $0.004"
+      ],
+      "note": "Denoising falls 15×, total only ≈ 3.3×: gates and decode now dominate. At scale, review costs more.",
+      "narration": "Cost math shows judgment, so state your assumptions first. Assume a GPU at three dollars an hour, and fifty milliseconds per denoising step. Thirty steps plus decode and gates is two GPU-seconds per candidate. Generate four candidates, then divide by sixty percent utilization and an eighty-five percent pass rate. That's about sixteen GPU-seconds, or one point three cents per approved scene. Four distilled steps land near four tenths of a cent. Denoising fell fifteen times, but total cost fell only about three times, because gates and decoding now dominate. At half a million SKUs, review and quality failures cost more than GPUs, so invest in gate accuracy first."
+    }
+  ]
+}

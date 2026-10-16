@@ -1,0 +1,123 @@
+{
+  "chapter": 2,
+  "chapter_title": "The role decoded: pillars, gaps and your bridges",
+  "slides": [
+    {
+      "layout": "title",
+      "title": "The role decoded",
+      "subtitle": "Five technical pillars, one leadership pillar, eight gaps, and the bridges from your work",
+      "narration": "This chapter reads the job description the way an interviewer does. Every question on Monday will map to one of six pillars. We will go pillar by pillar and name what they will test. Then we rank your gaps by interview risk. Last come the bridges: short lines that connect your real work to their needs."
+    },
+    {
+      "layout": "bullets",
+      "title": "Six pillars: every question maps to one",
+      "bullets": [
+        "P1 Generative creative: images, copy, video; on-brand, compliant, performant",
+        "P2 Automated evaluation: models judging model output, calibrated, drift-aware",
+        "P3 Structured creative signals for targeting, recs and measurement",
+        "P4 Automated composition and adaptation across formats and placements",
+        "P5 Shared infrastructure: eval harness, pipelines, signals that compound",
+        "L Ambiguous goals into a sequenced roadmap; influence without authority"
+      ],
+      "narration": "Here are the six pillars. Pillar one is generative creative systems: images, copy, video and other assets that are high quality, on brand, compliant and performant. Pillar two is automated evaluation, models judging model output. They name it twice, in the description and again in the requirements, so it is the heart of the role. Pillar three is structured representations of creative content, meaning attributes, categories and quality signals that other teams consume. Pillar four is automated composition and adaptation, so no one hand-produces every size. Pillar five is shared infrastructure that compounds. Finally, the leadership pillar: turning ambiguous, evolving goals into a sequenced roadmap, and explaining tradeoffs to senior business audiences."
+    },
+    {
+      "layout": "two_col",
+      "title": "What they will test: pillars one and two",
+      "left_label": "P1 Generation",
+      "left": [
+        "Product fidelity: the SKU must not drift",
+        "Brand-safe and compliant from the start",
+        "Does it actually lift CTR",
+        "Cost per asset at advertiser scale"
+      ],
+      "right_label": "P2 Judges",
+      "right": [
+        "Rubric design for VLM and LLM judges",
+        "Calibration to human and advertiser approval",
+        "Bias: position, verbosity, self-preference",
+        "Drift detection, routing, Goodhart defenses"
+      ],
+      "narration": "For pillar one, expect questions on product fidelity. The SKU, meaning the stock keeping unit, the exact product, cannot drift in shape, label or color. They will ask how safety and compliance are built in, not bolted on. They will ask whether generated creative moves CTR, the click-through rate, and what each asset costs in GPU time. For pillar two, expect a deep dive. How do you design a rubric for a VLM, a vision language model, acting as judge? How do you calibrate its scores so they mean the probability a human approves? What biases do judges have, such as preferring the first option or longer answers? How do you detect drift, route uncertain cases to humans, and stop a generator from gaming the judge?"
+    },
+    {
+      "layout": "two_col",
+      "title": "What they will test: pillars three to five and leadership",
+      "left_label": "P3 to P5",
+      "left": [
+        "Signal schema, versioning, real consumers",
+        "Smart crop, outpaint, re-layout, legibility",
+        "Platform, not one-off projects"
+      ],
+      "right_label": "Leadership",
+      "right": [
+        "Sequenced roadmap with measurable wins",
+        "Influence teams that don't report to you",
+        "Tradeoffs in business terms for executives"
+      ],
+      "narration": "For pillar three, they want a creative signal platform that other teams adopt. Expect questions on schema design, versioning, and who consumes the signals: ranking, targeting, recommendations and measurement. For pillar four, think smart cropping, outpainting a square shot to a tall format, re-layout, and keeping text legible. For pillar five, they want platform thinking. Can you build an eval harness and generation pipeline that every product reuses? The leadership pillar tests vision plus execution. What do you build first, and why? How do you move teams that do not report to you? Can you explain quality versus cost versus latency to a senior business leader in dollars and shopper impact?"
+    },
+    {
+      "layout": "bullets",
+      "title": "Qualifications: where you stand",
+      "bullets": [
+        "Minimum quals: exceeded, with an MS and 25 years",
+        "Publications: 7, plus 5 patents, offsetting the missing PhD",
+        "Python, PyTorch, TensorFlow: yes · Spark and Scala: partial",
+        "WCAG 2.2 AA accessibility: a free differentiator for generated creative",
+        "Best-fit role: generative CV with evaluation rigor is your core"
+      ],
+      "narration": "Quickly, the qualifications. You exceed the minimums with a master's degree and twenty-five years of experience. On preferred qualifications, your seven publications and five patents offset the missing PhD. Python, PyTorch and TensorFlow are solid. Spark and Scala are partial, so be honest and pivot to the modeling. One preferred line is easy points: WCAG two point two, level double A. WCAG means the Web Content Accessibility Guidelines. Alt text, contrast checks and captions for generated creative are natural judge dimensions, and we cover them in chapter eleven. The bigger message is this. Unlike general ads roles, this description is mostly generative computer vision with evaluation rigor. That is your core, so walk in confident."
+    },
+    {
+      "layout": "bullets",
+      "title": "Your gaps, ranked by interview risk",
+      "bullets": [
+        "1 Model-as-judge in production · judge chapter plus drills · 5 h",
+        "2 Ads business context for creative · diagrams and ads basics · 3 h",
+        "3 Video generation at production scale · video chapter · 2.5 h",
+        "4 Safety, policy and IP from the start · 1.5 h",
+        "5 Signals as a platform · 6 LLM copy · 7 GPU cost · 8 model landscape"
+      ],
+      "narration": "Now your gaps, ranked by risk. Number one is model-as-judge in production. You have built metrics, but not a production judge system with calibration and drift operations. Spend about five hours on the judge chapter and its drills. Number two is ads business context: how creative affects CTR, conversion rate and ROAS, which is return on ad spend, plus placements and creative testing. Give it three hours. Number three is video generation as a product. Your strength is frame synthesis and video evaluation, not text-to-video at scale. Fourth is safety, moderation, policy and intellectual property, which is its own requirement line. Then four smaller gaps: signals as a platform, grounded LLM copy, GPU cost per asset, and naming current models correctly."
+    },
+    {
+      "layout": "two_col",
+      "title": "Bridges: your work to their pillars",
+      "left_label": "Your work",
+      "left": [
+        "Identity-preserving face synthesis",
+        "Gated and partial-conv inpainting",
+        "Disocclusion masks, verified pixels kept",
+        "Spherical-harmonics lighting estimation"
+      ],
+      "right_label": "Their need",
+      "right": [
+        "P1 product fidelity: the SKU is the identity",
+        "P4 outpainting for aspect-ratio adaptation",
+        "Lock what's real, generate only what's needed",
+        "Harmonization: product matches scene light"
+      ],
+      "narration": "Now the bridges. Memorize the left column. Your identity-preserving face synthesis maps to product fidelity. Say: brand creative is identity-preserving generation where the identity is the SKU. Your inpainting work with gated and partial convolutions maps to adaptation. Say: outpainting a square product shot to nine by sixteen is the inpainting problem I have shipped. Your disocclusion detection produced pixel-accurate masks of where generation was needed, leaving verified pixels untouched. That is exactly the product-lock principle: lock what is real, generate only what is needed, verify the rest. And your spherical-harmonics lighting estimator answers a common failure. Say: most fake-looking composites fail on lighting, and I have built lighting estimators."
+    },
+    {
+      "layout": "two_col",
+      "title": "Bridges: evaluation, cost and platform",
+      "left_label": "Your work",
+      "left": [
+        "Temporal metric plus its negative result",
+        "PatchGAN multi-scale discriminators",
+        "Diffusion and few-step consistency models",
+        "One fused model beat per-sensor pipelines"
+      ],
+      "right_label": "Their need",
+      "right": [
+        "P2 judges, Goodhart, video evaluation",
+        "P2 artifact detection with heatmaps",
+        "P1 cost per asset at scale",
+        "P3 and P5 one shared platform, not silos"
+      ],
+      "narration": "Four more bridges, and the first is your strongest. You built a reference-free temporal-quality metric for generated video, then published the negative result when a model gamed it as a training loss. Say: I have built a judge and watched a generator game it, so I keep held-out human anchors and never train against the deployed judge. Next, a patch discriminator is a learned artifact detector. It localizes artifacts, the same design as a production distortion detector with heatmaps. Your few-step consistency models speak to cost: distillation can cut GPU cost per asset several times over. Finally, your fused Golf Mode model beat per-sensor pipelines. That is the shared-platform argument: one model and signal store, not many silos."
+    }
+  ]
+}

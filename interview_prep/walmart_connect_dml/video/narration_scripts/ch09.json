@@ -1,0 +1,68 @@
+{
+  "chapter": 9,
+  "chapter_title": "The closed loop, the shared platform and the roadmap",
+  "slides": [
+    {
+      "layout": "title",
+      "title": "The closed loop, the shared platform and the roadmap",
+      "subtitle": "How creative learns, compounds and gets sequenced",
+      "narration": "Welcome to chapter nine. You have seen how to generate creative, judge it, and describe it as signals. Now we connect those pieces into a system that learns from shoppers. Three diagrams: the optimization loop, the shared platform, and the roadmap. This is your vision answer, for when they ask what you would build here."
+    },
+    {
+      "layout": "diagram",
+      "title": "The creative optimization loop: explore safely",
+      "diagram": 18,
+      "callouts": [
+        "Only gate-passing variants are ever explored",
+        "Thompson sampling per ad and placement",
+        "Debias position and placement before learning"
+      ],
+      "narration": "Here is Diagram eighteen, the creative optimization loop. Read it left to right. First, generate four to eight variants per ad, deliberately diverse in scene type and copy angle. If every variant looks the same, the loop learns nothing. Tag each variant with its attributes, so learning transfers across advertisers. Next come the evaluation gates from the judge chapter. Only safe, on-brand variants pass. Here's the key idea: exploration never relaxes safety. Then serving. Surviving variants compete inside their ad group using Thompson sampling, per ad and per placement. Most ads get little traffic, so hierarchical priors, pooled across advertisers by creative attribute, give a new variant a sensible starting belief. That is your cold start answer. Outcomes come back as impressions, clicks and conversions by variant. Before learning anything, debias. Raw click differences are confounded by position, placement and audience mix. Skip this, and the loop simply learns that variant B got the top slot more often."
+    },
+    {
+      "layout": "formula",
+      "title": "Thompson sampling in thirty seconds",
+      "lines": [
+        "α_k = α_0 + clicks_k",
+        "β_k = β_0 + (impressions_k − clicks_k)",
+        "θ_k ~ Beta(α_k, β_k)   for every variant k",
+        "show the variant with the largest θ_k"
+      ],
+      "note": "Priors α_0, β_0 come from category-level creative CTR: that is the cold start",
+      "narration": "Thompson sampling is easy to explain. Treat each variant's click-through rate, or CTR, as unknown, with a Beta distribution as your belief. Alpha k is a prior pseudo-count, alpha zero, plus the clicks variant k has earned. Beta k is beta zero plus impressions without a click. At each impression, draw one sample, theta k, from every variant's Beta, and show the largest draw. Uncertain variants sometimes draw high, so they get explored. Proven winners usually draw high, so they get exploited. Exploration is automatically proportional to uncertainty."
+    },
+    {
+      "layout": "diagram",
+      "title": "From outcomes to a better generator, with guards",
+      "diagram": 18,
+      "callouts": [
+        "Prompt policy → best-of-N → Diffusion-DPO with KL",
+        "Reward model ≠ gatekeeper ≠ human scoreboard",
+        "Optimize incremental conversion, not CTR"
+      ],
+      "narration": "Same diagram, right half. Debiased data trains a creative performance model that predicts lift from creative features plus context. A reward model combines predicted performance, judge quality and policy constraints into one score. Winner and loser variants for the same product and context form clean preference pairs. How does the generator improve? Cheapest first: update the prompt and conditioning policy, meaning which scenes the planner requests. Next, best-of-N: generate several candidates and keep the top-scoring one. Small N means bounded exploitation. Last, Diffusion-DPO, direct preference optimization adapted to diffusion, trained on those pairs. Now the guards. A KL penalty, the Kullback-Leibler divergence to a reference generator, stops collapse onto weird high-reward outputs. Hard gates are never bypassed. And keep three roles separate: the reward you optimize, the gatekeeper judges, and a held-out human scoreboard that nothing trains on. Your negative result, where a generator gamed your video metric, is exactly why. Finally, reward incremental conversion, because click-optimized creative drifts toward clickbait."
+    },
+    {
+      "layout": "diagram",
+      "title": "One shared platform, many products",
+      "diagram": 19,
+      "callouts": [
+        "No app calls a model directly",
+        "New products inherit eval, policy and lineage",
+        "Track cost per approved creative"
+      ],
+      "narration": "Diagram nineteen shows the shared platform in three layers. On top sit product applications: the Automated Creative Generator, the Marty advertiser agent, the Sponsored Brands builder, DSP and connected TV tools, catalog image enhancement, and Sparky formats. In the middle are shared creative services, the layer this role should own or shape. A generation gateway handles model routing, quotas, caching and prompt templates. An evaluation harness runs offline benchmarks and the online judge with the same rubric. Then the signal store, policy service, asset store with lineage, the bandit service, and review tooling with a shared label store. At the bottom: GPU pool, model registry, feature store, data lake and observability. Why does this compound? Every new product launches with evaluation, policy and measurement for free, and every label improves every product. Swapping a model becomes a config change. Tie it to Golf Mode: one fused model beat per-sensor pipelines, and one platform beats six silos."
+    },
+    {
+      "layout": "diagram",
+      "title": "The sequenced roadmap: measure first",
+      "diagram": 20,
+      "callouts": [
+        "Everything later rests on trusted evaluation",
+        "First win: adapt approved assets to more placements",
+        "Each quarter ships a measurable win"
+      ],
+      "narration": "Diagram twenty is the sequenced roadmap. Open with a hedge: you would spend the first weeks learning what exists. In the first ninety days, measure first. Audit the pipeline and costs, build golden sets with agreement targets, and calibrate judge version zero on existing review decisions, which is free labeled data. Your first visible win is adaptation: take approved assets and automatically produce more placements, behind fidelity gates. Low hallucination risk, high advertiser value. Quarter two makes the eval harness a shared service and turns on auto-approve for the lowest-risk tier. Quarter three adds bandit serving and video version one. Quarter four closes the loop with the performance model and a learned prompt policy. Year two brings preference-tuned generators. Notice the arrows are dependencies. In the interview, say: every later step is only as good as our ability to measure quality, so eval comes first, and each quarter ships a win, from review latency to incremental ROAS."
+    }
+  ]
+}

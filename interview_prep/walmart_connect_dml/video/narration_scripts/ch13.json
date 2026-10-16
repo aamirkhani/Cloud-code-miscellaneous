@@ -1,0 +1,62 @@
+{
+  "chapter": 13,
+  "chapter_title": "The final 72 hours and interview day",
+  "slides": [
+    {
+      "layout": "title",
+      "title": "The final 72 hours",
+      "subtitle": "Study schedule, day-of essentials, your questions, and the close",
+      "narration": "This last chapter turns everything into a plan. We will lay out Friday through Monday, block by block. Then come the Monday morning essentials, your questions for them, the logistics, and how to close. Then a word on why you are ready."
+    },
+    {
+      "layout": "bullets",
+      "title": "Friday to Monday: the schedule",
+      "bullets": [
+        "Fri: model-as-judge and drills 1–6 · then image, copy, composition",
+        "Sat: video and creative signals · system designs aloud, 40-min timer",
+        "Sun AM: all ads and ML diagrams; draw four from memory",
+        "Sun PM: starred questions and stories aloud · evening full mock",
+        "Mon AM: cheat sheet only, then rest"
+      ],
+      "narration": "Today is Friday, and the order matters, because the riskiest gap goes first. Friday morning is the judge chapter. Read it fully, take notes, and run drills one through six. Friday afternoon is generative image, copy and composition, with drills seven through twelve. Saturday morning covers video and creative understanding. Saturday afternoon, say system designs one and two out loud with a forty-minute timer. Sunday morning, go through every diagram until you can draw four from memory. Sunday afternoon, answer the starred questions and your behavioral stories aloud. Sunday evening, run a full mock: pitch, a system design, a judge deep dive, two stories, and your questions. Monday morning, read only the cheat sheet, then rest. Fill in your real story numbers before Sunday's mock."
+    },
+    {
+      "layout": "bullets",
+      "title": "Monday morning essentials",
+      "bullets": [
+        "The loop: generate → judge → understand → adapt → learn",
+        "Draw the judge stack: checks → specialists → VLM → calibrate → route",
+        "Kappa, PSI, ECE, WCAG contrast, eCPM = bid × pCTR × 1000",
+        "Separate the gatekeeper, the coach and the scoreboard",
+        "Stuck? Separate what is guaranteed from what is optimized"
+      ],
+      "narration": "On Monday morning, hold five things in your head. First, the role in one line: generate, judge, understand, adapt and learn, on shared infrastructure. Second, be able to draw the judge stack from deterministic checks to the router. Third, your formulas: Cohen's kappa for agreement, PSI for drift, ECE for calibration error, and the WCAG contrast ratio. Add eCPM, effective cost per thousand impressions. It equals bid times predicted CTR times one thousand, which is why creative quality moves revenue. Fourth, the Goodhart line: separate the gatekeeper, the coach and the scoreboard. Fifth, if you get stuck, say: let me separate what must be guaranteed from what should be optimized."
+    },
+    {
+      "layout": "two_col",
+      "title": "Your questions, and the logistics",
+      "left_label": "Ask them (pick 3–4)",
+      "left": [
+        "Bottleneck: quality, review, or adoption?",
+        "How much still goes through human review?",
+        "Is the long-tail seller the main customer?",
+        "How do creative signals reach ranking?",
+        "What does success look like in 12 months?"
+      ],
+      "right_label": "Logistics",
+      "right": [
+        "Join five minutes early, with water",
+        "Pen and paper for diagrams",
+        "Clarify before you design",
+        "End every answer with risks and roadmap"
+      ],
+      "narration": "Pick three or four questions to ask. Where is the bottleneck today: generation quality, review throughput, or advertiser adoption? How is generated creative evaluated now, and how much still goes through human review? Are long-tail sellers without design resources the primary customer? How do creative signals reach ranking and targeting? And what does success look like for this role in twelve months? Each one shows you think in systems and outcomes, and the answers tell you where your first ninety days should start. For logistics, join five minutes early with water and paper for diagrams. Ask clarifying questions before you design, and end every design with risks and a roadmap."
+    },
+    {
+      "layout": "quote",
+      "title": "Your closing line",
+      "quote": "The overlap between what this role needs and what I've built, faithful generation and honest evaluation, is unusually high. I'd love to build this platform here.",
+      "narration": "The overlap between what this role needs and what I've built, faithful generation and honest evaluation, is unusually high. I'd love to build this platform here. Use it at the end, and mean it. Your record backs it: SpaceWarp beat Google and shipped as default. You published a judge and its honest negative result. Seven publications, five patents, four EVP awards. You are ready. Good luck, Aamer."
+    }
+  ]
+}

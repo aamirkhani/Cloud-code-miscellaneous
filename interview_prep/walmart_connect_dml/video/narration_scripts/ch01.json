@@ -1,0 +1,36 @@
+{
+  "chapter": 1,
+  "chapter_title": "Welcome: how this packet works",
+  "slides": [
+    {
+      "layout": "title",
+      "title": "Welcome: how this packet works",
+      "subtitle": "Walmart Ads · Distinguished Data Scientist, Creative Intelligence · Mon Oct 19, 3:30 PM",
+      "narration": "Welcome, Aamer. This video walks you through your study packet for the Walmart Ads interview on Monday, October nineteenth, at three thirty in the afternoon. The role is Distinguished Data Scientist, Creative Intelligence. You already have the hard part, which is deep generative vision. This packet adds the ads business and the evaluation rigor they will probe."
+    },
+    {
+      "layout": "bullets",
+      "title": "The role in one breath",
+      "bullets": [
+        "Generative creative at advertiser scale: images, copy, video",
+        "Models judging model output: calibrated, drift-monitored, reliable",
+        "Structured creative signals for targeting, recs and measurement",
+        "Automated composition and adaptation for every placement",
+        "Shared infrastructure that compounds, plus a sequenced roadmap"
+      ],
+      "narration": "Here is the role in one breath. The job description asks for generative creative systems that produce images, copy and video that are high quality, on brand, compliant and performant, at advertiser scale. It asks for automated evaluation, in its words, models judging model output, calibrated to human and advertiser preference and monitored for drift. That line appears twice, so treat it as the heart of the role. It also wants structured representations of creative content that targeting, recommendations and measurement can consume. Then automated composition and adaptation across formats, and shared infrastructure that compounds. On top sits leadership: turning ambiguous creative goals into a sequenced roadmap. In practice, they will test three things: scale with safety built in, reliable automated judges, and a clear link from creative to ad outcomes."
+    },
+    {
+      "layout": "bullets",
+      "title": "How the video is organized",
+      "bullets": [
+        "1–2 · Welcome and the role decoded: pillars, gaps, bridges",
+        "3–4 · The retail media business and how ad-serving ML works",
+        "5–8 · Generative creative, model-as-judge, understanding signals, video",
+        "9–10 · Closed loop, shared platform, roadmap, system design walkthroughs",
+        "11–13 · Your story, question bank and drills, the final 72 hours"
+      ],
+      "narration": "The video has thirteen chapters. Chapters one and two decode the role. Chapters three and four teach the ads business and the serving stack, since this team is Ads Data Science. Chapters five through eight are the technical core: generation, the judge, creative signals, and video. Chapters nine and ten tie it together with the closed loop, the shared platform, and full system designs. Chapters eleven to thirteen cover your story, practice questions, and the last seventy-two hours. Use the written files alongside. The role start-here file is your map, the judge file is the most important read, and the cheat sheet is for Monday morning. Watch a chapter, then do its drills."
+    }
+  ]
+}

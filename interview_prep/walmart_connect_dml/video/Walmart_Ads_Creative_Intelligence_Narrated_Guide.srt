@@ -1,0 +1,4175 @@
+1
+00:00:00,800 --> 00:00:01,845
+Welcome, Aamer.
+
+2
+00:00:02,125 --> 00:00:10,275
+This video walks you through your study packet for the Walmart Ads interview on Monday, October nineteenth, at three thirty in the afternoon.
+
+3
+00:00:10,555 --> 00:00:14,416
+The role is Distinguished Data Scientist, Creative Intelligence.
+
+4
+00:00:14,696 --> 00:00:18,045
+You already have the hard part, which is deep generative vision.
+
+5
+00:00:18,325 --> 00:00:22,485
+This packet adds the ads business and the evaluation rigor they will probe.
+
+6
+00:00:24,117 --> 00:00:25,802
+Here is the role in one breath.
+
+7
+00:00:26,082 --> 00:00:37,239
+The job description asks for generative creative systems that produce images, copy and video that are high quality, on brand, compliant and performant, at advertiser scale.
+
+8
+00:00:37,519 --> 00:00:47,183
+It asks for automated evaluation, in its words, models judging model output, calibrated to human and advertiser preference and monitored for drift.
+
+9
+00:00:47,463 --> 00:00:50,770
+That line appears twice, so treat it as the heart of the role.
+
+10
+00:00:51,050 --> 00:00:58,282
+It also wants structured representations of creative content that targeting, recommendations and measurement can consume.
+
+11
+00:00:58,562 --> 00:01:04,493
+Then automated composition and adaptation across formats, and shared infrastructure that compounds.
+
+12
+00:01:04,773 --> 00:01:09,893
+On top sits leadership: turning ambiguous creative goals into a sequenced roadmap.
+
+13
+00:01:10,173 --> 00:01:19,111
+In practice, they will test three things: scale with safety built in, reliable automated judges, and a clear link from creative to ad outcomes.
+
+14
+00:01:20,541 --> 00:01:22,354
+The video has thirteen chapters.
+
+15
+00:01:22,634 --> 00:01:24,725
+Chapters one and two decode the role.
+
+16
+00:01:25,005 --> 00:01:31,127
+Chapters three and four teach the ads business and the serving stack, since this team is Ads Data Science.
+
+17
+00:01:31,407 --> 00:01:37,615
+Chapters five through eight are the technical core: generation, the judge, creative signals, and video.
+
+18
+00:01:37,895 --> 00:01:44,018
+Chapters nine and ten tie it together with the closed loop, the shared platform, and full system designs.
+
+19
+00:01:44,298 --> 00:01:50,122
+Chapters eleven to thirteen cover your story, practice questions, and the last seventy-two hours.
+
+20
+00:01:50,402 --> 00:01:52,215
+Use the written files alongside.
+
+21
+00:01:52,495 --> 00:01:59,471
+The role start-here file is your map, the judge file is the most important read, and the cheat sheet is for Monday morning.
+
+22
+00:01:59,751 --> 00:02:01,885
+Watch a chapter, then do its drills.
+
+23
+00:02:03,682 --> 00:02:07,544
+This chapter reads the job description the way an interviewer does.
+
+24
+00:02:07,824 --> 00:02:10,981
+Every question on Monday will map to one of six pillars.
+
+25
+00:02:11,261 --> 00:02:14,141
+We will go pillar by pillar and name what they will test.
+
+26
+00:02:14,421 --> 00:02:16,597
+Then we rank your gaps by interview risk.
+
+27
+00:02:16,877 --> 00:02:21,378
+Last come the bridges: short lines that connect your real work to their needs.
+
+28
+00:02:23,008 --> 00:02:24,416
+Here are the six pillars.
+
+29
+00:02:24,696 --> 00:02:33,998
+Pillar one is generative creative systems: images, copy, video and other assets that are high quality, on brand, compliant and performant.
+
+30
+00:02:34,278 --> 00:02:38,715
+Pillar two is automated evaluation, models judging model output.
+
+31
+00:02:38,995 --> 00:02:44,542
+They name it twice, in the description and again in the requirements, so it is the heart of the role.
+
+32
+00:02:44,822 --> 00:02:53,526
+Pillar three is structured representations of creative content, meaning attributes, categories and quality signals that other teams consume.
+
+33
+00:02:53,806 --> 00:02:59,672
+Pillar four is automated composition and adaptation, so no one hand-produces every size.
+
+34
+00:02:59,952 --> 00:03:02,918
+Pillar five is shared infrastructure that compounds.
+
+35
+00:03:03,198 --> 00:03:12,115
+Finally, the leadership pillar: turning ambiguous, evolving goals into a sequenced roadmap, and explaining tradeoffs to senior business audiences.
+
+36
+00:03:13,550 --> 00:03:16,707
+For pillar one, expect questions on product fidelity.
+
+37
+00:03:16,987 --> 00:03:22,897
+The SKU, meaning the stock keeping unit, the exact product, cannot drift in shape, label or color.
+
+38
+00:03:23,177 --> 00:03:26,974
+They will ask how safety and compliance are built in, not bolted on.
+
+39
+00:03:27,254 --> 00:03:34,614
+They will ask whether generated creative moves CTR, the click-through rate, and what each asset costs in GPU time.
+
+40
+00:03:34,894 --> 00:03:37,070
+For pillar two, expect a deep dive.
+
+41
+00:03:37,350 --> 00:03:42,449
+How do you design a rubric for a VLM, a vision language model, acting as judge?
+
+42
+00:03:42,729 --> 00:03:46,931
+How do you calibrate its scores so they mean the probability a human approves?
+
+43
+00:03:47,211 --> 00:03:52,267
+What biases do judges have, such as preferring the first option or longer answers?
+
+44
+00:03:52,547 --> 00:03:58,627
+How do you detect drift, route uncertain cases to humans, and stop a generator from gaming the judge?
+
+45
+00:04:00,057 --> 00:04:04,516
+For pillar three, they want a creative signal platform that other teams adopt.
+
+46
+00:04:04,796 --> 00:04:12,881
+Expect questions on schema design, versioning, and who consumes the signals: ranking, targeting, recommendations and measurement.
+
+47
+00:04:13,161 --> 00:04:20,180
+For pillar four, think smart cropping, outpainting a square shot to a tall format, re-layout, and keeping text legible.
+
+48
+00:04:20,460 --> 00:04:22,828
+For pillar five, they want platform thinking.
+
+49
+00:04:23,108 --> 00:04:27,908
+Can you build an eval harness and generation pipeline that every product reuses?
+
+50
+00:04:28,188 --> 00:04:31,004
+The leadership pillar tests vision plus execution.
+
+51
+00:04:31,284 --> 00:04:33,054
+What do you build first, and why?
+
+52
+00:04:33,334 --> 00:04:35,724
+How do you move teams that do not report to you?
+
+53
+00:04:36,004 --> 00:04:42,958
+Can you explain quality versus cost versus latency to a senior business leader in dollars and shopper impact?
+
+54
+00:04:44,390 --> 00:04:46,076
+Quickly, the qualifications.
+
+55
+00:04:46,356 --> 00:04:50,942
+You exceed the minimums with a master's degree and twenty-five years of experience.
+
+56
+00:04:51,222 --> 00:04:57,345
+On preferred qualifications, your seven publications and five patents offset the missing PhD.
+
+57
+00:04:57,625 --> 00:05:00,313
+Python, PyTorch and TensorFlow are solid.
+
+58
+00:05:00,593 --> 00:05:04,604
+Spark and Scala are partial, so be honest and pivot to the modeling.
+
+59
+00:05:04,884 --> 00:05:13,438
+One preferred line is easy points: wuh-cag two point two, level double A. wuh-cag means the Web Content Accessibility Guidelines.
+
+60
+00:05:13,718 --> 00:05:21,974
+Alt text, contrast checks and captions for generated creative are natural judge dimensions, and we cover them in chapter eleven.
+
+61
+00:05:22,254 --> 00:05:23,790
+The bigger message is this.
+
+62
+00:05:24,070 --> 00:05:30,726
+Unlike general ads roles, this description is mostly generative computer vision with evaluation rigor.
+
+63
+00:05:31,006 --> 00:05:33,332
+That is your core, so walk in confident.
+
+64
+00:05:34,765 --> 00:05:36,536
+Now your gaps, ranked by risk.
+
+65
+00:05:36,816 --> 00:05:39,333
+Number one is model-as-judge in production.
+
+66
+00:05:39,613 --> 00:05:45,117
+You have built metrics, but not a production judge system with calibration and drift operations.
+
+67
+00:05:45,397 --> 00:05:48,619
+Spend about five hours on the judge chapter and its drills.
+
+68
+00:05:48,899 --> 00:05:59,672
+Number two is ads business context: how creative affects CTR, conversion rate and ROAS, which is return on ad spend, plus placements and creative testing.
+
+69
+00:05:59,952 --> 00:06:01,125
+Give it three hours.
+
+70
+00:06:01,405 --> 00:06:04,221
+Number three is video generation as a product.
+
+71
+00:06:04,501 --> 00:06:09,579
+Your strength is frame synthesis and video evaluation, not text-to-video at scale.
+
+72
+00:06:09,859 --> 00:06:16,237
+Fourth is safety, moderation, policy and intellectual property, which is its own requirement line.
+
+73
+00:06:16,517 --> 00:06:25,264
+Then four smaller gaps: signals as a platform, grounded LLM copy, GPU cost per asset, and naming current models correctly.
+
+74
+00:06:26,693 --> 00:06:27,781
+Now the bridges.
+
+75
+00:06:28,061 --> 00:06:29,555
+Memorize the left column.
+
+76
+00:06:29,835 --> 00:06:33,760
+Your identity-preserving face synthesis maps to product fidelity.
+
+77
+00:06:34,040 --> 00:06:39,757
+Say: brand creative is identity-preserving generation where the identity is the SKU.
+
+78
+00:06:40,037 --> 00:06:44,752
+Your inpainting work with gated and partial convolutions maps to adaptation.
+
+79
+00:06:45,032 --> 00:06:50,771
+Say: outpainting a square product shot to nine by sixteen is the inpainting problem I have shipped.
+
+80
+00:06:51,051 --> 00:06:58,944
+Your disocclusion detection produced pixel-accurate masks of where generation was needed, leaving verified pixels untouched.
+
+81
+00:06:59,224 --> 00:07:06,264
+That is exactly the product-lock principle: lock what is real, generate only what is needed, verify the rest.
+
+82
+00:07:06,544 --> 00:07:10,661
+And your spherical-harmonics lighting estimator answers a common failure.
+
+83
+00:07:10,941 --> 00:07:15,912
+Say: most fake-looking composites fail on lighting, and I have built lighting estimators.
+
+84
+00:07:17,360 --> 00:07:20,155
+Four more bridges, and the first is your strongest.
+
+85
+00:07:20,435 --> 00:07:28,989
+You built a reference-free temporal-quality metric for generated video, then published the negative result when a model gamed it as a training loss.
+
+86
+00:07:29,269 --> 00:07:36,971
+Say: I have built a judge and watched a generator game it, so I keep held-out human anchors and never train against the deployed judge.
+
+87
+00:07:37,251 --> 00:07:40,984
+Next, a patch discriminator is a learned artifact detector.
+
+88
+00:07:41,264 --> 00:07:46,875
+It localizes artifacts, the same design as a production distortion detector with heatmaps.
+
+89
+00:07:47,155 --> 00:07:54,536
+Your few-step consistency models speak to cost: distillation can cut GPU cost per asset several times over.
+
+90
+00:07:54,816 --> 00:07:58,784
+Finally, your fused Golf Mode model beat per-sensor pipelines.
+
+91
+00:07:59,064 --> 00:08:04,248
+That is the shared-platform argument: one model and signal store, not many silos.
+
+92
+00:08:06,043 --> 00:08:09,222
+This chapter teaches you the business before the machine learning.
+
+93
+00:08:09,502 --> 00:08:14,899
+You will learn who pays Walmart Connect, how they are billed, and which metrics they judge us by.
+
+94
+00:08:15,179 --> 00:08:19,382
+Then you will see why creative quality is a rare lever that helps everyone.
+
+95
+00:08:21,027 --> 00:08:23,139
+Start on the left with the advertisers.
+
+96
+00:08:23,419 --> 00:08:29,755
+First-party suppliers, national brands like Procter and Gamble, sell to Walmart wholesale and spend the most.
+
+97
+00:08:30,035 --> 00:08:32,744
+Marketplace sellers are long-tail and self-serve.
+
+98
+00:08:33,024 --> 00:08:36,843
+Agencies buy display and CTV, meaning connected TV.
+
+99
+00:08:37,123 --> 00:08:43,821
+Above them, budgets come from trade marketing first, and increasingly from brand budgets that used to fund TV.
+
+100
+00:08:44,101 --> 00:08:45,424
+Thick arrows are money.
+
+101
+00:08:45,704 --> 00:08:48,989
+Sponsored Products bills by CPC, cost per click.
+
+102
+00:08:49,269 --> 00:08:53,579
+Display and CTV bill by CPM, cost per thousand impressions.
+
+103
+00:08:53,859 --> 00:08:57,869
+Every buying path lands in one ad server, auction, and billing layer.
+
+104
+00:08:58,149 --> 00:09:07,109
+It serves on-site pages, the open web through the DSP, a demand-side platform, Vizio screens, store screens, and the Sparky assistant.
+
+105
+00:09:07,389 --> 00:09:11,037
+On-site inventory is owned, so it is nearly pure margin.
+
+106
+00:09:11,317 --> 00:09:12,640
+Now the dotted arrows.
+
+107
+00:09:12,920 --> 00:09:16,824
+Impression logs join purchase logs, online and often in-store.
+
+108
+00:09:17,104 --> 00:09:20,155
+Walmart observes the purchase instead of modeling it.
+
+109
+00:09:20,435 --> 00:09:25,021
+That closed loop is the moat, because proven sales pull budget onto the platform.
+
+110
+00:09:26,451 --> 00:09:29,203
+These five terms are the pricing vocabulary.
+
+111
+00:09:29,483 --> 00:09:33,152
+CTR, click-through rate, is clicks divided by impressions.
+
+112
+00:09:33,432 --> 00:09:39,981
+CVR, conversion rate, is conversions divided by clicks, usually within a fourteen-day window.
+
+113
+00:09:40,261 --> 00:09:42,821
+CPC is spend divided by clicks.
+
+114
+00:09:43,101 --> 00:09:47,155
+CPM is spend divided by impressions, times one thousand.
+
+115
+00:09:47,435 --> 00:09:51,595
+The key one is eCPM, effective cost per thousand impressions.
+
+116
+00:09:51,875 --> 00:09:57,187
+For a click-priced ad, it equals bid times predicted CTR, times one thousand.
+
+117
+00:09:57,467 --> 00:10:01,861
+That puts every ad type on one revenue scale, so the auction can compare them.
+
+118
+00:10:03,291 --> 00:10:05,445
+Advertisers judge us on outcomes.
+
+119
+00:10:05,725 --> 00:10:10,205
+ROAS, return on ad spend, is attributed sales divided by spend.
+
+120
+00:10:10,485 --> 00:10:25,461
+A ROAS of four means four dollars of sales per dollar spent. iROAS counts only incremental sales, the ones the ad caused, so it runs much lower than ROAS. ay-koss, advertising cost of sales, is one divided by ROAS.
+
+121
+00:10:25,741 --> 00:10:30,243
+Finally, GMV, gross merchandise value, is Walmart's guardrail.
+
+122
+00:10:30,523 --> 00:10:37,755
+No single ads launch may cut GMV per search, because organic conversion is the asset that ads monetize.
+
+123
+00:10:39,185 --> 00:10:42,214
+This diagram is the central concept of the business.
+
+124
+00:10:42,494 --> 00:10:44,073
+Three parties sit in tension.
+
+125
+00:10:44,353 --> 00:10:47,211
+The shopper wants relevant results and a fast page.
+
+126
+00:10:47,491 --> 00:10:57,070
+You measure shopper damage through organic signals: search conversion, GMV per search, and query reformulation, where shoppers rewrite a failed query.
+
+127
+00:10:57,350 --> 00:11:02,790
+The advertiser wants sales and share of shelf, and sophisticated ones demand iROAS.
+
+128
+00:11:03,070 --> 00:11:07,742
+Walmart wants ad revenue, retail GMV, and long-term shopper value.
+
+129
+00:11:08,022 --> 00:11:12,801
+The double-headed edges are tensions: ad load, price and proof, and attention.
+
+130
+00:11:13,081 --> 00:11:20,846
+Below sit the levers: ad load, relevance floor, reserve price, slot positions, frequency caps, and the creative quality bar.
+
+131
+00:11:21,126 --> 00:11:27,995
+They meet in one blended score, eCPM plus alpha times relevance plus beta times shopper utility.
+
+132
+00:11:28,275 --> 00:11:30,302
+Long-term experiments set those weights.
+
+133
+00:11:30,582 --> 00:11:31,883
+Here is the key idea.
+
+134
+00:11:32,163 --> 00:11:34,787
+Most levers just move value between parties.
+
+135
+00:11:35,067 --> 00:11:40,806
+Creative quality raises CTR at the same relevance and ad load, so it helps all three.
+
+136
+00:11:41,086 --> 00:11:44,307
+In the interview, call it a GMV-safe revenue lever.
+
+137
+00:11:45,737 --> 00:11:48,830
+Here is the product landscape, grouped by inventory.
+
+138
+00:11:49,110 --> 00:11:53,675
+First, owned on-site inventory, the highest margin and highest intent.
+
+139
+00:11:53,955 --> 00:12:01,358
+Sponsored Products is a tile that looks like an organic result, so its creative is mostly the catalog image and title.
+
+140
+00:12:01,638 --> 00:12:05,905
+Sponsored Brands is a banner with logo, headline, and several products.
+
+141
+00:12:06,185 --> 00:12:09,235
+That is where generated creative first clearly matters.
+
+142
+00:12:09,515 --> 00:12:12,097
+Sponsored Videos are video units in search.
+
+143
+00:12:12,377 --> 00:12:16,665
+These three are typically CPC, while on-site display is CPM.
+
+144
+00:12:16,945 --> 00:12:18,075
+Next, off-site.
+
+145
+00:12:18,355 --> 00:12:24,542
+The Walmart DSP buys open-web impressions with first-party audiences, in first-price auctions.
+
+146
+00:12:24,822 --> 00:12:32,182
+CTV through Vizio, publicly reported as a two point three billion dollar acquisition, is also CPM.
+
+147
+00:12:32,462 --> 00:12:38,841
+Then come in-store screens, and sponsored placements inside Sparky, an emerging conversational format.
+
+148
+00:12:39,121 --> 00:12:46,033
+Finally the tools: Ad Center, the Marty advertiser agent, the Automated Creative Generator, and measurement.
+
+149
+00:12:46,313 --> 00:12:47,785
+Notice the dotted arrows.
+
+150
+00:12:48,065 --> 00:12:50,689
+One creative generator feeds many products.
+
+151
+00:12:50,969 --> 00:12:53,486
+That is your argument for one shared platform.
+
+152
+00:12:54,916 --> 00:12:57,540
+Read this one left to right as the shopper's journey.
+
+153
+00:12:57,820 --> 00:12:59,164
+Awareness comes first.
+
+154
+00:12:59,444 --> 00:13:04,030
+CTV, off-site video, and display reach shoppers before they have intent.
+
+155
+00:13:04,310 --> 00:13:09,964
+You buy reach at CPM and measure brand lift, and with closed-loop data, purchase lift too.
+
+156
+00:13:10,244 --> 00:13:19,076
+Consideration means Sponsored Brands, Sponsored Videos, and on-site display, judged by CTR, add-to-cart, and new-to-brand engagement.
+
+157
+00:13:19,356 --> 00:13:25,606
+Conversion is Sponsored Products on high-intent queries, priced by CPC and judged by ROAS.
+
+158
+00:13:25,886 --> 00:13:31,646
+Loyalty covers retargeting and reorder prompts, measured by repeat rate and lifetime value.
+
+159
+00:13:31,926 --> 00:13:36,577
+The dotted arrow back to awareness means loyal buyers seed lookalike audiences.
+
+160
+00:13:36,857 --> 00:13:42,489
+Underneath sits a shared purchase ledger, so every stage is measured against the same transactions.
+
+161
+00:13:42,769 --> 00:13:44,860
+Most media companies cannot do that.
+
+162
+00:13:45,140 --> 00:13:47,145
+The last box matters most for you.
+
+163
+00:13:47,425 --> 00:13:56,748
+Creative changes by stage: emotional story for CTV, brand plus products for Sponsored Brands, and product clarity for Sponsored Products.
+
+164
+00:13:57,028 --> 00:14:00,718
+So placement and objective are first-class generator inputs.
+
+165
+00:14:02,166 --> 00:14:05,323
+Now the campaign lifecycle, drawn as a state machine.
+
+166
+00:14:05,603 --> 00:14:07,160
+A campaign starts in Draft.
+
+167
+00:14:07,440 --> 00:14:15,056
+The advertiser, or Marty on their behalf, sets objective, budget, targeting, and SKUs, meaning the specific products.
+
+168
+00:14:15,336 --> 00:14:16,872
+Next is Creative build.
+
+169
+00:14:17,152 --> 00:14:20,438
+For Sponsored Products that is mostly the catalog listing.
+
+170
+00:14:20,718 --> 00:14:24,856
+For brands, video, and display, assets are uploaded or generated.
+
+171
+00:14:25,136 --> 00:14:28,934
+Then comes policy and quality review, often human-heavy today.
+
+172
+00:14:29,214 --> 00:14:31,944
+A failure goes to Needs changes and loops back.
+
+173
+00:14:32,224 --> 00:14:38,091
+With generative tools, that loop becomes regenerate with the critique, not a week with an agency.
+
+174
+00:14:38,371 --> 00:14:40,867
+Approved campaigns become Scheduled or Live.
+
+175
+00:14:41,147 --> 00:14:47,270
+Optimizing is separate because autobidding needs conversions and creative tests need impressions.
+
+176
+00:14:47,550 --> 00:14:51,752
+Paused has retail reasons, like budget exhaustion or out of stock.
+
+177
+00:14:52,032 --> 00:14:56,662
+Reporting waits for the attribution window to close, then feeds a cloned relaunch.
+
+178
+00:14:56,942 --> 00:14:59,288
+Creative intelligence changes two states.
+
+179
+00:14:59,568 --> 00:15:03,323
+Automated evaluation, chapter six, shrinks review latency.
+
+180
+00:15:03,603 --> 00:15:07,571
+Creative insights at reporting improve the next campaign's ROAS.
+
+181
+00:15:09,351 --> 00:15:15,687
+This chapter follows one search ad request from the query to the winning ad, then through training and measurement.
+
+182
+00:15:15,967 --> 00:15:17,481
+You already know the modeling.
+
+183
+00:15:17,761 --> 00:15:22,519
+The new parts are economic: calibrated probabilities, auctions, and budgets.
+
+184
+00:15:22,799 --> 00:15:25,657
+At every stage, watch for where creative enters.
+
+185
+00:15:27,292 --> 00:15:29,298
+The shopper searches for paper towels.
+
+186
+00:15:29,578 --> 00:15:36,639
+The front end calls organic search and the ad server in parallel, so ads gets roughly thirty to fifty milliseconds.
+
+187
+00:15:36,919 --> 00:15:41,676
+Query understanding spell-corrects, classifies the category, and embeds the query.
+
+188
+00:15:41,956 --> 00:15:49,700
+Retrieval pulls candidates three ways: lexical keyword match, semantic two-tower nearest neighbors, and behavioral co-buy.
+
+189
+00:15:49,980 --> 00:15:55,612
+The budget service drops campaigns with no money left, leaving one to five thousand candidates.
+
+190
+00:15:55,892 --> 00:15:59,796
+One batched feature fetch gets user, ad, and creative features.
+
+191
+00:16:00,076 --> 00:16:02,316
+That fetch is often the real bottleneck.
+
+192
+00:16:02,596 --> 00:16:09,338
+The ranker returns predicted CTR, or click-through rate, predicted CVR, or conversion rate, and relevance.
+
+193
+00:16:09,618 --> 00:16:12,263
+The auction picks winners, slots, and prices.
+
+194
+00:16:12,543 --> 00:16:15,700
+A page blender merges ads into organic slots.
+
+195
+00:16:15,980 --> 00:16:20,866
+Impressions count only when viewable, and serve-time features are logged for training.
+
+196
+00:16:21,146 --> 00:16:27,162
+The ad server chooses which creative, but a CDN, a content delivery network, serves the pixels.
+
+197
+00:16:27,442 --> 00:16:31,943
+So expensive generation stays offline and never touches serving latency.
+
+198
+00:16:33,376 --> 00:16:36,170
+Here is the same request as a funnel of models.
+
+199
+00:16:36,450 --> 00:16:41,848
+At the top sits the ad corpus, millions of item, campaign, and creative combinations.
+
+200
+00:16:42,128 --> 00:16:46,160
+No heavy model can score them all at a hundred thousand queries per second.
+
+201
+00:16:46,440 --> 00:16:51,538
+Retrieval takes about ten milliseconds and returns one to five thousand candidates.
+
+202
+00:16:51,818 --> 00:16:59,200
+Eligibility filters remove anything without budget, out of stock at the shopper's store, mistargeted, or against policy.
+
+203
+00:16:59,480 --> 00:17:03,149
+A light pre-ranker cuts to a few hundred in about five milliseconds.
+
+204
+00:17:03,429 --> 00:17:07,013
+It learns to imitate the ranker: the dotted distillation arrow.
+
+205
+00:17:07,293 --> 00:17:12,584
+The heavy ranker scores those in ten to fifteen milliseconds, and creative features enter here.
+
+206
+00:17:12,864 --> 00:17:17,877
+The auction stage applies floors, diversity, and pricing, leaving two to eight winners.
+
+207
+00:17:18,157 --> 00:17:23,042
+The arrow back measures recall at K per stage, revealing which stage drops good ads.
+
+208
+00:17:23,322 --> 00:17:24,901
+Here is the creative point.
+
+209
+00:17:25,181 --> 00:17:32,050
+Generated variants multiply candidates, so make creative selection a late, cheap stage after item ranking.
+
+210
+00:17:33,501 --> 00:17:35,762
+Now inside the ranker, top to bottom.
+
+211
+00:17:36,042 --> 00:17:40,906
+Sparse IDs go into sharded embedding tables that reach hundreds of gigabytes.
+
+212
+00:17:41,186 --> 00:17:49,122
+The behavior sequence uses target attention, where the candidate item is the query, as in DIN, the deep interest network.
+
+213
+00:17:49,402 --> 00:17:53,434
+Dense features like price and historical CTR are normalized.
+
+214
+00:17:53,714 --> 00:18:01,991
+Then the creative hook: precomputed multimodal embeddings of the product image, title, and creative image, CLIP or sig-lip style.
+
+215
+00:18:02,271 --> 00:18:08,266
+Everything meets in DCN-v2, a deep and cross network, plus a multilayer perceptron.
+
+216
+00:18:08,546 --> 00:18:15,394
+Shared experts with per-task gates, M-M-O-E, multi-gate mixture of experts, let tasks share and diverge.
+
+217
+00:18:15,674 --> 00:18:19,535
+Heads predict CTR, CVR, add-to-cart, and relevance.
+
+218
+00:18:19,815 --> 00:18:28,989
+The CVR head is E-S-M-M style, the entire space multi-task model, trained on all impressions to remove sample selection bias.
+
+219
+00:18:29,269 --> 00:18:33,173
+A shallow position tower absorbs slot bias in training only.
+
+220
+00:18:33,453 --> 00:18:35,415
+Last comes per-segment calibration.
+
+221
+00:18:35,695 --> 00:18:43,546
+In the interview, say creative embeddings give a new generated creative a sensible predicted CTR before any impressions.
+
+222
+00:18:44,976 --> 00:18:50,672
+The auction multiplies predicted CTR by the bid, and pacing treats it as a probability.
+
+223
+00:18:50,952 --> 00:18:56,648
+Great A-U-C, a pure ranking metric, with twenty percent over-prediction still overcharges.
+
+224
+00:18:56,928 --> 00:19:01,024
+Monitor the calibration ratio, predicted over actual, per segment.
+
+225
+00:19:01,304 --> 00:19:07,426
+Negative downsampling, keeping a fraction w of negatives, inflates the raw output, p prime.
+
+226
+00:19:07,706 --> 00:19:14,149
+Correct it: p equals p prime, divided by p prime plus one minus p prime over w.
+
+227
+00:19:14,429 --> 00:19:17,949
+At ten percent, a raw one half becomes about nine percent.
+
+228
+00:19:18,229 --> 00:19:22,325
+Segment new ads too, since generated creatives miscalibrate first.
+
+229
+00:19:23,767 --> 00:19:24,813
+Now the auction.
+
+230
+00:19:25,093 --> 00:19:30,063
+Candidates arrive with a bid, a calibrated predicted CTR, and relevance.
+
+231
+00:19:30,343 --> 00:19:32,477
+The first gate is the relevance floor.
+
+232
+00:19:32,757 --> 00:19:37,535
+No amount of money buys an irrelevant ad onto the page, which protects the shopper.
+
+233
+00:19:37,815 --> 00:19:45,623
+Next, compute eCPM, revenue per thousand impressions: bid times predicted CTR times one thousand.
+
+234
+00:19:45,903 --> 00:19:51,941
+The second gate is the reserve price, a minimum eCPM that protects prices in thin auctions.
+
+235
+00:19:52,221 --> 00:19:54,375
+It can be learned per query or category.
+
+236
+00:19:54,655 --> 00:20:01,823
+Survivors are sorted by eCPM, deduplicated, diversified, and allocated up to the ad load cap.
+
+237
+00:20:02,103 --> 00:20:05,239
+Pricing is GSP, generalized second price.
+
+238
+00:20:05,519 --> 00:20:12,069
+Each winner pays the minimum needed to keep its slot, clamped between reserve and its own bid, and only on a click.
+
+239
+00:20:12,349 --> 00:20:17,106
+Off-site demand-side platform auctions are first price, so bidders shade bids.
+
+240
+00:20:17,386 --> 00:20:22,165
+Every participant is logged, including losers, for counterfactual analysis.
+
+241
+00:20:22,445 --> 00:20:27,671
+The creative tie-in: higher predicted CTR wins a better slot at a lower price.
+
+242
+00:20:29,101 --> 00:20:30,552
+Memorize this example.
+
+243
+00:20:30,832 --> 00:20:37,872
+Slot i pays the next ad's score, bid times predicted CTR, divided by its own predicted CTR.
+
+244
+00:20:38,152 --> 00:20:42,333
+A bids one dollar at point zero five, scoring point zero five.
+
+245
+00:20:42,613 --> 00:20:46,645
+B bids two dollars at point zero two, scoring point zero four.
+
+246
+00:20:46,925 --> 00:20:51,192
+C bids fifty cents at point zero six, scoring point zero three.
+
+247
+00:20:51,472 --> 00:20:55,269
+A pays point zero four over point zero five, eighty cents.
+
+248
+00:20:55,549 --> 00:20:59,475
+B pays point zero three over point zero two, a dollar fifty.
+
+249
+00:20:59,755 --> 00:21:01,973
+A wins the top slot with the lowest bid.
+
+250
+00:21:02,253 --> 00:21:04,237
+Better creative is cheaper media.
+
+251
+00:21:05,685 --> 00:21:12,533
+Most advertisers set a goal, a budget, and maybe a target ROAS, return on ad spend, not per-keyword bids.
+
+252
+00:21:12,813 --> 00:21:19,063
+A value model estimates each opportunity as predicted CVR times expected order value.
+
+253
+00:21:19,343 --> 00:21:24,549
+Calibration errors in that value model become direct overspending or underspending.
+
+254
+00:21:24,829 --> 00:21:27,154
+The bid is that value divided by lambda.
+
+255
+00:21:27,434 --> 00:21:31,402
+Bids enter auctions, producing wins, clicks, spend, and conversions.
+
+256
+00:21:31,682 --> 00:21:39,149
+A spend tracker compares actual spend against a target curve shaped by expected traffic, not a straight line through the day.
+
+257
+00:21:39,429 --> 00:21:41,242
+The controller then updates lambda.
+
+258
+00:21:41,522 --> 00:21:44,103
+Overspending raises lambda, so bids fall.
+
+259
+00:21:44,383 --> 00:21:46,709
+Underspending lowers it, so bids rise.
+
+260
+00:21:46,989 --> 00:21:52,087
+Lambda refreshes every few minutes, while delayed conversions retrain the value model.
+
+261
+00:21:52,367 --> 00:21:57,423
+Throttling, joining each auction with some probability, is a simpler but cruder lever.
+
+262
+00:21:57,703 --> 00:21:59,602
+Here is the creative interaction.
+
+263
+00:21:59,882 --> 00:22:03,999
+If a new variant raises CTR, spend jumps and the pacer reacts.
+
+264
+00:22:04,279 --> 00:22:11,042
+So measure creative lift with budget-split or advertiser-level randomization, never naive impression splits.
+
+265
+00:22:12,476 --> 00:22:16,530
+The advertiser maximizes total value, the sum of x times v.
+
+266
+00:22:16,810 --> 00:22:20,308
+Here x says whether you win auction i, and v is its value.
+
+267
+00:22:20,588 --> 00:22:24,428
+Total cost, the sum of x times c, must stay within budget B.
+
+268
+00:22:24,708 --> 00:22:30,682
+The Lagrangian dual gives the optimal bid: v divided by lambda, the shadow price of budget.
+
+269
+00:22:30,962 --> 00:22:33,778
+Scarce budget means high lambda and lower bids.
+
+270
+00:22:34,058 --> 00:22:39,284
+Each step, lambda moves by a learning rate, eta, times the spend error, floored at zero.
+
+271
+00:22:39,564 --> 00:22:44,471
+Ship this dual-gradient controller first, then test reinforcement learning against it.
+
+272
+00:22:45,900 --> 00:22:47,671
+Training data starts at serving.
+
+273
+00:22:47,951 --> 00:22:54,970
+The ad server logs exactly the features the model saw, because recomputing them later causes training-serving skew.
+
+274
+00:22:55,250 --> 00:23:01,500
+Three Kafka streams carry impressions with auctions, clicks, and orders, including linked store transactions.
+
+275
+00:23:01,780 --> 00:23:04,767
+A stream join by impression ID builds labels.
+
+276
+00:23:05,047 --> 00:23:09,164
+Clicks join in seconds, but orders can take the full attribution window.
+
+277
+00:23:09,444 --> 00:23:12,836
+So you either wait, or train now with a delayed-feedback model.
+
+278
+00:23:13,116 --> 00:23:21,927
+Batch pipelines fill an offline feature store with point-in-time correct joins, and an online store for fast lookup, from the same definitions.
+
+279
+00:23:22,207 --> 00:23:25,599
+Training is a daily full retrain plus hourly increments.
+
+280
+00:23:25,879 --> 00:23:30,295
+Validation checks A-U-C, log loss, and calibration by segment.
+
+281
+00:23:30,575 --> 00:23:37,210
+Then a model registry, shadow, canary, and an online experiment with gross merchandise value guardrails.
+
+282
+00:23:37,490 --> 00:23:38,898
+The dotted loop matters.
+
+283
+00:23:39,178 --> 00:23:46,047
+The model decides what is shown, which decides the next data, so generated creatives need exploration traffic.
+
+284
+00:23:46,327 --> 00:23:49,954
+And log creative ID and creative attributes from day one.
+
+285
+00:23:51,400 --> 00:23:53,832
+Exposure data comes from four sources.
+
+286
+00:23:54,112 --> 00:24:04,310
+They are on-site impressions and clicks, off-site display impressions, connected TV exposures via Vizio, and store screen plays known only by store and time.
+
+287
+00:24:04,590 --> 00:24:09,454
+Purchase data is online orders plus in-store transactions linked to accounts.
+
+288
+00:24:09,734 --> 00:24:15,088
+Identity resolution joins them at account or household level, under privacy controls.
+
+289
+00:24:15,368 --> 00:24:20,211
+Attribution credits sales by rules like last touch in a fourteen-day window.
+
+290
+00:24:20,491 --> 00:24:23,456
+But attribution only says which ads were near the sale.
+
+291
+00:24:23,736 --> 00:24:25,955
+Incrementality says which ads caused it.
+
+292
+00:24:26,235 --> 00:24:29,542
+Randomized holdouts withhold ads from a control group.
+
+293
+00:24:29,822 --> 00:24:34,280
+Ghost ads log, in control, which ad would have won, so you compare like with like.
+
+294
+00:24:34,560 --> 00:24:38,080
+Store screens and connected TV need geo experiments.
+
+295
+00:24:38,360 --> 00:24:46,467
+Reporting shows ROAS, iROAS, meaning incremental ROAS, and halo, with MRC, the Media Rating Council, auditing the counts.
+
+296
+00:24:46,747 --> 00:24:51,611
+Search incrementality reporting was publicly launched in 2025.
+
+297
+00:24:51,891 --> 00:24:59,230
+For creative, optimize incremental conversions per dollar, because optimizing CTR alone finds clickbait.
+
+298
+00:25:01,009 --> 00:25:04,273
+Welcome to chapter five, the technical core of this job.
+
+299
+00:25:04,553 --> 00:25:12,084
+The role asks for systems that produce on-brand, compliant images, copy and composed ads without manual production.
+
+300
+00:25:12,364 --> 00:25:16,609
+This is where your diffusion, inpainting and relighting work pays off most.
+
+301
+00:25:16,889 --> 00:25:21,753
+By the end, you should be able to draw this pipeline from memory and defend every choice.
+
+302
+00:25:23,383 --> 00:25:27,735
+First, place creative inside the ads system, using Diagram thirteen.
+
+303
+00:25:28,015 --> 00:25:30,255
+On the left are three sources of creative.
+
+304
+00:25:30,535 --> 00:25:36,189
+The catalog comes first, and for Sponsored Products the creative is simply the catalog listing.
+
+305
+00:25:36,469 --> 00:25:41,375
+Next come advertiser uploads, and then generated creatives, your team's output.
+
+306
+00:25:41,655 --> 00:25:45,389
+All three feed the creative asset store in the middle, which is the hub.
+
+307
+00:25:45,669 --> 00:25:50,789
+Every asset carries lineage, meaning who or what made it, plus extracted attributes.
+
+308
+00:25:51,069 --> 00:25:53,842
+On the right are five consumers of those assets.
+
+309
+00:25:54,122 --> 00:25:58,069
+Ad review sees assets first, and only approved ones reach ranking.
+
+310
+00:25:58,349 --> 00:26:03,682
+Ranking uses creative features to predict click-through rate and to pick which creative to show.
+
+311
+00:26:03,962 --> 00:26:11,471
+Rendering produces each format, targeting matches attributes to context, and measurement reports performance by attribute.
+
+312
+00:26:11,751 --> 00:26:19,090
+Thick arrows carry the shopper's response into logs keyed by creative ID, and dotted arrows loop back into generation.
+
+313
+00:26:19,370 --> 00:26:25,429
+Your line: creative should be a structured, versioned, queryable object, not a JPEG URL.
+
+314
+00:26:26,858 --> 00:26:33,365
+Here's the key mental model: an ad is not one image, but a stack of layers, each with its own source of truth.
+
+315
+00:26:33,645 --> 00:26:37,357
+The product cutout comes from the catalog, and its pixels are locked.
+
+316
+00:26:37,637 --> 00:26:41,733
+The scene is generated, and it is the only truly open canvas.
+
+317
+00:26:42,013 --> 00:26:47,602
+Headlines come from a large language model, or LLM, but only from verified facts.
+
+318
+00:26:47,882 --> 00:26:53,173
+The call to action, or CTA, comes from a fixed list, and the logo is a vector file.
+
+319
+00:26:53,453 --> 00:26:59,682
+Price, rating and badges are live data, bound at render or serve time, so they never go stale.
+
+320
+00:26:59,962 --> 00:27:07,109
+In the interview, say it plainly: price, logo, rating and legal text are data, and data is never generated.
+
+321
+00:27:08,538 --> 00:27:12,592
+You know these models deeply, so focus on the decisions they drive.
+
+322
+00:27:12,872 --> 00:27:19,805
+In latent diffusion, the variational autoencoder, or V-A-E, can blur packaging text on a round trip alone.
+
+323
+00:27:20,085 --> 00:27:23,221
+So product pixels should never pass through the generator.
+
+324
+00:27:23,501 --> 00:27:31,416
+Diffusion transformers, or D-I-T models, trained with flow matching, handle many aspect ratios natively with fewer steps.
+
+325
+00:27:31,696 --> 00:27:36,389
+Classifier-free guidance, or CFG, samples a sharpened distribution.
+
+326
+00:27:36,669 --> 00:27:43,218
+High guidance therefore oversaturates and kills diversity, so rescale it or guide only at mid-noise.
+
+327
+00:27:43,498 --> 00:27:51,840
+Few-step distillation turns sixty network passes into four, about fifteen times less denoising, your consistency-model territory.
+
+328
+00:27:52,120 --> 00:28:02,082
+On adapters, LoRA learns a brand style, IP-Adapter borrows style from a reference image without training, and ControlNet supplies depth and layout.
+
+329
+00:28:02,362 --> 00:28:07,653
+All three give resemblance, never pixel-exact products, so the product gets composited.
+
+330
+00:28:09,082 --> 00:28:14,501
+Now the centerpiece, Diagram fourteen, starting with the advertiser inputs at the top.
+
+331
+00:28:14,781 --> 00:28:19,026
+The SKU, or stock keeping unit, anchors everything to a real product.
+
+332
+00:28:19,306 --> 00:28:25,920
+The brand kit carries logos, fonts, colors and hard rules, while goal and placements set style and sizes.
+
+333
+00:28:26,200 --> 00:28:32,877
+Catalog fetch pulls hero images, attributes and approved claims, the source of truth for pixels and words.
+
+334
+00:28:33,157 --> 00:28:40,240
+On the visual branch, segmentation and matting cut out the product with a soft alpha edge, and those pixels are now locked.
+
+335
+00:28:40,520 --> 00:28:48,008
+Scene generation inpaints around that mask, with depth or edge control for perspective and a style adapter for brand look.
+
+336
+00:28:48,288 --> 00:28:51,210
+Harmonization then matches the light and adds shadows.
+
+337
+00:28:51,490 --> 00:28:58,317
+On the copy branch, the LLM writes structured JSON from a fact sheet, and every claim must cite a fact ID.
+
+338
+00:28:58,597 --> 00:29:05,637
+The claim checker runs entailment against those facts, exact-matches numbers, and blocks words like best or cures.
+
+339
+00:29:05,917 --> 00:29:10,440
+Defend two principles: product pixels are sacred, and words are grounded.
+
+340
+00:29:11,874 --> 00:29:18,893
+Product fidelity is the make-or-break problem, because a wrong variant or garbled label is a false advertisement.
+
+341
+00:29:19,173 --> 00:29:26,831
+Architecture handles most of it: the generator only paints outside the mask, and you re-paste the original pixels afterwards.
+
+342
+00:29:27,111 --> 00:29:31,677
+The hard part is making the paste look real, and that's your spherical-harmonics strength.
+
+343
+00:29:31,957 --> 00:29:35,498
+Estimate the scene light as nine coefficients per color channel.
+
+344
+00:29:35,778 --> 00:29:40,045
+Then multiply the product by the ratio of scene shading to source shading.
+
+345
+00:29:40,325 --> 00:29:45,125
+That field is smooth, so it cannot damage text or logo edges by construction.
+
+346
+00:29:45,405 --> 00:29:50,695
+Bound it near half a stop, check brand-color drift, and add shadows from a fitted ground plane.
+
+347
+00:29:50,975 --> 00:29:58,719
+Then verify with pixel lock, optical character recognition diffs, Dino v two similarity, and count and scale checks.
+
+348
+00:30:00,166 --> 00:30:04,240
+Now the lower half of the same diagram, where everything gets composed.
+
+349
+00:30:04,520 --> 00:30:09,000
+The branches meet at the layout and composition engine, which is deterministic.
+
+350
+00:30:09,280 --> 00:30:14,891
+Templates plus a constraint solver place the logo, headline, CTA and late-bound price.
+
+351
+00:30:15,171 --> 00:30:18,115
+Text is rendered as vector type in the brand font.
+
+352
+00:30:18,395 --> 00:30:23,600
+So spelling is exact, prices stay fresh, and localization is just a string swap.
+
+353
+00:30:23,880 --> 00:30:30,515
+In per-placement adaptation, sizes run from eight to one wide to one to four tall, so no image fits all.
+
+354
+00:30:30,795 --> 00:30:35,296
+If the aspect change is small, smart crop, keeping the product fully inside.
+
+355
+00:30:35,576 --> 00:30:40,995
+If the scene is extendable, outpaint, which is your inpainting work with the mask inverted.
+
+356
+00:30:41,275 --> 00:30:45,990
+For a seven twenty-eight by ninety leaderboard, re-layout onto a brand-color plate.
+
+357
+00:30:46,270 --> 00:30:49,854
+Generate scenes once per aspect family, not per placement.
+
+358
+00:30:50,134 --> 00:30:58,902
+Finally, the router sends confident passes to the advertiser, uncertain items to humans, and failures back to regenerate with the critique.
+
+359
+00:31:00,332 --> 00:31:04,535
+Accessibility is a preferred qualification that most candidates skip.
+
+360
+00:31:04,815 --> 00:31:09,487
+Since the compositor knows every glyph and color, contrast becomes exact math.
+
+361
+00:31:09,767 --> 00:31:18,428
+First, take each sRGB channel as c, the eight-bit value divided by two fifty-five, and linearize it with the curve on line one.
+
+362
+00:31:18,708 --> 00:31:24,831
+Second, relative luminance L weights the linear red, green and blue values, with green weighted most.
+
+363
+00:31:25,111 --> 00:31:44,183
+Third, the contrast ratio CR is the lighter luminance L one plus point zero five, divided by the darker L two plus point zero five. wuh-cag, the Web Content Accessibility Guidelines, at level double-A, needs four point five to one for body text and three to one for large text.
+
+364
+00:31:44,463 --> 00:31:48,303
+White on a typical red scores about four point two, so it fails.
+
+365
+00:31:49,749 --> 00:31:53,248
+Interviewers probe two more areas, starting with brand at scale.
+
+366
+00:31:53,528 --> 00:31:57,773
+You can't maintain a LoRA for each of thousands of brands, so tier it.
+
+367
+00:31:58,053 --> 00:32:03,642
+The long tail gets reference-image conditioning and palette prompts, at near-zero cost per brand.
+
+368
+00:32:03,922 --> 00:32:08,637
+Top spenders get a LoRA only when an A B test shows the lift pays off.
+
+369
+00:32:08,917 --> 00:32:13,589
+Colors that matter are rendered, then checked with Delta E in C-I-E lab space.
+
+370
+00:32:13,869 --> 00:32:18,989
+The second area is safety, where prevention is soft and detection decides what ships.
+
+371
+00:32:19,269 --> 00:32:26,458
+Classifiers check for explicit content, minors, competitor logos, celebrity likeness and stray scene text.
+
+372
+00:32:26,738 --> 00:32:31,709
+A category policy engine covers regulated goods, defaulting to the strictest rule.
+
+373
+00:32:31,989 --> 00:32:38,474
+Every asset carries a C-two-P-A provenance manifest plus a watermark, since ad pipelines strip metadata.
+
+374
+00:32:39,916 --> 00:32:43,137
+Cost math shows judgment, so state your assumptions first.
+
+375
+00:32:43,417 --> 00:32:48,260
+Assume a GPU at three dollars an hour, and fifty milliseconds per denoising step.
+
+376
+00:32:48,540 --> 00:32:53,105
+Thirty steps plus decode and gates is two GPU-seconds per candidate.
+
+377
+00:32:53,385 --> 00:33:00,148
+Generate four candidates, then divide by sixty percent utilization and an eighty-five percent pass rate.
+
+378
+00:33:00,428 --> 00:33:05,078
+That's about sixteen GPU-seconds, or one point three cents per approved scene.
+
+379
+00:33:05,358 --> 00:33:08,281
+Four distilled steps land near four tenths of a cent.
+
+380
+00:33:08,561 --> 00:33:15,921
+Denoising fell fifteen times, but total cost fell only about three times, because gates and decoding now dominate.
+
+381
+00:33:16,201 --> 00:33:23,604
+At half a million SKUs, review and quality failures cost more than GPUs, so invest in gate accuracy first.
+
+382
+00:33:25,391 --> 00:33:28,249
+Chapter six, and the most important one for this role.
+
+383
+00:33:28,529 --> 00:33:39,815
+The job description names it twice: models judging model output, calibrated against human and advertiser preference, with drift detection and reliability at production scale.
+
+384
+00:33:40,095 --> 00:33:42,100
+Expect at least one deep dive here.
+
+385
+00:33:42,380 --> 00:33:46,604
+It is also where your published negative result becomes your strongest story.
+
+386
+00:33:48,249 --> 00:33:50,766
+I'd build a judge stack, not a single judge.
+
+387
+00:33:51,046 --> 00:33:57,894
+Cheap deterministic checks, then specialists, then a VLM, a vision-language model, scoring against a rubric.
+
+388
+00:33:58,174 --> 00:34:01,737
+Every score is calibrated to the probability a human approves.
+
+389
+00:34:02,017 --> 00:34:05,900
+A risk-based router auto-approves only above target precision.
+
+390
+00:34:06,180 --> 00:34:10,745
+I monitor drift, and I never let the generator optimize against the gatekeeper.
+
+391
+00:34:11,025 --> 00:34:15,676
+Open any evaluation question with this, then let them pick a box to drill into.
+
+392
+00:34:17,124 --> 00:34:18,169
+Start with why.
+
+393
+00:34:18,449 --> 00:34:19,879
+Generation is cheap.
+
+394
+00:34:20,159 --> 00:34:21,503
+Human review is not.
+
+395
+00:34:21,783 --> 00:34:30,252
+Picture thousands of brands, times millions of SKUs, the individual catalog products, times dozens of placements and variants.
+
+396
+00:34:30,532 --> 00:34:35,225
+Creative volume grows combinatorially, while review capacity grows linearly.
+
+397
+00:34:35,505 --> 00:34:36,935
+So here's the key idea.
+
+398
+00:34:37,215 --> 00:34:43,977
+Your judge's precision at the auto-approve threshold decides how much generated creative you can actually ship.
+
+399
+00:34:44,257 --> 00:34:46,071
+Next, trust is asymmetric.
+
+400
+00:34:46,351 --> 00:34:53,881
+One hallucinated claim or distorted logo shown to a national brand costs more than a thousand good images earn.
+
+401
+00:34:54,161 --> 00:34:57,959
+That asymmetry, not raw accuracy, should set your operating point.
+
+402
+00:34:58,239 --> 00:35:04,233
+Finally, evaluation plays three roles at once: gatekeeper, coach for the generator, and scoreboard.
+
+403
+00:35:04,513 --> 00:35:05,665
+Keep them separate.
+
+404
+00:35:05,945 --> 00:35:07,503
+We return to why at the end.
+
+405
+00:35:08,932 --> 00:35:12,196
+Before building any judge, write a failure-mode catalog.
+
+406
+00:35:12,476 --> 00:35:16,913
+Every dimension gets an owner, a detector, a golden set and a target.
+
+407
+00:35:17,193 --> 00:35:19,220
+On the left are the critical dimensions.
+
+408
+00:35:19,500 --> 00:35:22,977
+Product fidelity, like a morphed product or a garbled label.
+
+409
+00:35:23,257 --> 00:35:25,604
+Hallucinated claims and wrong prices.
+
+410
+00:35:25,884 --> 00:35:27,185
+Policy and safety.
+
+411
+00:35:27,465 --> 00:35:28,831
+Intellectual property.
+
+412
+00:35:29,111 --> 00:35:30,433
+And severe distortion.
+
+413
+00:35:30,713 --> 00:35:37,284
+On the right are the softer ones: appeal, scene fit, brand style, and predicted click-through rate, or CTR.
+
+414
+00:35:37,564 --> 00:35:39,505
+Here's the Distinguished-level point.
+
+415
+00:35:39,785 --> 00:35:43,199
+Quality is multi-dimensional, with different loss functions.
+
+416
+00:35:43,479 --> 00:35:46,209
+Gates are vetoes, tuned for recall of failures.
+
+417
+00:35:46,489 --> 00:35:49,497
+Objectives are ranked, optimized and A B tested.
+
+418
+00:35:49,777 --> 00:35:52,295
+Never collapse them into one score for gating.
+
+419
+00:35:52,575 --> 00:35:56,116
+A beautiful image that misrepresents the product must still fail.
+
+420
+00:35:57,557 --> 00:36:00,800
+Here is the judge stack, Diagram fifteen in your packet.
+
+421
+00:36:01,080 --> 00:36:02,317
+Read it from the top.
+
+422
+00:36:02,597 --> 00:36:08,165
+The candidate creative arrives with its SKU, brand kit, placement and intended copy.
+
+423
+00:36:08,445 --> 00:36:11,794
+Layer zero is deterministic and costs milliseconds.
+
+424
+00:36:12,074 --> 00:36:18,112
+It checks format, safe zones, and text contrast against wuh-cag, the web accessibility guidelines.
+
+425
+00:36:18,392 --> 00:36:26,008
+An OCR diff, using optical character recognition, confirms the rendered text matches the approved copy exactly.
+
+426
+00:36:26,288 --> 00:36:30,426
+Then product fidelity against the catalog image, and logo integrity.
+
+427
+00:36:30,706 --> 00:36:33,842
+Any hard fail goes straight to reject and regenerate.
+
+428
+00:36:34,122 --> 00:36:37,749
+Layer one is specialist detectors, tens of milliseconds each.
+
+429
+00:36:38,029 --> 00:36:45,538
+They cover artifacts, policy, trademarks, and claim NLI, natural language inference against catalog attributes.
+
+430
+00:36:45,818 --> 00:36:50,000
+Only survivors reach layer two, the VLM judge, which takes seconds.
+
+431
+00:36:50,280 --> 00:36:55,506
+It scores what rules can't, like brand fit, product prominence and copy-image coherence.
+
+432
+00:36:55,786 --> 00:37:00,608
+It runs pairwise comparisons with position swap, and writes a structured rationale.
+
+433
+00:37:00,888 --> 00:37:05,432
+This is the funnel logic of ad serving from chapter four, applied to quality.
+
+434
+00:37:06,861 --> 00:37:08,930
+Now the bottom half of the same picture.
+
+435
+00:37:09,210 --> 00:37:13,882
+Judge scores flow into the calibration layer, the key Distinguished-level idea.
+
+436
+00:37:14,162 --> 00:37:16,146
+Raw scores are not probabilities.
+
+437
+00:37:16,426 --> 00:37:24,234
+So you fit a mapping, isotonic or Platt, from judge outputs to the probability a human approves, per category and placement.
+
+438
+00:37:24,514 --> 00:37:29,144
+Now auto-approve above point nine seven has a measurable false-approval rate.
+
+439
+00:37:29,424 --> 00:37:32,730
+Next comes the router, with cost-asymmetric thresholds.
+
+440
+00:37:33,010 --> 00:37:35,912
+High probability and no flags, auto-approve.
+
+441
+00:37:36,192 --> 00:37:41,482
+The middle band goes to human review, plus active-learning picks that teach the judge the most.
+
+442
+00:37:41,762 --> 00:37:45,730
+Low probability means reject and regenerate with the critique.
+
+443
+00:37:46,010 --> 00:37:47,696
+Now follow the dotted lines.
+
+444
+00:37:47,976 --> 00:37:52,072
+A random audit sample of auto-approved items goes back to humans.
+
+445
+00:37:52,352 --> 00:37:56,853
+Without it, you cannot estimate your false-approval rate, so it's non-negotiable.
+
+446
+00:37:57,133 --> 00:38:04,493
+Every human decision lands in the label store, which drives weekly recalibration, judge fine-tuning and golden sets.
+
+447
+00:38:04,773 --> 00:38:09,594
+Finally, drift monitors watch approval rates, score shifts and kappa by segment.
+
+448
+00:38:09,874 --> 00:38:13,821
+On drift, thresholds tighten automatically, sending more to humans.
+
+449
+00:38:15,251 --> 00:38:16,979
+On the left, rubric design.
+
+450
+00:38:17,259 --> 00:38:19,542
+Ask one concrete question per dimension.
+
+451
+00:38:19,822 --> 00:38:25,838
+Not, is this a good ad, but, is the packaging text identical to the reference, quoting any differences.
+
+452
+00:38:26,118 --> 00:38:29,190
+Binary checks calibrate better than one-to-five scales.
+
+453
+00:38:29,470 --> 00:38:33,950
+Always pass references: the catalog image, attributes and brand kit.
+
+454
+00:38:34,230 --> 00:38:38,070
+Ask for evidence first, then the verdict, as constrained JSON.
+
+455
+00:38:38,350 --> 00:38:43,534
+Score with the log-probability of the yes token, which is continuous and calibratable.
+
+456
+00:38:43,814 --> 00:38:45,968
+On the right, biases and defenses.
+
+457
+00:38:46,248 --> 00:38:48,595
+Position bias: judge both orders.
+
+458
+00:38:48,875 --> 00:38:52,715
+Self-preference: use a different model family than the generator.
+
+459
+00:38:52,995 --> 00:38:55,960
+Aesthetic halo: leave fidelity to specialists.
+
+460
+00:38:56,240 --> 00:39:00,720
+Low-resolution blindness: crop text and product at native resolution.
+
+461
+00:39:01,000 --> 00:39:05,203
+Prompt injection through image text: treat OCR output as data.
+
+462
+00:39:06,633 --> 00:39:09,854
+The most important single detector is product fidelity.
+
+463
+00:39:10,134 --> 00:39:14,956
+Align the generated product to the catalog image, then compare inside the mask.
+
+464
+00:39:15,236 --> 00:39:25,070
+Use DINO or CLIP patch similarity, LPIPS perceptual distance, structural similarity, color delta E, and an OCR diff of the packaging text.
+
+465
+00:39:25,350 --> 00:39:28,529
+Better still, architect so the judge's job is easy.
+
+466
+00:39:28,809 --> 00:39:34,462
+Composite the real product with its pixels locked, and fidelity reduces to checking the boundary.
+
+467
+00:39:34,742 --> 00:39:41,121
+The artifact detector outputs a patch-level heatmap, trained on synthetic corruptions with known masks.
+
+468
+00:39:41,401 --> 00:39:43,812
+That is your synthetic-data rig experience.
+
+469
+00:39:44,092 --> 00:39:47,740
+Shadow-direction checks use your spherical-harmonics lighting work.
+
+470
+00:39:48,020 --> 00:39:53,118
+Claims go through NLI against the catalog, and prices are rendered from live data.
+
+471
+00:39:53,398 --> 00:39:57,494
+Policy uses classifiers plus a rules engine, tuned for recall.
+
+472
+00:39:58,925 --> 00:40:00,930
+Calibration is the core keyword.
+
+473
+00:40:01,210 --> 00:40:03,365
+First, decide what you calibrate to.
+
+474
+00:40:03,645 --> 00:40:09,938
+Reviewers are the gatekeeping target, advertisers the preference target, and shoppers the performance target.
+
+475
+00:40:10,218 --> 00:40:12,394
+They disagree, so keep separate heads.
+
+476
+00:40:12,674 --> 00:40:13,805
+Second, labels.
+
+477
+00:40:14,085 --> 00:40:19,162
+Use rater guidelines, gold questions, and stratified sampling with recorded weights.
+
+478
+00:40:19,442 --> 00:40:22,855
+Measure agreement with Cohen's kappa, which corrects for chance.
+
+479
+00:40:23,135 --> 00:40:28,981
+A judge can't be expected to beat human-to-human agreement, so report both kappas side by side.
+
+480
+00:40:29,261 --> 00:40:30,413
+Third, the method.
+
+481
+00:40:30,693 --> 00:40:35,450
+Platt scaling is a logistic regression on the raw score, stable with little data.
+
+482
+00:40:35,730 --> 00:40:41,383
+Isotonic regression is monotone and flexible, but needs thousands of labels per segment.
+
+483
+00:40:41,663 --> 00:40:44,095
+Shrink small segments toward the global curve.
+
+484
+00:40:44,375 --> 00:40:49,431
+Then check E-C-E, the expected calibration error, and precision at the threshold.
+
+485
+00:40:50,861 --> 00:40:57,730
+For each segment, choose tau, the auto-approve threshold, so the precision of auto-approved items meets a target.
+
+486
+00:40:58,010 --> 00:41:03,173
+Perhaps ninety-nine percent for critical categories, and ninety-seven for low-risk ones.
+
+487
+00:41:03,453 --> 00:41:11,602
+Use a lower confidence bound, like a one-sided Wilson bound on held-out labels, because in-sample thresholds are optimistic.
+
+488
+00:41:11,882 --> 00:41:14,335
+The third line is the expected-cost rule.
+
+489
+00:41:14,615 --> 00:41:21,015
+Approve only if the probability of bad, times the cost of a bad approval, is below the cost of a review.
+
+490
+00:41:21,295 --> 00:41:24,965
+Since C bad dwarfs C review, the threshold is conservative.
+
+491
+00:41:25,245 --> 00:41:28,338
+Those costs come from policy, legal and the business.
+
+492
+00:41:29,777 --> 00:41:34,876
+For subjective dimensions like appeal, pairwise comparisons beat absolute ratings.
+
+493
+00:41:35,156 --> 00:41:41,151
+The Bradley-Terry model says the probability that A beats B equals sigma of s A minus s B.
+
+494
+00:41:41,431 --> 00:41:48,172
+Sigma is the logistic function, and s is a latent preference score for each creative, variant or style.
+
+495
+00:41:48,452 --> 00:41:51,204
+Elo is the streaming version of the same idea.
+
+496
+00:41:51,484 --> 00:41:58,375
+Those scores become training data for reward models and for Diffusion DPO, direct preference optimization.
+
+497
+00:41:58,655 --> 00:42:00,404
+It's drill one in your coding file.
+
+498
+00:42:00,684 --> 00:42:04,695
+Always show each pair in both orders, so position bias cancels.
+
+499
+00:42:06,124 --> 00:42:08,620
+Drift detection needs to sound concrete.
+
+500
+00:42:08,900 --> 00:42:13,295
+Disentangle judge drift from generator drift with two controlled tests.
+
+501
+00:42:13,575 --> 00:42:16,967
+Re-score a frozen set of creatives with the current judge.
+
+502
+00:42:17,247 --> 00:42:20,042
+If identical inputs move, the judge drifted.
+
+503
+00:42:20,322 --> 00:42:23,970
+Then score fresh outputs from frozen prompts with a frozen judge.
+
+504
+00:42:24,250 --> 00:42:26,426
+If those move, the generator drifted.
+
+505
+00:42:26,706 --> 00:42:31,100
+On live traffic, compute P-S-I, the population stability index.
+
+506
+00:42:31,380 --> 00:42:32,938
+Below point one is stable.
+
+507
+00:42:33,218 --> 00:42:35,308
+Above about point two, investigate.
+
+508
+00:42:35,588 --> 00:42:42,586
+Run CUSUM, a cumulative-sum change detector, on the audit overturn rate, and canary every change in shadow.
+
+509
+00:42:42,866 --> 00:42:44,146
+Now reliability.
+
+510
+00:42:44,426 --> 00:42:49,055
+Fail closed: if the judge is down, route to humans, never to auto-approve.
+
+511
+00:42:49,335 --> 00:42:50,743
+Let judges abstain.
+
+512
+00:42:51,023 --> 00:42:52,644
+Pin and version everything.
+
+513
+00:42:52,924 --> 00:42:55,676
+Keep an audit trail for disputes and regulators.
+
+514
+00:42:57,124 --> 00:43:01,754
+Goodhart's law says that when a measure becomes a target, it stops being a good measure.
+
+515
+00:43:02,034 --> 00:43:06,215
+Use a judge as a reward, and the generator finds its blind spots.
+
+516
+00:43:06,495 --> 00:43:07,498
+You lived this.
+
+517
+00:43:07,778 --> 00:43:15,010
+Your reference-free temporal-quality metric for generated video correctly flagged frozen, reversed and shuffled clips.
+
+518
+00:43:15,290 --> 00:43:22,991
+Used as a training loss, the model learned to satisfy the metric without real improvement, and you published that negative result.
+
+519
+00:43:23,271 --> 00:43:24,679
+So separate three roles.
+
+520
+00:43:24,959 --> 00:43:26,687
+The coach is the reward model.
+
+521
+00:43:26,967 --> 00:43:29,250
+The gatekeeper is the production judges.
+
+522
+00:43:29,530 --> 00:43:33,860
+The scoreboard is a held-out, human-validated set that nothing trains on.
+
+523
+00:43:34,140 --> 00:43:38,002
+Add a KL, or Kullback-Leibler, penalty toward the reference model.
+
+524
+00:43:38,282 --> 00:43:41,524
+Optimize ensemble mean minus lambda times spread.
+
+525
+00:43:41,804 --> 00:43:45,239
+Divergence between judge and human scores is your alarm.
+
+526
+00:43:46,668 --> 00:43:49,740
+Close any deep dive by evaluating the evaluator.
+
+527
+00:43:50,020 --> 00:43:52,922
+These are example targets, not Walmart numbers.
+
+528
+00:43:53,202 --> 00:43:57,447
+Recall of at least ninety-nine percent on critical failures, for safety.
+
+529
+00:43:57,727 --> 00:44:04,682
+Auto-approve precision of ninety-seven to ninety-nine percent by risk tier, as a lower confidence bound, for trust.
+
+530
+00:44:04,962 --> 00:44:07,906
+Coverage maximized subject to both, for cost.
+
+531
+00:44:08,186 --> 00:44:14,948
+Judge-human kappa within about point zero five of human-human kappa, which means the judge is human-level.
+
+532
+00:44:15,228 --> 00:44:20,668
+E-C-E below about point zero three, and week-over-week score P-S-I below point one.
+
+533
+00:44:20,948 --> 00:44:24,191
+The audit overturn rate tracked daily with CUSUM alerts.
+
+534
+00:44:24,471 --> 00:44:32,407
+Then the headline: review cost per shipped asset down by half or more, while the audited critical-error rate stays below an agreed target.
+
+535
+00:44:34,186 --> 00:44:36,810
+Chapter seven turns pixels into signals.
+
+536
+00:44:37,090 --> 00:44:49,016
+The job description asks for structured representations of creative content, attributes, categories and quality signals, that other teams consume for targeting, recommendations and measurement.
+
+537
+00:44:49,296 --> 00:44:50,576
+This is platform work.
+
+538
+00:44:50,856 --> 00:44:56,146
+You have spent a career turning pixels into reliable signals that other systems depend on.
+
+539
+00:44:57,795 --> 00:45:05,091
+In a typical ads stack, a creative is an opaque blob: an ID, an asset location, and a few advertiser fields.
+
+540
+00:45:05,371 --> 00:45:11,429
+The ranker learns that one creative gets clicks only after spending impressions, and nobody can say why.
+
+541
+00:45:11,709 --> 00:45:13,565
+A brand-new creative gets nothing.
+
+542
+00:45:13,845 --> 00:45:15,488
+That's the cold-start problem.
+
+543
+00:45:15,768 --> 00:45:21,699
+The fix is a creative genome, a versioned record of interpretable attributes for every asset.
+
+544
+00:45:21,979 --> 00:45:25,819
+Low-level visuals like palette, clutter and text-area ratio.
+
+545
+00:45:26,099 --> 00:45:27,955
+Semantics like scene and season.
+
+546
+00:45:28,235 --> 00:45:30,944
+Messaging like offer, price shown and claims.
+
+547
+00:45:31,224 --> 00:45:36,323
+Then brand, format fit, quality, policy and accessibility, plus dense embeddings.
+
+548
+00:45:36,603 --> 00:45:45,435
+Use a closed core of fixed values that models can rely on, an open periphery for discovery, and a hierarchy aligned to the product taxonomy.
+
+549
+00:45:46,878 --> 00:45:48,734
+Extraction is tiered by cost.
+
+550
+00:45:49,014 --> 00:45:58,038
+Tiers zero and one are deterministic measurements and specialist models: OCR, object and logo detectors, and image-quality models.
+
+551
+00:45:58,318 --> 00:46:02,030
+Tier two is a CLIP or sig-lip embedding with zero-shot heads.
+
+552
+00:46:02,310 --> 00:46:05,489
+Use prompt ensembles and include a none-of-these option.
+
+553
+00:46:05,769 --> 00:46:13,961
+Calibrate each attribute with Platt or isotonic on a few hundred in-domain labels, because raw cosine scores aren't probabilities.
+
+554
+00:46:14,241 --> 00:46:19,617
+Tier three is a VLM that fills a fixed JSON schema through constrained decoding.
+
+555
+00:46:19,897 --> 00:46:23,011
+Always allow unknown, or the format forces a guess.
+
+556
+00:46:23,291 --> 00:46:24,315
+Then distill.
+
+557
+00:46:24,595 --> 00:46:33,171
+The VLM labels a stratified sample, and a multi-head student on a shared backbone serves every asset, so new attributes are cheap.
+
+558
+00:46:33,451 --> 00:46:40,342
+And for artifacts, remember chapter six: reference-based checks against the catalog image beat blind detection.
+
+559
+00:46:41,772 --> 00:46:43,969
+You need both, and here's the line to say.
+
+560
+00:46:44,249 --> 00:46:46,511
+Embeddings are for machines that predict.
+
+561
+00:46:46,791 --> 00:46:50,289
+Attributes are for people and systems that reason or act.
+
+562
+00:46:50,569 --> 00:46:58,292
+Embeddings capture everything, including what nobody named, so they carry the most predictive power and enable similarity search.
+
+563
+00:46:58,572 --> 00:47:02,497
+But they're opaque, and a new embedding version breaks every consumer.
+
+564
+00:47:02,777 --> 00:47:06,596
+Attributes are lossy, yet readable, joinable and controllable.
+
+565
+00:47:06,876 --> 00:47:14,684
+They drive advertiser insights, policy and generation prompts, and their meaning survives model upgrades when the specs are stable.
+
+566
+00:47:14,964 --> 00:47:20,532
+Ranking uses both, and content features are the big cold-start win for brand-new creatives.
+
+567
+00:47:20,812 --> 00:47:29,345
+Fine-tune the creative embedding contrastively on creative-to-product, creative-to-query and engagement pairs, with a popularity correction.
+
+568
+00:47:30,775 --> 00:47:33,655
+Here is the signal platform, Diagram sixteen.
+
+569
+00:47:33,935 --> 00:47:35,151
+Read it left to right.
+
+570
+00:47:35,431 --> 00:47:41,746
+First come assets of every origin: catalog, uploaded and generated images, video, and copy.
+
+571
+00:47:42,026 --> 00:47:44,991
+Next come the extractors, each one a versioned model.
+
+572
+00:47:45,271 --> 00:47:55,255
+There's OCR and layout, detection, CLIP or sig-lip embeddings, VLM tagging to a fixed schema, quality scores, and video signals like shots and speech.
+
+573
+00:47:55,535 --> 00:47:57,711
+Above them sits the schema registry.
+
+574
+00:47:57,991 --> 00:48:02,535
+Every attribute has a definition, allowed values, a version and an owner.
+
+575
+00:48:02,815 --> 00:48:06,122
+Changing a tagger prompt is a version bump, with a backfill.
+
+576
+00:48:06,402 --> 00:48:16,300
+Outputs land in a signal store with three shapes: offline tables with point-in-time correctness, an online key-value store for serving, and a vector index.
+
+577
+00:48:16,580 --> 00:48:25,476
+Quality SLAs, service-level agreements on coverage, freshness and accuracy, make each signal a contract, documented in a signal card.
+
+578
+00:48:25,756 --> 00:48:32,327
+On the right are six consumers: targeting, ranking, recommendations, measurement, generation and policy.
+
+579
+00:48:32,607 --> 00:48:35,039
+One extraction investment feeds all six.
+
+580
+00:48:35,319 --> 00:48:36,706
+That's how it compounds.
+
+581
+00:48:38,150 --> 00:48:39,387
+Expect this trap.
+
+582
+00:48:39,667 --> 00:48:43,891
+A dashboard says lifestyle images get fifty percent higher CTR.
+
+583
+00:48:44,171 --> 00:48:46,027
+That's almost certainly confounded.
+
+584
+00:48:46,307 --> 00:48:50,873
+Big brands buy agency lifestyle creative and also have brand equity.
+
+585
+00:48:51,153 --> 00:48:53,243
+Categories differ in base CTR.
+
+586
+00:48:53,523 --> 00:48:58,857
+Higher bids win better positions, and the ranker already serves creatives it predicts will win.
+
+587
+00:48:59,137 --> 00:49:01,995
+So use better designs, in order of credibility.
+
+588
+00:49:02,275 --> 00:49:10,233
+Best is a randomized test of generated variants that differ in exactly one attribute, which generative AI makes cheap.
+
+589
+00:49:10,513 --> 00:49:13,585
+Next, within-ad-group comparisons with fixed effects.
+
+590
+00:49:13,865 --> 00:49:21,267
+Then inverse propensity weighting on exploration logs, and double machine learning with cross-fitting, always reporting overlap.
+
+591
+00:49:21,547 --> 00:49:27,990
+In the interview, say: raw attribute correlations are mostly a map of who can afford agency creative.
+
+592
+00:49:29,420 --> 00:49:32,023
+Hold the platform accountable at three levels.
+
+593
+00:49:32,303 --> 00:49:41,028
+Intrinsic quality first: precision, recall and calibration per attribute, on a frozen human gold set plus monthly production audits.
+
+594
+00:49:41,308 --> 00:49:47,260
+Inter-annotator kappa is your ceiling, and low agreement means the definition is bad, not the model.
+
+595
+00:49:47,540 --> 00:49:54,495
+Operational next: coverage weighted by spend, freshness against the SLA, and cost per thousand creatives.
+
+596
+00:49:54,775 --> 00:49:59,447
+Then adoption, meaning how many teams and production models consume the signals.
+
+597
+00:49:59,727 --> 00:50:02,351
+Finally, downstream lift, the one that matters.
+
+598
+00:50:02,631 --> 00:50:09,692
+Measure the normalized entropy gain in the click model from adding creative features, sliced to creatives under a day old.
+
+599
+00:50:09,972 --> 00:50:14,047
+Then confirm online with CTR and ROAS, return on ad spend.
+
+600
+00:50:14,327 --> 00:50:17,377
+If the signals don't move those, they aren't worth the cost.
+
+601
+00:50:19,157 --> 00:50:24,234
+Chapter eight covers video ads, from generation to adaptation to evaluation.
+
+602
+00:50:24,514 --> 00:50:27,906
+The job description names video as a first-class output.
+
+603
+00:50:28,186 --> 00:50:33,968
+It is also where your background is unusually strong, from SpaceWarp to your temporal-quality metric.
+
+604
+00:50:34,248 --> 00:50:38,856
+The gap is production video systems and the ad domain, and this chapter closes it.
+
+605
+00:50:40,485 --> 00:50:44,218
+Start with formats, because every placement is really a constraint set.
+
+606
+00:50:44,498 --> 00:50:49,746
+Sponsored Videos in search typically autoplay muted, so the visual track carries the story.
+
+607
+00:50:50,026 --> 00:50:53,397
+That means a hook in the first two seconds and burned-in captions.
+
+608
+00:50:53,677 --> 00:50:58,776
+Vertical placements need nine by sixteen framing that avoids platform overlays.
+
+609
+00:50:59,056 --> 00:51:05,776
+Connected TV, or CTV, is the opposite, because it is sound-on, lean-back, and treated like broadcast.
+
+610
+00:51:06,056 --> 00:51:11,581
+That means fifteen or thirty second spots, title-safe text, and a high-quality master file.
+
+611
+00:51:11,861 --> 00:51:19,477
+US broadcast loudness targets about minus twenty-four LKFS, a perceptual loudness unit, under the CALM Act.
+
+612
+00:51:19,757 --> 00:51:23,682
+A social mix near minus fourteen would be rejected at ingest.
+
+613
+00:51:23,962 --> 00:51:26,800
+So the generator takes the constraint set as input.
+
+614
+00:51:28,235 --> 00:51:33,483
+Don't start with text-to-video, which has no product grounding and the highest cost and risk.
+
+615
+00:51:33,763 --> 00:51:36,750
+Instead, tier the system from safest to riskiest.
+
+616
+00:51:37,030 --> 00:51:44,112
+Tier one is template motion graphics from catalog images, with parallax, kinetic type and a correct end card.
+
+617
+00:51:44,392 --> 00:51:50,323
+That parallax is depth reprojection plus disocclusion inpainting, exactly your SpaceWarp problem.
+
+618
+00:51:50,603 --> 00:51:58,304
+Tier two adapts footage the advertiser already has, cutting thirty seconds to fifteen and six with almost no policy risk.
+
+619
+00:51:58,584 --> 00:52:05,731
+Tier three uses image-to-video for backgrounds and camera motion, with the product composited as a locked, tracked layer.
+
+620
+00:52:06,011 --> 00:52:12,198
+On cost, assume about twenty GPU-minutes for an undistilled five-second shot, roughly eighty cents.
+
+621
+00:52:12,478 --> 00:52:15,038
+Distilled to a few steps, it's about four cents.
+
+622
+00:52:15,318 --> 00:52:19,414
+Templates cost under half a cent, so template-first is the business case.
+
+623
+00:52:20,860 --> 00:52:24,977
+Here is Diagram seventeen, the video pipeline, read from the top.
+
+624
+00:52:25,257 --> 00:52:34,793
+The inputs are the SKU, or stock keeping unit, with catalog images, optional brand footage, the brand kit with legal supers, and target durations.
+
+625
+00:52:35,073 --> 00:52:41,559
+A script language model writes hook, benefit, proof and call to action, grounded on catalog attributes.
+
+626
+00:52:41,839 --> 00:52:46,511
+The storyboard turns that script into a shot list with timing and on-screen text.
+
+627
+00:52:46,791 --> 00:52:51,996
+It is the editable intermediate, so advertisers edit the storyboard, not pixels.
+
+628
+00:52:52,276 --> 00:53:00,148
+Each shot is filled from real footage retrieved by embedding, image-to-video from the locked product image, or a motion template.
+
+629
+00:53:00,428 --> 00:53:04,631
+Audio uses licensed music and voices, normalized for loudness.
+
+630
+00:53:04,911 --> 00:53:08,644
+Captions come from the script and are verified by speech recognition.
+
+631
+00:53:08,924 --> 00:53:15,601
+Edit assembly builds the timeline, which fans out into CTV, vertical, square and six-second versions.
+
+632
+00:53:15,881 --> 00:53:20,063
+After that come video evaluation, review, and the transcode ladder.
+
+633
+00:53:20,343 --> 00:53:25,441
+Dotted arrows send failed shots back to the storyboard, and performance back to the script.
+
+634
+00:53:26,871 --> 00:53:31,586
+In a Sponsored Video, the product is the ad, and video models drift it over time.
+
+635
+00:53:31,866 --> 00:53:35,962
+A cereal box can morph, or its label can misspell by frame forty.
+
+636
+00:53:36,242 --> 00:53:40,807
+So track the product through every frame and score identity with DINO features.
+
+637
+00:53:41,087 --> 00:53:47,060
+Also check packaging text with optical character recognition, plus logo, color and silhouette.
+
+638
+00:53:47,340 --> 00:53:52,546
+Aggregate with the minimum over frames, not the mean, because one bad frame is visible.
+
+639
+00:53:52,826 --> 00:53:57,220
+Add a drift term from the first frame, and verify with an independent encoder.
+
+640
+00:53:57,500 --> 00:54:05,223
+Reframing sixteen by nine to nine by sixteen reuses that tracking, prioritizing product, then text, then faces.
+
+641
+00:54:05,503 --> 00:54:10,836
+Smooth the crop path with a Kalman or one-euro filter, and reset it at every shot cut.
+
+642
+00:54:12,266 --> 00:54:16,405
+Video evaluation is a cascade that runs the cheapest checks first.
+
+643
+00:54:16,685 --> 00:54:23,085
+Spec checks are exact: duration, frame rate, loudness, logo time and legal super duration.
+
+644
+00:54:23,365 --> 00:54:31,685
+Per-frame checks cover artifacts, aesthetics and moderation, with OCR on every frame, since one bad frame is a policy failure.
+
+645
+00:54:31,965 --> 00:54:36,765
+Then come temporal checks like warping error against the flow-warped neighbor, and flicker.
+
+646
+00:54:37,045 --> 00:54:42,847
+Here is the trap: a static video scores perfectly on both, and distilled models often freeze.
+
+647
+00:54:43,127 --> 00:54:46,626
+So a smoothness score can rise while the clip quietly dies.
+
+648
+00:54:46,906 --> 00:54:53,562
+Finally, Fréchet Video Distance, or FVD, compares feature statistics across two sets of videos.
+
+649
+00:54:53,842 --> 00:54:58,813
+It is fine for comparing models, but cannot score the single clip a gate must judge.
+
+650
+00:55:00,242 --> 00:55:03,506
+This is your published metric, and it fits the gate exactly.
+
+651
+00:55:03,786 --> 00:55:11,146
+A small frozen network, about five million parameters, looks at two frames and predicts how far apart they are in time.
+
+652
+00:55:11,426 --> 00:55:15,799
+Delta is the true gap, j minus i, between the two frame indices.
+
+653
+00:55:16,079 --> 00:55:20,495
+The score is the average log-likelihood of those true gaps under the predictor.
+
+654
+00:55:20,775 --> 00:55:24,125
+Real motion makes gaps predictable, so the score is high.
+
+655
+00:55:24,405 --> 00:55:30,378
+Near-static clips look like zero gap everywhere, while reversed and shuffled clips break the arrow of time.
+
+656
+00:55:30,658 --> 00:55:34,050
+All three score low, with no reference video set needed.
+
+657
+00:55:34,330 --> 00:55:37,615
+But used as a training loss, the generator learned to game it.
+
+658
+00:55:39,045 --> 00:55:43,568
+When I used my temporal metric as a training loss, the generator learned to game it.
+
+659
+00:55:43,848 --> 00:55:47,496
+Any evaluator you optimize against stops being an evaluator.
+
+660
+00:55:47,776 --> 00:55:56,266
+So I keep a held-out evaluator the generator never sees, ensemble diverse metrics, and alarm when they diverge from human ratings.
+
+661
+00:55:56,546 --> 00:56:01,474
+Use this whenever reward models or best-of-N selection come up in the interview.
+
+662
+00:56:03,270 --> 00:56:04,742
+Welcome to chapter nine.
+
+663
+00:56:05,022 --> 00:56:09,395
+You have seen how to generate creative, judge it, and describe it as signals.
+
+664
+00:56:09,675 --> 00:56:13,707
+Now we connect those pieces into a system that learns from shoppers.
+
+665
+00:56:13,987 --> 00:56:18,531
+Three diagrams: the optimization loop, the shared platform, and the roadmap.
+
+666
+00:56:18,811 --> 00:56:22,267
+This is your vision answer, for when they ask what you would build here.
+
+667
+00:56:23,897 --> 00:56:27,566
+Here is Diagram eighteen, the creative optimization loop.
+
+668
+00:56:27,846 --> 00:56:29,062
+Read it left to right.
+
+669
+00:56:29,342 --> 00:56:35,337
+First, generate four to eight variants per ad, deliberately diverse in scene type and copy angle.
+
+670
+00:56:35,617 --> 00:56:38,646
+If every variant looks the same, the loop learns nothing.
+
+671
+00:56:38,926 --> 00:56:43,726
+Tag each variant with its attributes, so learning transfers across advertisers.
+
+672
+00:56:44,006 --> 00:56:46,950
+Next come the evaluation gates from the judge chapter.
+
+673
+00:56:47,230 --> 00:56:49,449
+Only safe, on-brand variants pass.
+
+674
+00:56:49,729 --> 00:56:53,356
+Here's the key idea: exploration never relaxes safety.
+
+675
+00:56:53,636 --> 00:56:54,553
+Then serving.
+
+676
+00:56:54,833 --> 00:57:00,785
+Surviving variants compete inside their ad group using Thompson sampling, per ad and per placement.
+
+677
+00:57:01,065 --> 00:57:10,580
+Most ads get little traffic, so hierarchical priors, pooled across advertisers by creative attribute, give a new variant a sensible starting belief.
+
+678
+00:57:10,860 --> 00:57:12,545
+That is your cold start answer.
+
+679
+00:57:12,825 --> 00:57:17,006
+Outcomes come back as impressions, clicks and conversions by variant.
+
+680
+00:57:17,286 --> 00:57:19,121
+Before learning anything, debias.
+
+681
+00:57:19,401 --> 00:57:23,945
+Raw click differences are confounded by position, placement and audience mix.
+
+682
+00:57:24,225 --> 00:57:28,449
+Skip this, and the loop simply learns that variant B got the top slot more often.
+
+683
+00:57:29,897 --> 00:57:32,244
+Thompson sampling is easy to explain.
+
+684
+00:57:32,524 --> 00:57:39,009
+Treat each variant's click-through rate, or CTR, as unknown, with a Beta distribution as your belief.
+
+685
+00:57:39,289 --> 00:57:44,580
+Alpha k is a prior pseudo-count, alpha zero, plus the clicks variant k has earned.
+
+686
+00:57:44,860 --> 00:57:48,422
+Beta k is beta zero plus impressions without a click.
+
+687
+00:57:48,702 --> 00:57:54,804
+At each impression, draw one sample, theta k, from every variant's Beta, and show the largest draw.
+
+688
+00:57:55,084 --> 00:57:58,540
+Uncertain variants sometimes draw high, so they get explored.
+
+689
+00:57:58,820 --> 00:58:02,041
+Proven winners usually draw high, so they get exploited.
+
+690
+00:58:02,321 --> 00:58:05,905
+Exploration is automatically proportional to uncertainty.
+
+691
+00:58:07,355 --> 00:58:09,062
+Same diagram, right half.
+
+692
+00:58:09,342 --> 00:58:16,233
+Debiased data trains a creative performance model that predicts lift from creative features plus context.
+
+693
+00:58:16,513 --> 00:58:22,571
+A reward model combines predicted performance, judge quality and policy constraints into one score.
+
+694
+00:58:22,851 --> 00:58:28,099
+Winner and loser variants for the same product and context form clean preference pairs.
+
+695
+00:58:28,379 --> 00:58:30,129
+How does the generator improve?
+
+696
+00:58:30,409 --> 00:58:36,062
+Cheapest first: update the prompt and conditioning policy, meaning which scenes the planner requests.
+
+697
+00:58:36,342 --> 00:58:40,950
+Next, best-of-N: generate several candidates and keep the top-scoring one.
+
+698
+00:58:41,230 --> 00:58:43,449
+Small N means bounded exploitation.
+
+699
+00:58:43,729 --> 00:58:50,193
+Last, Diffusion-DPO, direct preference optimization adapted to diffusion, trained on those pairs.
+
+700
+00:58:50,473 --> 00:58:51,539
+Now the guards.
+
+701
+00:58:51,819 --> 00:58:59,478
+A KL penalty, the Kullback-Leibler divergence to a reference generator, stops collapse onto weird high-reward outputs.
+
+702
+00:58:59,758 --> 00:59:01,507
+Hard gates are never bypassed.
+
+703
+00:59:01,787 --> 00:59:09,531
+And keep three roles separate: the reward you optimize, the gatekeeper judges, and a held-out human scoreboard that nothing trains on.
+
+704
+00:59:09,811 --> 00:59:14,761
+Your negative result, where a generator gamed your video metric, is exactly why.
+
+705
+00:59:15,041 --> 00:59:20,929
+Finally, reward incremental conversion, because click-optimized creative drifts toward clickbait.
+
+706
+00:59:22,358 --> 00:59:25,900
+Diagram nineteen shows the shared platform in three layers.
+
+707
+00:59:26,180 --> 00:59:39,769
+On top sit product applications: the Automated Creative Generator, the Marty advertiser agent, the Sponsored Brands builder, DSP and connected TV tools, catalog image enhancement, and Sparky formats.
+
+708
+00:59:40,049 --> 00:59:44,614
+In the middle are shared creative services, the layer this role should own or shape.
+
+709
+00:59:44,894 --> 00:59:49,929
+A generation gateway handles model routing, quotas, caching and prompt templates.
+
+710
+00:59:50,209 --> 00:59:55,926
+An evaluation harness runs offline benchmarks and the online judge with the same rubric.
+
+711
+00:59:56,206 --> 01:00:03,929
+Then the signal store, policy service, asset store with lineage, the bandit service, and review tooling with a shared label store.
+
+712
+01:00:04,209 --> 01:00:10,033
+At the bottom: GPU pool, model registry, feature store, data lake and observability.
+
+713
+01:00:10,313 --> 01:00:11,700
+Why does this compound?
+
+714
+01:00:11,980 --> 01:00:19,190
+Every new product launches with evaluation, policy and measurement for free, and every label improves every product.
+
+715
+01:00:19,470 --> 01:00:21,924
+Swapping a model becomes a config change.
+
+716
+01:00:22,204 --> 01:00:28,625
+Tie it to Golf Mode: one fused model beat per-sensor pipelines, and one platform beats six silos.
+
+717
+01:00:30,067 --> 01:00:32,733
+Diagram twenty is the sequenced roadmap.
+
+718
+01:00:33,013 --> 01:00:36,683
+Open with a hedge: you would spend the first weeks learning what exists.
+
+719
+01:00:36,963 --> 01:00:39,181
+In the first ninety days, measure first.
+
+720
+01:00:39,461 --> 01:00:49,744
+Audit the pipeline and costs, build golden sets with agreement targets, and calibrate judge version zero on existing review decisions, which is free labeled data.
+
+721
+01:00:50,024 --> 01:00:57,939
+Your first visible win is adaptation: take approved assets and automatically produce more placements, behind fidelity gates.
+
+722
+01:00:58,219 --> 01:01:01,440
+Low hallucination risk, high advertiser value.
+
+723
+01:01:01,720 --> 01:01:07,779
+Quarter two makes the eval harness a shared service and turns on auto-approve for the lowest-risk tier.
+
+724
+01:01:08,059 --> 01:01:11,173
+Quarter three adds bandit serving and video version one.
+
+725
+01:01:11,453 --> 01:01:16,168
+Quarter four closes the loop with the performance model and a learned prompt policy.
+
+726
+01:01:16,448 --> 01:01:18,880
+Year two brings preference-tuned generators.
+
+727
+01:01:19,160 --> 01:01:21,144
+Notice the arrows are dependencies.
+
+728
+01:01:21,424 --> 01:01:32,816
+In the interview, say: every later step is only as good as our ability to measure quality, so eval comes first, and each quarter ships a win, from review latency to incremental ROAS.
+
+729
+01:01:34,596 --> 01:01:37,028
+Chapter ten: system design walkthroughs.
+
+730
+01:01:37,308 --> 01:01:40,017
+This is where the interview often spends the most time.
+
+731
+01:01:40,297 --> 01:01:43,753
+You will learn one framework, then walk six creative designs.
+
+732
+01:01:44,033 --> 01:01:52,033
+We go deepest on the first, generating Sponsored Brands and display creative from a product, because it touches every pillar of the role.
+
+733
+01:01:52,313 --> 01:01:54,361
+The other five take a minute or two each.
+
+734
+01:01:55,996 --> 01:02:01,073
+Use the same seven steps every time, and say them out loud so the interviewer can follow.
+
+735
+01:02:01,353 --> 01:02:08,137
+Clarify, metrics, architecture, deep dive, scale and cost, evaluation and launch, then risks and roadmap.
+
+736
+01:02:08,417 --> 01:02:21,494
+For a forty-five minute design, budget about five minutes to clarify, five for metrics, eight for architecture, fifteen for the deep dive, five for scale, four for evaluation and launch, and three for the roadmap.
+
+737
+01:02:21,774 --> 01:02:24,377
+Notice the deep dive gets a third of the time.
+
+738
+01:02:24,657 --> 01:02:31,633
+For this role, always cover three more things: safety by design, the judge stack, and what becomes shared platform.
+
+739
+01:02:31,913 --> 01:02:34,494
+And hit the Distinguished signals in every design.
+
+740
+01:02:34,774 --> 01:02:41,345
+State tradeoffs explicitly, name what you would not build yet, do a back-of-envelope number, and end with the roadmap.
+
+741
+01:02:42,787 --> 01:02:52,601
+Design one: generate Sponsored Brands and display creative for any advertiser from a product SKU, the stock keeping unit, meaning one catalog item.
+
+742
+01:02:52,881 --> 01:02:54,715
+Start with three or four questions.
+
+743
+01:02:54,995 --> 01:03:00,585
+Is this for national brands with brand kits, or long-tail sellers with only catalog images?
+
+744
+01:03:00,865 --> 01:03:03,851
+The answer is both, and the long tail benefits most.
+
+745
+01:03:04,131 --> 01:03:05,155
+Which formats?
+
+746
+01:03:05,435 --> 01:03:10,555
+Banners, I-A-B display sizes, vertical social, and connected TV end cards.
+
+747
+01:03:10,835 --> 01:03:12,201
+Interactive or bulk?
+
+748
+01:03:12,481 --> 01:03:18,497
+Interactive needs a preview in roughly five to twenty seconds, while bulk is throughput-optimized overnight.
+
+749
+01:03:18,777 --> 01:03:20,313
+Then metrics, in groups.
+
+750
+01:03:20,593 --> 01:03:21,489
+Adoption.
+
+751
+01:03:21,769 --> 01:03:26,483
+Quality and safety, like critical-failure rate and human-review overturn rate.
+
+752
+01:03:26,763 --> 01:03:33,995
+Performance, meaning CTR and CVR, the conversion rate, measured in randomized tests within an ad group.
+
+753
+01:03:34,275 --> 01:03:39,886
+And efficiency: dollars and GPU-seconds per shipped asset, not per generated asset.
+
+754
+01:03:40,166 --> 01:03:43,451
+Add guardrails, so CTR never comes from clickbait.
+
+755
+01:03:44,881 --> 01:03:47,655
+Now draw the architecture, Diagram fourteen.
+
+756
+01:03:47,935 --> 01:03:53,759
+Inputs on top: the SKU, the brand kit, the campaign goal, target placements, and an optional brief.
+
+757
+01:03:54,039 --> 01:03:58,945
+The catalog fetch pulls hero images, title, attributes and approved claims.
+
+758
+01:03:59,225 --> 01:04:02,489
+The catalog is the source of truth for pixels and words.
+
+759
+01:04:02,769 --> 01:04:09,297
+A planner LLM, a large language model with structured output, turns the brief into several concepts.
+
+760
+01:04:09,577 --> 01:04:10,815
+Then two branches.
+
+761
+01:04:11,095 --> 01:04:14,423
+Visually, the product is segmented, matted, and locked.
+
+762
+01:04:14,703 --> 01:04:21,892
+Diffusion generates the scene around it, with depth or edge control for perspective and a style adapter for the brand look.
+
+763
+01:04:22,172 --> 01:04:25,159
+Harmonization matches lighting, shadows and color.
+
+764
+01:04:25,439 --> 01:04:33,524
+For copy, an LLM grounded in catalog attributes writes headlines, and a claim checker traces every claim to an attribute.
+
+765
+01:04:33,804 --> 01:04:41,441
+The composition engine places layers, logo and text deterministically, and per-placement adaptation makes every size.
+
+766
+01:04:41,721 --> 01:04:47,353
+Then the judge stack, a router, advertiser approval, an asset store with lineage, and serving.
+
+767
+01:04:47,633 --> 01:04:50,897
+Performance logs by creative ID feed the learning loop.
+
+768
+01:04:52,340 --> 01:04:54,430
+If they ask you to go deep, start here.
+
+769
+01:04:54,710 --> 01:04:58,038
+Why generate the background and compose deterministically?
+
+770
+01:04:58,318 --> 01:05:02,798
+First, the product pixels are real, so fidelity holds by construction.
+
+771
+01:05:03,078 --> 01:05:05,958
+The judges only need to verify the boundary.
+
+772
+01:05:06,238 --> 01:05:09,481
+Second, text, logo and price are rendered by code.
+
+773
+01:05:09,761 --> 01:05:24,140
+That means no garbled text, exact brand fonts, prices pulled live from pricing data, and exact contrast checks. wuh-cag, the web accessibility guidelines, asks for four point five to one contrast for normal text.
+
+774
+01:05:24,420 --> 01:05:29,796
+Third, the generative model does what it is good at: scenes, mood, lighting and context.
+
+775
+01:05:30,076 --> 01:05:31,676
+Be honest about the tradeoff.
+
+776
+01:05:31,956 --> 01:05:35,881
+You lose some magical integration, like a hand holding the product.
+
+777
+01:05:36,161 --> 01:05:42,028
+Handle that with harmonization now, and later with a stricter-judged tier of full-generative scenes.
+
+778
+01:05:43,465 --> 01:05:45,022
+More deep dives you can own.
+
+779
+01:05:45,302 --> 01:05:46,945
+Harmonization is your edge.
+
+780
+01:05:47,225 --> 01:05:53,113
+Estimate the scene's lighting with spherical harmonics, just like your three-sixty lighting estimation work.
+
+781
+01:05:53,393 --> 01:06:02,587
+Relight the matted product with a bounded shading ratio so identity is preserved, add a contact shadow from the light direction, and match color temperature.
+
+782
+01:06:02,867 --> 01:06:04,958
+Without it, composites look pasted.
+
+783
+01:06:05,238 --> 01:06:06,859
+Next, brand conditioning.
+
+784
+01:06:07,139 --> 01:06:14,329
+With thousands of brands, a LoRA per brand, meaning a low-rank adapter, carries real training and swapping cost.
+
+785
+01:06:14,609 --> 01:06:22,459
+Default to reference-based style conditioning plus palette checks, and reserve Loras for top-spend brands where evals show a gap.
+
+786
+01:06:22,739 --> 01:06:30,910
+For copy, generate from catalog attributes within placement limits, then verify claims with NLI, natural language inference.
+
+787
+01:06:31,190 --> 01:06:40,619
+For variants, generate several concepts and renders, judge them, keep a diverse top few, let the advertiser pick, and let the bandit decide in serving.
+
+788
+01:06:42,049 --> 01:06:45,398
+Now the back-of-envelope, and state your assumptions out loud.
+
+789
+01:06:45,678 --> 01:06:52,889
+One million SKUs, times five placements, times four variants, equals twenty million assets per full refresh.
+
+790
+01:06:53,169 --> 01:06:58,950
+A few-step distilled model takes about one to two GPU-seconds per one-megapixel image.
+
+791
+01:06:59,230 --> 01:07:07,379
+That gives twenty to forty million GPU-seconds, or about five thousand five hundred to eleven thousand GPU-hours per refresh.
+
+792
+01:07:07,659 --> 01:07:11,606
+A standard thirty to fifty step sampler is roughly ten times worse.
+
+793
+01:07:11,886 --> 01:07:13,443
+The conclusion is the point.
+
+794
+01:07:13,723 --> 01:07:15,515
+Never regenerate everything.
+
+795
+01:07:15,795 --> 01:07:18,142
+Generate on demand for active campaigns.
+
+796
+01:07:18,422 --> 01:07:22,454
+Cache by SKU image, concept, template and model version.
+
+797
+01:07:22,734 --> 01:07:27,257
+Adapt existing renders across placements with cheap outpainting or cropping.
+
+798
+01:07:27,537 --> 01:07:33,553
+For interactive use, show a fast low-resolution preview, then render full resolution on selection.
+
+799
+01:07:33,833 --> 01:07:36,755
+Your consistency model experience pays off right here.
+
+800
+01:07:38,185 --> 01:07:41,235
+Design two is the automated evaluation system.
+
+801
+01:07:41,515 --> 01:07:44,374
+You already have it from the judge chapter, chapter six.
+
+802
+01:07:44,654 --> 01:07:57,454
+Structure it as beats: failure-mode taxonomy, the judge cascade, labels, calibration, routing economics, drift, fail-closed reliability, Goodhart separation, and the harness as a shared service.
+
+803
+01:07:57,734 --> 01:08:05,329
+Close with a number: review cost per shipped asset down fifty percent or more, while the audited critical-error rate stays below target.
+
+804
+01:08:05,609 --> 01:08:08,105
+Design three is video, from chapter eight.
+
+805
+01:08:08,385 --> 01:08:09,537
+Recommend tiers.
+
+806
+01:08:09,817 --> 01:08:15,470
+Tier one is deterministic motion graphics from stills, like parallax from monocular depth.
+
+807
+01:08:15,750 --> 01:08:17,969
+It is safe and cheap, so ship it first.
+
+808
+01:08:18,249 --> 01:08:26,142
+Tier two adapts existing video: cut-downs from thirty to fifteen to six seconds, and subject-tracked reframing to vertical.
+
+809
+01:08:26,422 --> 01:08:31,777
+Tier three is generative motion, with the product composited as a locked, tracked layer.
+
+810
+01:08:32,057 --> 01:08:35,897
+Your temporal metric becomes the frozen and reversed clip detector.
+
+811
+01:08:37,327 --> 01:08:41,401
+Design four is creative understanding signals, from chapter seven.
+
+812
+01:08:41,681 --> 01:08:47,143
+Clarify the consumers first: ranking, targeting, measurement, policy and generation.
+
+813
+01:08:47,423 --> 01:08:53,887
+Then a versioned schema, and VLM extraction, meaning a vision language model, distilled into cheap students.
+
+814
+01:08:54,167 --> 01:08:59,116
+Measure adoption by downstream lift, like better click prediction for new creatives.
+
+815
+01:08:59,396 --> 01:09:02,724
+And warn that raw attribute correlations are confounded.
+
+816
+01:09:03,004 --> 01:09:11,281
+Design five is the closed loop from chapter nine: Thompson sampling, a performance model, preference tuning, and reward-hacking guards.
+
+817
+01:09:11,561 --> 01:09:15,209
+Design six adapts one master creative to thirty placements.
+
+818
+01:09:15,489 --> 01:09:18,220
+Work from layers, or decompose a flat image.
+
+819
+01:09:18,500 --> 01:09:27,737
+Pick a layout family, extend with outpainting or saliency crop, re-place elements with a constraint solver, shorten copy, and enforce contrast.
+
+820
+01:09:28,017 --> 01:09:35,271
+Call it the fastest first win: low hallucination risk, high advertiser value, and it reuses approved assets.
+
+821
+01:09:36,702 --> 01:09:38,003
+Finally, practice.
+
+822
+01:09:38,283 --> 01:09:40,267
+Detect and fix distorted text.
+
+823
+01:09:40,547 --> 01:09:43,470
+Generate accurate, wuh-cag-compliant alt text.
+
+824
+01:09:43,750 --> 01:09:46,395
+Design the human review and labeling program.
+
+825
+01:09:46,675 --> 01:09:49,875
+Personalize creative for Sparky conversational ads.
+
+826
+01:09:50,155 --> 01:09:56,640
+Debug an auto-approve precision drop from ninety-eight point five to ninety-five percent in one week.
+
+827
+01:09:56,920 --> 01:10:00,291
+Handle a brand complaint about a misrepresented product.
+
+828
+01:10:00,571 --> 01:10:03,856
+Turn a PDF style guide into enforceable rules.
+
+829
+01:10:04,136 --> 01:10:06,974
+And decide build versus buy for the image model.
+
+830
+01:10:07,254 --> 01:10:08,640
+Here is how to rehearse.
+
+831
+01:10:08,920 --> 01:10:12,206
+Set a forty-minute timer and speak out loud, not in your head.
+
+832
+01:10:12,486 --> 01:10:14,363
+Name the seven steps as you go.
+
+833
+01:10:14,643 --> 01:10:16,222
+Draw the boxes on paper.
+
+834
+01:10:16,502 --> 01:10:18,208
+Glance at the clock at each step.
+
+835
+01:10:18,488 --> 01:10:20,110
+Always finish with the roadmap.
+
+836
+01:10:20,390 --> 01:10:22,459
+Do designs one and two at least twice.
+
+837
+01:10:24,239 --> 01:10:25,732
+This chapter is about you.
+
+838
+01:10:26,012 --> 01:10:30,876
+Every technical chapter so far feeds into a few stories you will tell out loud.
+
+839
+01:10:31,156 --> 01:10:39,583
+We will build your ninety-second pitch, your answer to what you would build here, your first ninety days, and which story answers which behavioral question.
+
+840
+01:10:41,222 --> 01:10:44,977
+In face synthesis the hard constraint is, don't change who this is.
+
+841
+01:10:45,257 --> 01:10:48,307
+In ad creative it's, don't change what this product is.
+
+842
+01:10:48,587 --> 01:10:55,179
+And I published a reference-free metric for generated video, then a negative result when a model learned to game it.
+
+843
+01:10:55,459 --> 01:10:58,361
+That shapes how I'd build a model-as-judge system here.
+
+844
+01:10:58,641 --> 01:11:01,713
+This is the core of your answer to tell me about yourself.
+
+845
+01:11:03,142 --> 01:11:07,387
+The full pitch has five beats, and each beat is only one or two sentences.
+
+846
+01:11:07,667 --> 01:11:15,582
+Open with who you are: a Principal Engineer who has built generative vision systems from scratch and shipped them under hard constraints.
+
+847
+01:11:15,862 --> 01:11:22,497
+Give one proof point: your motion-vector SpaceWarp beat Google's and became the default on Galaxy XR.
+
+848
+01:11:22,777 --> 01:11:24,291
+Then two matches to the role.
+
+849
+01:11:24,571 --> 01:11:30,161
+First, faithful generation, using masks, lighting harmonization and identity losses.
+
+850
+01:11:30,441 --> 01:11:35,134
+Second, evaluation, where your negative result shows you know judges get gamed.
+
+851
+01:11:35,414 --> 01:11:43,030
+Close with why Walmart: you can generate, judge, serve and learn from real shopper behavior, across thousands of brands.
+
+852
+01:11:43,310 --> 01:11:49,113
+Practice until it lands at eighty-five to ninety-five seconds and sounds natural, not memorized.
+
+853
+01:11:50,559 --> 01:11:51,945
+Start with the north star.
+
+854
+01:11:52,225 --> 01:12:01,185
+Every advertiser, from a national brand to a small marketplace seller, gets on-brand, compliant, high-performing creative for every placement.
+
+855
+01:12:01,465 --> 01:12:03,684
+Then five pillars, one sentence each.
+
+856
+01:12:03,964 --> 01:12:12,348
+One, faithful generation by construction: real product pixels locked, generated backgrounds, deterministic text and layout.
+
+857
+01:12:12,628 --> 01:12:21,972
+Two, a judge stack, not a judge: cheap checks, then specialist detectors, then a VLM rubric judge, then calibration and risk-based routing.
+
+858
+01:12:22,252 --> 01:12:29,591
+Three, a creative genome: attributes and embeddings for every creative, served to ranking, targeting and measurement.
+
+859
+01:12:29,871 --> 01:12:35,759
+Four, closed-loop optimization, keeping the optimization reward separate from the safety judges.
+
+860
+01:12:36,039 --> 01:12:39,303
+Five, one shared platform every product composes on.
+
+861
+01:12:39,583 --> 01:12:41,524
+Go deep only on the pillar they pick.
+
+862
+01:12:42,954 --> 01:12:44,362
+Say the roadmap this way.
+
+863
+01:12:44,642 --> 01:12:47,031
+Months zero to three: measure first.
+
+864
+01:12:47,311 --> 01:12:56,036
+Build the eval harness, golden sets and failure catalog, and ship a quick win by adapting existing assets to more placements with fidelity gates.
+
+865
+01:12:56,316 --> 01:13:05,874
+Months three to nine: judge version one in production, genome version one with one real consumer, and image generation with lighting harmonization.
+
+866
+01:13:06,154 --> 01:13:11,124
+Months nine to eighteen: video, closed-loop tuning, and advertiser insights.
+
+867
+01:13:11,404 --> 01:13:13,580
+Then personalization at serving time.
+
+868
+01:13:13,860 --> 01:13:15,866
+Chapter nine covers this in depth.
+
+869
+01:13:16,146 --> 01:13:18,983
+Just as important, name what you would not do first.
+
+870
+01:13:19,263 --> 01:13:23,615
+No fully generative product imagery, because of hallucination risk.
+
+871
+01:13:23,895 --> 01:13:26,732
+Never train the generator against the gating judge.
+
+872
+01:13:27,012 --> 01:13:33,732
+And no per-brand LoRA fine-tunes, meaning small adapter models, until reference adapters fall short.
+
+873
+01:13:35,162 --> 01:13:38,255
+For the first ninety days, show humility and then speed.
+
+874
+01:13:38,535 --> 01:13:40,839
+In days one to thirty, listen and measure.
+
+875
+01:13:41,119 --> 01:13:47,946
+Meet product, engineering, ads ranking, policy, brand safety, measurement, and a few real advertisers.
+
+876
+01:13:48,226 --> 01:13:51,383
+Read the rejection logs to learn what fails today and why.
+
+877
+01:13:51,663 --> 01:13:55,247
+Collect one to two thousand labeled examples per failure mode.
+
+878
+01:13:55,527 --> 01:14:06,557
+In days thirty-one to sixty, publish the eval contract: a quality taxonomy, a golden-set process, and a judge version zero with its agreement against humans reported.
+
+879
+01:14:06,837 --> 01:14:12,149
+In days sixty-one to ninety, deliver an eighteen-month strategy and one measurable win.
+
+880
+01:14:12,429 --> 01:14:17,207
+For example, cut human review volume by forty percent at equal precision.
+
+881
+01:14:17,487 --> 01:14:21,797
+That order, measure before you build, is what Distinguished judgment looks like.
+
+882
+01:14:23,245 --> 01:14:24,589
+Here is your story map.
+
+883
+01:14:24,869 --> 01:14:30,821
+For biggest impact, tell SpaceWarp, and end on the lesson that head-to-head evaluation decided it.
+
+884
+01:14:31,101 --> 01:14:36,051
+For evaluation, or for a failure, tell the temporal metric and its negative result.
+
+885
+01:14:36,331 --> 01:14:37,824
+Stress that you published it.
+
+886
+01:14:38,104 --> 01:14:44,653
+For taking generation to production, tell Passthrough Eyes, with its fidelity constraints and latency budget.
+
+887
+01:14:44,933 --> 01:14:50,629
+For influence without authority, tell Golf Mode or your OpenXR extension proposal.
+
+888
+01:14:50,909 --> 01:14:54,899
+For a tradeoff with executives, use your E-V-P award demos.
+
+889
+01:14:55,179 --> 01:14:57,163
+Fill in real numbers before Monday.
+
+890
+01:14:57,443 --> 01:14:59,107
+Then avoid the classic traps.
+
+891
+01:14:59,387 --> 01:15:01,691
+Keep XR detail to one sentence.
+
+892
+01:15:01,971 --> 01:15:03,123
+Say I, not we.
+
+893
+01:15:03,403 --> 01:15:05,045
+Never bluff ads specifics.
+
+894
+01:15:05,325 --> 01:15:07,800
+Tie every metric to dollars or shoppers.
+
+895
+01:15:08,080 --> 01:15:09,595
+Never criticize Samsung.
+
+896
+01:15:11,037 --> 01:15:24,562
+Accessibility is a preferred qualification most candidates will skip, so claim it. wuh-cag two point two, level double A, needs text contrast of at least four point five to one, or three to one for large text.
+
+897
+01:15:24,842 --> 01:15:28,405
+Images need text alternatives, and videos need captions.
+
+898
+01:15:28,685 --> 01:15:31,714
+Content should not flash more than three times per second.
+
+899
+01:15:31,994 --> 01:15:33,594
+Then make it creative AI.
+
+900
+01:15:33,874 --> 01:15:38,845
+Generate alt text for every ad image with a VLM grounded in the catalog.
+
+901
+01:15:39,125 --> 01:15:41,770
+Make contrast a hard gate in the layout engine.
+
+902
+01:15:42,050 --> 01:15:43,992
+Auto-caption every video ad.
+
+903
+01:15:44,272 --> 01:15:53,616
+In the interview, say: accessibility is a judge dimension in my eval stack, and it also improves performance, because captions help muted autoplay.
+
+904
+01:15:55,395 --> 01:15:58,872
+Welcome to chapter twelve, where the packet turns into practice.
+
+905
+01:15:59,152 --> 01:16:03,376
+Your question bank has twenty-five starred questions, the most likely ones.
+
+906
+01:16:03,656 --> 01:16:06,942
+We will model ten of them, weighted toward model-as-judge.
+
+907
+01:16:07,222 --> 01:16:09,056
+Listen for the shape of each answer.
+
+908
+01:16:09,336 --> 01:16:12,728
+Then we cover the coding drills, and the five to rehearse first.
+
+909
+01:16:14,378 --> 01:16:21,760
+Creative intelligence is the loop of generate, evaluate, understand, deploy, and learn, applied to ad creative.
+
+910
+01:16:22,040 --> 01:16:24,216
+For thirty days, I listen and audit.
+
+911
+01:16:24,496 --> 01:16:30,234
+By day sixty, a versioned evaluation harness, a human gold set, and a calibrated judge.
+
+912
+01:16:30,514 --> 01:16:34,056
+By day ninety, a sequenced roadmap plus one shipped win.
+
+913
+01:16:34,336 --> 01:16:36,512
+Use this to open any vision question.
+
+914
+01:16:37,962 --> 01:16:41,204
+No single detector catches everything, so I layer them.
+
+915
+01:16:41,484 --> 01:16:46,519
+Specialist artifact classifiers trained on hard negatives from our own generator.
+
+916
+01:16:46,799 --> 01:16:50,490
+A PatchGAN-style patch map showing where the image is wrong.
+
+917
+01:16:50,770 --> 01:16:53,970
+Structural checks like text recognition and keypoints.
+
+918
+01:16:54,250 --> 01:16:57,172
+And a calibrated VLM, a vision language model.
+
+919
+01:16:57,452 --> 01:16:59,778
+Then mention the discriminators you have trained.
+
+920
+01:17:01,212 --> 01:17:04,732
+This is the center of the job description, so expect it early.
+
+921
+01:17:05,012 --> 01:17:09,705
+Open with the structure: a cascade with three jobs, gate, score, and monitor.
+
+922
+01:17:09,985 --> 01:17:19,628
+First, deterministic validators for format, safe zones, contrast, and whether OCR, optical character recognition, matches the approved copy.
+
+923
+01:17:19,908 --> 01:17:21,358
+They are cheap and exact.
+
+924
+01:17:21,638 --> 01:17:25,649
+Second, specialist models for fidelity, artifacts, and policy.
+
+925
+01:17:25,929 --> 01:17:31,646
+Third, a VLM judge with a decomposed rubric, returning structured scores and evidence.
+
+926
+01:17:31,926 --> 01:17:40,950
+Aggregate calibrated scores into pass, review, or block, using cost-sensitive thresholds, with the middle band sized to reviewer capacity.
+
+927
+01:17:41,230 --> 01:17:45,177
+Close with a human gold set, frozen canaries, and versioned verdicts.
+
+928
+01:17:45,457 --> 01:17:47,228
+Every verdict should be replayable.
+
+929
+01:17:47,508 --> 01:17:49,470
+Say you would build the gold set first.
+
+930
+01:17:50,920 --> 01:17:52,541
+Four steps, said in order.
+
+931
+01:17:52,821 --> 01:18:00,544
+First, collect a stratified human-labeled set, sliced by category, format, advertiser size, and generator version.
+
+932
+01:18:00,824 --> 01:18:04,877
+Measure how often raters agree with each other, because that is your ceiling.
+
+933
+01:18:05,157 --> 01:18:13,797
+Second, get a continuous score from the judge, such as the probability-weighted expected rating, not the sampled integer, which bunches in the middle.
+
+934
+01:18:14,077 --> 01:18:22,056
+Third, fit a monotone map from score to the chance a human approves, using isotonic regression or Platt scaling, per slice.
+
+935
+01:18:22,336 --> 01:18:25,259
+Check E-C-E, the expected calibration error.
+
+936
+01:18:25,539 --> 01:18:29,336
+Fourth, report Cohen's kappa next to the human-to-human kappa.
+
+937
+01:18:29,616 --> 01:18:31,344
+A judge at that ceiling is done.
+
+938
+01:18:31,624 --> 01:18:36,467
+Your angle: ArcFace similarity only meant something once mapped to labeled pairs.
+
+939
+01:18:37,896 --> 01:18:39,475
+Three drifts, three fixes.
+
+940
+01:18:39,755 --> 01:18:44,661
+Judge drift: re-score a frozen canary set, so any change must be the judge.
+
+941
+01:18:44,941 --> 01:18:50,851
+Input drift: P-S-I, the population stability index, or a KS test on embeddings.
+
+942
+01:18:51,131 --> 01:18:54,992
+Concept drift: fresh human labels on a small random sample.
+
+943
+01:18:55,272 --> 01:18:56,723
+And pin the judge version.
+
+944
+01:18:57,003 --> 01:18:59,733
+Admit you have not run a production LLM judge.
+
+945
+01:19:01,163 --> 01:19:06,198
+This is your strongest question, and it doubles as your story about a metric that was gamed.
+
+946
+01:19:06,478 --> 01:19:07,779
+Start with the principle.
+
+947
+01:19:08,059 --> 01:19:15,739
+Optimization pressure amplifies any gap between proxy and target, so assume the generator finds the judge's blind spots.
+
+948
+01:19:16,019 --> 01:19:17,214
+Then the defenses.
+
+949
+01:19:17,494 --> 01:19:21,206
+Keep the training judge separate from the final evaluation judge.
+
+950
+01:19:21,486 --> 01:19:23,022
+Use diverse ensembles.
+
+951
+01:19:23,302 --> 01:19:31,344
+Constrain optimization with a KL penalty, the Kullback Leibler divergence to the base model, or best of N with a modest N.
+
+952
+01:19:31,624 --> 01:19:33,950
+Have humans audit the top-scoring outputs.
+
+953
+01:19:34,230 --> 01:19:35,488
+Then tell your story.
+
+954
+01:19:35,768 --> 01:19:44,003
+Your temporal-quality metric, used as a training loss, was satisfied without real improvement, and you published that negative result.
+
+955
+01:19:44,283 --> 01:19:48,080
+That is why a deployment judge never doubles as a training reward.
+
+956
+01:19:49,510 --> 01:19:52,433
+One creative schema per asset, with four layers.
+
+957
+01:19:52,713 --> 01:19:54,185
+Identity and lineage.
+
+958
+01:19:54,465 --> 01:19:57,494
+Versioned content attributes, each with a confidence.
+
+959
+01:19:57,774 --> 01:20:00,249
+Calibrated quality and compliance signals.
+
+960
+01:20:00,529 --> 01:20:01,510
+And embeddings.
+
+961
+01:20:01,790 --> 01:20:08,809
+Ranking uses the signals as features, targeting uses the attributes, and measurement uses them as lift dimensions.
+
+962
+01:20:09,089 --> 01:20:12,673
+Then add your fusion story about one shared representation.
+
+963
+01:20:14,102 --> 01:20:15,553
+Layers at every stage.
+
+964
+01:20:15,833 --> 01:20:18,030
+Screen inputs before spending compute.
+
+965
+01:20:18,310 --> 01:20:22,321
+Constrain generation, and never free-generate regulated claims.
+
+966
+01:20:22,601 --> 01:20:26,291
+Run policy classifiers with recall-guaranteed thresholds.
+
+967
+01:20:26,571 --> 01:20:28,918
+Keep human review for borderline cases.
+
+968
+01:20:29,198 --> 01:20:33,721
+After serving, monitor, with a kill switch for any asset or generator version.
+
+969
+01:20:34,001 --> 01:20:37,905
+Policy lives as versioned rules, so changes become config.
+
+970
+01:20:39,352 --> 01:20:43,320
+This is the ads performance question, where you show you have learned the business.
+
+971
+01:20:43,600 --> 01:20:48,016
+The answer is a randomized experiment designed with the auction in mind.
+
+972
+01:20:48,296 --> 01:20:56,701
+Randomize impressions or users between the advertiser's creative and the generated one, holding bids, targeting, and budget fixed.
+
+973
+01:20:56,981 --> 01:21:03,659
+Measure CTR, the click-through rate, plus conversion, attributed sales, and ROAS, the return on ad spend.
+
+974
+01:21:03,939 --> 01:21:05,731
+Now the insight that earns credit.
+
+975
+01:21:06,011 --> 01:21:13,136
+A better creative raises eCPM, the effective revenue per thousand impressions, so it wins more auctions.
+
+976
+01:21:13,416 --> 01:21:16,744
+Inside one budget, the arms also compete for spend.
+
+977
+01:21:17,024 --> 01:21:20,373
+So add a campaign-level design and long-run holdouts.
+
+978
+01:21:20,653 --> 01:21:25,261
+Report results by category and advertiser size, with confidence intervals.
+
+979
+01:21:25,541 --> 01:21:27,995
+Chapter four covers these auction mechanics.
+
+980
+01:21:29,435 --> 01:21:34,811
+The hard part of this role is not auction mechanics, which I can learn and partly already have.
+
+981
+01:21:35,091 --> 01:21:41,897
+It is building product-faithful generative systems, and evaluating them reliably when models judge model output.
+
+982
+01:21:42,177 --> 01:21:48,235
+I built a reference-free quality metric, published how it was gamed, and shipped a system that beat Google's.
+
+983
+01:21:48,515 --> 01:21:50,179
+Follow with one ads insight.
+
+984
+01:21:51,609 --> 01:21:52,953
+Now the coding drills.
+
+985
+01:21:53,233 --> 01:21:58,609
+The creative drills file has fourteen problems, using only numpy, each with self-tests.
+
+986
+01:21:58,889 --> 01:22:10,281
+First, judge statistics: Bradley Terry from pairwise preferences, Cohen's kappa, isotonic calibration with an auto-approve threshold, and position bias in a pairwise judge.
+
+987
+01:22:10,561 --> 01:22:19,116
+Next, monitoring: P-S-I and KS drift with an alert rule, plus CUSUM, a cumulative sum detector on daily approval rate.
+
+988
+01:22:19,396 --> 01:22:23,471
+Then composition. wuh-cag, the web accessibility contrast check.
+
+989
+01:22:23,751 --> 01:22:26,887
+A saliency smart crop using a summed-area table.
+
+990
+01:22:27,167 --> 01:22:31,711
+Headline placement as the largest calm rectangle, and a layout validator.
+
+991
+01:22:31,991 --> 01:22:39,372
+Then fidelity: S-sim, the structural similarity index, perceptual hashes, and delta E in C-I-E lab color.
+
+992
+01:22:39,652 --> 01:22:42,596
+Last, Thompson sampling and near-duplicate dedupe.
+
+993
+01:22:42,876 --> 01:22:50,407
+The older ads file adds A-U-C, calibration, the GSP or generalized second price auction, and pacing.
+
+994
+01:22:51,836 --> 01:22:53,266
+Here is how to practice.
+
+995
+01:22:53,546 --> 01:22:57,962
+Read one drill's docstring, which is the interviewer's prompt, and close the file.
+
+996
+01:22:58,242 --> 01:23:01,570
+Implement it in ten to fifteen minutes while talking out loud.
+
+997
+01:23:01,850 --> 01:23:09,615
+Restate the problem, give the brute force, then the better algorithm, its complexity, and edge cases like ties and empty input.
+
+998
+01:23:09,895 --> 01:23:13,650
+Run the self-tests, and have one sentence on how it runs at scale.
+
+999
+01:23:13,930 --> 01:23:15,530
+Now the five priorities.
+
+1000
+01:23:15,810 --> 01:23:21,100
+First, isotonic calibration with the auto-approve threshold, literally the judge gate.
+
+1001
+01:23:21,380 --> 01:23:24,090
+Second, Cohen's kappa against the human ceiling.
+
+1002
+01:23:24,370 --> 01:23:27,570
+Third, Bradley Terry, for pairwise model selection.
+
+1003
+01:23:27,850 --> 01:23:33,610
+Fourth, P-S-I and KS drift, where a tiny p-value means nothing without an effect size.
+
+1004
+01:23:33,890 --> 01:23:38,263
+Fifth, the wuh-cag contrast ratio, short and very creative-specific.
+
+1005
+01:23:40,061 --> 01:23:42,643
+This last chapter turns everything into a plan.
+
+1006
+01:23:42,923 --> 01:23:45,781
+We will lay out Friday through Monday, block by block.
+
+1007
+01:23:46,061 --> 01:23:51,416
+Then come the Monday morning essentials, your questions for them, the logistics, and how to close.
+
+1008
+01:23:51,696 --> 01:23:53,467
+Then a word on why you are ready.
+
+1009
+01:23:55,096 --> 01:23:59,363
+Today is Friday, and the order matters, because the riskiest gap goes first.
+
+1010
+01:23:59,643 --> 01:24:01,883
+Friday morning is the judge chapter.
+
+1011
+01:24:02,163 --> 01:24:05,448
+Read it fully, take notes, and run drills one through six.
+
+1012
+01:24:05,728 --> 01:24:11,702
+Friday afternoon is generative image, copy and composition, with drills seven through twelve.
+
+1013
+01:24:11,982 --> 01:24:15,310
+Saturday morning covers video and creative understanding.
+
+1014
+01:24:15,590 --> 01:24:20,880
+Saturday afternoon, say system designs one and two out loud with a forty-minute timer.
+
+1015
+01:24:21,160 --> 01:24:25,704
+Sunday morning, go through every diagram until you can draw four from memory.
+
+1016
+01:24:25,984 --> 01:24:30,955
+Sunday afternoon, answer the starred questions and your behavioral stories aloud.
+
+1017
+01:24:31,235 --> 01:24:38,062
+Sunday evening, run a full mock: pitch, a system design, a judge deep dive, two stories, and your questions.
+
+1018
+01:24:38,342 --> 01:24:41,371
+Monday morning, read only the cheat sheet, then rest.
+
+1019
+01:24:41,651 --> 01:24:44,616
+Fill in your real story numbers before Sunday's mock.
+
+1020
+01:24:46,055 --> 01:24:48,700
+On Monday morning, hold five things in your head.
+
+1021
+01:24:48,980 --> 01:24:55,231
+First, the role in one line: generate, judge, understand, adapt and learn, on shared infrastructure.
+
+1022
+01:24:55,511 --> 01:25:00,097
+Second, be able to draw the judge stack from deterministic checks to the router.
+
+1023
+01:25:00,377 --> 01:25:09,017
+Third, your formulas: Cohen's kappa for agreement, P-S-I for drift, E-C-E for calibration error, and the wuh-cag contrast ratio.
+
+1024
+01:25:09,297 --> 01:25:12,967
+Add eCPM, effective cost per thousand impressions.
+
+1025
+01:25:13,247 --> 01:25:20,052
+It equals bid times predicted CTR times one thousand, which is why creative quality moves revenue.
+
+1026
+01:25:20,332 --> 01:25:24,641
+Fourth, the Goodhart line: separate the gatekeeper, the coach and the scoreboard.
+
+1027
+01:25:24,921 --> 01:25:30,169
+Fifth, if you get stuck, say: let me separate what must be guaranteed from what should be optimized.
+
+1028
+01:25:31,599 --> 01:25:33,519
+Pick three or four questions to ask.
+
+1029
+01:25:33,799 --> 01:25:39,537
+Where is the bottleneck today: generation quality, review throughput, or advertiser adoption?
+
+1030
+01:25:39,817 --> 01:25:44,937
+How is generated creative evaluated now, and how much still goes through human review?
+
+1031
+01:25:45,217 --> 01:25:49,356
+Are long-tail sellers without design resources the primary customer?
+
+1032
+01:25:49,636 --> 01:25:52,687
+How do creative signals reach ranking and targeting?
+
+1033
+01:25:52,967 --> 01:25:55,804
+And what does success look like for this role in twelve months?
+
+1034
+01:25:56,084 --> 01:26:02,121
+Each one shows you think in systems and outcomes, and the answers tell you where your first ninety days should start.
+
+1035
+01:26:02,401 --> 01:26:06,881
+For logistics, join five minutes early with water and paper for diagrams.
+
+1036
+01:26:07,161 --> 01:26:12,815
+Ask clarifying questions before you design, and end every design with risks and a roadmap.
+
+1037
+01:26:14,265 --> 01:26:22,052
+The overlap between what this role needs and what I've built, faithful generation and honest evaluation, is unusually high.
+
+1038
+01:26:22,332 --> 01:26:24,273
+I'd love to build this platform here.
+
+1039
+01:26:24,553 --> 01:26:26,260
+Use it at the end, and mean it.
+
+1040
+01:26:26,540 --> 01:26:30,359
+Your record backs it: SpaceWarp beat Google and shipped as default.
+
+1041
+01:26:30,639 --> 01:26:33,647
+You published a judge and its honest negative result.
+
+1042
+01:26:33,927 --> 01:26:37,681
+Seven publications, five patents, four E-V-P awards.
+
+1043
+01:26:37,961 --> 01:26:38,857
+You are ready.
+
+1044
+01:26:39,137 --> 01:26:40,161
+Good luck, Aamer.
