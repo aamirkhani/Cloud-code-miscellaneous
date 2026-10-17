@@ -1,0 +1,2865 @@
+====================================================================================================
+ML / COMPUTER VISION / DEEP LEARNING / 3D GRAPHICS / 3D RECONSTRUCTION / UNITY JOBS
+SF BAY AREA + REMOTE (USA) - COMPANIES RANKED BY ESTIMATED OPEN-ROLE COUNT
+Compiled: 2026-10-17   |   Companies listed: 251
+====================================================================================================
+
+HOW TO READ THIS FILE
+---------------------
+* Counts are ESTIMATES of currently open roles in the six target fields that are
+  located in the SF Bay Area (SF, Peninsula, South Bay, East Bay) or open to
+  remote-US candidates. They are NOT exact counts pulled from each careers site.
+* Direct access to company careers sites / ATS APIs (Greenhouse, Lever, Ashby,
+  Workday) was blocked in the research environment, so numbers were built from
+  web-search snapshots of job aggregators (LinkedIn, TrueUp, Built In, Autobound,
+  FastAIJobs, Metaintro, Hitmarker, VC job boards, Remotive) from ~Jun-Oct 2026.
+* Treat every number as +/- 50% or worse. Rank order is more reliable than the
+  absolute numbers. Postings open and close daily - always verify on the careers URL.
+* Sorted by the MIDPOINT of the estimated range (highest first).
+
+CONFIDENCE
+  [S] = backed by web-search evidence of actual 2026 postings / aggregator counts
+  [K] = not live-checked; estimate based on the company's known team size and
+        typical hiring pattern (lower confidence - verify first)
+
+FIELD TAGS
+  ML = machine learning   DL = deep learning   CV = computer vision / perception
+  3D = 3D vision/geometry GFX = 3D graphics / rendering / GPU
+  REC = 3D reconstruction (SLAM, SfM, NeRF, Gaussian splatting)
+  UNITY = Unity / game-engine development
+
+REMOTE column = how often relevant roles are open to remote-US candidates
+  (Yes / Many / Some / Rare / No)
+
+====================================================================================================
+SECTION 1 - RANKED LIST (one line per company)
+====================================================================================================
+#    EST. ROLES  CONF COMPANY                                              FIELDS                   REMOTE
+----------------------------------------------------------------------------------------------------
+1    400-800     [S]  Google (incl. Google DeepMind, Research, Cloud, P... ML,DL,CV,3D,GFX,REC      Some
+2    400-700     [S]  Apple (AIML, Vision Pro, Camera, Maps 3D, Metal/GPU) ML,DL,CV,3D,GFX,REC      Rare
+3    400-700     [S]  Meta (incl. Reality Labs, FAIR, Superintelligence... ML,DL,CV,3D,GFX,REC,UNITY Some
+4    400-700     [S]  NVIDIA (AV, Isaac robotics, Omniverse, neural gra... ML,DL,CV,3D,GFX,REC      Many
+5    150-300     [S]  Amazon / AWS (Lab126, A9, Amazon Robotics, AGI SF... ML,DL,CV,3D              Some
+6    150-250     [S]  OpenAI                                               ML,DL,CV                 Rare
+7    100-250     [K]  ByteDance / TikTok (incl. PICO XR)                   ML,DL,CV,3D              Rare
+8    100-250     [K]  Microsoft (Microsoft AI, Copilot, Xbox - Bay Area... ML,DL,CV,GFX             Some
+9    100-150     [S]  Anthropic                                            ML,DL                    Some
+10   70-150      [S]  Waymo (Alphabet)                                     ML,DL,CV,3D,GFX,REC      Rare
+11   40-150      [S]  Tesla (Autopilot, Optimus, AI infra)                 ML,DL,CV,3D,GFX          No
+12   60-120      [S]  Adobe (Research, Firefly, Substance 3D)              ML,DL,CV,3D,GFX,REC      Some
+13   60-120      [S]  AMD                                                  ML,DL,GFX                Some
+14   50-100      [S]  Salesforce (incl. Salesforce AI Research)            ML,DL                    Some
+15   50-100      [K]  Uber                                                 ML,DL,CV                 Rare
+16   60-90       [S]  xAI (SpaceX)                                         ML,DL,CV                 Some (46 remote listings)
+17   40-100      [S]  Intel                                                ML,DL,GFX                Some
+18   40-100      [S]  Zoox (Amazon)                                        ML,DL,CV,3D,REC          No
+19   40-90       [K]  LinkedIn (Microsoft)                                 ML,DL                    Some
+20   40-80       [K]  Cisco (incl. Splunk, Webex)                          ML,DL,CV                 Some
+21   40-80       [K]  Databricks (incl. Mosaic AI)                         ML,DL                    Some
+22   30-80       [K]  GM (AV/ADAS, ex-Cruise teams)                        ML,DL,CV,3D,GFX          Rare
+23   30-80       [S]  Intuit (incl. Credit Karma)                          ML,DL,CV                 Some
+24   30-60       [S]  Applied Intuition                                    ML,DL,CV,3D,GFX,REC      No
+25   30-60       [K]  DoorDash (incl. Dot robot)                           ML,DL,CV                 Some
+26   30-60       [K]  Oracle (OCI AI)                                      ML,DL,CV                 Many
+27   25-60       [K]  Netflix (incl. Games, Studio tech)                   ML,DL,CV,GFX,UNITY       Some
+28   20-60       [S]  Roblox                                               ML,DL,CV,3D,GFX,REC      No
+29   20-50       [K]  Palo Alto Networks                                   ML,DL                    Some
+30   20-50       [K]  PayPal (incl. Venmo)                                 ML,DL                    Some
+31   20-50       [S]  Samsung Research America + Samsung Semiconductor     ML,DL,CV,3D              Rare
+32   20-50       [K]  ServiceNow                                           ML,DL                    Many
+33   15-50       [K]  Autodesk (incl. Research, Wonder Dynamics/Flow St... ML,DL,3D,GFX,REC         Many
+34   15-50       [S]  Pinterest                                            ML,DL,CV                 Yes (1-2 office visits/qtr)
+35   15-50       [K]  Qualcomm (Bay Area)                                  ML,DL,CV                 Rare
+36   15-50       [S]  Rivian (Palo Alto Autonomy)                          ML,DL,CV                 No
+37   25-40       [S]  Scale AI                                             ML,DL                    Rare
+38   20-40       [K]  Airbnb                                               ML,DL,CV                 Yes (US remote eligible)
+39   20-40       [K]  Applied Materials                                    ML,CV                    Rare
+40   20-40       [K]  Cadence                                              ML,DL                    Some
+41   20-40       [K]  KLA                                                  ML,DL,CV                 Rare
+42   20-40       [K]  Snowflake                                            ML,DL                    Some
+43   20-40       [K]  Stripe                                               ML,DL                    Some
+44   20-40       [K]  Synopsys                                             ML,DL                    Some
+45   25-35       [S]  Cerebras                                             ML,DL                    Rare
+46   15-40       [K]  Broadcom (incl. VMware)                              ML                       Some
+47   10-40       [S]  Electronic Arts (incl. SEED, Respawn)                ML,DL,GFX,3D             Some
+48   10-40       [S]  Instacart (incl. Caper Carts)                        ML,DL,CV                 Yes
+49   10-40       [S]  Unity Technologies                                   ML,DL,CV,3D,GFX,REC,UNITY Some
+50   10-40       [S]  Visa                                                 ML,DL                    Rare
+51   15-35       [K]  Block (Square, Cash App)                             ML,DL                    Yes
+52   15-35       [K]  eBay                                                 ML,DL,CV                 Some
+53   15-35       [S]  Figure AI                                            ML,DL,CV,3D              No
+54   15-35       [K]  HPE (incl. Juniper)                                  ML                       Some
+55   15-35       [K]  Toyota Research Institute + Woven by Toyota          ML,DL,CV                 Rare
+56   15-35       [K]  Workday                                              ML,DL                    Many
+57   15-30       [S]  Intuitive Surgical                                   ML,DL,CV                 Rare
+58   15-30       [S]  Nuro                                                 ML,DL,CV                 No
+59   10-30       [K]  Capital One (SF + remote)                            ML,DL                    Yes
+60   10-30       [K]  Cursor (Anysphere)                                   ML,DL                    No
+61   10-30       [S]  Tempus AI                                            ML,DL,CV                 Yes
+62   15-25       [S]  Perplexity                                           ML,DL                    Rare
+63   15-25       [S]  Together AI                                          ML,DL                    Some
+64   5-30        [S]  Snap Inc. (incl. Spectacles)                         ML,DL,CV,3D              Rare
+65   5-30        [S]  Sony Interactive Entertainment (PlayStation)         ML,GFX,CV                Some
+66   10-25       [K]  Ambarella                                            ML,DL,CV                 Rare
+67   10-25       [K]  Bosch (Research & Technology Center, BCAI)           ML,DL,CV                 Rare
+68   10-25       [S]  Harvey                                               ML,DL                    Some
+69   10-25       [K]  HP Inc.                                              ML,CV,3D                 Some
+70   10-25       [K]  IBM Research Almaden                                 ML,DL                    Some
+71   10-25       [K]  Lam Research                                         ML,CV                    Rare
+72   10-25       [K]  Lyft                                                 ML                       Rare
+73   10-25       [K]  Marvell                                              ML                       Rare
+74   10-25       [S]  Zipline                                              ML,DL,CV,3D              No
+75   5-25        [S]  Coinbase                                             ML                       Yes
+76   5-25        [S]  Lucid Motors                                         ML,CV                    No
+77   10-20       [K]  Abridge                                              ML,DL                    Some
+78   10-20       [S]  Baseten                                              ML                       Some
+79   10-20       [K]  Figma                                                ML,GFX                   Some
+80   10-20       [S]  Glean                                                ML,DL                    Rare
+81   10-20       [S]  Luma AI                                              ML,DL,CV,3D,REC,GFX      Some
+82   10-20       [S]  Reflection AI                                        ML,DL                    No
+83   10-20       [S]  Thinking Machines Lab                                ML,DL,CV                 No
+84   8-20        [S]  Aurora (Bay Area)                                    ML,CV                    No
+85   8-20        [S]  Skydio                                               ML,DL,CV,3D              No
+86   8-20        [K]  Verkada                                              ML,DL,CV                 No
+87   5-20        [S]  1X Technologies                                      ML,DL,CV                 No
+88   10-15       [S]  SambaNova                                            ML                       Some
+89   8-15        [S]  Skild AI                                             ML,DL,CV                 No
+90   8-15        [S]  Wayve (US)                                           ML,DL,CV                 No
+91   8-15        [S]  World Labs                                           ML,DL,CV,3D,REC,GFX      No
+92   6-15        [S]  Physical Intelligence                                ML,DL,CV                 No
+93   5-15        [K]  Cognition                                            ML                       No
+94   5-15        [K]  Flock Safety                                         ML,CV                    Yes
+95   5-15        [K]  Honda Research Institute USA                         ML,CV                    No
+96   5-15        [K]  Hyundai CRADLE / Motional (Bay Area)                 ML,CV                    No
+97   5-15        [K]  Palantir                                             ML                       No
+98   5-15        [K]  Recursion                                            ML,DL,CV                 Some
+99   5-15        [S]  Samsara                                              ML,DL,CV                 Yes
+100  5-15        [S]  Sierra                                               ML                       No
+101  5-15        [K]  The Bot Company                                      ML,CV                    No
+102  5-15        [K]  The Trade Desk / AppLovin / Moloco                   ML                       Some
+103  5-15        [S]  Torc Robotics (remote-eligible)                      ML,DL,CV,3D              Yes
+104  5-15        [K]  Weights & Biases (CoreWeave)                         ML                       Some
+105  7-12        [S]  d-Matrix                                             ML                       Rare
+106  6-12        [S]  Cresta                                               ML                       Yes
+107  5-12        [S]  Blue River Technology (John Deere)                   ML,DL,CV                 Some
+108  5-12        [K]  Joby / Wisk / Archer (autonomy)                      ML,CV                    No
+109  5-12        [S]  Kodiak Robotics                                      ML,CV                    Some
+110  5-12        [K]  Motive                                               ML,CV                    Yes
+111  5-12        [S]  Wing (Alphabet)                                      ML,CV                    Some
+112  4-12        [S]  Niantic Spatial (incl. Scaniverse)                   CV,3D,REC                Some
+113  6-10        [S]  Anyscale                                             ML                       Rare
+114  6-10        [S]  Reddit                                               ML                       Yes
+115  5-10        [K]  Atlassian                                            ML                       Yes
+116  5-10        [S]  Cohere (SF)                                          ML,DL,CV                 Yes
+117  5-10        [S]  Fireworks AI                                         ML                       Rare
+118  5-10        [S]  Lambda                                               ML                       Rare
+119  5-10        [K]  Notion (AI)                                          ML                       No
+120  5-10        [S]  Serve Robotics                                       ML,DL,CV,3D              No
+121  5-10        [S]  Waabi                                                ML,DL,CV                 Yes (US/CA remote)
+122  4-10        [S]  Dexterity                                            ML,CV                    No
+123  4-10        [S]  Gatik                                                ML,CV                    No
+124  4-10        [S]  Runway                                               ML,DL,CV,3D              Some
+125  3-10        [K]  Dassault Systemes / SolidWorks                       GFX,3D                   Rare
+126  3-10        [K]  Industrial Light & Magic / Lucasfilm                 GFX,3D,REC               No
+127  3-10        [S]  Shield AI                                            ML,CV                    No
+128  3-10        [K]  Stack AV                                             ML,CV                    Some
+129  5-8         [S]  Chan Zuckerberg Initiative / Biohub (incl. Evolut... ML,DL,CV                 Rare
+130  4-8         [S]  Character.AI                                         ML,DL                    No
+131  4-8         [S]  Etched                                               ML                       No
+132  4-8         [S]  Nimble Robotics                                      ML,CV                    No
+133  4-8         [S]  PlusAI                                               ML,DL,CV                 No
+134  4-8         [S]  Scopely (incl. Pokemon GO / Niantic games)           UNITY,GFX                Yes
+135  3-8         [K]  Aeva                                                 ML,CV,3D                 No
+136  3-8         [K]  Bentley Systems (incl. Cesium)                       GFX,3D,UNITY             Yes
+137  3-8         [K]  Dyna Robotics                                        ML,CV                    No
+138  3-8         [S]  Epic Games (Remote US)                               ML,GFX,3D                Some
+139  3-8         [K]  Esri                                                 GFX,3D,CV                Some
+140  3-8         [K]  Hayden AI                                            ML,CV                    No
+141  3-8         [S]  Higgsfield                                           ML,DL                    Some
+142  3-8         [K]  Hugging Face                                         ML,DL,CV                 Yes
+143  3-8         [S]  J&J MedTech (Verb / Auris / Monarch)                 ML,CV                    No
+144  3-8         [S]  May Mobility                                         ML,CV                    Yes
+145  3-8         [K]  Pixar                                                GFX,3D                   No
+146  3-8         [K]  Planet Labs                                          ML,CV                    Yes
+147  3-8         [K]  PTC / Onshape                                        GFX,3D                   Some
+148  3-8         [K]  Zillow (incl. 3D Home)                               ML,CV,3D,REC             Yes
+149  2-8         [K]  Foundry / SideFX / Chaos / Maxon                     GFX,3D                   Yes
+150  2-8         [S]  Matterport (CoStar)                                  ML,CV,3D,REC,GFX         Some
+151  2-8         [K]  Pony.ai (US)                                         ML,CV                    No
+152  4-6         [S]  Affirm                                               ML                       Yes (remote-first)
+153  4-6         [S]  Arc Institute                                        ML,DL                    No
+154  4-6         [S]  Genentech / Roche gRED (AI for Drug Discovery)       ML,DL                    Some
+155  3-6         [K]  C3.ai                                                ML                       No
+156  3-6         [S]  Hebbia                                               ML                       No
+157  3-6         [S]  Krea                                                 ML,DL                    No
+158  3-6         [K]  Spotify (US)                                         ML                       Some
+159  3-6         [K]  Yelp                                                 ML,CV                    Yes
+160  2-6         [S]  Agility Robotics                                     ML,CV                    Some
+161  2-6         [K]  Ambient.ai                                           ML,CV                    No
+162  2-6         [S]  Apptronik (Bay Area)                                 ML,CV                    No
+163  2-6         [K]  Collaborative Robotics (Cobot)                       ML,CV                    No
+164  2-6         [S]  Inworld AI                                           ML,GFX                   Some
+165  2-6         [K]  Landing AI                                           ML,DL,CV                 Some
+166  2-6         [K]  Ouster (incl. Velodyne)                              ML,CV,3D                 No
+167  2-6         [K]  Path Robotics                                        ML,CV                    No
+168  2-6         [K]  Reliable Robotics                                    ML,CV                    No
+169  2-6         [K]  Zebra Technologies                                   CV                       Some
+170  3-5         [S]  Black Forest Labs (SF)                               ML,DL                    Some
+171  3-5         [S]  Chime                                                ML                       Some
+172  3-5         [S]  Faire                                                ML                       No
+173  3-5         [S]  Meshy AI                                             ML,3D,GFX                Yes
+174  3-5         [S]  Plaid                                                ML                       Some
+175  3-5         [S]  Robinhood                                            ML                       No
+176  3-5         [S]  Shopify                                              ML,3D                    Yes
+177  3-5         [S]  Wayfair                                              ML,3D                    No
+178  1-6         [K]  Wonder Dynamics / Move.ai / Rokoko                   CV,ML,3D                 Some
+179  2-5         [S]  Bonsai Robotics                                      ML,CV                    No
+180  2-5         [K]  Chef Robotics                                        ML,CV                    No
+181  2-5         [K]  DataRobot                                            ML                       Yes
+182  2-5         [K]  Duality Robotics                                     GFX,3D                   Some
+183  2-5         [K]  Elastic                                              ML                       Yes
+184  2-5         [S]  ElevenLabs (US)                                      ML                       Yes
+185  2-5         [K]  Gecko Robotics                                       ML,CV                    Some
+186  2-5         [S]  Genmo                                                ML,DL                    No
+187  2-5         [K]  HubSpot                                              ML                       Yes
+188  2-5         [S]  Ideogram                                             ML,DL                    Some
+189  2-5         [S]  Mistral AI (US)                                      ML                       No
+190  2-5         [S]  Pika                                                 ML,DL                    No
+191  2-5         [K]  Rippling                                             ML                       No
+192  2-5         [K]  SoFi                                                 ML                       Some
+193  3-4         [S]  Duolingo                                             ML                       No
+194  1-5         [K]  Cognex                                               CV,DL                    Rare
+195  1-5         [K]  Infinite Reality                                     GFX,3D                   Yes
+196  2-4         [K]  Brex                                                 ML                       Some
+197  2-4         [S]  Chewy                                                ML                       No
+198  2-4         [S]  Cloudflare                                           ML                       Yes
+199  2-4         [K]  Discord                                              ML                       Some
+200  2-4         [S]  Dropbox                                              ML                       Yes
+201  2-4         [K]  Komodo Health                                        ML                       Yes
+202  2-4         [S]  Ramp                                                 ML                       No
+203  2-4         [K]  Thumbtack                                            ML                       Yes
+204  2-4         [K]  Twilio                                               ML                       Yes
+205  0-5         [S]  Anduril (Bay Area / remote)                          CV,ML                    No
+206  0-5         [S]  Mobileye (Bay Area)                                  CV,DL                    No
+207  0-5         [S]  Saronic (Bay Area)                                   CV,ML                    No
+208  1-4         [S]  Ambi Robotics                                        ML,CV                    No
+209  1-4         [K]  Mapbox                                               GFX,CV                   Yes
+210  1-4         [K]  Parallel Domain                                      GFX,3D,ML                Some
+211  1-4         [K]  Ready Player Me / Genies / Didimo                    UNITY,3D,ML              Some
+212  1-4         [K]  Rhombus                                              CV                       Some
+213  1-4         [K]  Swift Navigation                                     ML                       Some
+214  1-4         [S]  Zynga (Take-Two)                                     UNITY                    No
+215  2-3         [S]  Etsy                                                 ML                       Yes
+216  0-4         [S]  Xreal                                                CV                       No
+217  1-3         [S]  Blizzard Entertainment                               GFX,UNITY                Some
+218  1-3         [K]  Crystal Dynamics                                     GFX                      No
+219  1-3         [S]  Freenome                                             ML                       Some
+220  1-3         [S]  GitLab                                               ML                       Yes
+221  1-3         [S]  Grammarly (Superhuman)                               ML                       Some
+222  1-3         [S]  Jam City                                             UNITY                    Yes
+223  1-3         [S]  Midjourney                                           ML,DL,3D                 No
+224  1-3         [S]  Modal (Bay Area portion)                             ML                       No
+225  1-3         [S]  Polycam                                              CV,3D,REC                Yes
+226  1-3         [S]  Rec Room                                             UNITY                    Yes
+227  1-3         [K]  Second Dinner                                        UNITY                    Yes
+228  1-3         [S]  Stability AI (US)                                    ML,DL                    Some
+229  1-3         [S]  Zapier                                               ML                       Yes
+230  1-3         [S]  Zscaler                                              ML                       Yes
+231  0-3         [S]  Spline                                               GFX,3D,ML                Yes
+232  0-3         [S]  Starship Technologies (US)                           CV                       No
+233  1-2         [S]  Bungie                                               GFX                      Some
+234  1-2         [S]  GRAIL                                                ML                       No
+235  1-2         [S]  OpenSpace                                            CV,3D,REC                Some
+236  0-2         [K]  Double Fine (Xbox)                                   GFX                      No
+237  0-2         [S]  Groq                                                 ML                       No
+238  0-2         [S]  Kaedim                                               ML,3D                    Some
+239  0-2         [S]  Magic Leap                                           CV,3D                    No
+240  0-2         [S]  Pocket Gems                                          UNITY                    Some
+241  0-2         [S]  Riot Games (US)                                      ML                       Some
+242  0-2         [S]  Safe Superintelligence (SSI)                         ML,DL                    No
+243  0-2         [K]  Supercell US                                         UNITY                    No
+244  0-2         [S]  Survios                                              GFX                      No
+245  1-1         [S]  Compound Eye                                         CV,3D                    Yes
+246  1-1         [S]  DeepWalk                                             CV                       Yes
+247  1-1         [S]  Humble Robotics                                      3D,REC                   Some
+248  1-1         [S]  Pano AI                                              CV                       Yes
+249  1-1         [S]  Point One Navigation                                 CV                       Yes
+250  0-1         [S]  Owlchemy Labs (Google)                               UNITY,GFX                Some
+251  0-1         [S]  Valve                                                GFX                      No
+
+====================================================================================================
+SECTION 2 - DETAILED ENTRIES (same order)
+====================================================================================================
+
+1. Google (incl. Google DeepMind, Research, Cloud, Pixel, Android XR, Maps 3D)
+   Est. open relevant roles : 400-800  (midpoint 600)  [S]
+   Sector                   : Big Tech
+   Fields                   : ML,DL,CV,3D,GFX,REC
+   Locations                : Mountain View, Sunnyvale, San Francisco, San Bruno, San Jose
+   Remote-US                : Some
+   Careers                  : careers.google.com ; deepmind.google/about/careers
+   Example roles            : SWE III ML; Research Scientist World Models (DeepMind SF); SWE AI/ML CV for Android XR (depth/3D recon); Pixel Camera CV/ML
+
+2. Apple (AIML, Vision Pro, Camera, Maps 3D, Metal/GPU)
+   Est. open relevant roles : 400-700  (midpoint 550)  [S]
+   Sector                   : Big Tech / AR-VR
+   Fields                   : ML,DL,CV,3D,GFX,REC
+   Locations                : Cupertino, Sunnyvale, Santa Clara, San Francisco
+   Remote-US                : Rare
+   Careers                  : jobs.apple.com
+   Example roles            : ML 3D Reconstruction Engineer; CV Engineer real-time 3D vision; 3D Perception (VIO/SLAM); CV Research Eng Maps 3D; GPU/Metal graphics
+
+3. Meta (incl. Reality Labs, FAIR, Superintelligence Labs)
+   Est. open relevant roles : 400-700  (midpoint 550)  [S]
+   Sector                   : Big Tech / AR-VR
+   Fields                   : ML,DL,CV,3D,GFX,REC,UNITY
+   Locations                : Menlo Park, Burlingame, Sunnyvale, San Francisco
+   Remote-US                : Some
+   Careers                  : metacareers.com/jobs
+   Example roles            : CV Engineer Reality Labs (SLAM/depth/volumetric recon); Research Scientist 3D CV; Graphics/Rendering Engineer (Quest/Horizon); SWE Machine Learning
+
+4. NVIDIA (AV, Isaac robotics, Omniverse, neural graphics, research)
+   Est. open relevant roles : 400-700  (midpoint 550)  [S]
+   Sector                   : Big Tech / Semis
+   Fields                   : ML,DL,CV,3D,GFX,REC
+   Locations                : Santa Clara (HQ)
+   Remote-US                : Many
+   Careers                  : nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite
+   Example roles            : Sr DL & CV Engineer AV; GPU Perf Engineer Neural Reconstruction (Gaussian splatting); Research Scientist Simulation; Omniverse/RTX rendering
+
+5. Amazon / AWS (Lab126, A9, Amazon Robotics, AGI SF Lab, Ring)
+   Est. open relevant roles : 150-300  (midpoint 225)  [S]
+   Sector                   : Big Tech
+   Fields                   : ML,DL,CV,3D
+   Locations                : Sunnyvale, Palo Alto, San Francisco, Cupertino, East Palo Alto
+   Remote-US                : Some
+   Careers                  : amazon.jobs
+   Example roles            : Applied Scientist CV (Robotics); Principal Applied Scientist Camera (Lab126); Applied Scientist AGI SF
+
+6. OpenAI
+   Est. open relevant roles : 150-250  (midpoint 200)  [S]
+   Sector                   : AI Lab
+   Fields                   : ML,DL,CV
+   Locations                : San Francisco (hybrid 3 days)
+   Remote-US                : Rare
+   Careers                  : openai.com/careers
+   Example roles            : Research Scientist; Research Engineer; RS Multimodal Agent Consumer Devices; Researcher Synthetic RL
+
+7. ByteDance / TikTok (incl. PICO XR)
+   Est. open relevant roles : 100-250  (midpoint 175)  [K]
+   Sector                   : Big Tech / AR-VR
+   Fields                   : ML,DL,CV,3D
+   Locations                : San Jose, Mountain View, San Francisco
+   Remote-US                : Rare
+   Careers                  : joinbytedance.com ; lifeattiktok.com
+   Example roles            : ML Engineer Recommendation; AI Vision Research Eng (PICO); Hand Tracking Algorithm Expert; CV interns
+
+8. Microsoft (Microsoft AI, Copilot, Xbox - Bay Area + remote)
+   Est. open relevant roles : 100-250  (midpoint 175)  [K]
+   Sector                   : Big Tech
+   Fields                   : ML,DL,CV,GFX
+   Locations                : Mountain View, San Francisco
+   Remote-US                : Some
+   Careers                  : careers.microsoft.com ; microsoft.ai/careers
+   Example roles            : MTS Voice & Vision (MAI); ML Engineer Copilot; Senior Applied Scientist; Xbox graphics/DirectX
+
+9. Anthropic
+   Est. open relevant roles : 100-150  (midpoint 125)  [S]
+   Sector                   : AI Lab
+   Fields                   : ML,DL
+   Locations                : San Francisco (some remote)
+   Remote-US                : Some
+   Careers                  : anthropic.com/careers
+   Example roles            : Research Engineer/Scientist (Interpretability, Alignment, RL); ML Infra; Inference
+
+10. Waymo (Alphabet)
+   Est. open relevant roles : 70-150  (midpoint 110)  [S]
+   Sector                   : Autonomous Vehicles
+   Fields                   : ML,DL,CV,3D,GFX,REC
+   Locations                : Mountain View, San Francisco
+   Remote-US                : Rare
+   Careers                  : careers.withwaymo.com
+   Example roles            : Staff ML Eng Perception; Sr MLE CV/VLM; Perception Foundation Model; Simulation/3D rendering
+
+11. Tesla (Autopilot, Optimus, AI infra)
+   Est. open relevant roles : 40-150  (midpoint 95)  [S]
+   Sector                   : Autonomous Vehicles / Robotics
+   Fields                   : ML,DL,CV,3D,GFX
+   Locations                : Palo Alto, Fremont
+   Remote-US                : No
+   Careers                  : tesla.com/careers
+   Example roles            : AI Eng Vision & Foundation Models (Optimus); AI Eng Manipulation (3D CV); Rendering/Simulation Eng
+
+12. Adobe (Research, Firefly, Substance 3D)
+   Est. open relevant roles : 60-120  (midpoint 90)  [S]
+   Sector                   : Creative / 3D
+   Fields                   : ML,DL,CV,3D,GFX,REC
+   Locations                : San Jose, San Francisco
+   Remote-US                : Some
+   Careers                  : careers.adobe.com
+   Example roles            : Research Scientist GenAI; Research Scientist 3D CV/inverse rendering; Substance 3D graphics SWE
+
+13. AMD
+   Est. open relevant roles : 60-120  (midpoint 90)  [S]
+   Sector                   : Semiconductors
+   Fields                   : ML,DL,GFX
+   Locations                : Santa Clara, San Jose
+   Remote-US                : Some
+   Careers                  : careers.amd.com
+   Example roles            : AI Model Optimization SWE; AI Research Scientist RL infra; GPU/graphics driver engineers
+
+14. Salesforce (incl. Salesforce AI Research)
+   Est. open relevant roles : 50-100  (midpoint 75)  [S]
+   Sector                   : Enterprise SaaS
+   Fields                   : ML,DL
+   Locations                : San Francisco, Palo Alto
+   Remote-US                : Some
+   Careers                  : careers.salesforce.com
+   Example roles            : Lead MLE Agentic Platform; Senior MTS AI Research; Research Scientist multimodal
+
+15. Uber
+   Est. open relevant roles : 50-100  (midpoint 75)  [K]
+   Sector                   : Consumer / Marketplace
+   Fields                   : ML,DL,CV
+   Locations                : San Francisco, Sunnyvale
+   Remote-US                : Rare
+   Careers                  : uber.com/careers
+   Example roles            : Sr MLE Michelangelo/Maps/Marketplace; Applied Scientist; Uber AV
+
+16. xAI (SpaceX)
+   Est. open relevant roles : 60-90  (midpoint 75)  [S]
+   Sector                   : AI Lab
+   Fields                   : ML,DL,CV
+   Locations                : Palo Alto, San Francisco
+   Remote-US                : Some (46 remote listings)
+   Careers                  : x.ai/careers
+   Example roles            : MTS Pre-training; MTS Multimodal Understanding; ML Infrastructure Engineer
+
+17. Intel
+   Est. open relevant roles : 40-100  (midpoint 70)  [S]
+   Sector                   : Semiconductors
+   Fields                   : ML,DL,GFX
+   Locations                : Santa Clara, San Jose, Folsom
+   Remote-US                : Some
+   Careers                  : intel.com/jobs
+   Example roles            : Sr Principal Eng GPU AI Research; GPU Perf Eng (3D rendering/shaders); Graphics ML intern (remote)
+
+18. Zoox (Amazon)
+   Est. open relevant roles : 40-100  (midpoint 70)  [S]
+   Sector                   : Autonomous Vehicles
+   Fields                   : ML,DL,CV,3D,REC
+   Locations                : Foster City, San Mateo
+   Remote-US                : No
+   Careers                  : zoox.com/careers ; jobs.lever.co/zoox
+   Example roles            : Sr MLE Perception; MLE 3D Vision Perception; GenAI sensor sim (radiance fields)
+
+19. LinkedIn (Microsoft)
+   Est. open relevant roles : 40-90  (midpoint 65)  [K]
+   Sector                   : Consumer Internet
+   Fields                   : ML,DL
+   Locations                : Sunnyvale, Mountain View, San Francisco
+   Remote-US                : Some
+   Careers                  : careers.linkedin.com
+   Example roles            : Staff AI Engineer; Sr MLE Feed/Search/Ads; Applied Research Scientist
+
+20. Cisco (incl. Splunk, Webex)
+   Est. open relevant roles : 40-80  (midpoint 60)  [K]
+   Sector                   : Enterprise / Networking
+   Fields                   : ML,DL,CV
+   Locations                : San Jose, San Francisco
+   Remote-US                : Some
+   Careers                  : jobs.cisco.com
+   Example roles            : MLE Security AI; Applied Scientist Webex AI (video/CV); Splunk MLE
+
+21. Databricks (incl. Mosaic AI)
+   Est. open relevant roles : 40-80  (midpoint 60)  [K]
+   Sector                   : Enterprise / Data
+   Fields                   : ML,DL
+   Locations                : San Francisco, Mountain View
+   Remote-US                : Some
+   Careers                  : databricks.com/company/careers
+   Example roles            : MLE Mosaic AI; Research Scientist; GenAI Applied Scientist
+
+22. GM (AV/ADAS, ex-Cruise teams)
+   Est. open relevant roles : 30-80  (midpoint 55)  [K]
+   Sector                   : Autonomous Vehicles
+   Fields                   : ML,DL,CV,3D,GFX
+   Locations                : San Francisco, Mountain View, Sunnyvale
+   Remote-US                : Rare
+   Careers                  : search.jobs.gm.com
+   Example roles            : MLE Perception; Simulation/Rendering Engineer
+
+23. Intuit (incl. Credit Karma)
+   Est. open relevant roles : 30-80  (midpoint 55)  [S]
+   Sector                   : Fintech
+   Fields                   : ML,DL,CV
+   Locations                : Mountain View, Oakland
+   Remote-US                : Some
+   Careers                  : jobs.intuit.com
+   Example roles            : Sr MLE Fraud & Risk; Staff MLE GenAI; CV for document understanding
+
+24. Applied Intuition
+   Est. open relevant roles : 30-60  (midpoint 45)  [S]
+   Sector                   : Autonomous Vehicles / Simulation
+   Fields                   : ML,DL,CV,3D,GFX,REC
+   Locations                : Mountain View, Sunnyvale (in-office)
+   Remote-US                : No
+   Careers                  : job-boards.greenhouse.io/appliedintuition
+   Example roles            : ML Perception SWE; Sensor Sim/Rendering; Neural Sim / 3D Reconstruction
+
+25. DoorDash (incl. Dot robot)
+   Est. open relevant roles : 30-60  (midpoint 45)  [K]
+   Sector                   : Consumer / Marketplace
+   Fields                   : ML,DL,CV
+   Locations                : San Francisco, Sunnyvale
+   Remote-US                : Some
+   Careers                  : careers.doordash.com
+   Example roles            : MLE Ads/Search/Logistics; CV Engineer (Dot)
+
+26. Oracle (OCI AI)
+   Est. open relevant roles : 30-60  (midpoint 45)  [K]
+   Sector                   : Enterprise / Cloud
+   Fields                   : ML,DL,CV
+   Locations                : Redwood City, Santa Clara
+   Remote-US                : Many
+   Careers                  : careers.oracle.com
+   Example roles            : Principal MLE OCI GenAI; CV for OCI Vision
+
+27. Netflix (incl. Games, Studio tech)
+   Est. open relevant roles : 25-60  (midpoint 42.5)  [K]
+   Sector                   : Media / Games
+   Fields                   : ML,DL,CV,GFX,UNITY
+   Locations                : Los Gatos, San Francisco
+   Remote-US                : Some
+   Careers                  : jobs.netflix.com
+   Example roles            : MLE/Research Scientist Personalization; ML for Media/CV; Games Graphics Eng
+
+28. Roblox
+   Est. open relevant roles : 20-60  (midpoint 40)  [S]
+   Sector                   : Gaming / 3D
+   Fields                   : ML,DL,CV,3D,GFX,REC
+   Locations                : San Mateo (onsite)
+   Remote-US                : No
+   Careers                  : careers.roblox.com
+   Example roles            : Principal Rendering Engineer; Sr MLE GenAI 3D (Cube); Sr MLE Multimodal CV & Graphics; Physics/Engine
+
+29. Palo Alto Networks
+   Est. open relevant roles : 20-50  (midpoint 35)  [K]
+   Sector                   : Security
+   Fields                   : ML,DL
+   Locations                : Santa Clara
+   Remote-US                : Some
+   Careers                  : jobs.paloaltonetworks.com
+   Example roles            : Principal MLE Precision AI; Data Scientist Threat Detection
+
+30. PayPal (incl. Venmo)
+   Est. open relevant roles : 20-50  (midpoint 35)  [K]
+   Sector                   : Fintech
+   Fields                   : ML,DL
+   Locations                : San Jose
+   Remote-US                : Some
+   Careers                  : careers.pypl.com
+   Example roles            : ML Scientist Risk/Fraud; GenAI Engineer
+
+31. Samsung Research America + Samsung Semiconductor
+   Est. open relevant roles : 20-50  (midpoint 35)  [S]
+   Sector                   : Big Tech / Research
+   Fields                   : ML,DL,CV,3D
+   Locations                : Mountain View, San Jose
+   Remote-US                : Rare
+   Careers                  : job-boards.greenhouse.io/samsungresearchamerica
+   Example roles            : Head of Vision Intelligence; Sr Researcher Embodied AI; CV interns
+
+32. ServiceNow
+   Est. open relevant roles : 20-50  (midpoint 35)  [K]
+   Sector                   : Enterprise SaaS
+   Fields                   : ML,DL
+   Locations                : Santa Clara
+   Remote-US                : Many
+   Careers                  : careers.servicenow.com
+   Example roles            : Staff MLE Now Assist; Applied Research Scientist
+
+33. Autodesk (incl. Research, Wonder Dynamics/Flow Studio)
+   Est. open relevant roles : 15-50  (midpoint 32.5)  [K]
+   Sector                   : CAD / 3D
+   Fields                   : ML,DL,3D,GFX,REC
+   Locations                : San Francisco
+   Remote-US                : Many
+   Careers                  : autodesk.wd1.myworkdayjobs.com
+   Example roles            : Research Scientist Generative 3D/CAD; Graphics/Geometry SWE
+
+34. Pinterest
+   Est. open relevant roles : 15-50  (midpoint 32.5)  [S]
+   Sector                   : Consumer Internet
+   Fields                   : ML,DL,CV
+   Locations                : San Francisco, Palo Alto
+   Remote-US                : Yes (1-2 office visits/qtr)
+   Careers                  : pinterestcareers.com
+   Example roles            : Staff MLE Applied Research; Staff MLE Curation; MLE Visual Search
+
+35. Qualcomm (Bay Area)
+   Est. open relevant roles : 15-50  (midpoint 32.5)  [K]
+   Sector                   : Semiconductors
+   Fields                   : ML,DL,CV
+   Locations                : Santa Clara, San Jose
+   Remote-US                : Rare
+   Careers                  : careers.qualcomm.com
+   Example roles            : Staff MLE AI Compiler; Systems Eng ML; XR/ADAS CV
+
+36. Rivian (Palo Alto Autonomy)
+   Est. open relevant roles : 15-50  (midpoint 32.5)  [S]
+   Sector                   : Autonomous Vehicles
+   Fields                   : ML,DL,CV
+   Locations                : Palo Alto
+   Remote-US                : No
+   Careers                  : rivian.com/careers
+   Example roles            : Staff MLE Perception (world models); Staff MLE E2E Autonomy
+
+37. Scale AI
+   Est. open relevant roles : 25-40  (midpoint 32.5)  [S]
+   Sector                   : AI Data / Lab
+   Fields                   : ML,DL
+   Locations                : San Francisco
+   Remote-US                : Rare
+   Careers                  : scale.com/careers
+   Example roles            : ML Research Scientist; Sr MLE (Public Sector)
+
+38. Airbnb
+   Est. open relevant roles : 20-40  (midpoint 30)  [K]
+   Sector                   : Consumer / Marketplace
+   Fields                   : ML,DL,CV
+   Locations                : San Francisco
+   Remote-US                : Yes (US remote eligible)
+   Careers                  : careers.airbnb.com
+   Example roles            : Sr/Staff MLE Search/Relevance/Trust; MLE CV (listing photos)
+
+39. Applied Materials
+   Est. open relevant roles : 20-40  (midpoint 30)  [K]
+   Sector                   : Semiconductors
+   Fields                   : ML,CV
+   Locations                : Santa Clara, Sunnyvale
+   Remote-US                : Rare
+   Careers                  : amat.com/careers
+   Example roles            : MLE Process Control; CV Engineer Inspection
+
+40. Cadence
+   Est. open relevant roles : 20-40  (midpoint 30)  [K]
+   Sector                   : EDA
+   Fields                   : ML,DL
+   Locations                : San Jose
+   Remote-US                : Some
+   Careers                  : cadence.com/careers
+   Example roles            : MLE JedAI/Cerebrus; 3D Multiphysics Simulation
+
+41. KLA
+   Est. open relevant roles : 20-40  (midpoint 30)  [K]
+   Sector                   : Semiconductors
+   Fields                   : ML,DL,CV
+   Locations                : Milpitas
+   Remote-US                : Rare
+   Careers                  : kla.com/careers
+   Example roles            : Algorithm Eng CV/DL defect inspection; ML Scientist
+
+42. Snowflake
+   Est. open relevant roles : 20-40  (midpoint 30)  [K]
+   Sector                   : Enterprise / Data
+   Fields                   : ML,DL
+   Locations                : San Mateo, Menlo Park
+   Remote-US                : Some
+   Careers                  : careers.snowflake.com
+   Example roles            : MLE Cortex AI; Applied Research Scientist
+
+43. Stripe
+   Est. open relevant roles : 20-40  (midpoint 30)  [K]
+   Sector                   : Fintech
+   Fields                   : ML,DL
+   Locations                : San Francisco, South San Francisco
+   Remote-US                : Some
+   Careers                  : stripe.com/jobs
+   Example roles            : MLE Radar; ML Infrastructure
+
+44. Synopsys
+   Est. open relevant roles : 20-40  (midpoint 30)  [K]
+   Sector                   : EDA
+   Fields                   : ML,DL
+   Locations                : Sunnyvale
+   Remote-US                : Some
+   Careers                  : careers.synopsys.com
+   Example roles            : MLE AI for EDA (DSO.ai)
+
+45. Cerebras
+   Est. open relevant roles : 25-35  (midpoint 30)  [S]
+   Sector                   : AI Chips
+   Fields                   : ML,DL
+   Locations                : Sunnyvale
+   Remote-US                : Rare
+   Careers                  : cerebras.ai/careers
+   Example roles            : EM Inference ML Runtime; ML/inference engineers
+
+46. Broadcom (incl. VMware)
+   Est. open relevant roles : 15-40  (midpoint 27.5)  [K]
+   Sector                   : Semiconductors / Enterprise
+   Fields                   : ML
+   Locations                : San Jose, Palo Alto
+   Remote-US                : Some
+   Careers                  : broadcom.com/company/careers
+   Example roles            : MLE VMware Private AI; ML hardware architect
+
+47. Electronic Arts (incl. SEED, Respawn)
+   Est. open relevant roles : 10-40  (midpoint 25)  [S]
+   Sector                   : Gaming
+   Fields                   : ML,DL,GFX,3D
+   Locations                : Redwood City (many US remote)
+   Remote-US                : Some
+   Careers                  : jobs.ea.com
+   Example roles            : Principal TD Neural Rendering; Rendering Engineer (SEED); MLE Game AI; Frostbite engine
+
+48. Instacart (incl. Caper Carts)
+   Est. open relevant roles : 10-40  (midpoint 25)  [S]
+   Sector                   : E-commerce
+   Fields                   : ML,DL,CV
+   Locations                : San Francisco
+   Remote-US                : Yes
+   Careers                  : instacart.careers
+   Example roles            : Sr Staff MLE Search & Discovery; Sr MLE Ranking; MLE Caper CV
+
+49. Unity Technologies
+   Est. open relevant roles : 10-40  (midpoint 25)  [S]
+   Sector                   : Gaming / Engine
+   Fields                   : ML,DL,CV,3D,GFX,REC,UNITY
+   Locations                : San Francisco, Mountain View
+   Remote-US                : Some
+   Careers                  : unity.com/careers
+   Example roles            : Staff MLE CV & Multimodal AI; Staff Graphics Eng (Remote US); Principal MLE (Remote US); Sr Applied Scientist 3D Reconstruction
+
+50. Visa
+   Est. open relevant roles : 10-40  (midpoint 25)  [S]
+   Sector                   : Fintech
+   Fields                   : ML,DL
+   Locations                : Foster City, San Francisco
+   Remote-US                : Rare
+   Careers                  : corporate.visa.com/en/jobs
+   Example roles            : Sr ML Scientist (fraud); ML Scientist GenAI; Visa Research PhD intern
+
+51. Block (Square, Cash App)
+   Est. open relevant roles : 15-35  (midpoint 25)  [K]
+   Sector                   : Fintech
+   Fields                   : ML,DL
+   Locations                : Oakland, San Francisco
+   Remote-US                : Yes
+   Careers                  : block.xyz/careers
+   Example roles            : MLE Risk/Modeling; ML Platform
+
+52. eBay
+   Est. open relevant roles : 15-35  (midpoint 25)  [K]
+   Sector                   : E-commerce
+   Fields                   : ML,DL,CV
+   Locations                : San Jose
+   Remote-US                : Some
+   Careers                  : jobs.ebayinc.com
+   Example roles            : Applied Researcher CV/visual search; MLE
+
+53. Figure AI
+   Est. open relevant roles : 15-35  (midpoint 25)  [S]
+   Sector                   : Humanoid Robotics
+   Fields                   : ML,DL,CV,3D
+   Locations                : San Jose / Sunnyvale (5 days onsite)
+   Remote-US                : No
+   Careers                  : figure.ai/careers
+   Example roles            : Helix AI Eng Perception; Helix Pretraining; RL Engineer Whole Body Control
+
+54. HPE (incl. Juniper)
+   Est. open relevant roles : 15-35  (midpoint 25)  [K]
+   Sector                   : Enterprise / Hardware
+   Fields                   : ML
+   Locations                : San Jose, Sunnyvale, Milpitas
+   Remote-US                : Some
+   Careers                  : careers.hpe.com
+   Example roles            : AI/MLE Mist AI; ML Systems HPC
+
+55. Toyota Research Institute + Woven by Toyota
+   Est. open relevant roles : 15-35  (midpoint 25)  [K]
+   Sector                   : Robotics / AV Research
+   Fields                   : ML,DL,CV
+   Locations                : Los Altos, Palo Alto
+   Remote-US                : Rare
+   Careers                  : tri.global/careers
+   Example roles            : Research Scientist Large Behavior Models; MLE Automated Driving
+
+56. Workday
+   Est. open relevant roles : 15-35  (midpoint 25)  [K]
+   Sector                   : Enterprise SaaS
+   Fields                   : ML,DL
+   Locations                : Pleasanton, San Francisco
+   Remote-US                : Many
+   Careers                  : workday.wd5.myworkdayjobs.com
+   Example roles            : MLE AI/ML Platform; Applied Scientist
+
+57. Intuitive Surgical
+   Est. open relevant roles : 15-30  (midpoint 22.5)  [S]
+   Sector                   : Surgical Robotics
+   Fields                   : ML,DL,CV
+   Locations                : Sunnyvale
+   Remote-US                : Rare
+   Careers                  : careers.intuitive.com
+   Example roles            : MLE Future Forward AI Research; Staff MLE imaging; CV intern
+
+58. Nuro
+   Est. open relevant roles : 15-30  (midpoint 22.5)  [S]
+   Sector                   : Autonomous Vehicles
+   Fields                   : ML,DL,CV
+   Locations                : Mountain View
+   Remote-US                : No
+   Careers                  : nuro.ai/careers
+   Example roles            : Sr SWE Perception ML/CV; ML Research Scientist Perception Foundation Encoder
+
+59. Capital One (SF + remote)
+   Est. open relevant roles : 10-30  (midpoint 20)  [K]
+   Sector                   : Fintech
+   Fields                   : ML,DL
+   Locations                : San Francisco + many remote
+   Remote-US                : Yes
+   Careers                  : capitalonecareers.com
+   Example roles            : MLE; Applied Researcher
+
+60. Cursor (Anysphere)
+   Est. open relevant roles : 10-30  (midpoint 20)  [K]
+   Sector                   : AI Startup (dev tools)
+   Fields                   : ML,DL
+   Locations                : San Francisco
+   Remote-US                : No
+   Careers                  : cursor.com/careers
+   Example roles            : Research / ML engineers
+
+61. Tempus AI
+   Est. open relevant roles : 10-30  (midpoint 20)  [S]
+   Sector                   : Health AI
+   Fields                   : ML,DL,CV
+   Locations                : Remote US / Chicago / Redwood City
+   Remote-US                : Yes
+   Careers                  : job-boards.greenhouse.io/tempus
+   Example roles            : Staff AI Scientist Foundation Models; Staff ML Scientist multimodal
+
+62. Perplexity
+   Est. open relevant roles : 15-25  (midpoint 20)  [S]
+   Sector                   : AI Startup
+   Fields                   : ML,DL
+   Locations                : San Francisco
+   Remote-US                : Rare
+   Careers                  : perplexity.ai/hub/careers
+   Example roles            : AI/ML search ranking; post-training
+
+63. Together AI
+   Est. open relevant roles : 15-25  (midpoint 20)  [S]
+   Sector                   : AI Infra
+   Fields                   : ML,DL
+   Locations                : San Francisco
+   Remote-US                : Some
+   Careers                  : together.ai/careers
+   Example roles            : Inference/kernel engineers; Research Scientist
+
+64. Snap Inc. (incl. Spectacles)
+   Est. open relevant roles : 5-30  (midpoint 17.5)  [S]
+   Sector                   : Consumer / AR
+   Fields                   : ML,DL,CV,3D
+   Locations                : Palo Alto, San Francisco, Mountain View
+   Remote-US                : Rare
+   Careers                  : careers.snap.com
+   Example roles            : MLE CV Spectacles; SWE C++ CV/Calibration
+
+65. Sony Interactive Entertainment (PlayStation)
+   Est. open relevant roles : 5-30  (midpoint 17.5)  [S]
+   Sector                   : Gaming
+   Fields                   : ML,GFX,CV
+   Locations                : San Mateo, San Francisco
+   Remote-US                : Some
+   Careers                  : careers.playstation.com
+   Example roles            : Sr SWE ML/Graphics; Sr SWE graphics/CV/ML research prototyping
+
+66. Ambarella
+   Est. open relevant roles : 10-25  (midpoint 17.5)  [K]
+   Sector                   : Semiconductors / CV chips
+   Fields                   : ML,DL,CV
+   Locations                : Santa Clara
+   Remote-US                : Rare
+   Careers                  : ambarella.com/careers
+   Example roles            : CV/DL algorithm; NN compiler
+
+67. Bosch (Research & Technology Center, BCAI)
+   Est. open relevant roles : 10-25  (midpoint 17.5)  [K]
+   Sector                   : Industrial / Research
+   Fields                   : ML,DL,CV
+   Locations                : Sunnyvale
+   Remote-US                : Rare
+   Careers                  : jobs.bosch.com
+   Example roles            : Research Scientist CV/Multimodal; ADAS perception
+
+68. Harvey
+   Est. open relevant roles : 10-25  (midpoint 17.5)  [S]
+   Sector                   : AI Startup (legal)
+   Fields                   : ML,DL
+   Locations                : San Francisco
+   Remote-US                : Some
+   Careers                  : harvey.ai/careers
+   Example roles            : SWE Machine Learning; Staff SWE AI Platform
+
+69. HP Inc.
+   Est. open relevant roles : 10-25  (midpoint 17.5)  [K]
+   Sector                   : Hardware
+   Fields                   : ML,CV,3D
+   Locations                : Palo Alto
+   Remote-US                : Some
+   Careers                  : jobs.hp.com
+   Example roles            : MLE Imaging; 3D printing algorithms
+
+70. IBM Research Almaden
+   Est. open relevant roles : 10-25  (midpoint 17.5)  [K]
+   Sector                   : Research
+   Fields                   : ML,DL
+   Locations                : San Jose, San Francisco
+   Remote-US                : Some
+   Careers                  : ibm.com/careers
+   Example roles            : Research Scientist Foundation Models
+
+71. Lam Research
+   Est. open relevant roles : 10-25  (midpoint 17.5)  [K]
+   Sector                   : Semiconductors
+   Fields                   : ML,CV
+   Locations                : Fremont, San Jose
+   Remote-US                : Rare
+   Careers                  : lamresearch.com/careers
+   Example roles            : ML/Data Scientist Equipment Intelligence
+
+72. Lyft
+   Est. open relevant roles : 10-25  (midpoint 17.5)  [K]
+   Sector                   : Consumer / Marketplace
+   Fields                   : ML
+   Locations                : San Francisco
+   Remote-US                : Rare
+   Careers                  : lyft.com/careers
+   Example roles            : MLE Pricing/ETA
+
+73. Marvell
+   Est. open relevant roles : 10-25  (midpoint 17.5)  [K]
+   Sector                   : Semiconductors
+   Fields                   : ML
+   Locations                : Santa Clara
+   Remote-US                : Rare
+   Careers                  : marvell.com/careers
+   Example roles            : ML Compiler / AI Accelerator
+
+74. Zipline
+   Est. open relevant roles : 10-25  (midpoint 17.5)  [S]
+   Sector                   : Drones
+   Fields                   : ML,DL,CV,3D
+   Locations                : South San Francisco (4 days onsite)
+   Remote-US                : No
+   Careers                  : zipline.com/careers
+   Example roles            : Sr MLE Droid Perception; 3D Perception Eng
+
+75. Coinbase
+   Est. open relevant roles : 5-25  (midpoint 15)  [S]
+   Sector                   : Fintech / Crypto
+   Fields                   : ML
+   Locations                : Remote US (SF hub)
+   Remote-US                : Yes
+   Careers                  : coinbase.com/careers
+   Example roles            : Staff MLE Platform-Identity; Sr MLE Platform
+
+76. Lucid Motors
+   Est. open relevant roles : 5-25  (midpoint 15)  [S]
+   Sector                   : Autonomous Vehicles (ADAS)
+   Fields                   : ML,CV
+   Locations                : Newark
+   Remote-US                : No
+   Careers                  : job-boards.greenhouse.io/lucidmotors
+   Example roles            : SWE Perception Algorithm; Staff ML Algorithm Eng ADAS
+
+77. Abridge
+   Est. open relevant roles : 10-20  (midpoint 15)  [K]
+   Sector                   : AI Health
+   Fields                   : ML,DL
+   Locations                : San Francisco
+   Remote-US                : Some
+   Careers                  : abridge.com/careers
+   Example roles            : MLE / Research
+
+78. Baseten
+   Est. open relevant roles : 10-20  (midpoint 15)  [S]
+   Sector                   : AI Infra
+   Fields                   : ML
+   Locations                : San Francisco
+   Remote-US                : Some
+   Careers                  : baseten.co/careers
+   Example roles            : Model performance / inference
+
+79. Figma
+   Est. open relevant roles : 10-20  (midpoint 15)  [K]
+   Sector                   : Design Tools
+   Fields                   : ML,GFX
+   Locations                : San Francisco
+   Remote-US                : Some
+   Careers                  : figma.com/careers
+   Example roles            : Graphics/Rendering Eng (C++/WebGPU); MLE
+
+80. Glean
+   Est. open relevant roles : 10-20  (midpoint 15)  [S]
+   Sector                   : AI Startup (enterprise search)
+   Fields                   : ML,DL
+   Locations                : Palo Alto, San Francisco
+   Remote-US                : Rare
+   Careers                  : glean.com/careers
+   Example roles            : ML search/ranking/LLM
+
+81. Luma AI
+   Est. open relevant roles : 10-20  (midpoint 15)  [S]
+   Sector                   : Generative 3D / Video
+   Fields                   : ML,DL,CV,3D,REC,GFX
+   Locations                : Palo Alto
+   Remote-US                : Some
+   Careers                  : lumalabs.ai/careers
+   Example roles            : RS Neural Rendering / Gaussian splatting; RE Evaluations; RS World Model
+
+82. Reflection AI
+   Est. open relevant roles : 10-20  (midpoint 15)  [S]
+   Sector                   : AI Lab
+   Fields                   : ML,DL
+   Locations                : San Francisco
+   Remote-US                : No
+   Careers                  : reflection.ai/careers
+   Example roles            : MTS Pre-/Post-Training
+
+83. Thinking Machines Lab
+   Est. open relevant roles : 10-20  (midpoint 15)  [S]
+   Sector                   : AI Lab
+   Fields                   : ML,DL,CV
+   Locations                : San Francisco
+   Remote-US                : No
+   Careers                  : thinkingmachines.ai
+   Example roles            : Research (Vision expertise); Research Engineer
+
+84. Aurora (Bay Area)
+   Est. open relevant roles : 8-20  (midpoint 14)  [S]
+   Sector                   : Autonomous Trucking
+   Fields                   : ML,CV
+   Locations                : Mountain View
+   Remote-US                : No
+   Careers                  : aurora.tech/careers
+   Example roles            : Sr SWE Perception; Staff MLE Online Maps
+
+85. Skydio
+   Est. open relevant roles : 8-20  (midpoint 14)  [S]
+   Sector                   : Drones
+   Fields                   : ML,DL,CV,3D
+   Locations                : San Mateo
+   Remote-US                : No
+   Careers                  : skydio.com/careers
+   Example roles            : Sr Autonomy Eng Deep Learning; CV/DL interns
+
+86. Verkada
+   Est. open relevant roles : 8-20  (midpoint 14)  [K]
+   Sector                   : Security Cameras
+   Fields                   : ML,DL,CV
+   Locations                : San Mateo
+   Remote-US                : No
+   Careers                  : verkada.com/careers
+   Example roles            : CV/ML engineers
+
+87. 1X Technologies
+   Est. open relevant roles : 5-20  (midpoint 12.5)  [S]
+   Sector                   : Humanoid Robotics
+   Fields                   : ML,DL,CV
+   Locations                : Palo Alto, San Carlos
+   Remote-US                : No
+   Careers                  : 1x.tech/open-positions
+   Example roles            : Research Eng VLA; Sr Systems SWE Vision
+
+88. SambaNova
+   Est. open relevant roles : 10-15  (midpoint 12.5)  [S]
+   Sector                   : AI Chips
+   Fields                   : ML
+   Locations                : Palo Alto, San Jose
+   Remote-US                : Some
+   Careers                  : sambanova.ai/company/careers
+   Example roles            : Sr SWE ML Infra (remote); AI Systems Perf
+
+89. Skild AI
+   Est. open relevant roles : 8-15  (midpoint 11.5)  [S]
+   Sector                   : Robotics Foundation Models
+   Fields                   : ML,DL,CV
+   Locations                : San Mateo
+   Remote-US                : No
+   Careers                  : skild.ai/careers
+   Example roles            : Research / MLE
+
+90. Wayve (US)
+   Est. open relevant roles : 8-15  (midpoint 11.5)  [S]
+   Sector                   : Autonomous Vehicles
+   Fields                   : ML,DL,CV
+   Locations                : Sunnyvale
+   Remote-US                : No
+   Careers                  : wayve.ai/careers
+   Example roles            : Staff MLE AV Core; Staff MLE Vision Models
+
+91. World Labs
+   Est. open relevant roles : 8-15  (midpoint 11.5)  [S]
+   Sector                   : Generative 3D / World Models
+   Fields                   : ML,DL,CV,3D,REC,GFX
+   Locations                : San Francisco (onsite)
+   Remote-US                : No
+   Careers                  : worldlabs.ai/careers
+   Example roles            : Tech Lead 3D Modeling & Reconstruction; RE/RS SLAM; SWE Real-time Graphics; Pipeline Eng Graphics/3D
+
+92. Physical Intelligence
+   Est. open relevant roles : 6-15  (midpoint 10.5)  [S]
+   Sector                   : Robotics Foundation Models
+   Fields                   : ML,DL,CV
+   Locations                : San Francisco
+   Remote-US                : No
+   Careers                  : physicalintelligence.company
+   Example roles            : Robotics Research Eng; ML Infra (TPU/JAX)
+
+93. Cognition
+   Est. open relevant roles : 5-15  (midpoint 10)  [K]
+   Sector                   : AI Startup (dev tools)
+   Fields                   : ML
+   Locations                : San Francisco
+   Remote-US                : No
+   Careers                  : cognition.ai
+   Example roles            : Research / ML
+
+94. Flock Safety
+   Est. open relevant roles : 5-15  (midpoint 10)  [K]
+   Sector                   : Security / CV
+   Fields                   : ML,CV
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : flocksafety.com/careers
+   Example roles            : CV/ML engineers
+
+95. Honda Research Institute USA
+   Est. open relevant roles : 5-15  (midpoint 10)  [K]
+   Sector                   : Research
+   Fields                   : ML,CV
+   Locations                : San Jose
+   Remote-US                : No
+   Careers                  : usa.honda-ri.com/careers
+   Example roles            : Scientist CV/Robotics/ML
+
+96. Hyundai CRADLE / Motional (Bay Area)
+   Est. open relevant roles : 5-15  (midpoint 10)  [K]
+   Sector                   : Autonomous Vehicles
+   Fields                   : ML,CV
+   Locations                : Mountain View
+   Remote-US                : No
+   Careers                  : motional.com/careers
+   Example roles            : MLE Perception
+
+97. Palantir
+   Est. open relevant roles : 5-15  (midpoint 10)  [K]
+   Sector                   : Enterprise / Defense
+   Fields                   : ML
+   Locations                : Palo Alto
+   Remote-US                : No
+   Careers                  : palantir.com/careers
+   Example roles            : ML / AI engineers
+
+98. Recursion
+   Est. open relevant roles : 5-15  (midpoint 10)  [K]
+   Sector                   : Bio AI
+   Fields                   : ML,DL,CV
+   Locations                : Remote US / SF
+   Remote-US                : Some
+   Careers                  : recursion.com/careers
+   Example roles            : ML Scientists
+
+99. Samsara
+   Est. open relevant roles : 5-15  (midpoint 10)  [S]
+   Sector                   : IoT / Edge CV
+   Fields                   : ML,DL,CV
+   Locations                : San Francisco
+   Remote-US                : Yes
+   Careers                  : samsara.com/company/careers
+   Example roles            : Sr MLE edge CV; Computer Vision Engineer (Remote US/CA)
+
+100. Sierra
+   Est. open relevant roles : 5-15  (midpoint 10)  [S]
+   Sector                   : AI Startup (agents)
+   Fields                   : ML
+   Locations                : San Francisco
+   Remote-US                : No
+   Careers                  : sierra.ai/careers
+   Example roles            : Agent / ML infra
+
+101. The Bot Company
+   Est. open relevant roles : 5-15  (midpoint 10)  [K]
+   Sector                   : Robotics
+   Fields                   : ML,CV
+   Locations                : San Francisco
+   Remote-US                : No
+   Careers                  : thebotcompany.ai
+   Example roles            : Robotics ML / perception
+
+102. The Trade Desk / AppLovin / Moloco
+   Est. open relevant roles : 5-15  (midpoint 10)  [K]
+   Sector                   : Adtech
+   Fields                   : ML
+   Locations                : Bay Area / Remote
+   Remote-US                : Some
+   Careers                  : company sites
+   Example roles            : MLE ranking/bidding
+
+103. Torc Robotics (remote-eligible)
+   Est. open relevant roles : 5-15  (midpoint 10)  [S]
+   Sector                   : Autonomous Trucking
+   Fields                   : ML,DL,CV,3D
+   Locations                : Remote US (no Bay Area office)
+   Remote-US                : Yes
+   Careers                  : job-boards.greenhouse.io/torcrobotics
+   Example roles            : MLE II 3D Perception; Staff MLE BEV/Multimodal; Sr MLE Camera Model
+
+104. Weights & Biases (CoreWeave)
+   Est. open relevant roles : 5-15  (midpoint 10)  [K]
+   Sector                   : ML Tools
+   Fields                   : ML
+   Locations                : San Francisco
+   Remote-US                : Some
+   Careers                  : wandb.ai/careers
+   Example roles            : ML engineers
+
+105. d-Matrix
+   Est. open relevant roles : 7-12  (midpoint 9.5)  [S]
+   Sector                   : AI Chips
+   Fields                   : ML
+   Locations                : Santa Clara
+   Remote-US                : Rare
+   Careers                  : d-matrix.ai/careers
+   Example roles            : Sr Staff ML Researcher LLM Optimization; LLM Inference
+
+106. Cresta
+   Est. open relevant roles : 6-12  (midpoint 9)  [S]
+   Sector                   : AI Startup
+   Fields                   : ML
+   Locations                : San Francisco
+   Remote-US                : Yes
+   Careers                  : cresta.com/careers
+   Example roles            : Sr/Staff MLE (US Remote)
+
+107. Blue River Technology (John Deere)
+   Est. open relevant roles : 5-12  (midpoint 8.5)  [S]
+   Sector                   : Agtech Robotics
+   Fields                   : ML,DL,CV
+   Locations                : Santa Clara
+   Remote-US                : Some
+   Careers                  : bluerivertechnology.com/careers
+   Example roles            : Sr CV Engineer (remote-eligible); ML Intern Autonomy
+
+108. Joby / Wisk / Archer (autonomy)
+   Est. open relevant roles : 5-12  (midpoint 8.5)  [K]
+   Sector                   : Aviation
+   Fields                   : ML,CV
+   Locations                : Bay Area
+   Remote-US                : No
+   Careers                  : company sites
+   Example roles            : Perception / autonomy
+
+109. Kodiak Robotics
+   Est. open relevant roles : 5-12  (midpoint 8.5)  [S]
+   Sector                   : Autonomous Trucking
+   Fields                   : ML,CV
+   Locations                : Mountain View
+   Remote-US                : Some
+   Careers                  : job-boards.greenhouse.io/kodiak
+   Example roles            : Sr Autonomy Eng Perception (sensor fusion)
+
+110. Motive
+   Est. open relevant roles : 5-12  (midpoint 8.5)  [K]
+   Sector                   : Fleet / Dashcam CV
+   Fields                   : ML,CV
+   Locations                : San Francisco
+   Remote-US                : Yes
+   Careers                  : gomotive.com/careers
+   Example roles            : CV/ML engineers
+
+111. Wing (Alphabet)
+   Est. open relevant roles : 5-12  (midpoint 8.5)  [S]
+   Sector                   : Drones
+   Fields                   : ML,CV
+   Locations                : Palo Alto
+   Remote-US                : Some
+   Careers                  : wing.com/careers
+   Example roles            : Sr MLE Perception; Navigation Eng (remote)
+
+112. Niantic Spatial (incl. Scaniverse)
+   Est. open relevant roles : 4-12  (midpoint 8)  [S]
+   Sector                   : AR / 3D Reconstruction
+   Fields                   : CV,3D,REC
+   Locations                : San Francisco, Sunnyvale (hybrid)
+   Remote-US                : Some
+   Careers                  : nianticspatial.com/careers
+   Example roles            : Sr CV Lead 3D Reconstruction & Gaussian Splatting; Sr CV Eng Localization (Remote US); Tech Lead CV
+
+113. Anyscale
+   Est. open relevant roles : 6-10  (midpoint 8)  [S]
+   Sector                   : AI Infra
+   Fields                   : ML
+   Locations                : San Francisco
+   Remote-US                : Rare
+   Careers                  : anyscale.com/careers
+   Example roles            : Distributed LLM Inference; SWE Ray Core
+
+114. Reddit
+   Est. open relevant roles : 6-10  (midpoint 8)  [S]
+   Sector                   : Consumer Internet
+   Fields                   : ML
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : redditinc.com/careers
+   Example roles            : Sr Staff MLE ML Understanding; MLE Applied ML; Staff MLE Ads
+
+115. Atlassian
+   Est. open relevant roles : 5-10  (midpoint 7.5)  [K]
+   Sector                   : SaaS
+   Fields                   : ML
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : atlassian.com/company/careers
+   Example roles            : ML engineers (TEAM Anywhere)
+
+116. Cohere (SF)
+   Est. open relevant roles : 5-10  (midpoint 7.5)  [S]
+   Sector                   : AI Lab
+   Fields                   : ML,DL,CV
+   Locations                : San Francisco
+   Remote-US                : Yes
+   Careers                  : cohere.com/careers
+   Example roles            : MTS MLE (SF/NYC/remote); Sr MTS Multimodal AI
+
+117. Fireworks AI
+   Est. open relevant roles : 5-10  (midpoint 7.5)  [S]
+   Sector                   : AI Infra
+   Fields                   : ML
+   Locations                : Redwood City, San Mateo
+   Remote-US                : Rare
+   Careers                  : fireworks.ai/careers
+   Example roles            : MTS / Research Engineer
+
+118. Lambda
+   Est. open relevant roles : 5-10  (midpoint 7.5)  [S]
+   Sector                   : AI Cloud
+   Fields                   : ML
+   Locations                : San Jose, San Francisco
+   Remote-US                : Rare
+   Careers                  : lambda.ai/careers
+   Example roles            : ML infra / research
+
+119. Notion (AI)
+   Est. open relevant roles : 5-10  (midpoint 7.5)  [K]
+   Sector                   : SaaS
+   Fields                   : ML
+   Locations                : San Francisco
+   Remote-US                : No
+   Careers                  : notion.so/careers
+   Example roles            : AI/ML engineers
+
+120. Serve Robotics
+   Est. open relevant roles : 5-10  (midpoint 7.5)  [S]
+   Sector                   : Delivery Robotics
+   Fields                   : ML,DL,CV,3D
+   Locations                : Redwood City
+   Remote-US                : No
+   Careers                  : serverobotics.com/careers
+   Example roles            : Sr MLE Off-board Perception (4D auto-labeling); Sr MLE VLA
+
+121. Waabi
+   Est. open relevant roles : 5-10  (midpoint 7.5)  [S]
+   Sector                   : Autonomous Trucking
+   Fields                   : ML,DL,CV
+   Locations                : San Francisco
+   Remote-US                : Yes (US/CA remote)
+   Careers                  : jobs.lever.co/waabi
+   Example roles            : Sr/Staff Perception Eng; Research Scientist; Auto-labelling
+
+122. Dexterity
+   Est. open relevant roles : 4-10  (midpoint 7)  [S]
+   Sector                   : Warehouse Robotics
+   Fields                   : ML,CV
+   Locations                : Redwood City
+   Remote-US                : No
+   Careers                  : jobs.lever.co/dexterity
+   Example roles            : Sr/Staff MLE; Head of CV & ML
+
+123. Gatik
+   Est. open relevant roles : 4-10  (midpoint 7)  [S]
+   Sector                   : Autonomous Trucking
+   Fields                   : ML,CV
+   Locations                : Mountain View / Santa Clara
+   Remote-US                : No
+   Careers                  : job-boards.greenhouse.io/gatikaiinc
+   Example roles            : Sr/Staff Research Eng Perception
+
+124. Runway
+   Est. open relevant roles : 4-10  (midpoint 7)  [S]
+   Sector                   : Generative Video
+   Fields                   : ML,DL,CV,3D
+   Locations                : NYC / SF / remote
+   Remote-US                : Some
+   Careers                  : runwayml.com/careers
+   Example roles            : MTS Research Engineer; Applied Research Scientist
+
+125. Dassault Systemes / SolidWorks
+   Est. open relevant roles : 3-10  (midpoint 6.5)  [K]
+   Sector                   : CAD / 3D
+   Fields                   : GFX,3D
+   Locations                : Waltham (few Bay Area)
+   Remote-US                : Rare
+   Careers                  : 3ds.com/careers
+   Example roles            : Geometry kernel; 3DEXPERIENCE graphics
+
+126. Industrial Light & Magic / Lucasfilm
+   Est. open relevant roles : 3-10  (midpoint 6.5)  [K]
+   Sector                   : VFX / Graphics
+   Fields                   : GFX,3D,REC
+   Locations                : San Francisco (Presidio)
+   Remote-US                : No
+   Careers                  : lucasfilm.com/careers
+   Example roles            : R&D SWE rendering / StageCraft; Pipeline TD
+
+127. Shield AI
+   Est. open relevant roles : 3-10  (midpoint 6.5)  [S]
+   Sector                   : Defense Drones
+   Fields                   : ML,CV
+   Locations                : San Mateo
+   Remote-US                : No
+   Careers                  : jobs.lever.co/shieldai
+   Example roles            : Staff Eng Perception Software; Sr Staff SWE Perception/CV
+
+128. Stack AV
+   Est. open relevant roles : 3-10  (midpoint 6.5)  [K]
+   Sector                   : Autonomous Trucking
+   Fields                   : ML,CV
+   Locations                : Pittsburgh / remote
+   Remote-US                : Some
+   Careers                  : stackav.com/careers
+   Example roles            : Perception
+
+129. Chan Zuckerberg Initiative / Biohub (incl. EvolutionaryScale)
+   Est. open relevant roles : 5-8  (midpoint 6.5)  [S]
+   Sector                   : Bio AI
+   Fields                   : ML,DL,CV
+   Locations                : Redwood City, San Francisco
+   Remote-US                : Rare
+   Careers                  : chanzuckerberg.com/careers
+   Example roles            : MLE; AI/ML Research Scientist Inverse Problems; Research Engineer AI
+
+130. Character.AI
+   Est. open relevant roles : 4-8  (midpoint 6)  [S]
+   Sector                   : AI Startup
+   Fields                   : ML,DL
+   Locations                : Redwood City / Menlo Park
+   Remote-US                : No
+   Careers                  : character.ai/careers
+   Example roles            : ML engineers
+
+131. Etched
+   Est. open relevant roles : 4-8  (midpoint 6)  [S]
+   Sector                   : AI Chips
+   Fields                   : ML
+   Locations                : Cupertino / San Jose
+   Remote-US                : No
+   Careers                  : etched.com/careers
+   Example roles            : ML engineers
+
+132. Nimble Robotics
+   Est. open relevant roles : 4-8  (midpoint 6)  [S]
+   Sector                   : Warehouse Robotics
+   Fields                   : ML,CV
+   Locations                : San Francisco
+   Remote-US                : No
+   Careers                  : nimble.ai/careers
+   Example roles            : Sr CV Engineer; CV Eng ReID + Tracking
+
+133. PlusAI
+   Est. open relevant roles : 4-8  (midpoint 6)  [S]
+   Sector                   : Autonomous Trucking
+   Fields                   : ML,DL,CV
+   Locations                : Santa Clara
+   Remote-US                : No
+   Careers                  : jobs.lever.co/plus-2
+   Example roles            : Sr MLE Perception (BEV/LiDAR fusion)
+
+134. Scopely (incl. Pokemon GO / Niantic games)
+   Est. open relevant roles : 4-8  (midpoint 6)  [S]
+   Sector                   : Gaming
+   Fields                   : UNITY,GFX
+   Locations                : San Francisco, Sunnyvale + Remote US
+   Remote-US                : Yes
+   Careers                  : scopely.com/careers
+   Example roles            : SWE Client (Unity) Pokemon GO; Sr Engineer Monopoly GO (Remote US); Sr Technical Artist (Unity)
+
+135. Aeva
+   Est. open relevant roles : 3-8  (midpoint 5.5)  [K]
+   Sector                   : Lidar
+   Fields                   : ML,CV,3D
+   Locations                : Mountain View
+   Remote-US                : No
+   Careers                  : aeva.com/careers
+   Example roles            : Perception / ML
+
+136. Bentley Systems (incl. Cesium)
+   Est. open relevant roles : 3-8  (midpoint 5.5)  [K]
+   Sector                   : 3D / Digital Twin
+   Fields                   : GFX,3D,UNITY
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : bentley.com/careers ; cesium.com/careers
+   Example roles            : iTwin rendering; 3D Tiles Unreal/Unity plugin
+
+137. Dyna Robotics
+   Est. open relevant roles : 3-8  (midpoint 5.5)  [K]
+   Sector                   : Robotics
+   Fields                   : ML,CV
+   Locations                : Redwood City
+   Remote-US                : No
+   Careers                  : dyna.co
+   Example roles            : Robotics ML
+
+138. Epic Games (Remote US)
+   Est. open relevant roles : 3-8  (midpoint 5.5)  [S]
+   Sector                   : Gaming / Engine
+   Fields                   : ML,GFX,3D
+   Locations                : Remote US / Cary NC
+   Remote-US                : Some
+   Careers                  : epicgames.com/site/careers/jobs
+   Example roles            : Sr ML Programmer; Sr Graphics Engineer (remote); Sr ML Rendering Engineer
+
+139. Esri
+   Est. open relevant roles : 3-8  (midpoint 5.5)  [K]
+   Sector                   : GIS / 3D
+   Fields                   : GFX,3D,CV
+   Locations                : Redlands (some remote)
+   Remote-US                : Some
+   Careers                  : esri.com/careers
+   Example roles            : ArcGIS Maps SDK graphics; CV
+
+140. Hayden AI
+   Est. open relevant roles : 3-8  (midpoint 5.5)  [K]
+   Sector                   : Transit CV
+   Fields                   : ML,CV
+   Locations                : San Francisco
+   Remote-US                : No
+   Careers                  : hayden.ai/careers
+   Example roles            : CV engineers
+
+141. Higgsfield
+   Est. open relevant roles : 3-8  (midpoint 5.5)  [S]
+   Sector                   : Generative Video
+   Fields                   : ML,DL
+   Locations                : San Francisco / remote
+   Remote-US                : Some
+   Careers                  : higgsfield.ai/careers
+   Example roles            : ML
+
+142. Hugging Face
+   Est. open relevant roles : 3-8  (midpoint 5.5)  [K]
+   Sector                   : AI Platform
+   Fields                   : ML,DL,CV
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : apply.workable.com/huggingface
+   Example roles            : ML Engineers (remote)
+
+143. J&J MedTech (Verb / Auris / Monarch)
+   Est. open relevant roles : 3-8  (midpoint 5.5)  [S]
+   Sector                   : Surgical Robotics
+   Fields                   : ML,CV
+   Locations                : Santa Clara, Redwood City
+   Remote-US                : No
+   Careers                  : careers.jnj.com
+   Example roles            : Sr CV/AI Scientist (Monarch)
+
+144. May Mobility
+   Est. open relevant roles : 3-8  (midpoint 5.5)  [S]
+   Sector                   : Autonomous Vehicles
+   Fields                   : ML,CV
+   Locations                : Remote US / Ann Arbor
+   Remote-US                : Yes
+   Careers                  : maymobility.com/careers
+   Example roles            : Lead ML/Perception Eng
+
+145. Pixar
+   Est. open relevant roles : 3-8  (midpoint 5.5)  [K]
+   Sector                   : Animation / Graphics
+   Fields                   : GFX,3D
+   Locations                : Emeryville
+   Remote-US                : No
+   Careers                  : pixar.com/careers
+   Example roles            : RenderMan / Presto software engineers
+
+146. Planet Labs
+   Est. open relevant roles : 3-8  (midpoint 5.5)  [K]
+   Sector                   : Geospatial
+   Fields                   : ML,CV
+   Locations                : San Francisco
+   Remote-US                : Yes
+   Careers                  : planet.com/company/careers
+   Example roles            : Remote sensing ML/CV
+
+147. PTC / Onshape
+   Est. open relevant roles : 3-8  (midpoint 5.5)  [K]
+   Sector                   : CAD / 3D
+   Fields                   : GFX,3D
+   Locations                : Boston / remote
+   Remote-US                : Some
+   Careers                  : ptc.com/careers
+   Example roles            : Geometry / WebGL rendering
+
+148. Zillow (incl. 3D Home)
+   Est. open relevant roles : 3-8  (midpoint 5.5)  [K]
+   Sector                   : Real Estate
+   Fields                   : ML,CV,3D,REC
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : zillow.com/careers
+   Example roles            : Applied Scientist CV / 3D Tours
+
+149. Foundry / SideFX / Chaos / Maxon
+   Est. open relevant roles : 2-8  (midpoint 5)  [K]
+   Sector                   : VFX Software
+   Fields                   : GFX,3D
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : company sites
+   Example roles            : Graphics/rendering software engineers
+
+150. Matterport (CoStar)
+   Est. open relevant roles : 2-8  (midpoint 5)  [S]
+   Sector                   : 3D Reconstruction
+   Fields                   : ML,CV,3D,REC,GFX
+   Locations                : Sunnyvale
+   Remote-US                : Some
+   Careers                  : matterport.com/careers
+   Example roles            : Sr ML/CV Eng 3D Reconstruction & Semantic Understanding
+
+151. Pony.ai (US)
+   Est. open relevant roles : 2-8  (midpoint 5)  [K]
+   Sector                   : Autonomous Vehicles
+   Fields                   : ML,CV
+   Locations                : Fremont
+   Remote-US                : No
+   Careers                  : pony.ai
+   Example roles            : Perception engineers
+
+152. Affirm
+   Est. open relevant roles : 4-6  (midpoint 5)  [S]
+   Sector                   : Fintech
+   Fields                   : ML
+   Locations                : San Francisco
+   Remote-US                : Yes (remote-first)
+   Careers                  : affirm.com/careers
+   Example roles            : Sr Staff MLE Underwriting; MLE II Servicing ML
+
+153. Arc Institute
+   Est. open relevant roles : 4-6  (midpoint 5)  [S]
+   Sector                   : Bio AI
+   Fields                   : ML,DL
+   Locations                : Palo Alto (onsite)
+   Remote-US                : No
+   Careers                  : job-boards.greenhouse.io/arcinstitute
+   Example roles            : ML Scientist Virtual Cell; ML Research Scientist Evo
+
+154. Genentech / Roche gRED (AI for Drug Discovery)
+   Est. open relevant roles : 4-6  (midpoint 5)  [S]
+   Sector                   : Biotech AI
+   Fields                   : ML,DL
+   Locations                : South San Francisco
+   Remote-US                : Some
+   Careers                  : careers.gene.com
+   Example roles            : Sr ML Scientist Foundation Models; LLMs for Chemistry
+
+155. C3.ai
+   Est. open relevant roles : 3-6  (midpoint 4.5)  [K]
+   Sector                   : Enterprise AI
+   Fields                   : ML
+   Locations                : Redwood City
+   Remote-US                : No
+   Careers                  : c3.ai/careers
+   Example roles            : Data Scientist / MLE
+
+156. Hebbia
+   Est. open relevant roles : 3-6  (midpoint 4.5)  [S]
+   Sector                   : AI Startup
+   Fields                   : ML
+   Locations                : NYC / SF
+   Remote-US                : No
+   Careers                  : hebbia.com/careers
+   Example roles            : Applied Research Engineer
+
+157. Krea
+   Est. open relevant roles : 3-6  (midpoint 4.5)  [S]
+   Sector                   : Generative Images/Video
+   Fields                   : ML,DL
+   Locations                : San Francisco
+   Remote-US                : No
+   Careers                  : krea.ai/careers
+   Example roles            : MLE personalization
+
+158. Spotify (US)
+   Est. open relevant roles : 3-6  (midpoint 4.5)  [K]
+   Sector                   : Media
+   Fields                   : ML
+   Locations                : NYC / Remote
+   Remote-US                : Some
+   Careers                  : lifeatspotify.com
+   Example roles            : MLE
+
+159. Yelp
+   Est. open relevant roles : 3-6  (midpoint 4.5)  [K]
+   Sector                   : Consumer Internet
+   Fields                   : ML,CV
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : yelp.careers
+   Example roles            : MLE Ads; CV photos
+
+160. Agility Robotics
+   Est. open relevant roles : 2-6  (midpoint 4)  [S]
+   Sector                   : Humanoid Robotics
+   Fields                   : ML,CV
+   Locations                : Remote / Oregon
+   Remote-US                : Some
+   Careers                  : agilityrobotics.com/careers
+   Example roles            : Staff MLE object detection/tracking
+
+161. Ambient.ai
+   Est. open relevant roles : 2-6  (midpoint 4)  [K]
+   Sector                   : Security CV
+   Fields                   : ML,CV
+   Locations                : Mountain View
+   Remote-US                : No
+   Careers                  : ambient.ai/careers
+   Example roles            : CV engineers
+
+162. Apptronik (Bay Area)
+   Est. open relevant roles : 2-6  (midpoint 4)  [S]
+   Sector                   : Humanoid Robotics
+   Fields                   : ML,CV
+   Locations                : Sunnyvale
+   Remote-US                : No
+   Careers                  : apptronik.com/careers
+   Example roles            : Sr Perception Learning Eng
+
+163. Collaborative Robotics (Cobot)
+   Est. open relevant roles : 2-6  (midpoint 4)  [K]
+   Sector                   : Robotics
+   Fields                   : ML,CV
+   Locations                : Santa Clara
+   Remote-US                : No
+   Careers                  : co.bot/careers
+   Example roles            : Perception / ML
+
+164. Inworld AI
+   Est. open relevant roles : 2-6  (midpoint 4)  [S]
+   Sector                   : Gaming AI
+   Fields                   : ML,GFX
+   Locations                : Mountain View
+   Remote-US                : Some
+   Careers                  : inworld.ai/careers
+   Example roles            : ML engineers (runtime/TTS/LLM)
+
+165. Landing AI
+   Est. open relevant roles : 2-6  (midpoint 4)  [K]
+   Sector                   : CV Platform
+   Fields                   : ML,DL,CV
+   Locations                : Palo Alto
+   Remote-US                : Some
+   Careers                  : landing.ai/careers
+   Example roles            : CV / ML engineers
+
+166. Ouster (incl. Velodyne)
+   Est. open relevant roles : 2-6  (midpoint 4)  [K]
+   Sector                   : Lidar
+   Fields                   : ML,CV,3D
+   Locations                : San Francisco
+   Remote-US                : No
+   Careers                  : ouster.com/careers
+   Example roles            : Perception / CV
+
+167. Path Robotics
+   Est. open relevant roles : 2-6  (midpoint 4)  [K]
+   Sector                   : Industrial Robotics
+   Fields                   : ML,CV
+   Locations                : Columbus OH
+   Remote-US                : No
+   Careers                  : path-robotics.com/careers
+   Example roles            : CV / ML
+
+168. Reliable Robotics
+   Est. open relevant roles : 2-6  (midpoint 4)  [K]
+   Sector                   : Aviation Autonomy
+   Fields                   : ML,CV
+   Locations                : Mountain View
+   Remote-US                : No
+   Careers                  : reliable.co/careers
+   Example roles            : Perception
+
+169. Zebra Technologies
+   Est. open relevant roles : 2-6  (midpoint 4)  [K]
+   Sector                   : Machine Vision
+   Fields                   : CV
+   Locations                : US various
+   Remote-US                : Some
+   Careers                  : zebra.com/careers
+   Example roles            : CV engineers
+
+170. Black Forest Labs (SF)
+   Est. open relevant roles : 3-5  (midpoint 4)  [S]
+   Sector                   : Generative Images
+   Fields                   : ML,DL
+   Locations                : San Francisco
+   Remote-US                : Some
+   Careers                  : bfl.ai/careers
+   Example roles            : MTS Research Engineer
+
+171. Chime
+   Est. open relevant roles : 3-5  (midpoint 4)  [S]
+   Sector                   : Fintech
+   Fields                   : ML
+   Locations                : San Francisco
+   Remote-US                : Some
+   Careers                  : careers.chime.com
+   Example roles            : Sr SWE ML Platform; AI/MLE Trust & Safety
+
+172. Faire
+   Est. open relevant roles : 3-5  (midpoint 4)  [S]
+   Sector                   : E-commerce
+   Fields                   : ML
+   Locations                : San Francisco (hybrid)
+   Remote-US                : No
+   Careers                  : faire.com/careers
+   Example roles            : Principal Applied AI/MLE; Applied Scientist Ads & Search
+
+173. Meshy AI
+   Est. open relevant roles : 3-5  (midpoint 4)  [S]
+   Sector                   : Generative 3D
+   Fields                   : ML,3D,GFX
+   Locations                : Sunnyvale + Remote US
+   Remote-US                : Yes
+   Careers                  : job-boards.greenhouse.io/meshy
+   Example roles            : Graphics Engineer (Remote US); Sr 3D Graphics Pipeline Eng; MLE (Remote US)
+
+174. Plaid
+   Est. open relevant roles : 3-5  (midpoint 4)  [S]
+   Sector                   : Fintech
+   Fields                   : ML
+   Locations                : San Francisco
+   Remote-US                : Some
+   Careers                  : plaid.com/careers
+   Example roles            : Staff MLE (Research Scientist) DFAI; Sr MLE Credit
+
+175. Robinhood
+   Est. open relevant roles : 3-5  (midpoint 4)  [S]
+   Sector                   : Fintech
+   Fields                   : ML
+   Locations                : Menlo Park
+   Remote-US                : No
+   Careers                  : careers.robinhood.com
+   Example roles            : Sr MLE; Applied ML interns
+
+176. Shopify
+   Est. open relevant roles : 3-5  (midpoint 4)  [S]
+   Sector                   : E-commerce
+   Fields                   : ML,3D
+   Locations                : Remote Americas
+   Remote-US                : Yes
+   Careers                  : shopify.com/careers
+   Example roles            : Applied MLE; ML Infrastructure; 3D/AR
+
+177. Wayfair
+   Est. open relevant roles : 3-5  (midpoint 4)  [S]
+   Sector                   : E-commerce
+   Fields                   : ML,3D
+   Locations                : Boston (hybrid, not remote)
+   Remote-US                : No
+   Careers                  : wayfair.com/careers
+   Example roles            : ML Scientist Multimodal AI
+
+178. Wonder Dynamics / Move.ai / Rokoko
+   Est. open relevant roles : 1-6  (midpoint 3.5)  [K]
+   Sector                   : Mocap / VFX CV
+   Fields                   : CV,ML,3D
+   Locations                : LA / remote
+   Remote-US                : Some
+   Careers                  : company sites
+   Example roles            : CV/ML research (mocap, relighting)
+
+179. Bonsai Robotics
+   Est. open relevant roles : 2-5  (midpoint 3.5)  [S]
+   Sector                   : Agtech Robotics
+   Fields                   : ML,CV
+   Locations                : San Jose
+   Remote-US                : No
+   Careers                  : bonsairobotics.ai
+   Example roles            : Sr MLE Perception
+
+180. Chef Robotics
+   Est. open relevant roles : 2-5  (midpoint 3.5)  [K]
+   Sector                   : Robotics
+   Fields                   : ML,CV
+   Locations                : San Francisco
+   Remote-US                : No
+   Careers                  : chefrobotics.ai
+   Example roles            : Perception
+
+181. DataRobot
+   Est. open relevant roles : 2-5  (midpoint 3.5)  [K]
+   Sector                   : ML Platform
+   Fields                   : ML
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : datarobot.com/careers
+   Example roles            : MLE
+
+182. Duality Robotics
+   Est. open relevant roles : 2-5  (midpoint 3.5)  [K]
+   Sector                   : Simulation / Digital Twin
+   Fields                   : GFX,3D
+   Locations                : San Francisco
+   Remote-US                : Some
+   Careers                  : duality.ai/careers
+   Example roles            : Falcon sim (Unreal); Rendering/Sim Eng
+
+183. Elastic
+   Est. open relevant roles : 2-5  (midpoint 3.5)  [K]
+   Sector                   : Search / SaaS
+   Fields                   : ML
+   Locations                : Remote
+   Remote-US                : Yes
+   Careers                  : elastic.co/careers
+   Example roles            : ML / search relevance
+
+184. ElevenLabs (US)
+   Est. open relevant roles : 2-5  (midpoint 3.5)  [S]
+   Sector                   : AI Audio
+   Fields                   : ML
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : elevenlabs.io/careers
+   Example roles            : Research Engineer
+
+185. Gecko Robotics
+   Est. open relevant roles : 2-5  (midpoint 3.5)  [K]
+   Sector                   : Industrial Robotics
+   Fields                   : ML,CV
+   Locations                : Remote / Pittsburgh
+   Remote-US                : Some
+   Careers                  : geckorobotics.com/careers
+   Example roles            : CV / ML
+
+186. Genmo
+   Est. open relevant roles : 2-5  (midpoint 3.5)  [S]
+   Sector                   : Generative Video
+   Fields                   : ML,DL
+   Locations                : San Francisco
+   Remote-US                : No
+   Careers                  : genmo.ai/careers
+   Example roles            : Research Scientist diffusion
+
+187. HubSpot
+   Est. open relevant roles : 2-5  (midpoint 3.5)  [K]
+   Sector                   : SaaS
+   Fields                   : ML
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : hubspot.com/careers
+   Example roles            : MLE
+
+188. Ideogram
+   Est. open relevant roles : 2-5  (midpoint 3.5)  [S]
+   Sector                   : Generative Images
+   Fields                   : ML,DL
+   Locations                : San Francisco / Toronto
+   Remote-US                : Some
+   Careers                  : ideogram.ai/careers
+   Example roles            : ML Research
+
+189. Mistral AI (US)
+   Est. open relevant roles : 2-5  (midpoint 3.5)  [S]
+   Sector                   : AI Lab
+   Fields                   : ML
+   Locations                : Palo Alto, San Francisco
+   Remote-US                : No
+   Careers                  : mistral.ai/careers
+   Example roles            : Research Engineer ML (Palo Alto)
+
+190. Pika
+   Est. open relevant roles : 2-5  (midpoint 3.5)  [S]
+   Sector                   : Generative Video
+   Fields                   : ML,DL
+   Locations                : Palo Alto
+   Remote-US                : No
+   Careers                  : pika.art/careers
+   Example roles            : Research
+
+191. Rippling
+   Est. open relevant roles : 2-5  (midpoint 3.5)  [K]
+   Sector                   : SaaS
+   Fields                   : ML
+   Locations                : San Francisco
+   Remote-US                : No
+   Careers                  : rippling.com/careers
+   Example roles            : AI engineers
+
+192. SoFi
+   Est. open relevant roles : 2-5  (midpoint 3.5)  [K]
+   Sector                   : Fintech
+   Fields                   : ML
+   Locations                : San Francisco / Remote
+   Remote-US                : Some
+   Careers                  : sofi.com/careers
+   Example roles            : MLE
+
+193. Duolingo
+   Est. open relevant roles : 3-4  (midpoint 3.5)  [S]
+   Sector                   : EdTech
+   Fields                   : ML
+   Locations                : NYC / Pittsburgh (not remote)
+   Remote-US                : No
+   Careers                  : careers.duolingo.com
+   Example roles            : Sr/Staff AI Research Engineer
+
+194. Cognex
+   Est. open relevant roles : 1-5  (midpoint 3)  [K]
+   Sector                   : Machine Vision
+   Fields                   : CV,DL
+   Locations                : Natick MA (few remote)
+   Remote-US                : Rare
+   Careers                  : cognex.com/careers
+   Example roles            : Vision / DL engineers
+
+195. Infinite Reality
+   Est. open relevant roles : 1-5  (midpoint 3)  [K]
+   Sector                   : 3D / Metaverse
+   Fields                   : GFX,3D
+   Locations                : Remote
+   Remote-US                : Yes
+   Careers                  : theinfinitereality.com
+   Example roles            : Unreal / 3D engine
+
+196. Brex
+   Est. open relevant roles : 2-4  (midpoint 3)  [K]
+   Sector                   : Fintech
+   Fields                   : ML
+   Locations                : San Francisco / Remote
+   Remote-US                : Some
+   Careers                  : brex.com/careers
+   Example roles            : MLE
+
+197. Chewy
+   Est. open relevant roles : 2-4  (midpoint 3)  [S]
+   Sector                   : E-commerce
+   Fields                   : ML
+   Locations                : Boston / Bellevue (hybrid)
+   Remote-US                : No
+   Careers                  : careers.chewy.com
+   Example roles            : Staff MLE Sponsored Ads
+
+198. Cloudflare
+   Est. open relevant roles : 2-4  (midpoint 3)  [S]
+   Sector                   : Infrastructure
+   Fields                   : ML
+   Locations                : San Francisco
+   Remote-US                : Yes
+   Careers                  : cloudflare.com/careers
+   Example roles            : Sr MLE
+
+199. Discord
+   Est. open relevant roles : 2-4  (midpoint 3)  [K]
+   Sector                   : Consumer
+   Fields                   : ML
+   Locations                : San Francisco / Remote
+   Remote-US                : Some
+   Careers                  : discord.com/careers
+   Example roles            : MLE
+
+200. Dropbox
+   Est. open relevant roles : 2-4  (midpoint 3)  [S]
+   Sector                   : SaaS
+   Fields                   : ML
+   Locations                : Remote US (Virtual First)
+   Remote-US                : Yes
+   Careers                  : jobs.dropbox.com
+   Example roles            : Sr MLE Dash Agentic AI
+
+201. Komodo Health
+   Est. open relevant roles : 2-4  (midpoint 3)  [K]
+   Sector                   : Health Data
+   Fields                   : ML
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : komodohealth.com/careers
+   Example roles            : MLE
+
+202. Ramp
+   Est. open relevant roles : 2-4  (midpoint 3)  [S]
+   Sector                   : Fintech
+   Fields                   : ML
+   Locations                : San Francisco, NYC
+   Remote-US                : No
+   Careers                  : ramp.com/careers
+   Example roles            : Applied AI Engineer
+
+203. Thumbtack
+   Est. open relevant roles : 2-4  (midpoint 3)  [K]
+   Sector                   : Marketplace
+   Fields                   : ML
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : thumbtack.com/careers
+   Example roles            : MLE
+
+204. Twilio
+   Est. open relevant roles : 2-4  (midpoint 3)  [K]
+   Sector                   : SaaS
+   Fields                   : ML
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : twilio.com/careers
+   Example roles            : MLE
+
+205. Anduril (Bay Area / remote)
+   Est. open relevant roles : 0-5  (midpoint 2.5)  [S]
+   Sector                   : Defense
+   Fields                   : CV,ML
+   Locations                : Costa Mesa HQ (30-60 CV roles US-wide)
+   Remote-US                : No
+   Careers                  : anduril.com/careers
+   Example roles            : CV Engineer SLAM; Sr SWE Perception
+
+206. Mobileye (Bay Area)
+   Est. open relevant roles : 0-5  (midpoint 2.5)  [S]
+   Sector                   : Autonomous Vehicles
+   Fields                   : CV,DL
+   Locations                : Israel mostly
+   Remote-US                : No
+   Careers                  : careers.mobileye.com
+   Example roles            : -
+
+207. Saronic (Bay Area)
+   Est. open relevant roles : 0-5  (midpoint 2.5)  [S]
+   Sector                   : Defense Maritime
+   Fields                   : CV,ML
+   Locations                : Austin HQ
+   Remote-US                : No
+   Careers                  : saronic.com/careers
+   Example roles            : Sr Perception & Autonomy Eng
+
+208. Ambi Robotics
+   Est. open relevant roles : 1-4  (midpoint 2.5)  [S]
+   Sector                   : Warehouse Robotics
+   Fields                   : ML,CV
+   Locations                : Berkeley
+   Remote-US                : No
+   Careers                  : ambirobotics.com/careers
+   Example roles            : Sr Robotics Research Eng ML/CV
+
+209. Mapbox
+   Est. open relevant roles : 1-4  (midpoint 2.5)  [K]
+   Sector                   : Maps / Graphics
+   Fields                   : GFX,CV
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : mapbox.com/careers
+   Example roles            : GL rendering; CV
+
+210. Parallel Domain
+   Est. open relevant roles : 1-4  (midpoint 2.5)  [K]
+   Sector                   : Synthetic Data / Sim
+   Fields                   : GFX,3D,ML
+   Locations                : San Francisco / Berkeley
+   Remote-US                : Some
+   Careers                  : paralleldomain.com/careers
+   Example roles            : Rendering Engineer; Synthetic Data ML
+
+211. Ready Player Me / Genies / Didimo
+   Est. open relevant roles : 1-4  (midpoint 2.5)  [K]
+   Sector                   : Avatars / 3D
+   Fields                   : UNITY,3D,ML
+   Locations                : LA / remote
+   Remote-US                : Some
+   Careers                  : company sites
+   Example roles            : Avatars, Unity, 3D ML
+
+212. Rhombus
+   Est. open relevant roles : 1-4  (midpoint 2.5)  [K]
+   Sector                   : Security Cameras
+   Fields                   : CV
+   Locations                : Sacramento / remote
+   Remote-US                : Some
+   Careers                  : rhombus.com/careers
+   Example roles            : CV
+
+213. Swift Navigation
+   Est. open relevant roles : 1-4  (midpoint 2.5)  [K]
+   Sector                   : Navigation
+   Fields                   : ML
+   Locations                : San Francisco
+   Remote-US                : Some
+   Careers                  : swiftnav.com/careers
+   Example roles            : Sensor fusion
+
+214. Zynga (Take-Two)
+   Est. open relevant roles : 1-4  (midpoint 2.5)  [S]
+   Sector                   : Gaming
+   Fields                   : UNITY
+   Locations                : San Francisco
+   Remote-US                : No
+   Careers                  : zynga.com/careers
+   Example roles            : Sr SWE Client (Unity/C#); Principal SWE Unity
+
+215. Etsy
+   Est. open relevant roles : 2-3  (midpoint 2.5)  [S]
+   Sector                   : E-commerce
+   Fields                   : ML
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : careers.etsy.com
+   Example roles            : Sr Staff MLE Search/Recs/Ads
+
+216. Xreal
+   Est. open relevant roles : 0-4  (midpoint 2)  [S]
+   Sector                   : AR
+   Fields                   : CV
+   Locations                : Bay Area
+   Remote-US                : No
+   Careers                  : xreal.com/careers
+   Example roles            : -
+
+217. Blizzard Entertainment
+   Est. open relevant roles : 1-3  (midpoint 2)  [S]
+   Sector                   : Gaming
+   Fields                   : GFX,UNITY
+   Locations                : Irvine (remote US/Canada considered)
+   Remote-US                : Some
+   Careers                  : careers.blizzard.com
+   Example roles            : Principal Graphics Eng (Unity project)
+
+218. Crystal Dynamics
+   Est. open relevant roles : 1-3  (midpoint 2)  [K]
+   Sector                   : Gaming
+   Fields                   : GFX
+   Locations                : San Mateo
+   Remote-US                : No
+   Careers                  : crystald.com/careers
+   Example roles            : Unreal engine / graphics
+
+219. Freenome
+   Est. open relevant roles : 1-3  (midpoint 2)  [S]
+   Sector                   : Biotech AI
+   Fields                   : ML
+   Locations                : Brisbane CA
+   Remote-US                : Some
+   Careers                  : freenome.com/careers
+   Example roles            : Staff ML Scientist
+
+220. GitLab
+   Est. open relevant roles : 1-3  (midpoint 2)  [S]
+   Sector                   : SaaS
+   Fields                   : ML
+   Locations                : Remote
+   Remote-US                : Yes
+   Careers                  : about.gitlab.com/jobs
+   Example roles            : MLE AI Custom Models
+
+221. Grammarly (Superhuman)
+   Est. open relevant roles : 1-3  (midpoint 2)  [S]
+   Sector                   : SaaS
+   Fields                   : ML
+   Locations                : San Francisco (hybrid)
+   Remote-US                : Some
+   Careers                  : grammarly.com/jobs
+   Example roles            : MLE Agents
+
+222. Jam City
+   Est. open relevant roles : 1-3  (midpoint 2)  [S]
+   Sector                   : Gaming
+   Fields                   : UNITY
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : jamcity.com/careers
+   Example roles            : Sr SWE (Unity) remote
+
+223. Midjourney
+   Est. open relevant roles : 1-3  (midpoint 2)  [S]
+   Sector                   : Generative Images
+   Fields                   : ML,DL,3D
+   Locations                : San Francisco
+   Remote-US                : No
+   Careers                  : midjourney.com/careers
+   Example roles            : AI Researcher (image/video/world models)
+
+224. Modal (Bay Area portion)
+   Est. open relevant roles : 1-3  (midpoint 2)  [S]
+   Sector                   : AI Infra
+   Fields                   : ML
+   Locations                : NYC mostly
+   Remote-US                : No
+   Careers                  : modal.com/careers
+   Example roles            : ML infra
+
+225. Polycam
+   Est. open relevant roles : 1-3  (midpoint 2)  [S]
+   Sector                   : 3D Capture
+   Fields                   : CV,3D,REC
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : poly.cam/careers
+   Example roles            : Sr CV Engineer (Remote US); Sr Applied Research Eng (Gaussian splatting)
+
+226. Rec Room
+   Est. open relevant roles : 1-3  (midpoint 2)  [S]
+   Sector                   : Gaming / VR
+   Fields                   : UNITY
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : recroom.com/careers
+   Example roles            : Gameplay Engineer (Unity/C#)
+
+227. Second Dinner
+   Est. open relevant roles : 1-3  (midpoint 2)  [K]
+   Sector                   : Gaming
+   Fields                   : UNITY
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : seconddinner.com/careers
+   Example roles            : Unity engineers
+
+228. Stability AI (US)
+   Est. open relevant roles : 1-3  (midpoint 2)  [S]
+   Sector                   : Generative AI
+   Fields                   : ML,DL
+   Locations                : Remote / US
+   Remote-US                : Some
+   Careers                  : stability.ai/careers
+   Example roles            : GenAI Inference Engineer
+
+229. Zapier
+   Est. open relevant roles : 1-3  (midpoint 2)  [S]
+   Sector                   : SaaS
+   Fields                   : ML
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : zapier.com/jobs
+   Example roles            : Engineer Applied AI; Sr Applied AI Engineer
+
+230. Zscaler
+   Est. open relevant roles : 1-3  (midpoint 2)  [S]
+   Sector                   : Security
+   Fields                   : ML
+   Locations                : Remote US / Santa Clara
+   Remote-US                : Yes
+   Careers                  : zscaler.com/careers
+   Example roles            : Sr MLE AI Platform
+
+231. Spline
+   Est. open relevant roles : 0-3  (midpoint 1.5)  [S]
+   Sector                   : 3D Design Tools
+   Fields                   : GFX,3D,ML
+   Locations                : Remote North America
+   Remote-US                : Yes
+   Careers                  : workatastartup.com/companies/spline
+   Example roles            : Graphics Engineer (WebGL); ML Engineer generative 3D
+
+232. Starship Technologies (US)
+   Est. open relevant roles : 0-3  (midpoint 1.5)  [S]
+   Sector                   : Delivery Robotics
+   Fields                   : CV
+   Locations                : Tallinn mostly
+   Remote-US                : No
+   Careers                  : starship.teamtailor.com
+   Example roles            : CV roles in Tallinn
+
+233. Bungie
+   Est. open relevant roles : 1-2  (midpoint 1.5)  [S]
+   Sector                   : Gaming
+   Fields                   : GFX
+   Locations                : Remote in approved states
+   Remote-US                : Some
+   Careers                  : careers.bungie.com
+   Example roles            : Graphics Engineer Central Tech
+
+234. GRAIL
+   Est. open relevant roles : 1-2  (midpoint 1.5)  [S]
+   Sector                   : Biotech AI
+   Fields                   : ML
+   Locations                : Menlo Park / Sunnyvale
+   Remote-US                : No
+   Careers                  : grail.com/careers
+   Example roles            : Sr Data Scientist ML
+
+235. OpenSpace
+   Est. open relevant roles : 1-2  (midpoint 1.5)  [S]
+   Sector                   : Construction 3D
+   Fields                   : CV,3D,REC
+   Locations                : San Francisco
+   Remote-US                : Some
+   Careers                  : openspace.ai/careers
+   Example roles            : Sr CV Engineer (SfM/SLAM/3D reconstruction)
+
+236. Double Fine (Xbox)
+   Est. open relevant roles : 0-2  (midpoint 1)  [K]
+   Sector                   : Gaming
+   Fields                   : GFX
+   Locations                : San Francisco
+   Remote-US                : No
+   Careers                  : doublefine.com/jobs
+   Example roles            : -
+
+237. Groq
+   Est. open relevant roles : 0-2  (midpoint 1)  [S]
+   Sector                   : AI Chips
+   Fields                   : ML
+   Locations                : Mountain View
+   Remote-US                : No
+   Careers                  : groq.com/careers
+   Example roles            : Hiring largely frozen
+
+238. Kaedim
+   Est. open relevant roles : 0-2  (midpoint 1)  [S]
+   Sector                   : Generative 3D
+   Fields                   : ML,3D
+   Locations                : San Francisco / London
+   Remote-US                : Some
+   Careers                  : kaedim3d.com
+   Example roles            : ML Engineer
+
+239. Magic Leap
+   Est. open relevant roles : 0-2  (midpoint 1)  [S]
+   Sector                   : AR
+   Fields                   : CV,3D
+   Locations                : Sunnyvale / Plantation FL
+   Remote-US                : No
+   Careers                  : magicleap.com/careers
+   Example roles            : ~2 total openings
+
+240. Pocket Gems
+   Est. open relevant roles : 0-2  (midpoint 1)  [S]
+   Sector                   : Gaming
+   Fields                   : UNITY
+   Locations                : San Francisco (remote some states)
+   Remote-US                : Some
+   Careers                  : pocketgems.com/careers
+   Example roles            : Sr Unity Engineer
+
+241. Riot Games (US)
+   Est. open relevant roles : 0-2  (midpoint 1)  [S]
+   Sector                   : Gaming
+   Fields                   : ML
+   Locations                : Remote intern
+   Remote-US                : Some
+   Careers                  : riotgames.com/en/work-with-us/jobs
+   Example roles            : Research Scientist Intern Game AI
+
+242. Safe Superintelligence (SSI)
+   Est. open relevant roles : 0-2  (midpoint 1)  [S]
+   Sector                   : AI Lab
+   Fields                   : ML,DL
+   Locations                : Palo Alto
+   Remote-US                : No
+   Careers                  : ssi.inc
+   Example roles            : Rarely posts publicly
+
+243. Supercell US
+   Est. open relevant roles : 0-2  (midpoint 1)  [K]
+   Sector                   : Gaming
+   Fields                   : UNITY
+   Locations                : San Francisco
+   Remote-US                : No
+   Careers                  : supercell.com/careers
+   Example roles            : -
+
+244. Survios
+   Est. open relevant roles : 0-2  (midpoint 1)  [S]
+   Sector                   : VR Gaming
+   Fields                   : GFX
+   Locations                : Los Angeles
+   Remote-US                : No
+   Careers                  : survios.com/careers
+   Example roles            : Sr Technology Engineer (UE5)
+
+245. Compound Eye
+   Est. open relevant roles : 1-1  (midpoint 1)  [S]
+   Sector                   : 3D Vision
+   Fields                   : CV,3D
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : jobs.ashbyhq.com/compound-eye
+   Example roles            : Sr Engineer CV (pose/SLAM/sensor fusion)
+
+246. DeepWalk
+   Est. open relevant roles : 1-1  (midpoint 1)  [S]
+   Sector                   : Mapping CV
+   Fields                   : CV
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : jobs.ashbyhq.com/deepwalk
+   Example roles            : Staff SWE-ML (CV)
+
+247. Humble Robotics
+   Est. open relevant roles : 1-1  (midpoint 1)  [S]
+   Sector                   : Robotics Sim
+   Fields                   : 3D,REC
+   Locations                : San Francisco / remote
+   Remote-US                : Some
+   Careers                  : -
+   Example roles            : Simulation Engineer (Gaussian splatting / world models)
+
+248. Pano AI
+   Est. open relevant roles : 1-1  (midpoint 1)  [S]
+   Sector                   : Climate CV
+   Fields                   : CV
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : jobs.ashbyhq.com/pano-ai
+   Example roles            : Sr AI/CV Engineer
+
+249. Point One Navigation
+   Est. open relevant roles : 1-1  (midpoint 1)  [S]
+   Sector                   : Navigation
+   Fields                   : CV
+   Locations                : Remote US
+   Remote-US                : Yes
+   Careers                  : jobs.ashbyhq.com/point-one-navigation
+   Example roles            : Staff CV Engineer
+
+250. Owlchemy Labs (Google)
+   Est. open relevant roles : 0-1  (midpoint 0.5)  [S]
+   Sector                   : VR Gaming
+   Fields                   : UNITY,GFX
+   Locations                : Austin
+   Remote-US                : Some
+   Careers                  : owlchemylabs.com/careers
+   Example roles            : Graphics Engineer (C#/Unity)
+
+251. Valve
+   Est. open relevant roles : 0-1  (midpoint 0.5)  [S]
+   Sector                   : Gaming
+   Fields                   : GFX
+   Locations                : Bellevue
+   Remote-US                : No
+   Careers                  : valvesoftware.com/jobs
+   Example roles            : Software Engineer Games
+
+====================================================================================================
+SECTION 3 - QUICK LISTS BY SPECIALTY (ranked)
+====================================================================================================
+
+A. COMPUTER VISION / PERCEPTION
+-------------------------------
+    1. Google (incl. Google DeepMind, Research, Cloud, Pixel,  400-800 [S]  Some
+    2. Apple (AIML, Vision Pro, Camera, Maps 3D, Metal/GPU)    400-700 [S]  Rare
+    3. Meta (incl. Reality Labs, FAIR, Superintelligence Labs) 400-700 [S]  Some
+    4. NVIDIA (AV, Isaac robotics, Omniverse, neural graphics, 400-700 [S]  Many
+    5. Amazon / AWS (Lab126, A9, Amazon Robotics, AGI SF Lab,  150-300 [S]  Some
+    6. OpenAI                                                  150-250 [S]  Rare
+    7. ByteDance / TikTok (incl. PICO XR)                      100-250 [K]  Rare
+    8. Microsoft (Microsoft AI, Copilot, Xbox - Bay Area + rem 100-250 [K]  Some
+    9. Waymo (Alphabet)                                        70-150 [S]  Rare
+   10. Tesla (Autopilot, Optimus, AI infra)                    40-150 [S]  No
+   11. Adobe (Research, Firefly, Substance 3D)                 60-120 [S]  Some
+   12. Uber                                                    50-100 [K]  Rare
+   13. xAI (SpaceX)                                            60-90 [S]  Some (46 remote listings)
+   14. Zoox (Amazon)                                           40-100 [S]  No
+   15. Cisco (incl. Splunk, Webex)                             40-80 [K]  Some
+   16. GM (AV/ADAS, ex-Cruise teams)                           30-80 [K]  Rare
+   17. Intuit (incl. Credit Karma)                             30-80 [S]  Some
+   18. Applied Intuition                                       30-60 [S]  No
+   19. DoorDash (incl. Dot robot)                              30-60 [K]  Some
+   20. Oracle (OCI AI)                                         30-60 [K]  Many
+   21. Netflix (incl. Games, Studio tech)                      25-60 [K]  Some
+   22. Roblox                                                  20-60 [S]  No
+   23. Samsung Research America + Samsung Semiconductor        20-50 [S]  Rare
+   24. Pinterest                                               15-50 [S]  Yes (1-2 office visits/qtr)
+   25. Qualcomm (Bay Area)                                     15-50 [K]  Rare
+   26. Rivian (Palo Alto Autonomy)                             15-50 [S]  No
+   27. Airbnb                                                  20-40 [K]  Yes (US remote eligible)
+   28. Applied Materials                                       20-40 [K]  Rare
+   29. KLA                                                     20-40 [K]  Rare
+   30. Instacart (incl. Caper Carts)                           10-40 [S]  Yes
+   31. Unity Technologies                                      10-40 [S]  Some
+   32. eBay                                                    15-35 [K]  Some
+   33. Figure AI                                               15-35 [S]  No
+   34. Toyota Research Institute + Woven by Toyota             15-35 [K]  Rare
+   35. Intuitive Surgical                                      15-30 [S]  Rare
+   36. Nuro                                                    15-30 [S]  No
+   37. Tempus AI                                               10-30 [S]  Yes
+   38. Snap Inc. (incl. Spectacles)                            5-30 [S]  Rare
+   39. Sony Interactive Entertainment (PlayStation)            5-30 [S]  Some
+   40. Ambarella                                               10-25 [K]  Rare
+   41. Bosch (Research & Technology Center, BCAI)              10-25 [K]  Rare
+   42. HP Inc.                                                 10-25 [K]  Some
+   43. Lam Research                                            10-25 [K]  Rare
+   44. Zipline                                                 10-25 [S]  No
+   45. Lucid Motors                                            5-25 [S]  No
+   46. Luma AI                                                 10-20 [S]  Some
+   47. Thinking Machines Lab                                   10-20 [S]  No
+   48. Aurora (Bay Area)                                       8-20 [S]  No
+   49. Skydio                                                  8-20 [S]  No
+   50. Verkada                                                 8-20 [K]  No
+   51. 1X Technologies                                         5-20 [S]  No
+   52. Skild AI                                                8-15 [S]  No
+   53. Wayve (US)                                              8-15 [S]  No
+   54. World Labs                                              8-15 [S]  No
+   55. Physical Intelligence                                   6-15 [S]  No
+   56. Flock Safety                                            5-15 [K]  Yes
+   57. Honda Research Institute USA                            5-15 [K]  No
+   58. Hyundai CRADLE / Motional (Bay Area)                    5-15 [K]  No
+   59. Recursion                                               5-15 [K]  Some
+   60. Samsara                                                 5-15 [S]  Yes
+   61. The Bot Company                                         5-15 [K]  No
+   62. Torc Robotics (remote-eligible)                         5-15 [S]  Yes
+   63. Blue River Technology (John Deere)                      5-12 [S]  Some
+   64. Joby / Wisk / Archer (autonomy)                         5-12 [K]  No
+   65. Kodiak Robotics                                         5-12 [S]  Some
+   66. Motive                                                  5-12 [K]  Yes
+   67. Wing (Alphabet)                                         5-12 [S]  Some
+   68. Niantic Spatial (incl. Scaniverse)                      4-12 [S]  Some
+   69. Cohere (SF)                                             5-10 [S]  Yes
+   70. Serve Robotics                                          5-10 [S]  No
+   71. Waabi                                                   5-10 [S]  Yes (US/CA remote)
+   72. Dexterity                                               4-10 [S]  No
+   73. Gatik                                                   4-10 [S]  No
+   74. Runway                                                  4-10 [S]  Some
+   75. Shield AI                                               3-10 [S]  No
+   76. Stack AV                                                3-10 [K]  Some
+   77. Chan Zuckerberg Initiative / Biohub (incl. Evolutionary 5-8 [S]  Rare
+   78. Nimble Robotics                                         4-8 [S]  No
+   79. PlusAI                                                  4-8 [S]  No
+   80. Aeva                                                    3-8 [K]  No
+   81. Dyna Robotics                                           3-8 [K]  No
+   82. Esri                                                    3-8 [K]  Some
+   83. Hayden AI                                               3-8 [K]  No
+   84. Hugging Face                                            3-8 [K]  Yes
+   85. J&J MedTech (Verb / Auris / Monarch)                    3-8 [S]  No
+   86. May Mobility                                            3-8 [S]  Yes
+   87. Planet Labs                                             3-8 [K]  Yes
+   88. Zillow (incl. 3D Home)                                  3-8 [K]  Yes
+   89. Matterport (CoStar)                                     2-8 [S]  Some
+   90. Pony.ai (US)                                            2-8 [K]  No
+   91. Yelp                                                    3-6 [K]  Yes
+   92. Agility Robotics                                        2-6 [S]  Some
+   93. Ambient.ai                                              2-6 [K]  No
+   94. Apptronik (Bay Area)                                    2-6 [S]  No
+   95. Collaborative Robotics (Cobot)                          2-6 [K]  No
+   96. Landing AI                                              2-6 [K]  Some
+   97. Ouster (incl. Velodyne)                                 2-6 [K]  No
+   98. Path Robotics                                           2-6 [K]  No
+   99. Reliable Robotics                                       2-6 [K]  No
+  100. Zebra Technologies                                      2-6 [K]  Some
+  101. Wonder Dynamics / Move.ai / Rokoko                      1-6 [K]  Some
+  102. Bonsai Robotics                                         2-5 [S]  No
+  103. Chef Robotics                                           2-5 [K]  No
+  104. Gecko Robotics                                          2-5 [K]  Some
+  105. Cognex                                                  1-5 [K]  Rare
+  106. Anduril (Bay Area / remote)                             0-5 [S]  No
+  107. Mobileye (Bay Area)                                     0-5 [S]  No
+  108. Saronic (Bay Area)                                      0-5 [S]  No
+  109. Ambi Robotics                                           1-4 [S]  No
+  110. Mapbox                                                  1-4 [K]  Yes
+  111. Rhombus                                                 1-4 [K]  Some
+  112. Xreal                                                   0-4 [S]  No
+  113. Polycam                                                 1-3 [S]  Yes
+  114. Starship Technologies (US)                              0-3 [S]  No
+  115. OpenSpace                                               1-2 [S]  Some
+  116. Magic Leap                                              0-2 [S]  No
+  117. Compound Eye                                            1-1 [S]  Yes
+  118. DeepWalk                                                1-1 [S]  Yes
+  119. Pano AI                                                 1-1 [S]  Yes
+  120. Point One Navigation                                    1-1 [S]  Yes
+
+B. 3D RECONSTRUCTION (SLAM / SfM / NeRF / Gaussian splatting)
+-------------------------------------------------------------
+    1. Google (incl. Google DeepMind, Research, Cloud, Pixel,  400-800 [S]  Some
+    2. Apple (AIML, Vision Pro, Camera, Maps 3D, Metal/GPU)    400-700 [S]  Rare
+    3. Meta (incl. Reality Labs, FAIR, Superintelligence Labs) 400-700 [S]  Some
+    4. NVIDIA (AV, Isaac robotics, Omniverse, neural graphics, 400-700 [S]  Many
+    5. Waymo (Alphabet)                                        70-150 [S]  Rare
+    6. Adobe (Research, Firefly, Substance 3D)                 60-120 [S]  Some
+    7. Zoox (Amazon)                                           40-100 [S]  No
+    8. Applied Intuition                                       30-60 [S]  No
+    9. Roblox                                                  20-60 [S]  No
+   10. Autodesk (incl. Research, Wonder Dynamics/Flow Studio)  15-50 [K]  Many
+   11. Unity Technologies                                      10-40 [S]  Some
+   12. Luma AI                                                 10-20 [S]  Some
+   13. World Labs                                              8-15 [S]  No
+   14. Niantic Spatial (incl. Scaniverse)                      4-12 [S]  Some
+   15. Industrial Light & Magic / Lucasfilm                    3-10 [K]  No
+   16. Zillow (incl. 3D Home)                                  3-8 [K]  Yes
+   17. Matterport (CoStar)                                     2-8 [S]  Some
+   18. Polycam                                                 1-3 [S]  Yes
+   19. OpenSpace                                               1-2 [S]  Some
+   20. Humble Robotics                                         1-1 [S]  Some
+
+C. 3D GRAPHICS / RENDERING / GPU
+--------------------------------
+    1. Google (incl. Google DeepMind, Research, Cloud, Pixel,  400-800 [S]  Some
+    2. Apple (AIML, Vision Pro, Camera, Maps 3D, Metal/GPU)    400-700 [S]  Rare
+    3. Meta (incl. Reality Labs, FAIR, Superintelligence Labs) 400-700 [S]  Some
+    4. NVIDIA (AV, Isaac robotics, Omniverse, neural graphics, 400-700 [S]  Many
+    5. Microsoft (Microsoft AI, Copilot, Xbox - Bay Area + rem 100-250 [K]  Some
+    6. Waymo (Alphabet)                                        70-150 [S]  Rare
+    7. Tesla (Autopilot, Optimus, AI infra)                    40-150 [S]  No
+    8. Adobe (Research, Firefly, Substance 3D)                 60-120 [S]  Some
+    9. AMD                                                     60-120 [S]  Some
+   10. Intel                                                   40-100 [S]  Some
+   11. GM (AV/ADAS, ex-Cruise teams)                           30-80 [K]  Rare
+   12. Applied Intuition                                       30-60 [S]  No
+   13. Netflix (incl. Games, Studio tech)                      25-60 [K]  Some
+   14. Roblox                                                  20-60 [S]  No
+   15. Autodesk (incl. Research, Wonder Dynamics/Flow Studio)  15-50 [K]  Many
+   16. Electronic Arts (incl. SEED, Respawn)                   10-40 [S]  Some
+   17. Unity Technologies                                      10-40 [S]  Some
+   18. Sony Interactive Entertainment (PlayStation)            5-30 [S]  Some
+   19. Figma                                                   10-20 [K]  Some
+   20. Luma AI                                                 10-20 [S]  Some
+   21. World Labs                                              8-15 [S]  No
+   22. Dassault Systemes / SolidWorks                          3-10 [K]  Rare
+   23. Industrial Light & Magic / Lucasfilm                    3-10 [K]  No
+   24. Scopely (incl. Pokemon GO / Niantic games)              4-8 [S]  Yes
+   25. Bentley Systems (incl. Cesium)                          3-8 [K]  Yes
+   26. Epic Games (Remote US)                                  3-8 [S]  Some
+   27. Esri                                                    3-8 [K]  Some
+   28. Pixar                                                   3-8 [K]  No
+   29. PTC / Onshape                                           3-8 [K]  Some
+   30. Foundry / SideFX / Chaos / Maxon                        2-8 [K]  Yes
+   31. Matterport (CoStar)                                     2-8 [S]  Some
+   32. Inworld AI                                              2-6 [S]  Some
+   33. Meshy AI                                                3-5 [S]  Yes
+   34. Duality Robotics                                        2-5 [K]  Some
+   35. Infinite Reality                                        1-5 [K]  Yes
+   36. Mapbox                                                  1-4 [K]  Yes
+   37. Parallel Domain                                         1-4 [K]  Some
+   38. Blizzard Entertainment                                  1-3 [S]  Some
+   39. Crystal Dynamics                                        1-3 [K]  No
+   40. Spline                                                  0-3 [S]  Yes
+   41. Bungie                                                  1-2 [S]  Some
+   42. Double Fine (Xbox)                                      0-2 [K]  No
+   43. Survios                                                 0-2 [S]  No
+   44. Owlchemy Labs (Google)                                  0-1 [S]  Some
+   45. Valve                                                   0-1 [S]  No
+
+D. UNITY / GAME-ENGINE
+----------------------
+    1. Meta (incl. Reality Labs, FAIR, Superintelligence Labs) 400-700 [S]  Some
+    2. Netflix (incl. Games, Studio tech)                      25-60 [K]  Some
+    3. Unity Technologies                                      10-40 [S]  Some
+    4. Scopely (incl. Pokemon GO / Niantic games)              4-8 [S]  Yes
+    5. Bentley Systems (incl. Cesium)                          3-8 [K]  Yes
+    6. Ready Player Me / Genies / Didimo                       1-4 [K]  Some
+    7. Zynga (Take-Two)                                        1-4 [S]  No
+    8. Blizzard Entertainment                                  1-3 [S]  Some
+    9. Jam City                                                1-3 [S]  Yes
+   10. Rec Room                                                1-3 [S]  Yes
+   11. Second Dinner                                           1-3 [K]  Yes
+   12. Pocket Gems                                             0-2 [S]  Some
+   13. Supercell US                                            0-2 [K]  No
+   14. Owlchemy Labs (Google)                                  0-1 [S]  Some
+
+E. REMOTE-FRIENDLY (Remote = Yes or Many)
+-----------------------------------------
+    1. NVIDIA (AV, Isaac robotics, Omniverse, neural graphics, 400-700 [S]  Many
+    2. Oracle (OCI AI)                                         30-60 [K]  Many
+    3. ServiceNow                                              20-50 [K]  Many
+    4. Autodesk (incl. Research, Wonder Dynamics/Flow Studio)  15-50 [K]  Many
+    5. Pinterest                                               15-50 [S]  Yes (1-2 office visits/qtr)
+    6. Airbnb                                                  20-40 [K]  Yes (US remote eligible)
+    7. Instacart (incl. Caper Carts)                           10-40 [S]  Yes
+    8. Block (Square, Cash App)                                15-35 [K]  Yes
+    9. Workday                                                 15-35 [K]  Many
+   10. Capital One (SF + remote)                               10-30 [K]  Yes
+   11. Tempus AI                                               10-30 [S]  Yes
+   12. Coinbase                                                5-25 [S]  Yes
+   13. Flock Safety                                            5-15 [K]  Yes
+   14. Samsara                                                 5-15 [S]  Yes
+   15. Torc Robotics (remote-eligible)                         5-15 [S]  Yes
+   16. Cresta                                                  6-12 [S]  Yes
+   17. Motive                                                  5-12 [K]  Yes
+   18. Reddit                                                  6-10 [S]  Yes
+   19. Atlassian                                               5-10 [K]  Yes
+   20. Cohere (SF)                                             5-10 [S]  Yes
+   21. Waabi                                                   5-10 [S]  Yes (US/CA remote)
+   22. Scopely (incl. Pokemon GO / Niantic games)              4-8 [S]  Yes
+   23. Bentley Systems (incl. Cesium)                          3-8 [K]  Yes
+   24. Hugging Face                                            3-8 [K]  Yes
+   25. May Mobility                                            3-8 [S]  Yes
+   26. Planet Labs                                             3-8 [K]  Yes
+   27. Zillow (incl. 3D Home)                                  3-8 [K]  Yes
+   28. Foundry / SideFX / Chaos / Maxon                        2-8 [K]  Yes
+   29. Affirm                                                  4-6 [S]  Yes (remote-first)
+   30. Yelp                                                    3-6 [K]  Yes
+   31. Meshy AI                                                3-5 [S]  Yes
+   32. Shopify                                                 3-5 [S]  Yes
+   33. DataRobot                                               2-5 [K]  Yes
+   34. Elastic                                                 2-5 [K]  Yes
+   35. ElevenLabs (US)                                         2-5 [S]  Yes
+   36. HubSpot                                                 2-5 [K]  Yes
+   37. Infinite Reality                                        1-5 [K]  Yes
+   38. Cloudflare                                              2-4 [S]  Yes
+   39. Dropbox                                                 2-4 [S]  Yes
+   40. Komodo Health                                           2-4 [K]  Yes
+   41. Thumbtack                                               2-4 [K]  Yes
+   42. Twilio                                                  2-4 [K]  Yes
+   43. Mapbox                                                  1-4 [K]  Yes
+   44. Etsy                                                    2-3 [S]  Yes
+   45. GitLab                                                  1-3 [S]  Yes
+   46. Jam City                                                1-3 [S]  Yes
+   47. Polycam                                                 1-3 [S]  Yes
+   48. Rec Room                                                1-3 [S]  Yes
+   49. Second Dinner                                           1-3 [K]  Yes
+   50. Zapier                                                  1-3 [S]  Yes
+   51. Zscaler                                                 1-3 [S]  Yes
+   52. Spline                                                  0-3 [S]  Yes
+   53. Compound Eye                                            1-1 [S]  Yes
+   54. DeepWalk                                                1-1 [S]  Yes
+   55. Pano AI                                                 1-1 [S]  Yes
+   56. Point One Navigation                                    1-1 [S]  Yes
+
+====================================================================================================
+SECTION 4 - TOTALS, NOTES & HOW TO GET EXACT COUNTS
+====================================================================================================
+
+* Sum of all ranges: roughly 4199 - 8858 relevant open roles (very rough).
+* Biggest pools: Google/DeepMind, Meta (incl. Reality Labs), Apple, NVIDIA, Amazon,
+  ByteDance/TikTok, OpenAI, Microsoft, Anthropic, Waymo, Tesla. The top ~11
+  companies hold well over half of all openings.
+* 3D reconstruction / Gaussian splatting hot spots: NVIDIA (NuRec), Apple (Maps 3D,
+  Vision Pro), Meta Reality Labs, Google (Android XR, Maps), Niantic Spatial,
+  World Labs, Luma AI, Matterport, Polycam, Applied Intuition, Zoox, Waymo.
+* Unity-specific jobs are scarce (~20-50 total in Bay Area + remote US): Unity
+  Technologies, Scopely / Pokemon GO, Zynga, Jam City, Rec Room, Blizzard's Unity
+  project, Second Dinner, Bentley/Cesium, Meta Horizon, Netflix Games, plus
+  staffing-agency XR/Unity contracts.
+* Mostly ONSITE: Apple, Roblox, Tesla, Zoox, Applied Intuition, World Labs, Figure,
+  Pixar, ILM, most robotics/AV startups.
+* Defunct / absorbed / not hiring here: Ghost Autonomy, Covariant & Adept (teams to
+  Amazon), Grabango, Luminar (Chapter 11), Vicarious Surgical, 8th Wall, Iron Ox,
+  Groq (largely frozen), Magic Leap (~2 roles), Varjo (Helsinki only).
+
+GETTING EXACT LIVE COUNTS (from a normal internet connection)
+  Greenhouse : https://boards-api.greenhouse.io/v1/boards/<slug>/jobs
+               (e.g. roblox, pinterest, databricks, stripe, airbnb, lyft, waymo,
+                worldlabs, appliedintuition, samsungresearchamerica)
+  Lever      : https://api.lever.co/v0/postings/<slug>?mode=json  (zoox, waabi, shieldai)
+  Ashby      : https://api.ashbyhq.com/posting-api/job-board/<slug>  (openai, niantic-spatial)
+  Workday    : NVIDIA, Adobe, Salesforce, Intel, Autodesk, Workday careers search
+  Then filter titles for: machine learning|computer vision|deep learning|perception|
+  graphics|rendering|3D|reconstruction|SLAM|Unity, and locations for Bay Area
+  cities + "Remote".
+
+USEFUL AGGREGATORS: linkedin.com/jobs, trueup.io, builtin.com/sf, wellfound.com,
+  workatastartup.com (YC), levels.fyi/jobs, hitmarker.net (games),
+  workwithindies.com, radiancefields.com/jobs (NeRF/splatting), remotive.com
+
+====================================================================================================
+END OF FILE
